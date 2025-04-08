@@ -709,6 +709,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
       </profiles>
       <infoLinks>
         <infoLink name="Ash &amp; Iron" id="bcfc-2ad3-3022-3217" hidden="false" type="rule" targetId="1834-ed25-4ab3-5dba"/>
+        <infoLink name="Deep Strike" id="bd4a-64b6-3a9f-4161" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="dc0c-f0d7-c4d9-424d" primary="true" name="Infantry"/>
@@ -774,8 +775,8 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
           <selectionEntryGroups>
             <selectionEntryGroup name="Melee weapon" id="551d-87de-fc55-2992" hidden="false" defaultSelectionEntryId="a43f-4328-2bf9-3311">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="53a2-d586-ffa8-85e0" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="030d-db63-8f86-b771" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f9d5-9b8b-aedd-d987-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9d5-9b8b-aedd-d987-max" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Wyrdstar" hidden="false" id="fc3c-0a0c-a0a8-1319" type="selectionEntry" targetId="773c-fe27-d47c-7d57">
@@ -792,8 +793,8 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             </selectionEntryGroup>
             <selectionEntryGroup name="Ranged weapon" id="69e5-bb6a-4f2e-e515" hidden="false" defaultSelectionEntryId="6b72-4a36-0799-b68f">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="01ef-1199-883f-68ba" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="785a-765c-dfb7-4070" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b4a-6b28-0de9-a99f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b4a-6b28-0de9-a99f-max" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Mawgun" hidden="false" id="1039-4ae9-4ea2-a8c7" type="selectionEntry" targetId="3cb9-9203-af11-3448">
@@ -814,6 +815,9 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Forgehammer" hidden="false" id="a24e-6dcd-c94b-7031"/>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
