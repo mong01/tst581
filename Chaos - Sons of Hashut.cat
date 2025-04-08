@@ -799,16 +799,21 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
               <entryLinks>
                 <entryLink import="true" name="Mawgun" hidden="false" id="1039-4ae9-4ea2-a8c7" type="selectionEntry" targetId="3cb9-9203-af11-3448">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4027-5076-1c8e-d024" includeChildSelections="false"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1ed5-f28b-67b8-0cad" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4027-5076-1c8e-d024" includeChildSelections="false" automatic="true"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1ed5-f28b-67b8-0cad" includeChildSelections="false" automatic="true"/>
                   </constraints>
                   <modifierGroups>
                     <modifierGroup type="and">
                       <modifiers>
                         <modifier type="set" value="1" field="1ed5-f28b-67b8-0cad">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="6b72-4a36-0799-b68f" shared="true" includeChildSelections="true"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="6b72-4a36-0799-b68f" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                         <modifier type="set" value="0" field="4027-5076-1c8e-d024">
                           <conditionGroups>
@@ -827,16 +832,21 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                 </entryLink>
                 <entryLink import="true" name="Twin magna-coil needler" hidden="false" id="76cf-1df3-6671-d92b" type="selectionEntry" targetId="96bb-8a5c-c838-7ff8">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33b4-c2ac-f327-e180" includeChildSelections="false"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bbd1-a974-df07-11dc" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33b4-c2ac-f327-e180" includeChildSelections="false" automatic="true"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bbd1-a974-df07-11dc" includeChildSelections="false" automatic="true"/>
                   </constraints>
                   <modifierGroups>
                     <modifierGroup type="and">
                       <modifiers>
                         <modifier type="set" value="1" field="bbd1-a974-df07-11dc">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="6a22-afe3-4375-0c30" shared="true" includeChildSelections="true"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="6a22-afe3-4375-0c30" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                         <modifier type="set" value="0" field="33b4-c2ac-f327-e180">
                           <conditionGroups>
@@ -855,16 +865,21 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                 </entryLink>
                 <entryLink import="true" name="Reactive shield" hidden="false" id="3b8d-cb03-9705-dd40" type="selectionEntry" targetId="bc9f-527a-a654-9828">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f61a-4f1c-e8b2-315f" includeChildSelections="false"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9a94-30da-a9a4-bc97" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f61a-4f1c-e8b2-315f" includeChildSelections="false" automatic="true"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9a94-30da-a9a4-bc97" includeChildSelections="false" automatic="true"/>
                   </constraints>
                   <modifierGroups>
                     <modifierGroup type="and">
                       <modifiers>
                         <modifier type="set" value="1" field="9a94-30da-a9a4-bc97">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a0cc-52c3-fc81-5aa9" shared="true" includeChildSelections="true"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a0cc-52c3-fc81-5aa9" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                         <modifier type="set" value="0" field="f61a-4f1c-e8b2-315f">
                           <conditionGroups>
