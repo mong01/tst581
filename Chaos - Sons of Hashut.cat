@@ -805,20 +805,64 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                 <entryLink import="true" name="Twin magna-coil needler" hidden="false" id="76cf-1df3-6671-d92b" type="selectionEntry" targetId="96bb-8a5c-c838-7ff8">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33b4-c2ac-f327-e180" includeChildSelections="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bbd1-a974-df07-11dc" includeChildSelections="false"/>
                   </constraints>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="1" field="bbd1-a974-df07-11dc">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="6a22-afe3-4375-0c30" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="0" field="33b4-c2ac-f327-e180">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="6a22-afe3-4375-0c30" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </entryLink>
                 <entryLink import="true" name="Reactive shield" hidden="false" id="3b8d-cb03-9705-dd40" type="selectionEntry" targetId="bc9f-527a-a654-9828">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f61a-4f1c-e8b2-315f" includeChildSelections="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9a94-30da-a9a4-bc97" includeChildSelections="false"/>
                   </constraints>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="1" field="9a94-30da-a9a4-bc97">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="bc9f-527a-a654-9828" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="0" field="f61a-4f1c-e8b2-315f">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="6a22-afe3-4375-0c30" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Forgehammer" hidden="false" id="a24e-6dcd-c94b-7031">
+            <selectionEntry type="upgrade" import="true" name="Wyrdmaul" hidden="false" id="a24e-6dcd-c94b-7031">
               <profiles>
-                <profile name="Forgehammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="7821-4637-be2b-48cc">
+                <profile name="Wyrdmaul" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="7821-4637-be2b-48cc">
                   <characteristics>
                     <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                     <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
