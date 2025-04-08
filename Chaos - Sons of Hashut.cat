@@ -137,7 +137,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Huskul" hidden="false" id="e03a-c7c6-d3ea-afab" defaultAmount="" collective="true" flatten="false">
+        <selectionEntry type="model" import="true" name="Huskul" hidden="false" id="e03a-c7c6-d3ea-afab" collective="true" flatten="false">
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" id="2147-ef3e-7974-5f93" hidden="false" defaultSelectionEntryId="7690-6984-756c-ced0">
               <entryLinks>
@@ -211,8 +211,8 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a9f-04a6-1fb9-ae7e" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64d2-74c5-83fe-89f6" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e198-3d22-f42a-4227-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e198-3d22-f42a-4227-max" includeChildSelections="false" automatic="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Eldrkin Warrior w/ heavy weapon" hidden="false" id="7a76-0e31-d2b1-a268">
