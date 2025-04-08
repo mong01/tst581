@@ -781,13 +781,67 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
               <entryLinks>
                 <entryLink import="true" name="Wyrdstar" hidden="false" id="fc3c-0a0c-a0a8-1319" type="selectionEntry" targetId="773c-fe27-d47c-7d57">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c5d-a4b9-e6ee-b938" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c5d-a4b9-e6ee-b938" includeChildSelections="false" automatic="true"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dd69-2407-e7de-b662" includeChildSelections="false" automatic="true"/>
                   </constraints>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="1" field="dd69-2407-e7de-b662">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="1804-da93-90d7-f26d" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="set" value="0" field="9c5d-a4b9-e6ee-b938">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="9ac0-77cc-a265-74db" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </entryLink>
                 <entryLink import="true" name="Warpcore flail" hidden="false" id="9ac0-77cc-a265-74db" type="selectionEntry" targetId="de7a-2c1e-c689-dce1">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5fe-aa32-c521-08e6" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5fe-aa32-c521-08e6" includeChildSelections="false" automatic="true"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cb3a-dc27-396c-04e7" includeChildSelections="false" automatic="true"/>
                   </constraints>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="1" field="cb3a-dc27-396c-04e7">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a43f-4328-2bf9-3311" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="set" value="0" field="a5fe-aa32-c521-08e6">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="1804-da93-90d7-f26d" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
