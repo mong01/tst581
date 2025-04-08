@@ -812,7 +812,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                       <modifiers>
                         <modifier type="set" value="1" field="bbd1-a974-df07-11dc">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="6a22-afe3-4375-0c30" shared="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="6a22-afe3-4375-0c30" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </modifier>
                         <modifier type="set" value="0" field="33b4-c2ac-f327-e180">
@@ -820,7 +820,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                             <conditionGroup type="or">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="6a22-afe3-4375-0c30" shared="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="6a22-afe3-4375-0c30" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -839,7 +839,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                       <modifiers>
                         <modifier type="set" value="1" field="9a94-30da-a9a4-bc97">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="bc9f-527a-a654-9828" shared="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="bc9f-527a-a654-9828" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </modifier>
                         <modifier type="set" value="0" field="f61a-4f1c-e8b2-315f">
@@ -847,7 +847,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                             <conditionGroup type="or">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="6a22-afe3-4375-0c30" shared="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="6a22-afe3-4375-0c30" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
