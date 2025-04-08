@@ -1051,7 +1051,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <infoLink name="Devastating Wounds" id="6d7d-ecab-a258-9f87" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Reactive shield" hidden="false" id="bc9f-527a-a654-9828">
+    <selectionEntry type="upgrade" import="true" name="Reactive shield" hidden="false" id="bc9f-527a-a654-9828" collective="true">
       <profiles>
         <profile name="Reactive shield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2a76-eebc-5e54-345f">
           <characteristics>
