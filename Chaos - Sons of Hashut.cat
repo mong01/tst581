@@ -210,10 +210,6 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
               </constraints>
             </entryLink>
           </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e198-3d22-f42a-4227-min" includeChildSelections="false" automatic="true"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e198-3d22-f42a-4227-max" includeChildSelections="false" automatic="true"/>
-          </constraints>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Eldrkin Warrior w/ heavy weapon" hidden="false" id="7a76-0e31-d2b1-a268">
           <constraints>
