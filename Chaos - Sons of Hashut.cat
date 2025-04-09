@@ -1118,7 +1118,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="1864-f3ac-6e4c-a591" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Molten weapons" hidden="false" id="98a8-2379-632f-9a87">
+            <selectionEntry type="upgrade" import="true" name="Molten weapons" hidden="false" id="98a8-2379-632f-9a87" collective="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f9d-3c66-9776-b704-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f9d-3c66-9776-b704-max" includeChildSelections="false"/>
