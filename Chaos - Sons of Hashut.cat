@@ -11,6 +11,8 @@
     <categoryEntry name="Ork Labourers" id="d16e-730a-396a-fa61" hidden="false"/>
     <categoryEntry name="Eignutkin Scorchers" id="f1e9-be59-4ec5-ef74" hidden="false"/>
     <categoryEntry name="Infernal Ironsworn" id="0e4b-e977-21ae-a4be" hidden="false"/>
+    <categoryEntry name="Bulky" id="9e56-6003-6412-df2d" hidden="false"/>
+    <categoryEntry name="Very Bulky" id="acf4-333b-7e98-b467" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Ash &amp; Iron" id="1834-ed25-4ab3-5dba" hidden="false">
@@ -704,6 +706,11 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6b12-4840-3aa9-53a8">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infernal Ironsworn" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7622-ba59-d08f-b4a4">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
           </characteristics>
         </profile>
       </profiles>
