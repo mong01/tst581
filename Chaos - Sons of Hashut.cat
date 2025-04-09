@@ -1165,6 +1165,14 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="fdb9-ed8a-b751-05e7" primary="true" name="Infantry"/>
+        <categoryLink targetId="79a2-e087-bf6c-aeba" id="9ae9-295a-c500-1a58" primary="false" name="K&apos;daai"/>
+        <categoryLink targetId="1da7-8354-346b-0f06" id="04c3-e7c3-c0ec-b8f9" primary="false" name="K&apos;daai Fireborn"/>
+        <categoryLink targetId="9c0e-7e25-4580-e439" id="3869-bdf9-7c03-e7a8" primary="false" name="Daemon"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="ee7a-8d94-8e70-7c5c" primary="false" name="Chaos"/>
+        <categoryLink targetId="9321-c9ec-e974-81fa" id="de10-46fe-b4df-9d3c" primary="false" name="Faction: Sons of Hashut"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
