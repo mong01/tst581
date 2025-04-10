@@ -1400,7 +1400,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="2x Slagthrower" hidden="false" id="7a29-f9d9-6501-2f9c">
               <entryLinks>
-                <entryLink import="true" name="Slagthrower" hidden="false" id="5785-a29d-af6d-3365" type="selectionEntry" targetId="3077-4738-c7f9-547f">
+                <entryLink import="true" name="Slagthrower" hidden="false" id="5785-a29d-af6d-3365" type="selectionEntry" targetId="3077-4738-c7f9-547f" flatten="true">
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4531-1869-2c0b-ef70" includeChildSelections="false" automatic="false"/>
                     <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="708b-8928-81c0-6124" includeChildSelections="false" automatic="false"/>
