@@ -1401,13 +1401,14 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <entryLink import="true" name="Slagthrower" hidden="false" id="52e6-8f3d-4314-0282" type="selectionEntry" targetId="3077-4738-c7f9-547f">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5914-f6a0-aa69-9edb" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4a49-102e-4abb-18c3" includeChildSelections="false" automatic="true"/>
               </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Mechanical limbs" hidden="false" id="fc59-64ee-532b-6710" flatten="true">
+        <selectionEntry type="upgrade" import="true" name="Mechanical limbs" hidden="false" id="fc59-64ee-532b-6710" flatten="false">
           <profiles>
             <profile name="Mechanical limbs" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="f1cb-0a63-7910-5d23">
               <characteristics>
