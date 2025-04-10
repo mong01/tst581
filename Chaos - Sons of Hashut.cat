@@ -1318,7 +1318,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="8d7a-db28-63fe-f071" hidden="false">
+        <selectionEntryGroup name="Primary weapons" id="8d7a-db28-63fe-f071" hidden="false">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Warpcore autocannon" hidden="false" id="befd-2964-e464-5f16">
               <constraints>
@@ -1333,28 +1333,58 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Lethal Hits</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Lethal Hits</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink name="Lethal Hits" id="9f92-6dd6-2c23-2a53" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+                <infoLink name="Heavy" id="f4fa-546d-fd0f-89d2" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+              </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Crucible core-cannon" hidden="false" id="2eb1-e7ee-1c52-5551">
+            <selectionEntry type="upgrade" import="true" name="Shardspitter" hidden="false" id="2eb1-e7ee-1c52-5551">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2dd8-21b7-81e5-4e7e" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Crucible core-cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="65f9-83d3-594a-5df9">
+                <profile name="Shardspitter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="054c-92b6-6094-ce9f">
                   <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">30&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">10</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+3</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 3</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Rapid Fire 10</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink name="Assault" id="6d23-7008-87fc-3292" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                <infoLink name="Rapid Fire" id="f39d-6a59-6e89-9964" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Surtrite hellbore" hidden="false" id="d06e-0187-3bbd-efb3">
+              <profiles>
+                <profile name="Surtrite hellbore" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f454-0bdf-e4cd-71f5">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">18</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+6</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Heavy</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f72c-c46e-dc6a-0d17" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Devastating Wounds" id="a7db-5d59-3be1-b29e" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                <infoLink name="Heavy" id="d052-0732-c359-75b8" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1362,7 +1392,41 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab1b-1305-eb1e-74d4" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Secondary weapons" id="2119-24c1-5831-ccbe" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="040c-1a0d-b81c-952e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="040c-1a0d-b81c-952e-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Slagthrower" hidden="false" id="52e6-8f3d-4314-0282" type="selectionEntry" targetId="3077-4738-c7f9-547f">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5914-f6a0-aa69-9edb" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mechanical limbs" hidden="false" id="fc59-64ee-532b-6710">
+          <profiles>
+            <profile name="Mechanical limbs" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="f1cb-0a63-7910-5d23">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c2c-05c8-1215-3b11-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c2c-05c8-1215-3b11-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -1372,6 +1436,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
     <entryLink import="true" name="Infernal Ironsworn" hidden="false" id="37b9-9571-80ff-e6ff" type="selectionEntry" targetId="1001-97cc-a296-9abe"/>
     <entryLink import="true" name="K&apos;daai Fireborn" hidden="false" id="4f44-0512-c8ec-2f8a" targetId="1a09-356d-72a7-13e7" type="selectionEntry"/>
     <entryLink import="true" name="K&apos;daai Destroyer" hidden="false" id="03e4-cc4a-3dd3-7493" targetId="b612-aee2-7b4f-dc63" type="selectionEntry"/>
+    <entryLink import="true" name="K&apos;daai Obliterator" hidden="false" id="a098-6b69-7974-81fe" targetId="ccdb-84ab-5af7-2ca5" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Fireglaive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fea9-43bc-25b1-0c6d">
