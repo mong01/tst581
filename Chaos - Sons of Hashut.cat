@@ -1318,7 +1318,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Primary weapons" id="8d7a-db28-63fe-f071" hidden="false">
+        <selectionEntryGroup name="Primary weapons" id="8d7a-db28-63fe-f071" hidden="false" defaultSelectionEntryId="befd-2964-e464-5f16">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Warpcore autocannon" hidden="false" id="befd-2964-e464-5f16">
               <constraints>
@@ -1407,7 +1407,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Mechanical limbs" hidden="false" id="fc59-64ee-532b-6710">
+        <selectionEntry type="upgrade" import="true" name="Mechanical limbs" hidden="false" id="fc59-64ee-532b-6710" flatten="true">
           <profiles>
             <profile name="Mechanical limbs" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="f1cb-0a63-7910-5d23">
               <characteristics>
