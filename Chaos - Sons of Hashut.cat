@@ -15,6 +15,7 @@
     <categoryEntry name="Very Bulky" id="acf4-333b-7e98-b467" hidden="false"/>
     <categoryEntry name="K&apos;daai Fireborn" id="1da7-8354-346b-0f06" hidden="false"/>
     <categoryEntry name="K&apos;daai Destroyer" id="8de9-3fa9-16e5-9302" hidden="false"/>
+    <categoryEntry name="K&apos;daai Obliterator" id="d419-b605-5f40-5afc" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Ash &amp; Iron" id="1834-ed25-4ab3-5dba" hidden="false">
@@ -374,17 +375,14 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink name="Heavy" id="4745-e660-c867-0df9" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Warpcore culverin" hidden="false" id="b14d-8df8-e100-27c6">
       <profiles>
@@ -452,6 +450,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="d334-472c-b2e5-d906" primary="true" name="Infantry"/>
         <categoryLink targetId="9321-c9ec-e974-81fa" id="7cac-8167-2c50-a99e" primary="false" name="Faction: Sons of Hashut"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="2c07-096a-813f-22e4" primary="false" name="Chaos"/>
+        <categoryLink targetId="b43e-3214-405e-9d00" id="fb18-2314-eace-2749" primary="false" name="Slave"/>
       </categoryLinks>
       <profiles>
         <profile name="Ork Labourers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ad1d-cc10-98df-7a0e">
@@ -726,6 +725,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <categoryLink targetId="0e4b-e977-21ae-a4be" id="5967-2555-2ad2-60d7" primary="false" name="Infernal Ironsworn"/>
         <categoryLink targetId="9321-c9ec-e974-81fa" id="3cee-4816-d02c-3f4a" primary="false" name="Faction: Sons of Hashut"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="d4eb-fbc9-2515-5542" primary="false" name="Grenades"/>
+        <categoryLink targetId="9e56-6003-6412-df2d" id="7670-35e3-267b-a857" primary="false" name="Bulky"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="594b-52da-bed2-961c" includeChildSelections="true" includeChildForces="true"/>
@@ -1212,7 +1212,157 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">5</characteristic>
           </characteristics>
         </profile>
+        <profile name="Avatar of Destruction" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f7f6-1f7c-d54b-259e">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a melee attack, re-roll a Hit roll of 1. If this model made a Charge move this turn, you can re-roll the Hit roll instead.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Heat vent" hidden="false" id="a291-4890-f7cc-00e2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8838-4101-c9b3-f1dc-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8838-4101-c9b3-f1dc-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Heat vent" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3396-196a-cede-5666">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Torrent" id="443e-dca3-2406-4523" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+            <infoLink name="Ignores Cover" id="57b4-c5c8-cd44-dff0" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bladed arms" hidden="false" id="f086-aac6-52b5-3f41">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1976-5b6d-4a38-8c1c-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1976-5b6d-4a38-8c1c-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="➤ Bladed arms - strike" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0bf5-deb7-26eb-45e5">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">14</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">D3+3</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="➤ Bladed arms - sweep" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0e43-28d8-cce5-49b4">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">10</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="K&apos;daai Obliterator" hidden="false" id="ccdb-84ab-5af7-2ca5">
+      <categoryLinks>
+        <categoryLink name="Chaos" hidden="false" id="ea9a-9e2b-88b1-da5d" targetId="4c00-2578-faf5-6918" primary="false"/>
+        <categoryLink name="Vehicle" hidden="false" id="954a-a9ee-fb8f-7659" targetId="dbd4-63-af05-998" primary="true"/>
+        <categoryLink name="Smoke" hidden="false" id="e617-40dc-055d-20b5" targetId="6df-937-16bc-8c1a" primary="false"/>
+        <categoryLink name="Daemon" hidden="false" id="217a-c975-a013-1bc1" targetId="9c0e-7e25-4580-e439" primary="false"/>
+        <categoryLink name="Faction: Sons of Hashut" hidden="false" id="0a1f-3887-5385-914c" targetId="9321-c9ec-e974-81fa" primary="false"/>
+        <categoryLink name="K&apos;daai" hidden="false" id="ed6d-cf70-6881-9643" targetId="79a2-e087-bf6c-aeba" primary="false"/>
+        <categoryLink targetId="d419-b605-5f40-5afc" id="fc59-4850-466f-6458" primary="false" name="K&apos;daai Obliterator"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1ea5-b885-1a24-797e" includeChildSelections="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Ash &amp; Iron" id="6708-2980-85e0-8e64" hidden="false" type="rule" targetId="1834-ed25-4ab3-5dba"/>
+        <infoLink name="Deadly Demise" id="0fd5-24d5-db22-f646" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="D6" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c9be-dc51-d54b-90b0">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="K&apos;daai Obliterator" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="556e-d7ae-da8a-3ac6">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">16</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="K&apos;daai Destroyer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0537-0aba-d6c8-e439">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="8d7a-db28-63fe-f071" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Warpcore autocannon" hidden="false" id="befd-2964-e464-5f16">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46d8-fc1b-6e6b-c594" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Warpcore autocannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0e5d-e031-90bf-2bb1">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Lethal Hits</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Crucible core-cannon" hidden="false" id="2eb1-e7ee-1c52-5551">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2dd8-21b7-81e5-4e7e" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Crucible core-cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="65f9-83d3-594a-5df9">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">30&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+3</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b35-5399-b62a-dbda" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab1b-1305-eb1e-74d4" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -1221,7 +1371,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
     <entryLink import="true" name="Eignutkin Scorchers" hidden="false" id="c4ab-d080-7ce0-b79f" type="selectionEntry" targetId="669a-5d8c-f57b-b52e"/>
     <entryLink import="true" name="Infernal Ironsworn" hidden="false" id="37b9-9571-80ff-e6ff" type="selectionEntry" targetId="1001-97cc-a296-9abe"/>
     <entryLink import="true" name="K&apos;daai Fireborn" hidden="false" id="4f44-0512-c8ec-2f8a" targetId="1a09-356d-72a7-13e7" type="selectionEntry"/>
-    <entryLink import="true" name="New Entry" hidden="false" id="03e4-cc4a-3dd3-7493" targetId="b612-aee2-7b4f-dc63" type="selectionEntry"/>
+    <entryLink import="true" name="K&apos;daai Destroyer" hidden="false" id="03e4-cc4a-3dd3-7493" targetId="b612-aee2-7b4f-dc63" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Fireglaive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fea9-43bc-25b1-0c6d">
