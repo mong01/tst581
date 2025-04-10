@@ -14,7 +14,7 @@
     <categoryEntry name="Bulky" id="9e56-6003-6412-df2d" hidden="false"/>
     <categoryEntry name="Very Bulky" id="acf4-333b-7e98-b467" hidden="false"/>
     <categoryEntry name="K&apos;daai Fireborn" id="1da7-8354-346b-0f06" hidden="false"/>
-    <categoryEntry name="K&apos;daai Destroyer" id="8de9-3fa9-16e5-9302" hidden="false"/>
+    <categoryEntry name="K&apos;daai Mutilator" id="8de9-3fa9-16e5-9302" hidden="false"/>
     <categoryEntry name="K&apos;daai Obliterator" id="d419-b605-5f40-5afc" hidden="false"/>
   </categoryEntries>
   <sharedRules>
@@ -1175,7 +1175,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <categoryLink targetId="9321-c9ec-e974-81fa" id="de10-46fe-b4df-9d3c" primary="false" name="Faction: Sons of Hashut"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="K&apos;daai Destroyer" hidden="false" id="b612-aee2-7b4f-dc63">
+    <selectionEntry type="model" import="true" name="K&apos;daai Mutilator" hidden="false" id="b612-aee2-7b4f-dc63">
       <categoryLinks>
         <categoryLink targetId="4c00-2578-faf5-6918" id="a0c2-f6f5-b077-e3a0" primary="false" name="Chaos"/>
         <categoryLink targetId="dbd4-63-af05-998" id="bf82-a795-9132-6a37" primary="true" name="Vehicle"/>
@@ -1202,7 +1202,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
-        <profile name="K&apos;daai Destroyer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="04e8-d5af-56bd-c83a">
+        <profile name="K&apos;daai Mutilator" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="04e8-d5af-56bd-c83a">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
@@ -1398,9 +1398,9 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="040c-1a0d-b81c-952e-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="2x Slagthrower" hidden="false" id="7a29-f9d9-6501-2f9c">
+            <selectionEntry type="upgrade" import="true" name="2x Slagthrower" hidden="false" id="7a29-f9d9-6501-2f9c" flatten="true" collapsible="true">
               <entryLinks>
-                <entryLink import="true" name="Slagthrower" hidden="false" id="5785-a29d-af6d-3365" type="selectionEntry" targetId="3077-4738-c7f9-547f" flatten="true">
+                <entryLink import="true" name="Slagthrower" hidden="false" id="5785-a29d-af6d-3365" type="selectionEntry" targetId="3077-4738-c7f9-547f" flatten="true" collapsible="true">
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4531-1869-2c0b-ef70" includeChildSelections="false" automatic="false"/>
                     <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="708b-8928-81c0-6124" includeChildSelections="false" automatic="false"/>
