@@ -40,7 +40,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         </profile>
         <profile name="Rune of Immunity" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b8a9-5f49-1885-f2ec">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit has the Feel No Pain 3+ ability against mortal wounds.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit has the Feel No Pain 4+ ability against mortal wounds.</characteristic>
           </characteristics>
         </profile>
         <profile name="Rune of Frenzy" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="69a0-e59c-e531-182a">
@@ -587,9 +587,11 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
-        <profile name="Blistering Energies (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b7c0-006b-2e9d-f30a">
+        <profile name="Exotic Energies" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b7c0-006b-2e9d-f30a">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an enemy unit (excluding MONSTER or VEHICLE units) is within 12&quot; of this unit, subtract 2&quot; from its Move characteristic and subtract 2 from Advance and Charge rolls made for it.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit is selected to shoot, it can use this ability. If it does, until the end of the phase:
+■ Each time a model in this unit makes a ranged attack, you can re-roll the Hit roll and the Wound roll.
+■ Ranged weapons equipped by models in this unit have the [HAZARDOUS] ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1183,7 +1185,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <categoryLink targetId="9c0e-7e25-4580-e439" id="a494-9289-1fad-819f" primary="false" name="Daemon"/>
         <categoryLink targetId="9321-c9ec-e974-81fa" id="cec5-1dcb-74aa-1829" primary="false" name="Faction: Sons of Hashut"/>
         <categoryLink targetId="79a2-e087-bf6c-aeba" id="2c2f-4139-8cb0-e2b1" primary="false" name="K&apos;daai"/>
-        <categoryLink targetId="8de9-3fa9-16e5-9302" id="20f7-136a-0215-661e" primary="false" name="K&apos;daai Destroyer"/>
+        <categoryLink targetId="8de9-3fa9-16e5-9302" id="20f7-136a-0215-661e" primary="false" name="K&apos;daai Mutilator"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e595-5ccf-d726-a26f" includeChildSelections="true"/>
@@ -1313,7 +1315,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         </profile>
         <profile name="K&apos;daai Destroyer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0537-0aba-d6c8-e439">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a ranged attack</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1349,7 +1351,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
               <profiles>
                 <profile name="Shardspitter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="054c-92b6-6094-ce9f">
                   <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
                     <characteristic name="A" typeId="3bb-c35f-f54-fb08">10</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
@@ -1392,18 +1394,47 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab1b-1305-eb1e-74d4" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Secondary weapons" id="2119-24c1-5831-ccbe" hidden="false">
+        <selectionEntryGroup name="Secondary weapons" id="2119-24c1-5831-ccbe" hidden="false" defaultSelectionEntryId="7a29-f9d9-6501-2f9c">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="040c-1a0d-b81c-952e-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="040c-1a0d-b81c-952e-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="2x Slagthrower" hidden="false" id="7a29-f9d9-6501-2f9c" flatten="true" collapsible="true">
-              <entryLinks>
-                <entryLink import="true" name="Slagthrower" hidden="false" id="5785-a29d-af6d-3365" type="selectionEntry" targetId="3077-4738-c7f9-547f" flatten="true" collapsible="true">
+            <selectionEntry type="upgrade" import="true" name="2x Spike pod" hidden="false" id="7a29-f9d9-6501-2f9c" flatten="true" collapsible="true">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Spike pod" hidden="false" id="a946-601b-d8e0-760c">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4531-1869-2c0b-ef70" includeChildSelections="false" automatic="false"/>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="708b-8928-81c0-6124" includeChildSelections="false" automatic="false"/>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3c9b-c7d1-79f0-7b36" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="542f-2fdb-d77f-3303" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Spike pod" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1e91-f888-defc-ce96">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e01e-9d1b-2dda-266a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="2x Slagthrower" hidden="false" id="5007-8a47-25d0-9a03">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e0c-4dad-31c5-85c9" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Slagthrower" hidden="false" id="9dc9-3c60-27d6-4704" type="selectionEntry" targetId="3077-4738-c7f9-547f">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e9bc-aa7f-59ea-f693" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6234-35c0-5aac-d129" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -1440,7 +1471,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
     <entryLink import="true" name="Eignutkin Scorchers" hidden="false" id="c4ab-d080-7ce0-b79f" type="selectionEntry" targetId="669a-5d8c-f57b-b52e"/>
     <entryLink import="true" name="Infernal Ironsworn" hidden="false" id="37b9-9571-80ff-e6ff" type="selectionEntry" targetId="1001-97cc-a296-9abe"/>
     <entryLink import="true" name="K&apos;daai Fireborn" hidden="false" id="4f44-0512-c8ec-2f8a" targetId="1a09-356d-72a7-13e7" type="selectionEntry"/>
-    <entryLink import="true" name="K&apos;daai Destroyer" hidden="false" id="03e4-cc4a-3dd3-7493" targetId="b612-aee2-7b4f-dc63" type="selectionEntry"/>
+    <entryLink import="true" name="K&apos;daai Mutilator" hidden="false" id="03e4-cc4a-3dd3-7493" targetId="b612-aee2-7b4f-dc63" type="selectionEntry"/>
     <entryLink import="true" name="K&apos;daai Obliterator" hidden="false" id="a098-6b69-7974-81fe" targetId="ccdb-84ab-5af7-2ca5" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
