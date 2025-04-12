@@ -16,7 +16,7 @@
     <categoryEntry name="K&apos;daai Fireborn" id="1da7-8354-346b-0f06" hidden="false"/>
     <categoryEntry name="K&apos;daai Mutilator" id="8de9-3fa9-16e5-9302" hidden="false"/>
     <categoryEntry name="K&apos;daai Obliterator" id="d419-b605-5f40-5afc" hidden="false"/>
-    <categoryEntry name="Magma " id="1a16-ae9c-8a5c-91dd" hidden="false"/>
+    <categoryEntry name="Muzkelgrim Siege Tank" id="1a16-ae9c-8a5c-91dd" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Ash &amp; Iron" id="1834-ed25-4ab3-5dba" hidden="false">
@@ -1479,6 +1479,128 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Muzkelgrim Siege Tank" hidden="false" id="c475-0a58-a056-0db4">
+      <categoryLinks>
+        <categoryLink targetId="dbd4-63-af05-998" id="dc8e-610e-4ce3-e99b" primary="true" name="Vehicle"/>
+        <categoryLink targetId="6df-937-16bc-8c1a" id="752a-6cf2-dbef-1f79" primary="false" name="Smoke"/>
+        <categoryLink targetId="9321-c9ec-e974-81fa" id="db07-3820-36bf-b8d9" primary="false" name="Faction: Sons of Hashut"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="e172-d699-03d9-241e" primary="false" name="Chaos"/>
+        <categoryLink targetId="1a16-ae9c-8a5c-91dd" id="2ed5-d520-98c7-28cc" primary="false" name="Muzkelgrim"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Ash &amp; Iron" id="9d9a-d99f-83cc-cfe9" hidden="false" type="rule" targetId="1834-ed25-4ab3-5dba"/>
+        <infoLink name="Deadly Demise" id="2ec8-054f-6d28-0707" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="D3" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="b54c-223c-4708-c2dd" includeChildSelections="true"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Magma cannon" hidden="false" id="8a37-afc4-5a11-a4b0">
+          <profiles>
+            <profile name="➤ Magma cannon - obsidian shell" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="38c7-027e-9a1e-5f8d">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Ignores Cover, Indirect Fire</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="➤ Magma cannon - fire thrower" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5985-b653-3c89-262c">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="14a6-a960-4aa1-2c6c-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14a6-a960-4aa1-2c6c-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Blast" id="1a84-5360-8e0c-48c8" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+            <infoLink name="Ignores Cover" id="3b8b-5f3d-97e7-34c0" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+            <infoLink name="Indirect Fire" id="fabe-2133-1833-8ba1" hidden="false" type="rule" targetId="4ddd-4e29-acdd-5e6d"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Muzkelgrim Siege Tank" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f2d6-a10b-d30a-3bdc">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">11</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infernal Flames" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5dbd-0b2e-329d-c3dd">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, if one or more of those attacks made with its magma cannon scored a hit against an enemy unit (excluding MONSTER or VEHICLE units), that unit must take a Battle-shock test.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Twin bolt cannon" hidden="false" id="d367-97da-338a-ecb0" type="selectionEntry" targetId="d783-e2d7-2544-68a7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="215e-6064-a447-0531-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="215e-6064-a447-0531-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Armoured tracks" hidden="false" id="250e-50a0-c737-cc6f" type="selectionEntry" targetId="bc8e-c636-0fa3-5726">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0955-9cc1-c424-710d-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0955-9cc1-c424-710d-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin bolt cannon" hidden="false" id="d783-e2d7-2544-68a7">
+      <profiles>
+        <profile name="Twin bolt cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="be00-8595-b362-552a">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 1, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Sustained Hits" id="f917-a0ea-05e6-2aec" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+        <infoLink name="Twin-linked" id="ab62-d231-76f2-9cea" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Armoured tracks" hidden="false" id="bc8e-c636-0fa3-5726">
+      <profiles>
+        <profile name="Armoured tracks" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4e1d-f372-1fd1-a934">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Eldrkin Warriors" hidden="false" id="5698-24c6-9c6c-c944" type="selectionEntry" targetId="1dc7-a7c2-0019-212a"/>
@@ -1488,6 +1610,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
     <entryLink import="true" name="K&apos;daai Fireborn" hidden="false" id="4f44-0512-c8ec-2f8a" targetId="1a09-356d-72a7-13e7" type="selectionEntry"/>
     <entryLink import="true" name="K&apos;daai Mutilator" hidden="false" id="03e4-cc4a-3dd3-7493" targetId="b612-aee2-7b4f-dc63" type="selectionEntry"/>
     <entryLink import="true" name="K&apos;daai Obliterator" hidden="false" id="a098-6b69-7974-81fe" targetId="ccdb-84ab-5af7-2ca5" type="selectionEntry"/>
+    <entryLink import="true" name="Muzkelgrim" hidden="false" id="f8a7-f2c8-7201-9c01" targetId="c475-0a58-a056-0db4" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Fireglaive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fea9-43bc-25b1-0c6d">
