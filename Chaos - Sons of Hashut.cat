@@ -1275,6 +1275,13 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="K&apos;daai Obliterator" hidden="false" id="ccdb-84ab-5af7-2ca5">
       <categoryLinks>
@@ -1313,9 +1320,9 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">5</characteristic>
           </characteristics>
         </profile>
-        <profile name="K&apos;daai Destroyer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0537-0aba-d6c8-e439">
+        <profile name="Malicious Predator" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0537-0aba-d6c8-e439">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a ranged attack</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a ranged attack that targets a unit that is not Below Half-strength, you can re-roll the Hit roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1351,19 +1358,19 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
               <profiles>
                 <profile name="Shardspitter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="054c-92b6-6094-ce9f">
                   <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">10</characteristic>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">20</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Rapid Fire 10</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Sustained Hits 1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Assault" id="6d23-7008-87fc-3292" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
-                <infoLink name="Rapid Fire" id="f39d-6a59-6e89-9964" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
+                <infoLink name="Sustained Hits" id="f39d-6a59-6e89-9964" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Surtrite hellbore" hidden="false" id="d06e-0187-3bbd-efb3">
@@ -1463,6 +1470,13 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="240"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
