@@ -19,8 +19,8 @@
     <categoryEntry name="Muzkelgrim" id="1a16-ae9c-8a5c-91dd" hidden="false"/>
     <categoryEntry name="Gungzhar" id="3bda-1ec2-881c-2521" hidden="false"/>
     <categoryEntry name="Hrungtyr Bombard" id="38ab-2289-13d4-45fc" hidden="false"/>
-    <categoryEntry name="Iron Daemon" id="e3ae-cb06-44b3-50e8" hidden="false"/>
-    <categoryEntry name="Skullcracker" id="f062-d040-bfb9-4f1d" hidden="false"/>
+    <categoryEntry name="Iron Daemons" id="e3ae-cb06-44b3-50e8" hidden="false"/>
+    <categoryEntry name="Skullcrackers" id="f062-d040-bfb9-4f1d" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Ash &amp; Iron" id="1834-ed25-4ab3-5dba" hidden="false">
@@ -84,7 +84,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <infoLink name="Ash &amp; Iron" id="ec9b-c1f7-f0de-cc43" hidden="false" type="rule" targetId="1834-ed25-4ab3-5dba"/>
       </infoLinks>
       <profiles>
-        <profile name="Eldrkin Warriors" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="93b4-f228-414a-3fdf">
+        <profile name="Eldrkin Warrior" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="93b4-f228-414a-3fdf">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
@@ -293,7 +293,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -303,7 +303,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <constraint type="max" value="6" field="selections" scope="force" shared="true" id="785a-acd7-d5af-c109" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <modifiers>
-        <modifier type="increment" value="75" field="51b2-306e-1021-d207">
+        <modifier type="increment" value="80" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="1dc7-a7c2-0019-212a" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -457,7 +457,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <categoryLink targetId="b43e-3214-405e-9d00" id="fb18-2314-eace-2749" primary="false" name="Slave"/>
       </categoryLinks>
       <profiles>
-        <profile name="Ork Labourers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ad1d-cc10-98df-7a0e">
+        <profile name="Ork Labourer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ad1d-cc10-98df-7a0e">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
@@ -581,7 +581,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <infoLink name="Ash &amp; Iron" id="8218-9654-36f3-9681" hidden="false" type="rule" targetId="1834-ed25-4ab3-5dba"/>
       </infoLinks>
       <profiles>
-        <profile name="Eignutkin Scorchers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="2080-296e-461a-d4a0">
+        <profile name="Eignutkin Scorcher" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="2080-296e-461a-d4a0">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
@@ -666,14 +666,14 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         </selectionEntry>
       </selectionEntries>
       <modifiers>
-        <modifier type="increment" value="65" field="51b2-306e-1021-d207">
+        <modifier type="increment" value="70" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="669a-5d8c-f57b-b52e" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -1886,6 +1886,11 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
         </profile>
+        <profile name="Decisive Assault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f78c-1e5e-56ab-d3a9">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack, re-roll a Wound roll of 1. If the target of that attack is an enemy unit within range of an objective marker, you can re-roll the Wound roll instead.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="0b5a-ae6e-3851-3895" primary="true" name="Vehicle"/>
@@ -1919,28 +1924,28 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Options" id="1698-5a32-417e-6f1e" hidden="false">
+            <selectionEntryGroup name="Options" id="1698-5a32-417e-6f1e" hidden="false" defaultSelectionEntryId="ea23-ebef-16bf-65d5">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Shrapnel cannonade" hidden="false" id="ea23-ebef-16bf-65d5">
                   <profiles>
-                    <profile name="➤ Shrapnel cannonade - long range" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8633-9c98-da7c-5aa8">
+                    <profile name="➤ Shard cannonade - long range" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8633-9c98-da7c-5aa8">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
                       </characteristics>
                     </profile>
-                    <profile name="➤ Shrapnel cannonade - close range" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e6aa-721f-04c6-5619">
+                    <profile name="➤ Shard cannonade - close range" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e6aa-721f-04c6-5619">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
                       </characteristics>
@@ -1953,25 +1958,16 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                     <infoLink name="Assault" id="bdc9-e9b2-34b7-be39" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
                   </infoLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Twin heavy mawgun" hidden="false" id="abc0-95cf-49cd-d66c">
-                  <profiles>
-                    <profile name="Twin heavy mawgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="08e2-ca54-623b-575f">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Twin-linked</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Blast" id="1e32-baee-66e9-ab60" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
-                  </infoLinks>
+                <selectionEntry type="upgrade" import="true" name="2x Ironfist torpedo launcher" hidden="false" id="85d8-8bc3-3f3f-ab43">
+                  <entryLinks>
+                    <entryLink import="true" name="Ironfist torpedo launcher" hidden="false" id="7189-a9ae-1987-f74c" type="selectionEntry" targetId="b71c-d9ff-afa1-124d">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2f70-e7df-8aaa-2a36" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3a1-0683-6be8-31a5" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2956-149a-800c-c4f3" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
@@ -1981,10 +1977,157 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="fae0-5788-a36a-1f50" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="8cae-16ee-a40f-3c00" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Skullcrackers" hidden="false" id="627f-d406-f683-80f6">
+      <infoLinks>
+        <infoLink name="Ash &amp; Iron" id="aee1-139d-20a0-1448" hidden="false" type="rule" targetId="1834-ed25-4ab3-5dba"/>
+        <infoLink name="Deadly Demise" id="7111-137d-7a5f-0ba5" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="1" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Scouts" id="1393-d42a-586c-c3e0" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+          <modifiers>
+            <modifier type="append" value="9&quot;" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="58a9-c2d2-330c-8874">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 6+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Iron Daemon" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="568f-2589-2cdb-4c30">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">7</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Decisive Assault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="eb2d-2d34-e83b-d8a4">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack, re-roll a Wound roll of 1. If the target of that attack is an enemy unit within range of an objective marker, you can re-roll the Wound roll instead.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="4357-be08-c3eb-7732" targetId="dbd4-63-af05-998" primary="true"/>
+        <categoryLink name="Smoke" hidden="false" id="6f21-3f69-5520-bdf6" targetId="6df-937-16bc-8c1a" primary="false"/>
+        <categoryLink name="Fly" hidden="false" id="779d-cd25-d8b8-32e6" targetId="c619-2086-bbcf-69c9" primary="false"/>
+        <categoryLink name="Faction: Sons of Hashut" hidden="false" id="5283-a555-1374-a36c" targetId="9321-c9ec-e974-81fa" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="ca63-1dde-2271-9c53" targetId="4c00-2578-faf5-6918" primary="false"/>
+        <categoryLink targetId="f062-d040-bfb9-4f1d" id="8588-541f-b22f-90e2" primary="false" name="Skullcrackers"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Skullcracker" hidden="false" id="5111-314c-95ac-7c5f" defaultAmount="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Armoured bulk" hidden="false" id="aa9f-ffd2-491a-cfb9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a63-c8e2-28ed-5549-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a63-c8e2-28ed-5549-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Armoured bulk" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="a736-d440-5acc-7ecf">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="394b-0008-8d81-b918" hidden="false" defaultSelectionEntryId="ea23-ebef-16bf-65d5">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Shrapnel cannonade" hidden="false" id="5632-4366-e723-7eb3">
+                  <profiles>
+                    <profile name="➤ Shard cannonade - long range" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e0ca-2c0a-c172-9ec8">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="➤ Shard cannonade - close range" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8a45-9401-1d62-1287">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55ad-7065-bc4b-9dcd" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Assault" id="972f-8b9f-d246-95e8" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="2x Ironfist torpedo launcher" hidden="false" id="a783-f8b0-05ea-5ff8">
+                  <entryLinks>
+                    <entryLink import="true" name="Ironfist torpedo launcher" hidden="false" id="4239-b583-a5b4-9267" type="selectionEntry" targetId="b71c-d9ff-afa1-124d">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2f47-02d7-2ed4-2383" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d031-1996-7032-9d99" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a17-d0ee-9193-0c8c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a17-d0ee-9193-0c8c-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b44d-2bed-f322-158e" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f222-476b-9f0a-e0f6" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
