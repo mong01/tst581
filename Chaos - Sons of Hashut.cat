@@ -1865,7 +1865,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <categoryLink targetId="e3ae-cb06-44b3-50e8" id="259f-6abf-fc2b-747a" primary="false" name="Iron Daemon"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Iron Daemon" hidden="false" id="5539-a349-fe27-b234">
+        <selectionEntry type="model" import="true" name="Iron Daemon" hidden="false" id="5539-a349-fe27-b234" defaultAmount="1">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Armoured bulk" hidden="false" id="9da8-d77b-dd47-2902">
               <constraints>
