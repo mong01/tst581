@@ -18,7 +18,9 @@
     <categoryEntry name="K&apos;daai Obliterator" id="d419-b605-5f40-5afc" hidden="false"/>
     <categoryEntry name="Muzkelgrim" id="1a16-ae9c-8a5c-91dd" hidden="false"/>
     <categoryEntry name="Gungzhar" id="3bda-1ec2-881c-2521" hidden="false"/>
-    <categoryEntry name="Hrungtyr" id="38ab-2289-13d4-45fc" hidden="false"/>
+    <categoryEntry name="Hrungtyr Bombard" id="38ab-2289-13d4-45fc" hidden="false"/>
+    <categoryEntry name="Iron Daemon" id="e3ae-cb06-44b3-50e8" hidden="false"/>
+    <categoryEntry name="Skullcracker" id="f062-d040-bfb9-4f1d" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Ash &amp; Iron" id="1834-ed25-4ab3-5dba" hidden="false">
@@ -422,7 +424,6 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
       </profiles>
       <infoLinks>
         <infoLink name="Blast" id="efa9-d7a6-e42f-bfc3" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
-        <infoLink name="Ignores Cover" id="d210-0afd-8bd7-7713" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Magna-rail arquebus" hidden="false" id="4256-43f6-e8fe-7b4d" collective="false">
@@ -1043,7 +1044,6 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mawgun" hidden="false" id="3cb9-9203-af11-3448" collective="true">
       <infoLinks>
-        <infoLink name="Ignores Cover" id="f8e6-a242-e8f2-2d49" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
         <infoLink name="Blast" id="96af-3bae-a534-0f08" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
       </infoLinks>
       <profiles>
@@ -1055,7 +1055,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Ignores Cover</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1371,12 +1371,11 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Sustained Hits 1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Assault" id="6d23-7008-87fc-3292" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
                 <infoLink name="Sustained Hits" id="f39d-6a59-6e89-9964" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
               </infoLinks>
             </selectionEntry>
@@ -1491,7 +1490,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <categoryLink targetId="6df-937-16bc-8c1a" id="752a-6cf2-dbef-1f79" primary="false" name="Smoke"/>
         <categoryLink targetId="9321-c9ec-e974-81fa" id="db07-3820-36bf-b8d9" primary="false" name="Faction: Sons of Hashut"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="e172-d699-03d9-241e" primary="false" name="Chaos"/>
-        <categoryLink targetId="1a16-ae9c-8a5c-91dd" id="2ed5-d520-98c7-28cc" primary="false" name="Muzkelgrim Siege Tank"/>
+        <categoryLink targetId="1a16-ae9c-8a5c-91dd" id="2ed5-d520-98c7-28cc" primary="false" name="Muzkelgrim"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Ash &amp; Iron" id="9d9a-d99f-83cc-cfe9" hidden="false" type="rule" targetId="1834-ed25-4ab3-5dba"/>
@@ -1559,6 +1558,11 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, if one or more of those attacks made with its magma cannon scored a hit against an enemy unit (excluding MONSTER or VEHICLE units), that unit must take a Battle-shock test.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="87d6-3feb-1671-a780">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 6+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Twin bolt cannon" hidden="false" id="d367-97da-338a-ecb0" type="selectionEntry" targetId="d783-e2d7-2544-68a7">
@@ -1575,7 +1579,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="155"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -1622,7 +1626,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <categoryLink name="Smoke" hidden="false" id="0b5c-1a3e-8d6a-73a8" targetId="6df-937-16bc-8c1a" primary="false"/>
         <categoryLink name="Faction: Sons of Hashut" hidden="false" id="ef18-2c0f-00ef-ba31" targetId="9321-c9ec-e974-81fa" primary="false"/>
         <categoryLink name="Chaos" hidden="false" id="2727-785d-c268-ada2" targetId="4c00-2578-faf5-6918" primary="false"/>
-        <categoryLink targetId="3bda-1ec2-881c-2521" id="9311-d104-bf81-ca39" primary="false" name="Sagivalkyr"/>
+        <categoryLink targetId="3bda-1ec2-881c-2521" id="9311-d104-bf81-ca39" primary="false" name="Gungzhar"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Ash &amp; Iron" id="38b2-cabf-21e5-74f7" hidden="false" type="rule" targetId="1834-ed25-4ab3-5dba"/>
@@ -1689,6 +1693,11 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit (excluding MONSTERS and VEHICLES) that was hit by one or more of those attacks made with this model’s deathshrieker rocket launcher. Until the start of your next Shooting phase, that enemy unit is tormented. While a unit is tormented, subtract 1 from the Objective Control characteristic of models in that unit (to a minimum of 1).</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d634-86b7-ca33-62e3">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 6+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Twin bolt cannon" hidden="false" id="cbc1-ef93-f8ff-d9b2" type="selectionEntry" targetId="d783-e2d7-2544-68a7">
@@ -1705,20 +1714,20 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="155"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Hrungtyr" hidden="false" id="f223-393a-2b06-10f7">
+    <selectionEntry type="model" import="true" name="Hrungtyr Bombard" hidden="false" id="f223-393a-2b06-10f7">
       <categoryLinks>
         <categoryLink name="Vehicle" hidden="false" id="48ae-05c7-2d34-6b44" targetId="dbd4-63-af05-998" primary="true"/>
         <categoryLink name="Smoke" hidden="false" id="0929-6697-563f-e0fe" targetId="6df-937-16bc-8c1a" primary="false"/>
         <categoryLink name="Faction: Sons of Hashut" hidden="false" id="91b0-6e1f-a324-6c61" targetId="9321-c9ec-e974-81fa" primary="false"/>
         <categoryLink name="Chaos" hidden="false" id="048f-fbb9-400b-524e" targetId="4c00-2578-faf5-6918" primary="false"/>
-        <categoryLink targetId="38ab-2289-13d4-45fc" id="bfef-dafc-dfad-d12f" primary="false" name="Hrungvyr"/>
+        <categoryLink targetId="38ab-2289-13d4-45fc" id="bfef-dafc-dfad-d12f" primary="false" name="Hrungtyr Bombard"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Ash &amp; Iron" id="89fe-f390-3a58-582a" hidden="false" type="rule" targetId="1834-ed25-4ab3-5dba"/>
@@ -1779,7 +1788,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         </selectionEntry>
       </selectionEntries>
       <profiles>
-        <profile name="Hrungtyr" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="40a8-0f0b-0cfd-f169">
+        <profile name="Hrungtyr Bombard" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="40a8-0f0b-0cfd-f169">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">11</characteristic>
@@ -1792,6 +1801,11 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <profile name="Quake Munitions" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="caee-0025-7187-01c2">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, if one or more of those attacks made with its dreadquake mortar scored a hit against an enemy unit (excluding AIRCRAFT units), until the end of your opponent’s next turn, that unit is shaken. While a unit is shaken, halve its Move characteristic and subtract 2 from Advance and Charge rolls made for it.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4172-f614-7b63-8557">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 6+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1811,6 +1825,137 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Iron Daemons" hidden="false" id="1b9f-e37f-9728-b3e5">
+      <infoLinks>
+        <infoLink name="Ash &amp; Iron" id="dfa1-ea0c-0941-c5b1" hidden="false" type="rule" targetId="1834-ed25-4ab3-5dba"/>
+        <infoLink name="Deadly Demise" id="3247-aa68-7684-ca9e" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="1" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Scouts" id="c3c0-2509-b106-a184" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+          <modifiers>
+            <modifier type="append" value="9&quot;" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b977-1f53-6b5d-e563">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 6+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Iron Daemon" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="cfdd-7ce6-8ff6-109b">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">7</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="dbd4-63-af05-998" id="0b5a-ae6e-3851-3895" primary="true" name="Vehicle"/>
+        <categoryLink targetId="6df-937-16bc-8c1a" id="eb70-1259-7a01-3e85" primary="false" name="Smoke"/>
+        <categoryLink targetId="c619-2086-bbcf-69c9" id="de22-047a-5604-8ac3" primary="false" name="Fly"/>
+        <categoryLink targetId="9321-c9ec-e974-81fa" id="3135-ca94-a0b4-bd00" primary="false" name="Faction: Sons of Hashut"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="25e8-33a6-cdf2-1d25" primary="false" name="Chaos"/>
+        <categoryLink targetId="e3ae-cb06-44b3-50e8" id="259f-6abf-fc2b-747a" primary="false" name="Iron Daemon"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Iron Daemon" hidden="false" id="5539-a349-fe27-b234">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Armoured bulk" hidden="false" id="9da8-d77b-dd47-2902">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="54d8-57c2-aa68-842b-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54d8-57c2-aa68-842b-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Armoured bulk" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="6100-04ca-31da-081d">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="1698-5a32-417e-6f1e" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Shrapnel cannonade" hidden="false" id="ea23-ebef-16bf-65d5">
+                  <profiles>
+                    <profile name="➤ Shrapnel cannonade - long range" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8633-9c98-da7c-5aa8">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="➤ Shrapnel cannonade - close range" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e6aa-721f-04c6-5619">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77ae-68b4-cd98-f297" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Assault" id="bdc9-e9b2-34b7-be39" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Twin heavy mawgun" hidden="false" id="abc0-95cf-49cd-d66c">
+                  <profiles>
+                    <profile name="Twin heavy mawgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="08e2-ca54-623b-575f">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Twin-linked</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Blast" id="1e32-baee-66e9-ab60" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3a1-0683-6be8-31a5" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3893-b0d2-e522-fa16-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3893-b0d2-e522-fa16-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="8cae-16ee-a40f-3c00" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Eldrkin Warriors" hidden="false" id="5698-24c6-9c6c-c944" type="selectionEntry" targetId="1dc7-a7c2-0019-212a"/>
@@ -1820,9 +1965,10 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
     <entryLink import="true" name="K&apos;daai Fireborn" hidden="false" id="4f44-0512-c8ec-2f8a" targetId="1a09-356d-72a7-13e7" type="selectionEntry"/>
     <entryLink import="true" name="K&apos;daai Mutilator" hidden="false" id="03e4-cc4a-3dd3-7493" targetId="b612-aee2-7b4f-dc63" type="selectionEntry"/>
     <entryLink import="true" name="K&apos;daai Obliterator" hidden="false" id="a098-6b69-7974-81fe" targetId="ccdb-84ab-5af7-2ca5" type="selectionEntry"/>
-    <entryLink import="true" name="Muzkelgrim Siege Tank" hidden="false" id="f8a7-f2c8-7201-9c01" targetId="c475-0a58-a056-0db4" type="selectionEntry"/>
+    <entryLink import="true" name="Muzkelgrim" hidden="false" id="f8a7-f2c8-7201-9c01" targetId="c475-0a58-a056-0db4" type="selectionEntry"/>
     <entryLink import="true" name="Gungzhar" hidden="false" id="dd4c-ec5a-bd17-8852" targetId="287e-aef2-8f74-cbd5" type="selectionEntry"/>
-    <entryLink import="true" name="Muzkelgrim" hidden="false" id="29d3-1af7-6632-7849" targetId="f223-393a-2b06-10f7" type="selectionEntry"/>
+    <entryLink import="true" name="Hrungtyr Bombard" hidden="false" id="29d3-1af7-6632-7849" targetId="f223-393a-2b06-10f7" type="selectionEntry"/>
+    <entryLink import="true" name="Iron Daemons" hidden="false" id="a6a2-b369-4c9c-ac8b" targetId="1b9f-e37f-9728-b3e5" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Fireglaive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fea9-43bc-25b1-0c6d">
