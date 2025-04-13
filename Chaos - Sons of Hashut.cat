@@ -1000,7 +1000,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1812-dd28-b808-16cc-max" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Vulkgard" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6f50-d2a5-0a39-b5d8">
+            <profile name="Vulkgard" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="true" id="6f50-d2a5-0a39-b5d8">
               <characteristics>
                 <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
                 <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
