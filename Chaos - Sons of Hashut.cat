@@ -18,7 +18,7 @@
     <categoryEntry name="K&apos;daai Obliterator" id="d419-b605-5f40-5afc" hidden="false"/>
     <categoryEntry name="Muzkelgrim" id="1a16-ae9c-8a5c-91dd" hidden="false"/>
     <categoryEntry name="Gungzhar" id="3bda-1ec2-881c-2521" hidden="false"/>
-    <categoryEntry name="Hrungvyr" id="38ab-2289-13d4-45fc" hidden="false"/>
+    <categoryEntry name="Hrungtyr" id="38ab-2289-13d4-45fc" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Ash &amp; Iron" id="1834-ed25-4ab3-5dba" hidden="false">
@@ -1647,10 +1647,10 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                 <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy, Indirect Fire, Ignores Cover</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Indirect Fire</characteristic>
               </characteristics>
             </profile>
-            <profile name="➤ Deathshrieker rocket launcher - demolition rocket" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9a16-cf5f-8f89-e183">
+            <profile name="➤ Deathshrieker rocket launcher - tandem charge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9a16-cf5f-8f89-e183">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
@@ -1658,7 +1658,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
                 <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Indirect Fire</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1669,7 +1669,6 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
           <infoLinks>
             <infoLink name="Blast" id="33c0-31e6-8a06-85ff" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
             <infoLink name="Heavy" id="3c2f-2f46-dc2e-fbda" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
-            <infoLink name="Ignores Cover" id="1c36-dbc0-d9cb-45e3" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
             <infoLink name="Indirect Fire" id="0f5e-ae4d-073c-e533" hidden="false" type="rule" targetId="4ddd-4e29-acdd-5e6d"/>
           </infoLinks>
         </selectionEntry>
@@ -1713,7 +1712,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Hrungvyr" hidden="false" id="f223-393a-2b06-10f7">
+    <selectionEntry type="model" import="true" name="Hrungtyr" hidden="false" id="f223-393a-2b06-10f7">
       <categoryLinks>
         <categoryLink name="Vehicle" hidden="false" id="48ae-05c7-2d34-6b44" targetId="dbd4-63-af05-998" primary="true"/>
         <categoryLink name="Smoke" hidden="false" id="0929-6697-563f-e0fe" targetId="6df-937-16bc-8c1a" primary="false"/>
@@ -1780,7 +1779,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         </selectionEntry>
       </selectionEntries>
       <profiles>
-        <profile name="Hrungfyr" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="40a8-0f0b-0cfd-f169">
+        <profile name="Hrungtyr" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="40a8-0f0b-0cfd-f169">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">11</characteristic>
@@ -1805,7 +1804,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="230"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
