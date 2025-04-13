@@ -1015,7 +1015,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a0cc-52c3-fc81-5aa9" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
