@@ -21,6 +21,7 @@
     <categoryEntry name="Hrungtyr Bombard" id="38ab-2289-13d4-45fc" hidden="false"/>
     <categoryEntry name="Iron Daemons" id="e3ae-cb06-44b3-50e8" hidden="false"/>
     <categoryEntry name="Skullcrackers" id="f062-d040-bfb9-4f1d" hidden="false"/>
+    <categoryEntry name="Bull Centaur Renders" id="aee2-8cc2-870a-6e16" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Ash &amp; Iron" id="1834-ed25-4ab3-5dba" hidden="false">
@@ -467,7 +468,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
-        <profile name="Ironkin Overseer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="affc-f470-0328-61bd">
+        <profile name="Eignutkin Overseer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="affc-f470-0328-61bd">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
@@ -1129,7 +1130,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
       <profiles>
         <profile name="K&apos;daai Fireborn" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7d46-f238-c893-9259">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
@@ -1189,7 +1190,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="105"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -1898,7 +1899,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <categoryLink targetId="c619-2086-bbcf-69c9" id="de22-047a-5604-8ac3" primary="false" name="Fly"/>
         <categoryLink targetId="9321-c9ec-e974-81fa" id="3135-ca94-a0b4-bd00" primary="false" name="Faction: Sons of Hashut"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="25e8-33a6-cdf2-1d25" primary="false" name="Chaos"/>
-        <categoryLink targetId="e3ae-cb06-44b3-50e8" id="259f-6abf-fc2b-747a" primary="false" name="Iron Daemon"/>
+        <categoryLink targetId="e3ae-cb06-44b3-50e8" id="259f-6abf-fc2b-747a" primary="false" name="Iron Daemons"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Iron Daemon" hidden="false" id="5539-a349-fe27-b234" defaultAmount="1">
@@ -2049,18 +2050,17 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                 <profile name="Flensing apparatus" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="dc96-7230-6227-dd0f">
                   <characteristics>
                     <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">10</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">12</characteristic>
                     <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
                     <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
                     <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1, Twin-linked</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Twin-linked" id="c5ea-4f9d-c4a0-9e8f" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
-                <infoLink name="Sustained Hits" id="ae72-425f-f880-66f9" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -2068,7 +2068,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b44d-2bed-f322-158e" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
             <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -2079,6 +2079,50 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f222-476b-9f0a-e0f6" includeChildSelections="true"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Bull Centaurs" hidden="false" id="0c40-8c29-977d-f6fd">
+      <categoryLinks>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="dd46-1a83-991b-6f8c" primary="true" name="Mounted"/>
+        <categoryLink targetId="aee2-8cc2-870a-6e16" id="81b5-8f02-ad87-0b0a" primary="false" name="Bull Centaur Renders"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="42dd-07fe-40a5-5662" primary="false" name="Chaos"/>
+        <categoryLink targetId="9321-c9ec-e974-81fa" id="7c3f-8269-65d2-a5e3" primary="false" name="Faction: Sons of Hashut"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Ash &amp; Iron" id="eec8-11ee-eece-9cee" hidden="false" type="rule" targetId="1834-ed25-4ab3-5dba"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Bull Centaur" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="4689-53d4-2c2e-47cf">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e425-cb94-8615-1a21">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Bull Centaur" hidden="false" id="770b-aef1-7da9-7a62">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="84dd-c172-6e95-9564" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1872-6863-2c2d-3d9d-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1872-6863-2c2d-3d9d-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0688-7237-0b4b-3d6c" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ecbb-d97d-396d-b479" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -2094,6 +2138,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
     <entryLink import="true" name="Hrungtyr Bombard" hidden="false" id="29d3-1af7-6632-7849" targetId="f223-393a-2b06-10f7" type="selectionEntry"/>
     <entryLink import="true" name="Iron Daemons" hidden="false" id="a6a2-b369-4c9c-ac8b" targetId="1b9f-e37f-9728-b3e5" type="selectionEntry"/>
     <entryLink import="true" name="Skullcrackers" hidden="false" id="2eaf-5a6d-dfb3-73ee" targetId="627f-d406-f683-80f6" type="selectionEntry"/>
+    <entryLink import="true" name="Bull Centaurs" hidden="false" id="7500-fb99-16e4-4370" targetId="0c40-8c29-977d-f6fd" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Fireglaive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fea9-43bc-25b1-0c6d">
