@@ -402,13 +402,22 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Lethal Hits</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="set" value="3+" field="94d-8a98-cf90-183e">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0c40-8c29-977d-f6fd" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="3+" field="94d-8a98-cf90-183e">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0c40-8c29-977d-f6fd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Lethal Hits" field="7f1b-8591-2fcf-d01c">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0c40-8c29-977d-f6fd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
