@@ -1993,7 +1993,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2956-149a-800c-c4f3" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2956-149a-800c-c4f3" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
