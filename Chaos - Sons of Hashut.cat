@@ -2140,7 +2140,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Bull Centaur" hidden="false" id="770b-aef1-7da9-7a62">
+        <selectionEntry type="model" import="true" name="Bull Centaur" hidden="false" id="770b-aef1-7da9-7a62" collective="true">
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" id="84dd-c172-6e95-9564" hidden="false" defaultSelectionEntryId="a31c-5375-f790-cc34">
               <constraints>
@@ -2148,17 +2148,17 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1872-6863-2c2d-3d9d-max" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Warpcore culverin" hidden="false" id="d392-fb7d-3cb3-a097" type="selectionEntry" targetId="b14d-8df8-e100-27c6">
+                <entryLink import="true" name="Warpcore culverin" hidden="false" id="d392-fb7d-3cb3-a097" type="selectionEntry" targetId="b14d-8df8-e100-27c6" collective="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc41-73c5-6172-c6f2" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Crucible lance" hidden="false" id="de89-cb76-31a9-4ab9" type="selectionEntry" targetId="8c9e-061e-b89e-e3af">
+                <entryLink import="true" name="Crucible lance" hidden="false" id="de89-cb76-31a9-4ab9" type="selectionEntry" targetId="8c9e-061e-b89e-e3af" collective="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="882f-418e-396b-49a1" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Heavy mawgun" hidden="false" id="93f4-e4fb-0a83-33a7" type="selectionEntry" targetId="2115-7716-796f-0f76">
+                <entryLink import="true" name="Heavy mawgun" hidden="false" id="93f4-e4fb-0a83-33a7" type="selectionEntry" targetId="2115-7716-796f-0f76" collective="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e46-828a-7a50-35b0" includeChildSelections="false"/>
                   </constraints>
@@ -2171,7 +2171,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ecbb-d97d-396d-b479" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Armoured hooves" hidden="false" id="e245-997b-03ad-ca22">
+            <selectionEntry type="upgrade" import="true" name="Armoured hooves" hidden="false" id="e245-997b-03ad-ca22" collective="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c008-09c1-8944-ba29-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c008-09c1-8944-ba29-max" includeChildSelections="false"/>
