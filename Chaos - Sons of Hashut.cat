@@ -1987,7 +1987,8 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                   <entryLinks>
                     <entryLink import="true" name="Ironfist torpedo launcher" hidden="false" id="7189-a9ae-1987-f74c" type="selectionEntry" targetId="b71c-d9ff-afa1-124d">
                       <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2f70-e7df-8aaa-2a36" includeChildSelections="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2f70-e7df-8aaa-2a36" includeChildSelections="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fe2a-8c94-dcc1-ba9f" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
