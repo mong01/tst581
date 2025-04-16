@@ -23,6 +23,7 @@
     <categoryEntry name="Skullcrackers" id="f062-d040-bfb9-4f1d" hidden="false"/>
     <categoryEntry name="Bull Centaur Renders" id="aee2-8cc2-870a-6e16" hidden="false"/>
     <categoryEntry name="Ogryn Labourers" id="b896-7151-e0fb-dead" hidden="false"/>
+    <categoryEntry name="Infernal Deathmask" id="7d5a-0fb7-e09d-406c" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Ash &amp; Iron" id="1834-ed25-4ab3-5dba" hidden="false">
@@ -316,6 +317,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
       <infoLinks>
         <infoLink name="Fireglaive" id="5407-32fa-1415-1389" hidden="false" type="profile" targetId="fea9-43bc-25b1-0c6d"/>
         <infoLink name="Fireglaive" id="5710-1c96-9ae9-506b" hidden="false" type="profile" targetId="67a9-cc45-bc8a-3f13"/>
+        <infoLink name="Heavy" id="5f45-1833-4608-24d0" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bolt-axe &amp; reactive shield" hidden="false" id="eada-6392-1d9e-331a" collective="true">
@@ -2143,7 +2145,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Bull Centaur" hidden="false" id="770b-aef1-7da9-7a62" collective="true">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Options" id="84dd-c172-6e95-9564" hidden="false" defaultSelectionEntryId="a31c-5375-f790-cc34">
+            <selectionEntryGroup name="Options" id="84dd-c172-6e95-9564" hidden="false" defaultSelectionEntryId="d392-fb7d-3cb3-a097">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1872-6863-2c2d-3d9d-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1872-6863-2c2d-3d9d-max" includeChildSelections="false"/>
@@ -2243,7 +2245,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="4d7b-eb40-6d90-f00d" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="4d7b-eb40-6d90-f00d" primary="true" name="Infantry"/>
         <categoryLink targetId="b896-7151-e0fb-dead" id="0c32-ee4b-4e23-b005" primary="false" name="Ogyr Labourers"/>
         <categoryLink targetId="b43e-3214-405e-9d00" id="a45f-aad3-2e1f-5d73" primary="false" name="Slave"/>
         <categoryLink targetId="9321-c9ec-e974-81fa" id="81f6-3892-5044-c9dc" primary="false" name="Faction: Sons of Hashut"/>
@@ -2288,6 +2290,153 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Infernal Deathmask" hidden="false" id="dcb1-471b-4067-a878">
+      <categoryLinks>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="3b02-4359-47d5-9aa6" primary="true" name="Character"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="24e1-8b16-0fcd-246a" primary="false" name="Infantry"/>
+        <categoryLink targetId="7d5a-0fb7-e09d-406c" id="c020-76d9-bae6-24cc" primary="false" name="Infernal Deathmask"/>
+        <categoryLink targetId="9e56-6003-6412-df2d" id="cbec-953c-05fb-8406" primary="false" name="Bulky"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="831e-efe7-eacd-4f03" primary="false" name="Chaos"/>
+        <categoryLink targetId="9321-c9ec-e974-81fa" id="3452-0a11-e818-2038" primary="false" name="Faction: Sons of Hashut"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="fb1c-34ca-43fc-ae95" primary="false" name="Grenades"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="a2b8-d429-56a8-417d" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Leader" id="2763-819a-0987-1eb0" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
+        <infoLink name="Ash &amp; Iron" id="9898-58f5-a914-e4cb" hidden="false" type="rule" targetId="1834-ed25-4ab3-5dba"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4fd4-7a0f-f6de-7723">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following unit:
+
+■ Infernal Ironsworn</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infernal Deathmask" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="35a6-c1b8-2aea-6d2e">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="668a-96f6-f7e1-fb3e">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fervour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5922-1a92-994d-105a">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, that unit has the Fights First ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infernal Deathmask" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="98ad-4f13-ba02-b927">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="77ef-0d9f-7315-adcc" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Artisan warpcore pistol" hidden="false" id="5592-2202-086b-1bb6" type="selectionEntry" targetId="9536-a631-b0cc-3a5d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ce4-3266-125d-7ece-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ce4-3266-125d-7ece-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="d1ad-3b0a-525c-fdca" hidden="false" defaultSelectionEntryId="62f9-7280-c64c-4abb">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4157-bada-734e-0106-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4157-bada-734e-0106-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Wyrdmaul" hidden="false" id="4fa0-ce11-1e29-170a">
+              <profiles>
+                <profile name="Wyrdmaul" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="cadb-aadd-05f9-093e">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e8f-858f-4725-2010" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Daemon-bound axe" hidden="false" id="62f9-7280-c64c-4abb">
+              <profiles>
+                <profile name="Daemon-bound axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e2e2-bcd8-01c5-7b74">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Precision</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce93-5119-c8de-7b61" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="105"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Alloch-pattern combi-bolter" hidden="false" id="2754-c7eb-718b-c342">
+      <profiles>
+        <profile name="Alloch-pattern combi-bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9c28-9f0d-7be0-59e9">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Artisan warpcore pistol" hidden="false" id="9536-a631-b0cc-3a5d">
+      <profiles>
+        <profile name="Artisan warpcore pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="c56a-bbe2-83dd-118a">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Lethal Hits</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lethal Hits" id="ebb0-1373-4dc1-7a95" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Eldrkin Warriors" hidden="false" id="5698-24c6-9c6c-c944" type="selectionEntry" targetId="1dc7-a7c2-0019-212a"/>
@@ -2304,6 +2453,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
     <entryLink import="true" name="Skullcrackers" hidden="false" id="2eaf-5a6d-dfb3-73ee" targetId="627f-d406-f683-80f6" type="selectionEntry"/>
     <entryLink import="true" name="Bull Centaurs" hidden="false" id="7500-fb99-16e4-4370" targetId="0c40-8c29-977d-f6fd" type="selectionEntry"/>
     <entryLink import="true" name="Ogryn Labourers" hidden="false" id="4915-f46c-3337-83c3" targetId="8160-210b-84c5-527b" type="selectionEntry"/>
+    <entryLink import="true" name="New Entry" hidden="false" id="3ba1-0df7-901f-31c2" targetId="dcb1-471b-4067-a878" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Fireglaive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fea9-43bc-25b1-0c6d">
@@ -2314,7 +2464,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
         <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
       </characteristics>
     </profile>
     <profile name="Fireglaive" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="67a9-cc45-bc8a-3f13">
