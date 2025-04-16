@@ -402,6 +402,13 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Lethal Hits</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="3+" field="94d-8a98-cf90-183e">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0c40-8c29-977d-f6fd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -1927,7 +1934,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" id="1698-5a32-417e-6f1e" hidden="false" defaultSelectionEntryId="ea23-ebef-16bf-65d5">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Shrapnel cannonade" hidden="false" id="ea23-ebef-16bf-65d5">
+                <selectionEntry type="upgrade" import="true" name="Shard cannonade" hidden="false" id="ea23-ebef-16bf-65d5">
                   <profiles>
                     <profile name="➤ Shard cannonade - long range" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8633-9c98-da7c-5aa8">
                       <characteristics>
@@ -2115,6 +2122,9 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1872-6863-2c2d-3d9d-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1872-6863-2c2d-3d9d-max" includeChildSelections="false"/>
               </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Warpcore culverin" hidden="false" id="a31c-5375-f790-cc34" type="selectionEntry" targetId="b14d-8df8-e100-27c6"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
