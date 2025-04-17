@@ -901,6 +901,22 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                   </modifierGroups>
                 </entryLink>
               </entryLinks>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="0" field="cc58-294d-c0f4-9ad3-min">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="cc58-294d-c0f4-9ad3-max">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntryGroup>
             <selectionEntryGroup name="Ranged weapon" id="69e5-bb6a-4f2e-e515" hidden="false" defaultSelectionEntryId="6b72-4a36-0799-b68f">
               <constraints>
@@ -1121,6 +1137,22 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="2+" field="95d1-95f-45b4-11d6">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="dcb1-471b-4067-a878" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="6" field="2337-daa1-6682-b110">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="dcb1-471b-4067-a878" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
     </selectionEntry>
@@ -2391,25 +2423,14 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e8f-858f-4725-2010" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Daemon-bound axe" hidden="false" id="62f9-7280-c64c-4abb">
-              <profiles>
-                <profile name="Daemon-bound axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e2e2-bcd8-01c5-7b74">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce93-5119-c8de-7b61" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Wyrdstar" hidden="false" id="abc1-a2ad-15fe-bb25" type="selectionEntry" targetId="773c-fe27-d47c-7d57">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e910-8392-bc23-2159" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
