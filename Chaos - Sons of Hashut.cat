@@ -2355,6 +2355,9 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="10dc-1807-39ac-3ddb" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Infernal Deathmask" hidden="false" id="dcb1-471b-4067-a878">
       <categoryLinks>
@@ -2577,6 +2580,9 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="44ed-68bb-45e7-2b16" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Daemonsmith" hidden="false" id="8353-3559-6e06-f0e6">
       <categoryLinks>
@@ -2670,6 +2676,9 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="48f3-b52a-c647-6afe" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
