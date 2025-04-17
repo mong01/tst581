@@ -2397,6 +2397,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ce4-3266-125d-7ece-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Warlord" hidden="false" id="8660-2f9d-9b37-1210" type="selectionEntry" targetId="6960-a1c0-362e-eec3"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" id="d1ad-3b0a-525c-fdca" hidden="false" defaultSelectionEntryId="abc1-a2ad-15fe-bb25">
@@ -2474,6 +2475,15 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <infoLink name="Pistol" id="ebb0-1373-4dc1-7a95" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
         <infoLink name="Lethal Hits" id="8cc4-33bf-c1e5-42ec" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warlord" hidden="false" id="6960-a1c0-362e-eec3">
+      <categoryLinks>
+        <categoryLink targetId="5c0e-4c31-d51b-e470" id="4c2d-2879-5844-1bba" primary="false" name="Warlord"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca9f-81c7-a03b-409f" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f7f3-ccd0-5192-d7af" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
