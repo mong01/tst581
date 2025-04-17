@@ -2351,7 +2351,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
       <modifiers>
         <modifier type="increment" value="55" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="11" field="selections" scope="8160-210b-84c5-527b" childId="model" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="4" field="selections" scope="8160-210b-84c5-527b" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
