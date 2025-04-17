@@ -2299,6 +2299,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <categoryLink targetId="b43e-3214-405e-9d00" id="a45f-aad3-2e1f-5d73" primary="false" name="Slave"/>
         <categoryLink targetId="9321-c9ec-e974-81fa" id="81f6-3892-5044-c9dc" primary="false" name="Faction: Sons of Hashut"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="82ba-5505-9fc8-7b68" primary="false" name="Chaos"/>
+        <categoryLink targetId="acf4-333b-7e98-b467" id="9af4-7968-9f00-992d" primary="false" name="Very Bulky"/>
       </categoryLinks>
       <profiles>
         <profile name="Ogryn Labourer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="4117-3f8e-4b08-54a2">
@@ -2484,6 +2485,50 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca9f-81c7-a03b-409f" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f7f3-ccd0-5192-d7af" includeChildSelections="true"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Vhulkræ Hauler" hidden="false" id="fd20-2cf3-eb99-b11a">
+      <categoryLinks>
+        <categoryLink targetId="6df-937-16bc-8c1a" id="5da7-1c76-56b5-16c2" primary="false" name="Smoke"/>
+        <categoryLink targetId="ba07-411c-2832-1f79" id="d72e-3f18-2d77-e7b2" primary="true" name="Dedicated Transport"/>
+        <categoryLink targetId="75e8-57c4-40e3-1817" id="edcd-b667-060a-a756" primary="false" name="Transport"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="82b7-f202-69bc-ed15" primary="false" name="Vehicle"/>
+        <categoryLink targetId="220b-f249-4553-8c14" id="3981-23d9-68c4-6df2" primary="false" name="Vhulkræ Hauler"/>
+        <categoryLink targetId="9321-c9ec-e974-81fa" id="a078-e6a7-41c9-1b8d" primary="false" name="Faction: Sons of Hashut"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="acd2-498c-598e-0281" primary="false" name="Chaos"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Deadly Demise" id="1609-a51d-0874-50e0" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="D3" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Ash &amp; Iron" id="4112-ebc0-8a0f-13ce" hidden="false" type="rule" targetId="1834-ed25-4ab3-5dba"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Vhulkræ Hauler" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="935f-920d-f379-785b">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">11</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Vhulkræ Hauler" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="301b-c714-ace3-73a5">
+          <characteristics>
+            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 SONS OF HASHUT INFANTRY models. Each BULKY model takes up the space of 2 models and each VERY BULKY model takes up the space of 3 models. It cannot transport K&apos;DAAI models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Armoured tracks" hidden="false" id="0536-c3fb-41ac-ceb9" type="selectionEntry" targetId="bc8e-c636-0fa3-5726">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3910-eb16-c5a4-1cdf" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9237-f30b-17f3-8eb5" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
