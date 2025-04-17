@@ -2520,12 +2520,23 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 SONS OF HASHUT INFANTRY models. Each BULKY model takes up the space of 2 models and each VERY BULKY model takes up the space of 3 models. It cannot transport K&apos;DAAI models.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Vhulkræ Hauler" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9be1-bbbc-c2e8-442e">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+          </characteristics>
+        </profile>
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Armoured tracks" hidden="false" id="0536-c3fb-41ac-ceb9" type="selectionEntry" targetId="bc8e-c636-0fa3-5726">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3910-eb16-c5a4-1cdf" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9237-f30b-17f3-8eb5" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Twin bolt cannon" hidden="false" id="582c-3e44-614f-f719" type="selectionEntry" targetId="d783-e2d7-2544-68a7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c656-4d77-5ff7-9dca-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c656-4d77-5ff7-9dca-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -2547,6 +2558,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
     <entryLink import="true" name="Bull Centaurs" hidden="false" id="7500-fb99-16e4-4370" targetId="0c40-8c29-977d-f6fd" type="selectionEntry"/>
     <entryLink import="true" name="Ogryn Labourers" hidden="false" id="4915-f46c-3337-83c3" targetId="8160-210b-84c5-527b" type="selectionEntry"/>
     <entryLink import="true" name="Infernal Deathmask" hidden="false" id="3ba1-0df7-901f-31c2" targetId="dcb1-471b-4067-a878" type="selectionEntry"/>
+    <entryLink import="true" name="Vhulkræ Hauler" hidden="false" id="f15a-b2e2-2aef-b3f4" targetId="fd20-2cf3-eb99-b11a" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Fireglaive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fea9-43bc-25b1-0c6d">
