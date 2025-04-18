@@ -2681,7 +2681,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="48f3-b52a-c647-6afe" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Hurzir" hidden="false" id="8863-9b78-a352-f8fb">
+    <selectionEntry type="model" import="true" name="Hurzir" hidden="false" id="8863-9b78-a352-f8fb">
       <categoryLinks>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="9b91-5b75-adba-960b" primary="true" name="Character"/>
         <categoryLink targetId="dfe9-cc3e-a263-e0c7" id="d68f-661b-220c-72dc" primary="false" name="Hurzir"/>
