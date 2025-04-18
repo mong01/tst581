@@ -3056,6 +3056,9 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="8f51-8c14-0e7d-5373" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
