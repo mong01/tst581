@@ -26,6 +26,7 @@
     <categoryEntry name="Infernal Deathmask" id="7d5a-0fb7-e09d-406c" hidden="false"/>
     <categoryEntry name="Vhulkræ Hauler" id="220b-f249-4553-8c14" hidden="false"/>
     <categoryEntry name="Daemonsmith" id="efd5-5a0d-814e-91c5" hidden="false"/>
+    <categoryEntry name="Hurzir" id="dfe9-cc3e-a263-e0c7" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Ash &amp; Iron" id="1834-ed25-4ab3-5dba" hidden="false">
@@ -2680,6 +2681,128 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="48f3-b52a-c647-6afe" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hurzir" hidden="false" id="8863-9b78-a352-f8fb">
+      <categoryLinks>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="9b91-5b75-adba-960b" primary="true" name="Character"/>
+        <categoryLink targetId="dfe9-cc3e-a263-e0c7" id="d68f-661b-220c-72dc" primary="false" name="Hurzir"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="b62a-6a73-92d9-cfbc" primary="false" name="Grenades"/>
+        <categoryLink targetId="9321-c9ec-e974-81fa" id="cff2-4fa2-979b-d56f" primary="false" name="Faction: Sons of Hashut"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="ea49-e306-96d9-6494" primary="false" name="Chaos"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="a943-aabb-523a-63e7" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="4e46-8f36-af96-e942" type="selectionEntry" targetId="6960-a1c0-362e-eec3"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="34d9-c63b-4edb-90bd" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d0eb-a5f6-52e4-7922">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+■ Eldrkin Warriors
+■ Infernal Ironsworn
+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hurzir" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a12f-ed89-2803-1302">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bcf6-95b1-89f3-37b9">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Veteran of War" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="756c-483c-5056-6be9">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Requisition" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="55db-d01a-f6a1-6698">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Leader" id="e8a9-7fbd-baa0-6607" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
+        <infoLink name="Ash &amp; Iron" id="3647-b562-bc65-3bcf" hidden="false" type="rule" targetId="1834-ed25-4ab3-5dba"/>
+        <infoLink name="Deep Strike" id="0d78-5fa1-33b3-03ac" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged weapon" id="7fa0-51f4-0535-e654" hidden="false" defaultSelectionEntryId="ce71-3f65-8232-88bc">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eed8-8336-49bc-9c74" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="86bc-cc12-1159-5ec7" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Artisan warpcore pistol" hidden="false" id="ce71-3f65-8232-88bc" type="selectionEntry" targetId="9536-a631-b0cc-3a5d"/>
+            <entryLink import="true" name="Alloch-pattern combi-bolter" hidden="false" id="f544-23c6-1681-1ac2" type="selectionEntry" targetId="2754-c7eb-718b-c342"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Melee weapon" id="32fe-ebe6-0b47-9c44" hidden="false" defaultSelectionEntryId="50e1-e920-0ea8-68e9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="389e-e6ca-d0b8-4b12" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2283-0503-fa7c-bdb4" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Wyrdaxe" hidden="false" id="50e1-e920-0ea8-68e9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75b8-260e-2fe5-85e0" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Wyrdaxe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="79db-569d-1748-3142">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Chaincleaver" hidden="false" id="ceee-c177-88ea-ddd0">
+              <profiles>
+                <profile name="Chaincleaver" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5182-1f11-0f3e-528e">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">8</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9666-b2fc-ae76-50e2" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Sustained Hits" id="9044-cb6c-d80e-8cb0" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Eldrkin Warriors" hidden="false" id="5698-24c6-9c6c-c944" type="selectionEntry" targetId="1dc7-a7c2-0019-212a"/>
@@ -2699,6 +2822,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
     <entryLink import="true" name="Infernal Deathmask" hidden="false" id="3ba1-0df7-901f-31c2" targetId="dcb1-471b-4067-a878" type="selectionEntry"/>
     <entryLink import="true" name="Vhulkræ Hauler" hidden="false" id="f15a-b2e2-2aef-b3f4" targetId="fd20-2cf3-eb99-b11a" type="selectionEntry"/>
     <entryLink import="true" name="Daemonsmith" hidden="false" id="b93b-c4f2-38e4-f103" targetId="8353-3559-6e06-f0e6" type="selectionEntry"/>
+    <entryLink import="true" name="Hurzir" hidden="false" id="bdcc-ea6d-9e96-50e8" targetId="8863-9b78-a352-f8fb" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Fireglaive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fea9-43bc-25b1-0c6d">
