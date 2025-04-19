@@ -699,14 +699,14 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         </selectionEntry>
       </selectionEntries>
       <modifiers>
-        <modifier type="increment" value="75" field="51b2-306e-1021-d207">
+        <modifier type="increment" value="70" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="669a-5d8c-f57b-b52e" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -2171,7 +2171,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
     <selectionEntry type="unit" import="true" name="Bull Centaurs" hidden="false" id="0c40-8c29-977d-f6fd">
       <categoryLinks>
         <categoryLink targetId="14a0-40c9-2748-ae6e" id="dd46-1a83-991b-6f8c" primary="true" name="Mounted"/>
-        <categoryLink targetId="aee2-8cc2-870a-6e16" id="81b5-8f02-ad87-0b0a" primary="false" name="Bull Centaur Renders"/>
+        <categoryLink targetId="aee2-8cc2-870a-6e16" id="81b5-8f02-ad87-0b0a" primary="false" name="Bull Centaurs"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="42dd-07fe-40a5-5662" primary="false" name="Chaos"/>
         <categoryLink targetId="9321-c9ec-e974-81fa" id="7c3f-8269-65d2-a5e3" primary="false" name="Faction: Sons of Hashut"/>
       </categoryLinks>
@@ -2984,9 +2984,9 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model’s unit is eligible to shoot in a turn in which it Fell Back.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Interlink Targeting" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2afc-5d22-ba4c-15fe">
+        <profile name="Shield Link" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2afc-5d22-ba4c-15fe">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, ranged weapons equipped by models in that unit have the [ASSAULT] ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, models in that unit have a 4+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3050,7 +3050,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <entryLink import="true" name="Warlord" hidden="false" id="c33b-f56c-369d-891e" type="selectionEntry" targetId="6960-a1c0-362e-eec3"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
