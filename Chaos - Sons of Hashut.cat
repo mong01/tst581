@@ -87,7 +87,10 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
 A. Yes.
 
 Q. Can you use the &quot;Get Back To Work, Scum!&quot; ability if there are no ork labourer models left in a unit?
-A. No.</characteristic>
+A. No.
+
+Q. Can you still activate a Dark Bounty with Thazrymr&apos;s &quot;Right Hand of Hashut&quot; ability if you have no Tithe points?
+A. Yes.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2884,7 +2887,7 @@ A. No.</characteristic>
             <profile name="Black staff" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="aa37-6c1f-a1d3-d806">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
                 <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                 <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
                 <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
@@ -3139,7 +3142,7 @@ A. No.</characteristic>
             <profile name="The Graven Sceptre" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0f28-a7c4-19ba-1a9e">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
                 <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                 <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
                 <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
@@ -3226,6 +3229,21 @@ A. No.</characteristic>
 ■ Infernal Ironsworn</characteristic>
           </characteristics>
         </profile>
+        <profile name="Right Hand of Hashut" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9b6c-d5ea-e1d2-7fcd">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, in your Command phase, that unit can activate a Dark Bounty without using a Tithe point.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bitter Hatred" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="68db-8d27-6678-4fda">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes a melee attack, you can re-roll the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Damned Existence" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e7d3-4ba7-6a20-a3af">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink name="Epic Hero" hidden="false" id="ef78-0abc-006a-87f8" targetId="4f3a-f0f7-6647-348d" primary="false"/>
@@ -3243,6 +3261,19 @@ A. No.</characteristic>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74a2-8dd4-5af4-7291-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74a2-8dd4-5af4-7291-max" includeChildSelections="false"/>
           </constraints>
+          <profiles>
+            <profile name="The Black Hammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0c31-2dda-3aff-034e">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -3279,6 +3310,7 @@ A. No.</characteristic>
     <entryLink import="true" name="Gáldrazr" hidden="false" id="ec6b-31a7-0cb5-0a52" targetId="8455-7e94-832a-9a6e" type="selectionEntry"/>
     <entryLink import="true" name="Bull Centaur Warden" hidden="false" id="9f63-137f-91a3-1c9a" targetId="8300-ee56-733b-931e" type="selectionEntry"/>
     <entryLink import="true" name="Búlvrekh" hidden="false" id="a057-7042-8d97-c3e0" targetId="84ac-3c70-679e-f056" type="selectionEntry"/>
+    <entryLink import="true" name="Thazrymr" hidden="false" id="1e0b-4c34-066c-635f" targetId="7e9b-5eb4-1718-6502" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Fireglaive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fea9-43bc-25b1-0c6d">
