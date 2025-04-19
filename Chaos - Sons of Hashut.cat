@@ -71,7 +71,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <profile name="Rune of Dominion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c574-12d6-6ef7-b7bf">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">■ Add 1 to the Objective Control characteristic of models in this unit.
-■ Once per turn, you can re-roll a Battle-shock test taken for this unit.</characteristic>
+■ Once per battle, you can re-roll a Battle-shock test taken for this unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -83,7 +83,10 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
       <profiles>
         <profile name="FAQ" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b758-257a-45fc-e882">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Q. Can you use the &quot;Get Back To Work, Scum!&quot; ability if there are no ork labourer models left in a unit?
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Q. If a unit re-rolls a battleshock test with the Rune of Dominion ability, can they re-roll another test if they lose and regain the ability?
+A. Yes.
+
+Q. Can you use the &quot;Get Back To Work, Scum!&quot; ability if there are no ork labourer models left in a unit?
 A. No.</characteristic>
           </characteristics>
         </profile>
