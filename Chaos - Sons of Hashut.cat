@@ -3180,6 +3180,10 @@ A. No.</characteristic>
             <infoLink name="Psychic" id="b1ba-383f-e4f0-3322" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
             <infoLink name="Ignores Cover" id="8d03-4364-5c8e-974b" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
           </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8655-f7d9-ffe3-e843-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8655-f7d9-ffe3-e843-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <constraints>
