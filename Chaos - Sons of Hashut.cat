@@ -119,8 +119,11 @@ A. Yes.</characteristic>
           <profiles>
             <profile name="Exaction Host Stratagems" typeId="8ce6-5380-6c7b-6b48" typeName="Stratagem" hidden="false" id="a849-f232-f119-f6e4">
               <characteristics>
-                <characteristic name="New Characteristic Type" typeId="a16a-d9b0-6f4a-cb3e">4</characteristic>
-                <characteristic name="New Characteristic Type" typeId="a67b-e4ec-966a-42ad">3</characteristic>
+                <characteristic name="Category" typeId="a67b-e4ec-966a-42ad">Battle Tactic</characteristic>
+                <characteristic name="CP" typeId="ba59-618d-8d98-fa53">1</characteristic>
+                <characteristic name="When" typeId="058d-453c-161c-4def">P 58856  856865865 568856856</characteristic>
+                <characteristic name="Target" typeId="2392-5f0a-1c31-4e9f">P 56586 5865 86  6856 58 85856658</characteristic>
+                <characteristic name="Effect" typeId="c70a-d156-e2db-2f26">P543758623 647467574654765 8567856586</characteristic>
               </characteristics>
               <attributes>
                 <attribute name="New Attribute Type" typeId="c70d-4373-ffd3-75a2">1</attribute>
@@ -3505,15 +3508,23 @@ A. Yes.</characteristic>
   </sharedProfiles>
   <profileTypes>
     <profileType name="Stratagem" id="8ce6-5380-6c7b-6b48" hidden="false">
-      <attributeTypes>
-        <attributeType name="New Attribute Type" id="c70d-4373-ffd3-75a2"/>
-        <attributeType name="New Attribute Type" id="dd65-2d73-f7da-6dde"/>
-      </attributeTypes>
       <characteristicTypes>
-        <characteristicType name="New Characteristic Type" id="a16a-d9b0-6f4a-cb3e"/>
-        <characteristicType name="New Characteristic Type" id="a67b-e4ec-966a-42ad"/>
+        <characteristicType name="Category" id="a67b-e4ec-966a-42ad"/>
+        <characteristicType name="CP" id="ba59-618d-8d98-fa53"/>
+        <characteristicType name="When" id="058d-453c-161c-4def"/>
+        <characteristicType name="Target" id="2392-5f0a-1c31-4e9f"/>
+        <characteristicType name="Effect" id="c70a-d156-e2db-2f26"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Stratagem (Restrictions)" id="bc67-0903-8e06-9ffd" hidden="false"/>
+    <profileType name="Stratagem (R)" id="4cac-6f51-c684-c9ad" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Category" id="15e4-5aa6-58af-88c2"/>
+        <characteristicType name="CP" id="55ff-d073-083a-7f77"/>
+        <characteristicType name="When" id="1ca1-c567-79ea-4343"/>
+        <characteristicType name="Target" id="7a4d-1786-4adf-c643"/>
+        <characteristicType name="Effect" id="5bd3-77a9-206d-e340"/>
+        <characteristicType name="Restrictions" id="4969-b399-87c0-301e"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
 </catalogue>
