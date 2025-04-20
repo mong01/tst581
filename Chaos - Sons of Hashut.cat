@@ -117,13 +117,13 @@ A. Yes.</characteristic>
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Exaction Host Stratagems" typeId="8ce6-5380-6c7b-6b48" typeName="Stratagem" hidden="false" id="a849-f232-f119-f6e4">
+            <profile name="Scorched Earth" typeId="8ce6-5380-6c7b-6b48" typeName="Stratagem" hidden="false" id="a849-f232-f119-f6e4">
               <characteristics>
                 <characteristic name="Category" typeId="a67b-e4ec-966a-42ad">Battle Tactic</characteristic>
-                <characteristic name="CP" typeId="ba59-618d-8d98-fa53">1</characteristic>
-                <characteristic name="When" typeId="058d-453c-161c-4def">P 58856  856865865 568856856</characteristic>
-                <characteristic name="Target" typeId="2392-5f0a-1c31-4e9f">P 56586 5865 86  6856 58 85856658</characteristic>
-                <characteristic name="Effect" typeId="c70a-d156-e2db-2f26">P543758623 647467574654765 8567856586</characteristic>
+                <characteristic name="CP" typeId="ba59-618d-8d98-fa53">0</characteristic>
+                <characteristic name="When" typeId="058d-453c-161c-4def">Your Shooting phase or the Fight phase.</characteristic>
+                <characteristic name="Target" typeId="2392-5f0a-1c31-4e9f">One SONS OF HASHUT unit from your army that has just destroyed an enemy unit that was within range of an objective marker.</characteristic>
+                <characteristic name="Effect" typeId="c70a-d156-e2db-2f26">Roll one D6: on a 2+, you gain 1CP.</characteristic>
               </characteristics>
               <attributes>
                 <attribute name="New Attribute Type" typeId="c70d-4373-ffd3-75a2">1</attribute>
@@ -2481,6 +2481,7 @@ A. Yes.</characteristic>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Warlord" hidden="false" id="8660-2f9d-9b37-1210" type="selectionEntry" targetId="6960-a1c0-362e-eec3"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="366c-5037-2522-c135" type="selectionEntry" targetId="da72-c1ba-033c-3106"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" id="d1ad-3b0a-525c-fdca" hidden="false" defaultSelectionEntryId="abc1-a2ad-15fe-bb25">
@@ -2661,6 +2662,7 @@ A. Yes.</characteristic>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="43b7-a0b4-383a-328a" type="selectionEntry" targetId="6960-a1c0-362e-eec3"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="5641-992e-85fc-c301" type="selectionEntry" targetId="da72-c1ba-033c-3106"/>
       </entryLinks>
       <profiles>
         <profile name="Daemonsmith" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d438-aa00-8d00-9e32">
@@ -2754,6 +2756,7 @@ A. Yes.</characteristic>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="4e46-8f36-af96-e942" type="selectionEntry" targetId="6960-a1c0-362e-eec3"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="2282-e93e-f892-9590" type="selectionEntry" targetId="da72-c1ba-033c-3106"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="34d9-c63b-4edb-90bd" includeChildSelections="true"/>
@@ -2915,6 +2918,7 @@ A. Yes.</characteristic>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="39b5-0afe-515e-8b36" type="selectionEntry" targetId="6960-a1c0-362e-eec3"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="f198-11f5-fcba-821d" type="selectionEntry" targetId="da72-c1ba-033c-3106"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Black staff" hidden="false" id="d569-49c3-e755-8d01">
@@ -3108,6 +3112,7 @@ A. Yes.</characteristic>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="c33b-f56c-369d-891e" type="selectionEntry" targetId="6960-a1c0-362e-eec3"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="00aa-683d-2f71-467e" type="selectionEntry" targetId="da72-c1ba-033c-3106"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
@@ -3431,6 +3436,52 @@ A. Yes.</characteristic>
               </profiles>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Enhancements" hidden="false" id="da72-c1ba-033c-3106">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d9b-a634-6657-a0b0-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d9b-a634-6657-a0b0-max" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Enhancement" id="2af9-3b19-2934-c85f" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exaction Host Enhancements" id="e81f-e6d6-98a6-7979" hidden="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0498-5d32-37d9-d468" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pillager" hidden="false" id="8b17-5319-a1df-7639">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55d9-7c51-b7f9-6b09" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7493-ad48-6450-6cfe" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Pillager" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="047a-cd7e-6e03-97cf">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time the bearer&apos;s unit destroys an enemy unit that was within range of an objective marker, roll one D6: on a 4+, you gain 1CP.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="da63-93fb-1ad3-aa6f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
