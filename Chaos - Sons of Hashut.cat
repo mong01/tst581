@@ -2905,7 +2905,7 @@ A. Yes.</characteristic>
           <profiles>
             <profile name="➤ Curse of Hashut - focused witchfire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1cc7-787b-6598-7c8b">
               <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
@@ -2916,7 +2916,7 @@ A. Yes.</characteristic>
             </profile>
             <profile name="➤ Curse of Hashut - witchfire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5e46-8b8d-4778-0b38">
               <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
@@ -3286,6 +3286,9 @@ A. Yes.</characteristic>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="6df8-e739-7791-6bbf" type="selectionEntry" targetId="6960-a1c0-362e-eec3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="K&apos;daai Stalker" hidden="false" id="ea0b-6f5b-9187-6aee">
       <categoryLinks>
@@ -3307,6 +3310,11 @@ A. Yes.</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="93de-999a-4015-1c7e">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Infiltrators" id="ab72-6ec9-a244-50bc" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
@@ -3315,6 +3323,27 @@ A. Yes.</characteristic>
         <infoLink name="Fights First" id="8d0d-85c7-7fde-c102" hidden="false" type="rule" targetId="24-c886-e8ba-5a89"/>
         <infoLink name="Ash &amp; Iron" id="315b-6526-ac6f-6ba2" hidden="false" type="rule" targetId="1834-ed25-4ab3-5dba"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Smoking claws" hidden="false" id="e16d-1fe9-10d4-ac76">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a321-f38f-0b95-066b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a321-f38f-0b95-066b-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Smoking claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1612-1e06-7d22-245d">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132"/>
+                <characteristic name="A" typeId="2337-daa1-6682-b110"/>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6"/>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba"/>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2"/>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e"/>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
