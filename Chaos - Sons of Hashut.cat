@@ -117,20 +117,10 @@ A. Yes.</characteristic>
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Hellforged Plate" typeId="8ce6-5380-6c7b-6b48" typeName="Stratagem" hidden="false" id="d0a3-708d-131a-7767">
-              <characteristics>
-                <characteristic name="Category" typeId="a67b-e4ec-966a-42ad">Battle Tactic</characteristic>
-                <characteristic name="CP" typeId="ba59-618d-8d98-fa53">1</characteristic>
-                <characteristic name="When" typeId="058d-453c-161c-4def">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
-                <characteristic name="Target" typeId="2392-5f0a-1c31-4e9f">One SONS OF HASHUT unit from your army (excluding SLAVE units) that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
-                <characteristic name="Effect" typeId="c70a-d156-e2db-2f26">Until the attacking unit has finished making its attacks, each time an attack targets your unit, worsen the Armour Penetration characteristic of that attack by 1.</characteristic>
-              </characteristics>
-            </profile>
             <profile name="Hellforged Plate" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="11ed-50b1-4f53-4bed">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 
-**Battle Tactic**
 **1CP**
 **When:** Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
 **Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that was selected as the target of one or more of the attacking unit’s attacks.
@@ -3567,25 +3557,4 @@ A. Yes.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
-  <profileTypes>
-    <profileType name="Stratagem" id="8ce6-5380-6c7b-6b48" hidden="false">
-      <characteristicTypes>
-        <characteristicType name="Category" id="a67b-e4ec-966a-42ad"/>
-        <characteristicType name="CP" id="ba59-618d-8d98-fa53"/>
-        <characteristicType name="When" id="058d-453c-161c-4def"/>
-        <characteristicType name="Target" id="2392-5f0a-1c31-4e9f"/>
-        <characteristicType name="Effect" id="c70a-d156-e2db-2f26"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType name="Stratagem (R)" id="4cac-6f51-c684-c9ad" hidden="false">
-      <characteristicTypes>
-        <characteristicType name="Category" id="15e4-5aa6-58af-88c2"/>
-        <characteristicType name="CP" id="55ff-d073-083a-7f77"/>
-        <characteristicType name="When" id="1ca1-c567-79ea-4343"/>
-        <characteristicType name="Target" id="7a4d-1786-4adf-c643"/>
-        <characteristicType name="Effect" id="5bd3-77a9-206d-e340"/>
-        <characteristicType name="Restrictions" id="4969-b399-87c0-301e"/>
-      </characteristicTypes>
-    </profileType>
-  </profileTypes>
 </catalogue>
