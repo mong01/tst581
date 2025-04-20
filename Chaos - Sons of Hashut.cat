@@ -116,6 +116,18 @@ A. Yes.</characteristic>
               </conditions>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="Exaction Host Stratagems" typeId="8ce6-5380-6c7b-6b48" typeName="Stratagem" hidden="false" id="a849-f232-f119-f6e4">
+              <characteristics>
+                <characteristic name="New Characteristic Type" typeId="a16a-d9b0-6f4a-cb3e">3</characteristic>
+                <characteristic name="New Characteristic Type" typeId="a67b-e4ec-966a-42ad">4</characteristic>
+              </characteristics>
+              <attributes>
+                <attribute name="New Attribute Type" typeId="c70d-4373-ffd3-75a2">1</attribute>
+                <attribute name="New Attribute Type" typeId="dd65-2d73-f7da-6dde">2</attribute>
+              </attributes>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -3488,4 +3500,17 @@ A. Yes.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
+  <profileTypes>
+    <profileType name="Stratagem" id="8ce6-5380-6c7b-6b48" hidden="false">
+      <attributeTypes>
+        <attributeType name="New Attribute Type" id="c70d-4373-ffd3-75a2"/>
+        <attributeType name="New Attribute Type" id="dd65-2d73-f7da-6dde"/>
+      </attributeTypes>
+      <characteristicTypes>
+        <characteristicType name="New Characteristic Type" id="a16a-d9b0-6f4a-cb3e"/>
+        <characteristicType name="New Characteristic Type" id="a67b-e4ec-966a-42ad"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Stratagem (Restrictions)" id="bc67-0903-8e06-9ffd" hidden="false"/>
+  </profileTypes>
 </catalogue>
