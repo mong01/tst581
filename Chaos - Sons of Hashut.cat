@@ -3242,6 +3242,9 @@ A. Yes.</characteristic>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="36ba-a1bc-1662-deca" type="selectionEntry" targetId="6960-a1c0-362e-eec3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Thazrymr" hidden="false" id="7e9b-5eb4-1718-6502">
       <infoLinks>
