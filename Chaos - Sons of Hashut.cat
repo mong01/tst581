@@ -119,8 +119,8 @@ A. Yes.</characteristic>
           <profiles>
             <profile name="Exaction Host Stratagems" typeId="8ce6-5380-6c7b-6b48" typeName="Stratagem" hidden="false" id="a849-f232-f119-f6e4">
               <characteristics>
-                <characteristic name="New Characteristic Type" typeId="a16a-d9b0-6f4a-cb3e">3</characteristic>
-                <characteristic name="New Characteristic Type" typeId="a67b-e4ec-966a-42ad">4</characteristic>
+                <characteristic name="New Characteristic Type" typeId="a16a-d9b0-6f4a-cb3e">4</characteristic>
+                <characteristic name="New Characteristic Type" typeId="a67b-e4ec-966a-42ad">3</characteristic>
               </characteristics>
               <attributes>
                 <attribute name="New Attribute Type" typeId="c70d-4373-ffd3-75a2">1</attribute>
@@ -130,6 +130,9 @@ A. Yes.</characteristic>
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="4ac9-fd30-1e3d-b249" id="1f68-634f-47d2-285d" primary="true" name="Configuration"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
