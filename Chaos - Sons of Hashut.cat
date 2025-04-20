@@ -154,7 +154,7 @@ A. That objective marker is still Claimed, but does not come under your control 
 **When:** End of your Command phase.
 **Target:** One SONS OF HASHUT INFANTRY or SONS OF HASHUT MOUNTED unit from your army (excluding SLAVE units) that is within range of an objective marker that you both control and is not within your opponent&apos;s deployment zone.
 **Effect:** That objective marker is said to be Claimed, and remains under your control even if you have no models within range of it, until your opponent controls it at the start or end of any turn. While an objective marker is Claimed, each time an attack targets an enemy unit within range of that objective marker, you can re-roll the Hit roll and you can re-roll the Wound roll.
-**Restrictions:**You can only use this Stratagem once per battle.</characteristic>
+**Restrictions:** You can only use this Stratagem once per battle.</characteristic>
               </characteristics>
             </profile>
             <profile name="Foul Weaponry" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8ead-4161-ffb9-e6d0">
