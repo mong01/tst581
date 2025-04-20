@@ -91,7 +91,10 @@ Q. Can you use the &quot;Get Back To Work, Scum!&quot; ability if there are no o
 A. No.
 
 Q. Can you still activate a Dark Bounty with Thazrymr&apos;s &quot;Right Hand of Hashut&quot; ability if you have no Tithe points?
-A. Yes.</characteristic>
+A. Yes.
+
+Q. If I have Claimed an objective marker with the Ours by Right Stratagem, what happens if my opponent gains control of that objective marker then loses it?
+A. That objective marker is still Claimed, but does not come under your control again. If you regain control of that objective marker (i.e. because your Level of Control over that objective marker is greater than your opponent’s at the end of a phase), you will control that objective marker again as described in the Stratagem.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -117,14 +120,50 @@ A. Yes.</characteristic>
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Unyielding Plate" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="11ed-50b1-4f53-4bed">
+            <profile name="Frenzied Charge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="11ed-50b1-4f53-4bed">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
-
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:** Your Charge phase.
+**Target:** One SONS OF HASHUT INFANTRY or SONS OF HASHUT MOUNTED unit from your army (excluding SLAVE units).
+**Effect:** Until the end of the turn, your unit is eligible to declare a charge in a turn in which it Advanced.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Unyielding Plate" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4c22-1f0b-c06c-a9b0">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Wargear**
 **1CP**
 **When:** Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
 **Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that was selected as the target of one or more of the attacking unit’s attacks.
 **Effect:** Until the attacking unit has finished making its attacks, each time an attack targets your unit, worsen the Armour Penetration characteristic of that attack by 1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Searing Light" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="41b1-a85e-29bf-89c4">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:** Your Shooting phase.
+**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that has been selected to shoot this phase.
+**Effect:** Select one enemy unit that was targeted by your unit this phase; until the end of the phase, attacks against that unit have the [IGNORES COVER] ability. In addition, each time an attack is made against that unit, you can ignore any or all modifiers to the Hit roll or Ballistic Skill characteristic of that attack.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ours by Right" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="df0e-feee-2d72-b0da">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**2CP**
+**When:** End of your Command phase.
+**Target:** One SONS OF HASHUT INFANTRY or SONS OF HASHUT MOUNTED unit from your army (excluding SLAVE units) that is within range of an objective marker that you both control and is not within your opponent&apos;s deployment zone.
+**Effect:** That objective marker is said to be Claimed, and remains under your control even if you have no models within range of it, until your opponent controls it at the start or end of any turn. While an objective marker is Claimed, each time an attack targets an enemy unit within range of that objective marker, you can re-roll the Hit roll and you can re-roll the Wound roll.
+**Restrictions:**You can only use this Stratagem once per battle.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Foul Weaponry" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8ead-4161-ffb9-e6d0">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
+**1CP**
+**When:** Fight phase.
+**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that has not been selected to fight this phase.
+**Effect:** Until the end of the phase, melee weapons equipped by models in your unit have the [LETHAL HITS] ability. If such a weapon already has that ability, until the end of the phase, each time an attack is made with that weapon, an unmodified Hit roll of 5+ scores a Critical Hit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1729,7 +1768,7 @@ A. Yes.</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
         </profile>
-        <profile name="Infernal Flames" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5dbd-0b2e-329d-c3dd">
+        <profile name="Blasphemous Fire" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5dbd-0b2e-329d-c3dd">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, if one or more of those attacks made with its magma cannon scored a hit against an enemy unit (excluding MONSTER or VEHICLE units), that unit must take a Battle-shock test.</characteristic>
           </characteristics>
@@ -3233,7 +3272,7 @@ A. Yes.</characteristic>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9757-f38c-c939-8695" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
