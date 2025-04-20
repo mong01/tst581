@@ -144,7 +144,7 @@ A. That objective marker is still Claimed, but does not come under your control 
 **1CP**
 **When:** Your Shooting phase.
 **Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that has been selected to shoot this phase.
-**Effect:** Select one enemy unit that was targeted by your unit this phase; until the end of the phase, attacks against that unit have the [IGNORES COVER] ability. In addition, each time an attack is made against that unit, you can ignore any or all modifiers to the Hit roll or Ballistic Skill characteristic of that attack.</characteristic>
+**Effect:** Select one enemy unit that was targeted by your unit this phase; until the end of the phase, ranged attacks against that unit have the [IGNORES COVER] ability. In addition, each time a ranged attack is made against that unit, you can ignore any or all modifiers to the Hit roll or Ballistic Skill characteristic of that attack.</characteristic>
               </characteristics>
             </profile>
             <profile name="Ours by Right" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="df0e-feee-2d72-b0da">
