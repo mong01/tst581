@@ -3366,6 +3366,37 @@ A. Yes.
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="7801-001d-855f-02a5" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Detachment " hidden="false" id="0863-6b2a-a74a-31ed">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="7ac0-2080-540e-08ff-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7ac0-2080-540e-08ff-max" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="4ac9-fd30-1e3d-b249" id="f6b4-61af-60d5-55d2" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Detachments" id="86d9-eebb-1153-ebb7" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="15c6-f7f8-f45d-ee77-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15c6-f7f8-f45d-ee77-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Exaction Host" hidden="false" id="da63-93fb-1ad3-aa6f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b513-aea1-d827-05e4" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Twisted Industrialists" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e0b0-5b77-1712-baf1">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a SONS OF HASHUT model from your army (excluding SLAVE models) makes an attack that targets a unit within range of an objective marker, you can re-roll the Hit roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Eldrkin Warriors" hidden="false" id="5698-24c6-9c6c-c944" type="selectionEntry" targetId="1dc7-a7c2-0019-212a"/>
@@ -3391,6 +3422,7 @@ A. Yes.
     <entryLink import="true" name="Búlvrekh" hidden="false" id="a057-7042-8d97-c3e0" targetId="84ac-3c70-679e-f056" type="selectionEntry"/>
     <entryLink import="true" name="Thazrymr" hidden="false" id="1e0b-4c34-066c-635f" targetId="7e9b-5eb4-1718-6502" type="selectionEntry"/>
     <entryLink import="true" name="K&apos;daai Stalker" hidden="false" id="c502-b375-ff38-8d03" targetId="ea0b-6f5b-9187-6aee" type="selectionEntry"/>
+    <entryLink import="true" name="Detachments" hidden="false" id="e463-b09c-aefa-eaca" targetId="0863-6b2a-a74a-31ed" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Fireglaive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fea9-43bc-25b1-0c6d">
