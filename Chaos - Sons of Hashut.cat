@@ -31,6 +31,7 @@
     <categoryEntry name="Bull Centaur Warden" id="454b-86fc-12a5-b29e" hidden="false"/>
     <categoryEntry name="Búlvrekh" id="dafc-eb66-e076-cf37" hidden="false"/>
     <categoryEntry name="Thazrymr" id="40da-172e-7338-d056" hidden="false"/>
+    <categoryEntry name="K&apos;daai Stalker" id="e134-dc8b-e56f-7447" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Ash &amp; Iron" id="1834-ed25-4ab3-5dba" hidden="false">
@@ -1689,7 +1690,7 @@ A. Yes.</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">11</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
         </profile>
@@ -1824,7 +1825,7 @@ A. Yes.</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">11</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
         </profile>
@@ -1934,7 +1935,7 @@ A. Yes.</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">11</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">13</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
         </profile>
@@ -1991,7 +1992,7 @@ A. Yes.</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">7</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
         </profile>
@@ -2129,7 +2130,7 @@ A. Yes.</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">7</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
         </profile>
@@ -2554,7 +2555,7 @@ A. Yes.</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">11</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
         </profile>
@@ -3112,8 +3113,7 @@ A. Yes.</characteristic>
         </profile>
         <profile name="Left Hand of Hashut" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a602-30fe-09cd-a7d3">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, that unit can ignore any or all modifiers to its characteristics and to any roll or test made for it (excluding modifiers to saving throws).
-</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, that unit can ignore any or all modifiers to its characteristics and to any roll or test made for it (excluding modifiers to saving throws).</characteristic>
           </characteristics>
         </profile>
         <profile name="Foul Haze (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c570-5c92-8ea6-60e0">
@@ -3286,6 +3286,35 @@ A. Yes.</characteristic>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="K&apos;daai Stalker" hidden="false" id="ea0b-6f5b-9187-6aee">
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="0b66-1cff-4313-214a" primary="false" name="Infantry"/>
+        <categoryLink targetId="79a2-e087-bf6c-aeba" id="56df-54c2-cb18-50b4" primary="false" name="K&apos;daai"/>
+        <categoryLink targetId="e134-dc8b-e56f-7447" id="d3c5-b0e6-146b-ffb2" primary="false" name="K&apos;daai Stalker"/>
+        <categoryLink targetId="9c0e-7e25-4580-e439" id="2b62-bf05-a15e-c1f5" primary="false" name="Daemon"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="be4f-0c49-d73a-d967" primary="false" name="Chaos"/>
+        <categoryLink targetId="9321-c9ec-e974-81fa" id="8876-72e3-6a14-5086" primary="false" name="Faction: Sons of Hashut"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="K&apos;daai Stalker" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="afaa-f0e3-8a55-cd57">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Infiltrators" id="ab72-6ec9-a244-50bc" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
+        <infoLink name="Lone Operative" id="946d-69aa-8673-7179" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+        <infoLink name="Stealth" id="add7-27af-d287-9c21" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Fights First" id="8d0d-85c7-7fde-c102" hidden="false" type="rule" targetId="24-c886-e8ba-5a89"/>
+        <infoLink name="Ash &amp; Iron" id="315b-6526-ac6f-6ba2" hidden="false" type="rule" targetId="1834-ed25-4ab3-5dba"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
