@@ -91,7 +91,8 @@ Q. Can you use the &quot;Get Back To Work, Scum!&quot; ability if there are no o
 A. No.
 
 Q. Can you still activate a Dark Bounty with Thazrymr&apos;s &quot;Right Hand of Hashut&quot; ability if you have no Tithe points?
-A. Yes.</characteristic>
+A. Yes.
+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3292,7 +3293,7 @@ A. Yes.</characteristic>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="K&apos;daai Stalker" hidden="false" id="ea0b-6f5b-9187-6aee">
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="0b66-1cff-4313-214a" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="0b66-1cff-4313-214a" primary="true" name="Infantry"/>
         <categoryLink targetId="79a2-e087-bf6c-aeba" id="56df-54c2-cb18-50b4" primary="false" name="K&apos;daai"/>
         <categoryLink targetId="e134-dc8b-e56f-7447" id="d3c5-b0e6-146b-ffb2" primary="false" name="K&apos;daai Stalker"/>
         <categoryLink targetId="9c0e-7e25-4580-e439" id="2b62-bf05-a15e-c1f5" primary="false" name="Daemon"/>
@@ -3315,6 +3316,13 @@ A. Yes.</characteristic>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Dark Purpose" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1e4e-3efa-b7ee-d6f8">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the first battle round, select one enemy CHARACTER model that is either on the battlefield or in Reserves. Until the end of the battle:
+■ Each time this model makes an attack that targets that CHARACTER model, you can re-roll the Hit roll and you can re-roll the Wound roll.
+■ If this model destroys that CHARACTER model, you gain 1CP.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Infiltrators" id="ab72-6ec9-a244-50bc" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
@@ -3332,18 +3340,31 @@ A. Yes.</characteristic>
           <profiles>
             <profile name="Smoking claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1612-1e06-7d22-245d">
               <characteristics>
-                <characteristic name="Range" typeId="914c-b413-91e3-a132"/>
-                <characteristic name="A" typeId="2337-daa1-6682-b110"/>
-                <characteristic name="WS" typeId="95d1-95f-45b4-11d6"/>
-                <characteristic name="S" typeId="ab33-d393-96ce-ccba"/>
-                <characteristic name="AP" typeId="41a0-1301-112a-e2f2"/>
-                <characteristic name="D" typeId="3254-9fe6-d824-513e"/>
-                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Precision</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink name="Precision" id="08e6-b1e9-be7c-f84f" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="7801-001d-855f-02a5" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -3369,6 +3390,7 @@ A. Yes.</characteristic>
     <entryLink import="true" name="Bull Centaur Warden" hidden="false" id="9f63-137f-91a3-1c9a" targetId="8300-ee56-733b-931e" type="selectionEntry"/>
     <entryLink import="true" name="Búlvrekh" hidden="false" id="a057-7042-8d97-c3e0" targetId="84ac-3c70-679e-f056" type="selectionEntry"/>
     <entryLink import="true" name="Thazrymr" hidden="false" id="1e0b-4c34-066c-635f" targetId="7e9b-5eb4-1718-6502" type="selectionEntry"/>
+    <entryLink import="true" name="K&apos;daai Stalker" hidden="false" id="c502-b375-ff38-8d03" targetId="ea0b-6f5b-9187-6aee" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Fireglaive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fea9-43bc-25b1-0c6d">
