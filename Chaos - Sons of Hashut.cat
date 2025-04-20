@@ -117,18 +117,14 @@ A. Yes.</characteristic>
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Scorched Earth" typeId="8ce6-5380-6c7b-6b48" typeName="Stratagem" hidden="false" id="a849-f232-f119-f6e4">
+            <profile name="Hellforged Plate" typeId="8ce6-5380-6c7b-6b48" typeName="Stratagem" hidden="false" id="d0a3-708d-131a-7767">
               <characteristics>
                 <characteristic name="Category" typeId="a67b-e4ec-966a-42ad">Battle Tactic</characteristic>
-                <characteristic name="CP" typeId="ba59-618d-8d98-fa53">0</characteristic>
-                <characteristic name="When" typeId="058d-453c-161c-4def">Your Shooting phase or the Fight phase. 7  8676787 6 687 456354354624 245337 337</characteristic>
-                <characteristic name="Target" typeId="2392-5f0a-1c31-4e9f">One SONS  476543857  745 7475838 373745 45735735 745 745 473835885 475 457 457 75465 8 65987667676935 336</characteristic>
-                <characteristic name="Effect" typeId="c70a-d156-e2db-2f26">Roll one D6: on a 2+, you gain 1CP.</characteristic>
+                <characteristic name="CP" typeId="ba59-618d-8d98-fa53">1</characteristic>
+                <characteristic name="When" typeId="058d-453c-161c-4def">Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.</characteristic>
+                <characteristic name="Target" typeId="2392-5f0a-1c31-4e9f">One SONS OF HASHUT unit from your army (excluding SLAVE units) that was selected as the target of one or more of the attacking unit’s attacks.</characteristic>
+                <characteristic name="Effect" typeId="c70a-d156-e2db-2f26">Until the attacking unit has finished making its attacks, each time an attack targets your unit, worsen the Armour Penetration characteristic of that attack by 1.</characteristic>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="c70d-4373-ffd3-75a2">1</attribute>
-                <attribute name="New Attribute Type" typeId="dd65-2d73-f7da-6dde">2</attribute>
-              </attributes>
             </profile>
           </profiles>
         </selectionEntry>
