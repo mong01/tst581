@@ -122,7 +122,7 @@ A. Yes.</characteristic>
                 <characteristic name="Category" typeId="a67b-e4ec-966a-42ad">Battle Tactic</characteristic>
                 <characteristic name="CP" typeId="ba59-618d-8d98-fa53">0</characteristic>
                 <characteristic name="When" typeId="058d-453c-161c-4def">Your Shooting phase or the Fight phase.</characteristic>
-                <characteristic name="Target" typeId="2392-5f0a-1c31-4e9f">One SONS OF HASHUT unit from your army that has just destroyed an enemy unit that was within range of an objective marker.</characteristic>
+                <characteristic name="Target" typeId="2392-5f0a-1c31-4e9f">One SONS </characteristic>
                 <characteristic name="Effect" typeId="c70a-d156-e2db-2f26">Roll one D6: on a 2+, you gain 1CP.</characteristic>
               </characteristics>
               <attributes>
