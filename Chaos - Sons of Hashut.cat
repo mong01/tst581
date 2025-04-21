@@ -3499,7 +3499,8 @@ A. That objective marker is still Claimed, but does not come under your control 
           <selectionEntryGroups>
             <selectionEntryGroup name="Exaction Host Enhancements" id="e81f-e6d6-98a6-7979" hidden="true">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0498-5d32-37d9-d468" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0498-5d32-37d9-d468" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5a6-0adf-c4a3-3feb" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Pillager" hidden="false" id="8b17-5319-a1df-7639">
