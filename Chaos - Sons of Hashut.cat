@@ -93,8 +93,8 @@ A. No.
 Q. Can you still activate a Dark Bounty with Thazrymr&apos;s &quot;Right Hand of Hashut&quot; ability if you have no Tithe points?
 A. Yes.
 
-Q. If I have Claimed an objective marker with the Ours by Right Stratagem, what happens if my opponent gains control of that objective marker then loses it?
-A. That objective marker is still Claimed, but does not come under your control again. If you regain control of that objective marker (i.e. because your Level of Control over that objective marker is greater than your opponent’s at the end of a phase), you will control that objective marker again as described in the Stratagem.</characteristic>
+Q. If I have Claimed an objective marker with the Ours by Right Stratagem, what happens if my opponent gains control of that objective marker?
+A. That objective marker is still Claimed, but does not come under your control again if your opponent loses it. If you regain control of that objective marker (i.e. because your Level of Control over that objective marker is greater than your opponent’s at the end of a phase), you will control that objective marker again as described in the Stratagem.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -120,7 +120,7 @@ A. That objective marker is still Claimed, but does not come under your control 
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Frenzied Charge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="11ed-50b1-4f53-4bed">
+            <profile name="Forced March" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="11ed-50b1-4f53-4bed">
               <characteristics>
                 <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **1CP**
@@ -2033,7 +2033,7 @@ A. That objective marker is still Claimed, but does not come under your control 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="210"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -2825,9 +2825,9 @@ A. That objective marker is still Claimed, but does not come under your control 
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Requisition" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="55db-d01a-f6a1-6698">
+        <profile name="Naphtha Bombs" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="55db-d01a-f6a1-6698">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, you can target one unit from your army with this ability with the Grenade Stratagem for 0CP.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3467,9 +3467,14 @@ A. That objective marker is still Claimed, but does not come under your control 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b513-aea1-d827-05e4" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Twisted Industrialists" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e0b0-5b77-1712-baf1">
+                <profile name="Stake the Claim" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e0b0-5b77-1712-baf1">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a SONS OF HASHUT model from your army (excluding SLAVE models) makes an attack that targets a unit within range of an objective marker, you can re-roll the Hit roll.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">From the second battle round onwards, at the start of each battle round, select one objective marker on the battlefield that is not within your deployment zone. That objective marker is said to be Targeted. Until the end of the battle round:
+■ If you control that objective marker at the end of any turn, you gain 1CP (this is in addition to any CP gained from other sources), and that objective marker is no longer Targeted.
+
+■ That objective marker also ceases to be Targeted at the end of the battle round if it is still Targeted.
+
+■ An objective marker cannot be Targeted more than once per battle.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
