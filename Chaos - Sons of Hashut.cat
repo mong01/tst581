@@ -120,13 +120,13 @@ A. That objective marker is still Claimed, but does not come under your control 
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Forced March" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="11ed-50b1-4f53-4bed">
+            <profile name="Judgement" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="11ed-50b1-4f53-4bed">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **1CP**
-**When:** Your Charge phase.
-**Target:** One SONS OF HASHUT INFANTRY or SONS OF HASHUT MOUNTED unit from your army (excluding SLAVE units).
-**Effect:** Until the end of the turn, your unit is eligible to declare a charge in a turn in which it Advanced.</characteristic>
+**When:** Any phase.
+**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that was just destroyed. You can use this Stratagem on that unit even though it was just destroyed.
+**Effect:** Until the end of the battle, each time a SONS OF HASHUT unit (excluding SLAVE units) from your army makes an attack that targets the enemy unit that just destroyed your unit, add 1 to the Hit roll and add 1 to the Wound roll.</characteristic>
               </characteristics>
             </profile>
             <profile name="Unyielding Plate" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4c22-1f0b-c06c-a9b0">
@@ -164,6 +164,15 @@ A. That objective marker is still Claimed, but does not come under your control 
 **When:** Fight phase.
 **Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that has not been selected to fight this phase.
 **Effect:** Until the end of the phase, melee weapons equipped by models in your unit have the [LETHAL HITS] ability. If such a weapon already has that ability, until the end of the phase, each time an attack is made with that weapon, an unmodified Hit roll of 5+ scores a Critical Hit.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Forced March" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6055-62d5-9752-975b">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:** Your Charge phase.
+**Target:** One SONS OF HASHUT INFANTRY or SONS OF HASHUT MOUNTED unit from your army (excluding SLAVE units).
+**Effect:** Until the end of the turn, your unit is eligible to declare a charge in a turn in which it Advanced.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3471,9 +3480,7 @@ A. That objective marker is still Claimed, but does not come under your control 
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">From the second battle round onwards, at the start of each battle round, select one objective marker on the battlefield that is not within your deployment zone. That objective marker is said to be Targeted. Until the end of the battle round:
 ■ If you control that objective marker at the end of any turn, you gain 1CP (this is in addition to any CP gained from other sources), and that objective marker is no longer Targeted.
-
 ■ That objective marker also ceases to be Targeted at the end of the battle round if it is still Targeted.
-
 ■ An objective marker cannot be Targeted more than once per battle.</characteristic>
                   </characteristics>
                 </profile>
@@ -3505,6 +3512,66 @@ A. That objective marker is still Claimed, but does not come under your control 
                     <profile name="Pillager" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="047a-cd7e-6e03-97cf">
                       <characteristics>
                         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time the bearer&apos;s unit destroys an enemy unit that was within range of an objective marker, roll one D6: on a 4+, you gain 1CP.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Brand of Ownership" hidden="false" id="89f0-c4d8-d40d-f0a0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2463-a22e-721d-5ff0" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4891-245b-cf7e-b73d" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Brand of Ownership" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="482a-9bca-dca5-8c18">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If you control an objective marker at the end of your Command phase and the bearer&apos;s unit is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Furnace Heart" hidden="false" id="d75e-2b28-5274-ac8b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be4b-bfd5-4872-5869" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="92aa-75e4-3d7f-5ccc" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Furnace Heart" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="af4e-e2be-b0b7-81eb">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The first time the bearer is destroyed, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Refusal to Die" hidden="false" id="d7e7-9d94-a76d-357f">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5102-4abb-b2e3-b4b2" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f1e8-0e48-0c35-7b2a" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Refusal to Die" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5905-f2a6-3561-4a18">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has the Feel No Pain 4+ ability.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
