@@ -3483,9 +3483,8 @@ A. That objective marker is still Claimed, but does not come under your control 
               <profiles>
                 <profile name="Stake the Claim" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e0b0-5b77-1712-baf1">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">From the second battle round onwards, at the start of each battle round, select one objective marker on the battlefield that is not within your deployment zone. That objective marker is said to be Targeted. Until the end of the battle round:
-■ If you control that objective marker at the end of any turn, you gain 1CP (this is in addition to any CP gained from other sources), and that objective marker is no longer Targeted.
-■ That objective marker also ceases to be Targeted at the end of the battle round if it is still Targeted.
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">From the second battle round onwards, at the start of each battle round, select one objective marker on the battlefield that is not within your deployment zone. That objective marker is said to be Targeted. Until the end of the battle round, if you control that objective marker at the end of any turn, you gain 1CP (this is in addition to any CP gained from other sources), and that objective marker is no longer Targeted. In addition:
+■ That objective marker ceases to be Targeted at the end of the battle round if it is still Targeted.
 ■ An objective marker cannot be Targeted more than once per battle.</characteristic>
                   </characteristics>
                 </profile>
