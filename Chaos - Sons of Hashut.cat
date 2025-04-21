@@ -103,9 +103,6 @@ A. That objective marker is still Claimed, but does not come under your control 
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="[Reference] Stratagems" hidden="false" id="67d8-104c-7e2f-68fe">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6f26-5fb7-50f6-d99a-max" includeChildSelections="false"/>
-      </constraints>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Exaction Host Stratagems" hidden="true" id="4044-2c92-0467-bd49">
           <constraints>
