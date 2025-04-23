@@ -3530,7 +3530,7 @@ A. That objective marker is still Claimed, but does not come under your control 
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Daemon Legion" hidden="true" id="d766-c5e5-d32f-1dcf">
+            <selectionEntry type="upgrade" import="true" name="Daemon Legion" hidden="false" id="d766-c5e5-d32f-1dcf">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef8e-e34c-bd68-8d93" includeChildSelections="false"/>
               </constraints>
