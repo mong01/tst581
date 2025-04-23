@@ -97,8 +97,7 @@ Q. Can you still activate a Dark Bounty with Thazrymr&apos;s &quot;Right Hand of
 A. Yes.
 
 Q. If I have Claimed an objective marker with the Ours by Right Stratagem, what happens if my opponent gains control of that objective marker?
-A. That objective marker is still Claimed, but does not come under your control again if your opponent loses it. If you regain control of that objective marker (i.e. because your Level of Control over that objective marker is greater than your opponent’s at the end of a phase), you will control that objective marker again as described in the Stratagem.
-</characteristic>
+A. That objective marker is still Claimed, but does not come under your control again if your opponent loses it. If you regain control of that objective marker (i.e. because your Level of Control over that objective marker is greater than your opponent’s at the end of a phase), you will control that objective marker again as described in the Stratagem.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3485,8 +3484,22 @@ A. That objective marker is still Claimed, but does not come under your control 
               <profiles>
                 <profile name="Stake the Claim" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e0b0-5b77-1712-baf1">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of each battle round, select one objective marker on the battlefield that is not within your deployment zone. That objective marker is said to be Targeted. If you control that objective marker at the end of any turn, you gain 1CP (this is in addition to any CP gained from other sources), and that objective marker is no longer Targeted. Only one objective marker can be Targeted on the battlefield; if an objective marker is still Targeted at the start of a new battle round, do not select another objective marker.
-</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of each battle round, select one objective marker on the battlefield that is not within your deployment zone. That objective marker is said to be Targeted. If you control that objective marker at the end of any turn, you gain 1CP (this is in addition to any CP gained from other sources), and that objective marker is no longer Targeted. Only one objective marker can be Targeted on the battlefield; if an objective marker is still Targeted at the start of a new battle round, do not select another objective marker.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Daemon Legion" hidden="false" id="d766-c5e5-d32f-1dcf">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef8e-e34c-bd68-8d93" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Unquenchable Fury" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="334d-7cd3-ab6b-9c64">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of each battle round, roll one D6 for each K&apos;DAAI unit from your army that is on the battlefield (excluding units that are Unchained), adding 1 to the result for each battle round that has passed (e.g. at the start of the second battle round, you would add 1 to the result). Each time you roll a 6+, that unit is regarded as Unchained and gains the following ability:
+**Unfettered Binding:** Weapons equipped by models in this unit have the [HAZARDOUS] ability. In addition, each time a model in your unit makes an attack:
+■ You can re-roll Hit rolls of 1 and Wound rolls of 1.
+■ Improve the Armour Penetration characteristic of that attack by 1.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
