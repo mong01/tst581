@@ -192,13 +192,22 @@ A. That objective marker is still Claimed, but does not come under your control 
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Unyielding Plate" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5679-2827-1a10-4422">
+            <profile name="Pyroclastic Burst" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5679-2827-1a10-4422">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Wargear**
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **1CP**
-**When:** Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
-**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that was selected as the target of one or more of the attacking unit’s attacks.
-**Effect:** Until the attacking unit has finished making its attacks, each time an attack targets your unit, worsen the Armour Penetration characteristic of that attack by 1.</characteristic>
+**When:** Your Charge phase, just after a K&apos;DAAI FIREBORN unit from your army ends a Charge move.
+**Target:** That K&apos;DAAI FIREBORN unit.
+**Effect:** Select one enemy unit within Engagement Range of your unit and roll one D6 for each model in your unit: for each 4+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal wounds). If that enemy unit is not a MONSTER or VEHICLE unit, roll three additional D6.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Unbreakable" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cfc0-96e5-51f4-4d84">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Epic Deed**
+**2CP**
+**When:** Fight phase, just after an enemy unit has selected its targets.
+**Target:** One K&apos;DAAI unit from your army that was selected as the target of one or more of the attacking unit’s attacks.
+**Effect:** Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, do not remove it from play. The destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3507,7 +3516,7 @@ A. That objective marker is still Claimed, but does not come under your control 
               <profiles>
                 <profile name="Stake the Claim" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e0b0-5b77-1712-baf1">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of each battle round, select one objective marker on the battlefield that is not within your deployment zone. That objective marker is said to be Targeted. If you control that objective marker at the end of any turn, you gain 1CP (this is in addition to any CP gained from other sources), and that objective marker is no longer Targeted. Only one objective marker can be Targeted on the battlefield; if an objective marker is still Targeted at the start of a new battle round, do not select another objective marker.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of each battle round, select one objective marker on the battlefield that is not within your deployment zone. That objective marker is said to be Targeted. If you control that objective marker at the end of any turn, you gain 1CP (this is in addition to any CP gained from other sources), and that objective marker is no longer Targeted. Only one objective marker can be Targeted on the battlefield; if an objective marker is still Targeted at the start of a new battle round, do not select another objective marker. An objective marker cannot be Targeted more than once per battle.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
