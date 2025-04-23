@@ -3500,7 +3500,7 @@ A. That objective marker is still Claimed, but does not come under your control 
 
 **Unfettered Binding:** Weapons equipped by models in this unit have the [HAZARDOUS] ability. In addition, each time a model in this unit makes an attack:
 ■ Re-roll a Hit roll of 1 and a Wound roll of 1.
-■ Improve the Armour Penetration characteristic of that attack by 1.</characteristic>
+■ Add 1 to the Damage characteristic of that attack.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
