@@ -3496,10 +3496,10 @@ A. That objective marker is still Claimed, but does not come under your control 
               <profiles>
                 <profile name="Unquenchable Fury" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="334d-7cd3-ab6b-9c64">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of each battle round, roll one D6 for each K&apos;DAAI unit from your army that is on the battlefield (excluding units that are Unchained), adding 1 to the result for each battle round that has passed (e.g. at the start of the second battle round, you would add 1 to the result). If you roll a 6+, that unit is regarded as Unchained and gains the following ability:
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">From the second battle round onwards, at the start of the battle round, roll one D6 for each K&apos;DAAI unit from your army that is on the battlefield (excluding units that are Unchained), adding 1 to the result for each battle round that has passed (e.g. at the start of the second battle round, you would add 1 to the result). If you roll a 7+, that unit is regarded as Unchained and gains the following ability until the end of the battle:
 
-**Unfettered Binding:** Weapons equipped by models in this unit have the [HAZARDOUS] ability. In addition, each time a model in your unit makes an attack:
-■ You can re-roll Hit rolls of 1 and Wound rolls of 1.
+**Unfettered Binding:** Weapons equipped by models in this unit have the [HAZARDOUS] ability. In addition, each time a model in this unit makes an attack:
+■ Re-roll a Hit roll of 1 and a Wound roll of 1.
 ■ Improve the Armour Penetration characteristic of that attack by 1.</characteristic>
                   </characteristics>
                 </profile>
