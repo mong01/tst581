@@ -180,6 +180,29 @@ A. That objective marker is still Claimed, but does not come under your control 
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Daemon Legion Stratagems" hidden="true" id="abad-b415-ebad-f5da">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30b7-5617-6c23-63e4" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d766-c5e5-d32f-1dcf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Unyielding Plate" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5679-2827-1a10-4422">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Wargear**
+**1CP**
+**When:** Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
+**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that was selected as the target of one or more of the attacking unit’s attacks.
+**Effect:** Until the attacking unit has finished making its attacks, each time an attack targets your unit, worsen the Armour Penetration characteristic of that attack by 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="1f68-634f-47d2-285d" primary="true" name="Configuration"/>
@@ -3471,7 +3494,7 @@ A. That objective marker is still Claimed, but does not come under your control 
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="f6b4-61af-60d5-55d2" primary="true" name="Configuration"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Detachments" id="86d9-eebb-1153-ebb7" hidden="false">
+        <selectionEntryGroup name="Detachments" id="86d9-eebb-1153-ebb7" hidden="false" defaultSelectionEntryId="none">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="15c6-f7f8-f45d-ee77-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15c6-f7f8-f45d-ee77-max" includeChildSelections="false"/>
@@ -3496,11 +3519,9 @@ A. That objective marker is still Claimed, but does not come under your control 
               <profiles>
                 <profile name="Unquenchable Fury" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="334d-7cd3-ab6b-9c64">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">From the second battle round onwards, at the start of the battle round, roll one D6 for each K&apos;DAAI unit from your army that is on the battlefield (excluding units that are Unchained), adding 1 to the result for each battle round that has passed (e.g. at the start of the second battle round, you would add 1 to the result). If you roll a 7+, that unit is regarded as Unchained and gains the following ability until the end of the battle:
-
-**Unfettered Binding:** Weapons equipped by models in this unit have the [HAZARDOUS] ability. In addition, each time a model in this unit makes an attack:
-■ Re-roll a Hit roll of 1 and a Wound roll of 1.
-■ Add 1 to the Damage characteristic of that attack.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a K&apos;DAAI unit from your army is selected to shoot or fight, it can become Unchained. If it does, until the end of the phase:
+■ Each time a model in that unit makes an attack, add 1 to the Wound roll and add 1 to the Damage characteristic of that attack.
+■ Weapons equipped by models in that unit have the [HAZARDOUS] ability.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3608,6 +3629,15 @@ A. That objective marker is still Claimed, but does not come under your control 
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="da63-93fb-1ad3-aa6f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Daemon Legion Enhancements" id="507f-6bc2-c684-ada2" hidden="true">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d766-c5e5-d32f-1dcf" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
