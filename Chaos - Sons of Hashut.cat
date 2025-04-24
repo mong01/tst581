@@ -2877,7 +2877,7 @@ A. That objective marker is still Claimed, but does not come under your control 
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -3710,13 +3710,13 @@ A. That objective marker is still Claimed, but does not come under your control 
                 </modifier>
               </modifiers>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="K&apos;daai Exo-armour" hidden="false" id="9331-ecbe-8615-520b">
+                <selectionEntry type="upgrade" import="true" name="K&apos;daai Armour" hidden="false" id="9331-ecbe-8615-520b">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a51-09bb-64e1-8c95" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2ae7-be81-bd84-030d" includeChildSelections="true" includeChildForces="true"/>
                   </constraints>
                   <profiles>
-                    <profile name="K&apos;daai Exo-armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="20f3-58ef-95e9-3b0d">
+                    <profile name="K&apos;daai Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="20f3-58ef-95e9-3b0d">
                       <characteristics>
                         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to the Toughness characteristic and add 2 to the Wounds characteristic of the bearer.</characteristic>
                       </characteristics>
@@ -3758,6 +3758,46 @@ A. That objective marker is still Claimed, but does not come under your control 
                       </conditions>
                     </modifier>
                   </modifiers>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Warp-linked Sigils" hidden="false" id="7e4e-216c-ba54-b0b3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf84-e2df-65b5-e612" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5922-ab66-54ba-794d" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Warp-linked Sigils" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="14d3-6a93-c223-fd8e">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, you can select one K&apos;DAAI unit within 12&quot; of the bearer. Until the start of your next Command phase, the first time that unit is targeted with a Stratagem, reduce the CP cost of that use of that Stratagem by 1CP.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Black Presence" hidden="false" id="531e-d457-8e52-8f65">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9754-4f42-1fd7-7a11" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b528-ff80-bf99-805f" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Black Presence" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a2e7-0581-0283-968b">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Fight phase, each enemy unit within Engagement Range of the bearer must take a Battle-shock test. If that unit is Below Half-strength, subtract 1 from the result.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
