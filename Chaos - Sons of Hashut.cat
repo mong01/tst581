@@ -300,7 +300,25 @@ A. That objective marker is still Claimed, but does not come under your control 
 **When:** One GRENADES unit from your army (excluding units that Advanced, Fell Back or have shot this turn) that is not within Engagement Range of one or more enemy units.
 **Target:** That enemy model.
 **Effect:** Select one GRENADES model in your unit and one enemy unit that is not within Engagement Range of any units from your army and is within 8&quot; of and visible to your GRENADES model. Roll six D6, re-rolling results of 1, 2 or 3: for each 4+, that enemy unit suffers 1 mortal wound.
-**Restrictions:** You cannot use the Grenade Stratagem and this Stratagem in the same phase, unless that unit has an ability that allows you to use a Stratagem twice (e.g. Naphtha Bombs), in which case this Stratagem is treated as if it were the Grenade Stratagem.</characteristic>
+**Restrictions:** You cannot use the Grenade Stratagem and this Stratagem in the same phase, unless that unit is affected by an ability that allows you to use a Stratagem twice (e.g. Naphtha Bombs), in which case this Stratagem is treated as if it were the Grenade Stratagem.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Salt the Earth" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1a93-16dc-d4c5-4335">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:** Command phase.
+**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that is within range of an objective marker you control.
+**Effect:** That objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Toxic Residuum" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6271-ca91-2452-0294">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
+**1CP**
+**When:** Fight phase, just after an enemy unit has selected its targets.
+**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that was selected as the target of one or more of the attacking unit’s attacks.
+**Effect:** Until the end of the turn, each time an attack is made that targets your unit, subtract 1 from the Wound roll.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3894,6 +3912,101 @@ At the start of the battle round, select one of the following toxic agents to be
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Exaction Host Enhancements" id="4809-fc80-a922-71b8" hidden="true">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="eb26-e932-65a3-8c34" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56e6-9b12-a84b-7a47" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="An Eye for Genocide" hidden="false" id="6328-d7bc-7d80-b3f0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4894-9f9b-4f3b-701f" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="21e5-28a8-90db-3cef" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="An Eye for Genocide" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4948-df23-7dca-b923">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, at the start of any Command phase and if the bearer is on the battlefield, you can change your currently active toxic agent.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Smothering Advance" hidden="false" id="0866-2456-0c9a-9145">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd58-3ce1-2b0e-6988" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3b37-0b37-49dc-7577" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Smothering Advance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e7b1-1390-289a-e785">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer is leading a unit, models in that unit have the Infiltrators ability.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Toxin Specialist" hidden="false" id="20a2-5362-6a0b-2d89">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="321a-1d4e-ebe0-ee89" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7a82-29b4-d2a1-87bd" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Toxin Specialist" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dcf7-e671-70a6-974c">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time the bearer is selected to shoot or fight, select either the [LETHAL HITS] or [SUSTAINED HITS 1] ability. Until those attacks are resolved, weapons equipped by the bearer have the selected ability.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Veilcutter Visor" hidden="false" id="22a8-e3b4-da6c-69cf">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e27-e791-6e57-e5e8" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f4b1-d7cb-b1fd-8dee" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Veilcutter Visor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6b2d-c143-625b-dc2f">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged weapons equipped by models in the bearer’s unit have the [IGNORES COVER] ability.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9967-b30d-ddae-c1e2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
