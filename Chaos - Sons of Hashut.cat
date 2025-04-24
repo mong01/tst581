@@ -108,7 +108,7 @@ A. That objective marker is still Claimed, but does not come under your control 
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="89cd-b7ac-6088-7bb0" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="[Reference] Stratagems" hidden="false" id="67d8-104c-7e2f-68fe" defaultAmount="">
+    <selectionEntry type="upgrade" import="true" name="[Reference] Stratagems" hidden="false" id="67d8-104c-7e2f-68fe">
       <categoryLinks>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="1f68-634f-47d2-285d" primary="true" name="Configuration"/>
       </categoryLinks>
@@ -338,7 +338,7 @@ A. That objective marker is still Claimed, but does not come under your control 
                 <modifierGroup type="and">
                   <modifiers>
                     <modifier type="set" value="0" field="3a43-f7c7-a685-1d27"/>
-                    <modifier type="set" value="0" field="3a43-f7c7-a685-1d27"/>
+                    <modifier type="set" value="0" field="40dc-2b0f-be74-d6a6"/>
                     <modifier type="set" value="true" field="hidden"/>
                   </modifiers>
                   <conditions>
