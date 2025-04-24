@@ -1684,9 +1684,9 @@ A. That objective marker is still Claimed, but does not come under your control 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="040c-1a0d-b81c-952e-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="2x Spike pod" hidden="false" id="7a29-f9d9-6501-2f9c" flatten="true" collapsible="true">
+            <selectionEntry type="upgrade" import="true" name="2x Spike pod" hidden="false" id="7a29-f9d9-6501-2f9c" flatten="false" collapsible="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Spike pod" hidden="false" id="a946-601b-d8e0-760c" collective="true">
+                <selectionEntry type="upgrade" import="true" name="Spike pod" hidden="false" id="a946-601b-d8e0-760c" collective="false">
                   <constraints>
                     <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3c9b-c7d1-79f0-7b36" includeChildSelections="false"/>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="542f-2fdb-d77f-3303" includeChildSelections="false"/>
