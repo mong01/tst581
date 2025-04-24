@@ -112,8 +112,8 @@ A. That objective marker is still Claimed, but does not come under your control 
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Exaction Host Stratagems" hidden="false" id="4044-2c92-0467-bd49">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fe4-62bb-0a86-fd9d" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="849a-c3ac-fb16-3c81" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fe4-62bb-0a86-fd9d" includeChildSelections="false" automatic="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="849a-c3ac-fb16-3c81" includeChildSelections="false" automatic="true"/>
           </constraints>
           <profiles>
             <profile name="Judgement" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="11ed-50b1-4f53-4bed">
@@ -188,8 +188,8 @@ A. That objective marker is still Claimed, but does not come under your control 
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Daemon Legion Stratagems" hidden="false" id="abad-b415-ebad-f5da">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30b7-5617-6c23-63e4" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fcfe-ca29-900c-33ce" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30b7-5617-6c23-63e4" includeChildSelections="false" automatic="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fcfe-ca29-900c-33ce" includeChildSelections="false" automatic="true"/>
           </constraints>
           <profiles>
             <profile name="Superior Construction" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5679-2827-1a10-4422">
