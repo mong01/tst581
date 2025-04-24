@@ -108,7 +108,7 @@ A. That objective marker is still Claimed, but does not come under your control 
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="89cd-b7ac-6088-7bb0" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="[Reference] Stratagems" hidden="false" id="67d8-104c-7e2f-68fe">
+    <selectionEntry type="upgrade" import="true" name="[Reference] Stratagems" hidden="false" id="67d8-104c-7e2f-68fe" defaultAmount="0">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Exaction Host Stratagems" hidden="false" id="4044-2c92-0467-bd49">
           <constraints>
