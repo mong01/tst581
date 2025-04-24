@@ -262,8 +262,8 @@ A. That objective marker is still Claimed, but does not come under your control 
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Extinction Corps Stratagems" hidden="false" id="c26d-9331-3e9c-1ece">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6f6-4604-22c6-ba5f" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d17-6b39-65e4-9a7d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6f6-4604-22c6-ba5f" includeChildSelections="false" automatic="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d17-6b39-65e4-9a7d" includeChildSelections="false" automatic="true"/>
           </constraints>
           <profiles>
             <profile name="Viral Cascade" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8660-230b-09ed-af5c">
