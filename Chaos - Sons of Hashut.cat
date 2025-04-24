@@ -219,6 +219,33 @@ A. That objective marker is still Claimed, but does not come under your control 
 **Effect:** Select one enemy unit within Engagement Range of your unit and roll one D6 for each model in your unit: for each 4+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal wounds). If that enemy unit is not a MONSTER or VEHICLE unit, roll three additional D6.</characteristic>
               </characteristics>
             </profile>
+            <profile name="Black Barrage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="168b-416f-a108-028f">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
+**1CP**
+**When:** Your Shooting phase.
+**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that has not been selected to shoot this phase.
+**Effect:** Until the end of the phase, each time a model in your unit makes an attack that targets the closest eligible target, that attack has the [SUSTAINED HITS 1] ability.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Breach in Reality" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b77f-bedf-6825-853d">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:** End of your opponent&apos;s turn
+**Target:** One K&apos;DAAI INFANTRY unit from your army that is not within Engagement Range of any enemy units.
+**Effect:** Remove that unit from the battlefield. Then, in the Reinforcements step of your next Movement phase, set up that unit anywhere on the battlefield that is more than 9&quot; horizontally away from all enemy models.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ashen Veil" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b70f-da78-998a-f402">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:** Your opponents Shooting phase.
+**Target:** One K&apos;DAAI unit from your army and one SONS OF HASHUT INFANTRY from your army (excluding SLAVE and K&apos;DAAI units) that is within 6&quot; of your K&apos;DAAI unit and was selected as the target of one or more of the attacking unit’s attacks.
+**Effect:** Until the end of the phase, your SONS OF HASHUT INFANTRY unit has the Benefit of Cover and the Stealth ability.</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
         </selectionEntry>
       </selectionEntries>
