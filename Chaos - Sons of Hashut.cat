@@ -3697,10 +3697,10 @@ At the start of the battle round, select one of the following toxic agents to be
 
 CLEANSING DOCTRINE
 At the start of the battle round, select one of the following toxic agents to be active until the start of the next battle round:
-■ **Neurotoxin D:** Each time an enemy model within your army&apos;s Fumigation Zone makes an attack, subtract 1 from the Hit roll.
-■ **Oxidising Miasma:** Each time an attack is allocated to an enemy model within your army&apos;s Fumigation Zone, improve the Armour Penetration characteristic of that attack by 1.
-■ **Clogging Fog:** Subtract 2&quot; from the Move characteristic of enemy units within your army&apos;s Fumigation Zone.
-■ **Rot Spores:** At the end of the Fight phase, roll one D6 for each enemy model within your army&apos;s Fumigation Zone; for each roll that is greater than that model&apos;s Toughness characteristic, that model&apos;s unit suffers 1 mortal wound (to a maximum of 3 mortal wounds per turn).</characteristic>
+■**Neurotoxin D:** Each time an enemy model within your army&apos;s Fumigation Zone makes an attack, subtract 1 from the Hit roll.
+■**Oxidising Miasma:** Each time an attack is allocated to an enemy model within your army&apos;s Fumigation Zone, improve the Armour Penetration characteristic of that attack by 1.
+■**Clogging Fog:** Subtract 2&quot; from the Move characteristic of enemy units within your army&apos;s Fumigation Zone.
+■**Rot Spores:** At the end of the Fight phase, roll one D6 for each enemy model within your army&apos;s Fumigation Zone; for each roll that is greater than that model&apos;s Toughness characteristic, that model&apos;s unit suffers 1 mortal wound (to a maximum of 3 mortal wounds per turn).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
