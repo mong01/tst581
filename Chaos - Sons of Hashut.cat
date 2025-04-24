@@ -527,12 +527,13 @@ A. That objective marker is still Claimed, but does not come under your control 
             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Torrent</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Devastating Wounds" id="029f-a820-b004-892f" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+        <infoLink name="Torrent" id="be49-6cb1-3f4b-8982" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ironfist torpedo launcher" hidden="false" id="b71c-d9ff-afa1-124d">
