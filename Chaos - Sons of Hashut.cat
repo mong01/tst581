@@ -324,6 +324,7 @@ A. That objective marker is still Claimed, but does not come under your control 
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4eb2-283a-3e8a-78eb" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6528-d35c-44f4-d463" includeChildSelections="false" automatic="true"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea80-7878-aa14-f70e" includeChildSelections="false" automatic="true"/>
       </constraints>
     </selectionEntry>
   </selectionEntries>
