@@ -2839,6 +2839,17 @@ A. That objective marker is still Claimed, but does not come under your control 
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                 <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="8353-3559-6e06-f0e6" childId="720b-1281-153e-ffca" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" value="2+" field="95d1-95f-45b4-11d6"/>
+                    <modifier type="increment" value="1" field="2337-daa1-6682-b110"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
         </selectionEntry>
