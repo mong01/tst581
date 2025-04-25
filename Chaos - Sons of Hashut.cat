@@ -3797,7 +3797,7 @@ At the start of the battle round, select one of the following toxic agents to be
               <profiles>
                 <profile name="Siege Specialists" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cf3b-9a6d-8e4c-17cc">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged weapons equipped by SONS OF HASHUT models from your army have the [HEAVY] ability. If such a weapon already has this ability, each time an attack is made with that weapon, if the attacking model’s unit Remained Stationary this turn, you can re-roll the Hit roll.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged weapons equipped by SONS OF HASHUT models from your army (excluding SLAVE models) have the [HEAVY] ability. If such a weapon already has this ability, each time an attack is made with that weapon, if the attacking model’s unit Remained Stationary this turn, you can re-roll the Hit roll.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
