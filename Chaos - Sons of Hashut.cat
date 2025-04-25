@@ -347,6 +347,81 @@ A. That objective marker is still Claimed, but does not come under your control 
                 </modifierGroup>
               </modifierGroups>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hammers of Hashut Stratagems" hidden="false" id="40d2-dcaa-e4a9-045f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72e4-2a50-9843-b9d4" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e26d-e42c-b3f8-5e3e" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Hold at All Costs" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5332-605a-3f77-f8b3">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:** Your Command phase.
+**Target:** One SONS OF HASHUT INFANTRY or SONS OF HASHUT MOUNTED unit from your army (excluding SLAVE units) within range of an objective marker.
+**Effect:** Until the end of the turn, double the Objective Control characteristic of models in your unit, but it must Remain Stationary this turn.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Linked Targeting" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="972c-9d7e-af87-ec32">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
+**2CP**
+**When:** Your Shooting phase.
+**Target:** One SONS OF HASHUT CHARACTER model from your army and one enemy unit visible to that model.
+**Effect:** Until the end of the phase, each time a unit from your army makes an attack with a weapon with the [INDIRECT FIRE] ability against that enemy unit, for the purposes of that ability, that enemy unit is visible to your attacking unit.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Killbox" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f950-0c3f-127a-9224">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
+**2CP**
+**When:** The start of your Shooting phase.
+**Target:** Two SONS OF HASHUT units from your army (excluding SLAVE units) that have not been selected to shoot this phase, and one enemy unit.
+**Effect:** Until the end of the phase, each time a model in either of your units makes an attack, add 1 to the Wound roll.
+**Restrictions:** Until the end of the phase, each time a model in either of your units makes an attack, it can only target that enemy unit (and only if it is an eligible target].</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Area Denial Barrage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2772-8653-2d21-7f96">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:** Your opponent&apos;s Movement phase, just after an enemy unit (excluding AIRCRAFT units) is selected to make a Normal or Advance move.
+**Target:** One SONS OF HASHUT VEHICLE unit with an Indirect Fire weapon from your army and that enemy unit.
+**Effect:** That enemy unit must take a Leadership Test, adding 2 to the result if that enemy unit is a MONSTER or VEHICLE unit; if that test is failed, that unit must Remain Stationary this turn.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Crushing Advance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1109-fd42-6434-e9b2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:** Your Movement phase.
+**Target:** One SONS OF HASHUT VEHICLE unit from your army.
+**Effect:** Until the end of the phase, models in your unit can move horizontally through models and terrain features.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Conservation Tactics" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ca62-2c9a-7908-04c0">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
+**1CP**
+**When:** Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
+**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that was selected as the target of one or more of the attacking unit’s attacks.
+**Effect:** Until the attacking unit has finished making its attacks, each time an attack targets your unit, worsen the Armour Penetration characteristic of that attack by 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden"/>
+                    <modifier type="set" value="0" field="72e4-2a50-9843-b9d4"/>
+                    <modifier type="set" value="0" field="e26d-e42c-b3f8-5e3e"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="5a45-024d-1720-3808" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3712,6 +3787,18 @@ At the start of the battle round, select one of the following toxic agents to be
                 </profile>
               </profiles>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hammers of Hashut" hidden="false" id="5a45-024d-1720-3808">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b87-d6ae-8878-9330" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Siege Specialists" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cf3b-9a6d-8e4c-17cc">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged weapons equipped by SONS OF HASHUT models from your army have the [HEAVY] ability. If such a weapon already has this ability, each time an attack is made with that weapon, if the attacking model’s unit Remained Stationary this turn, you can re-roll the Hit roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3919,7 +4006,7 @@ At the start of the battle round, select one of the following toxic agents to be
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Exaction Host Enhancements" id="4809-fc80-a922-71b8" hidden="true">
+            <selectionEntryGroup name="Extinction Corps Enhancements" id="4809-fc80-a922-71b8" hidden="true">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="eb26-e932-65a3-8c34" includeChildSelections="true" includeChildForces="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56e6-9b12-a84b-7a47" includeChildSelections="false"/>
@@ -4010,6 +4097,101 @@ At the start of the battle round, select one of the following toxic agents to be
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="9967-b30d-ddae-c1e2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Hammers of Hashut Enhancements" id="a725-e75d-f419-a411" hidden="true">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="7577-828d-6e26-4e8d" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc41-1574-4091-0070" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Reactive Shield Generator" hidden="false" id="465b-9b2b-59c2-ef6d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cc2-da97-497e-d884" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1c17-ce0b-b387-cf2f" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Reactive Shield Generator" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="08f0-d3d6-bee6-deab">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer is leading a unit, models in that unit have the Feel No Pain 5+ ability.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Iron Will" hidden="false" id="6f8f-4f93-94ca-143a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9994-196f-0091-01ff" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5a04-2d6e-b7ea-a7f6" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Iron Will" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4c51-6f5f-1cfa-fed2">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer is leading a unit, you can ignore any or all modifiers to the Move characteristic and to Advance and Charge rolls made for models in this unit.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Master Strategist" hidden="false" id="7569-2fe9-4eb9-1b06">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a36-c4d8-baca-3398" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="262c-73c1-0645-a9d3" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Master Strategist" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="98c5-91f5-f89c-3a3a">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After both players have deployed their armies, select up to three SONS OF HASHUT units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Alpha Strike" hidden="false" id="7b5f-c83b-0c70-5446">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="630d-14e8-c241-40d6" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0370-d8cd-cb0a-3026" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Alpha Strike" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b728-b5ad-829a-2f46">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of your Shooting phase or the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, weapons equipped by the bearer&apos;s unit have the [DEVASTATING WOUNDS] ability.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="5a45-024d-1720-3808" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
