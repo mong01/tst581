@@ -874,7 +874,7 @@ A. That objective marker is still Claimed, but does not come under your control 
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="55" field="51b2-306e-1021-d207">
+        <modifier type="increment" value="45" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="11" field="selections" scope="90a8-6901-92d2-689f" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
