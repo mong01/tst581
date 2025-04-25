@@ -2491,7 +2491,7 @@ A. That objective marker is still Claimed, but does not come under your control 
                 </entryLink>
               </entryLinks>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Donyrk-pattern arc cannon" hidden="false" id="f19f-53ab-47c9-a3ee">
+                <selectionEntry type="upgrade" import="true" name="Donyrk-pattern arc cannon" hidden="false" id="f19f-53ab-47c9-a3ee" collective="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="224d-dda5-301a-82f1" includeChildSelections="false"/>
                   </constraints>
