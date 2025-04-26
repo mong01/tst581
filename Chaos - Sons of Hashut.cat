@@ -2994,6 +2994,11 @@ A. Yes.</characteristic>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, you can select one friendly SONS OF HASHUT VEHICLE model or K&apos;DAAI unit within 3&quot; of this model. Until the start of your next Command phase, each time that model or unit makes an attack, add 1 to the Hit roll. Each model or unit can only be selected for this ability once per turn.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ae37-7cca-cf9d-0a44">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Smith hammer" hidden="false" id="189e-3251-4adc-68a0">
