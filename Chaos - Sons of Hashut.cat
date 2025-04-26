@@ -3571,6 +3571,11 @@ A. Yes.</characteristic>
         <infoLink name="Ash &amp; Iron" id="62d6-c43f-e310-0c2d" hidden="false" type="rule" targetId="1834-ed25-4ab3-5dba"/>
         <infoLink name="Leader" id="3c95-9662-256f-3b7b" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
         <infoLink name="Deep Strike" id="6010-5eac-5efc-ff2a" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Feel No Pain" id="d2cc-2007-f87f-8497" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+          <modifiers>
+            <modifier type="append" value="5+" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <profiles>
         <profile name="Thazrymr" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b6bf-320d-f909-90aa">
@@ -3603,11 +3608,6 @@ A. Yes.</characteristic>
         <profile name="Bitter Hatred" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="68db-8d27-6678-4fda">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes a melee attack, you can re-roll the Wound roll.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Damned Existence" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e7d3-4ba7-6a20-a3af">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack.</characteristic>
           </characteristics>
         </profile>
       </profiles>
