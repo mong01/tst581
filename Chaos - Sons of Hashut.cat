@@ -3863,7 +3863,7 @@ At the start of the battle round, select one of the following toxic agents to be
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Unyielding Tacticians" hidden="true" id="595b-609d-8143-7678">
+            <selectionEntry type="upgrade" import="true" name="Unyielding Tacticians2" hidden="true" id="595b-609d-8143-7678">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cad5-d364-f373-772e" includeChildSelections="false"/>
               </constraints>
