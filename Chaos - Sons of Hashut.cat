@@ -428,7 +428,7 @@ A. Yes.</characteristic>
                 </modifierGroup>
               </modifierGroups>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Unyielding Tacticians Stratagems" hidden="false" id="2a07-e965-6ea4-d56f">
+            <selectionEntry type="upgrade" import="true" name="Efficient Tacticians Stratagems" hidden="false" id="2a07-e965-6ea4-d56f">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8269-b969-464f-b0cc" includeChildSelections="false" automatic="true"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89ae-d908-1fd2-f1c4" includeChildSelections="false" automatic="true"/>
@@ -485,7 +485,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **1CP**
 **When:** Your opponent’s Shooting phase, just after an enemy unit has selected a non-SLAVE unit from your army as a target.
-**Target:** That non-SLAVE unit from your army, and one SLAVE unit within 6&quot; of that unit.
+**Target:** That non-SLAVE unit, and one SLAVE unit within 6&quot; of that unit.
 **Effect:** Until the end of the phase, each time an attack successfully wounds your non-SLAVE unit, do not make a saving throw. Instead, your SLAVE unit suffers a number of mortal wounds equal to the Damage characteristic of that attack.</characteristic>
                   </characteristics>
                 </profile>
@@ -3889,7 +3889,7 @@ At the start of the battle round, select one of the following toxic agents to be
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Unyielding Tacticians" hidden="false" id="595b-609d-8143-7678">
+            <selectionEntry type="upgrade" import="true" name="Efficient Tacticians" hidden="false" id="595b-609d-8143-7678">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cad5-d364-f373-772e" includeChildSelections="false"/>
               </constraints>
@@ -4299,7 +4299,7 @@ At the start of the battle round, select one of the following toxic agents to be
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Unyielding Tacticians Enhancements" id="ac3b-1933-f646-29d4" hidden="true">
+            <selectionEntryGroup name="Efficient Tacticians Enhancements" id="ac3b-1933-f646-29d4" hidden="true">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="525b-4255-68f2-01b3" includeChildSelections="true" includeChildForces="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4287-8795-cc67-3f25" includeChildSelections="false"/>
