@@ -288,7 +288,7 @@ A. Yes.</characteristic>
 **1CP**
 **When:** Your opponents Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
 **Target:** One K&apos;DAAI unit from your army that was selected as the target of one or more of the attacking unit’s attacks.
-**Effect:** Until the attacking unit has finished making its attacks, add 1 to invulnerable saving throws made for your unit.</characteristic>
+**Effect:** Until the end of the phase, add 1 to invulnerable saving throws made for your unit.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Unbreakable" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6118-a866-5fb7-8e0d">
@@ -332,7 +332,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **1CP**
 **When:** Your opponents Shooting phase.
-**Target:** One K&apos;DAAI unit from your army and one SONS OF HASHUT INFANTRY from your army (excluding SLAVE and K&apos;DAAI units) that is within 6&quot; of your K&apos;DAAI unit and was selected as the target of one or more of the attacking unit’s attacks.
+**Target:** One K&apos;DAAI unit from your army and one SONS OF HASHUT INFANTRY unit from your army (excluding SLAVE and K&apos;DAAI units) that is within 6&quot; of your K&apos;DAAI unit and was selected as the target of one or more of the attacking unit’s attacks.
 **Effect:** Until the end of the phase, your SONS OF HASHUT INFANTRY unit has the Benefit of Cover and the Stealth ability.</characteristic>
                   </characteristics>
                 </profile>
@@ -442,7 +442,7 @@ A. Yes.</characteristic>
                 </profile>
                 <profile name="Calculated Desecration" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4b0a-ab55-568a-5006">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **1CP**
 **When:** Fight phase, just after a SONS OF HASHUT unit from your army (excluding SLAVE units) destroys an enemy unit.
 **Target:** That SONS OF HASHUT unit.
@@ -3111,7 +3111,7 @@ A. Yes.</characteristic>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="56"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -3863,7 +3863,7 @@ At the start of the battle round, select one of the following toxic agents to be
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Unyielding Tacticians" hidden="true" id="595b-609d-8143-7678">
+            <selectionEntry type="upgrade" import="true" name="Unyielding Tacticians" hidden="false" id="595b-609d-8143-7678">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cad5-d364-f373-772e" includeChildSelections="false"/>
               </constraints>
