@@ -4143,12 +4143,12 @@ At the start of the battle round, select one of the following toxic agents to be
                   <profiles>
                     <profile name="Smothering Advance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e7b1-1390-289a-e785">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer is leading a unit, models in that unit have the Infiltrators ability.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of your opponent&apos;s Shooting phase, the bearer can use this Enhancement. If it does, until the end of the phase, the bearer’s unit cannot be targeted by ranged attacks unless the attacking model is within 12&quot;.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                     <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                     <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -4168,7 +4168,7 @@ At the start of the battle round, select one of the following toxic agents to be
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                     <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                     <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -4250,20 +4250,20 @@ At the start of the battle round, select one of the following toxic agents to be
                     <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Master Strategist" hidden="false" id="7569-2fe9-4eb9-1b06">
+                <selectionEntry type="upgrade" import="true" name="Structural Scanner" hidden="false" id="7569-2fe9-4eb9-1b06">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a36-c4d8-baca-3398" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="force" shared="true" id="262c-73c1-0645-a9d3" includeChildSelections="true" includeChildForces="true"/>
                   </constraints>
                   <profiles>
-                    <profile name="Master Strategist" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="98c5-91f5-f89c-3a3a">
+                    <profile name="Structural Scanner (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="98c5-91f5-f89c-3a3a">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After both players have deployed their armies, select up to three SONS OF HASHUT units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly SONS OF HASHUT VEHICLE unit is within 3&quot; of the bearer, each time a model in that unit makes a ranged attack, re-roll a Wound roll of 1.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                     <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                     <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -4295,6 +4295,101 @@ At the start of the battle round, select one of the following toxic agents to be
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5a45-024d-1720-3808" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Unyielding Tacticians Enhancements" id="ac3b-1933-f646-29d4" hidden="true">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="525b-4255-68f2-01b3" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4287-8795-cc67-3f25" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Master Strategist" hidden="false" id="f451-091f-74c1-b107">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4041-af28-8ded-4c76" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9761-5754-ed2e-4424" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Master Strategist" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c7ca-3d33-d06d-6974">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After both players have deployed their armies, select up to three SONS OF HASHUT units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Expert Quartermaster" hidden="false" id="cee8-c8c1-276e-305b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2389-89cd-1ddf-e6cf" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4f75-fb13-84eb-d5c7" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Expert Quartermaster" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fbde-5ef8-b591-fea7">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of each battle round, if the bearer is on the battlefield, roll one D6: on a 4+, you gain 1CP.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Underhanded Plans" hidden="false" id="8b3d-6dbe-4308-caa8">
+                  <profiles>
+                    <profile name="Underhanded Plans" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="70dd-c2e5-7f57-be2d">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer is leading a unit, models in that unit have the Infiltrators ability.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f68-aaee-1207-0df2" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5b3f-c2a3-1a1d-6a63" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Cogitation Spike" hidden="false" id="cec4-3cc7-b7da-208c">
+                  <profiles>
+                    <profile name="Cogitation Spike" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fcb0-4059-fdd1-576d">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, you can target the bearer&apos;s unit with the Command Re-roll Stratagem for 0CP, even if you have already used that Stratagem on a different unit this phase.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0f8-4687-7ccf-a2f2" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="cd1c-b2ae-7afe-3c1f" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="595b-609d-8143-7678" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
