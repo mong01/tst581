@@ -45,6 +45,9 @@ If your Army Faction is SONS OF HASHUT, you gain 1 Tithe point at the start of y
 DARK BOUNTY
 Each time a unit from your army activates a Dark Bounty, you can choose one of the following abilities; that unit gains that ability until the start of your next Command phase: (See [Reference] Dark Bounty in Configuration)</description>
     </rule>
+    <rule name="Property" id="aa1d-6352-eaf2-6b42" hidden="false">
+      <description>This unit cannot perform Actions.</description>
+    </rule>
   </sharedRules>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="[Reference] Dark Bounty" hidden="false" id="5e52-52fa-230c-f022">
@@ -440,13 +443,13 @@ A. Yes.</characteristic>
 **Effect:** Until the attacking unit has finished making its attacks, each time an attack targets your unit, worsen the Armour Penetration characteristic of that attack by 1.</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Calculated Desecration" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4b0a-ab55-568a-5006">
+                <profile name="Tactical Reposition" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4b0a-ab55-568a-5006">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
-**1CP**
-**When:** Fight phase, just after a SONS OF HASHUT unit from your army (excluding SLAVE units) destroys an enemy unit.
-**Target:** That SONS OF HASHUT unit.
-**Effect:** Each enemy unit within 6&quot; of your unit must take a Leadership test, subtracting 1 from the result if that unit is Below Half-strength. If the test is failed, one model in that unit is destroyed (chosen by its controlling player).</characteristic>
+**2CP**
+**When:** Your opponent&apos;s Charge phase, just after an enemy unit has declared a charge.
+**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that was selected as a target of that charge.
+**Effect:** Your unit can immediately make a Normal Move of up to 2D3&quot;. The charging unit can then select new targets for that charge.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Unwavering Discipline" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e9ad-9c55-3e4e-a2a9">
@@ -462,9 +465,28 @@ A. Yes.</characteristic>
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **1CP**
-**When:** Start of the Fight phase.
+**When:** Start of your Fight phase.
 **Target:** Two SONS OF HASHUT units from your army (excluding SLAVE units), and one enemy unit within Engagement Range of both of your units.
-**Effect:** Until the end of the phase, each time a model in either of your units makes an attack that targets that enemy unit, add 1 to the Wound roll.</characteristic>
+**Effect:** Until the end of the phase, each time a model in either of your units makes an attack that targets that enemy unit, add 1 to the Wound roll.
+**Restrictions:** At least one of your units must have made a Charge move this turn.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Calculated Desecration" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1fa7-9cb5-d09b-4572">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:** Your Fight phase, just after a SONS OF HASHUT unit from your army (excluding SLAVE units) destroys an enemy unit.
+**Target:** That SONS OF HASHUT unit.
+**Effect:** In your opponent’s next Command phase, each enemy unit within 6&quot; of your unit must take a Battle-shock test. If the unit taking that test is Below Half-strength, subtract 1 from that test. Enemy units affected by this Stratagem do not need to take any other Battle-shock tests in the same phase.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Ordered Retreat" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4097-fa31-5339-ff14">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**2CP**
+**When:** Your opponent&apos;s Charge phase, just after an enemy unit has declared a charge.
+**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that was selected as a target of that charge.
+**Effect:** Your unit can immediately make a Normal Move of up to D6&quot;. The charging unit can then select new targets for that charge.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1017,6 +1039,9 @@ A. Yes.</characteristic>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="00b5-e241-712a-9298" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Property" id="6e66-de3f-6eed-819f" hidden="false" type="rule" targetId="aa1d-6352-eaf2-6b42"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Eignutkin Scorchers" hidden="false" id="669a-5d8c-f57b-b52e">
       <infoLinks>
@@ -2752,6 +2777,7 @@ A. Yes.</characteristic>
             <modifier type="append" value="6+" field="name" join=" "/>
           </modifiers>
         </infoLink>
+        <infoLink name="Property" id="9391-c534-0385-70f8" hidden="false" type="rule" targetId="aa1d-6352-eaf2-6b42"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
@@ -4184,13 +4210,13 @@ At the start of the battle round, select one of the following toxic agents to be
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc41-1574-4091-0070" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Reactive Shield Generator" hidden="false" id="465b-9b2b-59c2-ef6d">
+                <selectionEntry type="upgrade" import="true" name="Disruption Field Generator" hidden="false" id="465b-9b2b-59c2-ef6d">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cc2-da97-497e-d884" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1c17-ce0b-b387-cf2f" includeChildSelections="true" includeChildForces="true"/>
                   </constraints>
                   <profiles>
-                    <profile name="Reactive Shield Generator" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="08f0-d3d6-bee6-deab">
+                    <profile name="Disruption Field Generator" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="08f0-d3d6-bee6-deab">
                       <characteristics>
                         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer is leading a unit, models in that unit have the Feel No Pain 5+ ability.</characteristic>
                       </characteristics>
