@@ -504,6 +504,35 @@ A. Yes.</characteristic>
                 </modifierGroup>
               </modifierGroups>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Infernal Theurgy Stratagems" hidden="false" id="cee2-ccb6-0ac5-c68d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b62a-678a-4712-f06b" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="794e-d9f9-a744-51e9" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Area Denial Barrage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bdbd-b327-a6c1-2176">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:** Your opponent&apos;s Movement phase, just after an enemy unit (excluding AIRCRAFT units) is selected to make a Normal or Advance move.
+**Target:** One SONS OF HASHUT VEHICLE unit with an Indirect Fire weapon from your army and that enemy unit.
+**Effect:** That enemy unit must take a Leadership Test, adding 2 to the result if that enemy unit is a MONSTER or VEHICLE unit; if that test is failed, that unit must Remain Stationary this turn.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden"/>
+                    <modifier type="set" value="0" field="b62a-678a-4712-f06b"/>
+                    <modifier type="set" value="0" field="794e-d9f9-a744-51e9"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3903,6 +3932,18 @@ At the start of the battle round, select one of the following toxic agents to be
                 </profile>
               </profiles>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Infernal Theurgy" hidden="true" id="213c-6bd1-a61b-8886">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f02-0acf-e8b9-e9ac" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Will of the Prophets" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4873-b20e-5cd4-0be1">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per phase for each SONS OF HASHUT unit from your army, you can re-roll one Hit roll, and you can re-roll one Wound roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4124,7 +4165,7 @@ At the start of the battle round, select one of the following toxic agents to be
                   <profiles>
                     <profile name="An Eye for Genocide" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4948-df23-7dca-b923">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, at the start of any Command phase and if the bearer is on the battlefield, you can change your currently active toxic agent.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, at the start of any Command phase and if the bearer is on the battlefield (or is embarked within a TRANSPORT that is on the battlefield), you can change your currently active toxic agent.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -4334,7 +4375,7 @@ At the start of the battle round, select one of the following toxic agents to be
                   <profiles>
                     <profile name="Expert Quartermaster" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fbde-5ef8-b591-fea7">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of each battle round, if the bearer is on the battlefield, roll one D6: on a 4+, you gain 1CP.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of each battle round, if the bearer is on the battlefield (or is embarked within a TRANSPORT that is on the battlefield), roll one D6: on a 4+, you gain 1CP.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -4391,6 +4432,41 @@ At the start of the battle round, select one of the following toxic agents to be
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="595b-609d-8143-7678" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Infernal Theurgy Enhancements" id="ad0a-7862-75a0-e3f2" hidden="true">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c951-415d-66be-5bfd" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd81-4cd9-7480-39a7" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Alpha Strike" hidden="false" id="23b5-c14b-dfdc-156f">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfeb-dbd6-3072-1297" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="def5-110c-2689-ffad" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Alpha Strike" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cfe7-7012-919e-dd18">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of your Shooting phase or the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, weapons equipped by the bearer&apos;s unit have the [DEVASTATING WOUNDS] ability.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
