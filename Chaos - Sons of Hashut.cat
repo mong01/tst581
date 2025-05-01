@@ -3858,7 +3858,7 @@ A. Yes.</characteristic>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15c6-f7f8-f45d-ee77-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Exaction Host" hidden="false" id="da63-93fb-1ad3-aa6f">
+            <selectionEntry type="upgrade" import="true" name="Exaction Host" hidden="false" id="da63-93fb-1ad3-aa6f" sortIndex="1">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b513-aea1-d827-05e4" includeChildSelections="false"/>
               </constraints>
@@ -3870,7 +3870,7 @@ A. Yes.</characteristic>
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Daemon Legion" hidden="false" id="d766-c5e5-d32f-1dcf">
+            <selectionEntry type="upgrade" import="true" name="Daemon Legion" hidden="false" id="d766-c5e5-d32f-1dcf" sortIndex="3">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef8e-e34c-bd68-8d93" includeChildSelections="false"/>
               </constraints>
@@ -3884,7 +3884,7 @@ A. Yes.</characteristic>
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Extinction Corps" hidden="false" id="9967-b30d-ddae-c1e2">
+            <selectionEntry type="upgrade" import="true" name="Extinction Corps" hidden="false" id="9967-b30d-ddae-c1e2" sortIndex="5">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2658-339e-6d84-e159" includeChildSelections="false"/>
               </constraints>
@@ -3907,7 +3907,7 @@ At the start of the battle round, select one of the following toxic agents to be
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Hammers of Hashut" hidden="false" id="5a45-024d-1720-3808">
+            <selectionEntry type="upgrade" import="true" name="Hammers of Hashut" hidden="false" id="5a45-024d-1720-3808" sortIndex="4">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b87-d6ae-8878-9330" includeChildSelections="false"/>
               </constraints>
@@ -3919,7 +3919,7 @@ At the start of the battle round, select one of the following toxic agents to be
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Efficient Tacticians" hidden="false" id="595b-609d-8143-7678">
+            <selectionEntry type="upgrade" import="true" name="Efficient Tacticians" hidden="false" id="595b-609d-8143-7678" sortIndex="2">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cad5-d364-f373-772e" includeChildSelections="false"/>
               </constraints>
@@ -3956,7 +3956,7 @@ At the start of the battle round, select one of the following toxic agents to be
       <selectionEntryGroups>
         <selectionEntryGroup name="Enhancement" id="2af9-3b19-2934-c85f" hidden="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Exaction Host Enhancements" id="e81f-e6d6-98a6-7979" hidden="true">
+            <selectionEntryGroup name="Exaction Host Enhancements" id="e81f-e6d6-98a6-7979" hidden="true" sortIndex="">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="0498-5d32-37d9-d468" includeChildSelections="true" includeChildForces="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5a6-0adf-c4a3-3feb" includeChildSelections="false"/>
@@ -4051,7 +4051,7 @@ At the start of the battle round, select one of the following toxic agents to be
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Daemon Legion Enhancements" id="507f-6bc2-c684-ada2" hidden="true">
+            <selectionEntryGroup name="Daemon Legion Enhancements" id="507f-6bc2-c684-ada2" hidden="true" sortIndex="">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
@@ -4341,7 +4341,7 @@ At the start of the battle round, select one of the following toxic agents to be
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Efficient Tacticians Enhancements" id="ac3b-1933-f646-29d4" hidden="true">
+            <selectionEntryGroup name="Efficient Tacticians Enhancements" id="ac3b-1933-f646-29d4" hidden="true" sortIndex="">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="525b-4255-68f2-01b3" includeChildSelections="true" includeChildForces="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4287-8795-cc67-3f25" includeChildSelections="false"/>
