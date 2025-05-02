@@ -4486,7 +4486,7 @@ At the start of the battle round, select one of the following toxic agents to be
         </infoLink>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Hobgrot Cutthroat" hidden="false" id="2d39-2b41-bdbc-10ca">
+        <selectionEntry type="model" import="true" name="Hobgrot Cutthroat" hidden="false" id="2d39-2b41-bdbc-10ca" collective="true">
           <constraints>
             <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="5a4b-78ab-f08b-d863" includeChildSelections="false"/>
             <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="22be-69c3-b245-6c25" includeChildSelections="false"/>
