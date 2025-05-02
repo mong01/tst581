@@ -4648,7 +4648,7 @@ At the start of the battle round, select one of the following toxic agents to be
         <infoLink name="Rapid Fire" id="fdf5-1282-1394-1e7b" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Hobgrot blasta" hidden="false" id="242b-047f-f6ad-1d70">
+    <selectionEntry type="upgrade" import="true" name="Hobgrot blasta" hidden="false" id="242b-047f-f6ad-1d70" collective="true">
       <profiles>
         <profile name="Hobgrot blasta" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="216d-a3b9-2fff-4475">
           <characteristics>
