@@ -4505,7 +4505,7 @@ At the start of the battle round, select one of the following toxic agents to be
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afb3-b922-1875-b594" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Hobgrot blasta &amp; stabba" hidden="false" id="53ab-c3e0-970e-23f4">
+                <selectionEntry type="upgrade" import="true" name="Hobgrot blasta &amp; stabba" hidden="false" id="53ab-c3e0-970e-23f4" collective="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8b2-713c-d205-c39a" includeChildSelections="false"/>
                   </constraints>
