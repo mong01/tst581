@@ -4536,7 +4536,7 @@ At the start of the battle round, select one of the following toxic agents to be
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" id="82a5-0bf4-19c7-6c0d" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="Hobgrot shoota" hidden="false" id="fdae-3360-2a47-a09c" type="selectionEntry" targetId="4ef3-97f1-91eb-083e">
+                <entryLink import="true" name="Hobgrot shoota" hidden="true" id="fdae-3360-2a47-a09c" type="selectionEntry" targetId="4ef3-97f1-91eb-083e">
                   <constraints>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="93ed-3341-4828-dbed" includeChildSelections="false" automatic="true"/>
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f460-9e30-4eb2-e004" includeChildSelections="false" automatic="true"/>
@@ -4546,7 +4546,7 @@ At the start of the battle round, select one of the following toxic agents to be
                       <modifiers>
                         <modifier type="set" value="1" field="f460-9e30-4eb2-e004"/>
                         <modifier type="set" value="1" field="93ed-3341-4828-dbed"/>
-                        <modifier type="set" value="true" field="hidden"/>
+                        <modifier type="set" value="false" field="hidden"/>
                       </modifiers>
                       <conditions>
                         <condition type="lessThan" value="1" field="selections" scope="1986-837a-999d-8efc" childId="53ab-c3e0-970e-23f4" shared="true" includeChildSelections="true"/>
@@ -4554,7 +4554,7 @@ At the start of the battle round, select one of the following toxic agents to be
                     </modifierGroup>
                   </modifierGroups>
                 </entryLink>
-                <entryLink import="true" name="Stabba" hidden="false" id="a100-99cc-7960-238d" type="selectionEntry" targetId="531f-8130-7418-9235">
+                <entryLink import="true" name="Stabba" hidden="true" id="a100-99cc-7960-238d" type="selectionEntry" targetId="531f-8130-7418-9235">
                   <constraints>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2121-0641-0243-0385" includeChildSelections="false" automatic="true"/>
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1eae-e164-98ec-29b0" includeChildSelections="false" automatic="true"/>
@@ -4564,7 +4564,7 @@ At the start of the battle round, select one of the following toxic agents to be
                       <modifiers>
                         <modifier type="set" value="1" field="2121-0641-0243-0385"/>
                         <modifier type="set" value="1" field="1eae-e164-98ec-29b0"/>
-                        <modifier type="set" value="true" field="hidden"/>
+                        <modifier type="set" value="false" field="hidden"/>
                       </modifiers>
                       <conditions>
                         <condition type="lessThan" value="1" field="selections" scope="1986-837a-999d-8efc" childId="461b-f3c3-efa3-1afd" shared="true" includeChildSelections="true"/>
@@ -4572,7 +4572,7 @@ At the start of the battle round, select one of the following toxic agents to be
                     </modifierGroup>
                   </modifierGroups>
                 </entryLink>
-                <entryLink import="true" name="Hobgrot blasta" hidden="false" id="b5e8-bf56-e82d-9a13" type="selectionEntry" targetId="242b-047f-f6ad-1d70">
+                <entryLink import="true" name="Hobgrot blasta" hidden="true" id="b5e8-bf56-e82d-9a13" type="selectionEntry" targetId="242b-047f-f6ad-1d70">
                   <constraints>
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="df7d-d96a-9362-af18" includeChildSelections="false" automatic="true"/>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f323-14c8-08c0-a620" includeChildSelections="false" automatic="true"/>
@@ -4582,7 +4582,7 @@ At the start of the battle round, select one of the following toxic agents to be
                       <modifiers>
                         <modifier type="set" value="1" field="f323-14c8-08c0-a620"/>
                         <modifier type="set" value="1" field="df7d-d96a-9362-af18"/>
-                        <modifier type="set" value="true" field="hidden"/>
+                        <modifier type="set" value="false" field="hidden"/>
                       </modifiers>
                       <conditions>
                         <condition type="lessThan" value="1" field="selections" scope="1986-837a-999d-8efc" childId="53ab-c3e0-970e-23f4" shared="true" includeChildSelections="true"/>
