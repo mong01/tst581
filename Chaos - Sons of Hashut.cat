@@ -4528,7 +4528,7 @@ At the start of the battle round, select one of the following toxic agents to be
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Hobgrot Boss" hidden="false" id="70da-7678-5789-f64f" collective="true">
+        <selectionEntry type="model" import="true" name="Hobgrot Boss" hidden="false" id="70da-7678-5789-f64f" collective="true" flatten="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b5b-6cc6-32e4-5728" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5921-d480-cb5e-5dec" includeChildSelections="false"/>
@@ -4536,7 +4536,7 @@ At the start of the battle round, select one of the following toxic agents to be
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" id="82a5-0bf4-19c7-6c0d" hidden="false" flatten="true">
               <entryLinks>
-                <entryLink import="true" name="Hobgrot shoota" hidden="true" id="fdae-3360-2a47-a09c" type="selectionEntry" targetId="4ef3-97f1-91eb-083e">
+                <entryLink import="true" name="Hobgrot shoota" hidden="true" id="fdae-3360-2a47-a09c" type="selectionEntry" targetId="4ef3-97f1-91eb-083e" flatten="true">
                   <constraints>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="93ed-3341-4828-dbed" includeChildSelections="false" automatic="true"/>
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f460-9e30-4eb2-e004" includeChildSelections="false" automatic="true"/>
@@ -4554,7 +4554,7 @@ At the start of the battle round, select one of the following toxic agents to be
                     </modifierGroup>
                   </modifierGroups>
                 </entryLink>
-                <entryLink import="true" name="Stabba" hidden="true" id="a100-99cc-7960-238d" type="selectionEntry" targetId="531f-8130-7418-9235">
+                <entryLink import="true" name="Stabba" hidden="true" id="a100-99cc-7960-238d" type="selectionEntry" targetId="531f-8130-7418-9235" flatten="true">
                   <constraints>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2121-0641-0243-0385" includeChildSelections="false" automatic="true"/>
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1eae-e164-98ec-29b0" includeChildSelections="false" automatic="true"/>
@@ -4572,7 +4572,7 @@ At the start of the battle round, select one of the following toxic agents to be
                     </modifierGroup>
                   </modifierGroups>
                 </entryLink>
-                <entryLink import="true" name="Hobgrot blasta" hidden="true" id="b5e8-bf56-e82d-9a13" type="selectionEntry" targetId="242b-047f-f6ad-1d70">
+                <entryLink import="true" name="Hobgrot blasta" hidden="true" id="b5e8-bf56-e82d-9a13" type="selectionEntry" targetId="242b-047f-f6ad-1d70" flatten="true">
                   <constraints>
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="df7d-d96a-9362-af18" includeChildSelections="false" automatic="true"/>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f323-14c8-08c0-a620" includeChildSelections="false" automatic="true"/>
