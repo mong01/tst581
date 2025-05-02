@@ -617,7 +617,7 @@ A. Yes.</characteristic>
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Huskul" hidden="false" id="e03a-c7c6-d3ea-afab" collective="true" flatten="true">
+        <selectionEntry type="model" import="true" name="Huskul" hidden="false" id="e03a-c7c6-d3ea-afab" collective="true" flatten="false">
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" id="2147-ef3e-7974-5f93" hidden="false" defaultSelectionEntryId="7690-6984-756c-ced0" flatten="true">
               <entryLinks>
@@ -683,7 +683,7 @@ A. Yes.</characteristic>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Alloch-pattern bolt pistol" hidden="false" id="7ad8-fef1-3def-03cb" type="selectionEntry" targetId="9d18-3ab9-3c35-12e9" flatten="true">
+            <entryLink import="true" name="Alloch-pattern bolt pistol" hidden="false" id="7ad8-fef1-3def-03cb" type="selectionEntry" targetId="9d18-3ab9-3c35-12e9" flatten="false">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64d0-9fe5-b7ba-02a1" includeChildSelections="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="20be-08ca-8167-8592" includeChildSelections="false"/>
