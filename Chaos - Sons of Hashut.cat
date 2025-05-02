@@ -4505,18 +4505,18 @@ At the start of the battle round, select one of the following toxic agents to be
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afb3-b922-1875-b594" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Hobgrot blasta &amp; stabba" hidden="false" id="53ab-c3e0-970e-23f4" collective="true" flatten="true" collapsible="true">
+                <selectionEntry type="upgrade" import="true" name="Hobgrot blasta &amp; stabba" hidden="false" id="53ab-c3e0-970e-23f4" collective="true" flatten="true" collapsible="false">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8b2-713c-d205-c39a" includeChildSelections="false"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Stabba" hidden="false" id="12f4-e7b6-2d84-8d99" type="selectionEntry" targetId="531f-8130-7418-9235" flatten="true" collapsible="true">
+                    <entryLink import="true" name="Stabba" hidden="false" id="12f4-e7b6-2d84-8d99" type="selectionEntry" targetId="531f-8130-7418-9235" flatten="true" collapsible="false">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b78e-8b64-a6a1-a7de-min" includeChildSelections="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b78e-8b64-a6a1-a7de-max" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Hobgrot blasta" hidden="false" id="0896-4ed5-15cd-2196" type="selectionEntry" targetId="242b-047f-f6ad-1d70" flatten="true" collapsible="true">
+                    <entryLink import="true" name="Hobgrot blasta" hidden="false" id="0896-4ed5-15cd-2196" type="selectionEntry" targetId="242b-047f-f6ad-1d70" flatten="true" collapsible="false">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36e6-ff5e-fc17-c8df-min" includeChildSelections="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36e6-ff5e-fc17-c8df-max" includeChildSelections="false"/>
