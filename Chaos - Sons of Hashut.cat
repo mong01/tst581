@@ -4534,7 +4534,7 @@ At the start of the battle round, select one of the following toxic agents to be
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5921-d480-cb5e-5dec" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Options" id="82a5-0bf4-19c7-6c0d" hidden="false">
+            <selectionEntryGroup name="Options" id="82a5-0bf4-19c7-6c0d" hidden="false" flatten="true">
               <entryLinks>
                 <entryLink import="true" name="Hobgrot shoota" hidden="true" id="fdae-3360-2a47-a09c" type="selectionEntry" targetId="4ef3-97f1-91eb-083e">
                   <constraints>
