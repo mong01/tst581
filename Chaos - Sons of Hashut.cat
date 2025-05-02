@@ -617,7 +617,7 @@ A. Yes.</characteristic>
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Huskul" hidden="false" id="e03a-c7c6-d3ea-afab" collective="true" flatten="false">
+        <selectionEntry type="model" import="true" name="Huskul" hidden="false" id="e03a-c7c6-d3ea-afab" collective="true" flatten="true">
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" id="2147-ef3e-7974-5f93" hidden="false" defaultSelectionEntryId="7690-6984-756c-ced0">
               <entryLinks>
