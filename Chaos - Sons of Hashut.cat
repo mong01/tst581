@@ -4564,14 +4564,14 @@ At the start of the battle round, select one of the following toxic agents to be
                   <entryLinks>
                     <entryLink import="true" name="Stabba" hidden="false" id="3364-56ea-aa09-cbbe" type="selectionEntry" targetId="531f-8130-7418-9235" flatten="true" collapsible="false">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="454c-d4d3-f368-d857" includeChildSelections="false"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edce-cb62-f7a8-1d5c" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="454c-d4d3-f368-d857" includeChildSelections="false" automatic="true"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edce-cb62-f7a8-1d5c" includeChildSelections="false" automatic="true"/>
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Hobgrot blasta" hidden="false" id="629a-328d-cd6b-2c34" type="selectionEntry" targetId="242b-047f-f6ad-1d70" flatten="true" collapsible="false">
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d51-2f7d-4e16-3095" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be28-d6c4-c64e-82ea" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d51-2f7d-4e16-3095" includeChildSelections="false" automatic="true"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be28-d6c4-c64e-82ea" includeChildSelections="false" automatic="true"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
