@@ -4528,6 +4528,39 @@ At the start of the battle round, select one of the following toxic agents to be
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="true" id="e612-91a6-e0b2-ff8b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d9c8-5bd7-3ff5-888f" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74cf-f2b7-e317-cf81" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="db84-a90c-8a7c-9285">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="1986-837a-999d-8efc" childId="53ab-c3e0-970e-23f4" shared="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden"/>
+                    <modifier type="set" value="0" field="74cf-f2b7-e317-cf81"/>
+                    <modifier type="set" value="0" field="d9c8-5bd7-3ff5-888f"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Hobgrot Boss" hidden="false" id="70da-7678-5789-f64f" collective="true" flatten="true">
           <constraints>
@@ -4535,7 +4568,7 @@ At the start of the battle round, select one of the following toxic agents to be
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5921-d480-cb5e-5dec" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Options" id="82a5-0bf4-19c7-6c0d" hidden="false" flatten="true">
+            <selectionEntryGroup name="Options" id="82a5-0bf4-19c7-6c0d" hidden="false" flatten="true" defaultSelectionEntryId="fdae-3360-2a47-a09c">
               <entryLinks>
                 <entryLink import="true" name="Hobgrot shoota" hidden="true" id="fdae-3360-2a47-a09c" type="selectionEntry" targetId="4ef3-97f1-91eb-083e" flatten="true">
                   <constraints>
@@ -4586,6 +4619,37 @@ At the start of the battle round, select one of the following toxic agents to be
                       <conditions>
                         <condition type="lessThan" value="1" field="selections" scope="1986-837a-999d-8efc" childId="461b-f3c3-efa3-1afd" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="true" id="6f0c-358f-9fd7-71f0">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="113e-4107-404a-5cbc" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f993-76fd-a1cb-6b5c" includeChildSelections="false" automatic="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="49ef-92a5-bb06-af35">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="1986-837a-999d-8efc" childId="53ab-c3e0-970e-23f4" shared="true"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden"/>
+                        <modifier type="set" value="0" field="f993-76fd-a1cb-6b5c"/>
+                        <modifier type="set" value="0" field="113e-4107-404a-5cbc"/>
+                      </modifiers>
                     </modifierGroup>
                   </modifierGroups>
                 </selectionEntry>
@@ -4693,7 +4757,7 @@ At the start of the battle round, select one of the following toxic agents to be
         <categoryLink targetId="5b10-48bb-3b3b-5f4d" id="8447-7056-3245-1eb4" primary="false" name="Hobgrot"/>
         <categoryLink targetId="9321-c9ec-e974-81fa" id="461f-2736-32e2-33d6" primary="false" name="Faction: Sons of Hashut"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="26a5-1bd5-f770-48c9" primary="false" name="Chaos"/>
-        <categoryLink targetId="99c0-3a48-c565-97e7" id="16f4-3f2e-0981-de35" primary="false" name="Hobgrot Hunters"/>
+        <categoryLink targetId="99c0-3a48-c565-97e7" id="16f4-3f2e-0981-de35" primary="false" name="Hobgrot Ratrodz"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="c486-d9b5-275e-cc0c" primary="false" name="Grenades"/>
       </categoryLinks>
       <infoLinks>
@@ -4915,7 +4979,7 @@ At the start of the battle round, select one of the following toxic agents to be
     <entryLink import="true" name="K&apos;daai Stalker" hidden="false" id="c502-b375-ff38-8d03" targetId="ea0b-6f5b-9187-6aee" type="selectionEntry"/>
     <entryLink import="true" name="Detachment " hidden="false" id="e463-b09c-aefa-eaca" targetId="0863-6b2a-a74a-31ed" type="selectionEntry"/>
     <entryLink import="true" name="Hobgrot Cutthroats" hidden="false" id="42e2-158c-4ab2-47a0" targetId="1986-837a-999d-8efc" type="selectionEntry"/>
-    <entryLink import="true" name="Hobgrot Hunters" hidden="false" id="957d-2f49-1529-866c" targetId="5c61-e033-5f5a-8875" type="selectionEntry"/>
+    <entryLink import="true" name="Hobgrot Ratrodz" hidden="false" id="957d-2f49-1529-866c" targetId="5c61-e033-5f5a-8875" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Fireglaive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fea9-43bc-25b1-0c6d">
