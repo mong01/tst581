@@ -4554,43 +4554,41 @@ At the start of the battle round, select one of the following toxic agents to be
                     </modifierGroup>
                   </modifierGroups>
                 </entryLink>
-                <entryLink import="true" name="Stabba" hidden="true" id="a100-99cc-7960-238d" type="selectionEntry" targetId="531f-8130-7418-9235" flatten="true">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2121-0641-0243-0385" includeChildSelections="false" automatic="true"/>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1eae-e164-98ec-29b0" includeChildSelections="false" automatic="true"/>
-                  </constraints>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="set" value="1" field="2121-0641-0243-0385"/>
-                        <modifier type="set" value="1" field="1eae-e164-98ec-29b0"/>
-                        <modifier type="set" value="false" field="hidden"/>
-                      </modifiers>
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="1986-837a-999d-8efc" childId="461b-f3c3-efa3-1afd" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifierGroup>
-                  </modifierGroups>
-                </entryLink>
-                <entryLink import="true" name="Hobgrot blasta" hidden="true" id="b5e8-bf56-e82d-9a13" type="selectionEntry" targetId="242b-047f-f6ad-1d70" flatten="true">
-                  <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="df7d-d96a-9362-af18" includeChildSelections="false" automatic="true"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f323-14c8-08c0-a620" includeChildSelections="false" automatic="true"/>
-                  </constraints>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="set" value="1" field="f323-14c8-08c0-a620"/>
-                        <modifier type="set" value="1" field="df7d-d96a-9362-af18"/>
-                        <modifier type="set" value="false" field="hidden"/>
-                      </modifiers>
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="1986-837a-999d-8efc" childId="461b-f3c3-efa3-1afd" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifierGroup>
-                  </modifierGroups>
-                </entryLink>
               </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hobgrot blasta &amp; stabba" hidden="false" id="f963-d8d2-6a90-72e3" collective="true" flatten="true" collapsible="false">
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b3c7-4f7c-afaf-1839" includeChildSelections="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="76d3-ee66-fdbd-89f5" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Stabba" hidden="false" id="3364-56ea-aa09-cbbe" type="selectionEntry" targetId="531f-8130-7418-9235" flatten="true" collapsible="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="454c-d4d3-f368-d857" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edce-cb62-f7a8-1d5c" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Hobgrot blasta" hidden="false" id="629a-328d-cd6b-2c34" type="selectionEntry" targetId="242b-047f-f6ad-1d70" flatten="true" collapsible="false">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d51-2f7d-4e16-3095" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be28-d6c4-c64e-82ea" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="1" field="b3c7-4f7c-afaf-1839"/>
+                        <modifier type="set" value="1" field="76d3-ee66-fdbd-89f5"/>
+                        <modifier type="set" value="false" field="hidden"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="1986-837a-999d-8efc" childId="461b-f3c3-efa3-1afd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
