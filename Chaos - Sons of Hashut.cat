@@ -4765,6 +4765,7 @@ At the start of the battle round, select one of the following toxic agents to be
             <selectionEntryGroup name="Options" id="5c2c-bbb7-d243-4a2a" hidden="false" defaultSelectionEntryId="none">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9ce-1375-ccbf-5412" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a124-9210-f934-43d1" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Long-shoota" hidden="false" id="c93c-4f59-0497-6631" type="selectionEntry" targetId="73e6-a1d9-2b58-8a12">
@@ -4778,18 +4779,18 @@ At the start of the battle round, select one of the following toxic agents to be
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <modifiers>
-                <modifier type="set" value="2" field="c9ce-1375-ccbf-5412">
-                  <conditions>
-                    <condition type="atLeast" value="6" field="selections" scope="5c61-e033-5f5a-8875" childId="model" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efaf-bc30-e658-eeb2" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="efaf-bc30-e658-eeb2">
+              <conditions>
+                <condition type="atLeast" value="6" field="selections" scope="5c61-e033-5f5a-8875" childId="model" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Hunter Boss" hidden="false" id="400a-6144-a090-9944" flatten="false">
           <constraints>
