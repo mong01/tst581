@@ -4734,6 +4734,17 @@ At the start of the battle round, select one of the following toxic agents to be
               </constraints>
             </entryLink>
           </entryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="1ee1-b2df-0107-cfc5"/>
+                <modifier type="decrement" value="1" field="4d63-c452-8186-19e3"/>
+              </modifiers>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="5c61-e033-5f5a-8875" childId="84e6-102e-03ed-7903" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Hobgrot Hunter w/ special weapon" hidden="false" id="84e6-102e-03ed-7903">
           <entryLinks>
@@ -4754,7 +4765,6 @@ At the start of the battle round, select one of the following toxic agents to be
             <selectionEntryGroup name="Options" id="5c2c-bbb7-d243-4a2a" hidden="false" defaultSelectionEntryId="none">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9ce-1375-ccbf-5412" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b527-aeb1-f878-2344" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Long-shoota" hidden="false" id="c93c-4f59-0497-6631" type="selectionEntry" targetId="73e6-a1d9-2b58-8a12">
@@ -4774,7 +4784,7 @@ At the start of the battle round, select one of the following toxic agents to be
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efaf-bc30-e658-eeb2" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Hunter Boss" hidden="false" id="400a-6144-a090-9944" flatten="true">
+        <selectionEntry type="model" import="true" name="Hunter Boss" hidden="false" id="400a-6144-a090-9944" flatten="false">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c03f-f7b1-91bb-434d-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c03f-f7b1-91bb-434d-max" includeChildSelections="false"/>
