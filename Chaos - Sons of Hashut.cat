@@ -4774,7 +4774,7 @@ At the start of the battle round, select one of the following toxic agents to be
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efaf-bc30-e658-eeb2" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Hunter Boss" hidden="false" id="400a-6144-a090-9944" flatten="false">
+        <selectionEntry type="model" import="true" name="Hunter Boss" hidden="false" id="400a-6144-a090-9944" flatten="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c03f-f7b1-91bb-434d-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c03f-f7b1-91bb-434d-max" includeChildSelections="false"/>
