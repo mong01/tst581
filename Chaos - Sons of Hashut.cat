@@ -4794,7 +4794,7 @@ At the start of the battle round, select one of the following toxic agents to be
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="099f-eb68-6217-39dc" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Boomstick" hidden="false" id="8455-0b52-2a07-b64e" collective="true">
+    <selectionEntry type="upgrade" import="true" name="Boomstick" hidden="false" id="8455-0b52-2a07-b64e" collective="true" flatten="true">
       <profiles>
         <profile name="Boomstick" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="34be-f47b-6457-622a">
           <characteristics>
