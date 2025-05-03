@@ -4605,6 +4605,11 @@ At the start of the battle round, select one of the following toxic agents to be
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
+        <profile name="Backstabbin&apos;" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a057-9408-39a1-f3d1">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After both players have deployed their armies, you can redeploy this unit. When doing so, you can set this unit up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="3580-ec49-28bb-ecfd" primary="true" name="Infantry"/>
@@ -4774,20 +4779,24 @@ At the start of the battle round, select one of the following toxic agents to be
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c03f-f7b1-91bb-434d-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c03f-f7b1-91bb-434d-max" includeChildSelections="false"/>
           </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Hobgrot blasta" hidden="false" id="f4f7-bb21-e0f4-23d9" type="selectionEntry" targetId="242b-047f-f6ad-1d70" flatten="true">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a996-e335-5b1b-c1f8" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="87c4-9ce0-49b2-2fa8" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Boomstick" hidden="false" id="c2bf-9341-9c28-2c75" type="selectionEntry" targetId="8455-0b52-2a07-b64e" flatten="true">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2402-9c36-2d20-359c" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e671-f75b-a5e3-d029" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="76e3-87cd-ccb9-093e" hidden="false" flatten="true">
+              <entryLinks>
+                <entryLink import="true" name="Hobgrot blasta" hidden="false" id="2e66-3d84-d443-4871" type="selectionEntry" targetId="242b-047f-f6ad-1d70" flatten="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7f8-78f5-ef75-3a01" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db47-d5c6-2282-c4f4" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Boomstick" hidden="false" id="aff9-83ac-cf97-48a1" type="selectionEntry" targetId="8455-0b52-2a07-b64e" flatten="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e283-18f2-73e0-8b44" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d751-8776-59e9-2d37" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <constraints>
