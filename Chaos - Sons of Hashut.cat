@@ -4710,7 +4710,7 @@ At the start of the battle round, select one of the following toxic agents to be
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Hobgrot Hunter" hidden="false" id="e5c1-5c5e-bdda-558a">
+        <selectionEntry type="model" import="true" name="Hobgrot Hunter" hidden="false" id="e5c1-5c5e-bdda-558a" flatten="true">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="4d63-c452-8186-19e3" includeChildSelections="false"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="1ee1-b2df-0107-cfc5" includeChildSelections="false"/>
