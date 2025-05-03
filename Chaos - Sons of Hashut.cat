@@ -4529,7 +4529,7 @@ At the start of the battle round, select one of the following toxic agents to be
             </selectionEntryGroup>
           </selectionEntryGroups>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="true" id="e612-91a6-e0b2-ff8b">
+            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="true" id="e612-91a6-e0b2-ff8b" collective="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d9c8-5bd7-3ff5-888f" includeChildSelections="false" automatic="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74cf-f2b7-e317-cf81" includeChildSelections="false" automatic="true"/>
@@ -4622,7 +4622,7 @@ At the start of the battle round, select one of the following toxic agents to be
                     </modifierGroup>
                   </modifierGroups>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="true" id="6f0c-358f-9fd7-71f0">
+                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="true" id="6f0c-358f-9fd7-71f0" collective="true">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="113e-4107-404a-5cbc" includeChildSelections="false" automatic="true"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f993-76fd-a1cb-6b5c" includeChildSelections="false" automatic="true"/>
