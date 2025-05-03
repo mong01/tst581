@@ -4872,6 +4872,7 @@ At the start of the battle round, select one of the following toxic agents to be
     <entryLink import="true" name="K&apos;daai Stalker" hidden="false" id="c502-b375-ff38-8d03" targetId="ea0b-6f5b-9187-6aee" type="selectionEntry"/>
     <entryLink import="true" name="Detachment " hidden="false" id="e463-b09c-aefa-eaca" targetId="0863-6b2a-a74a-31ed" type="selectionEntry"/>
     <entryLink import="true" name="Hobgrot Cutthroats" hidden="false" id="42e2-158c-4ab2-47a0" targetId="1986-837a-999d-8efc" type="selectionEntry"/>
+    <entryLink import="true" name="Hobgrot Hunters" hidden="false" id="957d-2f49-1529-866c" targetId="5c61-e033-5f5a-8875" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Fireglaive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fea9-43bc-25b1-0c6d">
