@@ -35,6 +35,7 @@
     <categoryEntry name="Hobgrot Cutthroats" id="fe05-216d-5c82-0490" hidden="false"/>
     <categoryEntry name="Hobgrot" id="5b10-48bb-3b3b-5f4d" hidden="false"/>
     <categoryEntry name="Hobgrot Ratrodz" id="99c0-3a48-c565-97e7" hidden="false"/>
+    <categoryEntry name="Hobgrot Scrapgunz" id="3a3d-bd1c-9d8e-394f" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Ash &amp; Iron" id="1834-ed25-4ab3-5dba" hidden="false">
@@ -4783,9 +4784,7 @@ At the start of the battle round, select one of the following toxic agents to be
         <categoryLink targetId="9321-c9ec-e974-81fa" id="461f-2736-32e2-33d6" primary="false" name="Faction: Sons of Hashut"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="26a5-1bd5-f770-48c9" primary="false" name="Chaos"/>
         <categoryLink targetId="99c0-3a48-c565-97e7" id="16f4-3f2e-0981-de35" primary="false" name="Hobgrot Ratrodz"/>
-        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="c486-d9b5-275e-cc0c" primary="false" name="Grenades"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="5829-f2f8-6a69-bcd7" primary="true" name="Vehicle"/>
-        <categoryLink targetId="14a0-40c9-2748-ae6e" id="0b32-2ce5-ee5c-ca93" primary="false" name="Mounted"/>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="0b32-2ce5-ee5c-ca93" primary="true" name="Mounted"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Scouts" id="f361-51d7-def5-c88c" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
@@ -4799,7 +4798,7 @@ At the start of the battle round, select one of the following toxic agents to be
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
@@ -4885,14 +4884,14 @@ At the start of the battle round, select one of the following toxic agents to be
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="099f-eb68-6217-39dc" includeChildSelections="false"/>
       </constraints>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="80" field="51b2-306e-1021-d207">
+        <modifier type="increment" value="75" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="5c61-e033-5f5a-8875" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -4952,10 +4951,81 @@ At the start of the battle round, select one of the following toxic agents to be
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Hobgrot Scraplobba" hidden="false" id="8ab3-8b97-5815-055a"/>
-    <selectionEntry type="upgrade" import="true" name="Hobgrot dakkagun" hidden="false" id="77c0-446e-b128-b4cd">
+    <selectionEntry type="unit" import="true" name="Hobgrot Scrapgunz" hidden="false" id="8ab3-8b97-5815-055a">
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="817a-3264-e6d4-c890" primary="true" name="Infantry"/>
+        <categoryLink targetId="3a3d-bd1c-9d8e-394f" id="1525-43b8-5219-177e" primary="false" name="Hobgrot Scrapgunz"/>
+        <categoryLink targetId="5b10-48bb-3b3b-5f4d" id="f811-9df8-37a5-96fa" primary="false" name="Hobgrot"/>
+        <categoryLink targetId="9321-c9ec-e974-81fa" id="f56e-8f66-eea5-9b8d" primary="false" name="Faction: Sons of Hashut"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="21ee-2c39-9ec5-ea06" primary="false" name="Chaos"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Hobgrot Scrapgun" hidden="false" id="8bde-56f6-e736-60d5" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c95b-5b77-dcaf-8776" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="15c9-0111-9153-b49e" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Scrapgun" hidden="false" id="0281-4fd0-b2c6-9a65" collective="false">
+              <profiles>
+                <profile name="➤ Scrapgun - shredda scrap" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3347-75a5-1e91-c940">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">12</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="➤ Scrapgun - burny bits" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="c8d2-24a9-5d57-5bad">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="➤ Scrapgun - krumpin&apos; bolts" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f09c-c2ec-6e8d-076c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a909-49b9-c518-67b5-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a909-49b9-c518-67b5-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
       <profiles>
-        <profile name="Hobgrot dakkagun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="30a3-746b-8a6e-6b98">
+        <profile name="Hobgrot Scrapgunz" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f56a-0b18-2c00-4da1">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">3&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rotagun" hidden="false" id="77c0-446e-b128-b4cd">
+      <profiles>
+        <profile name="Rotagun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="30a3-746b-8a6e-6b98">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
@@ -4968,7 +5038,8 @@ At the start of the battle round, select one of the following toxic agents to be
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Rapid Fire" id="61ca-b5cb-c082-8846" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
+        <infoLink name="Assault" id="61ca-b5cb-c082-8846" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+        <infoLink name="Rapid Fire" id="f342-4371-9221-32a5" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bomb lobba" hidden="false" id="8c4f-7396-b823-5a22">
@@ -4981,12 +5052,13 @@ At the start of the battle round, select one of the following toxic agents to be
             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Blast</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Blast" id="2732-becf-bbee-af35" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+        <infoLink name="Assault" id="2732-becf-bbee-af35" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+        <infoLink name="Blast" id="999a-257e-448c-46c0" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -5017,6 +5089,7 @@ At the start of the battle round, select one of the following toxic agents to be
     <entryLink import="true" name="Detachment " hidden="false" id="e463-b09c-aefa-eaca" targetId="0863-6b2a-a74a-31ed" type="selectionEntry"/>
     <entryLink import="true" name="Hobgrot Cutthroats" hidden="false" id="42e2-158c-4ab2-47a0" targetId="1986-837a-999d-8efc" type="selectionEntry"/>
     <entryLink import="true" name="Hobgrot Ratrodz" hidden="false" id="957d-2f49-1529-866c" targetId="5c61-e033-5f5a-8875" type="selectionEntry"/>
+    <entryLink import="true" name="Hobgrot Scrapgunz" hidden="false" id="1c2d-817b-1d50-e822" targetId="8ab3-8b97-5815-055a" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Fireglaive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fea9-43bc-25b1-0c6d">
