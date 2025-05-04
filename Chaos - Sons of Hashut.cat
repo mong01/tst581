@@ -5046,6 +5046,9 @@ At the start of the battle round, select one of the following toxic agents to be
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="0cca-49ee-bc07-28ea" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rotagun" hidden="false" id="77c0-446e-b128-b4cd">
       <profiles>
