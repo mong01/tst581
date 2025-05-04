@@ -4626,7 +4626,7 @@ At the start of the battle round, select one of the following toxic agents to be
             </selectionEntryGroup>
           </selectionEntryGroups>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="ca6f-a77e-e6b5-ad78" collective="true" flatten="true" collapsible="true">
+            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="ca6f-a77e-e6b5-ad78" collective="true" flatten="true" collapsible="false">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f99-65cc-162e-012c" includeChildSelections="false" automatic="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fc3-35b1-4143-55c2" includeChildSelections="false" automatic="true"/>
@@ -4647,10 +4647,10 @@ At the start of the battle round, select one of the following toxic agents to be
               <modifierGroups>
                 <modifierGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="1986-837a-999d-8efc" childId="53ab-c3e0-970e-23f4" shared="true" includeChildSelections="true"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="1986-837a-999d-8efc" childId="53ab-c3e0-970e-23f4" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <modifiers>
-                    <modifier type="set" value="true" field="hidden"/>
+                    <modifier type="set" value="false" field="hidden"/>
                     <modifier type="set" value="0" field="6fc3-35b1-4143-55c2"/>
                     <modifier type="set" value="0" field="9f99-65cc-162e-012c"/>
                   </modifiers>
