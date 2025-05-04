@@ -4564,11 +4564,11 @@ At the start of the battle round, select one of the following toxic agents to be
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Hobgrot Boss" hidden="false" id="70da-7678-5789-f64f" collective="true" flatten="true">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b5b-6cc6-32e4-5728" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5921-d480-cb5e-5dec" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b5b-6cc6-32e4-5728" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5921-d480-cb5e-5dec" includeChildSelections="false" automatic="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Options" id="82a5-0bf4-19c7-6c0d" hidden="false" flatten="true" defaultSelectionEntryId="fdae-3360-2a47-a09c">
+            <selectionEntryGroup name="Options" id="82a5-0bf4-19c7-6c0d" hidden="false" flatten="false" defaultSelectionEntryId="fdae-3360-2a47-a09c">
               <entryLinks>
                 <entryLink import="true" name="Hobgrot shoota" hidden="true" id="fdae-3360-2a47-a09c" type="selectionEntry" targetId="4ef3-97f1-91eb-083e" flatten="true">
                   <constraints>
@@ -4596,42 +4596,55 @@ At the start of the battle round, select one of the following toxic agents to be
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="true" id="9aee-586c-7084-9df5" collective="true" flatten="true" collapsible="false">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4faf-4b2a-1e6b-3960" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ca89-943b-b72e-dd30" includeChildSelections="false" automatic="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e850-6cb8-7933-6892">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="1986-837a-999d-8efc" childId="fdae-3360-2a47-a09c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden"/>
+                        <modifier type="set" value="1" field="ca89-943b-b72e-dd30"/>
+                        <modifier type="set" value="1" field="4faf-4b2a-1e6b-3960"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </selectionEntry>
               </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="true" id="ca6f-a77e-e6b5-ad78" collective="true" flatten="true" collapsible="false">
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9f99-65cc-162e-012c" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6fc3-35b1-4143-55c2" includeChildSelections="false" automatic="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="7167-63fd-d1d4-1c5c">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <modifierGroups>
                 <modifierGroup type="and">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="1986-837a-999d-8efc" childId="fdae-3360-2a47-a09c" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <modifiers>
-                    <modifier type="set" value="false" field="hidden"/>
-                    <modifier type="set" value="1" field="6fc3-35b1-4143-55c2"/>
-                    <modifier type="set" value="1" field="9f99-65cc-162e-012c"/>
+                    <modifier type="set" value="2" field="6bfd-6a63-61a4-e299"/>
+                    <modifier type="set" value="2" field="d67d-6ea8-60d7-58f9"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
-            </selectionEntry>
-          </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d67d-6ea8-60d7-58f9" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6bfd-6a63-61a4-e299" includeChildSelections="false" automatic="true"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <profiles>
