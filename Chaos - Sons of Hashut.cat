@@ -4487,81 +4487,6 @@ At the start of the battle round, select one of the following toxic agents to be
         </infoLink>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Hobgrot Cutthroat" hidden="false" id="2d39-2b41-bdbc-10ca" collective="true">
-          <constraints>
-            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="5a4b-78ab-f08b-d863" includeChildSelections="false"/>
-            <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="22be-69c3-b245-6c25" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Options" id="7927-d6fb-3857-2ae1" hidden="false" defaultSelectionEntryId="461b-f3c3-efa3-1afd">
-              <entryLinks>
-                <entryLink import="true" name="Hobgrot shoota" hidden="false" id="461b-f3c3-efa3-1afd" type="selectionEntry" targetId="4ef3-97f1-91eb-083e">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ab0-7ef0-fbcb-d29f" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f83-aa82-7203-88e0" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afb3-b922-1875-b594" includeChildSelections="false"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Hobgrot blasta &amp; stabba" hidden="false" id="53ab-c3e0-970e-23f4" collective="true" flatten="true" collapsible="false">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8b2-713c-d205-c39a" includeChildSelections="false"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Stabba" hidden="false" id="12f4-e7b6-2d84-8d99" type="selectionEntry" targetId="531f-8130-7418-9235" flatten="true" collapsible="false">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b78e-8b64-a6a1-a7de-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b78e-8b64-a6a1-a7de-max" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Hobgrot blasta" hidden="false" id="0896-4ed5-15cd-2196" type="selectionEntry" targetId="242b-047f-f6ad-1d70" flatten="true" collapsible="false">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36e6-ff5e-fc17-c8df-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36e6-ff5e-fc17-c8df-max" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="6f0c-358f-9fd7-71f0" collective="true" flatten="true">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="113e-4107-404a-5cbc" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f993-76fd-a1cb-6b5c" includeChildSelections="false" automatic="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="49ef-92a5-bb06-af35">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="1986-837a-999d-8efc" childId="53ab-c3e0-970e-23f4" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden"/>
-                    <modifier type="set" value="0" field="f993-76fd-a1cb-6b5c"/>
-                    <modifier type="set" value="0" field="113e-4107-404a-5cbc"/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
         <selectionEntry type="model" import="true" name="Hobgrot Boss" hidden="false" id="70da-7678-5789-f64f" collective="true" flatten="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b5b-6cc6-32e4-5728" includeChildSelections="false" automatic="false"/>
@@ -4688,6 +4613,63 @@ At the start of the battle round, select one of the following toxic agents to be
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="3b36-953b-9e0d-02b8" includeChildSelections="false"/>
       </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="5202-8a2a-6bf4-3d7a" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Hobgrot Cutthroat w/ blasta &amp; stabba" hidden="false" id="148d-142b-3407-d59e">
+              <entryLinks>
+                <entryLink import="true" name="Hobgrot blasta" hidden="false" id="1b87-54c9-fd40-b2b0" type="selectionEntry" targetId="242b-047f-f6ad-1d70" flatten="false" collapsible="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7a3-8ba5-482e-60a0" includeChildSelections="false" automatic="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd86-8a14-10ba-8fa8" includeChildSelections="false" automatic="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Stabba" hidden="false" id="e3c5-9b42-7d1a-b6b7" type="selectionEntry" targetId="531f-8130-7418-9235" flatten="false" collapsible="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30f7-6324-930c-b650" includeChildSelections="false" automatic="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="14e2-7c37-6bf3-f522" includeChildSelections="false" automatic="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Hobgrot Cutthroat w/ shoota" hidden="false" id="6b72-257c-9be3-df60">
+              <entryLinks>
+                <entryLink import="true" name="Hobgrot shoota" hidden="false" id="a049-29ec-6474-7e66" type="selectionEntry" targetId="4ef3-97f1-91eb-083e" flatten="false" collapsible="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19ff-6d4a-edf4-e4b7" includeChildSelections="false" automatic="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8251-f727-7d82-4442" includeChildSelections="false" automatic="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="f5fc-b430-3c20-b03a" collective="true" flatten="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fbd4-53c9-d8e8-e380" includeChildSelections="false" automatic="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8625-1549-89c8-ad9b" includeChildSelections="false" automatic="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="eb04-31c3-a336-6e2d">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="ce07-e321-80d7-c58a" includeChildSelections="false"/>
+            <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="3039-fa1b-ea2a-17f2" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Stabba" hidden="false" id="531f-8130-7418-9235" collective="true" flatten="false">
       <profiles>
