@@ -5019,6 +5019,25 @@ At the start of the battle round, select one of the following toxic agents to be
                 <infoLink name="Heavy" id="2565-c719-6b1a-f9a6" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
               </infoLinks>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hobgrot crew" hidden="false" id="097b-f54c-d277-036b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2883-f0b6-c46e-ee98-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2883-f0b6-c46e-ee98-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Hobgrot crew" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="38de-a63a-2cab-d3ee">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="45"/>
