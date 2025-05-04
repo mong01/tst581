@@ -4529,7 +4529,7 @@ At the start of the battle round, select one of the following toxic agents to be
             </selectionEntryGroup>
           </selectionEntryGroups>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="e612-91a6-e0b2-ff8b" collective="true">
+            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="e612-91a6-e0b2-ff8b" collective="true" flatten="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d9c8-5bd7-3ff5-888f" includeChildSelections="false" automatic="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74cf-f2b7-e317-cf81" includeChildSelections="false" automatic="true"/>
@@ -4568,9 +4568,9 @@ At the start of the battle round, select one of the following toxic agents to be
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5921-d480-cb5e-5dec" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Options" id="82a5-0bf4-19c7-6c0d" hidden="false" flatten="false" defaultSelectionEntryId="fdae-3360-2a47-a09c">
+            <selectionEntryGroup name="Options" id="82a5-0bf4-19c7-6c0d" hidden="false" flatten="true" defaultSelectionEntryId="fdae-3360-2a47-a09c">
               <entryLinks>
-                <entryLink import="true" name="Hobgrot shoota" hidden="true" id="fdae-3360-2a47-a09c" type="selectionEntry" targetId="4ef3-97f1-91eb-083e" flatten="false">
+                <entryLink import="true" name="Hobgrot shoota" hidden="true" id="fdae-3360-2a47-a09c" type="selectionEntry" targetId="4ef3-97f1-91eb-083e" flatten="true">
                   <constraints>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="93ed-3341-4828-dbed" includeChildSelections="false" automatic="true"/>
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f460-9e30-4eb2-e004" includeChildSelections="false" automatic="true"/>
@@ -4590,7 +4590,7 @@ At the start of the battle round, select one of the following toxic agents to be
                 </entryLink>
               </entryLinks>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Hobgrot blasta &amp; stabba" hidden="false" id="f963-d8d2-6a90-72e3" collective="true" flatten="false" collapsible="false">
+                <selectionEntry type="upgrade" import="true" name="Hobgrot blasta &amp; stabba" hidden="false" id="f963-d8d2-6a90-72e3" collective="true" flatten="true" collapsible="false">
                   <constraints>
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b3c7-4f7c-afaf-1839" includeChildSelections="false" automatic="true"/>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="76d3-ee66-fdbd-89f5" includeChildSelections="false" automatic="true"/>
@@ -4622,7 +4622,7 @@ At the start of the battle round, select one of the following toxic agents to be
                     </modifierGroup>
                   </modifierGroups>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="6f0c-358f-9fd7-71f0" collective="true">
+                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="6f0c-358f-9fd7-71f0" collective="true" flatten="true">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="113e-4107-404a-5cbc" includeChildSelections="false" automatic="true"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f993-76fd-a1cb-6b5c" includeChildSelections="false" automatic="true"/>
