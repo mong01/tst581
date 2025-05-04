@@ -4633,10 +4633,10 @@ At the start of the battle round, select one of the following toxic agents to be
               </entryLinks>
               <constraints>
                 <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="7549-7d6c-e4d8-c5d3"/>
-                <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="52d8-44d0-9f37-58c9" includeChildSelections="false"/>
+                <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="52d8-44d0-9f37-58c9" includeChildSelections="false" automatic="true"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="9" field="52d8-44d0-9f37-58c9">
+                <modifier type="decrement" value="1" field="52d8-44d0-9f37-58c9">
                   <repeats>
                     <repeat value="1" repeats="1" field="selections" scope="1986-837a-999d-8efc" childId="6b72-257c-9be3-df60" shared="true" roundUp="false"/>
                   </repeats>
@@ -4680,11 +4680,11 @@ At the start of the battle round, select one of the following toxic agents to be
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="ce07-e321-80d7-c58a" includeChildSelections="false"/>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="ce07-e321-80d7-c58a" includeChildSelections="false" automatic="true"/>
             <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="3039-fa1b-ea2a-17f2" includeChildSelections="false"/>
           </constraints>
           <modifiers>
-            <modifier type="decrement" value="9" field="ce07-e321-80d7-c58a">
+            <modifier type="decrement" value="1" field="ce07-e321-80d7-c58a">
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="1986-837a-999d-8efc" childId="148d-142b-3407-d59e" shared="true" roundUp="false"/>
               </repeats>
