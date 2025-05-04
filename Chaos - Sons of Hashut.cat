@@ -4779,12 +4779,12 @@ At the start of the battle round, select one of the following toxic agents to be
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hobgrot Ratrodz" hidden="false" id="5c61-e033-5f5a-8875">
       <categoryLinks>
-        <categoryLink targetId="14a0-40c9-2748-ae6e" id="22a0-3558-eca8-a096" primary="true" name="Mounted"/>
         <categoryLink targetId="5b10-48bb-3b3b-5f4d" id="8447-7056-3245-1eb4" primary="false" name="Hobgrot"/>
         <categoryLink targetId="9321-c9ec-e974-81fa" id="461f-2736-32e2-33d6" primary="false" name="Faction: Sons of Hashut"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="26a5-1bd5-f770-48c9" primary="false" name="Chaos"/>
         <categoryLink targetId="99c0-3a48-c565-97e7" id="16f4-3f2e-0981-de35" primary="false" name="Hobgrot Ratrodz"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="c486-d9b5-275e-cc0c" primary="false" name="Grenades"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="5829-f2f8-6a69-bcd7" primary="true" name="Vehicle"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Scouts" id="f361-51d7-def5-c88c" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
