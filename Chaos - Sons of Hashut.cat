@@ -4785,6 +4785,7 @@ At the start of the battle round, select one of the following toxic agents to be
         <categoryLink targetId="99c0-3a48-c565-97e7" id="16f4-3f2e-0981-de35" primary="false" name="Hobgrot Ratrodz"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="c486-d9b5-275e-cc0c" primary="false" name="Grenades"/>
         <categoryLink targetId="dbd4-63-af05-998" id="5829-f2f8-6a69-bcd7" primary="true" name="Vehicle"/>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="0b32-2ce5-ee5c-ca93" primary="false" name="Mounted"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Scouts" id="f361-51d7-def5-c88c" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
