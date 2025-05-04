@@ -4626,7 +4626,7 @@ At the start of the battle round, select one of the following toxic agents to be
             </selectionEntryGroup>
           </selectionEntryGroups>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="ca6f-a77e-e6b5-ad78" collective="true" flatten="true">
+            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="ca6f-a77e-e6b5-ad78" collective="true" flatten="true" collapsible="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f99-65cc-162e-012c" includeChildSelections="false" automatic="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fc3-35b1-4143-55c2" includeChildSelections="false" automatic="true"/>
