@@ -4525,40 +4525,42 @@ At the start of the battle round, select one of the following toxic agents to be
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="7d80-425e-fac3-58c4" collective="true" flatten="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cad-7e35-ade1-8559" includeChildSelections="false" automatic="true"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41ba-bb30-d876-ce3a" includeChildSelections="false" automatic="true"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2a2e-5643-c5b2-09af">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="1986-837a-999d-8efc" childId="53ab-c3e0-970e-23f4" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden"/>
-                        <modifier type="set" value="0" field="41ba-bb30-d876-ce3a"/>
-                        <modifier type="set" value="0" field="4cad-7e35-ade1-8559"/>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="6f0c-358f-9fd7-71f0" collective="true" flatten="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="113e-4107-404a-5cbc" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f993-76fd-a1cb-6b5c" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="49ef-92a5-bb06-af35">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="1986-837a-999d-8efc" childId="53ab-c3e0-970e-23f4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden"/>
+                    <modifier type="set" value="0" field="f993-76fd-a1cb-6b5c"/>
+                    <modifier type="set" value="0" field="113e-4107-404a-5cbc"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Hobgrot Boss" hidden="false" id="70da-7678-5789-f64f" collective="true" flatten="true">
           <constraints>
@@ -4620,40 +4622,42 @@ At the start of the battle round, select one of the following toxic agents to be
                     </modifierGroup>
                   </modifierGroups>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="6f0c-358f-9fd7-71f0" collective="true" flatten="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="113e-4107-404a-5cbc" includeChildSelections="false" automatic="true"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f993-76fd-a1cb-6b5c" includeChildSelections="false" automatic="true"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="49ef-92a5-bb06-af35">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="1986-837a-999d-8efc" childId="53ab-c3e0-970e-23f4" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden"/>
-                        <modifier type="set" value="0" field="f993-76fd-a1cb-6b5c"/>
-                        <modifier type="set" value="0" field="113e-4107-404a-5cbc"/>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="ca6f-a77e-e6b5-ad78" collective="true" flatten="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f99-65cc-162e-012c" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fc3-35b1-4143-55c2" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="7167-63fd-d1d4-1c5c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="1986-837a-999d-8efc" childId="53ab-c3e0-970e-23f4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden"/>
+                    <modifier type="set" value="0" field="6fc3-35b1-4143-55c2"/>
+                    <modifier type="set" value="0" field="9f99-65cc-162e-012c"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <profiles>
