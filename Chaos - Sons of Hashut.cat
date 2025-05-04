@@ -4572,64 +4572,38 @@ At the start of the battle round, select one of the following toxic agents to be
               <entryLinks>
                 <entryLink import="true" name="Hobgrot shoota" hidden="true" id="fdae-3360-2a47-a09c" type="selectionEntry" targetId="4ef3-97f1-91eb-083e" flatten="true">
                   <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="93ed-3341-4828-dbed" includeChildSelections="false" automatic="true"/>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f460-9e30-4eb2-e004" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f460-9e30-4eb2-e004" includeChildSelections="false" automatic="false"/>
                   </constraints>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="set" value="1" field="f460-9e30-4eb2-e004"/>
-                        <modifier type="set" value="1" field="93ed-3341-4828-dbed"/>
-                        <modifier type="set" value="false" field="hidden"/>
-                      </modifiers>
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="1986-837a-999d-8efc" childId="53ab-c3e0-970e-23f4" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifierGroup>
-                  </modifierGroups>
                 </entryLink>
               </entryLinks>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Hobgrot blasta &amp; stabba" hidden="false" id="f963-d8d2-6a90-72e3" collective="true" flatten="true" collapsible="false">
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b3c7-4f7c-afaf-1839" includeChildSelections="false" automatic="true"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="76d3-ee66-fdbd-89f5" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3c7-4f7c-afaf-1839" includeChildSelections="false" automatic="false"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Stabba" hidden="false" id="3364-56ea-aa09-cbbe" type="selectionEntry" targetId="531f-8130-7418-9235" flatten="false" collapsible="false">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="454c-d4d3-f368-d857" includeChildSelections="false" automatic="true"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edce-cb62-f7a8-1d5c" includeChildSelections="false" automatic="true"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="454c-d4d3-f368-d857" includeChildSelections="false" automatic="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edce-cb62-f7a8-1d5c" includeChildSelections="false" automatic="false"/>
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Hobgrot blasta" hidden="false" id="629a-328d-cd6b-2c34" type="selectionEntry" targetId="242b-047f-f6ad-1d70" flatten="false" collapsible="false">
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d51-2f7d-4e16-3095" includeChildSelections="false" automatic="true"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be28-d6c4-c64e-82ea" includeChildSelections="false" automatic="true"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d51-2f7d-4e16-3095" includeChildSelections="false" automatic="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be28-d6c4-c64e-82ea" includeChildSelections="false" automatic="false"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="set" value="1" field="b3c7-4f7c-afaf-1839"/>
-                        <modifier type="set" value="1" field="76d3-ee66-fdbd-89f5"/>
-                        <modifier type="set" value="false" field="hidden"/>
-                      </modifiers>
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="1986-837a-999d-8efc" childId="461b-f3c3-efa3-1afd" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifierGroup>
-                  </modifierGroups>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="ca6f-a77e-e6b5-ad78" collective="true" flatten="true" collapsible="false">
+            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="true" id="ca6f-a77e-e6b5-ad78" collective="true" flatten="true" collapsible="false">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f99-65cc-162e-012c" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fc3-35b1-4143-55c2" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9f99-65cc-162e-012c" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6fc3-35b1-4143-55c2" includeChildSelections="false" automatic="true"/>
               </constraints>
               <profiles>
                 <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="7167-63fd-d1d4-1c5c">
@@ -4647,12 +4621,12 @@ At the start of the battle round, select one of the following toxic agents to be
               <modifierGroups>
                 <modifierGroup type="and">
                   <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="1986-837a-999d-8efc" childId="53ab-c3e0-970e-23f4" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="1986-837a-999d-8efc" childId="fdae-3360-2a47-a09c" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <modifiers>
                     <modifier type="set" value="false" field="hidden"/>
-                    <modifier type="set" value="0" field="6fc3-35b1-4143-55c2"/>
-                    <modifier type="set" value="0" field="9f99-65cc-162e-012c"/>
+                    <modifier type="set" value="1" field="6fc3-35b1-4143-55c2"/>
+                    <modifier type="set" value="1" field="9f99-65cc-162e-012c"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
@@ -4665,7 +4639,7 @@ At the start of the battle round, select one of the following toxic agents to be
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">6+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
