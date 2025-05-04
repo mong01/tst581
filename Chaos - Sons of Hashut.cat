@@ -4616,7 +4616,7 @@ At the start of the battle round, select one of the following toxic agents to be
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" id="5202-8a2a-6bf4-3d7a" hidden="false" defaultSelectionEntryId="6b72-257c-9be3-df60">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Hobgrot Cutthroat w/ blasta &amp; stabba" hidden="false" id="148d-142b-3407-d59e">
+            <selectionEntry type="model" import="true" name="Hobgrot Cutthroat w/ blasta &amp; stabba" hidden="false" id="148d-142b-3407-d59e" defaultAmount="0">
               <entryLinks>
                 <entryLink import="true" name="Hobgrot blasta" hidden="false" id="1b87-54c9-fd40-b2b0" type="selectionEntry" targetId="242b-047f-f6ad-1d70" flatten="false" collapsible="false">
                   <constraints>
