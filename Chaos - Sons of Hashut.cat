@@ -4480,11 +4480,7 @@ At the start of the battle round, select one of the following toxic agents to be
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hobgrot Cutthroats" hidden="false" id="1986-837a-999d-8efc">
       <infoLinks>
-        <infoLink name="Scouts" id="fe12-0c0e-6eaa-1677" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
-          <modifiers>
-            <modifier type="append" value="6&quot;" field="name" join=" "/>
-          </modifiers>
-        </infoLink>
+        <infoLink name="Infiltrators" id="fe12-0c0e-6eaa-1677" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Hobgrot Boss" hidden="false" id="70da-7678-5789-f64f" collective="true" flatten="true">
@@ -4577,7 +4573,7 @@ At the start of the battle round, select one of the following toxic agents to be
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">6+</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
@@ -4668,6 +4664,59 @@ At the start of the battle round, select one of the following toxic agents to be
               <constraints>
                 <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="42b8-dd88-d5d4-b678"/>
               </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Hobgrot Cutthroat w/ special weapon" hidden="false" id="d779-ae70-c2b6-174f">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="78fe-76b3-654d-fdd6" collective="false" flatten="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="92bc-897e-b697-d96a" includeChildSelections="false" automatic="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eec-3702-97ee-f7c5" includeChildSelections="false" automatic="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="689a-be64-48ed-ed8a">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Options" id="94b1-2c8f-349e-a46a" hidden="false" defaultSelectionEntryId="none">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="580e-a60e-6e12-fa5a" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cbf7-db6a-5279-0c9f" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Long-shoota" hidden="false" id="e76d-31c2-41cd-53ea" type="selectionEntry" targetId="73e6-a1d9-2b58-8a12">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aff0-e059-0e86-08f4" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Hobgrot lobba" hidden="false" id="a832-4a63-e814-34d4" type="selectionEntry" targetId="9351-b0ba-bdd3-6578">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f59-27c8-bddc-4825" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ccc1-33b5-1c23-a034" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="4" field="ccc1-33b5-1c23-a034">
+                  <conditions>
+                    <condition type="atLeast" value="11" field="selections" scope="1986-837a-999d-8efc" childId="model" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -4898,7 +4947,8 @@ At the start of the battle round, select one of the following toxic agents to be
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Long-shoota" hidden="false" id="73e6-a1d9-2b58-8a12">
       <infoLinks>
-        <infoLink name="Precision" id="18b9-913e-6164-4cbd" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+        <infoLink name="Heavy" id="18b9-913e-6164-4cbd" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+        <infoLink name="Precision" id="7e5e-64e7-ce91-f5b5" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
       </infoLinks>
       <profiles>
         <profile name="Long-shoota" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3f05-81b1-2cc5-5161">
@@ -4909,7 +4959,7 @@ At the start of the battle round, select one of the following toxic agents to be
             <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Precision</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Precision</characteristic>
           </characteristics>
         </profile>
       </profiles>
