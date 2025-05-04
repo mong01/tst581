@@ -5013,6 +5013,11 @@ At the start of the battle round, select one of the following toxic agents to be
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a909-49b9-c518-67b5-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a909-49b9-c518-67b5-max" includeChildSelections="false"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Torrent" id="5be4-b5fb-5345-0a1e" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+                <infoLink name="Ignores Cover" id="3951-38e1-3fcd-d285" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+                <infoLink name="Heavy" id="2565-c719-6b1a-f9a6" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <costs>
