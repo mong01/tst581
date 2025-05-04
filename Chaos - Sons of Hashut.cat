@@ -4614,7 +4614,7 @@ At the start of the battle round, select one of the following toxic agents to be
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="3b36-953b-9e0d-02b8" includeChildSelections="false"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="5202-8a2a-6bf4-3d7a" hidden="false">
+        <selectionEntryGroup name="Options" id="5202-8a2a-6bf4-3d7a" hidden="false" defaultSelectionEntryId="6b72-257c-9be3-df60">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Hobgrot Cutthroat w/ blasta &amp; stabba" hidden="false" id="148d-142b-3407-d59e">
               <entryLinks>
@@ -4631,6 +4631,9 @@ At the start of the battle round, select one of the following toxic agents to be
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <constraints>
+                <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="7549-7d6c-e4d8-c5d3"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Hobgrot Cutthroat w/ shoota" hidden="false" id="6b72-257c-9be3-df60">
               <entryLinks>
@@ -4662,6 +4665,9 @@ At the start of the battle round, select one of the following toxic agents to be
                   </profiles>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="42b8-dd88-d5d4-b678"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <constraints>
