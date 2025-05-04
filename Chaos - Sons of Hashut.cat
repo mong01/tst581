@@ -4633,7 +4633,7 @@ At the start of the battle round, select one of the following toxic agents to be
               </entryLinks>
               <constraints>
                 <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="7549-7d6c-e4d8-c5d3"/>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="52d8-44d0-9f37-58c9" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="52d8-44d0-9f37-58c9" includeChildSelections="false" automatic="false"/>
               </constraints>
               <modifiers>
                 <modifier type="increment" value="1" field="52d8-44d0-9f37-58c9">
