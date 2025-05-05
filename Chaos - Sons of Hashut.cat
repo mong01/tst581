@@ -32,11 +32,12 @@
     <categoryEntry name="Búlvrekh" id="dafc-eb66-e076-cf37" hidden="false"/>
     <categoryEntry name="Thazrymr" id="40da-172e-7338-d056" hidden="false"/>
     <categoryEntry name="K&apos;daai Stalker" id="e134-dc8b-e56f-7447" hidden="false"/>
-    <categoryEntry name="Hobgrot Cutthroats" id="fe05-216d-5c82-0490" hidden="false"/>
+    <categoryEntry name="Hobgrot Cutthroatz" id="fe05-216d-5c82-0490" hidden="false"/>
     <categoryEntry name="Hobgrot" id="5b10-48bb-3b3b-5f4d" hidden="false"/>
     <categoryEntry name="Hobgrot Ratrodz" id="99c0-3a48-c565-97e7" hidden="false"/>
     <categoryEntry name="Hobgrot Scrapgunz" id="3a3d-bd1c-9d8e-394f" hidden="false"/>
     <categoryEntry name="Hobgrot Khan" id="c19f-2646-7e07-a07e" hidden="false"/>
+    <categoryEntry name="Hobgrot Khan on Buggy" id="2eb4-1719-2e5b-4511" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Ash &amp; Iron" id="1834-ed25-4ab3-5dba" hidden="false">
@@ -4483,7 +4484,7 @@ At the start of the battle round, select one of the following toxic agents to be
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Hobgrot Cutthroats" hidden="false" id="1986-837a-999d-8efc">
+    <selectionEntry type="unit" import="true" name="Hobgrot Cutthroatz" hidden="false" id="1986-837a-999d-8efc">
       <infoLinks>
         <infoLink name="Infiltrators" id="fe12-0c0e-6eaa-1677" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
       </infoLinks>
@@ -4574,7 +4575,7 @@ At the start of the battle round, select one of the following toxic agents to be
         </selectionEntry>
       </selectionEntries>
       <profiles>
-        <profile name="Hobgrot Cutthroats" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="716e-f3dd-d9af-4785">
+        <profile name="Hobgrot Cutthroatz" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="716e-f3dd-d9af-4785">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
@@ -4598,14 +4599,14 @@ At the start of the battle round, select one of the following toxic agents to be
         <categoryLink targetId="9321-c9ec-e974-81fa" id="3a78-97cb-0077-0793" primary="false" name="Faction: Sons of Hashut"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="55" field="51b2-306e-1021-d207">
+        <modifier type="increment" value="50" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="11" field="selections" scope="1986-837a-999d-8efc" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -5085,6 +5086,13 @@ At the start of the battle round, select one of the following toxic agents to be
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 3</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="3+" field="94d-8a98-cf90-183e">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -5104,6 +5112,13 @@ At the start of the battle round, select one of the following toxic agents to be
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Blast</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="3+" field="94d-8a98-cf90-183e">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -5134,7 +5149,7 @@ At the start of the battle round, select one of the following toxic agents to be
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
-        <profile name="You First" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dd6d-9f3a-b9b2-8d13">
+        <profile name="You First!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dd6d-9f3a-b9b2-8d13">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, this model has the Feel No Pain 4+ ability.</characteristic>
           </characteristics>
@@ -5149,9 +5164,9 @@ At the start of the battle round, select one of the following toxic agents to be
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="00df-6ac3-0646-f97d" primary="true" name="Character"/>
         <categoryLink targetId="5b10-48bb-3b3b-5f4d" id="07d0-3caa-c780-041d" primary="false" name="Hobgrot"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="9e9d-ef4f-fb2e-d3ca" primary="false" name="Infantry"/>
-        <categoryLink targetId="fe05-216d-5c82-0490" id="a984-f491-0241-1805" primary="false" name="Hobgrot Cutthroats"/>
         <categoryLink targetId="9321-c9ec-e974-81fa" id="6f3c-b412-53e1-812b" primary="false" name="Faction: Sons of Hashut"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="4090-d205-5486-7fec" primary="false" name="Chaos"/>
+        <categoryLink targetId="c19f-2646-7e07-a07e" id="e731-a9a0-76af-64f8" primary="false" name="Hobgrot Khan"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="ee26-f917-4711-ccb5" includeChildSelections="false"/>
@@ -5206,6 +5221,105 @@ At the start of the battle round, select one of the following toxic agents to be
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Hobgrot Khan on Buggy" hidden="false" id="7622-43ae-8fd4-4f96">
+      <infoLinks>
+        <infoLink name="Leader" id="d806-a8b3-875f-af1d" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
+        <infoLink name="Infiltrators" id="c2ad-9383-108d-4cc9" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
+        <infoLink name="Expendable" id="bf9e-ed8d-53f0-efeb" hidden="false" type="rule" targetId="ed4d-7be9-8c2d-ad76"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b088-9331-393b-5814">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following unit:
+■ Hobgrot Ratrodz</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hobgrot Khan" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="846a-7d7d-445c-eb75">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="You First!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cfb2-47d1-f9eb-3c7b">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, this model has the Feel No Pain 4+ ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Loud Cunning" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8a97-833a-3936-b981">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll.
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Character" hidden="false" id="47ad-10f2-5770-11f3" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
+        <categoryLink name="Hobgrot" hidden="false" id="a3bc-5db9-f8d4-b37f" targetId="5b10-48bb-3b3b-5f4d" primary="false"/>
+        <categoryLink name="Faction: Sons of Hashut" hidden="false" id="cdc2-aa2c-2c34-4496" targetId="9321-c9ec-e974-81fa" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="2a31-7e3f-19b9-c2e6" targetId="4c00-2578-faf5-6918" primary="false"/>
+        <categoryLink targetId="2eb4-1719-2e5b-4511" id="9ae6-9208-6a3c-1fb4" primary="false" name="Hobgrot Khan on Buggy"/>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="d5f5-7942-ce1f-8f77" primary="false" name="Mounted"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="0be3-a459-2302-1858" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Boomstick" hidden="false" id="1c3d-7c87-9437-4482" collective="false" flatten="false">
+          <profiles>
+            <profile name="Boomstick" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="fbca-c8a9-7733-cc74">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lance, Sustained Hits D3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lance" id="c08b-3d0a-5516-b15f" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
+            <infoLink name="Sustained Hits" id="487d-06a7-de87-dc5e" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fb1-8591-5de5-c042-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fb1-8591-5de5-c042-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="560f-fa80-b3eb-f6a4" hidden="false" defaultSelectionEntryId="00b5-c0c0-c451-acc4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="de7a-2efb-ddc0-199b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de7a-2efb-ddc0-199b-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Bomb lobba" hidden="false" id="1a00-9173-0539-e7b2" type="selectionEntry" targetId="8c4f-7396-b823-5a22">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1592-6428-4584-900e" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Rotagun" hidden="false" id="00b5-c0c0-c451-acc4" type="selectionEntry" targetId="77c0-446e-b128-b4cd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaa1-de8e-30c3-4732" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
