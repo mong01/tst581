@@ -513,7 +513,7 @@ A. Yes.</characteristic>
                 </modifierGroup>
               </modifierGroups>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Infernal Theurgy Stratagems" hidden="false" id="cee2-ccb6-0ac5-c68d">
+            <selectionEntry type="upgrade" import="true" name="Jackal Warband Stratagems" hidden="false" id="cee2-ccb6-0ac5-c68d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b62a-678a-4712-f06b" includeChildSelections="false" automatic="true"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="794e-d9f9-a744-51e9" includeChildSelections="false" automatic="true"/>
@@ -3941,14 +3941,14 @@ At the start of the battle round, select one of the following toxic agents to be
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Infernal Theurgy" hidden="true" id="213c-6bd1-a61b-8886">
+            <selectionEntry type="upgrade" import="true" name="Jackal Warband" hidden="false" id="213c-6bd1-a61b-8886" defaultAmount="" sortIndex="6">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f02-0acf-e8b9-e9ac" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Will of the Prophets" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4873-b20e-5cd4-0be1">
+                <profile name="Useful Bodies" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4873-b20e-5cd4-0be1">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per phase for each SONS OF HASHUT unit from your army, you can re-roll one Hit roll, and you can re-roll one Wound roll.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">■ HOBGROT CUTTHROATZ units from your army gain the BATTLELINE keyword, and add 1 to the Objective Control characteristic of models in those units.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4445,7 +4445,7 @@ At the start of the battle round, select one of the following toxic agents to be
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Infernal Theurgy Enhancements" id="ad0a-7862-75a0-e3f2" hidden="true">
+            <selectionEntryGroup name="Jackal Warband Enhancements" id="ad0a-7862-75a0-e3f2" hidden="true">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c951-415d-66be-5bfd" includeChildSelections="true" includeChildForces="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd81-4cd9-7480-39a7" includeChildSelections="false"/>
@@ -4584,6 +4584,13 @@ At the start of the battle round, select one of the following toxic agents to be
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="2" field="bef7-942a-1a23-59f8" position="0">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Backstabbin&apos;" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a057-9408-39a1-f3d1">
           <characteristics>
@@ -4731,6 +4738,17 @@ At the start of the battle round, select one of the following toxic agents to be
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="remove" value="cf47-a0d7-7207-29dc" field="category"/>
+            <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Stabba" hidden="false" id="531f-8130-7418-9235" collective="true" flatten="false">
       <profiles>
@@ -5130,7 +5148,15 @@ At the start of the battle round, select one of the following toxic agents to be
       <infoLinks>
         <infoLink name="Leader" id="8848-4bf6-657e-4786" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
         <infoLink name="Infiltrators" id="1c5c-f987-0ab0-a85f" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
-        <infoLink name="Expendable" id="783f-1443-6d52-5a02" hidden="false" type="rule" targetId="ed4d-7be9-8c2d-ad76"/>
+        <infoLink name="Expendable" id="783f-1443-6d52-5a02" hidden="false" type="rule" targetId="ed4d-7be9-8c2d-ad76">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <profiles>
         <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="16f0-77ac-56a9-e526">
@@ -5226,7 +5252,15 @@ At the start of the battle round, select one of the following toxic agents to be
       <infoLinks>
         <infoLink name="Leader" id="d806-a8b3-875f-af1d" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
         <infoLink name="Infiltrators" id="c2ad-9383-108d-4cc9" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
-        <infoLink name="Expendable" id="bf9e-ed8d-53f0-efeb" hidden="false" type="rule" targetId="ed4d-7be9-8c2d-ad76"/>
+        <infoLink name="Expendable" id="bf9e-ed8d-53f0-efeb" hidden="false" type="rule" targetId="ed4d-7be9-8c2d-ad76">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <profiles>
         <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b088-9331-393b-5814">
