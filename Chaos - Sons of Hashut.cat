@@ -3949,7 +3949,7 @@ At the start of the battle round, select one of the following toxic agents to be
                 <profile name="Scramble for Favor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4873-b20e-5cd4-0be1">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">SONS OF HASHUT units from your army (excluding HOBGROT and SLAVE units) gain the following ability:
-**Eyes of the Master (Aura):** While a friendly HOBGROT unit is within 6&quot; of this unit, models in that unit can use this unit&apos;s Leadership characteristic.&apos;
+**Eyes of the Master (Aura):** While a friendly HOBGROT unit is within 6&quot; of this unit, models in that unit can use this unit&apos;s Leadership characteristic.
 
 ■ HOBGROT CUTTHROATZ units from your army gain the BATTLELINE keyword, and models in those units (excluding CHARACTER models) have an Objective Control characteristic of 2.
 ■ HOBGROT KHAN and HOBGROT KHAN ON BUGGY models from your army lose the Expendable ability.</characteristic>
