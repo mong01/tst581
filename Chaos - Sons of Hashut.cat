@@ -5200,7 +5200,7 @@ At the start of the battle round, select one of the following toxic agents to be
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="ee26-f917-4711-ccb5" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Big stabba" hidden="false" id="5c31-3a43-6efe-b46a" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="Big stabba" hidden="false" id="5c31-3a43-6efe-b46a" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="878f-3444-bc9a-d1c6-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="878f-3444-bc9a-d1c6-max" includeChildSelections="false"/>
@@ -5259,7 +5259,7 @@ At the start of the battle round, select one of the following toxic agents to be
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Enhancements" hidden="false" id="ede5-9736-9d4b-b8b3" type="selectionEntryGroup" targetId="7121-8bfd-d1ed-2642" sortIndex="4"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="ede5-9736-9d4b-b8b3" type="selectionEntryGroup" targetId="7121-8bfd-d1ed-2642" sortIndex="2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hobgrot Khan on Buggy" hidden="false" id="7622-43ae-8fd4-4f96">
