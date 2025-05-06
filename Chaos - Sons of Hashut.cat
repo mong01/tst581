@@ -3966,7 +3966,7 @@ At the start of the battle round, select one of the following toxic agents to be
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d9b-a634-6657-a0b0-max" includeChildSelections="false"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Enhancement" id="2af9-3b19-2934-c85f" hidden="false" flatten="true">
+        <selectionEntryGroup name="Enhancement" id="2af9-3b19-2934-c85f" hidden="false" flatten="false">
           <selectionEntryGroups>
             <selectionEntryGroup name="Exaction Host Enhancements" id="e81f-e6d6-98a6-7979" hidden="true" flatten="true">
               <constraints>
