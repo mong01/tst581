@@ -5241,6 +5241,11 @@ At the start of the battle round, select one of the following toxic agents to be
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5733-f1fa-697e-0b7d-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Enhancements" hidden="true" id="ef2b-377e-d0fd-d58c" flatten="true" sortIndex="4">
+          <entryLinks>
+            <entryLink import="true" name="Enhancements" hidden="false" id="fb40-0ac9-fc10-6033" type="selectionEntryGroup" targetId="7121-8bfd-d1ed-2642" flatten="true"/>
+          </entryLinks>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
@@ -5259,7 +5264,6 @@ At the start of the battle round, select one of the following toxic agents to be
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Enhancements" hidden="false" id="94d5-1756-f19e-86c9" type="selectionEntryGroup" targetId="7121-8bfd-d1ed-2642" sortIndex="4"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hobgrot Khan on Buggy" hidden="false" id="7622-43ae-8fd4-4f96">
