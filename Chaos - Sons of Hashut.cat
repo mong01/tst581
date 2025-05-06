@@ -5464,7 +5464,7 @@ At the start of the battle round, select one of the following toxic agents to be
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Enhancements" id="7121-8bfd-d1ed-2642" hidden="true" flatten="true" defaultSelectionEntryId="none">
       <entryLinks>
-        <entryLink import="true" name="Enhancements" hidden="false" id="2aa6-b690-80fb-1851" type="selectionEntry" targetId="da72-c1ba-033c-3106">
+        <entryLink import="true" name="Enhancements" hidden="false" id="2aa6-b690-80fb-1851" type="selectionEntry" targetId="da72-c1ba-033c-3106" flatten="true">
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
