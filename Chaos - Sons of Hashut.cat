@@ -5261,7 +5261,7 @@ At the start of the battle round, select one of the following toxic agents to be
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Enhancements" id="234f-2984-2e14-061e" hidden="false" flatten="false" defaultSelectionEntryId="none" sortIndex="3">
+        <selectionEntryGroup name="Enhancements" id="234f-2984-2e14-061e" hidden="true" flatten="true" defaultSelectionEntryId="none" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Enhancements" hidden="false" id="3033-8494-9d61-4b2e" type="selectionEntry" targetId="da72-c1ba-033c-3106">
               <modifierGroups>
@@ -5290,7 +5290,6 @@ At the start of the battle round, select one of the following toxic agents to be
     <selectionEntry type="model" import="true" name="Hobgrot Khan on Buggy" hidden="false" id="7622-43ae-8fd4-4f96">
       <infoLinks>
         <infoLink name="Leader" id="d806-a8b3-875f-af1d" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
-        <infoLink name="Infiltrators" id="c2ad-9383-108d-4cc9" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
         <infoLink name="Expendable" id="bf9e-ed8d-53f0-efeb" hidden="false" type="rule" targetId="ed4d-7be9-8c2d-ad76">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -5298,6 +5297,11 @@ At the start of the battle round, select one of the following toxic agents to be
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Scouts" id="3bbf-b7a2-fc73-2c64" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+          <modifiers>
+            <modifier type="append" value="9&quot;" field="name" join=" "/>
           </modifiers>
         </infoLink>
       </infoLinks>
