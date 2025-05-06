@@ -5277,6 +5277,32 @@ At the start of the battle round, select one of the following toxic agents to be
           </modifiers>
         </entryLink>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Enhancements" id="234f-2984-2e14-061e" hidden="true" flatten="true" defaultSelectionEntryId="none">
+          <entryLinks>
+            <entryLink import="true" name="Enhancements" hidden="false" id="3033-8494-9d61-4b2e" type="selectionEntry" targetId="da72-c1ba-033c-3106">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="0" field="8d9b-a634-6657-a0b0-max"/>
+                    <modifier type="set" value="0" field="8d9b-a634-6657-a0b0-min"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hobgrot Khan on Buggy" hidden="false" id="7622-43ae-8fd4-4f96">
       <infoLinks>
