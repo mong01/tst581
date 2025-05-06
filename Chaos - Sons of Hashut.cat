@@ -5259,33 +5259,8 @@ At the start of the battle round, select one of the following toxic agents to be
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Enhancements" hidden="false" id="94d5-1756-f19e-86c9" type="selectionEntryGroup" targetId="7121-8bfd-d1ed-2642" sortIndex="3"/>
       </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Enhancements" id="234f-2984-2e14-061e" hidden="true" flatten="true" defaultSelectionEntryId="none" sortIndex="3">
-          <entryLinks>
-            <entryLink import="true" name="Enhancements" hidden="false" id="3033-8494-9d61-4b2e" type="selectionEntry" targetId="da72-c1ba-033c-3106">
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="set" value="0" field="8d9b-a634-6657-a0b0-max"/>
-                    <modifier type="set" value="0" field="8d9b-a634-6657-a0b0-min"/>
-                  </modifiers>
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifierGroup>
-              </modifierGroups>
-            </entryLink>
-          </entryLinks>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hobgrot Khan on Buggy" hidden="false" id="7622-43ae-8fd4-4f96">
       <infoLinks>
@@ -5397,15 +5372,6 @@ At the start of the battle round, select one of the following toxic agents to be
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Enhancements" hidden="true" id="eb3c-c9dc-b4ff-7aab" type="selectionEntry" targetId="da72-c1ba-033c-3106">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
         <entryLink import="true" name="Warlord" hidden="true" id="56f6-f4d6-e8d7-5566" type="selectionEntry" targetId="6960-a1c0-362e-eec3">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -5415,6 +5381,7 @@ At the start of the battle round, select one of the following toxic agents to be
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Enhancements" hidden="false" id="3c7f-60e5-9fcd-7ced" type="selectionEntryGroup" targetId="7121-8bfd-d1ed-2642"/>
       </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -5494,4 +5461,30 @@ At the start of the battle round, select one of the following toxic agents to be
       </characteristics>
     </profile>
   </sharedProfiles>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Enhancements" id="7121-8bfd-d1ed-2642" hidden="true" flatten="true" defaultSelectionEntryId="none">
+      <entryLinks>
+        <entryLink import="true" name="Enhancements" hidden="false" id="2aa6-b690-80fb-1851" type="selectionEntry" targetId="da72-c1ba-033c-3106">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="8d9b-a634-6657-a0b0-max"/>
+                <modifier type="set" value="0" field="8d9b-a634-6657-a0b0-min"/>
+              </modifiers>
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
