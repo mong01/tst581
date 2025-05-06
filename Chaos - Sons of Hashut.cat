@@ -5200,7 +5200,7 @@ At the start of the battle round, select one of the following toxic agents to be
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="ee26-f917-4711-ccb5" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Big stabba" hidden="false" id="5c31-3a43-6efe-b46a" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Big stabba" hidden="false" id="5c31-3a43-6efe-b46a" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="878f-3444-bc9a-d1c6-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="878f-3444-bc9a-d1c6-max" includeChildSelections="false"/>
@@ -5219,7 +5219,7 @@ At the start of the battle round, select one of the following toxic agents to be
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hobgrot blasta" hidden="false" id="5f4e-c7da-dd20-caba" collective="false" flatten="false" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="Hobgrot blasta" hidden="false" id="5f4e-c7da-dd20-caba" collective="false" flatten="false" sortIndex="3">
           <profiles>
             <profile name="Hobgrot blasta" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b24b-99df-871e-c7cb">
               <characteristics>
@@ -5250,7 +5250,7 @@ At the start of the battle round, select one of the following toxic agents to be
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Warlord" hidden="true" id="05a6-5f3d-4c00-9b1c" type="selectionEntry" targetId="6960-a1c0-362e-eec3">
+        <entryLink import="true" name="Warlord" hidden="true" id="05a6-5f3d-4c00-9b1c" type="selectionEntry" targetId="6960-a1c0-362e-eec3" sortIndex="1">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -5259,7 +5259,7 @@ At the start of the battle round, select one of the following toxic agents to be
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Enhancements" hidden="false" id="94d5-1756-f19e-86c9" type="selectionEntryGroup" targetId="7121-8bfd-d1ed-2642" sortIndex="3"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="94d5-1756-f19e-86c9" type="selectionEntryGroup" targetId="7121-8bfd-d1ed-2642" sortIndex="4"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hobgrot Khan on Buggy" hidden="false" id="7622-43ae-8fd4-4f96">
@@ -5372,7 +5372,7 @@ At the start of the battle round, select one of the following toxic agents to be
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Warlord" hidden="true" id="56f6-f4d6-e8d7-5566" type="selectionEntry" targetId="6960-a1c0-362e-eec3">
+        <entryLink import="true" name="Warlord" hidden="true" id="56f6-f4d6-e8d7-5566" type="selectionEntry" targetId="6960-a1c0-362e-eec3" sortIndex="1">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
