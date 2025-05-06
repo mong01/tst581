@@ -4747,7 +4747,6 @@ At the start of the battle round, select one of the following toxic agents to be
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
           <modifiers>
-            <modifier type="remove" value="cf47-a0d7-7207-29dc" field="category"/>
             <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category"/>
             <modifier type="set" value="6" field="3b36-953b-9e0d-02b8"/>
           </modifiers>
