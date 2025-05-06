@@ -148,7 +148,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **1CP**
 **When:** Your Shooting phase.
-**Target:** One SONS OF HASHUT INFANTRY or SONS OF HASHUT MOUNTED unit from your army (excluding SLAVE units) that has not been selected to shoot this phase.
+**Target:** One SONS OF HASHUT INFANTRY or SONS OF HASHUT MOUNTED unit from your army (excluding HOBGROT and SLAVE units) that has not been selected to shoot this phase.
 **Effect:** Until the end of the phase, each time a model in your unit makes an attack, that attack has the [LETHAL HITS] ability. In addition, if the enemy unit targeted by your unit is within your army&apos;s Fumigation Zone, an unmodified Hit roll of 5+ scores a Critical Hit.</characteristic>
                   </characteristics>
                 </profile>
@@ -185,7 +185,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **1CP**
 **When:** Command phase.
-**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that is within range of an objective marker you control.
+**Target:** One SONS OF HASHUT unit from your army (excluding HOBGROT and SLAVE units) that is within range of an objective marker you control.
 **Effect:** That objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
                   </characteristics>
                 </profile>
@@ -194,7 +194,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **1CP**
 **When:** Fight phase, just after an enemy unit has selected its targets.
-**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that was selected as the target of one or more of the attacking unit’s attacks.
+**Target:** One SONS OF HASHUT unit from your army (excluding HOBGROT and SLAVE units) that was selected as the target of one or more of the attacking unit’s attacks.
 **Effect:** Until the end of the turn, each time an attack is made that targets your unit, subtract 1 from the Wound roll.</characteristic>
                   </characteristics>
                 </profile>
@@ -223,8 +223,8 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **1CP**
 **When:** Any phase.
-**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that was just destroyed. You can use this Stratagem on that unit even though it was just destroyed.
-**Effect:** Until the end of the battle, each time a SONS OF HASHUT unit (excluding SLAVE units) from your army makes an attack that targets the enemy unit that just destroyed your unit, add 1 to the Hit roll and add 1 to the Wound roll.
+**Target:** One SONS OF HASHUT unit from your army (excluding HOBGROT and SLAVE units) that was just destroyed. You can use this Stratagem on that unit even though it was just destroyed.
+**Effect:** Until the end of the battle, each time a SONS OF HASHUT unit (excluding HOBGROT and SLAVE units) from your army makes an attack that targets the enemy unit that just destroyed your unit, add 1 to the Hit roll and add 1 to the Wound roll.
 **Note:** Additional uses of this Stratagem against the same enemy unit have no effect and do not stack.</characteristic>
                   </characteristics>
                 </profile>
@@ -233,7 +233,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Wargear**
 **1CP**
 **When:** Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
-**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that was selected as the target of one or more of the attacking unit’s attacks.
+**Target:** One SONS OF HASHUT unit from your army (excluding HOBGROT and SLAVE units) that was selected as the target of one or more of the attacking unit’s attacks.
 **Effect:** Until the attacking unit has finished making its attacks, each time an attack targets your unit, worsen the Armour Penetration characteristic of that attack by 1.</characteristic>
                   </characteristics>
                 </profile>
@@ -242,7 +242,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **1CP**
 **When:** Your Shooting phase.
-**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that has been selected to shoot this phase.
+**Target:** One SONS OF HASHUT unit from your army (excluding HOBGROT and SLAVE units) that has been selected to shoot this phase.
 **Effect:** Select one enemy unit that was targeted by your unit this phase. Until the end of the phase, ranged attacks against that unit have the [IGNORES COVER] ability. In addition, each time a ranged attack is made against that unit, you can ignore any or all modifiers to the Hit roll or Ballistic Skill characteristic of that attack.</characteristic>
                   </characteristics>
                 </profile>
@@ -251,7 +251,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **2CP**
 **When:** End of your Command phase.
-**Target:** One SONS OF HASHUT INFANTRY or SONS OF HASHUT MOUNTED unit from your army (excluding SLAVE units) that is within range of an objective marker that you both control and is not within your opponent&apos;s deployment zone, and one of those objective markers.
+**Target:** One SONS OF HASHUT INFANTRY or SONS OF HASHUT MOUNTED unit from your army (excluding HOBGROT and SLAVE units) that is within range of an objective marker that you both control and is not within your opponent&apos;s deployment zone, and one of those objective markers.
 **Effect:** That objective marker is said to be Claimed, and remains under your control even if you have no models within range of it, until your opponent controls it at the start or end of any turn. While an objective marker is Claimed, each time an attack targets an enemy unit within range of that objective marker, you can re-roll the Hit roll and you can re-roll the Wound roll.
 **Restrictions:** You can only use this Stratagem once per battle.</characteristic>
                   </characteristics>
@@ -261,7 +261,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **1CP**
 **When:** Fight phase.
-**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that has not been selected to fight this phase.
+**Target:** One SONS OF HASHUT unit from your army (excluding HOBGROT and SLAVE units) that has not been selected to fight this phase.
 **Effect:** Until the end of the phase, melee weapons equipped by models in your unit have the [LETHAL HITS] ability. If such a weapon already has that ability, until the end of the phase, each time an attack is made with that weapon, an unmodified Hit roll of 5+ scores a Critical Hit.</characteristic>
                   </characteristics>
                 </profile>
@@ -270,7 +270,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **1CP**
 **When:** Your Charge phase.
-**Target:** One SONS OF HASHUT INFANTRY or SONS OF HASHUT MOUNTED unit from your army (excluding SLAVE units).
+**Target:** One SONS OF HASHUT INFANTRY or SONS OF HASHUT MOUNTED unit from your army (excluding HOBGROT and SLAVE units).
 **Effect:** Until the end of the turn, your unit is eligible to declare a charge in a turn in which it Advanced.</characteristic>
                   </characteristics>
                 </profile>
@@ -326,7 +326,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **1CP**
 **When:** Your Shooting phase.
-**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that has not been selected to shoot this phase.
+**Target:** One SONS OF HASHUT unit from your army (excluding HOBGROT and SLAVE units) that has not been selected to shoot this phase.
 **Effect:** Until the end of the phase, each time a model in your unit makes an attack that targets the closest eligible target, that attack has the [SUSTAINED HITS 1] ability.</characteristic>
                   </characteristics>
                 </profile>
@@ -344,7 +344,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **1CP**
 **When:** Your opponents Shooting phase.
-**Target:** One K&apos;DAAI unit from your army and one SONS OF HASHUT INFANTRY unit from your army (excluding SLAVE and K&apos;DAAI units) that is within 6&quot; of your K&apos;DAAI unit and was selected as the target of one or more of the attacking unit’s attacks.
+**Target:** One K&apos;DAAI unit from your army and one SONS OF HASHUT INFANTRY unit from your army (excluding HOBGROT, SLAVE and K&apos;DAAI units) that is within 6&quot; of your K&apos;DAAI unit and was selected as the target of one or more of the attacking unit’s attacks.
 **Effect:** Until the end of the phase, your SONS OF HASHUT INFANTRY unit can only be selected as the target of a ranged attack if the attacking model is within 18&quot;.</characteristic>
                   </characteristics>
                 </profile>
@@ -373,7 +373,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **1CP**
 **When:** Your Command phase.
-**Target:** One SONS OF HASHUT INFANTRY or SONS OF HASHUT MOUNTED unit from your army (excluding SLAVE units) within range of an objective marker.
+**Target:** One SONS OF HASHUT INFANTRY or SONS OF HASHUT MOUNTED unit from your army (excluding HOBGROT and SLAVE units) within range of an objective marker.
 **Effect:** Until the end of the turn, double the Objective Control characteristic of models in your unit, but it must Remain Stationary this turn.</characteristic>
                   </characteristics>
                 </profile>
@@ -382,7 +382,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **2CP**
 **When:** Your Shooting phase.
-**Target:** One SONS OF HASHUT CHARACTER model from your army and one enemy unit visible to that model.
+**Target:** One SONS OF HASHUT CHARACTER model from your army (excluding HOBGROT models) and one enemy unit visible to that model.
 **Effect:** Until the end of the phase, each time a unit from your army makes an attack with a weapon with the [INDIRECT FIRE] ability against that enemy unit, for the purposes of that ability, that enemy unit is visible to your attacking unit.</characteristic>
                   </characteristics>
                 </profile>
@@ -391,7 +391,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **2CP**
 **When:** Start of your Shooting phase.
-**Target:** Two SONS OF HASHUT units from your army (excluding SLAVE units) that have not been selected to shoot this phase, and one enemy unit.
+**Target:** Two SONS OF HASHUT units from your army (excluding HOBGROT and SLAVE units) that have not been selected to shoot this phase, and one enemy unit.
 **Effect:** Until the end of the phase, each time a model in either of your units makes an attack, add 1 to the Wound roll.
 **Restrictions:** Until the end of the phase, each time a model in either of your units makes an attack, it can only target that enemy unit (and only if it is an eligible target].</characteristic>
                   </characteristics>
@@ -419,7 +419,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Wargear**
 **1CP**
 **When:** Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
-**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that was selected as the target of one or more of the attacking unit’s attacks.
+**Target:** One SONS OF HASHUT unit from your army (excluding HOBGROT and SLAVE units) that was selected as the target of one or more of the attacking unit’s attacks.
 **Effect:** Until the attacking unit has finished making its attacks, each time an attack targets your unit, worsen the Armour Penetration characteristic of that attack by 1.</characteristic>
                   </characteristics>
                 </profile>
@@ -459,7 +459,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **1CP**
 **When:** Your opponent&apos;s Charge phase, just after an enemy unit has declared a charge.
-**Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units) that was selected as a target of that charge.
+**Target:** One SONS OF HASHUT unit from your army (excluding HOBGROT and SLAVE units) that was selected as a target of that charge.
 **Effect:** Your unit can immediately make a Normal Move of up to 2D3&quot;. The charging unit can then select new targets for that charge.</characteristic>
                   </characteristics>
                 </profile>
@@ -477,7 +477,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **1CP**
 **When:** Start of your Fight phase.
-**Target:** Two SONS OF HASHUT units from your army (excluding SLAVE units), and one enemy unit within Engagement Range of both of your units.
+**Target:** Two SONS OF HASHUT units from your army (excluding HOBGROT and SLAVE units), and one enemy unit within Engagement Range of both of your units.
 **Effect:** Until the end of the phase, each time a model in either of your units makes an attack that targets that enemy unit, add 1 to the Wound roll.</characteristic>
                   </characteristics>
                 </profile>
@@ -485,7 +485,7 @@ A. Yes.</characteristic>
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **1CP**
-**When:** Your Fight phase, just after a SONS OF HASHUT unit from your army (excluding SLAVE units) destroys an enemy unit.
+**When:** Your Fight phase, just after a SONS OF HASHUT unit from your army (excluding HOBGROT and SLAVE units) destroys an enemy unit.
 **Target:** That SONS OF HASHUT unit.
 **Effect:** In your opponent’s next Command phase, each enemy unit within 6&quot; of your unit must take a Battle-shock test. If the unit taking that test is Below Half-strength, subtract 1 from that test. Enemy units affected by this Stratagem do not need to take any other Battle-shock tests in the same phase.</characteristic>
                   </characteristics>
@@ -3946,10 +3946,9 @@ At the start of the battle round, select one of the following toxic agents to be
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f02-0acf-e8b9-e9ac" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Scramble for Favor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4873-b20e-5cd4-0be1">
+                <profile name="Treacherous Existence" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4873-b20e-5cd4-0be1">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">SONS OF HASHUT units from your army (excluding HOBGROT and SLAVE units) gain the following ability:
-**Eyes of the Master (Aura):** While a friendly HOBGROT unit is within 6&quot; of this unit, models in that unit can use this unit&apos;s Leadership characteristic.
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in a HOBGROT unit from your army makes an attack that targets a unit that is below its Starting Strength, add 1 to the Hit roll. If that unit is Below Half-strength, add 1 to the Wound roll as well.
 
 ■ HOBGROT CUTTHROATZ units from your army gain the BATTLELINE keyword, and models in those units (excluding CHARACTER models) have an Objective Control characteristic of 2.
 ■ HOBGROT KHAN and HOBGROT KHAN ON BUGGY models from your army lose the Expendable ability.</characteristic>
@@ -5290,7 +5289,7 @@ At the start of the battle round, select one of the following toxic agents to be
         </profile>
         <profile name="Loud Cunning" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8a97-833a-3936-b981">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Hit roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
