@@ -5250,18 +5250,19 @@ At the start of the battle round, select one of the following toxic agents to be
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Enhancements" hidden="true" id="6163-97bc-0f9b-57a5" type="selectionEntry" targetId="da72-c1ba-033c-3106" sortIndex="3">
+        <entryLink import="true" name="Enhancements" hidden="false" id="6163-97bc-0f9b-57a5" type="selectionEntry" targetId="da72-c1ba-033c-3106" sortIndex="3">
           <constraints>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bbf4-f857-724b-cd32" includeChildSelections="false"/>
           </constraints>
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
-                <modifier type="set" value="false" field="hidden"/>
-                <modifier type="set" value="1" field="bbf4-f857-724b-cd32"/>
+                <modifier type="set" value="true" field="hidden"/>
+                <modifier type="set" value="0" field="8d9b-a634-6657-a0b0-max"/>
+                <modifier type="set" value="0" field="8d9b-a634-6657-a0b0-min"/>
               </modifiers>
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifierGroup>
           </modifierGroups>
