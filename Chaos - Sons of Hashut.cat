@@ -4550,7 +4550,7 @@ At the start of the battle round, select one of the following toxic agents to be
                   <modifiers>
                     <modifier type="set" value="0" field="fdc3-12c7-b06d-8446">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5b10-48bb-3b3b-5f4d" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="5b10-48bb-3b3b-5f4d" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -4577,7 +4577,7 @@ At the start of the battle round, select one of the following toxic agents to be
                   <modifiers>
                     <modifier type="set" value="0" field="8b5c-6737-8f31-f8b6">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5b10-48bb-3b3b-5f4d" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="5b10-48bb-3b3b-5f4d" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
