@@ -563,8 +563,7 @@ A. Yes.</characteristic>
 **1CP**
 **When:** Your Movement phase
 **Target:** One SONS OF HASHUT unit from your army (excluding SLAVE units).
-**Effect:** Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Fell Back
-</characteristic>
+**Effect:** Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Fell Back</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="That&apos;ll Cost Ya" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="57c0-bc79-1a16-3b3f">
@@ -5423,7 +5422,7 @@ At the start of the battle round, select one of the following toxic agents to be
 ■ Hobgrot Ratrodz</characteristic>
           </characteristics>
         </profile>
-        <profile name="Hobgrot Khan" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="846a-7d7d-445c-eb75">
+        <profile name="Hobgrot Khan  on Buggy" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="846a-7d7d-445c-eb75">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
