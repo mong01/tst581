@@ -4510,7 +4510,7 @@ At the start of the battle round, select one of the following toxic agents to be
                   <profiles>
                     <profile name="Cruel Overlord (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cfe7-7012-919e-dd18">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">HOBGROT models cannot take this Enhancement. While a friendly HOBGROT unit is within 12&quot; of this model, each time that unit takes a Battle-shock test, you can re-roll the result.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">HOBGROT models cannot take this Enhancement. While a friendly HOBGROT unit is within 12&quot; of the bearer, each time that unit takes a Battle-shock test, you can re-roll the result.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
