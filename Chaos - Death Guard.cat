@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="5108-f98-63c2-53cb" name="Chaos - Death Guard" revision="61" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="5108-f98-63c2-53cb" name="Chaos - Death Guard" revision="66" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <catalogueLinks>
     <catalogueLink id="9fec-b3ad-9626-6706" name="Chaos - Chaos Knights Library" targetId="8106-aad2-918a-9ac" type="catalogue" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Library - Astartes Heresy Legends" id="ff65-1828-b2a0-477" targetId="ac3b-689c-4ad4-70cb" importRootEntries="true"/>
@@ -3048,7 +3048,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
         </profile>
         <profile name="Death Approaches" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4245-0a58-3995-1671">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit is set up on the battlefield using the Deep Strike ability, it can be set up anywhere on the battlefield that is more than 6&quot; horizontally away from all Afflicted enemy units, and more than 9&quot; horizontally away from any other enemy units.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Movement phase, when this unit is set up on the battlefield using the Deep Strike ability, it can be set up anywhere on the battlefield that is more than 6&quot; horizontally away from all Afflicted enemy units, and more than 9&quot; horizontally away from any other enemy units.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4752,7 +4752,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">11</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">4</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
         </profile>
         <profile id="d42e-f8ea-a29a-2766" name="Hail of Corrosive Disease" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -7836,7 +7836,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Nurglings" hidden="false" id="7e32-0162-71e2-57a0" collective="false">
       <modifiers>
-        <modifier type="set" value="60" field="51b2-306e-1021-d207">
+        <modifier type="set" value="70" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="7e32-0162-71e2-57a0" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
@@ -7877,8 +7877,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
         <infoLink name="Infiltrators" id="fb6d-9358-ac27-9fdd" hidden="false" targetId="c05d-f4c3-f091-4938" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink name="Swarm" hidden="false" id="4b09-b11b-0532-6c5e" targetId="b00b-5bae-444f-964e" primary="false"/>
-        <categoryLink name="Battleline" hidden="false" id="a7f7-5183-36f2-c10b" targetId="e338-111e-d0c6-b687" primary="true"/>
+        <categoryLink name="Swarm" hidden="false" id="4b09-b11b-0532-6c5e" targetId="b00b-5bae-444f-964e" primary="true"/>
         <categoryLink name="Chaos" hidden="false" id="b4c7-cea5-2303-1f2c" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink name="Daemon" hidden="false" id="2142-7a9a-4a30-3797" targetId="9c0e-7e25-4580-e439" primary="false"/>
         <categoryLink name="Nurgle" hidden="false" id="a0ac-6529-6cf4-eab2" targetId="ed0d-8e2a-225c-2340" primary="false"/>
@@ -7925,7 +7924,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
