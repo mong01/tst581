@@ -879,7 +879,7 @@ A. Yes.</characteristic>
           <modifiers>
             <modifier type="set" value="4+" field="94d-8a98-cf90-183e">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f1e9-be59-4ec5-ef74" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="669a-5d8c-f57b-b52e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
