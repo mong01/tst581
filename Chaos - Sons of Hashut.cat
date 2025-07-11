@@ -875,7 +875,15 @@ A. Yes.</characteristic>
     <selectionEntry type="upgrade" import="true" name="Alloch-pattern bolt pistol" hidden="false" id="9d18-3ab9-3c35-12e9" collective="true">
       <infoLinks>
         <infoLink name="Pistol" id="b1ce-110a-a8af-11d7" hidden="false" targetId="8bf7-8812-923d-29e4" type="rule"/>
-        <infoLink name="Alloch-pattern bolt pistol" id="23ea-50bb-54c5-dfee" hidden="false" type="profile" targetId="2304-05ea-5df9-36e7"/>
+        <infoLink name="Alloch-pattern bolt pistol" id="23ea-50bb-54c5-dfee" hidden="false" type="profile" targetId="2304-05ea-5df9-36e7">
+          <modifiers>
+            <modifier type="set" value="4+" field="94d-8a98-cf90-183e">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f1e9-be59-4ec5-ef74" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
