@@ -604,6 +604,48 @@ A. Yes.</characteristic>
             <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Grimnyr</characteristic>
           </characteristics>
         </profile>
+        <profile name="Thazrymr" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="619e-a1a3-0353-2541">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">40mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Kâhl, Ûthar the Destined</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bull Centaur Warden" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="4069-268f-fbf3-8665">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">90x52mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Hernkyn Pioneers, Lord Invocatus, Lord on Juggernaut</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bull Centaurs" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="00fa-ce3f-85dd-7878">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">90x52mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Hernkyn Pioneers, Lord Invocatus, Lord on Juggernaut</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Daemonsmith" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="92ab-8e95-f02a-b569">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">40mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Brôkhyr Iron-master, Techmarine, Warpsmith</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Gáldrazr" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="eaad-2a93-06ad-a1df">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">40mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Grimnyr</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hobgrot Khan" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="288c-16e1-3432-b683">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">25mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Gretchin, Makari</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hobgrot Khan on Buggy" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="d35b-cd8f-46d7-83ba">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">N/A (use model)</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Invader ATV</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="3280-da3c-f764-904d" primary="true" name="Configuration"/>
