@@ -593,6 +593,19 @@ A. Yes.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="[Reference] Base and Proxy Guide" hidden="false" id="44e6-bb91-03db-2305">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1fef-8831-e78b-b725" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Búlvrekh" typeId="90ff-cc5b-9c2a-6113" typeName="Sizes" hidden="false" id="a7b8-b6e0-b1c5-931c">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">40mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Grimnyr</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Eldrkin Warriors" hidden="false" id="1dc7-a7c2-0019-212a">
@@ -5630,4 +5643,12 @@ At the start of the battle round, select one of the following toxic agents to be
       </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <profileTypes>
+    <profileType name="Sizes" id="90ff-cc5b-9c2a-6113" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Base" id="df6b-0e2d-00eb-0d76"/>
+        <characteristicType name="Proxies" id="6ab1-5dfc-0914-d8a8"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
 </catalogue>
