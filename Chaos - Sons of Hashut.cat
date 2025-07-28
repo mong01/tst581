@@ -598,7 +598,7 @@ A. Yes.</characteristic>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1fef-8831-e78b-b725" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <profiles>
-        <profile name="Búlvrekh" typeId="90ff-cc5b-9c2a-6113" typeName="Sizes" hidden="false" id="a7b8-b6e0-b1c5-931c">
+        <profile name="Búlvrekh" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="a7b8-b6e0-b1c5-931c">
           <characteristics>
             <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">40mm</characteristic>
             <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Grimnyr</characteristic>
@@ -3281,7 +3281,7 @@ A. Yes.</characteristic>
 ■ Infernal Ironsworn</characteristic>
           </characteristics>
         </profile>
-        <profile name="Hurzir" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a12f-ed89-2803-1302">
+        <profile name="Hurzir" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="dc8f-0022-bf65-1e1d">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
