@@ -298,7 +298,7 @@ A. Yes.</characteristic>
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **1CP**
-**When:** Your opponents Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
+**When:** Your opponent&apos;s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
 **Target:** One K&apos;DAAI unit from your army that was selected as the target of one or more of the attacking unit’s attacks.
 **Effect:** Until the end of the phase, add 1 to invulnerable saving throws made for your unit.</characteristic>
                   </characteristics>
@@ -344,7 +344,7 @@ A. Yes.</characteristic>
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **1CP**
-**When:** Your opponents Shooting phase.
+**When:** Your opponent&apos;s Shooting phase.
 **Target:** One K&apos;DAAI unit from your army and one SONS OF HASHUT INFANTRY unit from your army (excluding HOBGROT, SLAVE and K&apos;DAAI units) that is within 6&quot; of your K&apos;DAAI unit and was selected as the target of one or more of the attacking unit’s attacks.
 **Effect:** Until the end of the phase, your SONS OF HASHUT INFANTRY unit can only be selected as the target of a ranged attack if the attacking model is within 18&quot;.</characteristic>
                   </characteristics>
@@ -5647,7 +5647,7 @@ At the start of the battle round, select one of the following toxic agents to be
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <profileTypes>
-    <profileType name="Sizes" id="90ff-cc5b-9c2a-6113" hidden="false">
+    <profileType name="Model" id="90ff-cc5b-9c2a-6113" hidden="false">
       <characteristicTypes>
         <characteristicType name="Base" id="df6b-0e2d-00eb-0d76"/>
         <characteristicType name="Proxies" id="6ab1-5dfc-0914-d8a8"/>
