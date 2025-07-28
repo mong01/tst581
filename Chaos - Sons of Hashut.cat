@@ -605,6 +605,9 @@ A. Yes.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="4ac9-fd30-1e3d-b249" id="3280-da3c-f764-904d" primary="true" name="Configuration"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
