@@ -646,6 +646,126 @@ A. Yes.</characteristic>
             <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Invader ATV</characteristic>
           </characteristics>
         </profile>
+        <profile name="Hurzir" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="96cd-d40c-0509-b37c">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">40mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Kâhl</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infernal Deathmask" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="2953-89a9-3862-e55c">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">40mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Einhyr Champion</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Eldrkin Warriors" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="0dda-1168-f739-d85c">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">28mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Hearthkyn Warriors</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Eignutkin Scorchers" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="c45b-f4d0-9f82-7f9e">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">28mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Hearthkyn Warriors</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hobgrot Cutthroatz" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="e645-1ce1-b252-a7d7">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">25mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Gretchin</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hobgrot Scrapgunz" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="6fe5-9dbd-d429-f4b9">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">N/A (use model)</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Mek Gunz</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infernal Ironsworn" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="2144-38ba-f828-34ab">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">32mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Einhyr Hearthguard</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="K&apos;daai Fireborn" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="0b3e-5d4a-1601-3a53">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">50mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Canoptek Wraiths</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="K&apos;daai Stalker" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="a9d7-6b96-dfb0-b58a">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">50mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Lictor, Technomancer</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ogryn Labourers" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="1ff5-abff-15a7-d0a8">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">40mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Bullgryn Squad, Ogryn Squad</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ork Labourers" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="0935-4438-41e5-3a64">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">40mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Beast Snagga Boyz, Boyz, Hearthkyn Warriors (Eignutkin Overseer)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hobgrot Ratrodz" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="3f53-fb77-164e-1c1c">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">N/A (use model)</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Invader ATV</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Gungzhar" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="a479-17e4-0fb2-7469">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">N/A (use model)</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Basilisk, Predator</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Iron Daemons" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="7425-9f53-6e82-02c5">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">105x70mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Ironstrider Ballistarii, Sydonian Dragoons</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hrungtyr Bombard" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="1e76-0c9b-061a-a33b">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">N/A (use model)</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Plagueburst Crawler, Vindicator</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Skullcrackers" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="c2ce-dfd4-ac3d-0c87">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">105x70mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Ironstrider Ballistarii, Sydonian Dragoons</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="K&apos;daai Mutilator" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="f54f-a820-373f-152e">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">120x92mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Haruspex, Tyrannofex</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="K&apos;daai Obliterator" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="12c2-556e-0863-8f43">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">120x92mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Exocrine, Tyrannofex</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Muzkelgrim" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="c98f-66ff-f84d-3602">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">N/A (use model)</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Manticore, Predator</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Vhulkræ Hauler" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="e659-c077-ec14-9af5">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">N/A (use model)</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Rhino</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="3280-da3c-f764-904d" primary="true" name="Configuration"/>
