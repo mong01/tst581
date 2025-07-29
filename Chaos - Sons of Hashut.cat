@@ -744,7 +744,7 @@ A. Yes.</characteristic>
         </profile>
         <profile name="Ork Labourers" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="0935-4438-41e5-3a64">
           <characteristics>
-            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">40mm</characteristic>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">32mm</characteristic>
             <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Beast Snagga Boyz, Boyz, Hearthkyn Warriors (Eignutkin Overseer)</characteristic>
           </characteristics>
         </profile>
