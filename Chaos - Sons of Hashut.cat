@@ -3418,6 +3418,13 @@ A. Yes.</characteristic>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="48f3-b52a-c647-6afe" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="add" value="79a2-e087-bf6c-aeba" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="8353-3559-6e06-f0e6" childId="720b-1281-153e-ffca" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hurzir" hidden="false" id="8863-9b78-a352-f8fb">
       <categoryLinks>
