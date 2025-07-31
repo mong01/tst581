@@ -403,7 +403,7 @@ A. Yes.</characteristic>
 **1CP**
 **When:** Your opponent&apos;s Movement phase, just after an enemy unit (excluding AIRCRAFT units) is selected to make a Normal or Advance move.
 **Target:** One SONS OF HASHUT VEHICLE unit with an Indirect Fire weapon from your army and that enemy unit.
-**Effect:** That enemy unit must take a Leadership Test, adding 2 to the result if that enemy unit is a MONSTER or VEHICLE unit; if that test is failed, that unit must Remain Stationary this turn.</characteristic>
+**Effect:** That enemy unit must take a Leadership Test, adding 2 to the result if that enemy unit is a MONSTER or VEHICLE unit and adding 1 to the result if that enemy unit is a TITANIC unit; if that test is failed, that unit must Remain Stationary this turn.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Crushing Advance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1109-fd42-6434-e9b2">
@@ -2625,7 +2625,7 @@ A. Yes.</characteristic>
         </profile>
         <profile name="Quake Munitions" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="caee-0025-7187-01c2">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, if one or more of those attacks made with its dreadquake mortar scored a hit against an enemy unit (excluding AIRCRAFT units), until the end of your opponent’s next turn, that unit is shaken. While a unit is shaken, halve its Move characteristic and subtract 2 from Advance and Charge rolls made for it.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, if one or more of those attacks made with its dreadquake mortar scored a hit against an enemy unit (excluding AIRCRAFT and TITANIC units), until the end of your opponent’s next turn, that unit is shaken. While a unit is shaken, halve its Move characteristic and subtract 2 from Advance and Charge rolls made for it.</characteristic>
           </characteristics>
         </profile>
         <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4172-f614-7b63-8557">
