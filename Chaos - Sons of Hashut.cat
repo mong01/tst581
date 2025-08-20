@@ -5719,7 +5719,7 @@ At the start of the battle round, select one of the following toxic agents to be
         <entryLink import="true" name="Enhancements" hidden="false" id="3c7f-60e5-9fcd-7ced" type="selectionEntryGroup" targetId="7121-8bfd-d1ed-2642" sortIndex="2"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Lammasu" hidden="true" id="0b6a-27c2-a861-d53a">
+    <selectionEntry type="model" import="true" name="Lammasu" hidden="false" id="0b6a-27c2-a861-d53a">
       <categoryLinks>
         <categoryLink targetId="3a4b-ad1d-ef61-ce17" id="5265-44fe-6d70-a4a1" primary="false" name="Lammasu"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="7702-c8b4-c593-917b" primary="false" name="Chaos"/>
