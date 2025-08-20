@@ -608,7 +608,7 @@ A. Yes.</characteristic>
         <profile name="Bull Centaurs" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="00fa-ce3f-85dd-7878">
           <characteristics>
             <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">90x52mm</characteristic>
-            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Hernkyn Pioneers, Lord Invocatus, Lord on Juggernaut</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Hernkyn Pioneers, Lord on Juggernaut</characteristic>
           </characteristics>
         </profile>
         <profile name="Búlvrekh" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="a7b8-b6e0-b1c5-931c">
