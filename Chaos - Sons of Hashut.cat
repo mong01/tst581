@@ -5845,6 +5845,7 @@ At the start of the battle round, select one of the following toxic agents to be
     <entryLink import="true" name="Hobgrot Scrapgunz" hidden="false" id="1c2d-817b-1d50-e822" targetId="8ab3-8b97-5815-055a" type="selectionEntry"/>
     <entryLink import="true" name="Hobgrot Khan" hidden="false" id="796b-da29-0de9-ff3c" targetId="1734-1327-1cf2-67e5" type="selectionEntry"/>
     <entryLink import="true" name="Hobgrot Khan on Buggy" hidden="false" id="9307-81a4-1b84-d3f8" targetId="7622-43ae-8fd4-4f96" type="selectionEntry"/>
+    <entryLink import="true" name="Lammasu" hidden="false" id="0c57-23b4-32be-7c97" type="selectionEntry" targetId="0b6a-27c2-a861-d53a"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Fireglaive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fea9-43bc-25b1-0c6d">
