@@ -731,6 +731,12 @@ A. Yes.</characteristic>
             <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Lictor, Technomancer</characteristic>
           </characteristics>
         </profile>
+        <profile name="Lammasu" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="2936-78e9-30e0-0c0d">
+          <characteristics>
+            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">120x92mm</characteristic>
+            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Lord Discordant on Helstalker, Psychophage</characteristic>
+          </characteristics>
+        </profile>
         <profile name="Muzkelgrim" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="c98f-66ff-f84d-3602">
           <characteristics>
             <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">N/A (use model)</characteristic>
@@ -765,12 +771,6 @@ A. Yes.</characteristic>
           <characteristics>
             <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">N/A (use model)</characteristic>
             <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Rhino</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Lammasu" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="2936-78e9-30e0-0c0d">
-          <characteristics>
-            <characteristic name="Base" typeId="df6b-0e2d-00eb-0d76">120x92mm</characteristic>
-            <characteristic name="Proxies" typeId="6ab1-5dfc-0914-d8a8">Lord Discordant on Helstalker, Psychophage</characteristic>
           </characteristics>
         </profile>
       </profiles>
