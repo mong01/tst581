@@ -3046,7 +3046,7 @@ A. Yes.</characteristic>
         </profile>
         <profile name="Brutal Conditioning" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c9cd-61b6-2689-1b12">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit is within range of an objective marker, it gains the Feel No Pain 5+ ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit is within range of an objective marker, models in this unit gain the Feel No Pain 5+ ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
