@@ -222,7 +222,7 @@ A. Yes.</characteristic>
                 <profile name="Judgement" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b3b1-2690-7447-e926">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
-**1CP**
+**2CP**
 **When:** Any phase.
 **Target:** One SONS OF HASHUT unit from your army (excluding HOBGROT and SLAVE units) that was just destroyed. You can use this Stratagem on that unit even though it was just destroyed.
 **Effect:** Until the end of the battle, each time a SONS OF HASHUT unit (excluding HOBGROT and SLAVE units) from your army makes an attack that targets the enemy unit that just destroyed your unit, add 1 to the Hit roll and add 1 to the Wound roll.
@@ -271,7 +271,7 @@ A. Yes.</characteristic>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **1CP**
 **When:** Your Charge phase.
-**Target:** One SONS OF HASHUT INFANTRY or SONS OF HASHUT MOUNTED unit from your army (excluding HOBGROT and SLAVE units).
+**Target:** One SONS OF HASHUT unit from your army (excluding HOBGROT and SLAVE units).
 **Effect:** Until the end of the turn, your unit is eligible to declare a charge in a turn in which it Advanced.</characteristic>
                   </characteristics>
                 </profile>
@@ -4121,7 +4121,7 @@ A. Yes.</characteristic>
               <profiles>
                 <profile name="Stake the Claim" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e0b0-5b77-1712-baf1">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of each battle round, select one objective marker on the battlefield that is not within your deployment zone. That objective marker is said to be Targeted. If you control that objective marker at the end of any turn, you gain 1CP (this is in addition to any CP gained from other sources), and that objective marker is no longer Targeted. Only one objective marker can be Targeted on the battlefield; if an objective marker is still Targeted at the start of a new battle round, do not select another objective marker. An objective marker cannot be Targeted more than once per battle.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of each battle round, select one objective marker on the battlefield. That objective marker is said to be Targeted. If you control that objective marker at the end of any turn, you gain 1CP (this is in addition to any CP gained from other sources), and that objective marker is no longer Targeted. Only one objective marker can be Targeted on the battlefield; if an objective marker is still Targeted at the start of a new battle round, do not select another objective marker. An objective marker cannot be Targeted more than once per battle.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
