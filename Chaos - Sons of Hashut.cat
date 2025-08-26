@@ -4121,7 +4121,7 @@ A. Yes.</characteristic>
               <profiles>
                 <profile name="Stake the Claim" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e0b0-5b77-1712-baf1">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of each battle round, select one objective marker on the battlefield. That objective marker is said to be Targeted. If you control that objective marker at the end of any turn, you gain 1CP (this is in addition to any CP gained from other sources), and that objective marker is no longer Targeted. Only one objective marker can be Targeted on the battlefield; if an objective marker is still Targeted at the start of a new battle round, do not select another objective marker. An objective marker cannot be Targeted more than once per battle.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of each battle round, select one objective marker on the battlefield. That objective marker is said to be Targeted. If you control that objective marker at the end of any turn, you gain 1CP (this is in addition to any CP gained from other sources), and that objective marker is no longer Targeted. Only one objective marker can be Targeted on the battlefield; if an objective marker is still Targeted at the start of a new battle round, that objective marker is no longer Targeted, and you can select another objective marker on the battlefield. In addition, if you controlled a Targeted objective marker at the end of any turn, that objective marker cannot be Targeted again.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
