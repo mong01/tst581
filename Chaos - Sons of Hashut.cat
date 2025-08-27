@@ -3342,7 +3342,7 @@ A. Yes.</characteristic>
         </profile>
         <profile name="Master Engineer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f89a-bb3a-e8dc-c798">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your Movement phase, this model can repair one friendly SONS OF HASHUT VEHICLE or K&apos;DAAI model within 3&quot; of it. That model regains up to D3 lost wounds. Each model can only be repaired once per turn.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, select one friendly SONS OF HASHUT VEHICLE or K&apos;DAAI model within 3&quot; of this model. That VEHICLE or K&apos;DAAI model regains up to D3 lost wounds and, until the start of your next Command phase, each time that model makes an attack, add 1 to the Hit roll. Each model can only be selected for this ability once per Command phase.</characteristic>
           </characteristics>
         </profile>
         <profile name="Daemonsmith" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6725-089e-7809-d816">
@@ -3352,7 +3352,7 @@ A. Yes.</characteristic>
         </profile>
         <profile name="Binding Arts" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1941-c9fe-dce2-e569">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, you can select one friendly SONS OF HASHUT VEHICLE model or K&apos;DAAI unit within 3&quot; of this model. Until the start of your next Command phase, each time that model or unit makes an attack, add 1 to the Hit roll. Each model or unit can only be selected for this ability once per turn.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a friendly SONS OF HASHUT VEHICLE or K&apos;DAAI model is destroyed within 12&quot; of this model, until the end of the battle, each time this model uses its Master Engineer ability, the selected model regains up to D3+1 lost wounds instead.</characteristic>
           </characteristics>
         </profile>
         <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ae37-7cca-cf9d-0a44">
