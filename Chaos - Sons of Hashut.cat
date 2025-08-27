@@ -3340,7 +3340,7 @@ A. Yes.</characteristic>
             </modifierGroup>
           </modifierGroups>
         </profile>
-        <profile name="Master Engineers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f89a-bb3a-e8dc-c798">
+        <profile name="Master Engineer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f89a-bb3a-e8dc-c798">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, select one friendly SONS OF HASHUT VEHICLE or K&apos;DAAI model within 3&quot; of this model. That VEHICLE or K&apos;DAAI model regains up to D3 lost wounds and, until the start of your next Command phase, each time that model makes an attack, add 1 to the Hit roll. Each model can only be selected for this ability once per Command phase.</characteristic>
           </characteristics>
