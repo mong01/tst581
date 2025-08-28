@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="127" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="130" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -38574,7 +38574,7 @@ is Battle-shocked, models in that unit have the Feel No Pain 4+ ability instead.
               <profiles>
                 <profile name="War-tempered Artifice" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fb8c-c8ed-6eb0-1f76">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes Infantry model only. Add 3 to the Strength characteristic of the bearer&apos;s melee weapons.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Adeptus Astartes Infantry^^** model only. Add 3 to the Strength characteristic of the bearer&apos;s melee weapons.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -38591,6 +38591,14 @@ is Battle-shocked, models in that unit have the Feel No Pain 4+ ability instead.
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="War-tempered Artifice" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                    <modifier type="increment" value="3" field="ab33-d393-96ce-ccba" scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -40711,7 +40719,7 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
               <profiles>
                 <profile name="War-tempered Artifice" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="81be-a540-7410-a9b2">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes Infantry model only. Add 3 to the Strength characteristic of the bearer&apos;s melee weapons.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Adeptus Astartes Infantry^^** model only. Add 3 to the Strength characteristic of the bearer&apos;s melee weapons.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -40728,6 +40736,14 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="War-tempered Artifice" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                    <modifier type="increment" value="3" field="ab33-d393-96ce-ccba" scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Forged in Battle" hidden="false" id="af65-6576-7e00-b482">
               <profiles>
@@ -41873,6 +41889,7 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
             <entryLink import="true" name="Angels Ascendant" hidden="false" id="26db-bd00-d362-0c25" type="selectionEntryGroup" targetId="2705-f3cd-ec46-b24d"/>
             <entryLink import="true" name="Chapter Command" hidden="false" id="dcf2-9407-d528-2ec7" type="selectionEntryGroup" targetId="034f-ec3f-7f27-66fc"/>
             <entryLink import="true" name="Deeds of Making" hidden="false" id="dd79-a1c8-9aba-3bfb" type="selectionEntryGroup" targetId="d5c2-e5ae-5c9a-73f2"/>
+            <entryLink import="true" name="Tyrannic War Battle Honours" hidden="false" id="a200-b081-42a3-25d8" type="selectionEntryGroup" targetId="1927-d905-041e-b914"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Noble Heritage" hidden="false" id="2f74-a57c-86a9-d5f4">
@@ -45223,9 +45240,16 @@ If this unit has the INFANTRY keyword:
       <comment>Crusade content</comment>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="self" childId="034f-ec3f-7f27-66fc" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="self" childId="034f-ec3f-7f27-66fc" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="self" childId="2705-f3cd-ec46-b24d" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="self" childId="d5c2-e5ae-5c9a-73f2" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="self" childId="5675-d5d5-87d8-6117" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </costType>
