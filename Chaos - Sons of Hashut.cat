@@ -2473,9 +2473,9 @@ A. Yes.</characteristic>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="36de-213e-7734-9679" includeChildSelections="true"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Deathshrieker rocket launcher" hidden="false" id="9503-0e49-d17d-8c8b">
+        <selectionEntry type="upgrade" import="true" name="Deathshrieker missile launcher" hidden="false" id="9503-0e49-d17d-8c8b">
           <profiles>
-            <profile name="➤ Deathshrieker rocket launcher - incendiary airburst" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1fc4-57a7-87c8-c102">
+            <profile name="➤ Deathshrieker missile launcher - incendiary airburst" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1fc4-57a7-87c8-c102">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+6</characteristic>
@@ -2486,7 +2486,7 @@ A. Yes.</characteristic>
                 <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Indirect Fire</characteristic>
               </characteristics>
             </profile>
-            <profile name="➤ Deathshrieker rocket launcher - tandem charge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9a16-cf5f-8f89-e183">
+            <profile name="➤ Deathshrieker missile launcher - tandem charge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9a16-cf5f-8f89-e183">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
