@@ -811,10 +811,11 @@ A. Yes.</characteristic>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="ebea-1349-8db1-4ea9" primary="true" name="Configuration"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="46ef-3472-4b1d-7f2c" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="46ef-3472-4b1d-7f2c" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8bdd-d983-3ee2-bb09" includeChildSelections="true"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Show Reference Options?" id="de61-1cf6-3364-39a6" hidden="false" defaultSelectionEntryId="e5a5-004e-4fa6-95c1">
+        <selectionEntryGroup name="Show Reference Options?" id="de61-1cf6-3364-39a6" hidden="false" defaultSelectionEntryId="c346-c41b-1bed-ffd3">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Yes" hidden="false" id="c346-c41b-1bed-ffd3">
               <constraints>
