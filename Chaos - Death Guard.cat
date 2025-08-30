@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="5108-f98-63c2-53cb" name="Chaos - Death Guard" revision="78" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="5108-f98-63c2-53cb" name="Chaos - Death Guard" revision="82" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <catalogueLinks>
     <catalogueLink id="9fec-b3ad-9626-6706" name="Chaos - Chaos Knights Library" targetId="8106-aad2-918a-9ac" type="catalogue" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Library - Astartes Heresy Legends" id="ff65-1828-b2a0-477" targetId="ac3b-689c-4ad4-70cb" importRootEntries="true"/>
@@ -2746,6 +2746,13 @@ While a ^^**Death Guard^^** unit from your army is within 7&quot; of one or more
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="e987-6773-b7c7-cf71" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="2eeb-6808-226b-a406" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hellforged weapons" hidden="false" id="9530-7fc3-630c-f162">
       <constraints>
@@ -3863,6 +3870,9 @@ While a ^^**Death Guard^^** unit from your army is within 7&quot; of one or more
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="a1d2-cbf7-6fb9-53cf" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Psychic Weapon" hidden="false" id="a05e-73ff-ee0f-1542" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -3934,6 +3944,9 @@ While a ^^**Death Guard^^** unit from your army is within 7&quot; of one or more
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="1a77-35e1-e39b-1b83" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Psychic Weapon" hidden="false" id="3cd5-bb92-6f70-e0b6" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Chainfist" hidden="false" id="cd28-da45-ef6d-a95c">
                   <profiles>
@@ -4208,6 +4221,9 @@ While a ^^**Death Guard^^** unit from your army is within 7&quot; of one or more
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="0e93-e6d8-b922-3524" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Psychic Weapon" hidden="false" id="da20-e52d-b2bf-91d4" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plague Wind" hidden="false" id="1275-f312-b4d0-9e2b">
               <constraints>
@@ -4265,6 +4281,9 @@ While a ^^**Death Guard^^** unit from your army is within 7&quot; of one or more
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="a741-f8d3-d74f-1c13" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Psychic Weapon" hidden="false" id="e9aa-8b92-72b1-f304" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -7840,162 +7859,181 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4b4-9c42-b155-b9b3"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="96c7-1375-f90c-bf7b"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Bile spurt" hidden="false" id="4f54-a2a9-51af-5527" collective="true">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2076-ed05-f2a9-db1a"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6928-8182-e466-10df"/>
-              </constraints>
-              <profiles>
-                <profile name="Bile spurt" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b101-f555-a5ea-3b5">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Lethal Hits</characteristic>
-                  </characteristics>
-                  <modifiers>
-                    <modifier type="increment" value="6" field="9896-9419-16a1-92fc">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="ae9a-bd41-1ee6-59e2" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="append" value="Masterwork Maladies" field="annotation" join=", ">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="ae9a-bd41-1ee6-59e2" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Lethal Hits" hidden="false" type="rule" id="7801-f518-cf6f-ad71" targetId="d1d1-611e-5191-1095"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="eb48-947d-8b90-fb93" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry id="fb4a-2e24-ab97-7ae5" name="Missile launcher" hidden="false" collective="true" import="true" type="upgrade">
-              <profiles>
-                <profile id="bf71-1c1a-6078-5dda" name="➤ Missile launcher - frag" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
-                  </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </profile>
-                <profile id="4140-f071-8015-8bbf" name="➤ Missile launcher - krak" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
-                  </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="62b4-4034-3e59-d72e" name="Blast" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f4b-a793-e2e7-19c8"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d086-738d-69b3-63e8"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="b563-7922-05cb-c1ce" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Gnashing maw" hidden="false" id="f4de-7df7-558c-ffdc" collective="true">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e16-f611-db72-f88d"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd9-35b7-cde9-fbda"/>
-              </constraints>
-              <profiles>
-                <profile name="Gnashing maw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d9a-ba7c-eb7-94e0">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Lethal Hits" hidden="false" type="rule" id="eb43-d5fb-bfb7-d1e" targetId="d1d1-611e-5191-1095"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="7880-75f1-3ec3-72b1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry id="62cf-e7e-cc1b-d7a9" name="Multi-melta" hidden="false" collective="true" import="true" type="upgrade">
-              <profiles>
-                <profile id="c06c-cfc-69e0-d455" name="Multi-melta" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Lethal Hits, Melta 2</characteristic>
-                  </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="increment" value="6" field="9896-9419-16a1-92fc">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="ae9a-bd41-1ee6-59e2" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="append" value="Masterwork Maladies" field="annotation" join=", ">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="ae9a-bd41-1ee6-59e2" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="5933-3938-7823-3f72" name="Melta" hidden="false" targetId="7cdb-fb99-44a9-8849" type="rule"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="473c-69b-f8ca-affd"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d922-7f30-10d9-4f24"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="b750-0437-3f97-0ea2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wargear" id="764f-5b7d-c567-41b9" hidden="false" sortIndex="2">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Bile spurt" hidden="false" id="4f54-a2a9-51af-5527" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2076-ed05-f2a9-db1a"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6928-8182-e466-10df"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Bile spurt" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b101-f555-a5ea-3b5">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Lethal Hits</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="increment" value="6" field="9896-9419-16a1-92fc">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="ae9a-bd41-1ee6-59e2" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="append" value="Masterwork Maladies" field="annotation" join=", ">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="ae9a-bd41-1ee6-59e2" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Lethal Hits" id="7801-f518-cf6f-ad71" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="eb48-947d-8b90-fb93" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Gnashing maw" hidden="false" id="f4de-7df7-558c-ffdc" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e16-f611-db72-f88d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd9-35b7-cde9-fbda"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Gnashing maw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d9a-ba7c-eb7-94e0">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Lethal Hits" id="eb43-d5fb-bfb7-d1e" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="7880-75f1-3ec3-72b1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Missile launcher" hidden="false" id="fb4a-2e24-ab97-7ae5" collective="true">
+                  <profiles>
+                    <profile name="➤ Missile launcher - frag" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="bf71-1c1a-6078-5dda">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                    <profile name="➤ Missile launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4140-f071-8015-8bbf">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Blast" id="62b4-4034-3e59-d72e" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f4b-a793-e2e7-19c8"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d086-738d-69b3-63e8"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="b563-7922-05cb-c1ce" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="62cf-e7e-cc1b-d7a9" collective="true">
+                  <profiles>
+                    <profile name="Multi-melta" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="c06c-cfc-69e0-d455">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Lethal Hits, Melta 2</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="increment" value="6" field="9896-9419-16a1-92fc">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="ae9a-bd41-1ee6-59e2" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="append" value="Masterwork Maladies" field="annotation" join=", ">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="ae9a-bd41-1ee6-59e2" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Melta" id="5933-3938-7823-3f72" hidden="false" targetId="7cdb-fb99-44a9-8849" type="rule"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="473c-69b-f8ca-affd"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d922-7f30-10d9-4f24"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="b750-0437-3f97-0ea2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <profiles>
+            <profile name="Myphitic Blight-haulers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9-225f-b3ef-8e05">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">10</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Totemic Presence upgrade" hidden="false" id="278b-42e6-d099-3603" type="selectionEntry" targetId="6220-fe17-7c2a-8268" sortIndex="1"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -8014,16 +8052,6 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
         <categoryLink targetId="cef-8477-ba87-91dc" id="963e-e2a1-ca9d-93a1" primary="false" name="Myphitic Blight-hauler"/>
       </categoryLinks>
       <profiles>
-        <profile name="Myphitic Blight-haulers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9-225f-b3ef-8e05">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">10</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Tank Hunters" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e47-254c-cdf9-7c5e">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, each time a model in this unit makes a attack that targets a ^^**Monster^^** or ^^**Vehicle^^** unit, add 1 to the Hit roll and add 1 to the Wound roll.</characteristic>
@@ -10120,6 +10148,13 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
           </constraints>
         </entryLink>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="b7b6-eeb0-672d-8e1d" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="c8a3-783d-3606-b2e0" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Icon Bearer" hidden="false" id="3e5b-23db-4ccd-ea97" publicationId="6bb4-8611-986f-58fa">
       <constraints>
@@ -10748,7 +10783,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="7b9-222e-ff6-b6e" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="7b9-222e-ff6-b6e" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11005,7 +11040,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="4011-3178-ffc8-c246" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="4011-3178-ffc8-c246" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11196,7 +11231,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="e846-894b-9579-8178" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="e846-894b-9579-8178" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="add" value="9c0e-7e25-4580-e439" field="category">
@@ -11406,7 +11441,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="89f5-7824-82e9-7917" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="89f5-7824-82e9-7917" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="add" value="9c0e-7e25-4580-e439" field="category">
@@ -11554,7 +11589,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="9aeb-93b8-63e9-2d8c" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="9aeb-93b8-63e9-2d8c" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11589,7 +11624,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="8170-6f16-a784-8b79" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="8170-6f16-a784-8b79" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11844,6 +11879,9 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="128f-f14e-57bf-a536" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Psychic Weapon" hidden="false" id="775f-1ad6-07af-47e0" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Force weapon" hidden="false" id="d422-4ca3-8cfa-1437">
               <constraints>
@@ -11869,6 +11907,9 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="626c-4276-5548-a2db" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Psychic Weapon" hidden="false" id="2c9f-fd52-19d4-f9db" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -12028,7 +12069,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="37fd-e572-6a1d-b69" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="37fd-e572-6a1d-b69" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="310" field="51b2-306e-1021-d207">
@@ -12871,6 +12912,13 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
           </conditionGroups>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="b5e1-b629-bdb4-c000" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="7e80-8c58-b5b9-6b94" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Plaguebearers" hidden="false" id="904b-0319-7b2e-2145" collective="false">
       <constraints>
@@ -15554,6 +15602,7 @@ Worsen the Move, Leadership and Objective Control characteristics of models in t
               </entryLinks>
             </entryLink>
             <entryLink import="true" name="Tyrannic War Battle Honours" hidden="false" id="0162-1f2d-4070-7224" type="selectionEntryGroup" targetId="1927-d905-041e-b914"/>
+            <entryLink import="true" name="Pariah Nexus Blackstone Upgrades" hidden="false" id="0ead-8bb1-972c-1482" type="selectionEntryGroup" targetId="66c2-2a46-e7ed-a935"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>

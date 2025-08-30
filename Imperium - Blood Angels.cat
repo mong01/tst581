@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="4ef9-15ce-e3e6-36de" name="Imperium - Adeptus Astartes - Blood Angels" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="56" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="4ef9-15ce-e3e6-36de" name="Imperium - Adeptus Astartes - Blood Angels" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="61" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Space Marines" id="abd0-8ebd-6fbd-2d94" targetId="e0af-67df-9d63-8fb7" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="9c08-8ffc-d746-7384" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
@@ -101,6 +101,13 @@
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="b2a5-774d-bc84-39e2" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="3224-c427-61bb-7de8" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Baal Predator" hidden="false" id="640-9969-d5b9-875c">
       <categoryLinks>
@@ -474,10 +481,17 @@
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="4d19-d380-2bab-d656" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="4d19-d380-2bab-d656" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="f47f-9e0f-1e95-c74a" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="9720-129b-ea83-be57" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Captain Tycho [Legends]" hidden="false" id="ae0a-e23c-2184-7c65">
       <categoryLinks>
@@ -510,7 +524,7 @@
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="4528-8260-7345-c022" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="4528-8260-7345-c022" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -618,6 +632,13 @@
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="36c9-6d37-9ac5-90ab" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="86fb-9b0d-52e2-5e12" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tycho the Lost [Legends]" hidden="false" id="8577-8a5d-75f6-a630">
       <constraints>
@@ -636,7 +657,7 @@
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="3b71-86a2-c4f9-d916" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="3b71-86a2-c4f9-d916" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -705,6 +726,13 @@
         <categoryLink targetId="6e7-40c-58d9-e402" id="3027-f9d4-1b79-275a" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="62ac-ef42-27b4-ae7" id="248c-290a-adfd-5577" primary="false" name="Faction: Blood Angels"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="d46d-ae47-02b9-cbf2" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="bb3e-b4d5-48ba-09e1" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Chief Librarian Mephiston" hidden="false" id="ab35-2c36-9389-d1d5">
       <costs>
@@ -871,6 +899,13 @@
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="27f7-9d4c-d894-cc79" targetId="caa-f869-3cbd-b48e"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="ece1-c32e-66ab-aad2" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="fae3-45b2-a012-dbd5" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Commander Dante" hidden="false" id="7323-ebf-9afe-7e7a">
       <constraints>
@@ -994,6 +1029,13 @@
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="75b-952d-efa4-257c" targetId="caa-f869-3cbd-b48e"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="75cd-f8db-eb22-5f66" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="1493-829b-a07f-c2a3" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Death Company Dreadnought with Magna-Grapple [Legends]" hidden="false" id="e7ee-e70-bd87-7c5c">
       <categoryLinks>
@@ -1058,7 +1100,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="260c-36e2-be4d-b0f2" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="260c-36e2-be4d-b0f2" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1570,7 +1612,7 @@ If a Character unit from your army with the Leader ability can be attached to a
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="27be-7f03-3845-1927" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="27be-7f03-3845-1927" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1683,85 +1725,6 @@ If a Character unit from your army with the Leader ability can be attached to a
                             <repeat value="1" repeats="1" field="selections" scope="unit" childId="d8bf-e17f-d6fa-b7e8" shared="true" roundUp="false" includeChildSelections="true"/>
                           </repeats>
                         </modifier>
-                        <modifier type="decrement" value="1" field="1c49-ce71-a3ea-cd31">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="lessThan" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="model" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="model" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                              <conditionGroups>
-                                <conditionGroup type="or">
-                                  <conditions>
-                                    <condition type="atLeast" value="2" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
-                                    <condition type="atLeast" value="2" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
-                                  </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                        <modifier type="decrement" value="1" field="1c49-ce71-a3ea-cd31">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="model" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="model" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                              <conditionGroups>
-                                <conditionGroup type="or">
-                                  <conditionGroups>
-                                    <conditionGroup type="and">
-                                      <conditions>
-                                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
-                                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
-                                      </conditions>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                  <conditions>
-                                    <condition type="atLeast" value="2" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
-                                    <condition type="atLeast" value="2" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
-                                  </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                        <modifier type="decrement" value="1" field="1c49-ce71-a3ea-cd31">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="model" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="model" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                              <conditionGroups>
-                                <conditionGroup type="or">
-                                  <conditionGroups>
-                                    <conditionGroup type="and">
-                                      <conditions>
-                                        <condition type="atLeast" value="2" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
-                                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
-                                      </conditions>
-                                    </conditionGroup>
-                                    <conditionGroup type="and">
-                                      <conditions>
-                                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
-                                        <condition type="atLeast" value="2" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
-                                      </conditions>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                  <conditions>
-                                    <condition type="atLeast" value="3" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
-                                    <condition type="atLeast" value="3" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
-                                  </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
                       </modifiers>
                     </entryLink>
                     <entryLink import="true" name="Hand Flamer" hidden="false" id="2f6f-1dd8-9d13-e471" type="selectionEntry" targetId="9dc6-6ad8-818e-db2e">
@@ -1780,57 +1743,19 @@ If a Character unit from your army with the Leader ability can be attached to a
                           </repeats>
                         </modifier>
                         <modifier type="decrement" value="1" field="0d45-3676-5e1b-1b43">
-                          <repeats>
-                            <repeat value="2" repeats="1" field="selections" scope="unit" childId="25c2-104f-fa0c-809e" shared="true" roundUp="false" includeChildSelections="true"/>
-                          </repeats>
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditionGroups>
-                                <conditionGroup type="and">
-                                  <conditions>
-                                    <condition type="atLeast" value="2" field="selections" scope="parent" childId="25c2-104f-fa0c-809e" shared="true"/>
-                                    <condition type="lessThan" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                                  </conditions>
-                                </conditionGroup>
-                                <conditionGroup type="and">
-                                  <conditions>
-                                    <condition type="atLeast" value="3" field="selections" scope="parent" childId="25c2-104f-fa0c-809e" shared="true"/>
-                                    <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                                  </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                        <modifier type="decrement" value="1" field="0d45-3676-5e1b-1b43">
                           <conditionGroups>
                             <conditionGroup type="and">
                               <conditions>
-                                <condition type="lessThan" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="model" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
                                 <condition type="lessThan" value="1" field="selections" scope="model" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="model" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="9dc6-6ad8-818e-db2e" shared="true" includeChildSelections="true"/>
                               </conditions>
                               <conditionGroups>
                                 <conditionGroup type="or">
                                   <conditions>
-                                    <condition type="atLeast" value="2" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
                                     <condition type="atLeast" value="2" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="2" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
                                   </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                        <modifier type="decrement" value="1" field="0d45-3676-5e1b-1b43">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="model" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="model" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                              <conditionGroups>
-                                <conditionGroup type="or">
                                   <conditionGroups>
                                     <conditionGroup type="and">
                                       <conditions>
@@ -1839,10 +1764,6 @@ If a Character unit from your army with the Leader ability can be attached to a
                                       </conditions>
                                     </conditionGroup>
                                   </conditionGroups>
-                                  <conditions>
-                                    <condition type="atLeast" value="2" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
-                                    <condition type="atLeast" value="2" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
-                                  </conditions>
                                 </conditionGroup>
                               </conditionGroups>
                             </conditionGroup>
@@ -1853,11 +1774,16 @@ If a Character unit from your army with the Leader ability can be attached to a
                             <conditionGroup type="and">
                               <conditions>
                                 <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="model" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
                                 <condition type="lessThan" value="1" field="selections" scope="model" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="model" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="9dc6-6ad8-818e-db2e" shared="true" includeChildSelections="true"/>
                               </conditions>
                               <conditionGroups>
                                 <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="3" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="3" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                  </conditions>
                                   <conditionGroups>
                                     <conditionGroup type="and">
                                       <conditions>
@@ -1872,10 +1798,6 @@ If a Character unit from your army with the Leader ability can be attached to a
                                       </conditions>
                                     </conditionGroup>
                                   </conditionGroups>
-                                  <conditions>
-                                    <condition type="atLeast" value="3" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
-                                    <condition type="atLeast" value="3" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
-                                  </conditions>
                                 </conditionGroup>
                               </conditionGroups>
                             </conditionGroup>
@@ -1899,57 +1821,19 @@ If a Character unit from your army with the Leader ability can be attached to a
                           </repeats>
                         </modifier>
                         <modifier type="decrement" value="1" field="2247-18a3-4f5c-c6f0">
-                          <repeats>
-                            <repeat value="2" repeats="1" field="selections" scope="unit" childId="25c2-104f-fa0c-809e" shared="true" roundUp="false" includeChildSelections="true"/>
-                          </repeats>
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditionGroups>
-                                <conditionGroup type="and">
-                                  <conditions>
-                                    <condition type="atLeast" value="2" field="selections" scope="parent" childId="25c2-104f-fa0c-809e" shared="true"/>
-                                    <condition type="lessThan" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                                  </conditions>
-                                </conditionGroup>
-                                <conditionGroup type="and">
-                                  <conditions>
-                                    <condition type="atLeast" value="3" field="selections" scope="parent" childId="25c2-104f-fa0c-809e" shared="true"/>
-                                    <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                                  </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                        <modifier type="decrement" value="1" field="2247-18a3-4f5c-c6f0">
                           <conditionGroups>
                             <conditionGroup type="and">
                               <conditions>
-                                <condition type="lessThan" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="model" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
                                 <condition type="lessThan" value="1" field="selections" scope="model" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="model" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="c219-5e50-5d8d-4930" shared="true" includeChildSelections="true"/>
                               </conditions>
                               <conditionGroups>
                                 <conditionGroup type="or">
                                   <conditions>
-                                    <condition type="atLeast" value="2" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
                                     <condition type="atLeast" value="2" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="2" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
                                   </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                        <modifier type="decrement" value="1" field="2247-18a3-4f5c-c6f0">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="model" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="model" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                              <conditionGroups>
-                                <conditionGroup type="or">
                                   <conditionGroups>
                                     <conditionGroup type="and">
                                       <conditions>
@@ -1958,10 +1842,6 @@ If a Character unit from your army with the Leader ability can be attached to a
                                       </conditions>
                                     </conditionGroup>
                                   </conditionGroups>
-                                  <conditions>
-                                    <condition type="atLeast" value="2" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
-                                    <condition type="atLeast" value="2" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
-                                  </conditions>
                                 </conditionGroup>
                               </conditionGroups>
                             </conditionGroup>
@@ -1972,11 +1852,16 @@ If a Character unit from your army with the Leader ability can be attached to a
                             <conditionGroup type="and">
                               <conditions>
                                 <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="model" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
                                 <condition type="lessThan" value="1" field="selections" scope="model" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="model" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="c219-5e50-5d8d-4930" shared="true" includeChildSelections="true"/>
                               </conditions>
                               <conditionGroups>
                                 <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="3" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="3" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                  </conditions>
                                   <conditionGroups>
                                     <conditionGroup type="and">
                                       <conditions>
@@ -1991,10 +1876,6 @@ If a Character unit from your army with the Leader ability can be attached to a
                                       </conditions>
                                     </conditionGroup>
                                   </conditionGroups>
-                                  <conditions>
-                                    <condition type="atLeast" value="3" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
-                                    <condition type="atLeast" value="3" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
-                                  </conditions>
                                 </conditionGroup>
                               </conditionGroups>
                             </conditionGroup>
@@ -2358,7 +2239,7 @@ If a Character unit from your army with the Leader ability can be attached to a
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="cf89-a015-258d-018f" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="cf89-a015-258d-018f" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2594,10 +2475,17 @@ If a Character unit from your army with the Leader ability can be attached to a
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="c0fd-faf6-f6f1-6c2a" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="c0fd-faf6-f6f1-6c2a" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="cbda-f489-168d-3b54" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="5c9a-c6f3-b60d-4fa4" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Lemartes" hidden="false" id="cbc2-18c9-45b6-6327">
       <costs>
@@ -2721,6 +2609,13 @@ If a Character unit from your army with the Leader ability can be attached to a
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="c31b-a630-6df8-1d06" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="c739-8716-49da-4b58" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Librarian Dreadnought [Legends]" hidden="false" id="b6e0-b465-801c-24c8">
       <costs>
@@ -2808,6 +2703,9 @@ horizontally away from all enemy models.</characteristic>
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="1f93-28c9-083b-c165" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Psychic Weapon" hidden="false" id="966f-ac5b-50e2-e34f" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Furioso Fist" hidden="false" id="e26d-6206-fd7a-2bd7">
               <constraints>
@@ -2856,6 +2754,9 @@ horizontally away from all enemy models.</characteristic>
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="1760-facc-a263-ee82" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Psychic Weapon" hidden="false" id="0496-5d7c-d7d2-f9b4" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -2894,7 +2795,7 @@ horizontally away from all enemy models.</characteristic>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="035d-0ce5-d412-7901" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="035d-0ce5-d412-7901" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3497,6 +3398,13 @@ You can attach this model to one of the above units, even if one Captain, Chapt
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="c335-71bb-55b2-31a1" targetId="caa-f869-3cbd-b48e"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="f2ba-0fe7-120b-0d09" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="3ebd-1233-fbf7-5da6" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sanguinary Priest with Jump Pack [Legends]" hidden="false" id="fa13-ba8a-8711-87b6">
       <costs>
@@ -3564,7 +3472,7 @@ You can attach this model to one of the above units, even if one Captain, Chapt
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="fab4-9f56-3f0e-4506" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="fab4-9f56-3f0e-4506" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3946,7 +3854,7 @@ You can attach this model to one of the above units, even if one Captain, Chapt
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="cde3-3920-60fa-3295" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="cde3-3920-60fa-3295" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5310,7 +5218,7 @@ If a Character unit from your army with the Leader ability can be attached to a
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="0a91-ef8e-1ad7-2b8c" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="0a91-ef8e-1ad7-2b8c" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>

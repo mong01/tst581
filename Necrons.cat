@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b654-a18a-ea1-3bf2" name="Xenos - Necrons" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="68" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b654-a18a-ea1-3bf2" name="Xenos - Necrons" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="73" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Enhancements" hidden="false" id="9574-b5d1-8b0a-d95d">
       <constraints>
@@ -1520,6 +1520,7 @@
               </entryLinks>
             </entryLink>
             <entryLink import="true" name="Tyrannic War Battle Honours" hidden="false" id="7c5d-a183-ec9e-7131" type="selectionEntryGroup" targetId="1927-d905-041e-b914"/>
+            <entryLink import="true" name="Pariah Nexus Blackstone Upgrades" hidden="false" id="8122-7a39-a100-088e" type="selectionEntryGroup" targetId="66c2-2a46-e7ed-a935"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1603,7 +1604,7 @@
                     <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="8d08-e5ba-ae37-15f2" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="decrement" value="1" field="58d2-b879-49c7-43bc" scope="model-or-unit" affects="self.entries.recursive.profiles.Unit">
+                <modifier type="increment" value="1" field="58d2-b879-49c7-43bc" scope="model-or-unit" affects="self.entries.recursive.profiles.Unit">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="8d08-e5ba-ae37-15f2" shared="true" includeChildSelections="true"/>
                   </conditions>
@@ -1994,6 +1995,13 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="58c3-e7aa-889e-4187" targetId="2c98-86cf-889-2293"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="f70e-e87b-12b2-76da" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="0bf1-2333-e5a3-0360" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Imotekh the Stormlord" hidden="false" id="49fd-a80d-8cc0-c76b">
       <costs>
@@ -2108,6 +2116,13 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="8490-3933-af8d-e29b" targetId="2c98-86cf-889-2293"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="f24e-85fa-81c6-a695" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="c47b-e46b-d57d-a5c8" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Anrakyr the Traveller [Legends]" hidden="false" id="43b5-f4f9-f7c6-327a">
       <costs>
@@ -2194,10 +2209,17 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="a362-dc04-370-40b" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="a362-dc04-370-40b" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="98bf-dd29-d92f-d684" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="ddf3-3558-4829-9880" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Varguard Obyron [Legends]" hidden="false" id="b5c3-317e-df69-53bb">
       <costs>
@@ -2277,10 +2299,17 @@ You can attach this model to one of the above units even if NEMESOR ZAHNDREKH h
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="a3d9-df3c-8d3d-f565" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="a3d9-df3c-8d3d-f565" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="27fe-7bed-0763-9d5f" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="b765-5ed4-0e3b-6ef5" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Illuminor Szeras" hidden="false" id="d977-6a26-bc03-4722">
       <costs>
@@ -2396,6 +2425,13 @@ You can attach this model to one of the above units even if NEMESOR ZAHNDREKH h
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="59c9-9fa3-b769-6ea5" targetId="2c98-86cf-889-2293"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="e530-e36c-9d8b-3cb8" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="dd3e-0d32-612f-726d" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Nemesor Zahndrekh [Legends]" hidden="false" id="8386-4191-ac3a-aa28">
       <categoryLinks>
@@ -2491,10 +2527,17 @@ You can attach this model to one of the above units even if NEMESOR ZAHNDREKH h
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="7775-99f3-2bc0-1f5" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="7775-99f3-2bc0-1f5" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="3b81-bcf8-6adc-5a3b" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="1831-2b35-ce49-bb14" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Trazyn the Infinite" hidden="false" id="c1e6-b88a-2003-174d">
       <costs>
@@ -2576,6 +2619,13 @@ in its place, with all of its wounds remaining (if the selected model was leadi
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="197f-6560-9e54-6484" targetId="2c98-86cf-889-2293"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="07a8-3f65-fc1b-ae10" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="98f9-784b-4ba2-7951" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Royal Warden" hidden="false" id="379b-d6a0-cd05-ef89">
       <costs>
@@ -3304,7 +3354,7 @@ in its place, with all of its wounds remaining (if the selected model was leadi
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="cef3-d5ec-785f-e8b6" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="cef3-d5ec-785f-e8b6" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6613,6 +6663,13 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="444c-7aca-9f00-5edc" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="2efc-c249-a68c-55e4" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="C&apos;tan Shard of the Nightbringer" hidden="false" id="f926-a2fe-3494-24b7">
       <costs>
@@ -6719,6 +6776,13 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="b424-8d06-4637-065e" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="685d-6d96-35b6-5e41" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="C&apos;tan Shard of the Void Dragon" hidden="false" id="8065-e9c0-dcb5-be1d">
       <costs>
@@ -6865,6 +6929,13 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="ea7c-d567-9fb1-5b7f" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="f11e-9a50-70aa-c8f3" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Transcendent C&apos;tan" hidden="false" id="276e-bc21-e1d0-3c41">
       <costs>
@@ -7075,88 +7146,107 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd1-4ec5-1ba6-9d86"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d907-41df-a80f-76d"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Automaton claws" hidden="false" id="1141-4991-58b-8d13">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b815-119f-955c-7e43"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5a0-9fe9-c5b7-a9a5"/>
-              </constraints>
-              <profiles>
-                <profile name="Automaton claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e02c-69ca-d6f6-245c">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="02e7-fc25-a98f-29e7" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Fabricator claw array" hidden="false" id="2701-3ce4-f0e-fd9d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="289d-6902-e707-d73b"/>
-              </constraints>
-              <profiles>
-                <profile name="Fabricator Claw Array (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="486c-f4fd-5ec1-38e3">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly NECRONS VEHICLE unit is within 6&quot; of the bearer, models in that unit have the Feel No Pain 6+ ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Two particle beamers" hidden="false" id="a797-f585-4ad5-d786">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Particle beamer" hidden="false" id="cba8-5b8b-824-30b6">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4991-3b8c-f9cb-15a9"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e99f-5f7d-4f0d-256b"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Particle beamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="903f-ac42-963b-ffd6">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Devastating Wounds</characteristic>
-                      </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Blast" hidden="false" type="rule" id="a35-8712-5ca3-fd5e" targetId="6c1f-1cf7-ff25-c99e"/>
-                    <infoLink name="Devastating Wounds" hidden="false" type="rule" id="a3bc-a584-eafb-3e84" targetId="be1e-ac8e-1e2c-3528"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="466e-569f-9b2d-166c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-                  </entryLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56f7-12d4-17a1-c1ba"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Gloom prism" hidden="false" type="selectionEntry" id="4ed6-7bda-95e1-3ca0" targetId="bf18-cd0a-a37f-b62b"/>
+            <entryLink import="true" name="Totemic Presence upgrade" hidden="false" id="e9ce-537d-59ff-c33c" type="selectionEntry" targetId="6220-fe17-7c2a-8268" sortIndex="1"/>
           </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wargear" id="f39d-7f5b-a54a-6dbe" hidden="false" sortIndex="2">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Automaton claws" hidden="false" id="1141-4991-58b-8d13">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b815-119f-955c-7e43"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5a0-9fe9-c5b7-a9a5"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Automaton claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e02c-69ca-d6f6-245c">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="02e7-fc25-a98f-29e7" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Fabricator claw array" hidden="false" id="2701-3ce4-f0e-fd9d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="289d-6902-e707-d73b"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Fabricator Claw Array (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="486c-f4fd-5ec1-38e3">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly NECRONS VEHICLE unit is within 6&quot; of the bearer, models in that unit have the Feel No Pain 6+ ability.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two particle beamers" hidden="false" id="a797-f585-4ad5-d786">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Particle beamer" hidden="false" id="cba8-5b8b-824-30b6">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4991-3b8c-f9cb-15a9"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e99f-5f7d-4f0d-256b"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Particle beamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="903f-ac42-963b-ffd6">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Devastating Wounds</characteristic>
+                          </characteristics>
+                          <modifiers>
+                            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Blast" id="a35-8712-5ca3-fd5e" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                        <infoLink name="Devastating Wounds" id="a3bc-a584-eafb-3e84" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="466e-569f-9b2d-166c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56f7-12d4-17a1-c1ba"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Gloom prism" hidden="false" id="4ed6-7bda-95e1-3ca0" type="selectionEntry" targetId="bf18-cd0a-a37f-b62b"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <profiles>
+            <profile name="Canoptek Spyder" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9341-1de5-e911-84d2">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">7</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -7167,16 +7257,6 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
         <categoryLink targetId="ba74-40ae-cbd2-649a" id="b58b-d8c-ce1a-985b" primary="false" name="Spyders"/>
       </categoryLinks>
       <profiles>
-        <profile name="Canoptek Spyder" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9341-1de5-e911-84d2">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">7</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Canoptek Swarm" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1dff-4e6e-f50a-4a18">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, select one friendly CANOPTEK SCARAB SWARM unit within 6&quot; of this unit. One destroyed model is returned to that CANOPTEK SCARAB SWARM unit for each SPYDER model in this unit.</characteristic>
@@ -10821,6 +10901,13 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
           </constraints>
         </entryLink>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="382e-4d1c-9b3c-a3e0" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="ea48-1180-7fa6-6391" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Convergence of Dominion" hidden="false" id="919f-7076-c827-b844">
       <categoryLinks>
@@ -10937,7 +11024,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="546b-e71f-2dbd-00e9" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="546b-e71f-2dbd-00e9" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11120,7 +11207,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="da3e-2db7-1aad-9d2c" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="da3e-2db7-1aad-9d2c" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11371,7 +11458,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="2055-61e9-db07-0cab" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="2055-61e9-db07-0cab" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11647,7 +11734,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="2dc6-4aab-d178-4448" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="2dc6-4aab-d178-4448" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11998,7 +12085,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="f7e6-60c2-13fd-6763" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="f7e6-60c2-13fd-6763" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -12200,7 +12287,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="564e-8963-f7c-a0c2" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="564e-8963-f7c-a0c2" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -12253,7 +12340,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="3b0e-d205-89ae-c5e8" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="3b0e-d205-89ae-c5e8" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
