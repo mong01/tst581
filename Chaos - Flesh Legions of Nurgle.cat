@@ -77,15 +77,15 @@ WANING STAGE
                 </entryLink>
               </entryLinks>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Autopistol &amp; brutal assault weapon" hidden="false" id="f679-09ed-9e8a-182e">
+                <selectionEntry type="upgrade" import="true" name="Autopistol &amp; brutal assault weapon" hidden="false" id="f679-09ed-9e8a-182e" flatten="true">
                   <entryLinks>
-                    <entryLink import="true" name="Autopistol" hidden="false" id="b21a-13c1-d318-1395" type="selectionEntry" targetId="b6ba-62ed-38d6-aff6">
+                    <entryLink import="true" name="Autopistol" hidden="false" id="b21a-13c1-d318-1395" type="selectionEntry" targetId="b6ba-62ed-38d6-aff6" flatten="true">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0fd1-9d0b-ca79-8403-min" includeChildSelections="false" automatic="true"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fd1-9d0b-ca79-8403-max" includeChildSelections="false" automatic="true"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Brutal assault weapon" hidden="false" id="d98a-0823-135f-706a" type="selectionEntry" targetId="b4c7-3c08-265a-497d">
+                    <entryLink import="true" name="Brutal assault weapon" hidden="false" id="d98a-0823-135f-706a" type="selectionEntry" targetId="b4c7-3c08-265a-497d" flatten="true">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b714-4101-78ea-2daa-min" includeChildSelections="false" automatic="true"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b714-4101-78ea-2daa-max" includeChildSelections="false" automatic="true"/>
@@ -242,7 +242,7 @@ WANING STAGE
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="ee85-0d4a-81de-6bb2" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="6" field="selections" scope="force" shared="true" id="ee85-0d4a-81de-6bb2" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Autogun" hidden="false" id="3d9a-8f79-1209-03a7">
@@ -309,6 +309,7 @@ WANING STAGE
               </conditionGroups>
               <modifiers>
                 <modifier type="set" value="4+" field="94d-8a98-cf90-183e"/>
+                <modifier type="set" value="Rapid Fire 3" field="7f1b-8591-2fcf-d01c"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -592,7 +593,7 @@ WANING STAGE
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="24cb-c537-e560-56c1" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="6" field="selections" scope="force" shared="true" id="24cb-c537-e560-56c1" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Blighted weapon" hidden="false" id="2ec6-dece-da23-0d2a" collective="true">
