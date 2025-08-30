@@ -60,7 +60,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
     </rule>
   </sharedRules>
   <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="[Reference] Dark Bounty" hidden="false" id="5e52-52fa-230c-f022">
+    <selectionEntry type="upgrade" import="true" name="[Reference] Dark Bounty" hidden="true" id="5e52-52fa-230c-f022">
       <profiles>
         <profile name="Rune of Sundering" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1bb1-d9c6-f120-5e7f">
           <characteristics>
@@ -95,8 +95,15 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f0d7-e056-a5c5-fca9" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="571d-8c6f-ca7e-c664" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="[Reference] FAQ" hidden="false" id="e28c-563a-d4d0-1992">
+    <selectionEntry type="upgrade" import="true" name="[Reference] FAQ" hidden="true" id="e28c-563a-d4d0-1992">
       <profiles>
         <profile name="FAQ" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b758-257a-45fc-e882">
           <characteristics>
@@ -123,8 +130,15 @@ A. Yes.</characteristic>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="89cd-b7ac-6088-7bb0" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="571d-8c6f-ca7e-c664" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="[Reference] Stratagems" hidden="false" id="67d8-104c-7e2f-68fe">
+    <selectionEntry type="upgrade" import="true" name="[Reference] Stratagems" hidden="true" id="67d8-104c-7e2f-68fe">
       <categoryLinks>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="1f68-634f-47d2-285d" primary="true" name="Configuration"/>
       </categoryLinks>
@@ -593,8 +607,15 @@ A. Yes.</characteristic>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="571d-8c6f-ca7e-c664" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="[Reference] Base and Proxy Guide" hidden="false" id="44e6-bb91-03db-2305">
+    <selectionEntry type="upgrade" import="true" name="[Reference] Base and Proxy Guide" hidden="true" id="44e6-bb91-03db-2305">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1fef-8831-e78b-b725" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
@@ -777,6 +798,21 @@ A. Yes.</characteristic>
       <categoryLinks>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="3280-da3c-f764-904d" primary="true" name="Configuration"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="571d-8c6f-ca7e-c664" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Show/Hide Army Info" hidden="false" id="571d-8c6f-ca7e-c664">
+      <categoryLinks>
+        <categoryLink targetId="4ac9-fd30-1e3d-b249" id="ebea-1349-8db1-4ea9" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="46ef-3472-4b1d-7f2c" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
