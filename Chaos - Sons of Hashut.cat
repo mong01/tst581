@@ -806,7 +806,7 @@ A. Yes.</characteristic>
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Reference Options" hidden="false" id="571d-8c6f-ca7e-c664">
+    <selectionEntry type="upgrade" import="true" name="Reference Options" hidden="false" id="571d-8c6f-ca7e-c664" flatten="true">
       <categoryLinks>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="ebea-1349-8db1-4ea9" primary="true" name="Configuration"/>
       </categoryLinks>
