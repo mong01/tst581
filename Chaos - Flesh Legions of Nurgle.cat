@@ -135,13 +135,13 @@ WANING STAGE
             <selectionEntry type="model" import="true" name="Cultist w/ special weapon" hidden="false" id="5c19-8ba2-0f37-3327" collective="false">
               <modifiers>
                 <modifier type="increment" value="2" field="f086-e438-48ef-a3da">
-                  <repeats>
-                    <repeat value="10" repeats="1" field="selections" scope="ba90-681f-5432-d56d" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </repeats>
+                  <conditions>
+                    <condition type="atLeast" value="20" field="selections" scope="ba90-681f-5432-d56d" childId="model" shared="true" includeChildSelections="true"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f086-e438-48ef-a3da" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f086-e438-48ef-a3da" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapons" id="32f0-61b3-abdd-1fa5" hidden="false" collective="false" import="true">
@@ -509,8 +509,13 @@ WANING STAGE
               <modifiers>
                 <modifier type="increment" value="2" field="16be-fb35-3b30-0f8b">
                   <conditions>
-                    <condition type="atLeast" value="11" field="selections" scope="3146-0ebe-40b2-a3e0" childId="model" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="20" field="selections" scope="3146-0ebe-40b2-a3e0" childId="model" shared="true" includeChildSelections="true"/>
                   </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="16be-fb35-3b30-0f8b">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="3146-0ebe-40b2-a3e0" childId="836e-78d5-a9b7-ae98" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </repeats>
                 </modifier>
               </modifiers>
             </selectionEntry>
@@ -518,7 +523,7 @@ WANING STAGE
               <modifiers>
                 <modifier type="increment" value="2" field="23eb-335e-0abd-f9c8">
                   <conditions>
-                    <condition type="atLeast" value="11" field="selections" scope="3146-0ebe-40b2-a3e0" childId="model" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="20" field="selections" scope="3146-0ebe-40b2-a3e0" childId="model" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="decrement" value="1" field="23eb-335e-0abd-f9c8">
