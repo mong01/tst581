@@ -1362,5 +1362,7 @@ WANING STAGE
     <entryLink import="true" name="Corpulent Shamblers" hidden="false" id="a803-d75e-8fb0-3bd6" type="selectionEntry" targetId="5027-7da5-dbb1-3ace"/>
     <entryLink import="true" name="Apostles of Rot" hidden="false" id="1f3e-32c9-d5b5-96b4" type="selectionEntry" targetId="f43f-aaf0-3655-69ea"/>
     <entryLink import="true" name="Carriers" hidden="false" id="5d9d-f313-fbbd-10a8" targetId="ac88-b4e0-91ed-2e74" type="selectionEntry"/>
+    <entryLink import="true" name="Plague Ogryns" hidden="false" id="197e-182b-dad4-92ac" targetId="5cb7-ff94-f7d1-97b4" type="selectionEntry"/>
+    <entryLink import="true" name="Husks" hidden="false" id="0c5f-b3b7-9956-2d11" targetId="9b4b-c6d6-b050-a416" type="selectionEntry"/>
   </entryLinks>
 </catalogue>
