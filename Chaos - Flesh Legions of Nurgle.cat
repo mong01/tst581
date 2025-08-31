@@ -510,8 +510,8 @@ WANING STAGE
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapons" id="ee9f-21cb-376e-ad16" hidden="false" collective="false" import="true">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4af3-8fc3-0227-4e1c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="198c-00e1-75ec-d221" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4af3-8fc3-0227-4e1c" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="198c-00e1-75ec-d221" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Plague belcher" hidden="false" id="e399-30c5-32d1-e5e1" collective="false" targetId="76b0-7d16-2d11-ab2d" type="selectionEntry">
