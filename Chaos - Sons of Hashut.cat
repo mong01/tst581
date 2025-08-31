@@ -1023,8 +1023,8 @@ A. Yes.</characteristic>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="146c-aeff-99f2-9661" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86ae-ee4e-137f-ba1f" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="146c-aeff-99f2-9661" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86ae-ee4e-137f-ba1f" includeChildSelections="false" automatic="true"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -5098,8 +5098,8 @@ At the start of the battle round, select one of the following toxic agents to be
               <selectionEntryGroups>
                 <selectionEntryGroup name="Options" id="94b1-2c8f-349e-a46a" hidden="false" defaultSelectionEntryId="none">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="580e-a60e-6e12-fa5a" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cbf7-db6a-5279-0c9f" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="580e-a60e-6e12-fa5a" includeChildSelections="false" automatic="true"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cbf7-db6a-5279-0c9f" includeChildSelections="false" automatic="true"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Long-shoota" hidden="false" id="e76d-31c2-41cd-53ea" type="selectionEntry" targetId="73e6-a1d9-2b58-8a12">
