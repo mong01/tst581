@@ -435,40 +435,6 @@ WANING STAGE
       <selectionEntryGroups>
         <selectionEntryGroup name="Blessed Cultists" id="8237-0462-3825-57b9" hidden="false" defaultSelectionEntryId="a68e-d75c-b63a-ca5c">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Blessed champion" hidden="false" id="eef9-9b03-acb9-166e" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5e4-e17c-cc8c-ca8b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="93b6-e9c7-73c5-148e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Autopistol and blighted weapon" hidden="false" id="cf60-f4e9-f377-cb11" collective="false">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1ef-8dd4-da20-d25b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="236d-973f-e966-8dfa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Autopistol" hidden="false" id="2c8e-1e23-4c26-d293" collective="false" targetId="b6ba-62ed-38d6-aff6" type="selectionEntry">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e874-d9c2-495d-ef76" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc60-ee74-1074-4b3d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Blighted weapon" hidden="false" id="e970-1d8f-50dd-9968" collective="false" targetId="2ec6-dece-da23-0d2a" type="selectionEntry">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2523-d02c-02b3-d420" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ebe2-7015-188c-8d83" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry type="model" import="true" name="Blessed cultist" hidden="false" id="a68e-d75c-b63a-ca5c">
               <entryLinks>
                 <entryLink import="true" name="Blighted weapon" hidden="false" id="9410-0266-616b-d939" type="selectionEntry" targetId="2ec6-dece-da23-0d2a">
@@ -574,8 +540,8 @@ WANING STAGE
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="4565-4dc4-76bd-1154" includeChildSelections="false"/>
-            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="a986-2401-0d2d-59f3" includeChildSelections="false"/>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="4565-4dc4-76bd-1154" includeChildSelections="false"/>
+            <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="a986-2401-0d2d-59f3" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -597,6 +563,42 @@ WANING STAGE
       <constraints>
         <constraint type="max" value="6" field="selections" scope="force" shared="true" id="24cb-c537-e560-56c1" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Blessed champion" hidden="false" id="f1c1-64ee-6293-fd06" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5358-5a32-8c86-3632" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6e7-347c-c01e-e21a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Autopistol and blighted weapon" hidden="false" id="d1d9-53a8-50f1-2a37" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e9b-cf6d-e9b4-f745" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="042c-1e64-88b8-922c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Autopistol" hidden="false" id="39d9-dae8-cb87-4268" collective="false" targetId="b6ba-62ed-38d6-aff6" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66ce-fc42-ae37-fb2a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="92b3-4530-048a-e8e3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Blighted weapon" hidden="false" id="8d6c-07d2-6083-6627" collective="false" targetId="2ec6-dece-da23-0d2a" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b59f-c993-cfb6-b6d8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f46-1323-1fc0-1272" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Blighted weapon" hidden="false" id="2ec6-dece-da23-0d2a" collective="true">
       <profiles>
