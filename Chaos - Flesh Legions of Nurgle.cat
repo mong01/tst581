@@ -134,13 +134,6 @@ WANING STAGE
               <constraints>
                 <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="5338-5bdd-c6e5-f4c7" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="false"/>
               </constraints>
-              <modifiers>
-                <modifier type="decrement" value="1" field="5338-5bdd-c6e5-f4c7">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="ba90-681f-5432-d56d" childId="57ac-7b56-bf32-aa98" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Cultist w/ special weapon" hidden="false" id="5c19-8ba2-0f37-3327" collective="false">
               <modifiers>
@@ -239,13 +232,6 @@ WANING STAGE
               <constraints>
                 <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="6e97-c1d2-f575-3070" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="false"/>
               </constraints>
-              <modifiers>
-                <modifier type="decrement" value="1" field="6e97-c1d2-f575-3070">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="ba90-681f-5432-d56d" childId="83fb-94d2-9154-070e" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
