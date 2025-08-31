@@ -569,34 +569,23 @@ WANING STAGE
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5358-5a32-8c86-3632" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6e7-347c-c01e-e21a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Autopistol and blighted weapon" hidden="false" id="d1d9-53a8-50f1-2a37" collective="false" flatten="true">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e9b-cf6d-e9b4-f745" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="042c-1e64-88b8-922c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Autopistol" hidden="false" id="39d9-dae8-cb87-4268" collective="false" targetId="b6ba-62ed-38d6-aff6" type="selectionEntry">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66ce-fc42-ae37-fb2a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="92b3-4530-048a-e8e3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Blighted weapon" hidden="false" id="8d6c-07d2-6083-6627" collective="false" targetId="2ec6-dece-da23-0d2a" type="selectionEntry">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b59f-c993-cfb6-b6d8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f46-1323-1fc0-1272" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Autopistol" hidden="false" id="6f92-7279-c287-2a61" collective="false" targetId="b6ba-62ed-38d6-aff6" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba84-c5ef-abed-59e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bcab-853e-b8f8-8f36" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Blighted weapon" hidden="false" id="0589-373e-4f32-06af" collective="false" targetId="2ec6-dece-da23-0d2a" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d43-0c8f-780c-0685" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85c5-65d2-50de-7828" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
