@@ -570,7 +570,7 @@ WANING STAGE
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6e7-347c-c01e-e21a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Autopistol and blighted weapon" hidden="false" id="d1d9-53a8-50f1-2a37" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Autopistol and blighted weapon" hidden="false" id="d1d9-53a8-50f1-2a37" collective="false" flatten="true">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e9b-cf6d-e9b4-f745" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="042c-1e64-88b8-922c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
