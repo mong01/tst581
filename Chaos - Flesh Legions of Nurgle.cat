@@ -488,7 +488,7 @@ WANING STAGE
                 <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="4c05-3b58-ab53-f2a7" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Blessed cultist w/ great blighted weapon" hidden="false" id="9db5-7e19-629a-6466">
+            <selectionEntry type="model" import="true" name="Blessed cultist w/ great blighted weapon" hidden="false" id="9db5-7e19-629a-6466">
               <entryLinks>
                 <entryLink import="true" name="Great blighted weapon" hidden="false" id="f0d2-ecc0-c8d6-7481" type="selectionEntry" targetId="c9a5-b41c-cdd2-3bc8">
                   <constraints>
@@ -688,6 +688,7 @@ WANING STAGE
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="8a07-3b79-55f8-3dd5"/>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Cultists of Nurgle" hidden="false" id="4844-eb67-6f3f-9a4f" type="selectionEntry" targetId="ba90-681f-5432-d56d"/>
