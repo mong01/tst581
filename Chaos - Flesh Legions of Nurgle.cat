@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="dc42-8777-f6a9-e63e" name="Chaos - Flesh Legions of Nurgle" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="51" revision="1" authorContact="mong94bdc@hotmail.com" authorName="Mong" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="dc42-8777-f6a9-e63e" name="Chaos - Flesh Legions of Nurgle" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="51" revision="1" authorContact="mong94bdc@hotmail.com" authorName="Mong" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
   <categoryEntries>
     <categoryEntry name="Ogryn" id="5db6-d116-58fa-2d5d" hidden="false"/>
     <categoryEntry name="Faction: Nurgleth Followers" id="bbcc-67e6-68a9-1676" hidden="false"/>
