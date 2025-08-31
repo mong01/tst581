@@ -154,8 +154,8 @@ WANING STAGE
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapons" id="32f0-61b3-abdd-1fa5" hidden="false" collective="false" import="true">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2b4-100e-fad8-3148" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea45-5c06-8671-02b1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2b4-100e-fad8-3148" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea45-5c06-8671-02b1" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Heavy stubber" hidden="false" id="8946-8338-ae5d-e583" collective="false" targetId="cfeb-352a-dd5d-c9db" type="selectionEntry">
