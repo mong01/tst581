@@ -6,6 +6,7 @@
     <categoryEntry name="Cultists of Nurgle" id="294c-1d60-c57f-7495" hidden="false"/>
     <categoryEntry name="Blessed Cultists" id="23a4-fbe8-6a6b-9383" hidden="false"/>
     <categoryEntry name="Corpulent Shamblers" id="6877-f647-dc49-1292" hidden="false"/>
+    <categoryEntry name="Apostles of Rot" id="eea5-4a44-3441-2df8" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Endless Cycle" id="46d6-81a2-7652-bc0c" hidden="false">
@@ -405,7 +406,7 @@ WANING STAGE
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Blessed Cultists" hidden="false" id="3146-0ebe-40b2-a3e0">
+    <selectionEntry type="unit" import="true" name="Blessed Cultists" hidden="false" id="3146-0ebe-40b2-a3e0">
       <categoryLinks>
         <categoryLink targetId="4c00-2578-faf5-6918" id="7d29-a788-184d-a8da" primary="false" name="Chaos"/>
         <categoryLink targetId="bbcc-67e6-68a9-1676" id="424d-1e05-81c9-34cd" primary="false" name="Faction: Nurgleth Followers"/>
@@ -767,11 +768,107 @@ WANING STAGE
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="7301-4269-34ba-50bf" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Apostles of Rot" hidden="false" id="f43f-aaf0-3655-69ea">
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="680f-c5e5-c728-fa48" primary="true" name="Infantry"/>
+        <categoryLink targetId="ed0d-8e2a-225c-2340" id="9c80-5737-31fe-7a41" primary="false" name="Nurgle"/>
+        <categoryLink targetId="bbcc-67e6-68a9-1676" id="fc52-ef8d-7b8c-5201" primary="false" name="Faction: Nurgleth Followers"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="b825-b28e-74a5-0e7e" primary="false" name="Chaos"/>
+        <categoryLink targetId="eea5-4a44-3441-2df8" id="bff9-a26c-ad02-078f" primary="false" name="Apostles of Rot"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Aspirant of Rot" hidden="false" id="4496-db22-e36d-f91e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="386a-330b-a1fe-5e60-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="386a-330b-a1fe-5e60-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Plagueforged arms" hidden="false" id="5547-9e3a-9142-a582" type="selectionEntry" targetId="4270-891d-036a-a0af">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d361-1ea0-74bc-b78a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d361-1ea0-74bc-b78a-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Apostle of Rot" hidden="false" id="1499-a03a-0dfe-b16a">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="7313-3a7e-b866-3c08" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="85bd-7f7d-4964-94dd" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Plagueforged arms" hidden="false" id="4185-0a48-edbc-64d3" type="selectionEntry" targetId="4270-891d-036a-a0af">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="906d-ac7f-63d6-c173-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="906d-ac7f-63d6-c173-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Apostles of Rot" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="842a-67b9-1b0c-c058">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Equal in Death" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c5d2-180a-dec2-bce8">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an enemy unit within Engagement Range of this unit is selected to fall back (excluding MONSTER and VEHICLE units), that enemy unit must take a Leadership test, subtracting 2 from the result if that enemy unit is Battle-shocked; if that test is failed, that unit must Remain Stationary this turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="increment" value="55" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="atLeast" value="6" field="selections" scope="f43f-aaf0-3655-69ea" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="5c98-c5e5-d26d-0ec0" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Plagueforged arms" hidden="false" id="4270-891d-036a-a0af">
+      <profiles>
+        <profile name="Plagueforged arms" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3dc6-aa1f-d766-47bf">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lethal Hits" id="6a21-0d4f-909b-a0e4" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Cultists of Nurgle" hidden="false" id="4844-eb67-6f3f-9a4f" type="selectionEntry" targetId="ba90-681f-5432-d56d"/>
     <entryLink import="true" name="Blessed Cultists" hidden="false" id="425e-7815-49b6-3a3a" type="selectionEntry" targetId="3146-0ebe-40b2-a3e0"/>
     <entryLink import="true" name="Corpulent Shamblers" hidden="false" id="a803-d75e-8fb0-3bd6" type="selectionEntry" targetId="5027-7da5-dbb1-3ace"/>
+    <entryLink import="true" name="Apostles of Rot" hidden="false" id="1f3e-32c9-d5b5-96b4" type="selectionEntry" targetId="f43f-aaf0-3655-69ea"/>
   </entryLinks>
 </catalogue>
