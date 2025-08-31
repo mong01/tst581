@@ -1223,8 +1223,8 @@ WANING STAGE
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapons" id="f722-5ea6-c03c-2856" hidden="false" collective="false" import="true">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da53-4fa9-7716-40ca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30ce-4f76-4bc0-e13d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da53-4fa9-7716-40ca" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30ce-4f76-4bc0-e13d" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Plague spewer" hidden="false" id="8d5a-85d2-0a3d-ee28" collective="false" targetId="69c8-95e3-85b4-803e" type="selectionEntry">
