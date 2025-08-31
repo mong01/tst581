@@ -11,7 +11,7 @@
   </categoryEntries>
   <sharedRules>
     <rule name="Endless Cycle" id="46d6-81a2-7652-bc0c" hidden="false">
-      <description>At the start of the first battle round, select one of the Stages below. Until the end of the battle round, that Stage is active for your army. While that Stage is active, each unit from your army that has the Endless Cycle ability gains the relevant abilities shown below. At the end of the battle round, the Stage you chose is no longer active, and the Stage you didn&apos;t choose is now active until the end of the following battle round (for example, if you chose the Waxing Stage in the first battle round, the next battle round would be the Waning Stage, then the Waxing Stage again, etc.).
+      <description>At the start of the first battle round, select one of the Stages below. Until the end of the battle round, that Stage is active for your army. While that Stage is active, each unit from your army that has the Endless Cycle ability gains the relevant abilities shown below. At the end of the battle round, the currently active Stage is no longer active, and the other Stage is now active until the end of the following battle round (for example, if you chose the Waxing Stage in the first battle round, the next battle round would be the Waning Stage, then the Waxing Stage again, etc.).
 
 WAXING STAGE
 • Add 1 to the Objective Control characteristic of models in this unit (models with an unmodified OC characteristic of 0 are not affected).
@@ -956,6 +956,9 @@ WANING STAGE
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="4adf-fe9f-9ef1-54f0" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="5ac5-9917-fa98-dd54">
       <profiles>
