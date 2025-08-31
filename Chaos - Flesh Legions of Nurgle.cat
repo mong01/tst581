@@ -781,7 +781,7 @@ WANING STAGE
         <categoryLink targetId="eea5-4a44-3441-2df8" id="bff9-a26c-ad02-078f" primary="false" name="Apostles of Rot"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Aspirant of Rot" hidden="false" id="4496-db22-e36d-f91e">
+        <selectionEntry type="model" import="true" name="Aspirant of Rot" hidden="false" id="4496-db22-e36d-f91e" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="386a-330b-a1fe-5e60-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="386a-330b-a1fe-5e60-max" includeChildSelections="false"/>
@@ -795,7 +795,7 @@ WANING STAGE
             </entryLink>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Apostle of Rot" hidden="false" id="1499-a03a-0dfe-b16a">
+        <selectionEntry type="model" import="true" name="Apostle of Rot" hidden="false" id="1499-a03a-0dfe-b16a" sortIndex="2">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="7313-3a7e-b866-3c08" includeChildSelections="false"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="85bd-7f7d-4964-94dd" includeChildSelections="false"/>
