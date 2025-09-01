@@ -1792,9 +1792,9 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
           <selectionEntryGroups>
             <selectionEntryGroup name="Pistols" id="8778-f39d-71ee-e33d" hidden="false" defaultSelectionEntryId="none">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Hot-shot laspistol" hidden="false" id="fc9c-da65-22ef-f399" sortIndex="">
+                <selectionEntry type="upgrade" import="true" name="Hot-shot laspistol" hidden="false" id="6a43-3769-e8c5-10bc">
                   <profiles>
-                    <profile name="Hot-shot laspistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b987-87f2-ba6a-edf2">
+                    <profile name="Hot-shot laspistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3a2d-3594-44ed-ac0f">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
@@ -1807,10 +1807,11 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink name="Pistol" id="1f57-7a6f-d1a5-cd0f" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                    <infoLink name="Pistol" id="6335-bbc9-bf6b-a2b0" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
                   </infoLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92cf-b281-53d6-415e" includeChildSelections="false" automatic="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="294b-0218-5b0c-1ede" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fa2-f1e3-753c-3b76" includeChildSelections="false" automatic="false"/>
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
@@ -1840,30 +1841,12 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             </selectionEntryGroup>
             <selectionEntryGroup name="Melee weapons" id="8553-4a06-d02d-5d3e" hidden="false" defaultSelectionEntryId="none">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="0fd3-02f6-63b4-fa32" sortIndex="">
-                  <profiles>
-                    <profile name="Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="29e7-53aa-8f0a-1755">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
+                <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="6d5e-f1e6-50e0-1582">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da1b-38e2-7013-64f3" includeChildSelections="false" automatic="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="ba31-9125-62a1-e990" sortIndex="">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="242b-9649-f30a-b757" includeChildSelections="false" automatic="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5337-565d-4941-d2dc" includeChildSelections="false" automatic="false"/>
                   </constraints>
                   <profiles>
-                    <profile name="Power weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="faf0-da87-7090-d836">
+                    <profile name="Power weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="95b6-871e-4a70-2fd1">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                         <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
@@ -1876,15 +1859,33 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                     </profile>
                   </profiles>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="dcb7-09bf-b7bf-0bf2" sortIndex="">
+                <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="a18e-b02d-da7a-fa78">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfe5-65aa-9b7c-b586" includeChildSelections="false" automatic="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c53-4780-975b-69a8" includeChildSelections="false" automatic="false"/>
                   </constraints>
                   <profiles>
-                    <profile name="Power fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ff53-9f9b-4f26-3f1b">
+                    <profile name="Power fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="c8e0-fc9c-ff20-d159">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                         <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="3639-f2c8-9a15-35d0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a5b-872e-f064-1805" includeChildSelections="false" automatic="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="32dd-cb63-7a27-9bbe">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
