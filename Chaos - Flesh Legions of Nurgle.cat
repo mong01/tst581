@@ -1820,7 +1820,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08b8-3311-2d67-1af5" includeChildSelections="false" automatic="true"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Plasma pistol" hidden="false" id="b1c1-afa7-0ca7-aee5" type="selectionEntry" targetId="e9b6-c33a-379d-5f0f" sortIndex="">
+                <entryLink import="true" name="Plasma pistol" hidden="false" id="b1c1-afa7-0ca7-aee5" type="selectionEntry" targetId="d880-ceba-7654-a9b2" sortIndex="">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1efc-d191-1be0-595b" includeChildSelections="false" automatic="false"/>
                   </constraints>
@@ -2090,9 +2090,9 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="e9b6-c33a-379d-5f0f" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="d880-ceba-7654-a9b2" collective="false">
       <profiles>
-        <profile name="➤ Plasma pistol - standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e474-9037-d382-ec2d">
+        <profile name="➤ Plasma pistol - standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a860-19ee-9d24-1871">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
@@ -2103,7 +2103,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
           </characteristics>
         </profile>
-        <profile name="➤ Plasma pistol - standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="218f-d968-27d8-e89c">
+        <profile name="➤ Plasma pistol - standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b0f7-feac-b5c8-8255">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
@@ -2116,8 +2116,8 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Pistol" id="99c8-a1b8-1d32-77d1" hidden="false" targetId="8bf7-8812-923d-29e4" type="rule"/>
-        <infoLink name="Hazardous" id="5465-9ea8-cc7e-8763" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
+        <infoLink name="Pistol" id="9dc3-16cc-5110-8c98" hidden="false" targetId="8bf7-8812-923d-29e4" type="rule"/>
+        <infoLink name="Hazardous" id="44ba-3594-e38d-da3b" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
