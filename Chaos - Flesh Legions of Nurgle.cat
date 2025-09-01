@@ -1927,8 +1927,8 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 </selectionEntry>
               </selectionEntries>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0bd-3d3e-a43f-e5f4" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08b8-3311-2d67-1af5" includeChildSelections="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e0bd-3d3e-a43f-e5f4" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="08b8-3311-2d67-1af5" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Plasma pistol" hidden="false" id="b1c1-afa7-0ca7-aee5" type="selectionEntry" targetId="e9b6-c33a-379d-5f0f">
@@ -1975,22 +1975,6 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                   </modifierGroups>
                 </entryLink>
               </entryLinks>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="set" value="2" field="08b8-3311-2d67-1af5">
-                      <conditions>
-                        <condition type="equalTo" value="0" field="selections" scope="469a-e1b2-1d9e-a691" childId="fa7c-660c-7048-6d20" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="2" field="e0bd-3d3e-a43f-e5f4">
-                      <conditions>
-                        <condition type="equalTo" value="0" field="selections" scope="469a-e1b2-1d9e-a691" childId="fa7c-660c-7048-6d20" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
