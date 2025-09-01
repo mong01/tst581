@@ -1790,9 +1790,9 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6be7-1424-bad6-97cd-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Weapons" id="8778-f39d-71ee-e33d" hidden="false">
+            <selectionEntryGroup name="Pistols" id="8778-f39d-71ee-e33d" hidden="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Hot-shot laspistol" hidden="false" id="fc9c-da65-22ef-f399" sortIndex="6">
+                <selectionEntry type="upgrade" import="true" name="Hot-shot laspistol" hidden="false" id="fc9c-da65-22ef-f399" sortIndex="">
                   <profiles>
                     <profile name="Hot-shot laspistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b987-87f2-ba6a-edf2">
                       <characteristics>
@@ -1810,19 +1810,27 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                     <infoLink name="Pistol" id="1f57-7a6f-d1a5-cd0f" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
                   </infoLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cf4-ffeb-8cb0-c312" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cf4-ffeb-8cb0-c312" includeChildSelections="false" automatic="true"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="set" value="0" field="0cf4-ffeb-8cb0-c312">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="e9b6-c33a-379d-5f0f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="1197-da73-6c6c-4fc8" sortIndex="3">
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0bd-3d3e-a43f-e5f4" includeChildSelections="false" automatic="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08b8-3311-2d67-1af5" includeChildSelections="false" automatic="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Plasma pistol" hidden="false" id="b1c1-afa7-0ca7-aee5" type="selectionEntry" targetId="e9b6-c33a-379d-5f0f" sortIndex="">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1efc-d191-1be0-595b" includeChildSelections="false" automatic="true"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Melee weapons" id="8553-4a06-d02d-5d3e" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="0fd3-02f6-63b4-fa32" sortIndex="">
                   <profiles>
-                    <profile name="Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="01ec-66bb-e924-e266">
+                    <profile name="Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="29e7-53aa-8f0a-1755">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                         <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
@@ -1835,27 +1843,15 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                     </profile>
                   </profiles>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4dc-2468-a299-32a1" includeChildSelections="false" automatic="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da1b-38e2-7013-64f3" includeChildSelections="false" automatic="true"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="set" value="0" field="c4dc-2468-a299-32a1">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="7e85-d2b9-0925-745c" sortIndex="5">
+                <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="ba31-9125-62a1-e990" sortIndex="">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cb9-1853-26c7-66dc" includeChildSelections="false" automatic="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="242b-9649-f30a-b757" includeChildSelections="false" automatic="true"/>
                   </constraints>
                   <profiles>
-                    <profile name="Power weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0060-5215-f81e-ee6c">
+                    <profile name="Power weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="faf0-da87-7090-d836">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                         <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
@@ -1867,25 +1863,13 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                       </characteristics>
                     </profile>
                   </profiles>
-                  <modifiers>
-                    <modifier type="set" value="0" field="7cb9-1853-26c7-66dc">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="bd45-d770-1c43-25ae" sortIndex="4">
+                <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="dcb7-09bf-b7bf-0bf2" sortIndex="">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34f5-4b2e-9373-24dc" includeChildSelections="false" automatic="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfe5-65aa-9b7c-b586" includeChildSelections="false" automatic="true"/>
                   </constraints>
                   <profiles>
-                    <profile name="Power fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d413-bdf5-45a7-3d25">
+                    <profile name="Power fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ff53-9f9b-4f26-3f1b">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                         <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
@@ -1897,151 +1881,129 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                       </characteristics>
                     </profile>
                   </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6074-28c2-c25d-5d70" includeChildSelections="false" automatic="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cded-0d9c-3b9f-d8ec" includeChildSelections="false" automatic="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hot-shot lasgun" hidden="false" id="13ac-f1d0-939b-23f9" type="selectionEntry" targetId="fa7c-660c-7048-6d20">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d16-79f0-9448-949c" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f38-28f7-33b5-1d55" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <modifierGroups>
+                <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="set" value="0" field="34f5-4b2e-9373-24dc">
+                    <modifier type="set" value="0" field="7d16-79f0-9448-949c">
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="e9b6-c33a-379d-5f0f" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="fc9c-da65-22ef-f399" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="0" field="5f38-28f7-33b5-1d55">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="e9b6-c33a-379d-5f0f" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="fc9c-da65-22ef-f399" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="e9b6-c33a-379d-5f0f" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="fc9c-da65-22ef-f399" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
                   </modifiers>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="c4ad-76c0-d8d1-17cb" collective="true" sortIndex="1">
-                  <profiles>
-                    <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8fb5-180d-2fb3-630e">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f18c-c632-0b48-d186" includeChildSelections="false" automatic="true"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2368-deb1-0711-ab62" includeChildSelections="false" automatic="true"/>
-                  </constraints>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="set" value="0" field="f18c-c632-0b48-d186">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                        <modifier type="set" value="0" field="2368-deb1-0711-ab62">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="fa7c-660c-7048-6d20" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="fa7c-660c-7048-6d20" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </selectionEntry>
-              </selectionEntries>
+                </modifierGroup>
+              </modifierGroups>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="90b0-7eb4-6cfd-f041" collective="true">
+              <profiles>
+                <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5f53-01dd-7a21-cd96">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e0bd-3d3e-a43f-e5f4" includeChildSelections="false" automatic="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="08b8-3311-2d67-1af5" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8b2-c46a-cd8f-c775" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cad-2bcc-5faa-90d9" includeChildSelections="false" automatic="true"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Plasma pistol" hidden="false" id="b1c1-afa7-0ca7-aee5" type="selectionEntry" targetId="e9b6-c33a-379d-5f0f" sortIndex="7">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ff0-31b4-ac7a-a958" includeChildSelections="false"/>
-                  </constraints>
+              <modifierGroups>
+                <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="set" value="0" field="2ff0-31b4-ac7a-a958">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="fc9c-da65-22ef-f399" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                    <modifier type="set" value="0" field="f8b2-c46a-cd8f-c775">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="0" field="4cad-2bcc-5faa-90d9">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="fa7c-660c-7048-6d20" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="fa7c-660c-7048-6d20" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
-                </entryLink>
-                <entryLink import="true" name="Hot-shot lasgun" hidden="false" id="4a85-e0b8-d740-2583" type="selectionEntry" targetId="fa7c-660c-7048-6d20" sortIndex="2">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5a2-1136-6c7a-4e33" includeChildSelections="false" automatic="true"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d09-8feb-9624-bf7d" includeChildSelections="false" automatic="true"/>
-                  </constraints>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="set" value="0" field="b5a2-1136-6c7a-4e33">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="e9b6-c33a-379d-5f0f" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="fc9c-da65-22ef-f399" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                        <modifier type="set" value="0" field="4d09-8feb-9624-bf7d">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="e9b6-c33a-379d-5f0f" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="fc9c-da65-22ef-f399" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="e9b6-c33a-379d-5f0f" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="fc9c-da65-22ef-f399" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
