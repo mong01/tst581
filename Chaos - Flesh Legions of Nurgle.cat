@@ -1790,7 +1790,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b128-7321-f6a8-79ff" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Pistols" id="8778-f39d-71ee-e33d" hidden="false">
+            <selectionEntryGroup name="Pistols" id="8778-f39d-71ee-e33d" hidden="false" defaultSelectionEntryId="none">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Hot-shot laspistol" hidden="false" id="fc9c-da65-22ef-f399" sortIndex="">
                   <profiles>
@@ -1838,7 +1838,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Melee weapons" id="8553-4a06-d02d-5d3e" hidden="false">
+            <selectionEntryGroup name="Melee weapons" id="8553-4a06-d02d-5d3e" hidden="false" defaultSelectionEntryId="none">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="0fd3-02f6-63b4-fa32" sortIndex="">
                   <profiles>
