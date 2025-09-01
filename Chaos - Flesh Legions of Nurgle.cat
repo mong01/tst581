@@ -1965,8 +1965,8 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 </selectionEntry>
               </selectionEntries>
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e0bd-3d3e-a43f-e5f4" includeChildSelections="false" automatic="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="08b8-3311-2d67-1af5" includeChildSelections="false" automatic="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e0bd-3d3e-a43f-e5f4" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="08b8-3311-2d67-1af5" includeChildSelections="false" automatic="true"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Plasma pistol" hidden="false" id="b1c1-afa7-0ca7-aee5" type="selectionEntry" targetId="e9b6-c33a-379d-5f0f" sortIndex="7">
