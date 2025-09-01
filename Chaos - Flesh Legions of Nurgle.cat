@@ -360,6 +360,13 @@ WANING STAGE
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="3+" field="94d-8a98-cf90-183e">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1b82-8ca6-49dc-dcb8" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="➤ Grenade launcher - frag" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f315-8bb0-2976-c31f">
           <characteristics>
@@ -371,6 +378,13 @@ WANING STAGE
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="3+" field="94d-8a98-cf90-183e">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1b82-8ca6-49dc-dcb8" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -728,6 +742,13 @@ WANING STAGE
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="3+" field="94d-8a98-cf90-183e">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1b82-8ca6-49dc-dcb8" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
     </selectionEntry>
@@ -1652,7 +1673,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
       <selectionEntryGroups>
         <selectionEntryGroup name="Scabs" id="ca19-424b-cc16-d87c" hidden="false">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Scab" hidden="false" id="d394-a677-2aca-6c0a" collective="true">
+            <selectionEntry type="model" import="true" name="Scab" hidden="false" id="d394-a677-2aca-6c0a" collective="false">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="1372-70cc-06cd-90b2" collective="true">
                   <profiles>
@@ -1686,7 +1707,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="f70d-cdfa-59a2-ffc3" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Scab w/ special weapon" hidden="false" id="3941-deff-4bf5-e7e6">
+            <selectionEntry type="model" import="true" name="Scab w/ special weapon" hidden="false" id="3941-deff-4bf5-e7e6">
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="b8e0-9446-e252-2245" includeChildSelections="false"/>
               </constraints>
@@ -1729,6 +1750,12 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9af5-0d8c-2cc2-11ad" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
+                    <entryLink import="true" name="Sniper rifle" hidden="false" id="9282-cb62-a575-0c8a" type="selectionEntry" targetId="6bf2-9ded-670d-bb7a">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="533c-871a-2818-7c39" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Hot-shot volley gun" hidden="false" id="3099-5cb1-4210-e41f" type="selectionEntry" targetId="d967-d459-e1e4-5abb"/>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abd3-8fbb-2f4e-96dd" includeChildSelections="false" automatic="true"/>
@@ -1744,6 +1771,9 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Scab Veteran" hidden="false" id="469a-e1b2-1d9e-a691"/>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hot-shot lasgun" hidden="false" id="fa7c-660c-7048-6d20" collective="true">
       <profiles>
@@ -1762,6 +1792,46 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
       <infoLinks>
         <infoLink name="Rapid Fire" id="8529-b366-23e2-0063" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sniper rifle" hidden="false" id="6bf2-9ded-670d-bb7a">
+      <profiles>
+        <profile name="Sniper rifle" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a022-7dba-df3e-208a">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Precision</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy" id="5166-57b2-15d0-8b08" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+        <infoLink name="Precision" id="35de-e045-c0d3-a430" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hot-shot volley gun" hidden="false" id="d967-d459-e1e4-5abb" collective="false">
+      <profiles>
+        <profile name="Hot-shot volley gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d92e-753d-e1c0-3b5e">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">30&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rapid Fire" id="7c78-dc38-2a63-2fd0" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
