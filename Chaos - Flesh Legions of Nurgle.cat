@@ -1790,7 +1790,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6be7-1424-bad6-97cd-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Options" id="8778-f39d-71ee-e33d" hidden="false">
+            <selectionEntryGroup name="Weapons" id="8778-f39d-71ee-e33d" hidden="false">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Hot-shot laspistol" hidden="false" id="fc9c-da65-22ef-f399" sortIndex="6">
                   <profiles>
@@ -1942,6 +1942,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                                 <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
                                 <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
                                 <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="fa7c-660c-7048-6d20" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -1953,6 +1954,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                                 <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
                                 <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
                                 <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="fa7c-660c-7048-6d20" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -1963,8 +1965,8 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 </selectionEntry>
               </selectionEntries>
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e0bd-3d3e-a43f-e5f4" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="08b8-3311-2d67-1af5" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e0bd-3d3e-a43f-e5f4" includeChildSelections="false" automatic="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="08b8-3311-2d67-1af5" includeChildSelections="false" automatic="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Plasma pistol" hidden="false" id="b1c1-afa7-0ca7-aee5" type="selectionEntry" targetId="e9b6-c33a-379d-5f0f" sortIndex="7">
