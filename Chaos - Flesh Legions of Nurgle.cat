@@ -1785,10 +1785,6 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
       </selectionEntryGroups>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Scab veteran" hidden="false" id="469a-e1b2-1d9e-a691">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6be7-1424-bad6-97cd-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6be7-1424-bad6-97cd-max" includeChildSelections="false"/>
-          </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup name="Pistols" id="8778-f39d-71ee-e33d" hidden="false">
               <selectionEntries>
@@ -1815,7 +1811,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 </selectionEntry>
               </selectionEntries>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0bd-3d3e-a43f-e5f4" includeChildSelections="false" automatic="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e0bd-3d3e-a43f-e5f4" includeChildSelections="false" automatic="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08b8-3311-2d67-1af5" includeChildSelections="false" automatic="false"/>
               </constraints>
               <entryLinks>
@@ -1825,6 +1821,18 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <modifiers>
+                <modifier type="set" value="1" field="e0bd-3d3e-a43f-e5f4">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="90b0-7eb4-6cfd-f041" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="13ac-f1d0-939b-23f9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="Melee weapons" id="8553-4a06-d02d-5d3e" hidden="false">
               <selectionEntries>
@@ -1887,6 +1895,18 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6074-28c2-c25d-5d70" includeChildSelections="false" automatic="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cded-0d9c-3b9f-d8ec" includeChildSelections="false" automatic="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="6074-28c2-c25d-5d70">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="90b0-7eb4-6cfd-f041" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="13ac-f1d0-939b-23f9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
