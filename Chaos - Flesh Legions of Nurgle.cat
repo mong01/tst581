@@ -1902,7 +1902,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 </selectionEntry>
               </selectionEntries>
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e0bd-3d3e-a43f-e5f4" includeChildSelections="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e0bd-3d3e-a43f-e5f4" includeChildSelections="false"/>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="08b8-3311-2d67-1af5" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
