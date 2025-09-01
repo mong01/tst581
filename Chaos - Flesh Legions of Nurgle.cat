@@ -1944,8 +1944,32 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                   <modifierGroups>
                     <modifierGroup type="and">
                       <modifiers>
-                        <modifier type="set" value="0" field="b5a2-1136-6c7a-4e33"/>
-                        <modifier type="set" value="0" field="4d09-8feb-9624-bf7d"/>
+                        <modifier type="set" value="0" field="b5a2-1136-6c7a-4e33">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="e9b6-c33a-379d-5f0f" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="fc9c-da65-22ef-f399" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="set" value="0" field="4d09-8feb-9624-bf7d">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="e9b6-c33a-379d-5f0f" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="fc9c-da65-22ef-f399" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
