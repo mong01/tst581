@@ -1810,7 +1810,6 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                     <infoLink name="Pistol" id="6335-bbc9-bf6b-a2b0" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
                   </infoLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="294b-0218-5b0c-1ede" includeChildSelections="false" automatic="true"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fa2-f1e3-753c-3b76" includeChildSelections="false" automatic="false"/>
                   </constraints>
                 </selectionEntry>
@@ -1927,11 +1926,11 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="7e85-d2b9-0925-745c" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="bd45-d770-1c43-25ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="1197-da73-6c6c-4fc8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="e9b6-c33a-379d-5f0f" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="fc9c-da65-22ef-f399" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="3639-f2c8-9a15-35d0" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="a18e-b02d-da7a-fa78" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="6d5e-f1e6-50e0-1582" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="d880-ceba-7654-a9b2" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="6a43-3769-e8c5-10bc" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
