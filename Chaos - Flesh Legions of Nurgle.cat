@@ -655,6 +655,13 @@ WANING STAGE
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="3+" field="94d-8a98-cf90-183e">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1b82-8ca6-49dc-dcb8" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="➤ Plasma gun - supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ea0c-9fcf-89f4-b04b">
           <characteristics>
@@ -666,6 +673,13 @@ WANING STAGE
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous, Rapid Fire 1</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="3+" field="94d-8a98-cf90-183e">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1b82-8ca6-49dc-dcb8" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -1676,11 +1690,53 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="b8e0-9446-e252-2245" includeChildSelections="false"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="b848-7eea-a2e6-1b88" collective="true">
+                  <profiles>
+                    <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="932e-6323-f3c7-82a3">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57b3-bd71-d4c9-712e-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57b3-bd71-d4c9-712e-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapons" id="4510-0e5a-956c-1ad7" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Flamer" hidden="false" id="7a75-222f-26f1-947b" type="selectionEntry" targetId="2cc3-606d-75b9-2c90">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="234d-e1e9-5d92-de54" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma gun" hidden="false" id="6134-9b72-b278-1ab3" type="selectionEntry" targetId="1cec-9b12-59c5-09ff">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edf1-f3a0-1a31-9a2d" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Meltagun" hidden="false" id="0142-b5ba-7bd3-5ed1" type="selectionEntry" targetId="8a07-3b79-55f8-3dd5">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9af5-0d8c-2cc2-11ad" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="10a9-c915-b090-1eef" includeChildSelections="false" automatic="true"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="5962-34ad-591c-e1d8" includeChildSelections="false" automatic="true"/>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="10a9-c915-b090-1eef" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="5962-34ad-591c-e1d8" includeChildSelections="false" automatic="false"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
