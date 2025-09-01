@@ -1810,18 +1810,18 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                     <infoLink name="Pistol" id="1f57-7a6f-d1a5-cd0f" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
                   </infoLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cf4-ffeb-8cb0-c312" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92cf-b281-53d6-415e" includeChildSelections="false" automatic="false"/>
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e0bd-3d3e-a43f-e5f4" includeChildSelections="false" automatic="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08b8-3311-2d67-1af5" includeChildSelections="false" automatic="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08b8-3311-2d67-1af5" includeChildSelections="false" automatic="true"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Plasma pistol" hidden="false" id="b1c1-afa7-0ca7-aee5" type="selectionEntry" targetId="e9b6-c33a-379d-5f0f" sortIndex="">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1efc-d191-1be0-595b" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1efc-d191-1be0-595b" includeChildSelections="false" automatic="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -1855,12 +1855,12 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                     </profile>
                   </profiles>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da1b-38e2-7013-64f3" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da1b-38e2-7013-64f3" includeChildSelections="false" automatic="false"/>
                   </constraints>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="ba31-9125-62a1-e990" sortIndex="">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="242b-9649-f30a-b757" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="242b-9649-f30a-b757" includeChildSelections="false" automatic="false"/>
                   </constraints>
                   <profiles>
                     <profile name="Power weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="faf0-da87-7090-d836">
@@ -1878,7 +1878,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="dcb7-09bf-b7bf-0bf2" sortIndex="">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfe5-65aa-9b7c-b586" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfe5-65aa-9b7c-b586" includeChildSelections="false" automatic="false"/>
                   </constraints>
                   <profiles>
                     <profile name="Power fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ff53-9f9b-4f26-3f1b">
@@ -1897,7 +1897,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
               </selectionEntries>
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6074-28c2-c25d-5d70" includeChildSelections="false" automatic="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cded-0d9c-3b9f-d8ec" includeChildSelections="false" automatic="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cded-0d9c-3b9f-d8ec" includeChildSelections="false" automatic="true"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="1" field="6074-28c2-c25d-5d70">
