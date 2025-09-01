@@ -10,6 +10,10 @@
     <categoryEntry name="Carriers" id="10a4-dff1-25d0-d348" hidden="false"/>
     <categoryEntry name="Husks" id="2e0c-a660-d4ef-a214" hidden="false"/>
     <categoryEntry name="Plague Ogryns" id="11f8-392d-9c11-043e" hidden="false"/>
+    <categoryEntry name="Chaos Spawn" id="e24a-0ea0-bdf8-d114" hidden="false"/>
+    <categoryEntry name="Cargo-6 Truck" id="bf23-4b74-9109-080d" hidden="false"/>
+    <categoryEntry name="Pox Hounds" id="f94f-e7f5-3e0a-d814" hidden="false"/>
+    <categoryEntry name="Scabs" id="1b82-8ca6-49dc-dcb8" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Endless Cycle" id="46d6-81a2-7652-bc0c" hidden="false">
@@ -821,7 +825,7 @@ WANING STAGE
         </profile>
         <profile name="Equal in Death" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c5d2-180a-dec2-bce8">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an enemy unit within Engagement Range of this unit is selected to fall back (excluding MONSTER and VEHICLE units), that enemy unit must take a Leadership test, subtracting 2 from the result if that enemy unit is Battle-shocked; if that test is failed, that unit must Remain Stationary this turn.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an enemy unit (excluding MONSTER and VEHICLE units) within Engagement Range of this unit is selected to fall back, that enemy unit must take a Leadership test, subtracting 2 from the result if that enemy unit is Battle-shocked; if that test is failed, that unit must Remain Stationary this turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1156,7 +1160,7 @@ WANING STAGE
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
-        <profile name="Flesh Hulks" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0932-62a0-adc0-9dfe">
+        <profile name="Blasphemous Constitution" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0932-62a0-adc0-9dfe">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack is allocated to a model in this unit, if the Damage characteristic of that attack is greater than 3, change the Damage characteristic of that attack to 3.</characteristic>
           </characteristics>
@@ -1187,7 +1191,7 @@ WANING STAGE
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Plague ogryn" hidden="false" id="68a2-96b3-bd62-c0c2" collective="false">
               <entryLinks>
-                <entryLink import="true" name="Ogryn plague claws" hidden="false" id="2939-3751-d78a-4e73" collective="false" targetId="e837-b21a-e2fa-6e28" type="selectionEntry">
+                <entryLink import="true" name="Filthy claws" hidden="false" id="2939-3751-d78a-4e73" collective="false" targetId="e837-b21a-e2fa-6e28" type="selectionEntry">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="006d-e965-1f64-8554" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e9c-0066-febe-9af9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1241,7 +1245,7 @@ WANING STAGE
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Ogryn plague claws" hidden="false" id="06ee-ca1f-9a89-030a" collective="false" targetId="e837-b21a-e2fa-6e28" type="selectionEntry">
+                <entryLink import="true" name="Filthy claws" hidden="false" id="06ee-ca1f-9a89-030a" collective="false" targetId="e837-b21a-e2fa-6e28" type="selectionEntry">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c830-e2f1-1499-eab2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a937-b918-9a19-fe68" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1263,6 +1267,11 @@ WANING STAGE
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="ff19-0f9b-8cbe-cf79" includeChildSelections="true"/>
@@ -1292,9 +1301,9 @@ WANING STAGE
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ogryn plague claws" hidden="false" id="e837-b21a-e2fa-6e28" collective="true">
+    <selectionEntry type="upgrade" import="true" name="Filthy claws" hidden="false" id="e837-b21a-e2fa-6e28" collective="true">
       <profiles>
-        <profile name="Ogryn plague claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e6ec-6180-105a-7e6d">
+        <profile name="Filthy claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e6ec-6180-105a-7e6d">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
@@ -1355,6 +1364,345 @@ WANING STAGE
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Chaos Spawn" hidden="false" id="7285-cf0c-1de1-9f99" collective="false">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="cde1-a0a3-80c4-f4e8" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Chaos Spawn" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="202a-c8ea-d858-08f2">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">7</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lethal Ichor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="76be-b1ae-7883-b195">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a melee attack is allocated to a model in this unit, after the attacking unit has finished making its attacks, roll one D6 (to a maximum of six D6 per attacking unit): for each 4+, the attacking unit suffers 1 mortal wound.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Feel No Pain" id="7aa8-9db0-09c1-76eb" hidden="false" targetId="9bf4-280f-bbe2-6fbb" type="rule">
+          <modifiers>
+            <modifier type="append" value="5+" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Endless Cycle" id="b0e1-29e2-3c57-350c" hidden="false" targetId="46d6-81a2-7652-bc0c" type="rule"/>
+        <infoLink name="Deadly Demise" id="faf6-93e0-64f4-2fdc" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Scouts" id="b7e3-ce1d-610e-dd2b" hidden="false" targetId="ada6-bac1-ffe0-d6f7" type="rule">
+          <modifiers>
+            <modifier type="append" value="6&quot;" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Beast" hidden="false" id="10f2-5a3b-c648-dc62" targetId="4c3e-9310-a516-3590" primary="true"/>
+        <categoryLink name="Chaos" hidden="false" id="d9c3-d801-a3f2-472a" targetId="4c00-2578-faf5-6918" primary="false"/>
+        <categoryLink name="Nurgle" hidden="false" id="c09e-b890-1cfa-160a" targetId="ed0d-8e2a-225c-2340" primary="false"/>
+        <categoryLink targetId="bbcc-67e6-68a9-1676" id="9468-1ca0-3833-5149" primary="false" name="Faction: Nurgleth Followers"/>
+        <categoryLink targetId="e24a-0ea0-bdf8-d114" id="be83-221c-eee0-4d2e" primary="false" name="Chaos Spawn"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Chaos spawn" hidden="false" id="0473-c8fa-7b80-29e7" collective="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2df9-2d88-951f-ac7b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a75f-b404-1cba-31fd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hideous mutations" hidden="false" id="d8a9-cd19-419b-ea2d" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e0e-227e-10ce-d638" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f23c-5960-9cc8-58fe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Hideous mutations" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2092-9f8a-8edd-a8e5">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">D6+2</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cargo-6 Truck" hidden="false" id="5824-d61b-a10d-81ef" collective="false">
+      <profiles>
+        <profile name="Cargo-6 Truck" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="2498-92ee-2983-b3cb">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">10</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cargo-6 Truck" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="726a-9f42-dd46-be4f">
+          <characteristics>
+            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 NURGLETH FOLLOWERS INFANTRY models. Each OGRYN model takes up the space of 3 models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Miasmic Infusion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6794-2872-a5c8-72ec">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a unit disembarks from this model, it gains the following ability until the end of the next Fight phase:
+
+Deathly Taint: Each time a model in this unit makes a melee attack, a successful unmodified hit roll of 5+ scores a Critical Hit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Endless Cycle" id="35f1-53fc-1e7e-b344" hidden="false" targetId="46d6-81a2-7652-bc0c" type="rule"/>
+        <infoLink name="Deadly Demise" id="eef7-b8ed-0c1f-3719" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
+          <modifiers>
+            <modifier type="append" value="D3" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Firing Deck" id="9744-f0fd-2ee9-4839" hidden="false" targetId="13b2-6518-dab3-7ea1" type="rule">
+          <modifiers>
+            <modifier type="append" value="12" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Dedicated Transport" hidden="false" id="ff71-c839-092c-c9d2" targetId="ba07-411c-2832-1f79" primary="true"/>
+        <categoryLink name="Transport" hidden="false" id="06b6-0419-0bbf-95c1" targetId="75e8-57c4-40e3-1817" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="15bb-790c-d242-c5e0" targetId="4c00-2578-faf5-6918" primary="false"/>
+        <categoryLink name="Nurgle" hidden="false" id="6ea9-5dc3-9de0-94d4" targetId="ed0d-8e2a-225c-2340" primary="false"/>
+        <categoryLink name="Vehicle" hidden="false" id="458b-6b4e-7921-a3f1" targetId="dbd4-63-af05-998" primary="false"/>
+        <categoryLink targetId="bbcc-67e6-68a9-1676" id="35f8-599d-b5d5-82db" primary="false" name="Faction: Nurgleth Followers"/>
+        <categoryLink targetId="bf23-4b74-9109-080d" id="50e3-2b9c-e525-921b" primary="false" name="Cargo-6 Truck"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Road wheels" hidden="false" id="da87-e686-81bb-8392" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f403-1eb4-2145-1781" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7100-9481-d3e3-5746" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Road wheels" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4509-09f2-fa54-5b85">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Heavy stubber" hidden="false" id="3449-dc75-2673-6965" collective="false" targetId="cfeb-352a-dd5d-c9db" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0991-a806-c6ab-2488" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7745-a9d7-ee88-f31c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Pox Hounds" hidden="false" id="252d-75d0-b6a4-6dca" collective="false">
+      <profiles>
+        <profile name="Pox Hounds" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b1f8-b745-90f2-1fa3">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">6+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infectious Chaos" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="266b-124b-1cf8-2cf0">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an enemy unit is within Engagement Range of this unit, subtract 1 from the Objective Control characteristic of models in that enemy unit (to a minimum of 1).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Endless Cycle" id="98c8-82b5-3b35-d4b7" hidden="false" targetId="46d6-81a2-7652-bc0c" type="rule"/>
+        <infoLink name="Scouts" id="8ba0-1673-adf6-41cb" hidden="false" targetId="ada6-bac1-ffe0-d6f7" type="rule">
+          <modifiers>
+            <modifier type="append" value="9&quot;" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Nurgle" hidden="false" id="3110-a1d4-8f1f-087c" targetId="ed0d-8e2a-225c-2340" primary="false"/>
+        <categoryLink name="Beast" hidden="false" id="26ad-226e-6d7f-4fec" targetId="4c3e-9310-a516-3590" primary="true"/>
+        <categoryLink name="Chaos" hidden="false" id="115c-2912-a4c2-4412" targetId="4c00-2578-faf5-6918" primary="false"/>
+        <categoryLink targetId="bbcc-67e6-68a9-1676" id="23f8-abb9-2e0e-f083" primary="false" name="Faction: Nurgleth Followers"/>
+        <categoryLink targetId="f94f-e7f5-3e0a-d814" id="2237-53cc-c2eb-940d" primary="false" name="Pox Hounds"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Pox hound" hidden="false" id="ab04-ad11-3cee-b2cf" collective="false">
+          <constraints>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="fca5-5798-3799-7012" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="c1ca-b734-b117-cf38" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pus-filled jaws" hidden="false" id="5f37-a625-10c4-dc4d" collective="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e8b-dfa6-2a79-0933" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="538e-80c9-6b2e-6405" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Pus-filled jaws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="b2b7-f110-e15d-a7ce">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Lethal Hits" id="1433-6491-adec-51c7" hidden="false" targetId="d1d1-611e-5191-1095" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="3750-a44d-f4b3-3ea8" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scabs" hidden="false" id="773b-1c23-def9-27a1">
+      <categoryLinks>
+        <categoryLink targetId="1b82-8ca6-49dc-dcb8" id="eed1-5033-0ae5-d75a" primary="false" name="Scabs"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="0b81-de40-90d2-c89e" primary="false" name="Grenades"/>
+        <categoryLink targetId="bbcc-67e6-68a9-1676" id="cb43-b47a-f6cd-bb44" primary="false" name="Faction: Nurgleth Followers"/>
+        <categoryLink targetId="ed0d-8e2a-225c-2340" id="42c6-0c87-a625-b438" primary="false" name="Nurgle"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="fd10-4881-b890-2277" primary="true" name="Infantry"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="8b0f-6ccc-d7da-2ae0" primary="false" name="Chaos"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Scabs" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="375a-db83-4d4e-21be">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2e23-02a1-103c-0f54" includeChildSelections="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Endless Cycle" id="5190-f413-85a6-27c9" hidden="false" targetId="46d6-81a2-7652-bc0c" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scabs" id="ca19-424b-cc16-d87c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Scab" hidden="false" id="d394-a677-2aca-6c0a" collective="true">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="1372-70cc-06cd-90b2" collective="true">
+                  <profiles>
+                    <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4fe9-c1b4-53e9-442b">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0467-0fbd-1916-5782-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0467-0fbd-1916-5782-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Hot-shot lasgun" hidden="false" id="37da-0653-f4ae-9fdf" type="selectionEntry" targetId="fa7c-660c-7048-6d20">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2871-4a26-3ba0-3c33-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2871-4a26-3ba0-3c33-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="f70d-cdfa-59a2-ffc3" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scab w/ special weapon" hidden="false" id="3941-deff-4bf5-e7e6">
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="b8e0-9446-e252-2245" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="10a9-c915-b090-1eef" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="5962-34ad-591c-e1d8" includeChildSelections="false" automatic="true"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hot-shot lasgun" hidden="false" id="fa7c-660c-7048-6d20" collective="true">
+      <profiles>
+        <profile name="Hot-shot lasgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6fd1-b07e-0616-1f1c">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rapid Fire" id="8529-b366-23e2-0063" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Cultists of Nurgle" hidden="false" id="4844-eb67-6f3f-9a4f" type="selectionEntry" targetId="ba90-681f-5432-d56d"/>
@@ -1364,6 +1712,9 @@ WANING STAGE
     <entryLink import="true" name="Carriers" hidden="false" id="5d9d-f313-fbbd-10a8" targetId="ac88-b4e0-91ed-2e74" type="selectionEntry"/>
     <entryLink import="true" name="Plague Ogryns" hidden="false" id="197e-182b-dad4-92ac" targetId="5cb7-ff94-f7d1-97b4" type="selectionEntry"/>
     <entryLink import="true" name="Husks" hidden="false" id="0c5f-b3b7-9956-2d11" targetId="9b4b-c6d6-b050-a416" type="selectionEntry"/>
+    <entryLink import="true" name="Chaos Spawn" hidden="false" id="fc0d-7452-9c84-0a4f" targetId="7285-cf0c-1de1-9f99" type="selectionEntry"/>
+    <entryLink import="true" name="Pox Hounds" hidden="false" id="1502-52bb-0f46-44ee" targetId="252d-75d0-b6a4-6dca" type="selectionEntry"/>
+    <entryLink import="true" name="Scabs" hidden="false" id="1ec7-d9a0-cd61-2117" targetId="773b-1c23-def9-27a1" type="selectionEntry"/>
   </entryLinks>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="[Reference] FAQ" hidden="false" id="8369-6c23-301a-012b">
@@ -1371,7 +1722,7 @@ WANING STAGE
         <profile name="FAQ" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="be9d-b3db-4ea1-5f2c">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Q. How do weapons with a random Damage characteristic (e.g. D6) interact with the Corpse March ability?
-A. After rolling for the Damage characteristic, if the result is higher than 3, the ability takes effect as described.</characteristic>
+A. After rolling for the Damage characteristic, if the result (including modifiers) is higher than 3, the ability takes effect as described.</characteristic>
           </characteristics>
         </profile>
       </profiles>
