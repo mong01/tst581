@@ -1812,6 +1812,13 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cf4-ffeb-8cb0-c312" includeChildSelections="false"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="0cf4-ffeb-8cb0-c312">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="e9b6-c33a-379d-5f0f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="1197-da73-6c6c-4fc8" sortIndex="3">
                   <profiles>
@@ -1828,7 +1835,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                     </profile>
                   </profiles>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4dc-2468-a299-32a1" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4dc-2468-a299-32a1" includeChildSelections="false" automatic="false"/>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="0" field="c4dc-2468-a299-32a1">
@@ -1845,7 +1852,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="7e85-d2b9-0925-745c" sortIndex="5">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cb9-1853-26c7-66dc" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cb9-1853-26c7-66dc" includeChildSelections="false" automatic="false"/>
                   </constraints>
                   <profiles>
                     <profile name="Power weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0060-5215-f81e-ee6c">
@@ -1875,7 +1882,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="bd45-d770-1c43-25ae" sortIndex="4">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34f5-4b2e-9373-24dc" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34f5-4b2e-9373-24dc" includeChildSelections="false" automatic="false"/>
                   </constraints>
                   <profiles>
                     <profile name="Power fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d413-bdf5-45a7-3d25">
@@ -1973,6 +1980,13 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ff0-31b4-ac7a-a958" includeChildSelections="false"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="2ff0-31b4-ac7a-a958">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="469a-e1b2-1d9e-a691" childId="fc9c-da65-22ef-f399" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Hot-shot lasgun" hidden="false" id="4a85-e0b8-d740-2583" type="selectionEntry" targetId="fa7c-660c-7048-6d20" sortIndex="2">
                   <constraints>
