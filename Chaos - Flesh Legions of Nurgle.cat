@@ -1785,6 +1785,10 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
       </selectionEntryGroups>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Scab veteran" hidden="false" id="469a-e1b2-1d9e-a691">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8de0-0e36-17c7-32b0-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8de0-0e36-17c7-32b0-max" includeChildSelections="false"/>
+          </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup name="Pistols" id="8778-f39d-71ee-e33d" hidden="false">
               <selectionEntries>
