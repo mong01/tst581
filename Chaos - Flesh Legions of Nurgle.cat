@@ -2170,7 +2170,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
     <selectionEntry type="unit" import="true" name="Outrider Cultists" hidden="false" id="b403-7c9b-5900-582a">
       <categoryLinks>
         <categoryLink targetId="5c77-1ad6-f768-39e8" id="e2dc-e67c-31d6-3e00" primary="false" name="Outrider Cultists"/>
-        <categoryLink targetId="14a0-40c9-2748-ae6e" id="ab9c-a361-7be1-ed0c" primary="false" name="Mounted"/>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="ab9c-a361-7be1-ed0c" primary="true" name="Mounted"/>
         <categoryLink targetId="ed0d-8e2a-225c-2340" id="cf5a-5fa1-256e-6d3f" primary="false" name="Nurgle"/>
         <categoryLink targetId="bbcc-67e6-68a9-1676" id="c231-6fb8-c7b9-3637" primary="false" name="Faction: Nurgleth Followers"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="d176-17b4-e15d-8228" primary="false" name="Chaos"/>
