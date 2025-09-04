@@ -2203,7 +2203,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Chainsword" hidden="false" id="37b1-2c03-a096-d6ba" type="selectionEntry" targetId="1dbd-d101-4235-ae9c">
+                <entryLink import="true" name="Chainaxe" hidden="false" id="37b1-2c03-a096-d6ba" type="selectionEntry" targetId="141a-b707-bca7-2512">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8547-4cc6-71f7-a5a4" includeChildSelections="false"/>
                   </constraints>
@@ -2294,9 +2294,9 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
           </characteristics>
         </profile>
