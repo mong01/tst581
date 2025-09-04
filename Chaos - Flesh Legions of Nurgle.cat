@@ -14,6 +14,7 @@
     <categoryEntry name="Cargo-6 Truck" id="bf23-4b74-9109-080d" hidden="false"/>
     <categoryEntry name="Pox Hounds" id="f94f-e7f5-3e0a-d814" hidden="false"/>
     <categoryEntry name="Scabs" id="1b82-8ca6-49dc-dcb8" hidden="false"/>
+    <categoryEntry name="Outrider Cultists" id="5c77-1ad6-f768-39e8" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Endless Cycle" id="46d6-81a2-7652-bc0c" hidden="false">
@@ -1898,6 +1899,26 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                       </characteristics>
                     </profile>
                   </profiles>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="a965-d185-42b5-388b">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2990-a428-0a03-f73c" includeChildSelections="false" automatic="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1eea-4e46-b89b-337a">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -2146,6 +2167,149 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Outrider Cultists" hidden="false" id="b403-7c9b-5900-582a">
+      <categoryLinks>
+        <categoryLink targetId="5c77-1ad6-f768-39e8" id="e2dc-e67c-31d6-3e00" primary="false" name="Outrider Cultists"/>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="ab9c-a361-7be1-ed0c" primary="false" name="Mounted"/>
+        <categoryLink targetId="ed0d-8e2a-225c-2340" id="cf5a-5fa1-256e-6d3f" primary="false" name="Nurgle"/>
+        <categoryLink targetId="bbcc-67e6-68a9-1676" id="c231-6fb8-c7b9-3637" primary="false" name="Faction: Nurgleth Followers"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="d176-17b4-e15d-8228" primary="false" name="Chaos"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="d94b-f60b-855c-03e2" includeChildSelections="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Feel No Pain" id="4fc3-7950-57c8-6094" hidden="false" targetId="9bf4-280f-bbe2-6fbb" type="rule">
+          <modifiers>
+            <modifier type="append" value="5+" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Outrider champion" hidden="false" id="1a62-878b-8729-9791">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="ef1f-b50b-941f-e409" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a388-6b3d-1d88-fff2-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a388-6b3d-1d88-fff2-max" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Autopistol &amp; chainsword" hidden="false" id="aba1-0c97-3ec1-1736">
+                  <entryLinks>
+                    <entryLink import="true" name="Autopistol" hidden="false" id="b0d3-2d3f-8cdb-adf0" type="selectionEntry" targetId="b6ba-62ed-38d6-aff6">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2ad-0ccf-b2c2-158d-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2ad-0ccf-b2c2-158d-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="31e0-c249-ca33-5e71" type="selectionEntry" targetId="1dbd-d101-4235-ae9c">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a02e-58bc-51fe-5460-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a02e-58bc-51fe-5460-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d71f-a59d-69fa-7eda" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="37b1-2c03-a096-d6ba" type="selectionEntry" targetId="1dbd-d101-4235-ae9c">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8547-4cc6-71f7-a5a4" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Outrider Cultists" id="0f8b-f678-0316-66cb" hidden="false" defaultSelectionEntryId="e4aa-fbab-1371-df39">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="0d98-2d9a-1b75-4af2" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="c4cc-89fc-2df4-ef09" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Outrider cultist w/ autopistol &amp; chainsword" hidden="false" id="e4aa-fbab-1371-df39">
+              <entryLinks>
+                <entryLink import="true" name="Autopistol" hidden="false" id="41a1-4f40-2bb2-e2c3" type="selectionEntry" targetId="b6ba-62ed-38d6-aff6">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a0ce-cd65-456e-65a1-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0ce-cd65-456e-65a1-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Chainsword" hidden="false" id="20b1-6ca1-ce08-a063" type="selectionEntry" targetId="1dbd-d101-4235-ae9c">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4673-987c-17e2-57f5-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4673-987c-17e2-57f5-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="0ca4-df14-207c-1a82" includeChildSelections="false" automatic="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Outrider cultist w/ chainaxe" hidden="false" id="5192-f923-dce4-ee72">
+              <constraints>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="27fb-e80b-b2fe-e72e" includeChildSelections="false" automatic="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Chainaxe" hidden="false" id="8896-d971-df8f-46b4" type="selectionEntry" targetId="141a-b707-bca7-2512">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e7b-fb29-aebc-d584-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e7b-fb29-aebc-d584-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Outrider Cultists" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c266-1207-cd19-1d51">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chainaxe" hidden="false" id="141a-b707-bca7-2512">
+      <profiles>
+        <profile name="Chainaxe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0beb-ebdd-84e3-0f43">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="1dbd-d101-4235-ae9c">
+      <profiles>
+        <profile name="Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="bfb9-03fe-b82f-9546">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Cultists of Nurgle" hidden="false" id="4844-eb67-6f3f-9a4f" type="selectionEntry" targetId="ba90-681f-5432-d56d"/>
@@ -2158,6 +2322,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
     <entryLink import="true" name="Chaos Spawn" hidden="false" id="fc0d-7452-9c84-0a4f" targetId="7285-cf0c-1de1-9f99" type="selectionEntry"/>
     <entryLink import="true" name="Pox Hounds" hidden="false" id="1502-52bb-0f46-44ee" targetId="252d-75d0-b6a4-6dca" type="selectionEntry"/>
     <entryLink import="true" name="Scabs" hidden="false" id="1ec7-d9a0-cd61-2117" targetId="773b-1c23-def9-27a1" type="selectionEntry"/>
+    <entryLink import="true" name="Outrider Cultists" hidden="false" id="151c-ab4a-8209-0ffd" targetId="b403-7c9b-5900-582a" type="selectionEntry"/>
   </entryLinks>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="[Reference] FAQ" hidden="false" id="8369-6c23-301a-012b">
