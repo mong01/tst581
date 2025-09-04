@@ -1115,10 +1115,10 @@ WANING STAGE
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Husk" hidden="false" id="cd9c-1668-daab-9ff4" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Husk" hidden="false" id="cd9c-1668-daab-9ff4" sortIndex="">
           <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="a2b1-939a-e287-9036" includeChildSelections="false"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="1bd6-b77f-c4a6-d9eb" includeChildSelections="false"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="a2b1-939a-e287-9036" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="1bd6-b77f-c4a6-d9eb" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Glistening daggers" hidden="false" id="35df-6198-747b-9224" type="selectionEntry" targetId="585d-0111-b6c2-679a">
@@ -1128,20 +1128,6 @@ WANING STAGE
               </constraints>
             </entryLink>
           </entryLinks>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Whisper" hidden="false" id="8018-52d2-8bcf-49dc" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Glistening daggers" hidden="false" id="bd20-15e2-975d-377c" type="selectionEntry" targetId="585d-0111-b6c2-679a">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="78d3-08ec-7bca-82e2-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78d3-08ec-7bca-82e2-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e51-ba02-1deb-a2da-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e51-ba02-1deb-a2da-max" includeChildSelections="false"/>
-          </constraints>
         </selectionEntry>
       </selectionEntries>
       <constraints>
