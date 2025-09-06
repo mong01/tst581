@@ -2288,7 +2288,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Chainaxe" hidden="false" id="141a-b707-bca7-2512">
+    <selectionEntry type="upgrade" import="true" name="Chainaxe" hidden="false" id="141a-b707-bca7-2512" collective="true">
       <profiles>
         <profile name="Chainaxe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0beb-ebdd-84e3-0f43">
           <characteristics>
@@ -2303,7 +2303,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="1dbd-d101-4235-ae9c">
+    <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="1dbd-d101-4235-ae9c" collective="true">
       <profiles>
         <profile name="Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="bfb9-03fe-b82f-9546">
           <characteristics>
