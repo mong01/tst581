@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="4ef9-15ce-e3e6-36de" name="Imperium - Adeptus Astartes - Blood Angels" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="61" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="4ef9-15ce-e3e6-36de" name="Imperium - Adeptus Astartes - Blood Angels" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="64" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Space Marines" id="abd0-8ebd-6fbd-2d94" targetId="e0af-67df-9d63-8fb7" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="9c08-8ffc-d746-7384" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
@@ -1223,7 +1223,7 @@
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b38d-1560-a315-dd2e"/>
                           </constraints>
                         </entryLink>
-                        <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="940e-d105-2045-47b9" targetId="6c7d-af5b-482-6fbe">
+                        <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="940e-d105-2045-47b9" targetId="6c7d-af5b-482-6fbe">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="35b0-f945-cd5a-93e9"/>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a83f-518b-9929-4b85"/>
@@ -1254,7 +1254,7 @@
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4008-3ee1-3d80-89be"/>
                           </constraints>
                         </entryLink>
-                        <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="a64c-9a97-52fb-a967" targetId="6c7d-af5b-482-6fbe">
+                        <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="a64c-9a97-52fb-a967" targetId="6c7d-af5b-482-6fbe">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bf7-88de-ca27-7428"/>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84c3-32a6-a0c1-1cc5"/>
@@ -1355,7 +1355,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff28-199d-9823-4142"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="f02a-e90-a66f-3ee0" targetId="6c7d-af5b-482-6fbe">
+                <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="f02a-e90-a66f-3ee0" targetId="6c7d-af5b-482-6fbe">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b18a-abf4-21f0-fda"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd47-8510-20e4-1af"/>
@@ -1386,7 +1386,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3669-ed5e-3203-4447"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="5acd-bc3e-b0c8-d17d" targetId="6c7d-af5b-482-6fbe">
+                <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="5acd-bc3e-b0c8-d17d" targetId="6c7d-af5b-482-6fbe">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65a3-9f2e-74-5712"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91c9-d9-b910-bbac"/>
@@ -1535,7 +1535,7 @@ If a Character unit from your army with the Leader ability can be attached to a
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8036-6d6f-ccb8-7729"/>
                           </constraints>
                         </entryLink>
-                        <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="662c-6ce5-a225-74ce" targetId="6c7d-af5b-482-6fbe">
+                        <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="662c-6ce5-a225-74ce" targetId="6c7d-af5b-482-6fbe">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4264-fe9d-7f8-c36"/>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb71-3acf-efb3-880d"/>
@@ -1937,24 +1937,8 @@ If a Character unit from your army with the Leader ability can be attached to a
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="0dfe-06f1-349f-8d28" type="selectionEntry" targetId="efcd-180-d07-b4d6"/>
                   </entryLinks>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="05ea-4b2e-bcbb-7c9b">
-                      <profiles>
-                        <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="6d8d-2d40-5226-505d">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                  </selectionEntries>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7797-e7ba-081e-a610" includeChildSelections="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d9b-858a-6a40-b723" includeChildSelections="false"/>
@@ -3027,6 +3011,13 @@ horizontally away from all enemy models.</characteristic>
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="2" field="bef7-942a-1a23-59f8">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="8352-c4fb-89d7-30d6" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -3285,35 +3276,30 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82b7-8759-4a0a-f7fc"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3646-cd5a-6620-5ecd"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="f249-0a2b-d703-3a1b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="9025-77d6-52f9-04dd" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="fa72-1abd-ea2e-8e6d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="4285-793e-acdf-3726" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </entryLink>
-          </entryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="a846-7d7e-bb9d-3120">
+            <entryLink import="true" name="Astartes Chainsword" hidden="false" id="1550-c228-5787-99b1" type="selectionEntry" targetId="36aa-c29e-8f8-c662">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="6e3e-638b-5327-1d6d" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="c46e-0b24-bad4-5fb5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="6e22-0deb-9688-07ed" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57ff-38c5-9744-9dba"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19c1-8c6e-ee45-a81f"/>
               </constraints>
-              <profiles>
-                <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ff37-5cda-b6d2-f6d4">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="8ac0-7a5f-cb4d-0fa6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -3564,9 +3550,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   </characteristics>
                 </profile>
               </profiles>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="31fe-fad0-0aaf-db8c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="0572-6adf-141e-53f0" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="21ac-69c3-0466-a330" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="4188-48bd-7668-4dc6" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="9281-00e4-135f-bc45" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -3575,9 +3569,14 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc6c-2d06-860c-d221"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c89b-9e01-bb89-665f"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="b415-186e-c355-b47e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="6dc1-94be-60a8-ddf3" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="5ff5-1eb5-763d-c0c2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="415d-e159-52bc-de19" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -3651,23 +3650,38 @@ You can attach this model to one of the above units, even if one Captain, Chapt
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Boltgun" hidden="false" id="ed04-a23e-7ede-8e02" type="selectionEntry" targetId="beac-9df8-7247-c8ab">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="f246-95e0-ff0e-2864" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="8bda-add8-63d2-1847" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="c4af-ce2f-80f3-7f7b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="f273-c3ee-1fec-0bad" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Bolt Pistol" hidden="false" id="d3b9-ba1b-bf08-6095" type="selectionEntry" targetId="18b0-8c2-173f-5" defaultAmount="1">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="32c0-9f8e-a2de-7c31" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="f479-1cab-d6d2-33ee" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="00ee-ae62-9c89-61c8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="1467-be22-60dd-b6cc" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Hand Flamer" hidden="false" id="5b2f-2447-6b8b-267e" type="selectionEntry" targetId="9dc6-6ad8-818e-db2e">
                   <infoLinks>
                     <infoLink name="Ignores Cover" id="133d-dd74-b054-7668" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
                     <infoLink name="Torrent" id="27a2-3bcf-da5e-63ae" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="19da-b2aa-c196-56b9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="6459-a44e-b0c5-21a6" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="eb6b-6ca9-0c9c-9974" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="15e3-4be8-4e4a-aabb" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
               </entryLinks>
               <selectionEntries>
@@ -3690,9 +3704,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                     <infoLink name="Devastating Wounds" id="8fb3-5f1-86b0-62a0" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
                     <infoLink name="Rapid Fire" id="ec56-9fa5-7534-920b" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="d288-2665-f04b-4806" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="561b-70ed-7da5-7480" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="6394-406b-8efc-7b5b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="4038-28cb-a30b-8ff5" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Ranged Weapon" hidden="false" id="5c7d-6a56-e86f-2d2c" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Grav-Pistol" hidden="false" id="282a-a8b8-e3fb-64c8">
                   <profiles>
@@ -3712,9 +3734,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                     <infoLink name="Pistol" id="b483-5d2-789a-f1b6" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
                     <infoLink name="Anti-" id="dc3d-bd86-cce9-5869" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="a6d0-ee04-0daf-c786" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="3b5a-888e-333b-cf49" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="0859-acaf-2e8d-abb1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="f316-7ef7-a9fb-b672" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Ranged Weapon" hidden="false" id="0f37-5c28-9d49-1812" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Inferno Pistol" hidden="false" id="36f2-52f-a36a-64b1">
                   <profiles>
@@ -3734,9 +3764,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                     <infoLink name="Pistol" id="70c7-83be-e44b-f530" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
                     <infoLink name="Melta" id="4b83-74e3-52e1-10ce" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="9cfb-5c51-3c73-7ed4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="7450-b4b0-d732-b5e6" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="5202-41ea-af10-feb8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="c9d0-ce10-7bf6-8311" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Ranged Weapon" hidden="false" id="b6bb-0167-2532-1038" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Plasma Pistol" hidden="false" id="f510-6bbc-748a-7ccb">
                   <profiles>
@@ -3767,9 +3805,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                     <infoLink name="Hazardous" id="c91b-9853-283a-65d9" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
                     <infoLink name="Pistol" id="1956-b86a-d4ee-839d" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="406b-bd96-9624-562e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="125f-3ea3-c146-b870" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="eb82-df6b-ed23-96d9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="3272-c81c-12aa-9ebb" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Ranged Weapon" hidden="false" id="dacb-1a32-d57d-61d1" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Storm Bolter" hidden="false" id="8149-cac1-27a4-2bbc">
                   <profiles>
@@ -3788,9 +3834,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <infoLinks>
                     <infoLink name="Rapid Fire" id="8010-1be6-d279-134" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="89ca-626d-fee5-6c2f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="6233-6290-89ae-a791" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="09c1-550f-d274-cba5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="3057-f8c0-8298-3c66" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Ranged Weapon" hidden="false" id="428e-3000-550d-6a0a" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -3801,19 +3855,34 @@ You can attach this model to one of the above units, even if one Captain, Chapt
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Astartes Chainsword" hidden="false" id="e04a-f7e8-e2cb-e196" type="selectionEntry" targetId="c1b9-f39d-7390-d4cb" defaultAmount="1">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="9167-9a0c-d32a-fc09" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="6732-296d-4455-4c1e" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="cc91-78df-3c11-4795" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="aa92-7554-33d5-636f" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Power Weapon" hidden="false" id="b9d0-695f-9601-ee96" type="selectionEntry" targetId="50dd-3e76-d993-4d1a">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="af3a-4110-d391-ac26" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="63f5-5a0c-e315-d02a" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="586a-2586-80f7-cb9e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="af8f-57b6-6f99-6994" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Thunder Hammer" hidden="false" id="4b0-e9af-197d-7fa3" type="selectionEntry" targetId="4913-96d4-2b1f-2c21">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="2bb8-015e-bac3-4883" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="137d-3182-5d87-8b88" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="be97-a58c-7555-185a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="8b39-d985-7593-cc6c" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
               </entryLinks>
               <selectionEntries>
@@ -3831,9 +3900,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                       </characteristics>
                     </profile>
                   </profiles>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="0531-b028-ef65-6360" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="ecb8-b8c7-93ba-e425" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="d8e0-ac5b-f7f2-281c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="0f02-72f2-302a-77d9" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Melee Weapon" hidden="false" id="91cf-7133-cb0d-4499" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -3844,9 +3921,14 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="33db-e687-ee6c-2d27"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27e8-e984-16c3-bd4a"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="9f05-bd57-1ddb-dadf" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="cdd1-6884-e606-2409" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="09e5-88fb-9332-96a4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="8d21-922b-6828-7172" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -3964,14 +4046,24 @@ You can attach this model to one of the above units, even if one Captain, Chapt
             <selectionEntryGroup name="Melee" id="f88f-efee-7bdb-3008" hidden="false" defaultSelectionEntryId="8684-4762-7c7a-028e">
               <entryLinks>
                 <entryLink import="true" name="Power Fist" hidden="false" id="39a1-6da8-f5b3-864f" type="selectionEntry" targetId="99de-5985-8cb8-f571">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="a414-8bd3-634c-ab9b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="f0f9-6aea-ed49-80ed" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="bdd4-56e5-add8-0dc4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="2d06-50d9-631a-1343" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Relic Weapon" hidden="false" id="26a8-4370-64dc-be4d" type="selectionEntry" targetId="5baf-8a8a-b5ba-1223">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="9e08-ed6a-b340-07a9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="a6e0-c3bb-15a0-5455" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="2819-a28d-2624-4cda" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="5d4d-1d03-1346-cca2" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -3993,9 +4085,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                       </characteristics>
                     </profile>
                   </profiles>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="af3d-08b3-2a7e-377a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="8b0a-e440-4231-b060" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="61b2-123e-2618-6da8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="0e59-5f8f-92da-437d" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Melee Weapon" hidden="false" id="fed0-f39b-4196-1d03" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -4006,9 +4106,14 @@ You can attach this model to one of the above units, even if one Captain, Chapt
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Inferno Pistol" hidden="false" id="65bf-a135-9120-ba15" type="selectionEntry" targetId="d8bf-e17f-d6fa-b7e8">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="db95-f39f-195e-a46f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="8d66-9482-0be1-4629" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="eb6c-7eff-8350-9ad2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="82ec-79a1-d173-40b2" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
               </entryLinks>
               <selectionEntries>
@@ -4029,9 +4134,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <infoLinks>
                     <infoLink name="Pistol" id="6067-d788-2b38-d165" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="cc6a-effa-4768-2cdb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="b5f6-03b4-66a3-76e0" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="49f0-4ac8-235f-110f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="8f40-9c30-33c0-355e" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Ranged Weapon" hidden="false" id="92ca-f473-cc9c-ce11" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -4377,7 +4490,7 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b01-ec10-9ad1-abda" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="efbd-b697-b3f3-1160" type="selectionEntry" targetId="6c7d-af5b-482-6fbe">
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="efbd-b697-b3f3-1160" type="selectionEntry" targetId="6c7d-af5b-482-6fbe">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="974a-7a68-bb67-61e8" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d85f-2408-4cab-0299" includeChildSelections="false"/>
@@ -4415,21 +4528,6 @@ You can attach this model to one of the above units, even if one Captain, Chapt
               <selectionEntryGroups>
                 <selectionEntryGroup name="Replace Close Combat Weapon" id="62ca-0c5d-078e-9da8" hidden="false" defaultSelectionEntryId="6899-8a73-6f36-cdf9">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="3ced-57f5-a1ab-cf07">
-                      <profiles>
-                        <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="cc95-5b45-a417-a70d">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Close Combat Weapon" hidden="false" id="6899-8a73-6f36-cdf9">
                       <profiles>
                         <profile name="Close Combat Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="c018-a904-2473-3658">
@@ -4469,6 +4567,7 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <entryLinks>
                     <entryLink import="true" name="Thunder Hammer" hidden="false" id="d21e-f281-5e3f-e0b2" type="selectionEntry" targetId="3acf-2a72-a5a2-84a2"/>
                     <entryLink import="true" name="Power Weapon" hidden="false" id="6969-2b53-4bc9-6905" type="selectionEntry" targetId="c4b5-68e-2266-f459"/>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="919f-6a34-9a92-f6b3" type="selectionEntry" targetId="efcd-180-d07-b4d6"/>
                   </entryLinks>
                   <modifiers>
                     <modifier type="set" value="1" field="57e0-15ea-a7bd-a74d">
@@ -4488,23 +4587,9 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                     <entryLink import="true" name="Hand Flamer" hidden="false" id="c688-04d5-5b88-2efd" type="selectionEntry" targetId="9dc6-6ad8-818e-db2e"/>
                     <entryLink import="true" name="Inferno Pistol" hidden="false" id="a442-5bfb-4a6e-a7db" type="selectionEntry" targetId="d8bf-e17f-d6fa-b7e8"/>
                     <entryLink import="true" name="Plasma Pistol" hidden="false" id="7caa-84df-0e1c-cfb0" type="selectionEntry" targetId="25c2-104f-fa0c-809e"/>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="8896-afbc-724b-a018" type="selectionEntry" targetId="efcd-180-d07-b4d6"/>
                   </entryLinks>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="64ec-a197-c1c2-22a5">
-                      <profiles>
-                        <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="465a-8c97-c0d9-865e">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Bolt Rifle" hidden="false" id="4c87-32d4-eca9-677f">
                       <profiles>
                         <profile name="Bolt Rifle" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f983-e976-63ef-aa4a">
@@ -4770,21 +4855,6 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Replace Chainsword" id="fff9-ea18-368c-d4a1" hidden="false" defaultSelectionEntryId="c7a8-c7ee-1248-ef35">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="c7a8-c7ee-1248-ef35">
-                      <profiles>
-                        <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="cb64-11b5-c45a-b0fc">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Power Fist" hidden="false" id="2aba-e045-dbd4-adbd">
                       <profiles>
                         <profile name="Power Fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="b64e-5d06-ef65-5bdf">
@@ -4804,6 +4874,7 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <entryLinks>
                     <entryLink import="true" name="Thunder Hammer" hidden="false" id="0750-7bd3-6edf-09d2" type="selectionEntry" targetId="3acf-2a72-a5a2-84a2"/>
                     <entryLink import="true" name="Power Weapon" hidden="false" id="773e-a671-ad57-aa08" type="selectionEntry" targetId="c4b5-68e-2266-f459"/>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="8b85-90a0-8aca-7fbe" type="selectionEntry" targetId="efcd-180-d07-b4d6"/>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4761-c7fa-10ea-e343" includeChildSelections="false"/>
@@ -4813,7 +4884,7 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <modifiers>
                     <modifier type="set" value="1" field="4f47-ceb3-a70f-8e21">
                       <conditions>
-                        <condition type="equalTo" value="0" field="selections" scope="edee-48a2-1e8a-2539" childId="c7a8-c7ee-1248-ef35" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="edee-48a2-1e8a-2539" childId="efcd-180-d07-b4d6" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -5141,7 +5212,7 @@ If a Character unit from your army with the Leader ability can be attached to a
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07ef-a0d1-55be-3b30"/>
                           </constraints>
                         </entryLink>
-                        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="4289-1cda-4f15-04cb" type="selectionEntry" targetId="6c7d-af5b-482-6fbe">
+                        <entryLink import="true" name="Close combat weapon" hidden="false" id="4289-1cda-4f15-04cb" type="selectionEntry" targetId="6c7d-af5b-482-6fbe">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a545-a3e9-c674-c789"/>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acab-c81f-c169-179e"/>

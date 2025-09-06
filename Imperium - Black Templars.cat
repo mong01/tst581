@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="36d3-36bc-68dd-40ac" name="Imperium - Adeptus Astartes - Black Templars" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="40" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="36d3-36bc-68dd-40ac" name="Imperium - Adeptus Astartes - Black Templars" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="45" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Space Marines" id="2137-605d-109a-d3b2" targetId="e0af-67df-9d63-8fb7" importRootEntries="true"/>
   </catalogueLinks>
@@ -384,13 +384,21 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                   <infoLinks>
                     <infoLink name="Lethal Hits" id="f7ba-6946-34ae-8437" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="5b70-f8ea-3888-1d94" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f345-0c25-8612-106c-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f345-0c25-8612-106c-max" includeChildSelections="false"/>
                   </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="3d5e-4091-e784-0c7b" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="7428-2694-cfe4-309c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="411d-0f8a-4559-2f76" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Power Weapon" hidden="false" id="23c6-c4c8-42b8-0649" targetId="72a2-ff76-451c-9d12" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <selectionEntryGroups>
@@ -401,14 +409,24 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" type="selectionEntry" id="97be-d160-ab37-1b1e" targetId="3b8f-1cb7-3c6e-4455">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="1ad3-afc5-4194-2d98" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="b23a-c850-f0aa-f7a0" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="a47b-59f9-c458-bea7" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="8b80-29d4-1eca-ee90" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
                     <entryLink import="true" name="Pyre Pistol" hidden="false" type="selectionEntry" id="3c66-c41-31c4-a826" targetId="bb21-4114-6b0c-634d">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="f5a1-1334-b215-5f1e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="55cd-8b82-5e0d-e1c2" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="2ad9-7094-bf7f-12ff" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="d7a0-f972-95e2-b577" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -438,7 +456,7 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                     <constraint type="max" value="11" field="selections" scope="parent" shared="true" id="6661-fcdc-f653-97fa"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="7296-c7ab-7009-a29a" targetId="6c7d-af5b-482-6fbe">
+                    <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="7296-c7ab-7009-a29a" targetId="6c7d-af5b-482-6fbe">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af76-815b-397a-d2e4"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff09-baeb-6fae-2e71"/>
@@ -487,6 +505,12 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="728a-8ead-6a16-de0b" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="4dcb-b632-ee96-4a5d" type="selectionEntry" targetId="731a-79db-4259-2dd4">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b673-cef0-54d6-a8b0" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61af-0dcb-a1a2-4d76" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                   <profiles>
                     <profile name="Initiate" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3f96-6a6f-2b9b-21e6">
@@ -500,30 +524,6 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                       </characteristics>
                     </profile>
                   </profiles>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="bb65-8481-fe38-b4a3">
-                      <profiles>
-                        <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d462-4a89-3361-dc2a">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Sustained Hits" id="0a7b-38ea-07e9-1012" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d0da-fc7a-9518-9399-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0da-fc7a-9518-9399-max" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Initiate w/Power Fist &amp; Heavy Bolt Pistol" hidden="false" id="78e6-1e4-33f8-36c7">
                   <constraints>
@@ -579,7 +579,7 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4e33-906e-881e-be2b"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="5aca-4274-fe47-302d" targetId="6c7d-af5b-482-6fbe">
+                    <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="5aca-4274-fe47-302d" targetId="6c7d-af5b-482-6fbe">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af76-815b-397a-d2e4"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff09-baeb-6fae-2e71"/>
@@ -650,12 +650,12 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
             </selectionEntryGroup>
             <selectionEntryGroup name="Neophytes" hidden="false" id="b4c3-ef4a-77d1-e814" defaultSelectionEntryId="9455-ced-8432-d4e8">
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="Neophyte w/Firearm" hidden="false" id="dd70-8ed8-309c-1bf">
+                <selectionEntry type="model" import="true" name="Neophyte w/ Firearm" hidden="false" id="dd70-8ed8-309c-1bf">
                   <constraints>
                     <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="9fcb-2d15-e4db-5a17"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="d710-d1f-21c5-a0b1" targetId="6c7d-af5b-482-6fbe">
+                    <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="d710-d1f-21c5-a0b1" targetId="6c7d-af5b-482-6fbe">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af76-815b-397a-d2e4"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d702-34fe-b425-e6a3"/>
@@ -699,7 +699,7 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                     </profile>
                   </profiles>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="Neophyte w/Astartes Chainsword" hidden="false" id="9455-ced-8432-d4e8">
+                <selectionEntry type="model" import="true" name="Neophyte w/ Astartes Chainsword" hidden="false" id="9455-ced-8432-d4e8">
                   <constraints>
                     <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="670d-27f6-7e21-df93"/>
                   </constraints>
@@ -708,6 +708,12 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5531-4b4f-dd1b-8773"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94aa-228d-fa08-13cf"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="8b37-7207-8262-3b69" type="selectionEntry" targetId="731a-79db-4259-2dd4">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="54d1-6ac9-48f7-88de-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54d1-6ac9-48f7-88de-max" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
@@ -723,30 +729,6 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                       </characteristics>
                     </profile>
                   </profiles>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="9117-425e-d2b4-6479">
-                      <profiles>
-                        <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="39a5-e3a3-5b50-95a0">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Sustained Hits" id="7657-d713-1879-2b84" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="54d1-6ac9-48f7-88de-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54d1-6ac9-48f7-88de-max" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -874,6 +856,18 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Pistol, Torrent</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1c25-04da-c108-842f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -881,6 +875,11 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
         <infoLink name="Torrent" hidden="false" type="rule" id="5f22-5421-d392-a0c2" targetId="5edf-d619-23e0-9b56"/>
         <infoLink name="Pistol" hidden="false" type="rule" id="d3f0-b757-9abe-2a8b" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Ranged Weapon" hidden="false" id="39fa-d867-304c-6aaa" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Torrent Weapon" hidden="false" id="034a-2a5d-1ba7-ee69" targetId="064a-0470-60eb-e3ef" primary="false"/>
+        <categoryLink name="Pistol Weapon" hidden="false" id="c5c2-8da4-8a4d-4be0" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sword Brethren Squad" hidden="false" id="206c-6b4d-4aaa-7e79">
       <categoryLinks>
@@ -923,9 +922,14 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" type="selectionEntry" id="f2a8-18d2-4877-815e" targetId="3b8f-1cb7-3c6e-4455">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="1d6f-eaba-7d99-7f51" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="2233-08e9-672d-e4ad" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="1810-1153-e71b-9bc2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="a5b3-4b76-ecdc-ed2d" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
                     <entryLink import="true" name="Plasma Pistol" hidden="false" type="selectionEntry" id="a029-3c84-698f-2a37" targetId="25c2-104f-fa0c-809e">
                       <constraints>
@@ -943,9 +947,14 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                           </conditions>
                         </modifier>
                       </modifiers>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="9881-4cb2-efa4-9657" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="9f35-6169-d613-47ae" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="df11-ddff-715d-6157" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="ee81-c69a-1ab8-48b5" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
                     <entryLink import="true" name="Pyre Pistol" hidden="false" type="selectionEntry" id="c2da-2af9-347f-8698" targetId="bb21-4114-6b0c-634d">
                       <constraints>
@@ -963,9 +972,14 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                           </conditions>
                         </modifier>
                       </modifiers>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="e24d-e1fd-811f-c701" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="208f-1b84-adda-f23b" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="d78c-b9ac-2546-090d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="9e16-16be-ba18-46ec" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -1004,9 +1018,14 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                           </conditions>
                         </modifier>
                       </modifiers>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="b30b-8660-861b-bd70" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="eff8-abef-565d-a12e" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="c9ca-8676-0a27-2add" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="c409-a0e4-6992-b6c4" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Master-crafted Power Weapon" hidden="false" id="98d9-b9b5-f2e3-824e">
                       <profiles>
@@ -1025,9 +1044,17 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                       <infoLinks>
                         <infoLink name="Lethal Hits" id="ef52-a122-66d6-e5a8" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
                       </infoLinks>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="bfc8-69fa-7475-bd55" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="96e1-c063-590d-5f1c" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="9b1f-33fd-47c9-0bcb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="6502-fe8d-25ed-2631" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <categoryLinks>
+                        <categoryLink name="Power Weapon" hidden="false" id="c831-db4f-3a8e-9161" targetId="72a2-ff76-451c-9d12" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="de7a-3acb-5169-0755">
                       <profiles>
@@ -1046,9 +1073,14 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                       <infoLinks>
                         <infoLink name="Sustained Hits" id="8ad5-fa24-3e79-0747" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
                       </infoLinks>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="5831-781b-c62b-b8c8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="8eb7-e21b-d3bf-ec3e" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="8ce0-f42d-1ae6-bd86" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="25d8-ca0e-6745-c682" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -1073,7 +1105,7 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Sword Brother w/Twin Lightning Claws" hidden="false" id="3378-f713-ff02-3d7c">
+            <selectionEntry type="model" import="true" name="Sword Brother w/ Twin Lightning Claws" hidden="false" id="3378-f713-ff02-3d7c">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c21-80f5-4fe2-dba6"/>
               </constraints>
@@ -1123,9 +1155,14 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79d3-0cd2-dd51-91e7-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79d3-0cd2-dd51-91e7-max" includeChildSelections="false"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="a05a-3c1b-b962-b319" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="afc6-569a-2c42-9e90" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="7faf-c13a-da90-8540" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="4de4-bc5c-bf40-7ffd" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
@@ -1280,7 +1317,7 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
         </profile>
         <profile name="Chosen of the Emperor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4c58-d25d-01ac-87e2">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You cannot include more than one EMPEROR&apos;S CHAMPION model in your army.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You cannot include more than one **^^Emperor&apos;s Champion^^** model in your army.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1314,7 +1351,6 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
           </constraints>
         </entryLink>
         <entryLink import="true" name="Enhancements" hidden="false" id="6719-652b-321a-7211" type="selectionEntryGroup" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="303d-46fd-9a6d-b67c" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -1431,7 +1467,35 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Crusade" id="4f24-5d44-4bab-df99" hidden="false" sortIndex="1" collapsible="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Battle Tallies" id="7022-413f-4bd4-8bda" hidden="false" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Battles Played" hidden="false" id="d2e7-4cb6-c6c5-03d2"/>
+                <selectionEntry type="upgrade" import="true" name="Battles Survived" hidden="false" id="d3f2-e93d-287c-f02b"/>
+                <selectionEntry type="upgrade" import="true" name="Enemy Units Destroyed" hidden="false" id="3038-fc2e-1096-1d7e"/>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Champion&apos;s Virtue Battle Honours" hidden="false" id="82fe-bcff-8b81-67bb" type="selectionEntryGroup" targetId="0933-1b16-828c-d6e8" sortIndex="2"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="0" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Crusader Squad [Legends]" hidden="true" id="2da2-ad08-6057-5a1c">
       <categoryLinks>
@@ -1465,7 +1529,7 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
         </infoLink>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Neophytes" hidden="false" id="8a26-cdbf-3480-3ec7" defaultSelectionEntryId="c93d-dc5a-9d7c-895d" sortIndex="3">
+        <selectionEntryGroup name="Neophytes" hidden="false" id="8a26-cdbf-3480-3ec7" defaultSelectionEntryId="c93d-dc5a-9d7c-895d" sortIndex="4">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Neophyte w/Combat Knife" hidden="false" id="70b9-da75-964e-bd31">
               <constraints>
@@ -1605,7 +1669,7 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Initiates" hidden="false" id="6413-eee8-56ef-f697" defaultSelectionEntryId="a2f6-3946-52df-35f5" sortIndex="2">
+        <selectionEntryGroup name="Initiates" hidden="false" id="6413-eee8-56ef-f697" defaultSelectionEntryId="a2f6-3946-52df-35f5" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Initiate w/Astartes Chainsword" hidden="false" id="9c32-3649-fecb-f0e5">
               <constraints>
@@ -1618,28 +1682,13 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c3e-c489-7da4-7381"/>
                   </constraints>
                 </entryLink>
-              </entryLinks>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="3b4-4de2-f42d-c47a" collective="true">
+                <entryLink import="true" name="Astartes Chainsword" hidden="false" id="eb7d-04b3-7754-aaa0" type="selectionEntry" targetId="bfe9-3520-54d3-9a90">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1366-57f8-aac5-dfff"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca65-f4f8-7ccc-648e"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2387-a9cd-3bc3-840f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd87-42b3-060d-42f8"/>
                   </constraints>
-                  <profiles>
-                    <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="de05-3620-4282-d49f">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
+                </entryLink>
+              </entryLinks>
               <profiles>
                 <profile name="Initiate" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1190-ddf0-46fe-d8fb">
                   <characteristics>
@@ -1767,161 +1816,234 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                 </profile>
               </profiles>
             </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="423d-9446-4d50-a285"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="8f3a-67df-d747-3b"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Sword Brother" id="4f71-d948-3cb9-1758" hidden="false" sortIndex="2">
+          <selectionEntries>
             <selectionEntry type="model" import="true" name="Sword Brother" hidden="false" id="40e4-11f1-529f-441d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb84-97d9-f6bc-c715"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d08-88da-d27b-7945"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Weapon Option 1" hidden="false" id="3d66-d1e0-648c-10d7" defaultSelectionEntryId="513f-5e76-2fc6-63e1">
+                <selectionEntryGroup name="Weapon Option 1" id="3d66-d1e0-648c-10d7" hidden="false" defaultSelectionEntryId="513f-5e76-2fc6-63e1">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8295-a4f7-29cc-b5c6"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2511-b276-a255-b449"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c6d-9546-2426-70f8"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03b3-2a86-4faa-aded"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="513f-5e76-2fc6-63e1" targetId="18b0-8c2-173f-5">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="e2d5-4f08-1630-2b40" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                    <entryLink import="true" name="Bolt Pistol" hidden="false" id="b27e-04cd-2f77-4615" type="selectionEntry" targetId="18b0-8c2-173f-5">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="1cd0-a033-b38a-5fa4" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="70bb-7d31-f76d-f090" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="6126-8355-c196-8069" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
-                    <entryLink import="true" name="Grav-pistol" hidden="false" type="selectionEntry" id="2f2a-dcd2-8d7-6d0" targetId="1f74-a1b-2835-ccdd">
+                    <entryLink import="true" name="Grav-pistol" hidden="false" id="78c9-aebb-fd24-2392" type="selectionEntry" targetId="1f74-a1b-2835-ccdd">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bd7-db97-1b80-5116"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3f9-15da-edc4-c5a3"/>
                       </constraints>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="91b8-dd43-16b8-4bfb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="2663-16b8-aef5-c19d" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="8765-d985-c13d-95fe" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="d9c9-58d3-7120-56e2" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
-                    <entryLink import="true" name="Hand Flamer" hidden="false" type="selectionEntry" id="3671-7c3d-8d2c-4ad5" targetId="9dc6-6ad8-818e-db2e">
+                    <entryLink import="true" name="Hand Flamer" hidden="false" id="febd-af89-eb95-7e11" type="selectionEntry" targetId="9dc6-6ad8-818e-db2e">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c28-f458-6460-7c78"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2586-a153-a875-84b5"/>
                       </constraints>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="ff36-5e79-321a-bdf6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="73d0-737c-4111-bd63" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="877d-479f-a315-e087" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="7746-67da-8323-2521" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
-                    <entryLink import="true" name="Inferno Pistol" hidden="false" type="selectionEntry" id="a668-442e-3052-c9dc" targetId="d8bf-e17f-d6fa-b7e8">
+                    <entryLink import="true" name="Inferno Pistol" hidden="false" id="466f-8191-81f2-daa9" type="selectionEntry" targetId="d8bf-e17f-d6fa-b7e8">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c1b-b745-5fe7-1eef"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6f9-85e9-fa6b-e305"/>
                       </constraints>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="5bd7-3867-9b0c-8bcf" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="eaf3-61bd-4419-d5e1" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="f211-fd4c-9ae5-bcc3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="ad4c-73b7-d050-0af9" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
-                    <entryLink import="true" name="Plasma Pistol" hidden="false" type="selectionEntry" id="7e5b-457b-197-77b8" targetId="25c2-104f-fa0c-809e">
+                    <entryLink import="true" name="Plasma Pistol" hidden="false" id="9847-8ed8-efbd-2920" type="selectionEntry" targetId="25c2-104f-fa0c-809e">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98c2-2c22-c68b-7eb4"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f92-a5d2-1462-620b"/>
                       </constraints>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="0572-c371-3b80-5e18" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="849e-cd0e-2d93-ffe6" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="3581-5cb7-2230-c244" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="7d8e-46a2-3fb6-6e14" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
-                    <entryLink import="true" name="Astartes Chainsword" hidden="false" type="selectionEntry" id="cf26-b6c9-bcf1-8dcb" targetId="62f4-10d1-8d22-b116">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="e18f-e00c-5988-b334" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="b33c-9769-4f42-2eba" type="selectionEntry" targetId="efcd-180-d07-b4d6">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="37bd-b8d0-0664-f3c3" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="f175-ff2c-8fe1-e44f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="2e68-70cd-6d48-2856" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
-                    <entryLink import="true" name="Power Fist" hidden="false" type="selectionEntry" id="953b-297d-8e90-4dd7" targetId="5d22-a8d8-8e57-b8ab">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="dff1-d0f9-ad9a-f532" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                    <entryLink import="true" name="Power Fist" hidden="false" id="4909-9fad-ea05-2b20" type="selectionEntry" targetId="5d22-a8d8-8e57-b8ab">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="9ec8-75f8-3623-5675" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="5cd3-e3d9-db78-064d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="1d93-a991-fb00-6a5a" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
-                    <entryLink import="true" name="Power Weapon" hidden="false" type="selectionEntry" id="9114-e5b2-b1bc-a8be" targetId="a7b6-eeb7-d0e4-b84c">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="a11d-074d-1954-0d7e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                    <entryLink import="true" name="Power Weapon" hidden="false" id="9f61-3d86-b3f4-1094" type="selectionEntry" targetId="a7b6-eeb7-d0e4-b84c">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="0c0a-bd29-1eb9-942a" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="116e-3a50-4444-0d96" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="29e5-338f-cec3-f7b7" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
-                    <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="3df2-4757-6491-e3bf" targetId="7ead-a4ee-c2e-fcf9">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="6110-d2f3-ea1e-4c37" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                    <entryLink import="true" name="Thunder Hammer" hidden="false" id="6b21-7abc-0b71-982d" type="selectionEntry" targetId="7ead-a4ee-c2e-fcf9">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="faa0-837c-44b0-6499" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="ea2a-464d-a16f-3ae9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="fa8f-b91a-5979-bc33" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
                   </entryLinks>
                   <modifiers>
-                    <modifier type="set" value="0" field="8295-a4f7-29cc-b5c6">
+                    <modifier type="set" value="0" field="8c6d-9546-2426-70f8">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="40e4-11f1-529f-441d" childId="b806-7ea8-aa66-bb49" shared="true" id="30f5-5417-5d8d-6fec" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="40e4-11f1-529f-441d" childId="b806-7ea8-aa66-bb49" shared="true" id="4df9-2a06-acd3-2aa0" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" value="0" field="2511-b276-a255-b449">
+                    <modifier type="set" value="0" field="03b3-2a86-4faa-aded">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="40e4-11f1-529f-441d" childId="b806-7ea8-aa66-bb49" shared="true" id="eea0-c17e-1836-98db" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="40e4-11f1-529f-441d" childId="b806-7ea8-aa66-bb49" shared="true" id="bd36-151f-5441-0cb2" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Weapon Option 2" hidden="false" id="92ba-31e2-640d-3ba3" defaultSelectionEntryId="c283-e4de-df8-ab05">
+                <selectionEntryGroup name="Weapon Option 2" id="92ba-31e2-640d-3ba3" hidden="false" defaultSelectionEntryId="c283-e4de-df8-ab05">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f03-ed5e-5071-7da5"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6db6-9057-cd76-f339"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c4d-635a-44ac-03d5"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffcf-f2ab-6835-8136"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Boltgun" hidden="false" type="selectionEntry" id="c283-e4de-df8-ab05" targetId="beac-9df8-7247-c8ab">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="cea1-0a01-876e-5c1b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                    <entryLink import="true" name="Boltgun" hidden="false" id="af4e-505b-23d6-e232" type="selectionEntry" targetId="beac-9df8-7247-c8ab">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="598e-85a6-c01c-9921" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="1f3c-a6af-b0eb-7b85" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="fe8a-be31-1cc0-5e7e" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
-                    <entryLink import="true" name="Combi-weapon" hidden="false" type="selectionEntry" id="3724-7213-9e1d-a9d3" targetId="2c13-8cdd-f66b-bcae">
+                    <entryLink import="true" name="Combi-weapon" hidden="false" id="b30a-c2a0-151b-a2f8" type="selectionEntry" targetId="2c13-8cdd-f66b-bcae">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8733-e7d9-813f-4b15"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f00-f96f-3d61-0a91"/>
                       </constraints>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="dfd7-1843-55c4-b33a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="ff97-b048-97bb-34d4" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="a805-89be-8fa8-a438" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="0c72-79d7-ddc3-9f99" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
-                    <entryLink import="true" name="Power Fist" hidden="false" type="selectionEntry" id="2e19-803f-98d-c55d" targetId="5d22-a8d8-8e57-b8ab">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="6265-822d-d294-f76a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                    <entryLink import="true" name="Power Fist" hidden="false" id="cff0-6b7e-1ce5-f585" type="selectionEntry" targetId="5d22-a8d8-8e57-b8ab">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="a55e-0ab8-c616-755a" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="e2bb-5b67-f75a-17b1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="375e-3d9e-766c-015d" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
-                    <entryLink import="true" name="Power Weapon" hidden="false" type="selectionEntry" id="b6c4-2572-8e2d-63f0" targetId="a7b6-eeb7-d0e4-b84c">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="24b2-9841-6b6e-9d98" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                    <entryLink import="true" name="Power Weapon" hidden="false" id="d4bd-cf9a-7309-2402" type="selectionEntry" targetId="a7b6-eeb7-d0e4-b84c">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="8f90-1a75-6f38-00ac" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="c219-076a-f50d-1744" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="4d06-1277-b4d6-1277" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
-                    <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="2490-fcdd-309b-e95a" targetId="7ead-a4ee-c2e-fcf9">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="924e-027c-f3ed-f108" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                    <entryLink import="true" name="Thunder Hammer" hidden="false" id="71e1-a092-edc5-fc7b" type="selectionEntry" targetId="7ead-a4ee-c2e-fcf9">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="4330-9688-1130-38ca" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="1a6d-3c6a-a5bd-c40a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="a054-527c-5167-55ce" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
-                    <entryLink import="true" name="Storm Bolter" hidden="false" type="selectionEntry" id="7408-6f72-a5ec-3c4b" targetId="eb61-5cd0-5242-74cc">
+                    <entryLink import="true" name="Storm Bolter" hidden="false" id="675c-9b01-84b1-f6b7" type="selectionEntry" targetId="eb61-5cd0-5242-74cc">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6081-d711-b409-914a"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f02-199c-4e13-df02"/>
                       </constraints>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="a965-151b-2c2b-f98b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="3091-597c-b560-bc9a" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="8200-28dd-9c72-6b2d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="c07d-b9f4-29ad-7448" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </entryLink>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="8f68-9d7b-c6d3-4e5a" type="selectionEntry" targetId="bfe9-3520-54d3-9a90">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="1f2f-0da6-a863-6c63" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="0333-bee3-698c-df52" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="fb16-a2db-a366-39ee" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
                   </entryLinks>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="62f4-10d1-8d22-b116" collective="false">
-                      <profiles>
-                        <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="cb3c-930b-4835-30c9">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="9215-4b82-0a44-17f3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </selectionEntry>
-                  </selectionEntries>
                   <modifiers>
-                    <modifier type="set" value="0" field="4f03-ed5e-5071-7da5">
+                    <modifier type="set" value="0" field="0c4d-635a-44ac-03d5">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="40e4-11f1-529f-441d" childId="b806-7ea8-aa66-bb49" shared="true" id="a967-5744-5dfe-35a0" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="40e4-11f1-529f-441d" childId="b806-7ea8-aa66-bb49" shared="true" id="adb2-9645-6a02-5d5a" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" value="0" field="6db6-9057-cd76-f339">
+                    <modifier type="set" value="0" field="ffcf-f2ab-6835-8136">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="40e4-11f1-529f-441d" childId="b806-7ea8-aa66-bb49" shared="true" id="623f-18d-697-6ba7" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="40e4-11f1-529f-441d" childId="b806-7ea8-aa66-bb49" shared="true" id="1237-2d9b-b7b7-0224" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -1930,7 +2052,7 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Twin Lightning Claws" hidden="false" id="b806-7ea8-aa66-bb49">
                   <profiles>
-                    <profile name="Twin Lightning Claws" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" id="e6ed-2c2a-e207-7707">
+                    <profile name="Twin Lightning Claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4999-94ef-7244-094b">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                         <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
@@ -1943,40 +2065,23 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink name="Twin-linked" hidden="false" type="rule" id="1786-1a12-b45a-9c1d" targetId="cf93-ad4d-2f08-a79d"/>
+                    <infoLink name="Twin-linked" id="6415-cd37-9391-e527" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
                   </infoLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="249e-9b3e-c0ca-c4bd"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d93-e492-f53e-63bc"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="f6ef-3079-a505-5991" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Close Combat Weapon" hidden="false" id="cd1-fab4-d757-7265">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5cba-d68e-6820-6e6d"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc14-c29-f10d-83f"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Close Combat Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5889-8fde-c70a-5495">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="e32c-a222-0a7f-35a7" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="fa29-9283-06ba-0d32" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="1fee-3c29-ac22-05ef" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="1749-5e8c-6f13-61b0" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </selectionEntry>
               </selectionEntries>
               <profiles>
-                <profile name="Sword Brother" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b937-6b8a-748b-bd81">
+                <profile name="Sword Brother" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f3b5-5e5a-f868-a356">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
@@ -1987,12 +2092,24 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                   </characteristics>
                 </profile>
               </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="2a81-6e9a-ec29-6383" type="selectionEntry" targetId="b3b-a615-f023-94ef">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="7c12-d3c1-6ede-2634" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="fdbc-20a1-0151-4810" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="9168-bd3e-9b75-3d10" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2ec-b16a-2cbf-3852"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03aa-3811-b5ee-97c5"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="423d-9446-4d50-a285"/>
-            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="8f3a-67df-d747-3b"/>
-          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -3609,17 +3726,22 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                       </characteristics>
                     </profile>
                   </profiles>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="c9e0-d731-3ad0-6efe" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
                   <infoLinks>
                     <infoLink name="Sustained Hits" id="3758-d26d-589a-396a" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
                   </infoLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="1cdf-797a-ef4d-beeb" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="881c-ac93-7c95-26ef" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="3dad-6cd2-8f03-79db" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Melee Weapon" hidden="false" id="4575-7f07-30f1-95bf" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Master-crafted Power Weapon" hidden="false" id="aa24-54c6-ee86-cc35">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="bea9-38c5-a114-4a56" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
                   <profiles>
                     <profile name="Master-crafted Power Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="b727-450b-187e-878b">
                       <characteristics>
@@ -3636,6 +3758,17 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                   <infoLinks>
                     <infoLink name="Lethal Hits" id="8459-8324-28d3-1638" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
                   </infoLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="5461-63f5-c4e4-25b5" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="197c-1a89-5240-eba7" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="e9d1-22a6-1c44-2857" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Melee Weapon" hidden="false" id="4147-743e-b985-fdc3" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -3646,14 +3779,24 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" id="ce2f-75d1-de96-3c26" type="selectionEntry" targetId="6945-7bd0-7fa0-8674">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="42f7-f3b7-2910-4a42" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="e8b4-07f9-2ba1-a8a1" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="4970-5b77-1d38-c1f9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="5c71-2775-10b6-76fb" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Combi-weapon" hidden="false" id="3651-3813-60cb-703b" type="selectionEntry" targetId="242a-5001-f4ff-cd49">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="8a63-53e4-8f34-f1e3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="b656-3dfa-f745-273d" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="842c-b121-f863-ffe8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="b02e-5818-3f35-8eba" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -3829,18 +3972,31 @@ You can attach this model to one of the above units even if one Captain or Chap
                   </characteristics>
                 </profile>
               </profiles>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="8609-bad4-d8ba-e9dd" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="bb41-493a-5691-b3f6" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="b12f-9168-579c-bafc" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="d90b-962c-4aaa-fd85" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="8df6-3158-72a5-809e" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup name="Ranged Weapon" id="c9cf-49ba-2389-88d2" hidden="false" defaultSelectionEntryId="9ffe-ab57-8e84-55aa">
               <entryLinks>
                 <entryLink import="true" name="Combi-weapon" hidden="false" id="6261-7afb-e272-28ce" type="selectionEntry" targetId="242a-5001-f4ff-cd49">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="4cb3-b7cf-3c79-5368" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="3467-c096-ff59-da41" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="9f1d-055a-0f20-3eb9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="d84e-789c-9276-9271" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -3877,9 +4033,17 @@ You can attach this model to one of the above units even if one Captain or Chap
                       </characteristics>
                     </profile>
                   </profiles>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="70f3-1543-8bc5-1a82" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="3254-92da-2aaa-5a31" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="10d2-1285-4941-57e7" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="7118-b74e-f1d4-9d27" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Ranged Weapon" hidden="false" id="a632-585e-c540-f6dc" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -3993,6 +4157,9 @@ You can attach this model to one of the above units even if one Captain or Chap
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink name="Ranged Weapon" hidden="false" id="9ac6-8414-83d2-df31" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy Bolt Pistol" hidden="false" id="6945-7bd0-7fa0-8674">
       <profiles>
@@ -4011,6 +4178,9 @@ You can attach this model to one of the above units even if one Captain or Chap
       <infoLinks>
         <infoLink name="Pistol" id="5dfd-9fda-a3ab-04e8" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Ranged Weapon" hidden="false" id="0b8d-90fc-7770-4b9a" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Execrator" hidden="false" id="ea3d-f2b8-cce7-0762">
       <profiles>
@@ -4108,9 +4278,17 @@ You can attach this model to one of the above units even if one Captain or Chap
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee9b-2502-96c2-1089" includeChildSelections="false"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="889b-aa00-2732-5cce" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="4215-b696-1c44-a55b" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="8ab5-e8a5-46ef-0ccd" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="db53-cfed-62d3-c41e" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="3588-57e7-5773-4eaa" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -4119,23 +4297,38 @@ You can attach this model to one of the above units even if one Captain or Chap
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58b7-0d0d-134a-b317-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="58b7-0d0d-134a-b317-max" includeChildSelections="false"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="b8cb-ca85-8fa9-600a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="ee41-1c0a-fe8c-59cb" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="c082-8770-044a-0f9f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="2293-aa94-0f1b-a115" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Pistol" id="9b3f-80d8-ad90-5990" hidden="false" defaultSelectionEntryId="9a2e-2565-fdc4-4e81">
               <entryLinks>
                 <entryLink import="true" name="Pyre Pistol" hidden="false" id="cfe3-a0ee-85c3-cff5" type="selectionEntry" targetId="bb21-4114-6b0c-634d">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="155c-fdc7-edb6-9857" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="e46c-c05f-a15d-5654" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="fb16-0a36-7f9a-87ce" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="647a-b475-d2a9-f31e" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Absolver Bolt Pistol" hidden="false" id="9a2e-2565-fdc4-4e81" type="selectionEntry" targetId="a490-361-c9c4-afeb">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="29d1-4c25-f1dc-deea" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="c82e-74aa-f66f-3644" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="758c-14d2-1925-38c5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="cb87-7657-b8b7-c3aa" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -4329,9 +4522,14 @@ You can attach this model to one of the above units even if one Captain, Chapter
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb45-3397-faae-d938-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb45-3397-faae-d938-max" includeChildSelections="false"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="41d4-bff2-865d-3150" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="7efc-8faa-841d-c297" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="9145-c7bd-fc3b-af6f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="9252-9fc0-7ce0-9044" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </entryLink>
           </entryLinks>
           <selectionEntries>
@@ -4353,12 +4551,20 @@ You can attach this model to one of the above units even if one Captain, Chapter
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="209c-52f6-84c5-32ce-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="209c-52f6-84c5-32ce-max" includeChildSelections="false"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="43f0-eaef-e75b-361b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
               <infoLinks>
                 <infoLink name="Lethal Hits" id="c928-ea07-966c-ccb3" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
               </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="a690-b6f2-ee98-7dcb" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="0c03-58da-ae5b-d9de" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="ec2d-83ea-246d-e45c" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="8eef-dbf4-c297-497c" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4598,75 +4804,6 @@ You can attach this model to one of the above units even if one Captain, Chapter
               <constraints>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="c9fa-607b-ffce-8762"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Sternguard Bolt Pistol" hidden="false" id="4294-d27e-31d1-6ee3" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="42bc-ef71-f409-c3bf"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db88-3d75-e539-e743"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Devastating Wounds" id="a436-9dba-a3b4-4fa7" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
-                    <infoLink name="Pistol" id="9648-df77-cb28-ff95" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
-                  </infoLinks>
-                  <profiles>
-                    <profile name="Sternguard Bolt Pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e744-bbc8-1f7f-8ebe">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Pistol</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Sternguard Bolt Rifle" hidden="false" id="0d5a-75ef-7bbd-4c26" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9aa0-8b87-66f7-de8f"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="524b-8d4a-9a59-1c17"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Sternguard Bolt Rifle" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="579f-298e-5a4b-82b8">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Devastating Wounds, Heavy, Rapid Fire 1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Assault" id="f595-4f24-f084-7e9a" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
-                    <infoLink name="Devastating Wounds" id="ca4e-065c-6816-3d50" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
-                    <infoLink name="Rapid Fire" id="18ca-6a91-1761-b30f" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
-                    <infoLink name="Heavy" id="bda4-63ff-9991-7400" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Close Combat Weapon" hidden="false" id="4f1b-3679-3188-af56" collective="true">
-                  <profiles>
-                    <profile name="Close Combat Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="84d7-008b-bf42-959a">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f69-f8ad-23fc-2d8e"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f92-28ad-b01b-bd1d"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
               <profiles>
                 <profile name="Sternguard Veteran Squad" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a834-e48d-9398-844a">
                   <characteristics>
@@ -4679,6 +4816,21 @@ You can attach this model to one of the above units even if one Captain, Chapter
                   </characteristics>
                 </profile>
               </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Sternguard Bolt Pistol" hidden="false" id="79f9-c501-a07f-10fa" type="selectionEntry" targetId="4f36-2df5-903a-5541"/>
+                <entryLink import="true" name="Sternguard Bolt Rifle" hidden="false" id="0277-8830-6dd4-f156" type="selectionEntry" targetId="874a-4375-dbc3-b412">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9aa0-8b87-66f7-de8f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="524b-8d4a-9a59-1c17"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="e6f4-2a5c-e1f8-e79c" type="selectionEntry" targetId="db5b-fe94-e50c-4f4b">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f69-f8ad-23fc-2d8e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f92-28ad-b01b-bd1d"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Sternguard Veteran Sergeant" hidden="false" id="17d3-c73e-ed8b-f5b0">
               <constraints>
@@ -4687,20 +4839,30 @@ You can attach this model to one of the above units even if one Captain, Chapter
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Sternguard Bolt Pistol" hidden="false" id="0619-f0f7-b87b-305b" type="selectionEntry" targetId="4f36-2df5-903a-5541">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="c686-6841-599a-0e89" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="e744-7540-4566-404a" type="selectionEntry" targetId="65fb-f320-3884-492e">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80a7-e63a-e01a-95c4"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22bb-68d8-2fe3-0540"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="61b5-c2ae-75c6-58b1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="75f7-aa4a-972a-779d" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="4a5a-9a19-06be-1764" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="808e-578b-0320-a3c4" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="31eb-e594-4638-7574" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="baa8-cf6a-3834-e6aa" type="selectionEntry" targetId="db5b-fe94-e50c-4f4b">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4387-d95d-19bc-2ee0"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa95-59c9-fd3a-0f9a"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="431f-e99e-640e-bd30" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="5709-dc22-a373-921b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="5c6e-4a69-8684-6228" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </entryLink>
               </entryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Option" id="8947-fba3-8407-b5f2" hidden="false" defaultSelectionEntryId="816a-5359-89d4-ab0d">
@@ -4708,37 +4870,26 @@ You can attach this model to one of the above units even if one Captain, Chapter
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5012-a450-f3a2-5afa"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed46-f15b-08c5-c51e"/>
                   </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Sternguard Bolt Rifle" hidden="false" id="0f00-9bc8-21a2-cb71" collective="false">
-                      <profiles>
-                        <profile name="Sternguard Bolt Rifle" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8efd-cdc9-32ba-54f9">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Devastating Wounds, Heavy, Rapid Fire 1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Assault" id="e741-5a09-de78-3c63" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
-                        <infoLink name="Devastating Wounds" id="a4c3-d649-ee08-266d" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
-                        <infoLink name="Rapid Fire" id="09dc-ed53-d26a-b3e0" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
-                        <infoLink name="Heavy" id="1d47-d74c-0422-5515" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
-                      </infoLinks>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="b2d3-c249-97f7-e9fa" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </selectionEntry>
-                  </selectionEntries>
                   <entryLinks>
                     <entryLink import="true" name="Combi-weapon" hidden="false" id="03c1-ac9c-5ad0-abff" type="selectionEntry" targetId="2c13-8cdd-f66b-bcae">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="cef5-4370-11f5-7acd" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="8dd0-dd47-a7e9-b40a" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="4271-d3de-b823-51e5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="a4a5-090d-0980-9415" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </entryLink>
+                    <entryLink import="true" name="Sternguard Bolt Rifle" hidden="false" id="c2ed-611e-50b1-cf08" type="selectionEntry" targetId="874a-4375-dbc3-b412">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="c6ea-9a26-509b-86c6" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="38c7-3be2-660d-43dc" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="9a82-765b-a9fe-5612" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -4758,9 +4909,14 @@ You can attach this model to one of the above units even if one Captain, Chapter
                           </characteristics>
                         </profile>
                       </profiles>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="5d98-36a1-6142-0b81" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="d669-c7f3-a7ee-084f" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="cf28-860e-f6cb-2acc" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="9ac7-8144-1dd8-fb0a" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="af8f-6ea0-dad2-4fbf">
                       <profiles>
@@ -4776,9 +4932,17 @@ You can attach this model to one of the above units even if one Captain, Chapter
                           </characteristics>
                         </profile>
                       </profiles>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="a9cc-76d1-dbbc-6f9b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="c83c-0265-83b2-934c" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="d52b-1bd9-8ede-20c5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="06d4-ee7b-84c2-1ee6" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <categoryLinks>
+                        <categoryLink name="Power Weapon" hidden="false" id="f2cf-c499-187f-55ef" targetId="72a2-ff76-451c-9d12" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Power Fist" hidden="false" id="d964-7381-f774-d389">
                       <profiles>
@@ -4794,9 +4958,17 @@ You can attach this model to one of the above units even if one Captain, Chapter
                           </characteristics>
                         </profile>
                       </profiles>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="231c-1152-56a1-8653" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Power Fist Weapon" hidden="false" id="9e3c-79fa-7ea5-c9a8" targetId="0241-18a2-8ea4-2341" primary="false"/>
+                      </categoryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="815f-ffbb-4090-b84c" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="1b3c-4e90-476e-2d3d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="ece4-2530-c058-5fa7" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>
@@ -4826,8 +4998,13 @@ You can attach this model to one of the above units even if one Captain, Chapter
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Sternguard Veteran w/ Special Weapon" hidden="false" id="4ea5-5b69-8543-9af3">
               <entryLinks>
-                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="e95d-c2f5-691f-d848" type="selectionEntry" targetId="65fb-f320-3884-492e"/>
                 <entryLink import="true" name="Sternguard Bolt Pistol" hidden="false" id="ad0f-0f24-cdaa-5201" type="selectionEntry" targetId="4f36-2df5-903a-5541"/>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="d4ff-67fd-69bb-4467" type="selectionEntry" targetId="db5b-fe94-e50c-4f4b">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b0f2-dbf6-52d4-e2dd"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f145-62cd-3cac-ec6f"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93c7-829d-82f9-7e29"/>
@@ -4845,47 +5022,10 @@ You can attach this model to one of the above units even if one Captain, Chapter
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6736-ae28-d6ca-8c9b"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b80-eba9-52ca-0cd4"/>
                   </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Sternguard Heavy Bolter" hidden="false" id="823a-6676-b806-7e3a">
-                      <profiles>
-                        <profile name="Sternguard Heavy Bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6c21-3630-8334-cf15">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Heavy, Sustained Hits 1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Heavy" id="1711-9dd1-eb44-a500" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
-                        <infoLink name="Sustained Hits" id="3674-c009-2535-1bde" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
-                        <infoLink name="Devastating Wounds" id="db0f-50ea-fe3e-4dd4" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Pyrecannon" hidden="false" id="d33e-1ec7-7e4e-d63e">
-                      <infoLinks>
-                        <infoLink name="Ignores Cover" id="4649-26d1-fe26-1123" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
-                        <infoLink name="Torrent" id="74b3-1cd5-e633-8ce4" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
-                      </infoLinks>
-                      <profiles>
-                        <profile name="Pyrecannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f353-6cd9-1ac9-a926">
-                          <characteristics>
-                            <characteristic name="Range" id="cc0a-c9ea-1739-b794" hidden="false" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                            <characteristic name="A" id="57ec-ce57-331b-e69d" hidden="false" typeId="3bb-c35f-f54-fb08">D6+1</characteristic>
-                            <characteristic name="BS" id="6cb2-41dd-468b-1700" hidden="false" typeId="94d-8a98-cf90-183e">N/A</characteristic>
-                            <characteristic name="S" id="a656-d803-2866-4f4c" hidden="false" typeId="2229-f494-25db-c5d3">6</characteristic>
-                            <characteristic name="AP" id="350c-c779-8fc2-cca2" hidden="false" typeId="9ead-8a10-520-de15">-1</characteristic>
-                            <characteristic name="D" id="9609-37eb-c46b-425e" hidden="false" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                            <characteristic name="Keywords" id="495b-c153-0780-dcb8" hidden="false" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="Pyrecannon" hidden="false" id="7e09-b7fb-14d7-4217" type="selectionEntry" targetId="a5e9-6435-6e86-d339"/>
+                    <entryLink import="true" name="Sternguard Heavy Bolter" hidden="false" id="4b0a-8837-1c88-fb00" type="selectionEntry" targetId="a418-befd-3e1b-87be"/>
+                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <profiles>
@@ -4907,11 +5047,16 @@ You can attach this model to one of the above units even if one Captain, Chapter
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Sternguard Bolt Pistol" hidden="false" id="2d34-4deb-8b50-4ab2" type="selectionEntry" targetId="4f36-2df5-903a-5541"/>
-                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="5036-dc9b-cd14-6adc" type="selectionEntry" targetId="65fb-f320-3884-492e"/>
                 <entryLink import="true" name="Combi-weapon" hidden="false" id="ab34-b26e-d4f8-a98c" type="selectionEntry" targetId="2c13-8cdd-f66b-bcae">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e61-cb5e-5183-f4a6"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ef2-e8a3-8c81-9d1e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="b019-6735-f401-21c0" type="selectionEntry" targetId="db5b-fe94-e50c-4f4b">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="982f-6684-66f7-0ea6"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9fab-c894-5bed-e245"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -5085,9 +5230,14 @@ You can attach this model to one of the above units even if one Captain, Chapter
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7cd5-76ac-1d3b-c388"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f08a-72ed-e0db-6602"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="771a-3858-5a4f-3448" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="d34b-fb9e-5c2b-770c" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="1c53-8350-15d8-6352" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="2ea8-f93a-78ec-88da" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="911d-87b9-85dd-09cd" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
               </entryLinks>
@@ -5099,19 +5249,34 @@ You can attach this model to one of the above units even if one Captain, Chapter
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Power Weapon" hidden="false" id="311f-7705-8fa8-197a" type="selectionEntry" targetId="50dd-3e76-d993-4d1a">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="e586-0f7f-4c45-4158" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="a162-5e0c-c78f-22f6" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="fe3b-77de-cfee-9d6f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="c089-be49-f61e-a27b" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
                     <entryLink import="true" name="Chainfist" hidden="false" id="c6e3-a8fc-97c2-5473" type="selectionEntry" targetId="5a2-c6a5-9b4b-605f">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="2b6a-7f7b-595a-70d0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="ad2b-56c4-8df1-c77f" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="4348-44b3-b1b9-3cd0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="c523-3892-2cef-83ba" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
                     <entryLink import="true" name="Power Fist" hidden="false" id="15b0-80fe-519a-b956" type="selectionEntry" targetId="f8d8-7e77-4b71-faac">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="404c-8277-d9f1-0896" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="94ee-1b5c-4d10-d85a" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="1a03-fa16-fc4d-c786" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="3d0c-709f-e386-f1c5" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -5389,7 +5554,6 @@ You can attach this model to one of the above units even if one Captain, Chapter
     <categoryEntry name="Primaris Crusader Squad" hidden="false" id="fd20-61a5-ca24-e3ee"/>
     <categoryEntry name="Primaris Sword Brethren" hidden="false" id="698d-99fc-408b-91ec"/>
     <categoryEntry name="Emperor&apos;s Champion" hidden="false" id="1ba5-20a1-4dd6-9a4f"/>
-    <categoryEntry name="Crusader Squad" hidden="false" id="9e2c-48af-8c2b-ea68"/>
     <categoryEntry name="Castellan" hidden="false" id="c9ce-476b-65bd-4e81"/>
     <categoryEntry name="Marshal" hidden="false" id="2f85-11ec-263f-b1dc"/>
     <categoryEntry name="Execrator" id="746a-82bd-5c0a-634e" hidden="false"/>
