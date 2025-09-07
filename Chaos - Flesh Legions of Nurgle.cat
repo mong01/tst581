@@ -2362,7 +2362,44 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Ranged weapons" id="f350-e5ef-7841-4b2a" hidden="false" collective="false" import="true" defaultSelectionEntryId="a76c-842b-30ac-c81e"/>
+            <selectionEntryGroup name="Ranged weapons" id="f350-e5ef-7841-4b2a" hidden="false" collective="false" import="true" defaultSelectionEntryId="327d-ae48-7c32-9049">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d1cd-4e31-1aca-fdb7" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b2e-9272-1264-76f9" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Autocannon" hidden="false" id="e682-ce37-7849-4827" type="selectionEntry" targetId="385e-25d8-b6f2-8e3d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f9d-3c25-a6bf-486a" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="cf7d-b583-f418-bdae" type="selectionEntry" targetId="1b28-bc93-aa3d-4b15">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38a0-b1a3-de1a-da67" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lascannon" hidden="false" id="8f17-69af-399e-14f8" type="selectionEntry" targetId="5ac5-9917-fa98-dd54">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="490b-4a46-8204-7da9" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Missile launcher" hidden="false" id="6ffa-bccf-2e2b-f937" type="selectionEntry" targetId="3393-5e37-fa06-9ce2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87e3-01ea-62d4-d66b" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Multi-laser" hidden="false" id="327d-ae48-7c32-9049" type="selectionEntry" targetId="88b4-0376-30fb-75eb">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bb1-5b61-cad0-d365" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Plasma cannon" hidden="false" id="8de9-5f7f-0429-3161" type="selectionEntry" targetId="718f-7f95-dcba-2987">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efda-8d93-df4b-b1a3" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
             <selectionEntryGroup name="Melee weapons" id="54ef-dc22-2c12-150a" hidden="false" defaultSelectionEntryId="e6d2-0c94-03f0-e7af">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Sentinel chainsaw" hidden="false" id="e6d2-0c94-03f0-e7af" collective="false">
@@ -2418,8 +2455,11 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="d94d-61ee-19a2-ca2e" type="selectionEntry" targetId="b211-bb18-568f-b4b9"/>
+          </entryLinks>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
             <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -2427,7 +2467,140 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="965e-f947-1240-7979" collective="false">
+          <profiles>
+            <profile name="Autocannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="003c-8dae-58d8-767c">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="385e-25d8-b6f2-8e3d" collective="false">
+      <profiles>
+        <profile name="Autocannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="04bb-1e54-6cc8-5d78">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hunter-killer missile" hidden="false" id="b211-bb18-568f-b4b9" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5493-042e-eacb-6f27" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Hunter-killer missile" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="932a-c9b6-ac67-9548">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">One Shot</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="One Shot" id="86b1-2eb2-f0b0-2e5b" hidden="false" targetId="cd26-1611-860a-91e4" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy flamer" hidden="false" id="1b28-bc93-aa3d-4b15" collective="false">
+      <profiles>
+        <profile name="Heavy flamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5570-78f5-0799-8d4f">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ignores Cover" id="48f1-714b-7bbe-8273" hidden="false" targetId="4640-43e7-30b-215a" type="rule"/>
+        <infoLink name="Torrent" id="4262-6418-46a5-8776" hidden="false" targetId="5edf-d619-23e0-9b56" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Multi-laser" hidden="false" id="88b4-0376-30fb-75eb" collective="false">
+      <profiles>
+        <profile name="Multi-laser" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="bb95-de5c-2e45-d326">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Plasma cannon" hidden="false" id="718f-7f95-dcba-2987" collective="false">
+      <profiles>
+        <profile name="➤ Plasma cannon - standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="370c-a8c5-ccb3-f340">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ Plasma cannon - supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0ad3-2f53-fa34-086b">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Hazardous</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="35b9-9098-910b-d433" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
+        <infoLink name="Hazardous" id="0588-a390-178e-db88" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
