@@ -2361,51 +2361,6 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
               </characteristics>
             </profile>
           </profiles>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Sentinel chainsaw" hidden="false" id="ad4e-6a33-7264-69f6" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="515a-cb3c-14a2-b75d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Sentinel chainsaw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="355c-4b75-f06a-edf3">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="4f47-8af8-85f2-833c" collective="false">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38b1-7c12-256f-9415" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5999-f7e7-c001-9adb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4e70-00b1-0650-baaa">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup name="Ranged weapons" id="f350-e5ef-7841-4b2a" hidden="false" collective="false" import="true" defaultSelectionEntryId="a76c-842b-30ac-c81e"/>
             <selectionEntryGroup name="Melee weapons" id="54ef-dc22-2c12-150a" hidden="false" defaultSelectionEntryId="e6d2-0c94-03f0-e7af">
