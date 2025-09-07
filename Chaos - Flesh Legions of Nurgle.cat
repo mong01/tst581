@@ -2333,6 +2333,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <modifier type="append" value="1" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Endless Cycle" id="16aa-5a8b-7b29-f611" hidden="false" targetId="46d6-81a2-7652-bc0c" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Smoke" hidden="false" id="ffb4-cfdb-f24f-2c6e" targetId="6df-937-16bc-8c1a" primary="false"/>
@@ -2400,7 +2401,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Melee weapons" id="54ef-dc22-2c12-150a" hidden="false" defaultSelectionEntryId="e6d2-0c94-03f0-e7af">
+            <selectionEntryGroup name="Melee weapons" id="54ef-dc22-2c12-150a" hidden="false" defaultSelectionEntryId="e6d2-0c94-03f0-e7af" collapsible="true">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Sentinel chainsaw" hidden="false" id="e6d2-0c94-03f0-e7af" collective="false">
                   <constraints>
@@ -2465,24 +2466,6 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
             <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="965e-f947-1240-7979" collective="false">
-          <profiles>
-            <profile name="Autocannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="003c-8dae-58d8-767c">
-              <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
