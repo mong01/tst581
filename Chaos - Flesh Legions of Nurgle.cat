@@ -15,6 +15,7 @@
     <categoryEntry name="Pox Hounds" id="f94f-e7f5-3e0a-d814" hidden="false"/>
     <categoryEntry name="Scabs" id="1b82-8ca6-49dc-dcb8" hidden="false"/>
     <categoryEntry name="Outrider Cultists" id="5c77-1ad6-f768-39e8" hidden="false"/>
+    <categoryEntry name="Armoured Sentinels" id="6d38-f930-4aa8-da8c" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Endless Cycle" id="46d6-81a2-7652-bc0c" hidden="false">
@@ -2318,6 +2319,164 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Armoured Sentinels" hidden="false" id="d0e3-b0bd-5137-7fc3" collective="false">
+      <profiles>
+        <profile name="Reckless Assault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="71da-a662-7cb9-b0b5">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit makes a Charge move, until the end of the turn, add 2 to the Attacks characteristic of melee weapons equipped by models in this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deadly Demise" id="7ed4-b4c5-c776-52de" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Smoke" hidden="false" id="ffb4-cfdb-f24f-2c6e" targetId="6df-937-16bc-8c1a" primary="false"/>
+        <categoryLink name="Vehicle" hidden="false" id="f59b-ab14-f348-546e" targetId="dbd4-63-af05-998" primary="true"/>
+        <categoryLink name="Walker" hidden="false" id="c009-38c2-3e3c-f699" targetId="6dda-e157-334d-e93a" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="6d73-8d48-17bc-f147" targetId="4c00-2578-faf5-6918" primary="false"/>
+        <categoryLink name="Nurgle" hidden="false" id="0f3e-616d-5554-c0b7" targetId="ed0d-8e2a-225c-2340" primary="false"/>
+        <categoryLink targetId="6d38-f930-4aa8-da8c" id="426c-0410-6cc6-386a" primary="false" name="Armoured Sentinels"/>
+        <categoryLink targetId="bbcc-67e6-68a9-1676" id="933c-ed8e-58e5-cf2b" primary="false" name="Faction: Nurgleth Followers"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Armoured Sentinel" hidden="false" id="7524-af5b-9e96-61f2" collective="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="49d7-d2ea-b83e-80b3" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0617-0176-81eb-2bb9" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Armoured Sentinels" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9250-7fc7-ee51-0faf">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">7</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sentinel chainsaw" hidden="false" id="ad4e-6a33-7264-69f6" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="515a-cb3c-14a2-b75d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Sentinel chainsaw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="355c-4b75-f06a-edf3">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="4f47-8af8-85f2-833c" collective="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38b1-7c12-256f-9415" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5999-f7e7-c001-9adb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4e70-00b1-0650-baaa">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Ranged weapons" id="f350-e5ef-7841-4b2a" hidden="false" collective="false" import="true" defaultSelectionEntryId="a76c-842b-30ac-c81e"/>
+            <selectionEntryGroup name="Melee weapons" id="54ef-dc22-2c12-150a" hidden="false" defaultSelectionEntryId="e6d2-0c94-03f0-e7af">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Sentinel chainsaw" hidden="false" id="e6d2-0c94-03f0-e7af" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdf0-f24b-d0a5-c7b5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Sentinel chainsaw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8f08-0d5b-a872-c118">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lance</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Lance" id="6adf-f93a-4ec7-5599" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Charge lance" hidden="false" id="3294-f15e-6067-15ea">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="942c-a0b1-3d78-3fb3" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Charge lance" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3f9e-9388-9541-9030">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-4</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">D6+2</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Hazardous, Lance</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Hazardous" id="d78b-1c46-9227-7fff" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
+                    <infoLink name="Lance" id="7ef9-47e6-87fa-d4bb" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ef3-d3b2-b007-11f5-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ef3-d3b2-b007-11f5-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Cultists of Nurgle" hidden="false" id="4844-eb67-6f3f-9a4f" type="selectionEntry" targetId="ba90-681f-5432-d56d"/>
@@ -2331,6 +2490,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
     <entryLink import="true" name="Pox Hounds" hidden="false" id="1502-52bb-0f46-44ee" targetId="252d-75d0-b6a4-6dca" type="selectionEntry"/>
     <entryLink import="true" name="Scabs" hidden="false" id="1ec7-d9a0-cd61-2117" targetId="773b-1c23-def9-27a1" type="selectionEntry"/>
     <entryLink import="true" name="Outrider Cultists" hidden="false" id="151c-ab4a-8209-0ffd" targetId="b403-7c9b-5900-582a" type="selectionEntry"/>
+    <entryLink import="true" name="Armoured Sentinels" hidden="false" id="c68d-91f7-166f-8206" targetId="d0e3-b0bd-5137-7fc3" type="selectionEntry"/>
   </entryLinks>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="[Reference] FAQ" hidden="false" id="8369-6c23-301a-012b">
