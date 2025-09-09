@@ -2357,7 +2357,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         <categoryLink targetId="bbcc-67e6-68a9-1676" id="933c-ed8e-58e5-cf2b" primary="false" name="Faction: Nurgleth Followers"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Armoured Sentinel" hidden="false" id="7524-af5b-9e96-61f2" collective="false" defaultAmount="">
+        <selectionEntry type="model" import="true" name="Armoured Sentinel" hidden="false" id="7524-af5b-9e96-61f2" collective="false">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="49d7-d2ea-b83e-80b3" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0617-0176-81eb-2bb9" includeChildSelections="false"/>
@@ -2472,6 +2472,9 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="85cd-9fcf-3818-e31f" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="385e-25d8-b6f2-8e3d" collective="false">
       <profiles>
@@ -2626,7 +2629,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         <categoryLink name="Chaos" hidden="false" id="1b1a-5b28-751a-e7ce" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink name="Nurgle" hidden="false" id="c464-ec5c-4898-b1cc" targetId="ed0d-8e2a-225c-2340" primary="false"/>
         <categoryLink name="Faction: Nurgleth Followers" hidden="false" id="3f67-336d-86ee-2dd3" targetId="bbcc-67e6-68a9-1676" primary="false"/>
-        <categoryLink targetId="dc6e-8f6f-c79d-4098" id="88c6-6a29-507d-9410" primary="false" name="Scout Sentiniels"/>
+        <categoryLink targetId="dc6e-8f6f-c79d-4098" id="88c6-6a29-507d-9410" primary="false" name="Scout Sentinels"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Scout Sentinel" hidden="false" id="4b99-b9b3-515c-c859" collective="false">
@@ -2716,6 +2719,9 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="834d-f5c2-4818-f549" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Giant Chaos Spawn" hidden="false" id="888b-3512-41cf-6413">
       <categoryLinks>
@@ -2783,6 +2789,9 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="3af6-916c-c3a5-6217" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -2798,7 +2807,8 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
     <entryLink import="true" name="Scabs" hidden="false" id="1ec7-d9a0-cd61-2117" targetId="773b-1c23-def9-27a1" type="selectionEntry"/>
     <entryLink import="true" name="Outrider Cultists" hidden="false" id="151c-ab4a-8209-0ffd" targetId="b403-7c9b-5900-582a" type="selectionEntry"/>
     <entryLink import="true" name="Armoured Sentinels" hidden="false" id="c68d-91f7-166f-8206" targetId="d0e3-b0bd-5137-7fc3" type="selectionEntry"/>
-    <entryLink import="true" name="Armoured Sentinels" hidden="false" id="54d2-c5a6-3131-6ccf" targetId="5c2b-f366-e510-cddc" type="selectionEntry"/>
+    <entryLink import="true" name="Scout Sentinels" hidden="false" id="54d2-c5a6-3131-6ccf" targetId="5c2b-f366-e510-cddc" type="selectionEntry"/>
+    <entryLink import="true" name="Giant Chaos Spawn" hidden="false" id="8dbf-bf7c-b699-310e" targetId="888b-3512-41cf-6413" type="selectionEntry"/>
   </entryLinks>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="[Reference] FAQ" hidden="false" id="8369-6c23-301a-012b">
