@@ -3410,7 +3410,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
     <selectionEntry type="upgrade" import="true" name="Apostate Shepherd" hidden="false" id="c16d-4944-da25-cb06">
       <categoryLinks>
         <categoryLink targetId="bf9b-85db-8e14-7334" id="f819-c0a9-54a7-8989" primary="false" name="Apostate Shepherd"/>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="5e8d-7a17-47e6-41a3" primary="false" name="Character"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="5e8d-7a17-47e6-41a3" primary="true" name="Character"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="4057-1563-54a4-372d" primary="false" name="Infantry"/>
         <categoryLink targetId="ed0d-8e2a-225c-2340" id="ea59-7736-43a6-0c6e" primary="false" name="Nurgle"/>
         <categoryLink targetId="bbcc-67e6-68a9-1676" id="5d03-b205-5a59-a6e6" primary="false" name="Faction: Nurgleth Followers"/>
