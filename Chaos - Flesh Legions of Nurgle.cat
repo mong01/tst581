@@ -3056,6 +3056,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
     <entryLink import="true" name="Armoured Sentinels" hidden="false" id="c68d-91f7-166f-8206" targetId="d0e3-b0bd-5137-7fc3" type="selectionEntry"/>
     <entryLink import="true" name="Scout Sentinels" hidden="false" id="54d2-c5a6-3131-6ccf" targetId="5c2b-f366-e510-cddc" type="selectionEntry"/>
     <entryLink import="true" name="Giant Chaos Spawn" hidden="false" id="8dbf-bf7c-b699-310e" targetId="888b-3512-41cf-6413" type="selectionEntry"/>
+    <entryLink import="true" name="Leman Russ Blightcaster" hidden="false" id="6b15-a482-4f64-3e77" targetId="2dc9-bf81-8d7c-d7cf" type="selectionEntry"/>
   </entryLinks>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="[Reference] FAQ" hidden="false" id="8369-6c23-301a-012b">
