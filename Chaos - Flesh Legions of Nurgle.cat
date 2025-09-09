@@ -3272,16 +3272,16 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf1e-c216-b1bb-e493" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Havoc launcher" hidden="false" id="7cdc-8228-98ae-f31a" collective="false" targetId="f541-b3ff-2034-1210" type="selectionEntry">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f9ae-c589-61c5-93f8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e42-f1c0-c0eb-05a9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Lascannon" hidden="false" id="284b-7f98-9cd2-0f8e" type="selectionEntry" targetId="5ac5-9917-fa98-dd54">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c8dd-4d67-7c56-19d7" includeChildSelections="false"/>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3a04-6212-3482-e2d7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Heavy stubber" hidden="false" id="c14f-1e6e-f314-3e10" type="selectionEntry" targetId="cfeb-352a-dd5d-c9db">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8b2-f72a-030a-0a48" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d5c-9f51-691a-d51e" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
