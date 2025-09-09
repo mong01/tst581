@@ -18,6 +18,7 @@
     <categoryEntry name="Armoured Sentinels" id="6d38-f930-4aa8-da8c" hidden="false"/>
     <categoryEntry name="Scout Sentinels" id="dc6e-8f6f-c79d-4098" hidden="false"/>
     <categoryEntry name="Giant Chaos Spawn" id="c43d-b686-2c76-e08d" hidden="false"/>
+    <categoryEntry name="Leman Russ  Blightcaster" id="3ab8-62fc-77ad-9940" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Endless Cycle" id="46d6-81a2-7652-bc0c" hidden="false">
@@ -1553,7 +1554,12 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Pox Hounds" hidden="false" id="252d-75d0-b6a4-6dca" collective="false">
@@ -2759,6 +2765,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <modifier type="append" value="5+" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Endless Cycle" id="0663-8566-5911-6a2f" hidden="false" targetId="46d6-81a2-7652-bc0c" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Grotesque mutations" hidden="false" id="7c42-a03d-b818-f5a0">
@@ -2782,7 +2789,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="125"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -2792,6 +2799,246 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="3af6-916c-c3a5-6217" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Armoured tracks" hidden="false" id="06e2-2131-d682-5300">
+      <profiles>
+        <profile name="Armoured tracks" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1b84-b7fe-c9a7-754f">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Leman Russ Blightcaster" hidden="false" id="2dc9-bf81-8d7c-d7cf" collective="false">
+      <profiles>
+        <profile name="Acidic Erosion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e4d5-499a-e842-b168">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks made with its bileblast cannon. Until the end of the phase, each time a friendly NURGLETH FOLLOWERS unit makes an attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Leman Russ Blightcaster" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a1a2-ca55-2c76-feca">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">11</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">13</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Damaged: 1-4 Wounds Remaining" id="f16d-b1de-3b1f-c871" hidden="false" targetId="695e-97e0-6c20-06ff" type="profile"/>
+        <infoLink name="Deadly Demise" id="331c-eec7-97c0-6944" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
+          <modifiers>
+            <modifier type="append" value="D3" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Endless Cycle" id="e6fa-0520-8841-7165" hidden="false" targetId="46d6-81a2-7652-bc0c" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="a7d3-7812-6523-d1e0" targetId="dbd4-63-af05-998" primary="true"/>
+        <categoryLink name="Smoke" hidden="false" id="5162-7075-e9b1-6b13" targetId="6df-937-16bc-8c1a" primary="false"/>
+        <categoryLink name="Nurgle" hidden="false" id="c783-9f87-ac3d-d5d5" targetId="ed0d-8e2a-225c-2340" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="ea1f-5427-1afa-4583" targetId="4c00-2578-faf5-6918" primary="false"/>
+        <categoryLink targetId="bbcc-67e6-68a9-1676" id="0ccb-8e4a-dec2-b206" primary="false" name="Faction: Nurgleth Followers"/>
+        <categoryLink targetId="3ab8-62fc-77ad-9940" id="505c-3102-11eb-6373" primary="false" name="Leman Russ  Blightcaster"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bileblast cannon" hidden="false" id="13f7-28c8-0c49-83bf" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d57-90f0-f1d3-6335" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d58-b6d3-6135-b77f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Bileblast cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1be7-0962-0f44-3ce6">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Lethal Hits</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Blast" id="7f35-31fe-7f6f-57b3" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
+            <infoLink name="Lethal Hits" id="eb0e-fcbd-3d79-1e31" hidden="false" targetId="d1d1-611e-5191-1095" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="5e8e-7878-a6db-f91a" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull options" id="05d1-f978-9325-064e" hidden="false" collective="false" import="true" defaultSelectionEntryId="bd36-06ab-489f-b9f7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="046d-d819-fb28-8f3b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db04-31de-3834-7553" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Lascannon" hidden="false" id="b2f3-2a77-a2f4-6d4c" collective="false" targetId="5ac5-9917-fa98-dd54" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77d5-31d0-3869-aa9b" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="30c3-9f54-4259-c60b" collective="false" targetId="1b28-bc93-aa3d-4b15" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e97-e446-fb77-fcbf" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="08b4-ca8c-8f13-ae46" collective="false" targetId="25c7-82bc-5102-6ce1" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24a3-17bf-b62d-9790" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Pintle options" id="ce05-8207-36d4-0bd2" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac37-66fd-1b46-41ef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Storm bolter" hidden="false" id="ac56-da9b-a2b0-1420" collective="false" targetId="e33e-476b-6484-0636" type="selectionEntry"/>
+                <entryLink import="true" name="Heavy stubber" hidden="false" id="2004-63d5-7d80-3e9c" collective="false" targetId="cfeb-352a-dd5d-c9db" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Sponson options" id="19ff-ba7d-3505-8c69" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="978d-d5af-43b8-82b1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="2x Heavy bolter" hidden="false" id="ad72-9622-ac15-c727" collective="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Heavy bolter" hidden="false" id="bf44-3b36-99d2-e1c1" collective="false" targetId="25c7-82bc-5102-6ce1" type="selectionEntry">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2318-5e77-0215-496f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="79c4-1988-8250-f7c8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c91-aa59-0088-2155" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="2x Heavy flamer" hidden="false" id="043b-b346-9609-af8f" collective="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Heavy flamer" hidden="false" id="129d-bc48-bafa-d692" collective="false" targetId="1b28-bc93-aa3d-4b15" type="selectionEntry">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5369-8471-5a3f-15c7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3a5e-d88c-50e6-cb7e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ce1-2bf1-da1c-5ac9" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="2x Multi-melta" hidden="false" id="c8b5-9b64-eb94-f866" collective="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Multi-melta" hidden="false" id="99a3-296e-1e1d-36b2" collective="false" targetId="bc99-4831-9522-2fdf" type="selectionEntry">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d907-8f50-5d6d-6d6c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="724a-c81f-bc8e-6df3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aef5-e202-a3ed-955a" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="2x Plasma cannon" hidden="false" id="bc98-f108-be34-802b" collective="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Plasma cannon" hidden="false" id="605e-6f2c-e53b-dfd6" collective="false" targetId="718f-7f95-dcba-2987" type="selectionEntry">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="245d-4732-9c1f-9906" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7d98-c82a-5666-7129" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e0d-b6ba-0f14-f579" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Armoured tracks" hidden="false" id="1e7d-b335-048f-9816" collective="false" targetId="06e2-2131-d682-5300" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c5d-47a6-c238-0821" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cc1-7aa6-4982-087b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Hunter-killer missile" hidden="false" id="c5d2-d2c8-b09c-5e29" collective="false" targetId="b211-bb18-568f-b4b9" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73cf-85b7-e0f0-01df" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="190"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Storm bolter" hidden="false" id="e33e-476b-6484-0636">
+      <profiles>
+        <profile name="Storm bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="bbba-b51a-3248-ad53">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rapid Fire" id="b974-1536-fd24-f857" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="bc99-4831-9522-2fdf">
+      <profiles>
+        <profile name="Multi-melta" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b80a-86c0-f000-a536">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Melta" id="9cf0-3a65-c212-8b49" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -2822,4 +3069,16 @@ A. After rolling for the Damage characteristic, if the result (including modifie
       </profiles>
     </selectionEntry>
   </selectionEntries>
+  <sharedProfiles>
+    <profile name="Damaged: 1-4 Wounds Remaining" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="695e-97e0-6c20-06ff">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Damaged: 1-8 Wounds Remaining" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9e6f-3edb-b185-5a9a">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-8 wounds remaining, subtract 4 from its Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
