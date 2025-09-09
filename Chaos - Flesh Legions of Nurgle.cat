@@ -2410,7 +2410,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                     <profile name="Sentinel chainsaw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8f08-0d5b-a872-c118">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
@@ -2459,7 +2459,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <entryLink import="true" name="Hunter-killer missile" hidden="false" id="d94d-61ee-19a2-ca2e" type="selectionEntry" targetId="b211-bb18-568f-b4b9"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
             <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
