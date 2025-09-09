@@ -19,6 +19,7 @@
     <categoryEntry name="Scout Sentinels" id="dc6e-8f6f-c79d-4098" hidden="false"/>
     <categoryEntry name="Giant Chaos Spawn" id="c43d-b686-2c76-e08d" hidden="false"/>
     <categoryEntry name="Leman Russ  Blightcaster" id="3ab8-62fc-77ad-9940" hidden="false"/>
+    <categoryEntry name="Plaguereaper" id="dd9d-0bdf-c9d3-8242" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Endless Cycle" id="46d6-81a2-7652-bc0c" hidden="false">
@@ -3040,6 +3041,370 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         <infoLink name="Melta" id="9cf0-3a65-c212-8b49" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Plaguereaper" hidden="false" id="c240-bc75-e86d-c021" collective="false">
+      <profiles>
+        <profile name="Plaguereaper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ebee-eaae-c10e-1c79">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">9&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">13</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">24</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Icon of Sin (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="109b-d439-776a-f404">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly NURGLE unit (excluding MONSTER or VEHICLE units) is within 12&quot; of this model, improve the Leadership characteristic of that unit by 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Endless Cycle" id="8853-f09f-bc3d-0ed7" hidden="false" targetId="46d6-81a2-7652-bc0c" type="rule"/>
+        <infoLink name="Deadly Demise" id="0e36-23d4-8f49-7210" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
+          <modifiers>
+            <modifier type="append" value="D6+2" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Damaged: 1-8 Wounds Remaining" id="c77d-6366-72a4-158d" hidden="false" targetId="9e6f-3edb-b185-5a9a" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="9f76-651e-db7b-f133" targetId="dbd4-63-af05-998" primary="true"/>
+        <categoryLink name="Titanic" hidden="false" id="6f63-e359-4e27-a921" targetId="5929-ad51-d006-e008" primary="false"/>
+        <categoryLink name="Smoke" hidden="false" id="8001-30e7-e885-013f" targetId="6df-937-16bc-8c1a" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="2486-d87e-5946-bda7" targetId="4c00-2578-faf5-6918" primary="false"/>
+        <categoryLink name="Nurgle" hidden="false" id="443d-6a3a-5775-ff7e" targetId="ed0d-8e2a-225c-2340" primary="false"/>
+        <categoryLink targetId="bbcc-67e6-68a9-1676" id="1ed7-83bd-9985-e98f" primary="false" name="Faction: Nurgleth Followers"/>
+        <categoryLink targetId="dd9d-0bdf-c9d3-8242" id="1fec-b233-57f2-63f6" primary="false" name="Plaguereaper"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Pus cannon" hidden="false" id="37de-39f2-f1fa-5e61" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98e0-5421-9374-091b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b843-ad75-ef6f-a401" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="➤ Pus cannon - prodigious bile" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9877-c715-6bc1-6ac5">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+6</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="➤ Pus cannon - agony pustule" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="49d7-ee4c-99b5-8244">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">16</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ignores Cover" id="350f-b827-6da6-a88e" hidden="false" targetId="4640-43e7-30b-215a" type="rule"/>
+            <infoLink name="Torrent" id="568d-f79e-e282-92ba" hidden="false" targetId="5edf-d619-23e0-9b56" type="rule"/>
+            <infoLink name="Blast" id="b05f-9bfa-e6fb-985c" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Armoured tracks" hidden="false" id="7f52-499f-104d-4a76" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89e4-887a-8e94-634a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5856-2f53-845a-aa45" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Armoured tracks" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4ece-d1ab-7714-2001">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mischievous nurglings" hidden="false" id="081a-7c20-5ff1-e190" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9753-0b30-c965-b0d4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9db1-52fa-4569-2261" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Mischievous nurglings" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9e25-62ca-d1c5-c0b2">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">8</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">5+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">2</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks, Lethal Hits</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Extra Attacks" id="f9cc-5779-fe19-b8f3" hidden="false" targetId="115b-79dc-f723-d761" type="rule"/>
+            <infoLink name="Lethal Hits" id="6153-3363-c457-71e5" hidden="false" targetId="d1d1-611e-5191-1095" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Sponson options" id="dbf8-73a9-139b-bffb" hidden="false" collective="false" import="true" defaultSelectionEntryId="122d-9e1f-bdc9-17a6">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Sponsons" id="b78b-84bf-434d-ec18" hidden="false" sortIndex="1" defaultSelectionEntryId="bae6-1757-e843-0e59">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="2x Twin heavy flamers" hidden="false" id="bae6-1757-e843-0e59" collective="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Twin heavy flamer" hidden="false" id="1ecd-9d36-bc87-7379" collective="false" targetId="8fbe-ecb4-ec90-89b0" type="selectionEntry">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="086a-a6ec-dfe0-e6ff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4f07-f9f0-c998-cf18" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="2x Twin heavy bolters" hidden="false" id="fbed-266b-50b2-f25f" collective="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Twin heavy bolter" hidden="false" id="6d1a-72a3-dca0-2ca8" collective="false" targetId="b13d-f3cd-4cd3-a4fb" type="selectionEntry">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8eae-3579-3d73-d461" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6b1d-ae7e-abd4-11ef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6f5-0ab9-fb62-7817" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d6a-c6fc-6e04-7dc4" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Additional sponsons" id="6193-3494-8a3c-4026" hidden="false" sortIndex="2">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="2x Lascannons &amp; 2x Twin heavy flamers" hidden="false" id="8e03-f306-07ad-8b77" collective="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Twin heavy flamer" hidden="false" id="9618-afc8-b2a4-c61c" collective="false" targetId="8fbe-ecb4-ec90-89b0" type="selectionEntry">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8dc6-a3e0-567e-f581" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="df0f-e309-4c0b-3c43" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Lascannon" hidden="false" id="23a9-11d0-6b05-afa5" type="selectionEntry" targetId="5ac5-9917-fa98-dd54">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="16bc-3c71-4839-222c" includeChildSelections="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7be0-5528-6e32-caba" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b168-df3a-5f17-03af" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="2x Lascannons &amp; 2x Twin heavy bolters" hidden="false" id="2607-ac5b-1d3d-6a3f" collective="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Twin heavy bolter" hidden="false" id="5fab-da58-1a8f-b56d" collective="false" targetId="b13d-f3cd-4cd3-a4fb" type="selectionEntry">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8bcc-f7bb-c995-4f58" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="641f-5bd9-6cf4-25b8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Lascannon" hidden="false" id="c2a7-dca2-ce9c-6ce1" type="selectionEntry" targetId="5ac5-9917-fa98-dd54">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bc84-6bf7-63f4-5806" includeChildSelections="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ec5f-a815-dbc2-1385" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2955-a750-c0b9-d27b" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="301b-ffe1-fd07-aeaa" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Twin heavy bolter" hidden="false" id="5dea-baa5-f309-7a69" collective="false" targetId="b13d-f3cd-4cd3-a4fb" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab54-e4d9-8b0e-1395" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b96d-c279-c5a8-4e39" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Demolisher cannon" hidden="false" id="56a3-1705-cef7-6780" collective="false" targetId="2d78-e698-787f-85f2" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3784-1daa-c8e2-cd17" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf1e-c216-b1bb-e493" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Twin heavy stubber" hidden="false" id="de5e-bfd6-64f3-b710" collective="false" targetId="b0f0-2edd-7a1a-d71f" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d34-3c2c-0d5f-7cba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Havoc launcher" hidden="false" id="7cdc-8228-98ae-f31a" collective="false" targetId="f541-b3ff-2034-1210" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f9ae-c589-61c5-93f8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e42-f1c0-c0eb-05a9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Lascannon" hidden="false" id="284b-7f98-9cd2-0f8e" type="selectionEntry" targetId="5ac5-9917-fa98-dd54">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c8dd-4d67-7c56-19d7" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3a04-6212-3482-e2d7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="480"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Demolisher cannon" hidden="false" id="2d78-e698-787f-85f2" collective="false">
+      <profiles>
+        <profile name="Demolisher cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6dc6-0856-215d-7028">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="ae29-1d0e-64ac-0b0a" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Havoc launcher" hidden="false" id="f541-b3ff-2034-1210" collective="false">
+      <profiles>
+        <profile name="Havoc launcher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0d1c-9e0b-22f9-818b">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="b51c-abe9-02c2-7613" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin heavy bolter" hidden="false" id="b13d-f3cd-4cd3-a4fb" collective="false">
+      <profiles>
+        <profile name="Twin heavy bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="aab2-69b7-28e1-d235">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 1, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" id="12ba-eff1-6459-82a1" hidden="false" targetId="cf93-ad4d-2f08-a79d" type="rule"/>
+        <infoLink name="Sustained Hits" id="04f6-e904-4cb1-e139" hidden="false" targetId="1897-c22c-9597-12b1" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin heavy flamer" hidden="false" id="8fbe-ecb4-ec90-89b0" collective="false">
+      <profiles>
+        <profile name="Twin heavy flamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e221-0055-de53-1094">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ignores Cover" id="1913-da25-0194-8823" hidden="false" targetId="4640-43e7-30b-215a" type="rule"/>
+        <infoLink name="Twin-linked" id="c495-1797-244e-b66f" hidden="false" targetId="cf93-ad4d-2f08-a79d" type="rule"/>
+        <infoLink name="Torrent" id="7491-9ff9-ba1a-1fa1" hidden="false" targetId="5edf-d619-23e0-9b56" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin heavy stubber" hidden="false" id="b0f0-2edd-7a1a-d71f" collective="false">
+      <profiles>
+        <profile name="Twin heavy stubber" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ead7-89b2-1b30-fcb7">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 3, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rapid Fire" id="0ced-b3f7-0d51-488a" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
+        <infoLink name="Twin-linked" id="c681-4f1e-24c1-2e3b" hidden="false" targetId="cf93-ad4d-2f08-a79d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Cultists of Nurgle" hidden="false" id="4844-eb67-6f3f-9a4f" type="selectionEntry" targetId="ba90-681f-5432-d56d"/>
@@ -3057,6 +3422,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
     <entryLink import="true" name="Scout Sentinels" hidden="false" id="54d2-c5a6-3131-6ccf" targetId="5c2b-f366-e510-cddc" type="selectionEntry"/>
     <entryLink import="true" name="Giant Chaos Spawn" hidden="false" id="8dbf-bf7c-b699-310e" targetId="888b-3512-41cf-6413" type="selectionEntry"/>
     <entryLink import="true" name="Leman Russ Blightcaster" hidden="false" id="6b15-a482-4f64-3e77" targetId="2dc9-bf81-8d7c-d7cf" type="selectionEntry"/>
+    <entryLink import="true" name="Plaguereaper" hidden="false" id="5a6d-b650-e8ce-b24b" targetId="c240-bc75-e86d-c021" type="selectionEntry"/>
   </entryLinks>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="[Reference] FAQ" hidden="false" id="8369-6c23-301a-012b">
