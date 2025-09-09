@@ -3068,6 +3068,9 @@ A. After rolling for the Damage characteristic, if the result (including modifie
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="4ac9-fd30-1e3d-b249" id="d29c-c087-5779-54ce" primary="true" name="Configuration"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
