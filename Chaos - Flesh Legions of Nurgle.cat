@@ -3272,11 +3272,6 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf1e-c216-b1bb-e493" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Twin heavy stubber" hidden="false" id="de5e-bfd6-64f3-b710" collective="false" targetId="b0f0-2edd-7a1a-d71f" type="selectionEntry">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d34-3c2c-0d5f-7cba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Havoc launcher" hidden="false" id="7cdc-8228-98ae-f31a" collective="false" targetId="f541-b3ff-2034-1210" type="selectionEntry">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f9ae-c589-61c5-93f8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
