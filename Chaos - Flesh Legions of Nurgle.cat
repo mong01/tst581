@@ -22,6 +22,7 @@
     <categoryEntry name="Plaguereaper" id="dd9d-0bdf-c9d3-8242" hidden="false"/>
     <categoryEntry name="Apostate Shepherd" id="bf9b-85db-8e14-7334" hidden="false"/>
     <categoryEntry name="Psyker Coven" id="41b8-46a2-1ca7-b143" hidden="false"/>
+    <categoryEntry name="Scab Commander" id="0910-3118-003b-668b" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Endless Cycle" id="46d6-81a2-7652-bc0c" hidden="false">
@@ -72,7 +73,7 @@ WANING STAGE
         <categoryLink name="Battleline" hidden="false" id="b1f9-a418-8ca4-818b" targetId="e338-111e-d0c6-b687" primary="true"/>
         <categoryLink name="Grenades" hidden="false" id="7a42-cf66-e025-c778" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink targetId="bbcc-67e6-68a9-1676" id="0373-86af-6a9f-7eb2" primary="false" name="Faction: Nurgleth Followers"/>
-        <categoryLink targetId="294c-1d60-c57f-7495" id="35fd-0f0d-2e0e-cb62" primary="false" name="Cultists of Nurgle"/>
+        <categoryLink targetId="294c-1d60-c57f-7495" id="35fd-0f0d-2e0e-cb62" primary="false" name="Cultist Mob"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Cultist champion" hidden="false" id="abd5-fb68-a816-8ea1" collective="false">
@@ -1653,7 +1654,12 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         <categoryLink targetId="4c00-2578-faf5-6918" id="8b0f-6ccc-d7da-2ae0" primary="false" name="Chaos"/>
       </categoryLinks>
       <profiles>
-        <profile name="Scabs" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="375a-db83-4d4e-21be">
+        <profile name="Callous Disregard" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f1c5-77b9-679d-ca10">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can target this unit with the Grenade Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scabs" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5365-9d6d-c205-56b9">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
@@ -1661,11 +1667,6 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Callous Disregard" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f1c5-77b9-679d-ca10">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can target this unit with the Grenade Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3580,9 +3581,149 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1f05-bc1e-09b4-6fb5" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scab Commander" hidden="false" id="5481-456c-22aa-4b51">
+      <categoryLinks>
+        <categoryLink targetId="0910-3118-003b-668b" id="23ad-27db-5b42-48b7" primary="false" name="Scab Commander"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="16dd-3e76-334e-e9bc" primary="false" name="Infantry"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="1705-0405-e6e4-8cba" primary="true" name="Character"/>
+        <categoryLink targetId="bbcc-67e6-68a9-1676" id="f0ba-62ea-9cf7-dcfc" primary="false" name="Faction: Nurgleth Followers"/>
+        <categoryLink targetId="ed0d-8e2a-225c-2340" id="d188-f307-599c-a38f" primary="false" name="Nurgle"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="d990-b7ca-2a00-94ce" primary="false" name="Grenades"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="9db6-32c7-3ce1-3012" primary="false" name="Chaos"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Scab Commander" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7ff5-e457-5799-69b4">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dc3b-a5e6-6805-2645">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following unit:
+■ Scabs</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scars of War" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1c13-285e-6e27-bc54">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Last Benediction" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b2b5-b5a9-07da-4dcc">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, improve the Attacks characteristics of melee weapons equipped by this model by 3.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Leader" id="df89-47f9-d6ad-5bb9" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
+        <infoLink name="Endless Cycle" id="5b5b-559e-554f-7736" hidden="false" targetId="46d6-81a2-7652-bc0c" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Pistols" id="ddb0-21ac-cce6-36ab" hidden="false" defaultSelectionEntryId="40ee-060f-94c2-522c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dd49-d825-9d91-d5ce-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd49-d825-9d91-d5ce-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Plasma pistol" hidden="false" id="40ee-060f-94c2-522c" type="selectionEntry" targetId="d880-ceba-7654-a9b2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b103-1123-c582-55fe" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Inferno pistol" hidden="false" id="6564-e3d6-8c48-fe80">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a23e-db0c-39d7-c7fe" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Inferno pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1453-418c-f57a-5fad">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">6&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2, Pistol</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Melta" id="0fb7-3528-2ef3-1bfd" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849"/>
+                <infoLink name="Pistol" id="e1e7-8357-633d-6f79" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Melee weapons" id="d4bd-c208-8b50-cb98" hidden="false" defaultSelectionEntryId="54a0-d040-a0c5-5022">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad24-40d9-fe60-fd38-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad24-40d9-fe60-fd38-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="3053-fe42-c650-6e59">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bfb-7e66-05af-5fa2" includeChildSelections="false" automatic="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Power fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="756b-52a7-d387-9a50">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bubotic sword" hidden="false" id="54a0-d040-a0c5-5022">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fe1-803d-3576-9819" includeChildSelections="false" automatic="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Bubotic sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9968-ebe2-52be-47a1">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Lethal Hits" id="9353-4689-d857-4c43" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="3532-21d7-c718-ed3f" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Cultists of Nurgle" hidden="false" id="4844-eb67-6f3f-9a4f" type="selectionEntry" targetId="ba90-681f-5432-d56d"/>
+    <entryLink import="true" name="Cultist Mob" hidden="false" id="4844-eb67-6f3f-9a4f" type="selectionEntry" targetId="ba90-681f-5432-d56d"/>
     <entryLink import="true" name="Blessed Cultists" hidden="false" id="425e-7815-49b6-3a3a" type="selectionEntry" targetId="3146-0ebe-40b2-a3e0"/>
     <entryLink import="true" name="Corpulent Shamblers" hidden="false" id="a803-d75e-8fb0-3bd6" type="selectionEntry" targetId="5027-7da5-dbb1-3ace"/>
     <entryLink import="true" name="Apostles of Rot" hidden="false" id="1f3e-32c9-d5b5-96b4" type="selectionEntry" targetId="f43f-aaf0-3655-69ea"/>
@@ -3600,6 +3741,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
     <entryLink import="true" name="Plaguereaper" hidden="false" id="5a6d-b650-e8ce-b24b" targetId="c240-bc75-e86d-c021" type="selectionEntry"/>
     <entryLink import="true" name="Apostate Shepherd" hidden="false" id="e24e-c9d6-d44b-57f4" targetId="c16d-4944-da25-cb06" type="selectionEntry"/>
     <entryLink import="true" name="Psyker Coven" hidden="false" id="e7fe-3815-c8c8-62a8" targetId="fc01-4584-b147-b556" type="selectionEntry"/>
+    <entryLink import="true" name="Scab Commander" hidden="false" id="01c9-6f97-1c1f-9c3f" targetId="5481-456c-22aa-4b51" type="selectionEntry"/>
   </entryLinks>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="[Reference] FAQ" hidden="false" id="8369-6c23-301a-012b">
