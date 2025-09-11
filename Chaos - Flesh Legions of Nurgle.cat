@@ -2147,7 +2147,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
           </characteristics>
         </profile>
-        <profile name="➤ Plasma pistol - standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b0f7-feac-b5c8-8255">
+        <profile name="➤ Plasma pistol - supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b0f7-feac-b5c8-8255">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
