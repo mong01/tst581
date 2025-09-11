@@ -1899,26 +1899,6 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                       </characteristics>
                     </profile>
                   </profiles>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="a965-d185-42b5-388b">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2990-a428-0a03-f73c" includeChildSelections="false" automatic="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1eea-4e46-b89b-337a">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                  </selectionEntries>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
