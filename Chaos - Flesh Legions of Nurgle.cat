@@ -3,7 +3,7 @@
   <categoryEntries>
     <categoryEntry name="Ogryn" id="5db6-d116-58fa-2d5d" hidden="false"/>
     <categoryEntry name="Faction: Nurgleth Followers" id="bbcc-67e6-68a9-1676" hidden="false"/>
-    <categoryEntry name="Cultists of Nurgle" id="294c-1d60-c57f-7495" hidden="false"/>
+    <categoryEntry name="Cultist Mob" id="294c-1d60-c57f-7495" hidden="false"/>
     <categoryEntry name="Blessed Cultists" id="23a4-fbe8-6a6b-9383" hidden="false"/>
     <categoryEntry name="Corpulent Shamblers" id="6877-f647-dc49-1292" hidden="false"/>
     <categoryEntry name="Apostles of Rot" id="eea5-4a44-3441-2df8" hidden="false"/>
@@ -21,6 +21,7 @@
     <categoryEntry name="Leman Russ  Blightcaster" id="3ab8-62fc-77ad-9940" hidden="false"/>
     <categoryEntry name="Plaguereaper" id="dd9d-0bdf-c9d3-8242" hidden="false"/>
     <categoryEntry name="Apostate Shepherd" id="bf9b-85db-8e14-7334" hidden="false"/>
+    <categoryEntry name="Psyker Coven" id="41b8-46a2-1ca7-b143" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Endless Cycle" id="46d6-81a2-7652-bc0c" hidden="false">
@@ -36,7 +37,7 @@ WANING STAGE
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="Cultists of Nurgle" hidden="false" id="ba90-681f-5432-d56d" collective="false">
+    <selectionEntry type="unit" import="true" name="Cultist Mob" hidden="false" id="ba90-681f-5432-d56d" collective="false">
       <modifiers>
         <modifier type="increment" value="50" field="51b2-306e-1021-d207">
           <conditions>
@@ -45,7 +46,7 @@ WANING STAGE
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Cultists of Nurgle" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="fc7a-cd5b-3f98-c6c0">
+        <profile name="Cultist Mob" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="fc7a-cd5b-3f98-c6c0">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
@@ -3426,7 +3427,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
 ■ Apostles of Rot
 ■ Blessed Cultists
-■ Cultists of Nurgle</characteristic>
+■ Cultist Mob</characteristic>
           </characteristics>
         </profile>
         <profile name="Apostate Shepherd" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6cbc-42d8-d82d-416f">
@@ -3435,7 +3436,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
@@ -3497,6 +3498,88 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         <categoryLink targetId="5c0e-4c31-d51b-e470" id="c6d3-fa78-23a2-2d67" primary="false" name="Warlord"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Psyker Coven" hidden="false" id="fc01-4584-b147-b556">
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="c87f-0cb9-bfcb-bcf6" primary="true" name="Infantry"/>
+        <categoryLink targetId="13bf-2bee-3ae0-b414" id="a231-dc9c-908f-a87e" primary="false" name="Psyker"/>
+        <categoryLink targetId="ed0d-8e2a-225c-2340" id="672a-0b8d-4b6b-35da" primary="false" name="Nurgle"/>
+        <categoryLink targetId="bbcc-67e6-68a9-1676" id="7d27-0964-ccb9-c3ba" primary="false" name="Faction: Nurgleth Followers"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="0530-c6a9-a16b-7a68" primary="false" name="Chaos"/>
+        <categoryLink targetId="41b8-46a2-1ca7-b143" id="7327-fcd5-a905-7c11" primary="false" name="Psyker Coven"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rogue psyker" hidden="false" id="a7a3-10ec-e077-bd9f">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="a7d7-4e16-d622-c81a-min" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="a7d7-4e16-d622-c81a-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="e411-c688-8ea7-a8dd" collective="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a81-029f-307b-350d" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="53e1-17be-a731-2298" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9ea2-c06b-ad19-c735">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">5+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Endless Cycle" id="5e9c-96fc-f070-c8de" hidden="false" targetId="46d6-81a2-7652-bc0c" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Psyker Coven" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="80f2-514b-6fa2-4926">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">7+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1204-71c0-24ec-90c8" name="Warp Flux (Psychic)">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, select one enemy unit within 18&quot; of and visible to this unit (excluding units with the Lone Operative ability that are not part of an Attached unit and are not within 12&quot; of this model) and roll one D6 for each model in this unit: for each 4+, that enemy unit suffers 1 mortal wound.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Unnatural Vigour (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0be5-0f38-f585-546d">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Movement phase, you can select one friendly NURGLETH FOLLOWERS unit (excluding MONSTER and VEHICLE units) within 18&quot; of this unit and roll one D6: on a 1, this unit suffers D3 mortal wounds; on a 2+, until the start of your next Movement phase:
+■ Each time that model in that unit makes a melee attack, you can re-roll the Wound roll.
+■ You can re-roll Charge rolls made for that unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9f77-2dda-222a-b931">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 5+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1f05-bc1e-09b4-6fb5" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Cultists of Nurgle" hidden="false" id="4844-eb67-6f3f-9a4f" type="selectionEntry" targetId="ba90-681f-5432-d56d"/>
@@ -3516,6 +3599,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
     <entryLink import="true" name="Leman Russ Blightcaster" hidden="false" id="6b15-a482-4f64-3e77" targetId="2dc9-bf81-8d7c-d7cf" type="selectionEntry"/>
     <entryLink import="true" name="Plaguereaper" hidden="false" id="5a6d-b650-e8ce-b24b" targetId="c240-bc75-e86d-c021" type="selectionEntry"/>
     <entryLink import="true" name="Apostate Shepherd" hidden="false" id="e24e-c9d6-d44b-57f4" targetId="c16d-4944-da25-cb06" type="selectionEntry"/>
+    <entryLink import="true" name="Psyker Coven" hidden="false" id="e7fe-3815-c8c8-62a8" targetId="fc01-4584-b147-b556" type="selectionEntry"/>
   </entryLinks>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="[Reference] FAQ" hidden="false" id="8369-6c23-301a-012b">
