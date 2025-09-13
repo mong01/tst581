@@ -3793,6 +3793,14 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="a232-3437-a539-f84c" includeChildSelections="true"/>
       </constraints>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="2330-b2eb-1b20-3e53">
       <infoLinks>
@@ -3863,7 +3871,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         <infoLink name="Endless Cycle" id="45fd-a897-32d5-4894" hidden="false" targetId="46d6-81a2-7652-bc0c" type="rule"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Warlord" hidden="false" id="fdae-3422-9df4-8a4c" type="selectionEntry" targetId="517b-5d9c-25c0-ed40"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="fdae-3422-9df4-8a4c" type="selectionEntry" targetId="517b-5d9c-25c0-ed40" sortIndex="1"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Morbid limbs" hidden="false" id="37a0-1e4d-4338-08df">
