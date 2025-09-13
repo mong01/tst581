@@ -3426,7 +3426,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         </profile>
         <profile name="Droning Mass" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7541-0e43-d542-74a4">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a ranged attack targets that unit, subtract 1 from the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, that unit has the Benefit of Cover</characteristic>
           </characteristics>
         </profile>
         <profile name="Orator of Chaos" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3c4d-cab8-5bfd-d39d">
@@ -4043,6 +4043,37 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Detachment" hidden="false" id="2033-b8fb-ec72-2174">
+      <categoryLinks>
+        <categoryLink targetId="4ac9-fd30-1e3d-b249" id="ee68-ac76-52e0-7a4c" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4e23-95a0-3de2-0f36" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="19d2-b7c8-0901-ff97" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Detachments" id="5b34-5819-5a04-301e" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Putrid Procession" hidden="false" id="3539-789e-eb53-96e7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e48f-ae5b-4b0e-1dc7" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="The Unwashed Masses" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="793a-3807-d57e-5f09">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a ranged attack targets a NURGLETH FOLLOWERS INFANTRY unit from your army, if that unit is not Below Half-Strength, the target has the Benefit of Cover against that attack. If that unit already has the Benefit of Cover, subtract 1 from the Wound roll instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8aba-aa4d-a47b-b506" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8252-5f6c-c9b9-1dc5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Cultist Mob" hidden="false" id="4844-eb67-6f3f-9a4f" type="selectionEntry" targetId="ba90-681f-5432-d56d"/>
@@ -4067,6 +4098,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
     <entryLink import="true" name="Renegade Lord" hidden="false" id="e25f-3279-cc8a-27cd" targetId="3882-5449-17f0-c01d" type="selectionEntry"/>
     <entryLink import="true" name="Bubotyrant" hidden="false" id="a680-2520-1056-c637" targetId="2bb6-9544-ae44-ea0a" type="selectionEntry"/>
     <entryLink import="true" name="Malachi the Prophet" hidden="false" id="ca9f-dc33-9881-c985" targetId="7904-ee2a-daf1-1432" type="selectionEntry"/>
+    <entryLink import="true" name="Detachment" hidden="false" id="80f1-9432-3d11-af57" type="selectionEntry" targetId="2033-b8fb-ec72-2174"/>
   </entryLinks>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="[Reference] FAQ" hidden="false" id="8369-6c23-301a-012b">
