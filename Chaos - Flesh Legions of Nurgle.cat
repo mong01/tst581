@@ -4066,6 +4066,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
     <entryLink import="true" name="Scab Commander" hidden="false" id="01c9-6f97-1c1f-9c3f" targetId="5481-456c-22aa-4b51" type="selectionEntry"/>
     <entryLink import="true" name="Renegade Lord" hidden="false" id="e25f-3279-cc8a-27cd" targetId="3882-5449-17f0-c01d" type="selectionEntry"/>
     <entryLink import="true" name="Bubotyrant" hidden="false" id="a680-2520-1056-c637" targetId="2bb6-9544-ae44-ea0a" type="selectionEntry"/>
+    <entryLink import="true" name="Malachi the Prophet" hidden="false" id="ca9f-dc33-9881-c985" targetId="7904-ee2a-daf1-1432" type="selectionEntry"/>
   </entryLinks>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="[Reference] FAQ" hidden="false" id="8369-6c23-301a-012b">
