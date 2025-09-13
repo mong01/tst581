@@ -24,6 +24,7 @@
     <categoryEntry name="Psyker Coven" id="41b8-46a2-1ca7-b143" hidden="false"/>
     <categoryEntry name="Scab Commander" id="0910-3118-003b-668b" hidden="false"/>
     <categoryEntry name="Renegade Lord" id="0b1f-acd0-6551-6bba" hidden="false"/>
+    <categoryEntry name="Bubotyrant" id="a0c3-ddc8-b830-0637" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Endless Cycle" id="46d6-81a2-7652-bc0c" hidden="false">
@@ -3744,7 +3745,18 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
 ■ Apostles of Rot
 ■ Blessed Cultists
-■ Cultist Mob</characteristic>
+■ Cultist Mob
+■ Scabs</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="For The Dark Gods" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="77c8-eeb2-56be-77a6">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ordered Chaos" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="646e-49e2-d242-a420">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time that unit makes an Advance or Charge roll, add 1 to the result.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3758,19 +3770,19 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         </entryLink>
       </entryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="3545-dfc2-633f-4f6a">
+        <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="3545-dfc2-633f-4f6a">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a94f-e624-59a2-178a-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a94f-e624-59a2-178a-max" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e126-2791-451a-c85c">
+            <profile name="Power weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e126-2791-451a-c85c">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
-                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
                 <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
               </characteristics>
@@ -3778,6 +3790,9 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="a232-3437-a539-f84c" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="2330-b2eb-1b20-3e53">
       <infoLinks>
@@ -3796,6 +3811,85 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Bubotyrant" hidden="false" id="2bb6-9544-ae44-ea0a">
+      <categoryLinks>
+        <categoryLink targetId="a0c3-ddc8-b830-0637" id="e1bd-6850-768a-a0df" primary="false" name="Bubotyrant"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="58d3-cbae-578a-b731" primary="true" name="Character"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="1a9d-01ac-9056-a5ee" primary="false" name="Infantry"/>
+        <categoryLink targetId="5db6-d116-58fa-2d5d" id="3370-1e0a-f797-6f28" primary="false" name="Ogryn"/>
+        <categoryLink targetId="ed0d-8e2a-225c-2340" id="af2e-575f-091f-222e" primary="false" name="Nurgle"/>
+        <categoryLink targetId="bbcc-67e6-68a9-1676" id="0a3f-c231-3d1c-06e5" primary="false" name="Faction: Nurgleth Followers"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="e6d2-491d-a11d-d2a5" primary="false" name="Chaos"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="4be5-f4f4-3ac5-a614" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Immense Mass" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="09dd-beea-68f6-65e7">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model ends a Charge move, select one enemy unit within Engagement Range of this model and roll one D6: on a 2-5, that unit suffers D3 mortal wounds; on a 6, that unit suffers 3 mortal wounds.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bubotyrant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6d54-4043-e06b-35f8">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">8</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6a6e-7259-0bfd-8f27">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following unit:
+■ Plague Ogryns</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Virulent Aura" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9b24-04ad-3b22-f2d0">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes a melee attack, an unmodified Hit roll of 5+ scores a Critical Hit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Feel No Pain" id="50f4-a94d-8879-9da8" hidden="false" targetId="9bf4-280f-bbe2-6fbb" type="rule">
+          <modifiers>
+            <modifier type="append" value="5+" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Leader" id="7d2d-3a03-9990-29c9" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
+        <infoLink name="Endless Cycle" id="45fd-a897-32d5-4894" hidden="false" targetId="46d6-81a2-7652-bc0c" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="fdae-3422-9df4-8a4c" type="selectionEntry" targetId="517b-5d9c-25c0-ed40"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Morbid limbs" hidden="false" id="37a0-1e4d-4338-08df">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4361-4580-f322-e793" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a243-a362-2eae-37f8" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Morbid limbs" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3df1-2127-bee6-4472">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Twin-linked" id="3fd3-e9d7-93ce-0661" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+            <infoLink name="Lethal Hits" id="82f1-716b-aced-cf14" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -3819,6 +3913,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
     <entryLink import="true" name="Psyker Coven" hidden="false" id="e7fe-3815-c8c8-62a8" targetId="fc01-4584-b147-b556" type="selectionEntry"/>
     <entryLink import="true" name="Scab Commander" hidden="false" id="01c9-6f97-1c1f-9c3f" targetId="5481-456c-22aa-4b51" type="selectionEntry"/>
     <entryLink import="true" name="Renegade Lord" hidden="false" id="e25f-3279-cc8a-27cd" targetId="3882-5449-17f0-c01d" type="selectionEntry"/>
+    <entryLink import="true" name="Bubotyrant" hidden="false" id="a680-2520-1056-c637" targetId="2bb6-9544-ae44-ea0a" type="selectionEntry"/>
   </entryLinks>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="[Reference] FAQ" hidden="false" id="8369-6c23-301a-012b">
