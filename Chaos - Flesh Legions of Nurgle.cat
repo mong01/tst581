@@ -25,6 +25,7 @@
     <categoryEntry name="Scab Commander" id="0910-3118-003b-668b" hidden="false"/>
     <categoryEntry name="Renegade Lord" id="0b1f-acd0-6551-6bba" hidden="false"/>
     <categoryEntry name="Bubotyrant" id="a0c3-ddc8-b830-0637" hidden="false"/>
+    <categoryEntry name="Malachi the Prophet" id="7dcc-5b51-0dd7-5e0a" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Endless Cycle" id="46d6-81a2-7652-bc0c" hidden="false">
@@ -3749,7 +3750,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
 ■ Scabs</characteristic>
           </characteristics>
         </profile>
-        <profile name="For The Dark Gods" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="77c8-eeb2-56be-77a6">
+        <profile name="For the Dark Gods" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="77c8-eeb2-56be-77a6">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.</characteristic>
           </characteristics>
@@ -3906,6 +3907,133 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Malachi the Prophet" hidden="false" id="7904-ee2a-daf1-1432">
+      <categoryLinks>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="0a0b-2fef-a679-dcf9" primary="false" name="Epic Hero"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="e0e4-ef87-b484-8e20" primary="true" name="Character"/>
+        <categoryLink targetId="ed0d-8e2a-225c-2340" id="9671-a536-3f1c-1393" primary="false" name="Nurgle"/>
+        <categoryLink targetId="bbcc-67e6-68a9-1676" id="66ce-fa83-94ff-3ee9" primary="false" name="Faction: Nurgleth Followers"/>
+        <categoryLink targetId="13bf-2bee-3ae0-b414" id="39e3-57de-27a0-3b93" primary="false" name="Psyker"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="dc1d-fab6-416a-565a" primary="false" name="Chaos"/>
+        <categoryLink targetId="7dcc-5b51-0dd7-5e0a" id="62a4-9111-fb94-b9cc" primary="false" name="Malachi the Prophet"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="9461-e171-0978-3b91" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="92cf-f24f-c962-40ff" type="selectionEntry" targetId="517b-5d9c-25c0-ed40"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Groveblade" hidden="false" id="edd9-bb75-9b5f-7eb5" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5309-27c1-3054-c481" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f3c-fc3e-db5c-896c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Groveblade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="7e39-755d-5dac-1e07">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal Hits" id="2dca-55d4-883c-4a86" hidden="false" targetId="d1d1-611e-5191-1095" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Whispering Thurible" hidden="false" id="353e-e05e-5d00-548d" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca7b-09b5-343c-bdbb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d571-9b5c-9440-60ec" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="➤ Whispering Thurible - noxious fumes" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="cff9-63e2-f93d-7b9f">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-INFANTRY 4+, Devastating Wounds, Pistol, Psychic, Torrent</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="➤ Whispering Thurible - profane bolts" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ebbd-fa23-f7a7-fc4f">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3+3</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Lethal Hits, Pistol, Psychic</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Anti-" id="0eeb-c92d-748f-987b" hidden="false" targetId="4111-82e3-9444-e942" type="rule"/>
+            <infoLink name="Lethal Hits" id="b464-9560-bcc2-ec40" hidden="false" targetId="d1d1-611e-5191-1095" type="rule"/>
+            <infoLink name="Devastating Wounds" id="a9a3-d8a4-9ce0-396e" hidden="false" targetId="be1e-ac8e-1e2c-3528" type="rule"/>
+            <infoLink name="Pistol" id="8697-bc88-9d5a-68c1" hidden="false" targetId="8bf7-8812-923d-29e4" type="rule"/>
+            <infoLink name="Torrent" id="e5e6-e00b-ab54-31ae" hidden="false" targetId="5edf-d619-23e0-9b56" type="rule"/>
+            <infoLink name="Psychic" id="2c30-6af2-5589-919e" hidden="false" targetId="e9c4-2bb8-12ee-cd1b" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="03e3-ce7b-a3c1-2ed6">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Malachi the Prophet" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="12c8-987e-3b2e-c326">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">7+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Emissary of the Fly Lord" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="812d-e0f5-4eb4-5674">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, you can re-roll Battle-shock tests and Leadership tests taken for that unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Honeyed Words (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c19d-e0c9-b793-c536">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Fight phase, select one enemy unit within Engagement Range of this model&apos;s unit. Until the end of the phase, that unit is not eligible to fight until after every other eligible unit has done so.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cd36-e7c0-629d-bafa">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+■ Apostles of Rot
+■ Blessed Cultists
+■ Cultist Mob</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Feel No Pain" id="5e71-7bcf-215e-8d0e" hidden="false" targetId="9bf4-280f-bbe2-6fbb" type="rule">
+          <modifiers>
+            <modifier type="append" value="4+" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Endless Cycle" id="a816-01d9-82d0-3a41" hidden="false" targetId="46d6-81a2-7652-bc0c" type="rule"/>
+        <infoLink name="Leader" id="d430-15bf-65f9-260b" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
