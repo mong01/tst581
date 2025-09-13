@@ -2586,9 +2586,9 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Scout Sentinels" hidden="false" id="5c2b-f366-e510-cddc" collective="false">
       <profiles>
-        <profile name="Reckless Assault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4f5b-9e7c-06b9-a476">
+        <profile name="Daring Recon" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4f5b-9e7c-06b9-a476">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit makes a Charge move, until the end of the turn, add 2 to the Attacks characteristic of melee weapons equipped by models in this unit.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Shooting phase, select one enemy unit within 18&quot; of and visible to this unit. Until the end of the phase, each time a friendly NURGLETH FOLLOWERS model makes an attack that targets that unit, re-roll a Hit roll of 1.</characteristic>
           </characteristics>
         </profile>
         <profile name="Scout Sentinels" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="bb47-b327-312f-d426">
