@@ -4052,7 +4052,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         <constraint type="min" value="1" field="selections" scope="force" shared="true" id="19d2-b7c8-0901-ff97" includeChildSelections="false"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Detachments" id="5b34-5819-5a04-301e" hidden="false">
+        <selectionEntryGroup name="Detachments" id="5b34-5819-5a04-301e" hidden="false" defaultSelectionEntryId="none">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Putrid Procession" hidden="false" id="3539-789e-eb53-96e7">
               <constraints>
