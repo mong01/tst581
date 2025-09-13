@@ -3920,7 +3920,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="9461-e171-0978-3b91" primary="false" name="Infantry"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Warlord" hidden="false" id="92cf-f24f-c962-40ff" type="selectionEntry" targetId="517b-5d9c-25c0-ed40"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="92cf-f24f-c962-40ff" type="selectionEntry" targetId="517b-5d9c-25c0-ed40" sortIndex="1"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Groveblade" hidden="false" id="edd9-bb75-9b5f-7eb5" collective="false">
