@@ -3910,8 +3910,8 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Malachi the Prophet" hidden="false" id="7904-ee2a-daf1-1432">
       <categoryLinks>
-        <categoryLink targetId="4f3a-f0f7-6647-348d" id="0a0b-2fef-a679-dcf9" primary="false" name="Epic Hero"/>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="e0e4-ef87-b484-8e20" primary="true" name="Character"/>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="0a0b-2fef-a679-dcf9" primary="true" name="Epic Hero"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="e0e4-ef87-b484-8e20" primary="false" name="Character"/>
         <categoryLink targetId="ed0d-8e2a-225c-2340" id="9671-a536-3f1c-1393" primary="false" name="Nurgle"/>
         <categoryLink targetId="bbcc-67e6-68a9-1676" id="66ce-fa83-94ff-3ee9" primary="false" name="Faction: Nurgleth Followers"/>
         <categoryLink targetId="13bf-2bee-3ae0-b414" id="39e3-57de-27a0-3b93" primary="false" name="Psyker"/>
