@@ -4120,6 +4120,9 @@ A. After rolling for the Damage characteristic, if the result (including modifie
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="533c-b597-f4a6-b79c" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="[Reference] Stratagems" hidden="true" id="2594-ffa2-8d93-37b9">
       <selectionEntryGroups>
