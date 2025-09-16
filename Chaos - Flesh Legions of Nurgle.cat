@@ -4088,24 +4088,46 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d81e-7e04-026f-adfe" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Sneakiest Git" hidden="false" id="a43a-70a4-2cde-6e24">
+                <selectionEntry type="upgrade" import="true" name="Burning Fervour" hidden="false" id="a43a-70a4-2cde-6e24">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c38-6fbc-3b5a-5a66" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6df3-1c0e-785e-0753" includeChildSelections="true" includeChildForces="true"/>
                   </constraints>
                   <profiles>
-                    <profile name="Sneakiest Git" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dac1-bf55-bd57-91dd">
+                    <profile name="Burning Fervour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dac1-bf55-bd57-91dd">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">HOBGROT model only. Melee weapons equipped by the bearer have the [DEVASTATING WOUNDS] ability. In addition, each time the bearer makes an attack, an unmodified successful Wound roll counts as a Critical Wound.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Improve the Leadership characteristic of the bearer by 1.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                     <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                     <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
                     <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Wormridden" hidden="false" id="1bcd-f5ea-129b-f21d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b576-de0f-2769-3af8" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="098c-0e28-0688-4198" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Wormridden" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="747a-b7b8-b5f0-f268">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The first time the bearer is destroyed, roll one D6 at the end of the phase: on a 4+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy models, with D3+1 wounds remaining.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
