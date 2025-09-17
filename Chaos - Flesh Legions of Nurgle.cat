@@ -4390,7 +4390,7 @@ A. After rolling for the Damage characteristic, if the result (including modifie
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8089-a63d-3862-0198" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8089-a63d-3862-0198" includeChildSelections="true" includeChildForces="true" automatic="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="a0bd-6def-d30f-6284" primary="true" name="Configuration"/>
