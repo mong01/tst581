@@ -802,7 +802,6 @@ WANING STAGE
         <categoryLink name="Chaos" hidden="false" id="eb2d-39bf-bc09-dc7c" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink targetId="6877-f647-dc49-1292" id="30b6-6191-9290-171d" primary="false" name="Corpulent Shamblers"/>
         <categoryLink targetId="bbcc-67e6-68a9-1676" id="fa81-456b-25c3-8188" primary="false" name="Faction: Nurgleth Followers"/>
-        <categoryLink targetId="5db6-d116-58fa-2d5d" id="1f99-6424-3273-7531" primary="false" name="Ogryn"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Corpulent Shambler" hidden="false" id="7656-c2f9-9326-2e8f" collective="true">
@@ -985,7 +984,7 @@ WANING STAGE
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78f6-7941-05dd-158f" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Lascannon" hidden="false" id="7fab-d9d7-d30d-924d" type="selectionEntry" targetId="5ac5-9917-fa98-dd54">
+                <entryLink import="true" name="Multi-melta" hidden="false" id="7fab-d9d7-d30d-924d" type="selectionEntry" targetId="bc99-4831-9522-2fdf">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e913-7144-59fa-6656" includeChildSelections="false"/>
                   </constraints>
@@ -4375,13 +4374,13 @@ A. After rolling for the Damage characteristic, if the result (including modifie
                 </modifierGroup>
               </modifierGroups>
               <profiles>
-                <profile name="Tear It Down" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="172e-be1a-dcf0-b13c">
+                <profile name="Indefatigable Constitution" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="172e-be1a-dcf0-b13c">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
-**1CP**
-**When:** Your Shooting phase.
-**Target:** One NURGLETH FOLLOWERS INFANTRY unit from your army that has not been selected to shoot this phase, and one enemy MONSTER or VEHICLE unit visible to that unit.
-**Effect:** Until the end of the phase, each time a model in your unit makes a ranged attack against that enemy unit, you can re-roll the Wound roll.</characteristic>
+**2CP**
+**When:** Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
+**Target:** One NURGLETH FOLLOWERS OGRYN unit from your army that was selected as the target of one or more of the attacking unit’s attacks.
+**Effect:** Until the end of the phase, each time an attack is allocated to a model in your unit, subtract 1 from the Damage characteristic of that attack.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
