@@ -4390,24 +4390,18 @@ A. After rolling for the Damage characteristic, if the result (including modifie
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="8089-a63d-3862-0198" includeChildSelections="true" includeChildForces="true" automatic="true"/>
-        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="352a-2b2e-f104-bd30" includeChildSelections="true" includeChildForces="true" automatic="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8089-a63d-3862-0198" includeChildSelections="true" includeChildForces="true" automatic="false"/>
       </constraints>
       <categoryLinks>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="a0bd-6def-d30f-6284" primary="true" name="Configuration"/>
       </categoryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden"/>
-            <modifier type="set" value="1" field="8089-a63d-3862-0198"/>
-            <modifier type="set" value="1" field="352a-2b2e-f104-bd30"/>
-          </modifiers>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="05a4-5305-1124-65dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
-        </modifierGroup>
-      </modifierGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Reference Options" hidden="false" id="3d5e-f155-84a0-35e2" flatten="true">
       <categoryLinks>
@@ -4418,7 +4412,7 @@ A. After rolling for the Damage characteristic, if the result (including modifie
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="12eb-1211-001c-2cb6" includeChildSelections="true"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Show Reference Options?" id="db1d-b5a5-51d7-aa08" hidden="false" defaultSelectionEntryId="05a4-5305-1124-65dd">
+        <selectionEntryGroup name="Show Reference Options?" id="db1d-b5a5-51d7-aa08" hidden="false" defaultSelectionEntryId="e7f2-b154-8ac7-ac7e">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Yes" hidden="false" id="05a4-5305-1124-65dd">
               <constraints>
