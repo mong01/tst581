@@ -4390,18 +4390,24 @@ A. After rolling for the Damage characteristic, if the result (including modifie
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8089-a63d-3862-0198" includeChildSelections="true" includeChildForces="true" automatic="true"/>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="8089-a63d-3862-0198" includeChildSelections="true" includeChildForces="true" automatic="true"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="352a-2b2e-f104-bd30" includeChildSelections="true" includeChildForces="true" automatic="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="a0bd-6def-d30f-6284" primary="true" name="Configuration"/>
       </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="1" field="8089-a63d-3862-0198"/>
+            <modifier type="set" value="1" field="352a-2b2e-f104-bd30"/>
+          </modifiers>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="05a4-5305-1124-65dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
-        </modifier>
-      </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Reference Options" hidden="false" id="3d5e-f155-84a0-35e2" flatten="true">
       <categoryLinks>
