@@ -984,9 +984,14 @@ WANING STAGE
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78f6-7941-05dd-158f" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Multi-melta" hidden="false" id="7fab-d9d7-d30d-924d" type="selectionEntry" targetId="bc99-4831-9522-2fdf">
+                <entryLink import="true" name="Lascannon" hidden="false" id="7fab-d9d7-d30d-924d" type="selectionEntry" targetId="5ac5-9917-fa98-dd54">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e913-7144-59fa-6656" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Multi-melta" hidden="false" id="0d28-ead9-1a03-d2cf" type="selectionEntry" targetId="bc99-4831-9522-2fdf">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e96-876c-ae57-6575" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -1046,8 +1051,26 @@ WANING STAGE
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="5+" field="94d-8a98-cf90-183e">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5db6-d116-58fa-2d5d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Heavy" id="f47c-54a2-8bb7-99ed" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5db6-d116-58fa-2d5d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Missile launcher" hidden="false" id="3393-5e37-fa06-9ce2">
       <infoLinks>
