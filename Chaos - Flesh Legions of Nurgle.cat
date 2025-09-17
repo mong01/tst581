@@ -4374,6 +4374,17 @@ A. After rolling for the Damage characteristic, if the result (including modifie
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
+              <profiles>
+                <profile name="Tear It Down" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="172e-be1a-dcf0-b13c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
+**1CP**
+**When:** Your Shooting phase.
+**Target:** One NURGLETH FOLLOWERS INFANTRY unit from your army that has not been selected to shoot this phase, and one enemy MONSTER or VEHICLE unit visible to that unit.
+**Effect:** Until the end of the phase, each time a model in your unit makes a ranged attack against that enemy unit, you can re-roll the Wound roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
