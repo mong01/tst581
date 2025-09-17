@@ -3472,6 +3472,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
       </costs>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="8d37-fe10-fa59-809d" type="selectionEntry" targetId="517b-5d9c-25c0-ed40" sortIndex="1"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="91b8-ff23-9cfb-52b5" type="selectionEntry" targetId="3ebb-60e4-3885-4279" sortIndex="2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Warlord" hidden="false" id="517b-5d9c-25c0-ed40">
@@ -3709,7 +3710,8 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="3532-21d7-c718-ed3f" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Warlord" hidden="false" id="b0f1-0dd0-30d1-fa8e" type="selectionEntry" targetId="517b-5d9c-25c0-ed40"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="b0f1-0dd0-30d1-fa8e" type="selectionEntry" targetId="517b-5d9c-25c0-ed40" sortIndex="1"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="9f08-ad1d-65e6-f1ab" type="selectionEntry" targetId="3ebb-60e4-3885-4279" sortIndex="2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Renegade Lord" hidden="false" id="3882-5449-17f0-c01d">
@@ -3769,6 +3771,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c414-d0e5-4b0e-afce" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Enhancements" hidden="false" id="e604-be76-7e96-8fad" type="selectionEntry" targetId="3ebb-60e4-3885-4279" sortIndex="2"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="3545-dfc2-633f-4f6a">
@@ -3873,6 +3876,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="fdae-3422-9df4-8a4c" type="selectionEntry" targetId="517b-5d9c-25c0-ed40" sortIndex="1"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="682d-3b15-c9fe-7014" type="selectionEntry" targetId="3ebb-60e4-3885-4279" sortIndex="2"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Morbid limbs" hidden="false" id="37a0-1e4d-4338-08df">
