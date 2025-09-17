@@ -4066,6 +4066,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 </profile>
               </profiles>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="064f-dc01-57f9-82f7"/>
           </selectionEntries>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8aba-aa4d-a47b-b506" includeChildSelections="false"/>
