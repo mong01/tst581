@@ -4109,20 +4109,62 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                     <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Wormridden" hidden="false" id="1bcd-f5ea-129b-f21d">
+                <selectionEntry type="upgrade" import="true" name="Dark Hunger" hidden="false" id="1bcd-f5ea-129b-f21d">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b576-de0f-2769-3af8" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="force" shared="true" id="098c-0e28-0688-4198" includeChildSelections="true" includeChildForces="true"/>
                   </constraints>
                   <profiles>
-                    <profile name="Wormridden" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="747a-b7b8-b5f0-f268">
+                    <profile name="Dark Hunger" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="747a-b7b8-b5f0-f268">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The first time the bearer is destroyed, roll one D6 at the end of the phase: on a 4+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy models, with D3+1 wounds remaining.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer is leading a unit, that unit has the Scouts 6&quot; ability (if that unit is an OGRYN unit, it has the Scouts 5&quot; ability instead).</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Pestilential Arms" hidden="false" id="04ef-ded0-7b57-5546">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="308b-1bfb-cc2e-8d8d" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f8c9-1021-8154-e279" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Pestilential Arms" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bfd9-fa47-8d74-b1e9">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Melee weapons equipped by the bearer have the [SUSTAINED HITS 2] ability.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Unnatural Fog" hidden="false" id="7e69-0713-4088-c1c2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="665b-5ccf-6379-26de" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="75b9-fd7a-7173-5586" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Unnatural Fog" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a884-f7e9-bcdb-9abf">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After both players have deployed their armies, if the bearer is on the battlefield, select up to three other NURGLETH FOLLOWERS INFANTRY units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                     <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                     <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
