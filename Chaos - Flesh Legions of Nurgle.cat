@@ -32,12 +32,12 @@
       <description>At the start of the first battle round, select one of the Stages below. Until the end of the battle round, that Stage is active for your army. While that Stage is active, each unit from your army that has the Endless Cycle ability gains the relevant abilities shown below. At the end of the battle round, the currently active Stage is no longer active, and the other Stage is now active until the end of the following battle round (for example, if you chose the Waxing Stage in the first battle round, the next battle round would be the Waning Stage, then the Waxing Stage again, etc.).
 
 WAXING STAGE
-• Add 1 to the Objective Control characteristic of models in this unit (models with an unmodified OC characteristic of 0 are not affected).
-• This unit is eligible to declare a charge in a turn in which it Advanced.
+■ Add 1 to the Objective Control characteristic of models in this unit (models with an unmodified OC characteristic of 0 are not affected).
+■ This unit is eligible to declare a charge in a turn in which it Advanced.
 
 WANING STAGE
-• Models in this unit have the Feel No Pain 6+ ability or, if that model already has the Feel No Pain 6+ ability, it gains the Feel No Pain 5+ ability.
-• This unit is eligible to shoot in a turn in which it Fell Back.</description>
+■ Models in this unit have the Feel No Pain 6+ ability or, if that model already has the Feel No Pain 6+ ability, it gains the Feel No Pain 5+ ability.
+■ This unit is eligible to shoot in a turn in which it Fell Back.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -4058,7 +4058,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
       <selectionEntryGroups>
         <selectionEntryGroup name="Detachments" id="5b34-5819-5a04-301e" hidden="false" defaultSelectionEntryId="none">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Putrid Procession" hidden="false" id="3539-789e-eb53-96e7">
+            <selectionEntry type="upgrade" import="true" name="Putrid Procession" hidden="false" id="3539-789e-eb53-96e7" sortIndex="1">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e48f-ae5b-4b0e-1dc7" includeChildSelections="false"/>
               </constraints>
@@ -4070,7 +4070,19 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="064f-dc01-57f9-82f7"/>
+            <selectionEntry type="upgrade" import="true" name="Rotting Giants" hidden="false" id="064f-dc01-57f9-82f7" sortIndex="2">
+              <profiles>
+                <profile name="Avalanche of Flesh" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e24a-c042-dbac-feca">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">■ Each time an OGRYN unit from your army is selected to fight, if that unit made a Charge move this turn, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit.
+■ Each time an OGRYN unit from your army makes a ranged attack that targets the closest eligible unit, add 1 to the Hit roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23d2-2e24-f771-101e" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8aba-aa4d-a47b-b506" includeChildSelections="false"/>
