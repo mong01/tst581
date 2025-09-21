@@ -4403,10 +4403,6 @@ A. After rolling for the Damage characteristic, if the result (after applying an
     <selectionEntry type="upgrade" import="true" name="[Reference] Stratagems" hidden="true" id="2594-ffa2-8d93-37b9">
       <selectionEntryGroups>
         <selectionEntryGroup name="Detachments" id="7a60-2f5b-b53f-3784" hidden="false" defaultSelectionEntryId="none">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fea-b71f-6e30-905b" includeChildSelections="false" automatic="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ee7-19c5-fe62-b8c6" includeChildSelections="false" automatic="false"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Putrid Procession" hidden="false" id="5497-38c3-17ef-542d">
               <constraints>
