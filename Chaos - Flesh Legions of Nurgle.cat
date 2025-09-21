@@ -4410,8 +4410,8 @@ A. After rolling for the Damage characteristic, if the result (after applying an
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Putrid Procession" hidden="false" id="5497-38c3-17ef-542d">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="7a60-2f5b-b53f-3784" shared="true" id="7605-fb1e-9d40-e5a1" includeChildSelections="true" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="7a60-2f5b-b53f-3784" shared="true" id="5dc9-32b9-ec8e-344e" includeChildSelections="true" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="7a60-2f5b-b53f-3784" shared="true" id="7605-fb1e-9d40-e5a1" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="7a60-2f5b-b53f-3784" shared="true" id="5dc9-32b9-ec8e-344e" includeChildSelections="false" automatic="true"/>
               </constraints>
               <profiles>
                 <profile name="Swollen Bodies" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fdc9-81cd-5828-d1b1">
