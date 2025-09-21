@@ -4418,7 +4418,6 @@ A. After rolling for the Damage characteristic, if the result (after applying an
                   <modifiers>
                     <modifier type="set" value="0" field="7605-fb1e-9d40-e5a1"/>
                     <modifier type="set" value="0" field="5dc9-32b9-ec8e-344e"/>
-                    <modifier type="set" value="true" field="hidden"/>
                   </modifiers>
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="3539-789e-eb53-96e7" shared="true" includeChildSelections="true"/>
@@ -4494,7 +4493,6 @@ A. After rolling for the Damage characteristic, if the result (after applying an
                   <modifiers>
                     <modifier type="set" value="0" field="4a24-a59b-6910-5bf9"/>
                     <modifier type="set" value="0" field="5552-9e9a-a53f-32c0"/>
-                    <modifier type="set" value="true" field="hidden"/>
                   </modifiers>
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="064f-dc01-57f9-82f7" shared="true" includeChildSelections="true"/>
