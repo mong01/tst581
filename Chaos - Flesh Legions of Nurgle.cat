@@ -4414,23 +4414,23 @@ A. After rolling for the Damage characteristic, if the result (after applying an
 **Effect:** Until the end of the phase, each time an attack is allocated to a model in your unit, subtract 1 from the Damage characteristic of that attack.</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Devourance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e9be-74f6-0f53-0221">
+                <profile name="Bounding Volleys" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e9be-74f6-0f53-0221">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **1CP**
-**When:** End of the Fight phase.
-**Target:**  One NURGLETH FOLLOWERS unit from your army that has destroyed one or more enemy units this phase.
-**Effect:** Your unit can make a Normal move of up to 6&quot;. When doing so, your unit must end that move as close as possible to the closest enemy unit (excluding AIRCRAFT) and can be moved within Engagement Range of that unit.
-**Restrictions:** You cannot select a unit that is within Engagement Range of one or more enemy units.</characteristic>
+**When:** Your Shooting phase.
+**Target:**  One NURGLETH FOLLOWERS unit from your army that made an Advance move this turn.
+**Effect:** Until the end of the phase, your unit is eligible to shoot in a turn in which it Advanced.
+</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Breaking the Limit" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1b6a-f67e-bdae-973c">
+                <profile name="Reckless Power" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1b6a-f67e-bdae-973c">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **1CP**
 **When:** Fight phase
 **Target:**  One NURGLETH FOLLOWERS OGRYN unit from your army that has not been selected to fight this phase.
-**Effect:** Until the end of the phase, each time a model in your unit makes a melee attack, improve the Armour Penetration and Damage characteristics of that attack by 1. In addition, melee weapons equipped by models in your unit have the [HAZARDOUS] ability.</characteristic>
+**Effect:** Until the end of the phase, melee weapons equipped by models in your unit have the [HAZARDOUS] ability, and each time a model in your unit makes a melee attack, improve the Armour Penetration and Damage characteristics of that attack by 1</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Death Throes" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6136-1425-a281-93f7">
@@ -4441,6 +4441,16 @@ A. After rolling for the Damage characteristic, if the result (after applying an
 **Target:**  One NURGLETH FOLLOWERS VEHICLE or NURGLETH FOLLOWERS MONSTER model from your army with the Deadly Demise ability that was just destroyed. You can use this Stratagem on that model even though it was just destroyed.
 **Effect:** Do not roll one D6 to determine whether mortal wounds are inflicted by your model’s Deadly Demise ability. Instead, mortal wounds are automatically inflicted.
 **Restrictions:** *When selecting a TITANIC model for this Stratagem, increase the cost of that use of that Stratagem by 1CP.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Devourance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7668-3ccd-0734-d20a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:** End of the Fight phase.
+**Target:**  One NURGLETH FOLLOWERS unit from your army that has destroyed one or more enemy units this phase.
+**Effect:** Your unit can make a Normal move of up to 6&quot;. When doing so, your unit must end that move as close as possible to the closest enemy unit (excluding AIRCRAFT) and can be moved within Engagement Range of that unit.
+**Restrictions:** You cannot select a unit that is within Engagement Range of one or more enemy units.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
