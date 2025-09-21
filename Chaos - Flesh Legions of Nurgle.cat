@@ -4470,7 +4470,7 @@ A. After rolling for the Damage characteristic, if the result (after applying an
               <modifierGroups>
                 <modifierGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3539-789e-eb53-96e7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3539-789e-eb53-96e7" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                   <modifiers>
                     <modifier type="set" value="0" field="5dc9-32b9-ec8e-344e"/>
@@ -4482,6 +4482,7 @@ A. After rolling for the Damage characteristic, if the result (after applying an
             <selectionEntry type="upgrade" import="true" name="Corpse Eaters" hidden="false" id="ff76-9ba8-2da2-607f">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a24-a59b-6910-5bf9" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bae3-78ad-7a96-d40e" includeChildSelections="false" automatic="true"/>
               </constraints>
               <profiles>
                 <profile name="Wide Bursts" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="172e-be1a-dcf0-b13c">
@@ -4541,6 +4542,17 @@ A. After rolling for the Damage characteristic, if the result (after applying an
                   </characteristics>
                 </profile>
               </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="064f-dc01-57f9-82f7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" value="0" field="bae3-78ad-7a96-d40e"/>
+                    <modifier type="set" value="0" field="4a24-a59b-6910-5bf9"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
           </selectionEntries>
           <constraints>
