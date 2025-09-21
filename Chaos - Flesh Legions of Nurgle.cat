@@ -4406,7 +4406,8 @@ A. After rolling for the Damage characteristic, if the result (after applying an
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Putrid Procession" hidden="false" id="5497-38c3-17ef-542d">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5dc9-32b9-ec8e-344e" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5dc9-32b9-ec8e-344e" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4dc1-3c17-da05-315e" includeChildSelections="false" automatic="true"/>
               </constraints>
               <profiles>
                 <profile name="Swollen Bodies" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fdc9-81cd-5828-d1b1">
@@ -4466,6 +4467,17 @@ A. After rolling for the Damage characteristic, if the result (after applying an
                   </characteristics>
                 </profile>
               </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3539-789e-eb53-96e7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" value="0" field="5dc9-32b9-ec8e-344e"/>
+                    <modifier type="set" value="0" field="4dc1-3c17-da05-315e"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Corpse Eaters" hidden="false" id="ff76-9ba8-2da2-607f">
               <constraints>
@@ -4531,6 +4543,9 @@ A. After rolling for the Damage characteristic, if the result (after applying an
               </profiles>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="135a-1ffb-149d-729b" includeChildSelections="false" automatic="true"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
