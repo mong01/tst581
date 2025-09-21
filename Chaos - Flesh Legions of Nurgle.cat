@@ -3368,7 +3368,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Twin heavy bolter" hidden="false" id="b13d-f3cd-4cd3-a4fb" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Twin heavy bolters" hidden="false" id="b13d-f3cd-4cd3-a4fb" collective="false">
       <profiles>
         <profile name="Twin heavy bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="aab2-69b7-28e1-d235">
           <characteristics>
