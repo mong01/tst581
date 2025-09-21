@@ -3580,12 +3580,12 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         </profile>
         <profile typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1204-71c0-24ec-90c8" name="Warp Flux (Psychic)">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, select one enemy unit within 18&quot; of and visible to this unit (excluding units with the Lone Operative ability that are not part of an Attached unit and are not within 12&quot; of this model) and roll one D6 for each model in this unit: for each 4+, that enemy unit suffers 1 mortal wound.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, you can select one enemy unit within 18&quot; of and visible to this unit (excluding units with the Lone Operative ability that are not part of an Attached unit and are not within 12&quot; of this model) and roll one D6 for each model in this unit: for each 4+, that enemy unit suffers 1 mortal wound.</characteristic>
           </characteristics>
         </profile>
         <profile name="Unnatural Vigour (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0be5-0f38-f585-546d">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Movement phase, you can select one friendly NURGLETH FOLLOWERS unit (excluding MONSTER and VEHICLE units) within 18&quot; of this unit and roll one D6: on a 1, this unit suffers D3 mortal wounds; on a 2+, until the start of your next Movement phase:
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Movement phase, you can select one friendly NURGLETH FOLLOWERS unit (excluding VEHICLE units) within 18&quot; of this unit and roll one D6: on a 1, this unit suffers D3 mortal wounds; on a 2+, until the start of your next Movement phase:
 ■ Each time that model in that unit makes a melee attack, you can re-roll the Wound roll.
 ■ You can re-roll Charge rolls made for that unit.</characteristic>
           </characteristics>
