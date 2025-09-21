@@ -4117,7 +4117,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
               <profiles>
                 <profile name="Voracious Onslaught" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e24a-c042-dbac-feca">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to Advance and Charge rolls made for NURGLETH FOLLOWERS units from your army. In addition, each time an OGRYN unit from your army is selected to fight, if that unit made a Charge move this turn, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a NURGLETH FOLLOWERS unit from your army is selected to fight, if that unit made a Charge move this turn, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit. In addition, each time a NURGLETH FOLLOWERS OGRYN unit from your army makes an Advance or Charge roll, add 1 to the result</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4440,7 +4440,7 @@ A. After rolling for the Damage characteristic, if the result (after applying an
 **When:** Any phase.
 **Target:**  One NURGLETH FOLLOWERS VEHICLE or NURGLETH FOLLOWERS MONSTER model from your army with the Deadly Demise ability that was just destroyed. You can use this Stratagem on that model even though it was just destroyed.
 **Effect:** Do not roll one D6 to determine whether mortal wounds are inflicted by your model’s Deadly Demise ability. Instead, mortal wounds are automatically inflicted.
-**Restrictions:** *When selecting a TITANIC model for this Stratagem, change the cost of this Stratagem to 2CP.</characteristic>
+**Restrictions:** *When selecting a TITANIC model for this Stratagem, increase the cost of that use of that Stratagem by 1CP.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
