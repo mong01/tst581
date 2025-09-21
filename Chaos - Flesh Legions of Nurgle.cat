@@ -4586,7 +4586,7 @@ A. After rolling for the Damage characteristic, if the result (after applying an
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="12eb-1211-001c-2cb6" includeChildSelections="true"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Show Reference Options?" id="db1d-b5a5-51d7-aa08" hidden="false" defaultSelectionEntryId="e7f2-b154-8ac7-ac7e">
+        <selectionEntryGroup name="Show Reference Options?" id="db1d-b5a5-51d7-aa08" hidden="false" defaultSelectionEntryId="05a4-5305-1124-65dd">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Yes" hidden="false" id="05a4-5305-1124-65dd">
               <constraints>
