@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1069-10ff-3ba9-873b" name="Chaos - Thousand Sons" revision="83" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1069-10ff-3ba9-873b" name="Chaos - Thousand Sons" revision="86" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="015a-6212-d737-9044" name="Index - Thousand Sons"/>
   </publications>
@@ -2449,7 +2449,12 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
         <entryLink import="true" name="Crusade" hidden="false" id="3749-d41d-bded-99e9" type="selectionEntryGroup" targetId="965a-b245-f1be-9dbd" sortIndex="1"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="240"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifierGroups>
         <modifierGroup type="and">
@@ -5670,11 +5675,12 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
         <entryLink import="true" name="Crusade" hidden="false" id="2eb9-1072-88db-af47" type="selectionEntryGroup" targetId="965a-b245-f1be-9dbd" sortIndex="1"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="c926-eb02-734f-5eb2" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
@@ -6059,11 +6065,12 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="420"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="435"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c74-f13c-d125-ee54" type="max"/>
@@ -6353,11 +6360,12 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
         <categoryLink name="Mutant" hidden="false" id="7c68-29ef-db23-76ce" targetId="24dd-cf44-f6ab-e0e2" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="175"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <constraints>
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c74-f13c-d125-ee54" type="max"/>
@@ -6545,11 +6553,12 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rubric Marines" hidden="false" id="5d3d-e13b-8b76-dad3">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="105"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="190" field="51b2-306e-1021-d207">
@@ -6887,6 +6896,9 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
                       </modifiers>
                     </infoLink>
                   </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="7ba1-56d3-a778-1a5b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="913d-622a-47e9-4e42" collective="true">
                   <constraints>
@@ -6939,6 +6951,9 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
                     <infoLink name="Ignores Cover" hidden="false" type="rule" id="312c-e655-895e-c333" targetId="4640-43e7-30b-215a"/>
                     <infoLink name="Torrent" hidden="false" type="rule" id="718-6e9d-6d62-7f71" targetId="5edf-d619-23e0-9b56"/>
                   </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="c28d-6dda-b7b6-5ab9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="c9d8-d87b-e74e-26f4" collective="true">
                   <constraints>
@@ -7019,6 +7034,9 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
                       </modifiers>
                     </infoLink>
                   </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="6707-ea97-5f57-db84" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -7120,7 +7138,7 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="375" field="51b2-306e-1021-d207">
+        <modifier type="set" value="360" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="greaterThan" value="5" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -7383,6 +7401,9 @@ Wound roll.</characteristic>
           <associations>
             <association min="1" max="1" scope="b1cf-c5-5121-92a4" childId="9fbe-3d53-a375-b987" name="Hellfyre missile rack" id="5711-b735-22db-7a5b"/>
           </associations>
+          <entryLinks>
+            <entryLink import="true" name="Weapon Modifications" hidden="false" id="80b2-668e-5046-1a5b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -7412,6 +7433,9 @@ Wound roll.</characteristic>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8acf-3383-ea62-52c1"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="534a-64b4-30a-febb"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="25bb-6720-382d-d169" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
                 </selectionEntry>
                 <selectionEntry id="7361-7d8a-dbfc-b6e8" name="Prosperine khopesh" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -7431,6 +7455,9 @@ Wound roll.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="4202-b888-ab62-86e6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
                 </selectionEntry>
               </selectionEntries>
               <modifiers>
@@ -7473,10 +7500,17 @@ Wound roll.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="690f-cddd-5b65-9c8c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
-                    <entryLink import="true" name="Heavy warpflamer" hidden="false" id="97d6-352f-92a7-7ccc" type="selectionEntry" targetId="0dc4-725f-e51b-77f7"/>
+                    <entryLink import="true" name="Heavy warpflamer" hidden="false" id="97d6-352f-92a7-7ccc" type="selectionEntry" targetId="0dc4-725f-e51b-77f7">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="b6bf-1c7b-ed97-2dc4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Scarab Occult Terminator w/ soulreaper cannon" hidden="false" id="f0e4-fd2b-1ba8-7234">
@@ -7502,6 +7536,9 @@ Wound roll.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="169c-2d29-38fb-d549" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Soulreaper cannon" hidden="false" id="782c-e91c-5a17-27c4" collective="true">
                       <constraints>
@@ -7524,6 +7561,9 @@ Wound roll.</characteristic>
                       <infoLinks>
                         <infoLink name="Devastating Wounds" id="a887-b7d5-cb9a-026e" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
                       </infoLinks>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="6f68-840b-fba3-5c65" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
@@ -7683,11 +7723,12 @@ Wound roll.</characteristic>
         <entryLink import="true" name="Crusade" hidden="false" id="026d-e392-0b48-4877" type="selectionEntryGroup" targetId="965a-b245-f1be-9dbd" sortIndex="1"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <constraints>
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c74-f13c-d125-ee54" type="max"/>
@@ -7897,7 +7938,7 @@ Wound roll.</characteristic>
         </profile>
         <profile name="Marked by Fate (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8c56-bbd9-5aa5-21f0">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model&apos;s unit has shot, select one enemy unit hit by one or more of those attacks made with a Psychic weapon. Until the end of the phase, each time a friendly ^^**Thousand Sons^^** model makes an attack that targets that enemy unit, add 1 to the Hit roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Shooting phase, select one enemy unit that is visible to this ^^**Psyker^^** model. Until the end of the phase, each time a model in this unit makes an attack that targets that enemy unit, add 1 to the Hit roll.</characteristic>
           </characteristics>
         </profile>
         <profile name="Sorcerer in Terminator Armour" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="123c-e2d5-50ff-e0d4">
@@ -8082,25 +8123,6 @@ Wound roll.</characteristic>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f54-1045-c891-f69"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7758-1a9d-2d4b-3aee"/>
       </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Brutal assault weapon" hidden="false" id="dc4-4c83-52b8-7281" collective="true">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="738-c78a-bedd-960d"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c4f-2887-a308-e23f"/>
-      </constraints>
-      <profiles>
-        <profile name="Brutal assault weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5c27-2528-1f73-7a9">
-          <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-            <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
-            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry id="eccd-e442-607b-3fd0" name="Daemon Prince of Tzeentch" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -8678,14 +8700,15 @@ Wound roll.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="80" field="51b2-306e-1021-d207">
+        <modifier type="set" value="90" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="greaterThan" value="3" field="selections" scope="1703-3edd-5eb3-fcef" childId="model" shared="true" id="f967-eaea-fef9-e164" includeChildSelections="true"/>
           </conditions>
@@ -8806,11 +8829,12 @@ Wound roll.</characteristic>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tzaangor Shaman" hidden="false" id="c251-bd54-441-4799">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="b4b3-ed87-a368-dd2b" includeChildSelections="true"/>
@@ -9093,6 +9117,9 @@ Wound roll.</characteristic>
                   <infoLinks>
                     <infoLink name="Tzaangor blades" id="5a6c-692f-07d1-f71c" hidden="false" type="profile" targetId="a779-d1c7-9b85-c8d1"/>
                   </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="8956-7712-fb13-0a05" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -10813,14 +10840,15 @@ Wound roll.</characteristic>
         <categoryLink name="Sekhetar Robots" hidden="false" id="2439-9415-7f93-404e" targetId="63b3-ccfa-5ef5-3a1a" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="180" field="51b2-306e-1021-d207">
+        <modifier type="set" value="160" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="3" field="selections" scope="fe4b-b3a4-69b7-3088" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -11009,6 +11037,9 @@ Wound roll.</characteristic>
       <infoLinks>
         <infoLink name="Pistol" id="886b-877e-6ab4-9165" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="9afa-648e-017a-6556" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="8dc6-4f7d-e5bb-1f69" collective="true">
       <constraints>
@@ -11069,14 +11100,15 @@ Wound roll.</characteristic>
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="80" field="51b2-306e-1021-d207">
+        <modifier type="set" value="110" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="greaterThan" value="3" field="selections" scope="8b9f-917f-37c1-99c3" childId="model" shared="true" id="e024-ffb3-2de9-8e06" includeChildSelections="true"/>
           </conditions>
@@ -11216,6 +11248,9 @@ Wound roll.</characteristic>
         <infoLink name="Lethal Hits" id="a2fe-e834-73c9-a7cb" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
         <infoLink name="Precision" id="1410-b214-7182-7949" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="6ef3-fd66-f55c-88c3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="23a5-d6be-b617-1565">
       <constraints>
@@ -12212,7 +12247,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f186-2d27-e6db-1673" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="eef6-4b12-1eff-f412" name="Lord of Forbidden Lore" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1">
+        <selectionEntry id="eef6-4b12-1eff-f412" name="Lord of Forbidden Lore" hidden="false" collective="false" import="true" type="upgrade" sortIndex="7">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -12244,7 +12279,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
           </costs>
           <comment>Grand Coven</comment>
         </selectionEntry>
-        <selectionEntry id="3811-a215-d4a1-d197" name="Umbralefic Crystal" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
+        <selectionEntry id="3811-a215-d4a1-d197" name="Umbralefic Crystal" hidden="false" collective="false" import="true" type="upgrade" sortIndex="8">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="860c-9e47-d974-b5b3" type="max"/>
           </constraints>
@@ -12272,7 +12307,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
           </modifiers>
           <comment>Grand Coven</comment>
         </selectionEntry>
-        <selectionEntry id="7213-a7b3-4c8e-96bc" name="Eldritch Vortex of E&apos;taph" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4">
+        <selectionEntry id="7213-a7b3-4c8e-96bc" name="Eldritch Vortex of E&apos;taph" hidden="false" collective="false" import="true" type="upgrade" sortIndex="5">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e272-466e-d1b3-7d71" type="max"/>
           </constraints>
@@ -12284,7 +12319,12 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -12304,7 +12344,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
           </modifiers>
           <comment>Grand Coven</comment>
         </selectionEntry>
-        <selectionEntry id="1150-7501-d526-d373" name="Incandeum" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
+        <selectionEntry id="1150-7501-d526-d373" name="Incandeum" hidden="false" collective="false" import="true" type="upgrade" sortIndex="6">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -12328,7 +12368,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
           <profiles>
             <profile id="a3a7-8d9c-4268-aec5" name="Incandeum" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, when selecting a Ritual for the bearer to attempt, you can select Doombolt, even if a model from your army has already manifested that Ritual this phase.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, when selecting a Ritual for the bearer to attempt, you can select Doombolt, even if a model from your army has already attempted to manifest that Ritual this phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -12469,7 +12509,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
           </profiles>
           <comment>Hexwarp</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Nethershriek Mind-eater" hidden="false" id="1dc7-5ba1-1758-a0dd" sortIndex="5">
+        <selectionEntry type="upgrade" import="true" name="Nethershriek Mind-eater" hidden="false" id="1dc7-5ba1-1758-a0dd" sortIndex="3">
           <comment>Changehost</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -12501,7 +12541,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Diabolic Servant" hidden="false" id="5ccc-1a90-1727-663f" sortIndex="6">
+        <selectionEntry type="upgrade" import="true" name="Diabolic Servant" hidden="false" id="5ccc-1a90-1727-663f" sortIndex="1">
           <comment>Changehost</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -12538,7 +12578,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Duplicitous Malediction" hidden="false" id="2c2a-02e4-f184-df16" sortIndex="7">
+        <selectionEntry type="upgrade" import="true" name="Duplicitous Malediction" hidden="false" id="2c2a-02e4-f184-df16" sortIndex="2">
           <comment>Changehost</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -12570,7 +12610,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Tome of True Names" hidden="false" id="3ee5-93cb-43a8-67f4" sortIndex="8">
+        <selectionEntry type="upgrade" import="true" name="Tome of True Names" hidden="false" id="3ee5-93cb-43a8-67f4" sortIndex="4">
           <comment>Changehost</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -12607,7 +12647,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Warpmeld Dagger" hidden="false" id="5eaa-74bf-f08a-712c" sortIndex="9">
+        <selectionEntry type="upgrade" import="true" name="Warpmeld Dagger" hidden="false" id="5eaa-74bf-f08a-712c" sortIndex="20">
           <comment>Warpmeld Pact</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -12644,7 +12684,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Diamond of Distortion" hidden="false" id="190d-7321-6e85-5251" sortIndex="10">
+        <selectionEntry type="upgrade" import="true" name="Diamond of Distortion" hidden="false" id="190d-7321-6e85-5251" sortIndex="18">
           <comment>Warpmeld Pact</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -12681,7 +12721,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Bray Lord" hidden="false" id="c357-dd19-13a4-38cd" sortIndex="11">
+        <selectionEntry type="upgrade" import="true" name="Bray Lord" hidden="false" id="c357-dd19-13a4-38cd" sortIndex="17">
           <comment>Warpmeld Pact</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -12730,7 +12770,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Flowing Flesh" hidden="false" id="c84c-683a-79be-1620" sortIndex="12">
+        <selectionEntry type="upgrade" import="true" name="Flowing Flesh" hidden="false" id="c84c-683a-79be-1620" sortIndex="19">
           <comment>Warpmeld Pact</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -12775,7 +12815,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Risen Rubricae" hidden="false" id="2844-f588-0528-92ed" sortIndex="13">
+        <selectionEntry type="upgrade" import="true" name="Risen Rubricae" hidden="false" id="2844-f588-0528-92ed" sortIndex="11">
           <comment>Rubricae Phalanx</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -12807,7 +12847,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Arcane Thralls (Aura)" hidden="false" id="f27a-2ade-fd42-133d" sortIndex="14">
+        <selectionEntry type="upgrade" import="true" name="Arcane Thralls (Aura)" hidden="false" id="f27a-2ade-fd42-133d" sortIndex="9">
           <comment>Rubricae Phalanx</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -12839,7 +12879,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Lord of the Rubricae" hidden="false" id="df1d-52b9-516f-9d59" sortIndex="15">
+        <selectionEntry type="upgrade" import="true" name="Lord of the Rubricae" hidden="false" id="df1d-52b9-516f-9d59" sortIndex="10">
           <comment>Rubricae Phalanx</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -12871,7 +12911,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Stave Abominus" hidden="false" id="ae8c-980f-21c4-5290" sortIndex="16">
+        <selectionEntry type="upgrade" import="true" name="Stave Abominus" hidden="false" id="ae8c-980f-21c4-5290" sortIndex="12">
           <comment>Rubricae Phalanx</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -12909,7 +12949,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Warp Syphon" hidden="false" id="aa85-8fcc-fbc7-d9c1" sortIndex="17">
+        <selectionEntry type="upgrade" import="true" name="Warp Syphon" hidden="false" id="aa85-8fcc-fbc7-d9c1" sortIndex="15">
           <comment>Warpforged Cabal</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -12941,7 +12981,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Perplexing Cloak" hidden="false" id="3322-390b-8ea5-31f7" sortIndex="18">
+        <selectionEntry type="upgrade" import="true" name="Perplexing Cloak" hidden="false" id="3322-390b-8ea5-31f7" sortIndex="14">
           <comment>Warpforged Cabal</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -12978,7 +13018,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Biomechanical Mutation" hidden="false" id="0931-df08-eae6-c749" sortIndex="19">
+        <selectionEntry type="upgrade" import="true" name="Biomechanical Mutation" hidden="false" id="0931-df08-eae6-c749" sortIndex="13">
           <comment>Warpforged Cabal</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -13010,7 +13050,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Warp-cursed Runemaster" hidden="false" id="ccc5-5c73-1392-d855" sortIndex="20">
+        <selectionEntry type="upgrade" import="true" name="Warp-cursed Runemaster" hidden="false" id="ccc5-5c73-1392-d855" sortIndex="16">
           <comment>Warpforged Cabal</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -15193,7 +15233,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
   </catalogueLinks>
   <sharedRules>
     <rule name="Cabal of Sorcerers" id="b280-6105-5358-ba2e" hidden="false">
-      <description>If your army Faction is ^^**Thousand Sons^^**, at the start of your Shooting phase, one or more models from your army with this ability can attempt Rituals. To do so, select one model from your army with this ability that has not yet attempted a Ritual this turn and select one Ritual no model from your army has manifested this turn, then take a Psychic test by following the sequence below:
+      <description>If your army Faction is ^^**Thousand Sons^^**, at the start of your Shooting phase, one or more models from your army with this ability can attempt Rituals. To do so, select one model from your army with this ability that has not yet attempted a Ritual this turn and select one Ritual no model from your army has attempted to manifest this turn, then take a Psychic test by following the sequence below:
 
 1. Roll 2D6
 2. Optionally, roll one additional D6 (Channel the Warp). Then, if one or more doubles or triples were rolled during this test, that model&apos;s unit suffers D3 mortal wounds.

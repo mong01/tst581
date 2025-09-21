@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8106-aad2-918a-9ac" name="Chaos - Chaos Knights Library" revision="48" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8106-aad2-918a-9ac" name="Chaos - Chaos Knights Library" revision="50" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="99dc-0f47-85e2-75da" name="War Dog" hidden="false">
       <modifiers>
@@ -328,7 +328,7 @@
         </modifier>
         <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="6" field="b0aa-5b7a-4a18-1c9f">
@@ -757,7 +757,7 @@
         </modifier>
         <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="6" field="2ba8-ba3f-1a25-cb99">
@@ -991,7 +991,7 @@
         </modifier>
         <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="6" field="1df3-61b3-1a11-0900">
@@ -1195,7 +1195,7 @@
         </modifier>
         <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="6" field="1995-c5fc-e109-31f1">
@@ -1394,7 +1394,7 @@
         </modifier>
         <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="6" field="f1a4-0645-a8de-81bd">
@@ -2736,7 +2736,7 @@
         </profile>
         <profile id="cac0-b733-e4cf-d88e" name="Warp Storms (Psychic)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your Movement phase, roll one D6 for each enemy unit within 9&quot; of this model: on a 3+, that enemy unit suffers D3 mortal wounds.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your Movement phase, roll one D6 for each enemy unit within 9&quot; of one or more models with this ability: on a 3+, that enemy unit suffers D3 mortal wounds.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3640,10 +3640,13 @@ While using the Houndpack Lance Detachment, the following rules apply:
                 <rule name="Malefic Surge" id="b671-ba7f-7668-9c08" hidden="false">
                   <description>In your Command phase, one or more ^^**Chaos Knights^^** units from your army can make a Malefic Surge. Each one that does must first take a Leadership test; if that test is failed, that unit suffers D3 mortal wounds. Then, until the start of your next Command phase, that unit is Empowered. While a unit is Empowered, it can use one of the Malefic Surge abilities below. Once that unit has used a Malefic Surge ability, it is no longer Empowered.
 
+*Unholy Hunger:** When a model in this unit makes a Normal, Advance or Fall Back move, until the end of the phase, add 3&quot; to its Move characteristic.
 
-- **Unholy Hunger:** When a model in this unit makes a Normal, Advance or Fall Back move, until the end of the phase, add 3&quot; to its Move characteristic.
-- **Diabolic Power:** When this unit is selected to shoot or fight, select either the [Lethal Hits] or [Sustained Hits 1] ability. Until the end of the phase, weapons equipped by models in this unit have the selected ability.
-- **Unnatural Fortitude:** When this unit is selected as the target of an attack, until the end of the phase, models in this unit have a 5+ invulnerable save and the Feel No Pain 6+ ability.</description>
+**Diabolic Power:** When this unit is selected to shoot or fight, select either the [Lethal Hits] or [Sustained Hits 1] ability. Until the end of the phase, weapons equipped by models in this unit have the selected ability.
+
+**Unnatural Fortitude:** When this unit is selected as the target of an attack, until the end of the phase, select one of the following:
+- Models in this unit have a 5+ invulnerable save
+- Models in this unit have the Feel No Pain 6+ ability.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -6172,7 +6175,7 @@ While using the Houndpack Lance Detachment, the following rules apply:
         </modifier>
         <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="6" field="1df3-61b3-1a11-0900">
@@ -6268,7 +6271,7 @@ While using the Houndpack Lance Detachment, the following rules apply:
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category" scope="parent"/>
