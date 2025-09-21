@@ -4404,7 +4404,7 @@ A. After rolling for the Damage characteristic, if the result (after applying an
       <selectionEntryGroups>
         <selectionEntryGroup name="Detachments" id="7a60-2f5b-b53f-3784" hidden="false" defaultSelectionEntryId="none">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Putrid Procession" hidden="false" id="5497-38c3-17ef-542d" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Putrid Procession" hidden="false" id="5497-38c3-17ef-542d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7605-fb1e-9d40-e5a1" includeChildSelections="false" automatic="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5dc9-32b9-ec8e-344e" includeChildSelections="false" automatic="true"/>
@@ -4468,19 +4468,19 @@ A. After rolling for the Damage characteristic, if the result (after applying an
                 </profile>
               </profiles>
               <modifiers>
-                <modifier type="set" value="0" field="7605-fb1e-9d40-e5a1">
+                <modifier type="set" value="0" field="5dc9-32b9-ec8e-344e">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="3539-789e-eb53-96e7" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="0" field="5dc9-32b9-ec8e-344e">
+                <modifier type="set" value="0" field="7605-fb1e-9d40-e5a1">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="3539-789e-eb53-96e7" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Corpse Eaters" hidden="false" id="ff76-9ba8-2da2-607f" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Corpse Eaters" hidden="false" id="ff76-9ba8-2da2-607f">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5552-9e9a-a53f-32c0" includeChildSelections="false" automatic="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a24-a59b-6910-5bf9" includeChildSelections="false" automatic="true"/>
@@ -4544,12 +4544,12 @@ A. After rolling for the Damage characteristic, if the result (after applying an
                 </profile>
               </profiles>
               <modifiers>
-                <modifier type="set" value="0" field="5552-9e9a-a53f-32c0">
+                <modifier type="set" value="0" field="4a24-a59b-6910-5bf9">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="064f-dc01-57f9-82f7" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="0" field="4a24-a59b-6910-5bf9">
+                <modifier type="set" value="0" field="5552-9e9a-a53f-32c0">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="064f-dc01-57f9-82f7" shared="true" includeChildSelections="true"/>
                   </conditions>
