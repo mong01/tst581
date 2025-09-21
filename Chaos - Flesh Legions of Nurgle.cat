@@ -4529,17 +4529,6 @@ A. After rolling for the Damage characteristic, if the result (after applying an
                   </characteristics>
                 </profile>
               </profiles>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="064f-dc01-57f9-82f7" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <modifiers>
-                    <modifier type="set" value="0" field="4a24-a59b-6910-5bf9"/>
-                    <modifier type="set" value="0" field="5552-9e9a-a53f-32c0"/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
