@@ -4489,17 +4489,6 @@ A. After rolling for the Damage characteristic, if the result (after applying an
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5552-9e9a-a53f-32c0" includeChildSelections="true" automatic="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a24-a59b-6910-5bf9" includeChildSelections="true" automatic="true"/>
               </constraints>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="set" value="0" field="4a24-a59b-6910-5bf9"/>
-                    <modifier type="set" value="0" field="5552-9e9a-a53f-32c0"/>
-                  </modifiers>
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="064f-dc01-57f9-82f7" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifierGroup>
-              </modifierGroups>
               <profiles>
                 <profile name="Wide Bursts" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="172e-be1a-dcf0-b13c">
                   <characteristics>
@@ -4558,6 +4547,18 @@ A. After rolling for the Damage characteristic, if the result (after applying an
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="set" value="0" field="4a24-a59b-6910-5bf9">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="064f-dc01-57f9-82f7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="5552-9e9a-a53f-32c0">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="064f-dc01-57f9-82f7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
