@@ -4113,12 +4113,11 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Rotting Giants" hidden="false" id="064f-dc01-57f9-82f7" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Corpse Eaters" hidden="false" id="064f-dc01-57f9-82f7" sortIndex="2">
               <profiles>
-                <profile name="Avalanche of Flesh" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e24a-c042-dbac-feca">
+                <profile name="Voracious Onslaught" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e24a-c042-dbac-feca">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">■ Each time an OGRYN unit from your army is selected to fight, if that unit made a Charge move this turn, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit.
-■ Each time an OGRYN unit from your army makes a ranged attack that targets the closest eligible unit, add 1 to the Hit roll.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to Advance and Charge rolls made for NURGLETH FOLLOWERS units from your army. In addition, each time an OGRYN unit from your army is selected to fight, if that unit made a Charge move this turn, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4276,8 +4275,8 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
       <profiles>
         <profile name="FAQ" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="be9d-b3db-4ea1-5f2c">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Q. How do weapons with a random Damage characteristic (e.g. D6) interact with the Corpse March ability?
-A. After rolling for the Damage characteristic, if the result (including modifiers) is higher than 3, the ability takes effect as described.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Q. How do attacks with a random/modified Damage characteristic (e.g. D6) interact with the Corpse March ability?
+A. After rolling for the Damage characteristic, if the result (after applying any modifiers) is higher than 3, the ability takes effect as described. For example, if the Damage rolled was a 3, which is increased by 2, but decreased by 1, the final Damage characteristic is 4, which is then lowered to 3 as a result of the ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4326,7 +4325,7 @@ A. After rolling for the Damage characteristic, if the result (including modifie
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **1CP**
 **When:** Fight phase, just after an enemy unit has selected its targets.
-**Target:** One NURGLETH FOLLOWERS INFANTRY unit from your army (excluding CORPULENT SHAMBLERS units) that was selected as the target of one or more of the attacking unit’s attacks.
+**Target:** One NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit from your army that was selected as the target of one or more of the attacking unit’s attacks.
 **Effect:** After the attacking unit has fought, roll one D6 for each model from your unit that was destroyed as a result of those attacks: on a 4+, the attacking unit suffers 1 mortal wound (to a maximum of 6 mortal wounds per phase).</characteristic>
                   </characteristics>
                 </profile>
@@ -4335,7 +4334,7 @@ A. After rolling for the Damage characteristic, if the result (including modifie
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **1CP**
 **When:** Your Shooting phase.
-**Target:** One NURGLETH FOLLOWERS INFANTRY unit from your army that has not been selected to shoot this phase, and one enemy MONSTER or VEHICLE unit visible to that unit.
+**Target:** One NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit from your army that has not been selected to shoot this phase, and one enemy MONSTER or VEHICLE unit visible to that unit.
 **Effect:** Until the end of the phase, each time a model in your unit makes a ranged attack against that enemy unit, you can re-roll the Wound roll.</characteristic>
                   </characteristics>
                 </profile>
@@ -4354,7 +4353,7 @@ A. After rolling for the Damage characteristic, if the result (including modifie
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **1CP**
 **When:** Fight phase.
-**Target:** One NURGLETH FOLLOWERS INFANTRY unit from your army.
+**Target:** One NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit from your army.
 **Effect:** Until the end of the phase, each time a model in your unit makes a melee attack, an unmodified Hit roll of 5+ scores a Critical Hit.</characteristic>
                   </characteristics>
                 </profile>
@@ -4363,7 +4362,7 @@ A. After rolling for the Damage characteristic, if the result (including modifie
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **1CP**
 **When:** Command phase.
-**Target:** One NURGLETH FOLLOWERS INFANTRY unit from your army.
+**Target:** One NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit from your army.
 **Effect:** Until the end of the battle round, your unit benefits from both the Waxing Stage and Waning Stage abilities.
 **Restrictions:** This Stratagem can only be used once per battle round.</characteristic>
                   </characteristics>
@@ -4373,13 +4372,13 @@ A. After rolling for the Damage characteristic, if the result (including modifie
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **1CP**
 **When:** Your opponent&apos;s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
-**Target:** One NURGLETH FOLLOWERS INFANTRY unit from your army that was selected as the target of one or more of the attacking unit&apos;s attacks.
+**Target:** One NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit from your army that was selected as the target of one or more of the attacking unit&apos;s attacks.
 **Effect:** Until the end of the phase, each time an attack targets your unit, subtract 1 from the Hit roll.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Rotting Giants" hidden="false" id="ff76-9ba8-2da2-607f">
+            <selectionEntry type="upgrade" import="true" name="Corpse Eaters" hidden="false" id="ff76-9ba8-2da2-607f">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5552-9e9a-a53f-32c0" includeChildSelections="false" automatic="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a24-a59b-6910-5bf9" includeChildSelections="false" automatic="true"/>
@@ -4397,13 +4396,51 @@ A. After rolling for the Damage characteristic, if the result (including modifie
                 </modifierGroup>
               </modifierGroups>
               <profiles>
-                <profile name="Indefatigable Constitution" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="172e-be1a-dcf0-b13c">
+                <profile name="Wide Bursts" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="172e-be1a-dcf0-b13c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
+**1CP**
+**When:** Your Shooting phase.
+**Target:** One NURGLETH FOLLOWERS unit from your army that has not been selected to shoot this phase.
+**Effect:** Until the end of the phase, each time a model in your unit makes an attack that targets the closest eligible target, add 1 to the Hit roll.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Indefatigable Constitution" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="698a-6752-5272-2aec">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **2CP**
 **When:** Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
 **Target:** One NURGLETH FOLLOWERS OGRYN unit from your army that was selected as the target of one or more of the attacking unit’s attacks.
 **Effect:** Until the end of the phase, each time an attack is allocated to a model in your unit, subtract 1 from the Damage characteristic of that attack.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Devourance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e9be-74f6-0f53-0221">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:** End of the Fight phase.
+**Target:**  One NURGLETH FOLLOWERS unit from your army that has destroyed one or more enemy units this phase.
+**Effect:** Your unit can make a Normal move of up to 6&quot;. When doing so, your unit must end that move as close as possible to the closest enemy unit (excluding AIRCRAFT) and can be moved within Engagement Range of that unit.
+**Restrictions:** You cannot select a unit that is within Engagement Range of one or more enemy units.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Breaking the Limit" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1b6a-f67e-bdae-973c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
+**1CP**
+**When:** Fight phase
+**Target:**  One NURGLETH FOLLOWERS OGRYN unit from your army that has not been selected to fight this phase.
+**Effect:** Until the end of the phase, each time a model in your unit makes a melee attack, improve the Armour Penetration and Damage characteristics of that attack by 1. In addition, melee weapons equipped by models in your unit have the [HAZARDOUS] ability.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Death Throes" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6136-1425-a281-93f7">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1/2CP***
+**When:** Any phase.
+**Target:**  One NURGLETH FOLLOWERS VEHICLE or NURGLETH FOLLOWERS MONSTER model from your army with the Deadly Demise ability that was just destroyed. You can use this Stratagem on that model even though it was just destroyed.
+**Effect:** Do not roll one D6 to determine whether mortal wounds are inflicted by your model’s Deadly Demise ability. Instead, mortal wounds are automatically inflicted.
+**Restrictions:** *When selecting a TITANIC model for this Stratagem, change the cost of this Stratagem to 2CP.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
