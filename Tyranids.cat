@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b984-7317-81cc-20f" name="Xenos - Tyranids" revision="103" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Dunamis55">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b984-7317-81cc-20f" name="Xenos - Tyranids" revision="105" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Dunamis55">
   <categoryEntries>
     <categoryEntry name="Synapse" hidden="false" id="4129-a453-686a-d38a"/>
     <categoryEntry id="4f10-fe01-4b80-8d6b" name="Winged Hive Tyrant" hidden="false"/>
@@ -438,7 +438,7 @@
   </entryLinks>
   <rules>
     <rule id="86aa-437f-260b-5cad" name="Synapse" hidden="false">
-      <description>If your Army Faction is TYRANIDS, while a TYRANIDS unit from your army is within 6&quot; of one or more friendly SYNAPSE  models, that TYRANIDS unit is said to be within Synapse Range of that model and of your army. While a Tyranids unit from your army is within Synapse Range of your army:
+      <description>If your Army Faction is **^^Tyranids^^**, while a **^^Tyranids^^** unit from your army is within 6&quot; of one or more friendly **^^Synapse^^** models, that **^^Tyranids^^** unit is said to be within Synapse Range of that model and of your army. While a **^^Tyranids^^** unit from your army is within Synapse Range of your army:
 
 ■ Each time that unit takes a Battle-shock test, take that test on 3D6 instead of 2D6.
 ■ Each time a model in that unit makes a melee attack, add 1 to the Strength characteristic of that attack.</description>
@@ -4926,7 +4926,7 @@
       <profiles>
         <profile name="Neurocytes" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3a53-28b0-3c8e-6108">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit is within Synapse Range of your army, it has the SYNAPSE keyword.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit is within Synapse Range of your friendly **^^Tyranids^^** unit (excluding **^^Neurogaunt^^** units), it has the **^^Synapse^^** keyword.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -12811,9 +12811,14 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="2" field="b03b-c239-15a5-da55">
               <conditions>
@@ -12843,9 +12848,14 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="2" field="b03b-c239-15a5-da55">
               <conditions>
@@ -12878,9 +12888,14 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="2" field="b03b-c239-15a5-da55">
               <conditions>
@@ -12898,16 +12913,8 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
-                <modifier type="append" value="Armoured Biomorph" field="annotation" join=", " scope="model-or-unit" affects="self.entries.profiles.Unit">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="7426-e28b-72c1-f64b" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="d29d-cf75-fc2d-34a4" scope="model-or-unit" affects="self.entries.profiles.Unit">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="7426-e28b-72c1-f64b" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="append" value="Armoured Biomorph" field="annotation" join=", " scope="root-entry" affects="self.entries.recursive.profiles.Unit"/>
+                <modifier type="increment" value="1" field="d29d-cf75-fc2d-34a4" scope="root-entry" affects="self.entries.recursive.profiles.Unit"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -12926,9 +12933,14 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="2" field="b03b-c239-15a5-da55">
               <conditions>
@@ -12958,9 +12970,14 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="2" field="b03b-c239-15a5-da55">
               <conditions>
@@ -12990,9 +13007,14 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="2" field="b03b-c239-15a5-da55">
               <conditions>
@@ -13180,7 +13202,7 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
               <profiles>
                 <profile name="Balemind Membrane" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4c8f-5d71-2fee-d6c6">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Shooting phase, select one enemy unit within 12&quot; of the bearer that is not fully visible to the bearer due to intervening terrain or because it is within a terrain feature. Roll one D6, adding 2 to the result if the unit is on or within a RUINS terrain feature: on a 3-5, that unit suffers D3 mortal wounds; on a 6+, that unit suffers 3 mortal wounds.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Model with one or more Psychic weapons only. Each time the bearer makes an attack with a Psychic weapon, you can re-roll the Hit roll and you can re-roll the Wound roll.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13198,12 +13220,10 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
                             <condition type="lessThan" value="1" field="selections" scope="parent" childId="e5fb-72b6-8733-2c66" shared="true" includeChildForces="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="2917-4769-ded1-a00c" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
                       </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="2917-4769-ded1-a00c" shared="true"/>
+                      </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -13393,9 +13413,14 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -13418,9 +13443,14 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -13443,9 +13473,14 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -13468,9 +13503,14 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="4129-a453-686a-d38a" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
