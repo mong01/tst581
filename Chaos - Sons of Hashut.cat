@@ -154,8 +154,8 @@ A. Yes.</characteristic>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Extinction Corps Stratagems" hidden="false" id="af56-e5e3-c8bd-6fca">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d80-26de-1eb7-0868" includeChildSelections="false" automatic="true"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0de-f9d8-8b12-ee79" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cc9-d098-53d0-51cf" includeChildSelections="false" automatic="true"/>
               </constraints>
               <profiles>
                 <profile name="Viral Cascade" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8fa2-107c-0498-b92c">
@@ -217,8 +217,8 @@ A. Yes.</characteristic>
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="set" value="0" field="6d80-26de-1eb7-0868"/>
                     <modifier type="set" value="0" field="e0de-f9d8-8b12-ee79"/>
+                    <modifier type="set" value="0" field="7cc9-d098-53d0-51cf"/>
                   </modifiers>
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="9967-b30d-ddae-c1e2" shared="true" includeChildSelections="true"/>
@@ -228,8 +228,8 @@ A. Yes.</characteristic>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Exaction Host Stratagems" hidden="false" id="b789-feb6-e1cd-f7d4">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b872-749e-418b-7744" includeChildSelections="false" automatic="true"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f229-ce9e-2e11-8b2f" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5e3-4213-a7b1-e429" includeChildSelections="false" automatic="true"/>
               </constraints>
               <profiles>
                 <profile name="Judgement" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b3b1-2690-7447-e926">
@@ -293,7 +293,7 @@ A. Yes.</characteristic>
                 <modifierGroup type="and">
                   <modifiers>
                     <modifier type="set" value="0" field="f229-ce9e-2e11-8b2f"/>
-                    <modifier type="set" value="0" field="b872-749e-418b-7744"/>
+                    <modifier type="set" value="0" field="f5e3-4213-a7b1-e429"/>
                   </modifiers>
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="da63-93fb-1ad3-aa6f" shared="true" includeChildSelections="true"/>
@@ -303,8 +303,8 @@ A. Yes.</characteristic>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Daemon Legion Stratagems" hidden="false" id="93bc-e5ee-11a9-43a5">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40dc-2b0f-be74-d6a6" includeChildSelections="false" automatic="true"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a43-f7c7-a685-1d27" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57fc-fbc3-fcbb-824c" includeChildSelections="false" automatic="true"/>
               </constraints>
               <profiles>
                 <profile name="Superior Construction" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b0c7-28f9-075b-ba97">
@@ -367,7 +367,7 @@ A. Yes.</characteristic>
                 <modifierGroup type="and">
                   <modifiers>
                     <modifier type="set" value="0" field="3a43-f7c7-a685-1d27"/>
-                    <modifier type="set" value="0" field="40dc-2b0f-be74-d6a6"/>
+                    <modifier type="set" value="0" field="57fc-fbc3-fcbb-824c"/>
                   </modifiers>
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="d766-c5e5-d32f-1dcf" shared="true" includeChildSelections="true"/>
@@ -451,8 +451,8 @@ A. Yes.</characteristic>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Efficient Tacticians Stratagems" hidden="false" id="2a07-e965-6ea4-d56f">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8269-b969-464f-b0cc" includeChildSelections="false" automatic="true"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89ae-d908-1fd2-f1c4" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bad-4db2-b573-e628" includeChildSelections="false" automatic="true"/>
               </constraints>
               <profiles>
                 <profile name="Optimal Ordinance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="083c-e1e4-1221-fdcb">
@@ -515,8 +515,8 @@ A. Yes.</characteristic>
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="set" value="0" field="8269-b969-464f-b0cc"/>
                     <modifier type="set" value="0" field="89ae-d908-1fd2-f1c4"/>
+                    <modifier type="set" value="0" field="5bad-4db2-b573-e628"/>
                   </modifiers>
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="595b-609d-8143-7678" shared="true" includeChildSelections="true"/>
