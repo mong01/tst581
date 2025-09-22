@@ -1057,13 +1057,18 @@ WANING STAGE
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="10a4-dff1-25d0-d348" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="Heavy" field="7f1b-8591-2fcf-d01c">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="10a4-dff1-25d0-d348" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Heavy" id="f47c-54a2-8bb7-99ed" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67">
+        <infoLink name="Heavy" id="f47c-54a2-8bb7-99ed" hidden="true" type="rule" targetId="1202-10a8-78e9-4c67">
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="10a4-dff1-25d0-d348" shared="true" includeChildSelections="true"/>
               </conditions>
