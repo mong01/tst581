@@ -4080,10 +4080,17 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23d2-2e24-f771-101e" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Test" hidden="false" id="384d-fe5e-6aa2-3e5e" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Lost and the Damned" hidden="false" id="384d-fe5e-6aa2-3e5e" sortIndex="3">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f79-40f4-dd4e-922b" includeChildSelections="false"/>
               </constraints>
+              <profiles>
+                <profile name="Chain of Command" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3fdf-0255-a413-cb4e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase or at the end of a phase in which they disembarked from a TRANSPORT or were set up on the battlefield, NURGLETH FOLLOWERS CHARACTER models from your army can issue an Order to a friendly NURGLETH FOLLOWERS INFANTRY unit within 6&quot; of that model. Until the start of your next Command phase, the unit you selected is affected by that Order; unless otherwise stated, a unit can only be affected by one Order at a time (any Order subsequently issued to that unit replaces the current one). Orders cannot be issued to Battle-shocked units, and if a unit being affected by an Order becomes Battle-shocked, that Order ceases to affect that unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -4686,6 +4693,45 @@ A. After rolling for the Damage characteristic, if the result (after applying an
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="[Reference] Orders" hidden="false" id="38c3-c6e0-296d-36fb">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bd38-2fc4-a0f4-9792" includeChildSelections="true" includeChildForces="true" automatic="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="05a4-5305-1124-65dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="384d-fe5e-6aa2-3e5e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Aim for the Weak!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2c26-437a-5910-52d1">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Improve the Ballistic Skill characteristic of ranged weapons equipped by models in this unit by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="No Retreat, No Mercy!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="08c5-47d1-8df8-d506">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Improve the Leadership and Objective Control characteristics of models in this unit by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fall Behind and Die!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0f65-3b17-1749-3013">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 3&quot; to the Move characteristic of models in this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Crush Them All!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="75aa-a295-91cd-bb6d">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Improve the Weapon Skill characteristic of melee weapons equipped by models in this unit by 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
