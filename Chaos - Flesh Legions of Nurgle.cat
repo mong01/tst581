@@ -26,6 +26,7 @@
     <categoryEntry name="Renegade Lord" id="0b1f-acd0-6551-6bba" hidden="false"/>
     <categoryEntry name="Bubotyrant" id="a0c3-ddc8-b830-0637" hidden="false"/>
     <categoryEntry name="Malachi the Prophet" id="7dcc-5b51-0dd7-5e0a" hidden="false"/>
+    <categoryEntry name="Plague Toads" id="56c3-535d-166f-7a00" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Endless Cycle" id="46d6-81a2-7652-bc0c" hidden="false">
@@ -1252,7 +1253,7 @@ WANING STAGE
         <infoLink name="Endless Cycle" id="ca98-c63c-3c9d-23d0" hidden="false" targetId="46d6-81a2-7652-bc0c" type="rule"/>
         <infoLink name="Feel No Pain" id="da94-b350-7f52-9137" hidden="false" targetId="9bf4-280f-bbe2-6fbb" type="rule">
           <modifiers>
-            <modifier type="append" value="5+" field="name"/>
+            <modifier type="append" value="5+" field="name" join=" "/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -4309,6 +4310,26 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Plague Toads" hidden="true" id="4df2-70f9-0de0-44ce">
+      <categoryLinks>
+        <categoryLink targetId="56c3-535d-166f-7a00" id="8f3e-70a3-d92b-bb54" primary="true" name="Plague Toads"/>
+        <categoryLink targetId="4c3e-9310-a516-3590" id="aee4-812a-78e7-693f" primary="false" name="Beast"/>
+        <categoryLink targetId="ed0d-8e2a-225c-2340" id="80c2-a69c-aaa4-1a79" primary="false" name="Nurgle"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="34f1-9b00-fb02-1c60" primary="false" name="Chaos"/>
+        <categoryLink targetId="bbcc-67e6-68a9-1676" id="065d-bb97-645e-853e" primary="false" name="Faction: Nurgleth Followers"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="00a1-8246-f08b-826e" includeChildSelections="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Endless Cycle" id="0653-79b0-fb4f-fe0a" hidden="false" targetId="46d6-81a2-7652-bc0c" type="rule"/>
+        <infoLink name="Feel No Pain" id="7dcc-29d3-903d-41f4" hidden="false" targetId="9bf4-280f-bbe2-6fbb" type="rule">
+          <modifiers>
+            <modifier type="append" value="6+" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Cultist Mob" hidden="false" id="4844-eb67-6f3f-9a4f" type="selectionEntry" targetId="ba90-681f-5432-d56d"/>
@@ -4334,6 +4355,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
     <entryLink import="true" name="Bubotyrant" hidden="false" id="a680-2520-1056-c637" targetId="2bb6-9544-ae44-ea0a" type="selectionEntry"/>
     <entryLink import="true" name="Malachi the Prophet" hidden="false" id="ca9f-dc33-9881-c985" targetId="7904-ee2a-daf1-1432" type="selectionEntry"/>
     <entryLink import="true" name="Detachment" hidden="false" id="80f1-9432-3d11-af57" type="selectionEntry" targetId="2033-b8fb-ec72-2174"/>
+    <entryLink import="true" name="Plague Toads" hidden="false" id="3336-f133-cd74-1124" targetId="4df2-70f9-0de0-44ce" type="selectionEntry"/>
   </entryLinks>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="[Reference] FAQ" hidden="true" id="8369-6c23-301a-012b">
