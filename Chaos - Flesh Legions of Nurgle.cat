@@ -4567,7 +4567,7 @@ A. After rolling for the Damage characteristic, if the result (after applying an
               <modifierGroups>
                 <modifierGroup type="and">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3539-789e-eb53-96e7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="384d-fe5e-6aa2-3e5e" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                   <modifiers>
                     <modifier type="set" value="0" field="829c-1f7f-0b53-12ad"/>
