@@ -98,7 +98,7 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="set" value="1" field="f0d7-e056-a5c5-fca9"/>
+            <modifier type="set" value="0" field="f0d7-e056-a5c5-fca9"/>
             <modifier type="set" value="false" field="hidden"/>
           </modifiers>
           <conditions>
@@ -137,7 +137,7 @@ A. Yes.</characteristic>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="set" value="1" field="89cd-b7ac-6088-7bb0"/>
+            <modifier type="set" value="0" field="89cd-b7ac-6088-7bb0"/>
             <modifier type="set" value="false" field="hidden"/>
           </modifiers>
           <conditions>
@@ -612,7 +612,7 @@ A. Yes.</characteristic>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="set" value="1" field="4eb2-283a-3e8a-78eb"/>
+            <modifier type="set" value="0" field="4eb2-283a-3e8a-78eb"/>
             <modifier type="set" value="false" field="hidden"/>
           </modifiers>
           <conditions>
@@ -807,7 +807,7 @@ A. Yes.</characteristic>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="set" value="1" field="1fef-8831-e78b-b725"/>
+            <modifier type="set" value="0" field="1fef-8831-e78b-b725"/>
             <modifier type="set" value="false" field="hidden"/>
           </modifiers>
           <conditions>
