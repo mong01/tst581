@@ -1544,7 +1544,7 @@ WANING STAGE
         </profile>
         <profile name="Cargo-6 Truck" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="726a-9f42-dd46-be4f">
           <characteristics>
-            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 NURGLETH FOLLOWERS INFANTRY models. Each OGRYN model takes up the space of 3 models.</characteristic>
+            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 NURGLETH FOLLOWERS INFANTRY models. Each OGRYN model takes up the space of 3 models. It cannot transport CORPULENT SHAMBLER models.</characteristic>
           </characteristics>
         </profile>
         <profile name="Spread the Ills" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6794-2872-a5c8-72ec">
