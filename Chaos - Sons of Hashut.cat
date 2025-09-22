@@ -93,12 +93,12 @@ Each time a unit from your army activates a Dark Bounty, you can choose one of t
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="e129-bc45-cb10-7d7e" primary="true" name="Configuration"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f0d7-e056-a5c5-fca9" includeChildSelections="true" includeChildForces="true" automatic="true"/>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="f0d7-e056-a5c5-fca9" includeChildSelections="true" includeChildForces="true" automatic="true"/>
       </constraints>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="set" value="0" field="f0d7-e056-a5c5-fca9"/>
+            <modifier type="set" value="1" field="f0d7-e056-a5c5-fca9"/>
             <modifier type="set" value="false" field="hidden"/>
           </modifiers>
           <conditions>
@@ -132,12 +132,12 @@ A. Yes.</characteristic>
         <categoryLink name="Configuration" hidden="false" id="ad38-dbe9-5383-6aa0" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="89cd-b7ac-6088-7bb0" includeChildSelections="true" includeChildForces="true" automatic="true"/>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="89cd-b7ac-6088-7bb0" includeChildSelections="true" includeChildForces="true" automatic="true"/>
       </constraints>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="set" value="0" field="89cd-b7ac-6088-7bb0"/>
+            <modifier type="set" value="1" field="89cd-b7ac-6088-7bb0"/>
             <modifier type="set" value="false" field="hidden"/>
           </modifiers>
           <conditions>
@@ -151,7 +151,7 @@ A. Yes.</characteristic>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="1f68-634f-47d2-285d" primary="true" name="Configuration"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4eb2-283a-3e8a-78eb" includeChildSelections="true" includeChildForces="true" automatic="true"/>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="4eb2-283a-3e8a-78eb" includeChildSelections="true" includeChildForces="true" automatic="true"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup name="Detachments" id="ca60-c52a-78f3-17c1" hidden="false" defaultSelectionEntryId="none">
@@ -612,7 +612,7 @@ A. Yes.</characteristic>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="set" value="0" field="4eb2-283a-3e8a-78eb"/>
+            <modifier type="set" value="1" field="4eb2-283a-3e8a-78eb"/>
             <modifier type="set" value="false" field="hidden"/>
           </modifiers>
           <conditions>
@@ -623,7 +623,7 @@ A. Yes.</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="[Reference] Base and Proxy Guide" hidden="true" id="44e6-bb91-03db-2305">
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1fef-8831-e78b-b725" includeChildSelections="true" includeChildForces="true" automatic="true"/>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="1fef-8831-e78b-b725" includeChildSelections="true" includeChildForces="true" automatic="true"/>
       </constraints>
       <profiles>
         <profile name="Bull Centaur Warden" typeId="90ff-cc5b-9c2a-6113" typeName="Model" hidden="false" id="4069-268f-fbf3-8665">
@@ -807,7 +807,7 @@ A. Yes.</characteristic>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="set" value="0" field="1fef-8831-e78b-b725"/>
+            <modifier type="set" value="1" field="1fef-8831-e78b-b725"/>
             <modifier type="set" value="false" field="hidden"/>
           </modifiers>
           <conditions>
