@@ -377,8 +377,8 @@ A. Yes.</characteristic>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Hammers of Hashut Stratagems" hidden="false" id="40d2-dcaa-e4a9-045f">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72e4-2a50-9843-b9d4" includeChildSelections="false" automatic="true"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e26d-e42c-b3f8-5e3e" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e758-1cd0-ec41-4b31" includeChildSelections="false" automatic="true"/>
               </constraints>
               <profiles>
                 <profile name="Hold at All Costs" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5332-605a-3f77-f8b3">
@@ -440,8 +440,8 @@ A. Yes.</characteristic>
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="set" value="0" field="72e4-2a50-9843-b9d4"/>
                     <modifier type="set" value="0" field="e26d-e42c-b3f8-5e3e"/>
+                    <modifier type="set" value="0" field="e758-1cd0-ec41-4b31"/>
                   </modifiers>
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="5a45-024d-1720-3808" shared="true" includeChildSelections="true"/>
@@ -526,8 +526,8 @@ A. Yes.</characteristic>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Jackal Warband Stratagems" hidden="false" id="cee2-ccb6-0ac5-c68d">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b62a-678a-4712-f06b" includeChildSelections="false" automatic="true"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="794e-d9f9-a744-51e9" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbb3-2166-3f4a-b42f" includeChildSelections="false" automatic="true"/>
               </constraints>
               <profiles>
                 <profile name="Ash in Yer Eyes" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bdbd-b327-a6c1-2176">
@@ -589,8 +589,8 @@ A. Yes.</characteristic>
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="set" value="0" field="b62a-678a-4712-f06b"/>
                     <modifier type="set" value="0" field="794e-d9f9-a744-51e9"/>
+                    <modifier type="set" value="0" field="dbb3-2166-3f4a-b42f"/>
                   </modifiers>
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="213c-6bd1-a61b-8886" shared="true" includeChildSelections="true"/>
