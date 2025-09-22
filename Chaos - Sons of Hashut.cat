@@ -293,7 +293,6 @@ A. Yes.</characteristic>
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="set" value="true" field="hidden"/>
                     <modifier type="set" value="0" field="f229-ce9e-2e11-8b2f"/>
                     <modifier type="set" value="0" field="b872-749e-418b-7744"/>
                   </modifiers>
@@ -370,7 +369,6 @@ A. Yes.</characteristic>
                   <modifiers>
                     <modifier type="set" value="0" field="3a43-f7c7-a685-1d27"/>
                     <modifier type="set" value="0" field="40dc-2b0f-be74-d6a6"/>
-                    <modifier type="set" value="true" field="hidden"/>
                   </modifiers>
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="d766-c5e5-d32f-1dcf" shared="true" includeChildSelections="true"/>
@@ -519,7 +517,6 @@ A. Yes.</characteristic>
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="set" value="true" field="hidden"/>
                     <modifier type="set" value="0" field="8269-b969-464f-b0cc"/>
                     <modifier type="set" value="0" field="89ae-d908-1fd2-f1c4"/>
                   </modifiers>
