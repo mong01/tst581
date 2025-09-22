@@ -4313,6 +4313,105 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Lost and the Damned Enhancements" id="c348-9d82-29b3-68f7" hidden="true" flatten="true">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="d633-078e-c21a-0660" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e43f-9584-5c3e-df4d" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Vox-caster" hidden="false" id="5eab-4461-3d24-fbc0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93c1-cf6b-be39-8aba" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2564-34be-2fc7-3866" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Vox-caster" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="48d3-7bd2-a6e1-b1f9">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time the bearer issues an Order, it can issue it to an eligible unit up to 12&quot; away.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Armour Expert" hidden="false" id="5b3d-c0f2-bfa0-ae31">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d110-c346-f26f-a555" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3a8c-4bc9-ca8a-4eb8" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Armour Expert" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="364c-2d33-5ff3-173f">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer is within 3&quot; of one or more friendly NURGLETH FOLLOWERS VEHICLE units, unless it is leading a unit, it has the Lone Operative ability. In addition, when issuing Orders, it can issue them to friendly NURGLETH FOLLOWERS VEHICLE units.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Fallen War Hero" hidden="false" id="c73b-e4ee-65b9-b728">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8d8e-8194-fd35-d1ef" includeChildSelections="true" includeChildForces="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e00-8a90-0105-407e" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Fallen War Hero" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="16a6-4a00-b22e-8626">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 2 to the Attacks characteristic of melee weapons equipped by the bearer.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="No Rest for the Faithless" hidden="false" id="388d-21cd-d3a5-6996">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c3b9-94e4-3d61-b751" includeChildSelections="true" includeChildForces="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="daa6-9718-12e3-48d2" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="No Rest for the Faithless" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f447-9503-973f-06fb">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, you can target the bearer’s unit with the Fire Overwatch Stratagem for 0CP.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="384d-fe5e-6aa2-3e5e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4654,7 +4753,7 @@ A. After rolling for the Damage characteristic, if the result (after applying an
 **2CP**
 **When:** Your Shooting phase.
 **Target:** One NURGLETH FOLLOWERS VEHICLE unit from your army, and one enemy MONSTER or VEHICLE unit visible to that unit.
-**Effect:** Select one ranged weapon every model in your unit is equipped with; until the end of the phase, each time an attack made with that weapon targets that enemy unit, you can re-roll the Hit roll, Wound roll and Damage roll.</characteristic>
+**Effect:** For each model in that unit, select one ranged weapon that model is equipped with; until the end of the phase, each time an attack made with that weapon targets that enemy unit, you can re-roll the Hit roll, Wound roll and Damage roll.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Order in Chaos" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6fb6-6a0f-68a8-97fe">
