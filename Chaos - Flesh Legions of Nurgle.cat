@@ -4694,7 +4694,7 @@ A. After rolling for the Damage characteristic, if the result (after applying an
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="[Reference] Orders" hidden="false" id="38c3-c6e0-296d-36fb">
+    <selectionEntry type="upgrade" import="true" name="[Reference] Orders" hidden="true" id="38c3-c6e0-296d-36fb">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bd38-2fc4-a0f4-9792" includeChildSelections="true" includeChildForces="true" automatic="true"/>
       </constraints>
