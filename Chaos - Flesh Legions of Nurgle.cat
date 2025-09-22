@@ -4310,7 +4310,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Plague Toads" hidden="false" id="4df2-70f9-0de0-44ce">
+    <selectionEntry type="unit" import="true" name="Plague Toads" hidden="true" id="4df2-70f9-0de0-44ce">
       <categoryLinks>
         <categoryLink targetId="56c3-535d-166f-7a00" id="8f3e-70a3-d92b-bb54" primary="false" name="Plague Toads"/>
         <categoryLink targetId="4c3e-9310-a516-3590" id="aee4-812a-78e7-693f" primary="true" name="Beast"/>
