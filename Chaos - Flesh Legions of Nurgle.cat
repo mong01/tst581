@@ -4310,10 +4310,10 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Plague Toads" hidden="true" id="4df2-70f9-0de0-44ce">
+    <selectionEntry type="unit" import="true" name="Plague Toads" hidden="false" id="4df2-70f9-0de0-44ce">
       <categoryLinks>
-        <categoryLink targetId="56c3-535d-166f-7a00" id="8f3e-70a3-d92b-bb54" primary="true" name="Plague Toads"/>
-        <categoryLink targetId="4c3e-9310-a516-3590" id="aee4-812a-78e7-693f" primary="false" name="Beast"/>
+        <categoryLink targetId="56c3-535d-166f-7a00" id="8f3e-70a3-d92b-bb54" primary="false" name="Plague Toads"/>
+        <categoryLink targetId="4c3e-9310-a516-3590" id="aee4-812a-78e7-693f" primary="true" name="Beast"/>
         <categoryLink targetId="ed0d-8e2a-225c-2340" id="80c2-a69c-aaa4-1a79" primary="false" name="Nurgle"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="34f1-9b00-fb02-1c60" primary="false" name="Chaos"/>
         <categoryLink targetId="bbcc-67e6-68a9-1676" id="065d-bb97-645e-853e" primary="false" name="Faction: Nurgleth Followers"/>
@@ -4325,10 +4325,95 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         <infoLink name="Endless Cycle" id="0653-79b0-fb4f-fe0a" hidden="false" targetId="46d6-81a2-7652-bc0c" type="rule"/>
         <infoLink name="Feel No Pain" id="7dcc-29d3-903d-41f4" hidden="false" targetId="9bf4-280f-bbe2-6fbb" type="rule">
           <modifiers>
-            <modifier type="append" value="6+" field="name"/>
+            <modifier type="append" value="5+" field="name" join=" "/>
           </modifiers>
         </infoLink>
       </infoLinks>
+      <profiles>
+        <profile name="Plague Toads" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="142c-2511-3e24-7964">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Great Leap" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e9d8-ea58-59ad-757f">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit Advances, do not make an Advance roll. Instead, until the end of the phase, add 6&quot; to the Move characteristic of models in this unit and ignore any vertical distance when determining the total distance that model can be moved.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Plague Toad" hidden="false" id="28ca-b16f-e38c-9173">
+          <profiles>
+            <profile name="Plague Toad" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="7dbd-bd67-00f3-3564">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc"/>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08"/>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e"/>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3"/>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15"/>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3"/>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="e813-6193-b9d3-82b3" includeChildSelections="false"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="f81b-a3d2-cf27-8a77" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Yawning maw" hidden="false" id="9bd2-e328-5c93-2ed5">
+              <profiles>
+                <profile name="Yawning maw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ff25-b114-83fb-4b9c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2585-6ded-daa4-099b-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2585-6ded-daa4-099b-max" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Lethal Hits" id="e60c-2068-8264-47fd" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Grasping tongue" hidden="false" id="a786-7cc3-9779-f6f9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b57b-8352-6060-a737-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b57b-8352-6060-a737-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Grasping tongue" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="aede-bca2-6804-9ef2">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">9&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Lethal Hits, Precision</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Precision" id="8ca6-63c7-e012-196e" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+                <infoLink name="Lethal Hits" id="9c9d-db3f-04aa-b202" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
