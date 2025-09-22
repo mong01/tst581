@@ -4462,16 +4462,20 @@ A. After rolling for the Damage characteristic, if the result (after applying an
       <categoryLinks>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="d29c-c087-5779-54ce" primary="true" name="Configuration"/>
       </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="533c-b597-f4a6-b79c" includeChildSelections="true" includeChildForces="true" automatic="true"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="1" field="533c-b597-f4a6-b79c"/>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="05a4-5305-1124-65dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="533c-b597-f4a6-b79c" includeChildSelections="true" includeChildForces="true" automatic="true"/>
-      </constraints>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="[Reference] Stratagems" hidden="true" id="2594-ffa2-8d93-37b9">
       <selectionEntryGroups>
@@ -4652,18 +4656,22 @@ A. After rolling for the Damage characteristic, if the result (after applying an
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8089-a63d-3862-0198" includeChildSelections="true" includeChildForces="true" automatic="true"/>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="8089-a63d-3862-0198" includeChildSelections="true" includeChildForces="true" automatic="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="a0bd-6def-d30f-6284" primary="true" name="Configuration"/>
       </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="1" field="8089-a63d-3862-0198"/>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="05a4-5305-1124-65dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
-        </modifier>
-      </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Reference Options" hidden="false" id="3d5e-f155-84a0-35e2" flatten="true">
       <categoryLinks>
@@ -4696,20 +4704,8 @@ A. After rolling for the Damage characteristic, if the result (after applying an
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="[Reference] Orders" hidden="true" id="38c3-c6e0-296d-36fb">
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bd38-2fc4-a0f4-9792" includeChildSelections="true" includeChildForces="true" automatic="true"/>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="bd38-2fc4-a0f4-9792" includeChildSelections="true" includeChildForces="true" automatic="true"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="05a4-5305-1124-65dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="384d-fe5e-6aa2-3e5e" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="Aim for the Weak!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2c26-437a-5910-52d1">
           <characteristics>
@@ -4735,6 +4731,22 @@ A. After rolling for the Damage characteristic, if the result (after applying an
       <categoryLinks>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="8419-3f71-6e95-f397" primary="true" name="Configuration"/>
       </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="05a4-5305-1124-65dd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="384d-fe5e-6aa2-3e5e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier type="set" value="1" field="bd38-2fc4-a0f4-9792"/>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
