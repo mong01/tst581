@@ -1054,7 +1054,7 @@ WANING STAGE
           <modifiers>
             <modifier type="set" value="5+" field="94d-8a98-cf90-183e">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5db6-d116-58fa-2d5d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="10a4-dff1-25d0-d348" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1065,7 +1065,7 @@ WANING STAGE
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5db6-d116-58fa-2d5d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="10a4-dff1-25d0-d348" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3896,7 +3896,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
