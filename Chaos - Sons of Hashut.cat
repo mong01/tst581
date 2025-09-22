@@ -239,7 +239,7 @@ A. Yes.</characteristic>
 **When:** Any phase.
 **Target:** One SONS OF HASHUT unit from your army (excluding HOBGROT and SLAVE units) that was just destroyed. You can use this Stratagem on that unit even though it was just destroyed.
 **Effect:** Until the end of the battle, each time a SONS OF HASHUT unit (excluding HOBGROT and SLAVE units) from your army makes an attack that targets the enemy unit that just destroyed your unit, add 1 to the Hit roll and add 1 to the Wound roll.
-**Note:** Additional uses of this Stratagem against the same enemy unit have no effect and do not stack.</characteristic>
+**Restrictions:** Additional uses of this Stratagem against the same enemy unit have no effect and do not stack.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Unyielding Plate" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4c3c-c240-eab9-1643">
