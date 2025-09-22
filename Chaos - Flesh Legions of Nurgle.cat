@@ -4125,6 +4125,11 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23d2-2e24-f771-101e" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Test" hidden="false" id="384d-fe5e-6aa2-3e5e" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f79-40f4-dd4e-922b" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8aba-aa4d-a47b-b506" includeChildSelections="false"/>
@@ -4550,6 +4555,23 @@ A. After rolling for the Damage characteristic, if the result (after applying an
                   <modifiers>
                     <modifier type="set" value="0" field="bae3-78ad-7a96-d40e"/>
                     <modifier type="set" value="0" field="4a24-a59b-6910-5bf9"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Test" hidden="false" id="bb9f-0f44-20ec-a2a5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="829c-1f7f-0b53-12ad" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="275e-3f64-6144-6a81" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3539-789e-eb53-96e7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" value="0" field="829c-1f7f-0b53-12ad"/>
+                    <modifier type="set" value="0" field="275e-3f64-6144-6a81"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
