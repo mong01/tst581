@@ -3756,7 +3756,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Ordered Chaos" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="646e-49e2-d242-a420">
+        <profile name="Heretic Commander" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="646e-49e2-d242-a420">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Hit roll.</characteristic>
           </characteristics>
@@ -4087,7 +4087,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
               <profiles>
                 <profile name="Chain of Command" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3fdf-0255-a413-cb4e">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase or at the end of a phase in which they disembarked from a TRANSPORT or were set up on the battlefield, NURGLETH FOLLOWERS CHARACTER models from your army can issue an Order to a friendly NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit within 6&quot; of them. Until the start of your next Command phase, the unit you selected is affected by that Order; unless otherwise stated, a unit can only be affected by one Order at a time (any Order subsequently issued to that unit replaces the current one). Orders cannot be issued to Battle-shocked units, and if a unit being affected by an Order becomes Battle-shocked, that Order ceases to affect that unit.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase or at the end of a phase in which they disembarked from a TRANSPORT or were set up on the battlefield, NURGLETH FOLLOWERS CHARACTER models from your army can, unless otherwise specified, issue one Order to a friendly NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit within 6&quot; of them. Until the start of your next Command phase, the unit you selected is affected by that Order; unless otherwise stated, a unit can only be affected by one Order at a time (any Order subsequently issued to that unit replaces the current one). Orders cannot be issued to Battle-shocked units, and if a unit being affected by an Order becomes Battle-shocked, that Order ceases to affect that unit.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4631,7 +4631,7 @@ A. After rolling for the Damage characteristic, if the result (after applying an
                 </modifierGroup>
               </modifierGroups>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Test" hidden="false" id="bb9f-0f44-20ec-a2a5">
+            <selectionEntry type="upgrade" import="true" name="Lost and the Damned" hidden="false" id="bb9f-0f44-20ec-a2a5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="829c-1f7f-0b53-12ad" includeChildSelections="false" automatic="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="275e-3f64-6144-6a81" includeChildSelections="false" automatic="true"/>
@@ -4647,6 +4647,44 @@ A. After rolling for the Damage characteristic, if the result (after applying an
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
+              <profiles>
+                <profile name="Target Prioritised" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6a2b-dafc-1185-7700">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
+**2CP**
+**When:** Your Shooting phase.
+**Target:** One NURGLETH FOLLOWERS VEHICLE unit from your army, and one enemy MONSTER or VEHICLE unit visible to that unit.
+**Effect:** Select one ranged weapon every model in your unit is equipped with; until the end of the phase, each time an attack made with that weapon targets that enemy unit, you can re-roll the Hit roll, Wound roll and Damage roll.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Order in Chaos" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6fb6-6a0f-68a8-97fe">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:** Start of your Command phase.
+**Target:** One NURGLETH FOLLOWERS CHARACTER model on the battlefield.
+**Effect:** Until the end of the phase, your model can issue two Orders.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Coordinated Strike" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="29e5-6413-1dd2-cb82">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
+**1CP**
+**When:** Your Shooting phase.
+**Target:** One NURGLETH FOLLOWERS INFANTRY unit and one NURGLETH FOLLOWERS VEHICLE unit from your army that have not been selected to shoot this phase, and one enemy unit visible to those units.
+**Effect:** Until the end of the phase, each time your selected INFANTRY and VEHICLE units make an attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Flash Grenades" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="12b0-3a23-96d5-ed4c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Wargear**
+**1CP**
+**When:** Start of any phase.
+**Target:** One NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit from your army, and one enemy unit (excluding MONSTER or VEHICLE units) within 12&quot; of that unit.
+**Effect:** Until the end of the turn, that enemy unit cannot use the Fire Overwatch Stratagem.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -4725,6 +4763,11 @@ A. After rolling for the Damage characteristic, if the result (after applying an
         <profile name="Crush Them All!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="75aa-a295-91cd-bb6d">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Improve the Weapon Skill characteristic of melee weapons equipped by models in this unit by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Death Is No Refuge!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6273-1b5f-3ea3-f756">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have the Feel No Pain 6+ ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
