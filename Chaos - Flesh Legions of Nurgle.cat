@@ -4087,7 +4087,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
               <profiles>
                 <profile name="Chain of Command" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3fdf-0255-a413-cb4e">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase or at the end of a phase in which they disembarked from a TRANSPORT or were set up on the battlefield, NURGLETH FOLLOWERS CHARACTER models from your army can issue an Order to a friendly NURGLETH FOLLOWERS INFANTRY unit within 6&quot; of that model. Until the start of your next Command phase, the unit you selected is affected by that Order; unless otherwise stated, a unit can only be affected by one Order at a time (any Order subsequently issued to that unit replaces the current one). Orders cannot be issued to Battle-shocked units, and if a unit being affected by an Order becomes Battle-shocked, that Order ceases to affect that unit.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase or at the end of a phase in which they disembarked from a TRANSPORT or were set up on the battlefield, NURGLETH FOLLOWERS CHARACTER models from your army can issue an Order to a friendly NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit within 6&quot; of them. Until the start of your next Command phase, the unit you selected is affected by that Order; unless otherwise stated, a unit can only be affected by one Order at a time (any Order subsequently issued to that unit replaces the current one). Orders cannot be issued to Battle-shocked units, and if a unit being affected by an Order becomes Battle-shocked, that Order ceases to affect that unit.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4732,6 +4732,9 @@ A. After rolling for the Damage characteristic, if the result (after applying an
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="4ac9-fd30-1e3d-b249" id="8419-3f71-6e95-f397" primary="true" name="Configuration"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
