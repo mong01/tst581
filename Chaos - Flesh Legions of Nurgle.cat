@@ -30,7 +30,7 @@
   </categoryEntries>
   <sharedRules>
     <rule name="Endless Cycle" id="46d6-81a2-7652-bc0c" hidden="false">
-      <description>At the start of the first battle round, select one of the Stages below. Until the end of the battle round, that Stage is active for your army. While that Stage is active, each unit from your army that has the Endless Cycle ability gains the relevant abilities shown below. At the end of the battle round, the currently active Stage is no longer active, and the other Stage is now active until the end of the following battle round (for example, if you chose the Waxing Stage in the first battle round, the next battle round would be the Waning Stage, then the Waxing Stage again, etc.).
+      <description>At the start of the first battle round, select one of the Stages below; until the end of the battle round, that Stage is active for your army. While that Stage is active, each unit from your army that has the Endless Cycle ability gains the relevant abilities shown below. At the end of the battle round, the currently active Stage is no longer active, and the other Stage is now active until the end of the following battle round (for example, if you chose the Waxing Stage in the first battle round, the next battle round would be the Waning Stage, then the Waxing Stage again, etc.).
 
 WAXING STAGE
 ■ Add 1 to the Objective Control characteristic of models in this unit (models with an unmodified OC characteristic of 0 are not affected).
@@ -3430,7 +3430,7 @@ Deathly Taint: Each time a model in this unit makes a melee attack, a successful
         </profile>
         <profile name="Orator of Chaos" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3c4d-cab8-5bfd-d39d">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit is destroyed by a melee attack this unit is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 2+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit is destroyed, if it has not fought this phase, roll one D6. On a 2+, do not remove it from play; the destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4571,7 +4571,7 @@ A. After rolling for the Damage characteristic, if the result (after applying an
 **Effect:** Until the end of the phase, each time a model in your unit makes an attack that targets the closest eligible target, add 1 to the Hit roll.</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Indefatigable Constitution" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="698a-6752-5272-2aec">
+                <profile name="Plague Hulks" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="698a-6752-5272-2aec">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **2CP**
@@ -4682,6 +4682,24 @@ A. After rolling for the Damage characteristic, if the result (after applying an
 **When:** Start of any phase.
 **Target:** One NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit from your army, and one enemy unit (excluding MONSTER or VEHICLE units) within 12&quot; of that unit.
 **Effect:** Until the end of the turn, that enemy unit cannot use the Fire Overwatch Stratagem.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Devoted of Nurgle" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="91c5-36ea-1e7e-979b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:** Your Movement phase.
+**Target:** One NURGLETH FOLLOWERS unit from your army.
+**Effect:** If the Waxing Stage is currently active for your army, your unit is eligible to shoot in a turn in which it Advanced; if the Waning Stage is currently active for your army, your unit is eligible to declare a charge in a turn in which it Fell Back.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Nihilistic Abandon" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ce78-3207-eb7b-3d9a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Epic Deed**
+**1CP**
+**When:** Fight phase, just after an enemy unit has selected its targets.
+**Target:** One NURGLETH FOLLOWERS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.
+**Effect:** Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6, adding 2 to the result if it is an INFANTRY or MOUNTED model. On a 4+, do not remove it from play; the destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
