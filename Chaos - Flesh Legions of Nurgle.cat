@@ -1615,6 +1615,9 @@ WANING STAGE
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="force" shared="true" id="d971-3dc1-663a-11c8" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Pox Hounds" hidden="false" id="252d-75d0-b6a4-6dca" collective="false">
       <profiles>
