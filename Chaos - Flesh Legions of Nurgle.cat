@@ -4042,6 +4042,9 @@ WANING STAGE
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ac0b-2060-a882-ef55" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Detachment" hidden="false" id="2033-b8fb-ec72-2174">
       <categoryLinks>
