@@ -1246,7 +1246,7 @@ WANING STAGE
         </profile>
         <profile name="Hulking Abominations" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0932-62a0-adc0-9dfe">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack is allocated to a model in this unit, if the Damage characteristic of that attack is greater than 3, change the Damage characteristic of that attack to 3.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack targets this unit, that attack does not benefit from the [ANTI-KEYWORD X+] or [LETHAL HITS] abilities.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4682,11 +4682,7 @@ WANING STAGE
       <profiles>
         <profile name="FAQ" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="be9d-b3db-4ea1-5f2c">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Q. How do attacks with a random/modified Damage characteristic (e.g. D6) interact with the Hulking Abominations ability?
-A. After rolling for the Damage characteristic, if the result (after applying any modifiers) is higher than 3, the ability takes effect as described. For example, if the Damage rolled was a 3, which is increased by 2, but decreased by 1, the final Damage characteristic is 4, which is then lowered to 3 as a result of the ability.
-
-
-Q. How does Malachi&apos;s &quot;Honeyed Words&quot; ability work with effects such as the Counter-offensive Stratagem or the Fights First?
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Q. How does Malachi&apos;s &quot;Honeyed Words&quot; ability work with effects such as the Counter-offensive Stratagem or Fights First?
 A. The ability specifies that a unit is not eligible to fight; as the Stratagem states that &quot;your unit fights next&quot; with no regard to eligibility, it works regardless of the ability, whereas Fights First states that &quot;units with this ability that are eligible to fight do so in the Fights First step&quot;; therefore, they are affected by the ability.</characteristic>
           </characteristics>
         </profile>
