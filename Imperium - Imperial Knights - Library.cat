@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="1b6d-dc06-5db9-c7d1" name="Imperium - Imperial Knights - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="57" battleScribeVersion="2.03" authorName="BSData Developers" type="catalogue" authorContact="Dunamis55 &amp; AbonShell">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="1b6d-dc06-5db9-c7d1" name="Imperium - Imperial Knights - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="59" battleScribeVersion="2.03" authorName="BSData Developers" type="catalogue" authorContact="Dunamis55 &amp; AbonShell">
   <rules>
     <rule name="Code Chivalric" id="cbd-943-bc7b-20ec">
       <description>If your Army Faction is **^^Imperial Knights^^**, at the end of the Read Mission Objectives step, you must determine your army&apos;s Oath for the coming battle. An Oath consists of two parts - one Deed and one Quality. There are three options for each part, shown below.
@@ -223,7 +223,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Code Chivalric - Deed" hidden="false" id="3a0d-e5af-8b23-bf11" type="selectionEntry" targetId="9508-a2b1-713f-cf7b"/>
+    <entryLink import="true" name="Code Chivalric" hidden="false" id="3a0d-e5af-8b23-bf11" type="selectionEntry" targetId="9508-a2b1-713f-cf7b"/>
     <entryLink import="true" name="Knight Defender" type="selectionEntry" id="91e0-4a0d-e473-991d" targetId="f12b-ca2a-9c87-79bb">
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -265,7 +265,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                 <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
                 <characteristic name="W" typeId="750a-a2ec-90d3-21fe">26</characteristic>
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">5+</characteristic>
-                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
               </characteristics>
             </profile>
             <profile name="Chainbreaker" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="7f8-ef35-95d5-6fc7">
@@ -951,7 +951,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">26</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Seasoned Noble" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="c8eb-db13-de01-b988">
@@ -994,7 +994,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
           <infoLinks>
             <infoLink name="Lethal Hits" type="rule" id="12-dcf0-d973-354" targetId="d1d1-611e-5191-1095"/>
             <infoLink name="Lance" type="rule" id="98f9-fcec-ec57-5660" targetId="2ebc-abdf-8129-6c57"/>
-            <infoLink name="Bondsman Abilities" type="rule" id="17a7-68df-7532-77cb" targetId="f5a5-d4cf-3b72-ed02"/>
+            <infoLink name="Bondsman" type="rule" id="17a7-68df-7532-77cb" targetId="f5a5-d4cf-3b72-ed02"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -1159,7 +1159,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">26</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Aggressive Assault" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="be43-2d11-65f8-aedb">
@@ -1201,7 +1201,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
           </profiles>
           <infoLinks>
             <infoLink name="Assault" type="rule" id="ef43-3c87-5e31-d68e" targetId="fc8a-8c24-bae9-cc1c"/>
-            <infoLink name="Bondsman Abilities" type="rule" id="ea26-645-3b48-d85f" targetId="f5a5-d4cf-3b72-ed02"/>
+            <infoLink name="Bondsman" type="rule" id="ea26-645-3b48-d85f" targetId="f5a5-d4cf-3b72-ed02"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -1330,7 +1330,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">26</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Martial Pride" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="aa56-4384-8f12-cc31">
@@ -1371,7 +1371,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Bondsman Abilities" type="rule" id="4182-2d3f-20bb-728e" targetId="f5a5-d4cf-3b72-ed02"/>
+            <infoLink name="Bondsman" type="rule" id="4182-2d3f-20bb-728e" targetId="f5a5-d4cf-3b72-ed02"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -1579,7 +1579,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">26</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Thin Their Ranks" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="51ae-c850-5c2a-761f">
@@ -1621,7 +1621,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Bondsman Abilities" type="rule" id="4b54-ea54-11c9-b4c0" targetId="f5a5-d4cf-3b72-ed02"/>
+            <infoLink name="Bondsman" type="rule" id="4b54-ea54-11c9-b4c0" targetId="f5a5-d4cf-3b72-ed02"/>
             <infoLink name="Ignores Cover" id="49c7-3b05-f453-e0d4" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
             <infoLink name="Sustained Hits" id="4b8-2eb9-c000-c2de" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
           </infoLinks>
@@ -1766,7 +1766,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">26</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Punishing Salvoes" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f3ec-bea-7d9f-df98">
@@ -1808,7 +1808,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Bondsman Abilities" type="rule" id="d445-7ba6-8e72-327c" targetId="f5a5-d4cf-3b72-ed02"/>
+            <infoLink name="Bondsman" type="rule" id="d445-7ba6-8e72-327c" targetId="f5a5-d4cf-3b72-ed02"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -2018,7 +2018,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">26</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Exemplar of the Code" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="e11c-1932-dd04-c55f">
@@ -2185,7 +2185,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Bondsman Abilities" type="rule" id="595b-ad2b-75b0-bd45" targetId="f5a5-d4cf-3b72-ed02"/>
+            <infoLink name="Bondsman" type="rule" id="595b-ad2b-75b0-bd45" targetId="f5a5-d4cf-3b72-ed02"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -2291,7 +2291,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">28</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Titan Hunter" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="1b2e-aac4-ebfe-3c7">
@@ -2314,7 +2314,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         </infoLink>
         <infoLink name="Super-Heavy Walker" type="rule" id="a27e-e57a-72d-f1cb" targetId="5e13-1624-d280-418d"/>
         <infoLink name="Invulnerable Save (5+*)" type="profile" id="208e-37cd-517b-80e1" targetId="8552-862d-6a49-4879"/>
-        <infoLink name="Damaged: 1-10 Wounds Remaining" type="profile" id="3a46-4765-60ee-4a29" targetId="79dc-ea0c-c3b8-21d8"/>
+        <infoLink name="Damaged: 1-10 Wounds Remaining" type="profile" id="3a46-4765-60ee-4a29" targetId="1934-9c67-78e2-4fd9"/>
         <infoLink name="Code Chivalric" id="31ae-dda1-0e86-6291" hidden="false" type="rule" targetId="cbd-943-bc7b-20ec"/>
         <infoLink name="Ion Aegis (Aura)" id="6e34-9212-5567-3842" hidden="false" type="profile" targetId="0cc9-e726-c0fa-c4f3"/>
       </infoLinks>
@@ -2553,7 +2553,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">28</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Thundershock" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="c930-deaf-6267-1e1e">
@@ -2576,7 +2576,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         </infoLink>
         <infoLink name="Super-Heavy Walker" type="rule" id="45eb-bf5f-be2e-e1cb" targetId="5e13-1624-d280-418d"/>
         <infoLink name="Invulnerable Save (5+*)" type="profile" id="efea-ee0c-d65c-b49" targetId="8552-862d-6a49-4879"/>
-        <infoLink name="Damaged: 1-10 Wounds Remaining" type="profile" id="a880-3073-f96d-57c0" targetId="79dc-ea0c-c3b8-21d8"/>
+        <infoLink name="Damaged: 1-10 Wounds Remaining" type="profile" id="a880-3073-f96d-57c0" targetId="1934-9c67-78e2-4fd9"/>
         <infoLink name="Code Chivalric" id="b337-35a2-eb0b-dce1" hidden="false" type="rule" targetId="cbd-943-bc7b-20ec"/>
         <infoLink name="Ion Aegis (Aura)" id="1393-12f9-2f40-1b53" hidden="false" type="profile" targetId="0cc9-e726-c0fa-c4f3"/>
       </infoLinks>
@@ -3710,7 +3710,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Bondsman Abilities" hidden="false" type="rule" id="eb8b-194a-ecaa-db84" targetId="f5a5-d4cf-3b72-ed02"/>
+            <infoLink name="Bondsman" hidden="false" type="rule" id="eb8b-194a-ecaa-db84" targetId="f5a5-d4cf-3b72-ed02"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -3921,7 +3921,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Bondsman Abilities" hidden="false" type="rule" id="cc7a-4945-7557-343d" targetId="f5a5-d4cf-3b72-ed02"/>
+            <infoLink name="Bondsman" hidden="false" type="rule" id="cc7a-4945-7557-343d" targetId="f5a5-d4cf-3b72-ed02"/>
             <infoLink name="Sustained Hits" hidden="false" type="rule" id="51ad-81ee-2b7e-51b2" targetId="1897-c22c-9597-12b1"/>
           </infoLinks>
         </infoGroup>
@@ -4142,7 +4142,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Bondsman Abilities" hidden="false" type="rule" id="ab6f-96e4-a91f-a6a4" targetId="f5a5-d4cf-3b72-ed02"/>
+            <infoLink name="Bondsman" hidden="false" type="rule" id="ab6f-96e4-a91f-a6a4" targetId="f5a5-d4cf-3b72-ed02"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -4489,7 +4489,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Bondsman Abilities" hidden="false" type="rule" id="4197-fb81-d556-62e" targetId="f5a5-d4cf-3b72-ed02"/>
+            <infoLink name="Bondsman" hidden="false" type="rule" id="4197-fb81-d556-62e" targetId="f5a5-d4cf-3b72-ed02"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -4731,7 +4731,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         </infoLink>
         <infoLink name="Super-Heavy Walker" hidden="false" type="rule" id="6970-3ccd-4775-7249" targetId="5e13-1624-d280-418d"/>
         <infoLink name="Code Chivalric" hidden="false" type="rule" id="cf6a-9ee8-57e7-6a2c" targetId="cbd-943-bc7b-20ec"/>
-        <infoLink name="Damaged: 1-9 Wounds Remaining" type="profile" id="9789-fe34-e915-2548" targetId="75b7-f99a-8812-a55f"/>
+        <infoLink name="Damaged: 1-9 Wounds Remaining" type="profile" id="9789-fe34-e915-2548" targetId="a274-b647-186a-54ee"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="e712-7bf0-ec80-394e" primary="true" name="Character"/>
@@ -4759,7 +4759,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Bondsman Abilities" type="rule" id="6d8c-da36-d702-8983" targetId="f5a5-d4cf-3b72-ed02"/>
+            <infoLink name="Bondsman" type="rule" id="6d8c-da36-d702-8983" targetId="f5a5-d4cf-3b72-ed02"/>
             <infoLink name="Ignores Cover" hidden="false" type="rule" id="ee2a-6316-680f-59a9" targetId="4640-43e7-30b-215a"/>
           </infoLinks>
         </infoGroup>
@@ -5025,7 +5025,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         </infoLink>
         <infoLink name="Code Chivalric" hidden="false" type="rule" id="e6a6-f6c5-d56a-a02b" targetId="cbd-943-bc7b-20ec"/>
         <infoLink name="Super-Heavy Walker" hidden="false" type="rule" id="ffdc-a560-b3e1-cb3" targetId="5e13-1624-d280-418d"/>
-        <infoLink name="Damaged: 1-9 Wounds Remaining" type="profile" id="4956-c695-a318-9c82" targetId="75b7-f99a-8812-a55f"/>
+        <infoLink name="Damaged: 1-9 Wounds Remaining" type="profile" id="4956-c695-a318-9c82" targetId="a274-b647-186a-54ee"/>
       </infoLinks>
       <infoGroups>
         <infoGroup name="Styrix’s Duty (Bondsman)" id="3e3e-cdb2-b95-6e6a">
@@ -5037,7 +5037,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Bondsman Abilities" type="rule" id="d092-b647-a07d-b2d2" targetId="f5a5-d4cf-3b72-ed02"/>
+            <infoLink name="Bondsman" type="rule" id="d092-b647-a07d-b2d2" targetId="f5a5-d4cf-3b72-ed02"/>
             <infoLink name="Ignores Cover" hidden="false" type="rule" id="1743-465b-2a90-dc" targetId="4640-43e7-30b-215a"/>
           </infoLinks>
         </infoGroup>
@@ -5791,10 +5791,10 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="...yet shall our legacy be unsullied." hidden="false" id="0cda-47bd-5446-4b48" sortIndex="3">
               <profiles>
-                <profile name="...yet shall our legacy be unsullied." typeId="83f0-0039-f52e-a3b4" typeName="Deed" hidden="false" id="85f4-ab86-07ca-3af0">
+                <profile name="...yet shall our legacy be unsullied." typeId="3dbd-8296-99ea-d555" typeName="Quality" hidden="false" id="85f4-ab86-07ca-3af0">
                   <characteristics>
-                    <characteristic name="Description" typeId="90fb-29ef-31df-1720">Improve this model&apos;s Objective Control characteristic by 2 and its Leadership characteristic by 1.</characteristic>
-                    <characteristic name="D6" typeId="2b47-80ec-51a5-3002">5 or 6</characteristic>
+                    <characteristic name="Description" typeId="f262-34f4-0217-8bdd">Improve this model&apos;s Objective Control characteristic by 2 and its Leadership characteristic by 1.</characteristic>
+                    <characteristic name="D6" typeId="abc7-ec7f-1f21-d074">5 or 6</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5810,10 +5810,10 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="...and we are eager for the challenge." hidden="false" id="a251-f271-35b4-55ff" sortIndex="2">
               <profiles>
-                <profile name="...and we are eager for the challenge." typeId="83f0-0039-f52e-a3b4" typeName="Deed" hidden="false" id="352c-1be3-2f8b-19be">
+                <profile name="...and we are eager for the challenge." typeId="3dbd-8296-99ea-d555" typeName="Quality" hidden="false" id="352c-1be3-2f8b-19be">
                   <characteristics>
-                    <characteristic name="Description" typeId="90fb-29ef-31df-1720">Add 2&quot; to this model&apos;s Move characteristic and add 1 to Advance and Charge rolls made for this model.</characteristic>
-                    <characteristic name="D6" typeId="2b47-80ec-51a5-3002">3 or 4</characteristic>
+                    <characteristic name="Description" typeId="f262-34f4-0217-8bdd">Add 2&quot; to this model&apos;s Move characteristic and add 1 to Advance and Charge rolls made for this model.</characteristic>
+                    <characteristic name="D6" typeId="abc7-ec7f-1f21-d074">3 or 4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5868,7 +5868,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">26</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Selfless Protector" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="af51-9630-82a3-172d">
@@ -7194,9 +7194,8 @@ The Qualities from Oaths you have fulfilled continue to apply to all models in y
     </profile>
     <profile name="Damaged: 1-9 Wounds Remaining" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="a274-b647-186a-54ee">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-9 wounds remaining, subtract 4 from this models Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-9 wounds remaining, subtract 5 from this models Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
       </characteristics>
-      <comment>-4OC</comment>
     </profile>
     <profile name="Damaged: 1-5 Wounds Remaining" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="b9a3-9db8-fd2f-7e43">
       <characteristics>
@@ -7207,24 +7206,11 @@ The Qualities from Oaths you have fulfilled continue to apply to all models in y
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-10 wounds remaining, subtract 5 from this model&apos;s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
       </characteristics>
-      <comment>-5OC</comment>
-    </profile>
-    <profile name="Damaged: 1-10 Wounds Remaining" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="79dc-ea0c-c3b8-21d8">
-      <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-10 wounds remaining, subtract 4 from this model&apos;s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
-      </characteristics>
-      <comment>-4OC</comment>
     </profile>
     <profile name="Ion Aegis (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0cc9-e726-c0fa-c4f3">
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly **^^Armiger^^** model is within 6&quot; of this model, each time a ranged attack targets that model, it has the Benefit of Cover against that attack.</characteristic>
       </characteristics>
-    </profile>
-    <profile name="Damaged: 1-9 Wounds Remaining" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="75b7-f99a-8812-a55f">
-      <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-9 wounds remaining, subtract 5 from this models Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
-      </characteristics>
-      <comment>-5OC</comment>
     </profile>
   </sharedProfiles>
   <profileTypes>
