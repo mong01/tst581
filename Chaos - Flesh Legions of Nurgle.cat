@@ -4066,7 +4066,7 @@ WANING STAGE
       <selectionEntryGroups>
         <selectionEntryGroup name="Detachments" id="5b34-5819-5a04-301e" hidden="false" defaultSelectionEntryId="none">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Putrid Procession" hidden="false" id="3539-789e-eb53-96e7" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Putrid Procession" hidden="false" id="3539-789e-eb53-96e7" sortIndex="2">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e48f-ae5b-4b0e-1dc7" includeChildSelections="false"/>
               </constraints>
@@ -4078,7 +4078,7 @@ WANING STAGE
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Corpse Eaters" hidden="false" id="064f-dc01-57f9-82f7" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Corpse Eaters" hidden="false" id="064f-dc01-57f9-82f7" sortIndex="3">
               <profiles>
                 <profile name="Voracious Onslaught" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e24a-c042-dbac-feca">
                   <characteristics>
@@ -4090,7 +4090,7 @@ WANING STAGE
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23d2-2e24-f771-101e" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Lost and the Damned" hidden="false" id="384d-fe5e-6aa2-3e5e" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Lost and the Damned" hidden="false" id="384d-fe5e-6aa2-3e5e" sortIndex="4">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f79-40f4-dd4e-922b" includeChildSelections="false"/>
               </constraints>
@@ -4098,6 +4098,29 @@ WANING STAGE
                 <profile name="Chain of Command" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3fdf-0255-a413-cb4e">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase or at the end of a phase in which they disembarked from a TRANSPORT or were set up on the battlefield, NURGLETH FOLLOWERS CHARACTER models from your army can, unless otherwise specified, issue one Order to a friendly NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit within 6&quot; of them. Until the start of your next Command phase, the unit you selected is affected by that Order; unless otherwise stated, a unit can only be affected by one Order at a time (any Order subsequently issued to that unit replaces the current one). Orders cannot be issued to Battle-shocked units, and if a unit being affected by an Order becomes Battle-shocked, that Order ceases to affect that unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nurgle&apos;s Children" hidden="false" id="4bba-fb09-9942-14b7" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7036-45e5-ef10-0bfc" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Bubbling Concoctions" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6da5-b0d8-4364-247b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the first battle round, select one of the Brews below. Until the end of the battle, while an enemy unit is within Engagement Range of a NURGLETH FOLLOWERS unit from your army, that enemy unit has the effect of your chosen Brew.
+
+SHAKING POX
+Each time a model in this unit makes an attack, subtract 1 from the Hit roll.
+
+
+HEMORROT
+Worsen the Save characteristic of models in this unit by 1.
+
+
+CEREBROFLUX
+Worsen the Move, Leadership, and Objective Control characteristics of models in this unit by 1 (this rule can only worsen a model’s Objective Control characteristic to a minimum of 1).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4418,6 +4441,42 @@ WANING STAGE
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="384d-fe5e-6aa2-3e5e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Nurgle&apos;s Children Enhancements" id="7d50-f2d0-8825-bc20" hidden="true" flatten="true">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="58c3-abf6-436a-f5bf" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9426-47d0-3ba9-5fcc" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Experimental Cocktail" hidden="false" id="9768-f7e9-8efc-b1b0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae80-358f-b519-4b3f" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1633-0ba3-b7db-1c93" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Experimental Cocktail" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2263-7d45-ad3d-1eff">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer is leading a unit, add 1 to Advance and Charge rolls made for that unit.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="4bba-fb09-9942-14b7" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4936,6 +4995,35 @@ A. The ability specifies that a unit is not eligible to fight; as the Stratagem 
                   </characteristics>
                 </profile>
               </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nurgle&apos;s Children" hidden="false" id="09cd-6bc0-dca6-22e2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eeae-1b19-380f-1ea6" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1785-6223-bfc6-01e2" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Waves of the Faithful" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0f2f-9903-5f88-072e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Epic Deed**
+**2CP**
+**When:** Any phase.
+**Target:** One BLESSED CULTISTS or CULTIST MOB unit from your army that was just destroyed. You can use this Stratagem on that unit even though it was just destroyed.
+**Effect:** Add a new unit to your army identical to your destroyed unit, in Strategic Reserves, at its Starting Strength.
+**Restrictions:** Any destroyed CHARACTER units that were attached to your unit are not returned. You can only use this Stratagem once per battle.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="4bba-fb09-9942-14b7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" value="0" field="eeae-1b19-380f-1ea6"/>
+                    <modifier type="set" value="0" field="1785-6223-bfc6-01e2"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
           </selectionEntries>
           <constraints>
