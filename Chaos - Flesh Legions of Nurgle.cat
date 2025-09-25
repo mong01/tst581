@@ -2767,7 +2767,7 @@ WANING STAGE
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                 <characteristic name="A" typeId="2337-daa1-6682-b110">D6+6</characteristic>
                 <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
                 <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                 <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
@@ -2777,7 +2777,7 @@ WANING STAGE
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
