@@ -3035,7 +3035,7 @@ WANING STAGE
       <profiles>
         <profile name="Plaguereaper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ebee-eaae-c10e-1c79">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">9&quot;</characteristic>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">13</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">24</characteristic>
@@ -3046,6 +3046,11 @@ WANING STAGE
         <profile name="Icon of Sin (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="109b-d439-776a-f404">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly NURGLE unit (excluding MONSTER or VEHICLE units) is within 12&quot; of this model, improve the Leadership characteristic of that unit by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Steel Beast" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9a9e-5a87-f936-9bb6">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can move over terrain features that are 4&quot; or less in height as if they were not there.</characteristic>
           </characteristics>
         </profile>
       </profiles>
