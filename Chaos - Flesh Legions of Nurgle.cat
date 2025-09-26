@@ -4874,8 +4874,7 @@ A. The ability specifies that a unit is not eligible to fight; as the Stratagem 
 **1CP**
 **When:** Fight phase.
 **Target:** One NURGLETH FOLLOWERS INFANTRY unit from your army that has not been selected to fight this phase and is within Engagement Range of one or more enemy units.
-**Effect:** Until the end of the phase, each time your unit is selected to fight, when determining which models in your unit are eligible to fight, any models in your unit that are within 3&quot; of one or more enemy models are eligible to fight. When resolving those attacks, such models can target one of those enemy units that is within 3&quot; of them and within Engagement Range of their unit.
-</characteristic>
+**Effect:** Until the end of the phase, each time your unit is selected to fight, when determining which models in your unit are eligible to fight, any models in your unit that are within 3&quot; of one or more enemy models are eligible to fight. When resolving those attacks, such models can target one of those enemy units that is within 3&quot; of them and within Engagement Range of their unit.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Buzzing Clouds" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bae3-87e6-f1b7-6080">
@@ -5069,8 +5068,7 @@ A. The ability specifies that a unit is not eligible to fight; as the Stratagem 
 **1CP**
 **When:**  Fight phase, just after an enemy unit has selected its targets.
 **Target:** One NURGLETH FOLLOWERS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.
-**Effect:** Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6: on a 4+, do not remove it from play; the destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.
-</characteristic>
+**Effect:** Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6: on a 4+, do not remove it from play; the destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Slip Away" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="784e-fc0b-0f20-d663">
@@ -5079,8 +5077,7 @@ A. The ability specifies that a unit is not eligible to fight; as the Stratagem 
 **1CP**
 **When:**  End of your opponent’s Fight phase.
 **Target:** One NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit from your army that is not within Engagement Range of one or more enemy units.
-**Effect:** Remove your unit from the battlefield and place it into Strategic Reserves.
-</characteristic>
+**Effect:** Remove your unit from the battlefield and place it into Strategic Reserves.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Gifts from the Plague God" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="565c-1d72-e4e1-41a8">
@@ -5089,8 +5086,7 @@ A. The ability specifies that a unit is not eligible to fight; as the Stratagem 
 **1CP**
 **When:**  Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
 **Target:** One NURGLETH FOLLOWERS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.
-**Effect:** Until the end of the phase, each time an attack targets your unit, subtract 1 from the Wound roll.
-</characteristic>
+**Effect:** Until the end of the phase, each time an attack targets your unit, subtract 1 from the Wound roll.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Season of Bounty" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bf39-0f9f-80d4-3c01">
@@ -5118,8 +5114,7 @@ A. The ability specifies that a unit is not eligible to fight; as the Stratagem 
 **1CP**
 **When:**  Your Shooting phase or the Fight phase.
 **Target:** One NURGLETH FOLLOWERS unit from your army that has not been selected to shoot or fight this phase.
-**Effect:** Until the end of the phase, each time a model in your unit makes an attack that targets an enemy unit, re-roll a Wound roll of 1. If that enemy unit is within range of an objective marker, you can re-roll the Wound roll instead.
-</characteristic>
+**Effect:** Until the end of the phase, each time a model in your unit makes an attack that targets an enemy unit, re-roll a Hit roll of 1. If that enemy unit is within range of an objective marker, you can re-roll the Hit roll instead.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
