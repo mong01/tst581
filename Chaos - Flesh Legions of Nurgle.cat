@@ -4457,7 +4457,7 @@ Worsen the Move, Leadership, and Objective Control characteristics of models in 
                   <profiles>
                     <profile name="Foul Tincture" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2263-7d45-ad3d-1eff">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the first battle round, you can select a Brew that is not currently active for your army; until the start of your next turn, while an enemy unit is within Engagement Range of the bearer&apos;s unit, that enemy unit has the effect of your chosen Brew in addition to the one active for your army.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the first battle round, select a Brew that is not currently active for your army; until the end of the battle, while an enemy unit is within Engagement Range of the bearer&apos;s unit, that enemy unit has the effect of your chosen Brew in addition to the one active for your army.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
