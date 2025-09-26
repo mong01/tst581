@@ -1427,7 +1427,7 @@ WANING STAGE
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plague spewer" hidden="false" id="69c8-95e3-85b4-803e" collective="false">
       <profiles>
-        <profile name="Plague belcher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="582e-1136-0b83-cac5">
+        <profile name="Plague spewer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="582e-1136-0b83-cac5">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
