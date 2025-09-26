@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition" revision="69" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition" revision="72" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
@@ -504,10 +504,6 @@
     </categoryEntry>
     <categoryEntry name="Damage Dx+0 Modifier" id="982b-de77-dd2d-d9bd" hidden="true">
       <comment>Flags a weapon that has had a +0 added to a D3/D6 Damage characteristic - used for logic calculations</comment>
-    </categoryEntry>
-    <categoryEntry name="Multi-profile Dx Weapon Tracker" id="1915-3b50-87e0-62c1" hidden="true">
-      <comment>Used for data author tracking purposes only</comment>
-      <description>Used to keep track of weapons that need to have multiple profiles manually adjusted for A/D Dx logic. Not used in logic anywhere.</description>
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
@@ -7745,23 +7741,6 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="faa2-8145-18a4-34c1" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="79d5-885d-8cc2-f885" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Painful Lessons" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0443-b9f5-0690-1c6a">
@@ -7788,23 +7767,6 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="8791-d292-d3df-69a2" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="79d5-885d-8cc2-f885" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -7833,23 +7795,6 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4556-4f10-f8fe-640c" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="8791-d292-d3df-69a2" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Hamstringing Attacks" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c2be-b94d-d4cb-f914">
@@ -7876,31 +7821,6 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="d441-8e0d-f984-52ee" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="ab52-bc6a-1099-5000" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="lessThan" value="1" field="selections" scope="parent" childId="8791-d292-d3df-69a2" shared="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="parent" childId="faa2-8145-18a4-34c1" shared="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -7942,23 +7862,6 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4556-4f10-f8fe-640c" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="faa2-8145-18a4-34c1" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Nimble Defence" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="38ac-2ed6-0bd7-e628">
@@ -7984,14 +7887,9 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               </conditionGroups>
             </modifier>
             <modifier type="set" value="1" field="8937-5c60-e52d-dd07">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="7767-9b46-61a3-c62a" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="set" value="1" field="a18f-126f-0697-e5df">
               <conditions>
@@ -8051,17 +7949,6 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="8b22-21b7-9d42-ed41" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="d241-419d-402c-8a4c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="31bd-ce57-db23-cd21" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Indomitable Stature" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3e8f-093a-1795-a68a">
@@ -8088,17 +7975,6 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="0631-30ea-dc30-6668" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="d241-419d-402c-8a4c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="31bd-ce57-db23-cd21" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -8129,17 +8005,6 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="0631-30ea-dc30-6668" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="d241-419d-402c-8a4c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="8b22-21b7-9d42-ed41" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Prey Taker" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="99ff-4ba1-2488-7c2f">
@@ -8166,16 +8031,6 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="1473-e060-09f0-2261" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="0631-30ea-dc30-6668" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -8204,16 +8059,6 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a2b9-1412-57b8-d6f8" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="0631-30ea-dc30-6668" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Sweeping Blow" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="38e1-9c82-18ed-4bf0">
@@ -8240,16 +8085,6 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a4b0-aae0-e3b9-d952" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="31bd-ce57-db23-cd21" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -8280,16 +8115,6 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="14d4-1e97-4302-1654" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="31bd-ce57-db23-cd21" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -8329,16 +8154,6 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="702d-9520-9430-7269" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="8b22-21b7-9d42-ed41" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Unstoppable Advance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="acc3-e888-1539-0b15">
@@ -8366,16 +8181,6 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="ee3c-b45a-e693-96f5" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="8b22-21b7-9d42-ed41" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Massive Stomp" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="459d-1377-d4a2-a93c">
@@ -8392,14 +8197,8 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="fe0b-a773-b244-d6a3" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="1" field="2255-b8fc-34ba-43b6">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="fe0b-a773-b244-d6a3" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
           </modifiers>
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2255-b8fc-34ba-43b6" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d674-520e-d71b-1586" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
@@ -9289,10 +9088,14 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
             <modifierGroup type="and">
               <modifiers>
                 <modifier type="append" value="Warp-touched Weapon" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
-                <modifier type="increment" value="1" field="2337-daa1-6682-b110" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
                 <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
                 <modifier type="increment" value="1" field="3254-9fe6-d824-513e" join=", " scope="upgrade" affects="profiles.Melee Weapons" position="-1"/>
-                <modifier type="decrement" value="1" field="2337-daa1-6682-b110" join=", " scope="upgrade" affects="84c4-6d1e-e724-bd6e.profiles.Melee Weapons"/>
+                <modifier type="append" value="+0" field="2337-daa1-6682-b110" scope="upgrade" affects="e993-e086-6de1-12af.profiles.Melee Weapons" arg="+0" join=""/>
+                <modifier type="replace" value="" field="2337-daa1-6682-b110" scope="upgrade" affects="6337-b83b-0d1e-5770.profiles.Melee Weapons" arg="+0"/>
+                <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="upgrade" affects="profiles.Melee Weapons" position="-1"/>
+                <modifier type="decrement" value="1" field="2337-daa1-6682-b110" scope="upgrade" affects="84c4-6d1e-e724-bd6e.profiles.Melee Weapons" position="-1"/>
+                <modifier type="replace" value="" field="2337-daa1-6682-b110" scope="upgrade" affects="profiles.Melee Weapons" arg="+0"/>
+                <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="upgrade" arg="+0" affects="e993-e086-6de1-12af"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
