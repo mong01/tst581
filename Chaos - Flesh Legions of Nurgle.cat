@@ -651,7 +651,7 @@ WANING STAGE
         <infoLink name="Lethal Hits" id="cac0-66ba-1a8a-1f85" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Great blighted weapon" hidden="false" id="c9a5-b41c-cdd2-3bc8" collective="true">
+    <selectionEntry type="upgrade" import="true" name="Great blighted weapon" hidden="false" id="c9a5-b41c-cdd2-3bc8">
       <profiles>
         <profile name="Great blighted weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="c8b0-b400-5d3f-0303">
           <characteristics>
