@@ -34,7 +34,7 @@
       <description>At the start of the first battle round, select one of the Stages below; until the end of the battle round, that Stage is active for your army. While that Stage is active, each unit from your army that has the Endless Cycle ability gains the relevant abilities shown below. At the end of the battle round, the currently active Stage is no longer active, and the other Stage is now active until the end of the following battle round (for example, if you chose the Waxing Stage in the first battle round, the next battle round would be the Waning Stage, then the Waxing Stage again, etc.).
 
 WAXING STAGE
-■ Add 1 to the Objective Control characteristic of models in this unit (models with an unmodified OC characteristic of 0 are not affected).
+■ Add 1 to the Objective Control characteristic of models in this unit (models that are Battle-shocked or have an unmodified OC characteristic of 0 are not affected).
 ■ This unit is eligible to declare a charge in a turn in which it Advanced.
 
 WANING STAGE
@@ -3432,12 +3432,12 @@ WANING STAGE
         </profile>
         <profile name="Droning Mass" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7541-0e43-d542-74a4">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, that unit has the Benefit of Cover</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, that unit has the Benefit of Cover.</characteristic>
           </characteristics>
         </profile>
         <profile name="Orator of Chaos" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3c4d-cab8-5bfd-d39d">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit is destroyed, if it has not fought this phase, roll one D6. On a 2+, do not remove it from play; the destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit is destroyed, if it has not fought this phase, roll one D6: on a 2+, do not remove it from play; the destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4109,7 +4109,7 @@ WANING STAGE
               <profiles>
                 <profile name="Bubbling Concoctions" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6da5-b0d8-4364-247b">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the first battle round, select one of the Brews below. Until the end of the battle, while an enemy unit is within Engagement Range of a NURGLETH FOLLOWERS unit from your army, that enemy unit has the effect of your chosen Brew.
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">During the Declare Battle Formations step, select one of the Brews below. Until the end of the battle, while an enemy unit is within Engagement Range of a NURGLETH FOLLOWERS unit from your army, that enemy unit has the effect of your chosen Brew.
 
 SHAKING POX
 Each time a model in this unit makes an attack, subtract 1 from the Hit roll.
@@ -4158,7 +4158,7 @@ Worsen the Move, Leadership, and Objective Control characteristics of models in 
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                     <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                     <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -4174,7 +4174,7 @@ Worsen the Move, Leadership, and Objective Control characteristics of models in 
                   <profiles>
                     <profile name="Dark Hunger" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="747a-b7b8-b5f0-f268">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer is leading a unit, that unit has the Scouts 6&quot; ability (if that unit is an OGRYN unit, it has the Scouts 5&quot; ability instead).</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer is leading a unit, that unit has the Scouts 6&quot; ability.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -4405,7 +4405,7 @@ Worsen the Move, Leadership, and Objective Control characteristics of models in 
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                     <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                     <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -4449,20 +4449,83 @@ Worsen the Move, Leadership, and Objective Control characteristics of models in 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9426-47d0-3ba9-5fcc" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Experimental Cocktail" hidden="false" id="9768-f7e9-8efc-b1b0">
+                <selectionEntry type="upgrade" import="true" name="Foul Tincture" hidden="false" id="9768-f7e9-8efc-b1b0">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae80-358f-b519-4b3f" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1633-0ba3-b7db-1c93" includeChildSelections="true" includeChildForces="true"/>
                   </constraints>
                   <profiles>
-                    <profile name="Experimental Cocktail" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2263-7d45-ad3d-1eff">
+                    <profile name="Foul Tincture" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2263-7d45-ad3d-1eff">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer is leading a unit, add 1 to Advance and Charge rolls made for that unit.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the first battle round, you can select a Brew that is not currently active for your army; until the start of your next turn, while an enemy unit is within Engagement Range of the bearer&apos;s unit, that enemy unit has the effect of your chosen Brew in addition to the one active for your army.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="One Foot in the Grave" hidden="false" id="5a74-ae03-1912-6b85">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ff5-400e-ad90-23d5" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0944-90b9-d4dd-f985" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="One Foot in the Grave" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cf7c-5fa6-378e-b8da">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In the Battle-shock step of your opponent’s Command phase, each enemy unit within Engagement Range of the bearer&apos;s unit must take a Battle-shock test. In addition, if that enemy unit is Below Half-strength, subtract 1 from the result (that unit does not also have to take a Battle-shock test for being Below Half-strength).</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Tainted Land" hidden="false" id="3d50-26c6-ab4b-1196">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e0b-9f1c-26a5-54d2" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8568-b4eb-4a39-4399" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Tainted Land" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="23ab-0c7c-afb1-dd90">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Enemy units that are set up on the battlefield from Reserves cannot be set up within 12&quot; horizontally of the bearer&apos;s unit.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Virulent Strains" hidden="false" id="8ada-0a2a-286d-5e00">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1f3-f148-54af-9699" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7f0c-39fb-0749-956a" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Virulent Strains" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2a82-e884-d30f-2e97">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer is leading a unit, if that unit made a Charge move this turn, each time a model in that unit makes a melee attack, a Critical Hit is scored on a successful unmodified Hit roll of 5+.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                     <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                     <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -4790,9 +4853,9 @@ A. The ability specifies that a unit is not eligible to fight; as the Stratagem 
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **1CP**
-**When:** Your Shooting phase.
-**Target:** One NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit from your army that has not been selected to shoot this phase, and one enemy MONSTER or VEHICLE unit visible to that unit.
-**Effect:** Until the end of the phase, each time a model in your unit makes a ranged attack against that enemy unit, you can re-roll the Wound roll.</characteristic>
+**When:** Your Shooting phase or the Fight phase.
+**Target:** One NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit from your army that has not been selected to shoot or fight this phase.
+**Effect:** Until the end of the phase, each time a model in your unit makes an attack that targets an enemy MONSTER or VEHICLE unit, you can re-roll the Wound roll.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Waves of the Faithful" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="267e-6fa2-b1d1-d5cf">
@@ -4805,23 +4868,14 @@ A. The ability specifies that a unit is not eligible to fight; as the Stratagem 
 **Restrictions:** Any destroyed CHARACTER units that were attached to your unit are not returned. You can only use this Stratagem once per battle.</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Septic Cascade" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5116-970f-6a08-bc19">
+                <profile name="Hordes of Flesh" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5c07-ac55-448e-b17d">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
 **1CP**
 **When:** Fight phase.
-**Target:** One NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit from your army.
-**Effect:** Until the end of the phase, each time a model in your unit makes a melee attack, an unmodified Hit roll of 5+ scores a Critical Hit.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Season of Bounty" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5c07-ac55-448e-b17d">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
-**1CP**
-**When:** Command phase.
-**Target:** One NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit from your army.
-**Effect:** Until the end of the battle round, your unit benefits from both the Waxing Stage and Waning Stage abilities.
-**Restrictions:** This Stratagem can only be used once per battle round.</characteristic>
+**Target:** One NURGLETH FOLLOWERS INFANTRY unit from your army that has not been selected to fight this phase and is within Engagement Range of one or more enemy units.
+**Effect:** Until the end of the phase, each time your unit is selected to fight, when determining which models in your unit are eligible to fight, any models in your unit that are within 3&quot; of one or more enemy models are eligible to fight. When resolving those attacks, such models can target one of those enemy units that is within 3&quot; of them and within Engagement Range of their unit.
+</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Buzzing Clouds" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bae3-87e6-f1b7-6080">
@@ -4831,6 +4885,15 @@ A. The ability specifies that a unit is not eligible to fight; as the Stratagem 
 **When:** Your opponent&apos;s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
 **Target:** One NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit from your army that was selected as the target of one or more of the attacking unit&apos;s attacks.
 **Effect:** Until the end of the phase, each time an attack targets your unit, subtract 1 from the Hit roll.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Septic Cascade" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3e46-f0f5-1c2c-d1dd">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
+**1CP**
+**When:** Fight phase.
+**Target:** One NURGLETH FOLLOWERS INFANTRY unit from your army.
+**Effect:** Until the end of the phase, each time a model in your unit makes a melee attack, an unmodified Hit roll of 5+ scores a Critical Hit.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5000,14 +5063,63 @@ A. The ability specifies that a unit is not eligible to fight; as the Stratagem 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1785-6223-bfc6-01e2" includeChildSelections="false" automatic="true"/>
               </constraints>
               <profiles>
-                <profile name="Waves of the Faithful" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0f2f-9903-5f88-072e">
+                <profile name="Relish the Agony" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0f2f-9903-5f88-072e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
+**1CP**
+**When:**  Fight phase, just after an enemy unit has selected its targets.
+**Target:** One NURGLETH FOLLOWERS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.
+**Effect:** Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6: on a 4+, do not remove it from play; the destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.
+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Slip Away" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="784e-fc0b-0f20-d663">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:**  End of your opponent’s Fight phase.
+**Target:** One NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit from your army that is not within Engagement Range of one or more enemy units.
+**Effect:** Remove your unit from the battlefield and place it into Strategic Reserves.
+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Gifts from the Plague God" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="565c-1d72-e4e1-41a8">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Epic Deed**
-**2CP**
-**When:** Any phase.
-**Target:** One BLESSED CULTISTS or CULTIST MOB unit from your army that was just destroyed. You can use this Stratagem on that unit even though it was just destroyed.
-**Effect:** Add a new unit to your army identical to your destroyed unit, in Strategic Reserves, at its Starting Strength.
-**Restrictions:** Any destroyed CHARACTER units that were attached to your unit are not returned. You can only use this Stratagem once per battle.</characteristic>
+**1CP**
+**When:**  Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
+**Target:** One NURGLETH FOLLOWERS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.
+**Effect:** Until the end of the phase, each time an attack targets your unit, subtract 1 from the Wound roll.
+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Season of Bounty" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bf39-0f9f-80d4-3c01">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:** Command phase.
+**Target:** One NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit from your army.
+**Effect:** Until the end of the battle round, your unit benefits from both the Waxing Stage and Waning Stage abilities.
+**Restrictions:** This Stratagem can only be used once per battle round.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Untiring March" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2ece-20d8-3847-1c09">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:**  Your Movement phase.
+**Target:** One NURGLETH FOLLOWERS unit from your army.
+**Effect:** Until the end of the phase, each time your unit Advances, do not make an Advance roll. Instead, until the end of the phase, add 6&quot; to the Move characteristic of models in your unit.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="All for Grandfather" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7dcc-559f-4448-d3f7">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
+**1CP**
+**When:**  Your Shooting phase or the Fight phase.
+**Target:** One NURGLETH FOLLOWERS unit from your army that has not been selected to shoot or fight this phase.
+**Effect:** Until the end of the phase, each time a model in your unit makes an attack that targets an enemy unit, re-roll a Wound roll of 1. If that enemy unit is within range of an objective marker, you can re-roll the Wound roll instead.
+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
