@@ -1224,6 +1224,10 @@ WANING STAGE
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Precision" id="7a1b-675b-9259-f732" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+        <infoLink name="Anti-" id="996d-7890-03d7-9b2f" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Plague Ogryns" hidden="false" id="5cb7-ff94-f7d1-97b4" collective="false">
       <modifiers>
@@ -3560,7 +3564,7 @@ WANING STAGE
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
