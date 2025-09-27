@@ -891,11 +891,10 @@ WANING STAGE
         </infoLink>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Apostles of Rot" id="87ba-7965-2171-27f5" hidden="false">
+        <selectionEntryGroup name="Apostles of Rot" id="87ba-7965-2171-27f5" hidden="false" defaultSelectionEntryId="fd21-1b47-8c43-6dfd">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Apostle of Rot" hidden="false" id="fd21-1b47-8c43-6dfd">
               <constraints>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e6c5-98dc-29b6-ac13" includeChildSelections="false"/>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="7c01-3098-089f-34d8" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
@@ -909,8 +908,7 @@ WANING STAGE
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Apostle of Rot w/ great cleaver" hidden="false" id="8a8c-0370-835e-5bf3">
               <constraints>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ce78-57bc-a450-489d" includeChildSelections="false"/>
-                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="b6a9-550c-2442-91fe" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b6a9-550c-2442-91fe" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Great cleaver" hidden="false" id="1951-5798-9b88-9f25">
@@ -936,8 +934,19 @@ WANING STAGE
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <modifiers>
+                <modifier type="increment" value="2" field="b6a9-550c-2442-91fe">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="f43f-aaf0-3655-69ea" childId="model" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e2c6-84df-1576-c91f" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="0903-d787-97ff-45b9" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
