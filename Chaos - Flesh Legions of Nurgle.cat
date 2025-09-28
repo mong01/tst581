@@ -1261,17 +1261,17 @@ WANING STAGE
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-INFANTRY 4+, Precision</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits, Precision</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Precision" id="7a1b-675b-9259-f732" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
-        <infoLink name="Anti-" id="996d-7890-03d7-9b2f" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+        <infoLink name="Lethal Hits" id="996d-7890-03d7-9b2f" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Plague Ogryns" hidden="false" id="5cb7-ff94-f7d1-97b4" collective="false">
@@ -3814,7 +3814,7 @@ WANING STAGE
         </profile>
         <profile name="Heretic Commander" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="646e-49e2-d242-a420">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes an attack, that attack has the [SUSTAINED HITS 1] ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
