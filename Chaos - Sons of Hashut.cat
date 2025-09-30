@@ -1623,8 +1623,8 @@ A. Yes.</characteristic>
               <entryLinks>
                 <entryLink import="true" name="Wyrdstar" hidden="false" id="fc3c-0a0c-a0a8-1319" type="selectionEntry" targetId="773c-fe27-d47c-7d57">
                   <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4338-c36a-5ffb-be0e" includeChildSelections="false" automatic="true"/>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="df2c-0590-d322-a865" includeChildSelections="false" automatic="true"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4338-c36a-5ffb-be0e" includeChildSelections="false" automatic="false"/>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="df2c-0590-d322-a865" includeChildSelections="false" automatic="false"/>
                   </constraints>
                   <modifierGroups>
                     <modifierGroup type="and">
@@ -1645,8 +1645,8 @@ A. Yes.</characteristic>
                 </entryLink>
                 <entryLink import="true" name="Warpcore flail" hidden="false" id="9ac0-77cc-a265-74db" type="selectionEntry" targetId="de7a-2c1e-c689-dce1">
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a5fe-aa32-c521-08e6" includeChildSelections="false" automatic="true"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cb3a-dc27-396c-04e7" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a5fe-aa32-c521-08e6" includeChildSelections="false" automatic="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cb3a-dc27-396c-04e7" includeChildSelections="false" automatic="false"/>
                   </constraints>
                   <modifierGroups>
                     <modifierGroup type="and">
@@ -1686,8 +1686,8 @@ A. Yes.</characteristic>
               <entryLinks>
                 <entryLink import="true" name="Mawgun" hidden="false" id="1039-4ae9-4ea2-a8c7" type="selectionEntry" targetId="3cb9-9203-af11-3448">
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4027-5076-1c8e-d024" includeChildSelections="false" automatic="true"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1ed5-f28b-67b8-0cad" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4027-5076-1c8e-d024" includeChildSelections="false" automatic="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1ed5-f28b-67b8-0cad" includeChildSelections="false" automatic="false"/>
                   </constraints>
                   <modifierGroups>
                     <modifierGroup type="and">
@@ -1708,8 +1708,8 @@ A. Yes.</characteristic>
                 </entryLink>
                 <entryLink import="true" name="Twin magna-coil needler" hidden="false" id="76cf-1df3-6671-d92b" type="selectionEntry" targetId="96bb-8a5c-c838-7ff8">
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="33b4-c2ac-f327-e180" includeChildSelections="false" automatic="true"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bbd1-a974-df07-11dc" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="33b4-c2ac-f327-e180" includeChildSelections="false" automatic="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bbd1-a974-df07-11dc" includeChildSelections="false" automatic="false"/>
                   </constraints>
                   <modifierGroups>
                     <modifierGroup type="and">
@@ -1730,14 +1730,14 @@ A. Yes.</characteristic>
                 </entryLink>
                 <entryLink import="true" name="Reactive shield" hidden="false" id="3b8d-cb03-9705-dd40" type="selectionEntry" targetId="bc9f-527a-a654-9828">
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f61a-4f1c-e8b2-315f" includeChildSelections="false" automatic="true"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9a94-30da-a9a4-bc97" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f61a-4f1c-e8b2-315f" includeChildSelections="false" automatic="true"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a94-30da-a9a4-bc97" includeChildSelections="false" automatic="true"/>
                   </constraints>
                   <modifierGroups>
                     <modifierGroup type="and">
                       <modifiers>
-                        <modifier type="set" value="1" field="9a94-30da-a9a4-bc97"/>
-                        <modifier type="set" value="1" field="f61a-4f1c-e8b2-315f"/>
+                        <modifier type="set" value="0" field="9a94-30da-a9a4-bc97"/>
+                        <modifier type="set" value="0" field="f61a-4f1c-e8b2-315f"/>
                       </modifiers>
                       <conditionGroups>
                         <conditionGroup type="and">
