@@ -1740,10 +1740,10 @@ A. Yes.</characteristic>
                         <modifier type="set" value="0" field="f61a-4f1c-e8b2-315f"/>
                       </modifiers>
                       <conditionGroups>
-                        <conditionGroup type="and">
+                        <conditionGroup type="or">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a0cc-52c3-fc81-5aa9" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a0cc-52c3-fc81-5aa9" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
