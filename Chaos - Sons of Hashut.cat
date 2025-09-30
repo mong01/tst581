@@ -1617,8 +1617,8 @@ A. Yes.</characteristic>
           <selectionEntryGroups>
             <selectionEntryGroup name="Melee weapon" id="551d-87de-fc55-2992" hidden="false" defaultSelectionEntryId="a43f-4328-2bf9-3311">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc58-294d-c0f4-9ad3-min" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc58-294d-c0f4-9ad3-max" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc58-294d-c0f4-9ad3-min" includeChildSelections="false" automatic="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc58-294d-c0f4-9ad3-max" includeChildSelections="false" automatic="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Wyrdstar" hidden="false" id="fc3c-0a0c-a0a8-1319" type="selectionEntry" targetId="773c-fe27-d47c-7d57">
@@ -1705,8 +1705,8 @@ A. Yes.</characteristic>
             </selectionEntryGroup>
             <selectionEntryGroup name="Ranged weapon" id="69e5-bb6a-4f2e-e515" hidden="false" defaultSelectionEntryId="6b72-4a36-0799-b68f">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2531-c636-59b9-8f67-min" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2531-c636-59b9-8f67-max" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2531-c636-59b9-8f67-min" includeChildSelections="false" automatic="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2531-c636-59b9-8f67-max" includeChildSelections="false" automatic="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Mawgun" hidden="false" id="1039-4ae9-4ea2-a8c7" type="selectionEntry" targetId="3cb9-9203-af11-3448">
@@ -5884,6 +5884,51 @@ At the start of the battle round, select one of the following toxic agents to be
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="602d-f484-3bb0-72a0" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Test" hidden="false" id="3d94-011f-b46b-ec6b">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="New Group" id="2915-fa21-7c9b-474c" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Wyrdstar" hidden="false" id="549d-4293-6942-9ebf" type="selectionEntry" targetId="773c-fe27-d47c-7d57">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7eb3-ed42-9b80-4041" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warpcore flail" hidden="false" id="af08-8629-de2e-84d1" type="selectionEntry" targetId="de7a-2c1e-c689-dce1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d614-4cd7-e7b0-30b9" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="952f-f276-5548-9735-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="952f-f276-5548-9735-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="New Group" id="3300-0df6-15f9-88c0" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Reactive shield" hidden="false" id="05d9-06f1-c0ef-23a7" type="selectionEntry" targetId="bc9f-527a-a654-9828">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b9f-a4f8-cca9-0c66" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Mawgun" hidden="false" id="d7b3-7339-0d03-46d4" type="selectionEntry" targetId="3cb9-9203-af11-3448">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bfd-a4ec-2928-9d93" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Twin magna-coil needler" hidden="false" id="690f-1447-85b1-3ccb" type="selectionEntry" targetId="96bb-8a5c-c838-7ff8">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76e9-8842-fa32-e6f3" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1eb8-89b1-c98d-0cd9-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1eb8-89b1-c98d-0cd9-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Eldrkin Warriors" hidden="false" id="5698-24c6-9c6c-c944" type="selectionEntry" targetId="1dc7-a7c2-0019-212a"/>
@@ -5916,6 +5961,7 @@ At the start of the battle round, select one of the following toxic agents to be
     <entryLink import="true" name="Hobgrot Khan" hidden="false" id="796b-da29-0de9-ff3c" targetId="1734-1327-1cf2-67e5" type="selectionEntry"/>
     <entryLink import="true" name="Hobgrot Khan on Buggy" hidden="false" id="9307-81a4-1b84-d3f8" targetId="7622-43ae-8fd4-4f96" type="selectionEntry"/>
     <entryLink import="true" name="Lammasu" hidden="false" id="0c57-23b4-32be-7c97" type="selectionEntry" targetId="0b6a-27c2-a861-d53a"/>
+    <entryLink import="true" name="Test" hidden="false" id="7bec-a6e2-23a8-9b7d" targetId="3d94-011f-b46b-ec6b" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Fireglaive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fea9-43bc-25b1-0c6d">
