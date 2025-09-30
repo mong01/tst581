@@ -1623,13 +1623,13 @@ A. Yes.</characteristic>
               <entryLinks>
                 <entryLink import="true" name="Wyrdstar" hidden="false" id="fc3c-0a0c-a0a8-1319" type="selectionEntry" targetId="773c-fe27-d47c-7d57">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c5d-a4b9-e6ee-b938" includeChildSelections="false" automatic="true"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dd69-2407-e7de-b662" includeChildSelections="false" automatic="true"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4338-c36a-5ffb-be0e" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df2c-0590-d322-a865" includeChildSelections="false" automatic="true"/>
                   </constraints>
                   <modifierGroups>
                     <modifierGroup type="and">
                       <modifiers>
-                        <modifier type="set" value="1" field="dd69-2407-e7de-b662">
+                        <modifier type="set" value="1" field="4338-c36a-5ffb-be0e">
                           <conditionGroups>
                             <conditionGroup type="and">
                               <conditions>
@@ -1639,7 +1639,7 @@ A. Yes.</characteristic>
                             </conditionGroup>
                           </conditionGroups>
                         </modifier>
-                        <modifier type="set" value="0" field="9c5d-a4b9-e6ee-b938">
+                        <modifier type="set" value="0" field="df2c-0590-d322-a865">
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
