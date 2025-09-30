@@ -1655,7 +1655,7 @@ A. Yes.</characteristic>
                         <modifier type="set" value="0" field="1c32-59bc-c082-20c2"/>
                       </modifiers>
                       <conditionGroups>
-                        <conditionGroup type="and">
+                        <conditionGroup type="or">
                           <conditions>
                             <condition type="lessThan" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a43f-4328-2bf9-3311" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
