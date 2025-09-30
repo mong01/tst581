@@ -5586,7 +5586,7 @@ At the start of the battle round, select one of the following toxic agents to be
         </profile>
         <profile name="Low Cunning" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="31a8-7186-29ce-d2c9">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes an attack, that attack has the [LETHAL HITS] ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
