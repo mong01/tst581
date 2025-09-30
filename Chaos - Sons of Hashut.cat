@@ -1623,20 +1623,20 @@ A. Yes.</characteristic>
               <entryLinks>
                 <entryLink import="true" name="Wyrdstar" hidden="false" id="fc3c-0a0c-a0a8-1319" type="selectionEntry" targetId="773c-fe27-d47c-7d57">
                   <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4338-c36a-5ffb-be0e" includeChildSelections="false" automatic="false"/>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="df2c-0590-d322-a865" includeChildSelections="false" automatic="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4338-c36a-5ffb-be0e" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df2c-0590-d322-a865" includeChildSelections="false" automatic="true"/>
                   </constraints>
                   <modifierGroups>
                     <modifierGroup type="and">
                       <modifiers>
-                        <modifier type="set" value="1" field="4338-c36a-5ffb-be0e"/>
-                        <modifier type="set" value="1" field="df2c-0590-d322-a865"/>
+                        <modifier type="set" value="0" field="4338-c36a-5ffb-be0e"/>
+                        <modifier type="set" value="0" field="df2c-0590-d322-a865"/>
                       </modifiers>
                       <conditionGroups>
-                        <conditionGroup type="and">
+                        <conditionGroup type="or">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="1804-da93-90d7-f26d" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="1804-da93-90d7-f26d" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -1645,20 +1645,20 @@ A. Yes.</characteristic>
                 </entryLink>
                 <entryLink import="true" name="Warpcore flail" hidden="false" id="9ac0-77cc-a265-74db" type="selectionEntry" targetId="de7a-2c1e-c689-dce1">
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a5fe-aa32-c521-08e6" includeChildSelections="false" automatic="false"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cb3a-dc27-396c-04e7" includeChildSelections="false" automatic="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb3a-dc27-396c-04e7" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c32-59bc-c082-20c2" includeChildSelections="false" automatic="true"/>
                   </constraints>
                   <modifierGroups>
                     <modifierGroup type="and">
                       <modifiers>
-                        <modifier type="set" value="1" field="cb3a-dc27-396c-04e7"/>
-                        <modifier type="set" value="0" field="a5fe-aa32-c521-08e6"/>
+                        <modifier type="set" value="0" field="cb3a-dc27-396c-04e7"/>
+                        <modifier type="set" value="0" field="1c32-59bc-c082-20c2"/>
                       </modifiers>
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a43f-4328-2bf9-3311" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a43f-4328-2bf9-3311" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -1686,20 +1686,20 @@ A. Yes.</characteristic>
               <entryLinks>
                 <entryLink import="true" name="Mawgun" hidden="false" id="1039-4ae9-4ea2-a8c7" type="selectionEntry" targetId="3cb9-9203-af11-3448">
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4027-5076-1c8e-d024" includeChildSelections="false" automatic="false"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1ed5-f28b-67b8-0cad" includeChildSelections="false" automatic="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4027-5076-1c8e-d024" includeChildSelections="false" automatic="true"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ed5-f28b-67b8-0cad" includeChildSelections="false" automatic="true"/>
                   </constraints>
                   <modifierGroups>
                     <modifierGroup type="and">
                       <modifiers>
-                        <modifier type="set" value="1" field="1ed5-f28b-67b8-0cad"/>
-                        <modifier type="set" value="1" field="4027-5076-1c8e-d024"/>
+                        <modifier type="set" value="0" field="1ed5-f28b-67b8-0cad"/>
+                        <modifier type="set" value="0" field="4027-5076-1c8e-d024"/>
                       </modifiers>
                       <conditionGroups>
-                        <conditionGroup type="and">
+                        <conditionGroup type="or">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="6b72-4a36-0799-b68f" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="6b72-4a36-0799-b68f" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -1708,20 +1708,20 @@ A. Yes.</characteristic>
                 </entryLink>
                 <entryLink import="true" name="Twin magna-coil needler" hidden="false" id="76cf-1df3-6671-d92b" type="selectionEntry" targetId="96bb-8a5c-c838-7ff8">
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="33b4-c2ac-f327-e180" includeChildSelections="false" automatic="false"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bbd1-a974-df07-11dc" includeChildSelections="false" automatic="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33b4-c2ac-f327-e180" includeChildSelections="false" automatic="true"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bbd1-a974-df07-11dc" includeChildSelections="false" automatic="true"/>
                   </constraints>
                   <modifierGroups>
                     <modifierGroup type="and">
                       <modifiers>
-                        <modifier type="set" value="1" field="bbd1-a974-df07-11dc"/>
-                        <modifier type="set" value="1" field="33b4-c2ac-f327-e180"/>
+                        <modifier type="set" value="0" field="bbd1-a974-df07-11dc"/>
+                        <modifier type="set" value="0" field="33b4-c2ac-f327-e180"/>
                       </modifiers>
                       <conditionGroups>
-                        <conditionGroup type="and">
+                        <conditionGroup type="or">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="6a22-afe3-4375-0c30" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="6a22-afe3-4375-0c30" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="1001-97cc-a296-9abe" childId="a24e-6dcd-c94b-7031" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
