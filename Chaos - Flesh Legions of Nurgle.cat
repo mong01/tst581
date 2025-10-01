@@ -4894,6 +4894,121 @@ Worsen the Move, Leadership, and Objective Control characteristics of models in 
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Malefic Lord" hidden="false" id="be94-72f6-e5ac-d94f">
+      <categoryLinks>
+        <categoryLink targetId="2bc7-3b5c-cccb-0ed9" id="2e1c-0f65-7035-aa5b" primary="false" name="Malefic Lord"/>
+        <categoryLink targetId="13bf-2bee-3ae0-b414" id="1742-400c-e8b9-0e40" primary="false" name="Psyker"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="8869-1645-a519-4910" primary="false" name="Infantry"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="d9c1-62ae-6952-8c01" primary="true" name="Character"/>
+        <categoryLink targetId="ed0d-8e2a-225c-2340" id="07ee-4b7d-47aa-9754" primary="false" name="Nurgle"/>
+        <categoryLink targetId="bbcc-67e6-68a9-1676" id="39ba-69a6-5918-3926" primary="false" name="Faction: Nurgleth Followers"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="1c83-b10b-a3d5-60a1" primary="false" name="Chaos"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Endless Cycle" id="2b61-b2ae-fca9-d642" hidden="false" targetId="46d6-81a2-7652-bc0c" type="rule"/>
+        <infoLink name="Leader" id="8051-57f3-a56f-591f" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="abbe-9d96-d5de-0142">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+■ Apostles of Rot
+■ Blessed Cultists
+■ Cultist Mob
+■ Scabs
+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Malefic Lord" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1f6a-31ff-9473-c05f">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e492-bd6e-a0c2-b64a">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blasphemous Power (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="eb65-4e8a-9b36-fdb3">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, add 2&quot; to the Move characteristic of models in that unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Wretched Existence (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f8ba-b5a8-86d7-05eb">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, in your Command phase, you can return 1 destroyed Bodyguard model to that unit; if that unit is a BATTLELINE or SCABS unit, you can return up to D3 destroyed Bodyguard models instead.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Force weapon" hidden="false" id="fbd7-cbe3-0544-cf83">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ecd-0126-4774-4674-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ecd-0126-4774-4674-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Force weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="423d-e8a4-db46-6158">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">D3</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Psychic" id="5b98-05f9-cb77-9b68" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Soulwhip" hidden="false" id="d6df-3661-1a17-e976">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c85-9607-c55c-edb3-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c85-9607-c55c-edb3-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="➤ Soulwhip - witchfire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="51ab-d62b-de32-1c3d">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Psychic</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="➤ Soulwhip - focused witchfire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="095e-278b-68d6-0e3f">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3+3</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Hazardous, Psychic</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastating Wounds" id="92f2-756f-169d-fe49" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+            <infoLink name="Hazardous" id="752a-4fe1-2e29-989b" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
+            <infoLink name="Psychic" id="9d86-50e7-6771-65b9" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="af53-07d7-8caf-6063" type="selectionEntry" targetId="517b-5d9c-25c0-ed40" sortIndex="1"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="581a-1aa3-0f57-c8f5" type="selectionEntry" targetId="3ebb-60e4-3885-4279" sortIndex="2"/>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Cultist Mob" hidden="false" id="4844-eb67-6f3f-9a4f" type="selectionEntry" targetId="ba90-681f-5432-d56d"/>
