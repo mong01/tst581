@@ -845,7 +845,7 @@ WANING STAGE
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5154-ae9e-aef7-25cb" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Blessed weapons" hidden="false" id="9f83-0d84-8c0f-6ff9" type="selectionEntry" targetId="4270-891d-036a-a0af">
+                <entryLink import="true" name="Poxblade" hidden="false" id="9f83-0d84-8c0f-6ff9" type="selectionEntry" targetId="4270-891d-036a-a0af">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cbd-524c-736b-94d5" includeChildSelections="false"/>
                   </constraints>
@@ -911,7 +911,7 @@ WANING STAGE
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="7c01-3098-089f-34d8" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Blessed weapons" hidden="false" id="4c06-6e1d-b7a9-aafa" type="selectionEntry" targetId="4270-891d-036a-a0af">
+                <entryLink import="true" name="Poxblade" hidden="false" id="4c06-6e1d-b7a9-aafa" type="selectionEntry" targetId="4270-891d-036a-a0af">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="108c-07d5-c7f6-34a5" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3712-3d3d-da1e-6489" includeChildSelections="false"/>
@@ -4915,8 +4915,7 @@ Worsen the Move, Leadership, and Objective Control characteristics of models in 
 ■ Apostles of Rot
 ■ Blessed Cultists
 ■ Cultist Mob
-■ Scabs
-</characteristic>
+■ Scabs</characteristic>
           </characteristics>
         </profile>
         <profile name="Malefic Lord" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1f6a-31ff-9473-c05f">
@@ -5016,6 +5015,9 @@ Worsen the Move, Leadership, and Objective Control characteristics of models in 
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="9614-9615-0676-d971" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
