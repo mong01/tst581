@@ -1005,9 +1005,9 @@ WANING STAGE
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Blessed weapons" hidden="false" id="4270-891d-036a-a0af" collective="true">
+    <selectionEntry type="upgrade" import="true" name="Blessed weapon" hidden="false" id="4270-891d-036a-a0af" collective="true">
       <profiles>
-        <profile name="Blessed weapons" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3dc6-aa1f-d766-47bf">
+        <profile name="Blessed weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3dc6-aa1f-d766-47bf">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
