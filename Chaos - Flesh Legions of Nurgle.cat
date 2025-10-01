@@ -28,6 +28,7 @@
     <categoryEntry name="Malachi the Prophet" id="7dcc-5b51-0dd7-5e0a" hidden="false"/>
     <categoryEntry name="Plague Toads" id="56c3-535d-166f-7a00" hidden="false"/>
     <categoryEntry name="Ogryn Berserkers" id="dfca-7ef7-4e30-5125" hidden="false"/>
+    <categoryEntry name="Malefic Lord" id="2bc7-3b5c-cccb-0ed9" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Endless Cycle" id="46d6-81a2-7652-bc0c" hidden="false">
@@ -837,14 +838,26 @@ WANING STAGE
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="386a-330b-a1fe-5e60-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="386a-330b-a1fe-5e60-max" includeChildSelections="false"/>
           </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Plagueforged arms" hidden="false" id="5547-9e3a-9142-a582" type="selectionEntry" targetId="4270-891d-036a-a0af">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="99ee-8a02-9cce-b900" hidden="false" defaultSelectionEntryId="9f83-0d84-8c0f-6ff9">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d361-1ea0-74bc-b78a-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d361-1ea0-74bc-b78a-max" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e973-8275-3c90-ed33" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5154-ae9e-aef7-25cb" includeChildSelections="false"/>
               </constraints>
-            </entryLink>
-          </entryLinks>
+              <entryLinks>
+                <entryLink import="true" name="Blessed weapons" hidden="false" id="9f83-0d84-8c0f-6ff9" type="selectionEntry" targetId="4270-891d-036a-a0af">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cbd-524c-736b-94d5" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power pick" hidden="false" id="8182-2417-b6f7-035d" type="selectionEntry" targetId="eaaa-58f2-4a5b-562e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb96-da14-f59b-f743" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <profiles>
@@ -893,12 +906,12 @@ WANING STAGE
       <selectionEntryGroups>
         <selectionEntryGroup name="Apostles of Rot" id="87ba-7965-2171-27f5" hidden="false" defaultSelectionEntryId="fd21-1b47-8c43-6dfd">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Apostle of Rot" hidden="false" id="fd21-1b47-8c43-6dfd">
+            <selectionEntry type="model" import="true" name="Apostle of Rot w/ blessed weapons" hidden="false" id="fd21-1b47-8c43-6dfd" sortIndex="1">
               <constraints>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="7c01-3098-089f-34d8" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Plagueforged arms" hidden="false" id="4c06-6e1d-b7a9-aafa" type="selectionEntry" targetId="4270-891d-036a-a0af">
+                <entryLink import="true" name="Blessed weapons" hidden="false" id="4c06-6e1d-b7a9-aafa" type="selectionEntry" targetId="4270-891d-036a-a0af">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="108c-07d5-c7f6-34a5" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3712-3d3d-da1e-6489" includeChildSelections="false"/>
@@ -906,36 +919,78 @@ WANING STAGE
                 </entryLink>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Apostle of Rot w/ great cleaver" hidden="false" id="8a8c-0370-835e-5bf3">
+            <selectionEntry type="model" import="true" name="Apostle of Rot w/ power pick" hidden="false" id="8a8c-0370-835e-5bf3" sortIndex="2">
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b6a9-550c-2442-91fe" includeChildSelections="false"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="77e0-fa25-8d88-cd34" includeChildSelections="false"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Great cleaver" hidden="false" id="1951-5798-9b88-9f25">
+              <entryLinks>
+                <entryLink import="true" name="Power pick" hidden="false" id="4063-a2ad-0238-5d9a" type="selectionEntry" targetId="eaaa-58f2-4a5b-562e">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f63a-46ba-96ee-a0e2" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fef-3c44-6280-cf66" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65c2-5e7d-1ad2-3c17-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65c2-5e7d-1ad2-3c17-max" includeChildSelections="false"/>
                   </constraints>
-                  <profiles>
-                    <profile name="Great cleaver" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="00f9-0c43-bb46-c9ae">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Lethal Hits" id="f54b-d326-83c3-edb9" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Apostle of Rot w/ special weapon" hidden="false" id="0813-9e1f-1916-97f8">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapons" id="5361-c861-11e4-d323" hidden="false" defaultSelectionEntryId="none">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b22-83a9-7c80-bf91-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b22-83a9-7c80-bf91-max" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Paired blessed weapons" hidden="false" id="e9e5-b6de-9aad-bd44">
+                      <profiles>
+                        <profile name="Paired blessed weapons" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8ea6-f64c-2b79-7f46">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits, Twin-linked</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="865e-e3c0-6cd1-4211" includeChildSelections="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Twin-linked" id="ec8b-b5ce-1ea5-7fd5" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+                        <infoLink name="Lethal Hits" id="0983-ff31-b63a-6114" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Power tool" hidden="false" id="3c75-77e7-b841-6893">
+                      <profiles>
+                        <profile name="Power tool" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="bbb8-d904-4173-be69">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-MONSTER 4+, Anti-VEHICLE 4+</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Anti-" id="1b28-14b5-91f7-a699" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26f0-301a-772c-1913" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5566-68a4-fcf1-f053" includeChildSelections="false"/>
+              </constraints>
               <modifiers>
-                <modifier type="increment" value="2" field="b6a9-550c-2442-91fe">
+                <modifier type="increment" value="1" field="5566-68a4-fcf1-f053">
                   <conditions>
                     <condition type="atLeast" value="10" field="selections" scope="f43f-aaf0-3655-69ea" childId="model" shared="true" includeChildSelections="true"/>
                   </conditions>
@@ -950,9 +1005,9 @@ WANING STAGE
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Plagueforged arms" hidden="false" id="4270-891d-036a-a0af">
+    <selectionEntry type="upgrade" import="true" name="Blessed weapons" hidden="false" id="4270-891d-036a-a0af" collective="true">
       <profiles>
-        <profile name="Plagueforged arms" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3dc6-aa1f-d766-47bf">
+        <profile name="Blessed weapons" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3dc6-aa1f-d766-47bf">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
@@ -1420,7 +1475,7 @@ WANING STAGE
             <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-INFANTRY 4+,  Ignores Cover, Pistol, Torrent</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-INFANTRY 5+, Ignores Cover, Pistol, Torrent</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3466,7 +3521,9 @@ WANING STAGE
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
 ■ Apostles of Rot
 ■ Blessed Cultists
-■ Cultist Mob</characteristic>
+■ Cultist Mob
+■ Scabs
+You can attach this model to a unit, even if one other Leader unit has already been attached to it (you cannot attach more than one of the same leader to the same unit). If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units with their original Starting Strengths.</characteristic>
           </characteristics>
         </profile>
         <profile name="Apostate Shepherd" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6cbc-42d8-d82d-416f">
@@ -3814,7 +3871,7 @@ WANING STAGE
         </profile>
         <profile name="Heretic Commander" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="646e-49e2-d242-a420">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes an attack, that attack has the [SUSTAINED HITS 1] ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4822,6 +4879,21 @@ Worsen the Move, Leadership, and Objective Control characteristics of models in 
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Power pick" hidden="false" id="eaaa-58f2-4a5b-562e" collective="true">
+      <profiles>
+        <profile name="Power pick" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2076-8d28-646e-0ee9">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Cultist Mob" hidden="false" id="4844-eb67-6f3f-9a4f" type="selectionEntry" targetId="ba90-681f-5432-d56d"/>
@@ -5125,17 +5197,17 @@ A. The ability specifies that a unit is not eligible to fight; as the Stratagem 
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
 **1CP**
 **When:**  End of your opponent’s Fight phase.
-**Target:** One NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit from your army that is not within Engagement Range of one or more enemy units.
+**Target:** One NURGLETH FOLLOWERS INFANTRY or NURGLETH FOLLOWERS MOUNTED unit from your army that is wholly within 9&quot; of a battlefield edge and is not within Engagement Range of one or more enemy units.
 **Effect:** Remove your unit from the battlefield and place it into Strategic Reserves.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Gifts from the Plague God" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="565c-1d72-e4e1-41a8">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Epic Deed**
-**1CP**
+**2CP**
 **When:**  Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
 **Target:** One NURGLETH FOLLOWERS unit from your army that was selected as the target of one or more of the attacking unit’s attacks.
-**Effect:** Until the end of the phase, each time an attack targets your unit, subtract 1 from the Wound roll.</characteristic>
+**Effect:** Until the end of the phase, models in your unit have a 5+ invulnerable save.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Season of Bounty" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bf39-0f9f-80d4-3c01">
