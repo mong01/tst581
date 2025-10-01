@@ -5179,15 +5179,6 @@ A. The ability specifies that a unit is not eligible to fight; as the Stratagem 
 **Effect:** Until the end of the phase, each time an attack is allocated to a model in your unit, subtract 1 from the Damage characteristic of that attack.</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Bounding Volleys" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e9be-74f6-0f53-0221">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
-**1CP**
-**When:** Your Shooting phase.
-**Target:**  One NURGLETH FOLLOWERS unit from your army that made an Advance move this turn.
-**Effect:** Until the end of the phase, your unit is eligible to shoot in a turn in which it Advanced.</characteristic>
-                  </characteristics>
-                </profile>
                 <profile name="Reckless Power" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1b6a-f67e-bdae-973c">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
@@ -5215,6 +5206,15 @@ A. The ability specifies that a unit is not eligible to fight; as the Stratagem 
 **Target:**  One NURGLETH FOLLOWERS unit from your army that has destroyed one or more enemy units this phase.
 **Effect:** Your unit can make a Normal move of up to 6&quot;. When doing so, your unit must end that move as close as possible to the closest enemy unit (excluding AIRCRAFT) and can be moved within Engagement Range of that unit.
 **Restrictions:** You cannot select a unit that is within Engagement Range of one or more enemy units.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Untiring March" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8c25-aa1f-4d51-8f39">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:**  Your Movement phase.
+**Target:** One NURGLETH FOLLOWERS unit from your army.
+**Effect:** Until the end of the phase, each time your unit Advances, do not make an Advance roll. Instead, until the end of the phase, add 6&quot; to the Move characteristic of models in your unit; if your unit is an OGRYN unit, add 7&quot; to the Move characteristic instead.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5346,15 +5346,6 @@ A. The ability specifies that a unit is not eligible to fight; as the Stratagem 
 **Restrictions:** This Stratagem can only be used once per battle round.</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Untiring March" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2ece-20d8-3847-1c09">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
-**1CP**
-**When:**  Your Movement phase.
-**Target:** One NURGLETH FOLLOWERS unit from your army.
-**Effect:** Until the end of the phase, each time your unit Advances, do not make an Advance roll. Instead, until the end of the phase, add 6&quot; to the Move characteristic of models in your unit.</characteristic>
-                  </characteristics>
-                </profile>
                 <profile name="All for Grandfather" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7dcc-559f-4448-d3f7">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Battle Tactic**
@@ -5362,6 +5353,15 @@ A. The ability specifies that a unit is not eligible to fight; as the Stratagem 
 **When:**  Your Shooting phase or the Fight phase.
 **Target:** One NURGLETH FOLLOWERS unit from your army that has not been selected to shoot or fight this phase.
 **Effect:** Until the end of the phase, each time a model in your unit makes an attack that targets an enemy unit, re-roll a Wound roll of 1. If that enemy unit is within range of an objective marker, you can re-roll the Wound roll instead.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Bounding Volleys" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="abf2-9c82-ab26-f7cd">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Strategic Ploy**
+**1CP**
+**When:** Your Shooting phase.
+**Target:**  One NURGLETH FOLLOWERS unit from your army that made an Advance move this turn.
+**Effect:** Until the end of the phase, your unit is eligible to shoot in a turn in which it Advanced.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
