@@ -964,7 +964,7 @@ WANING STAGE
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Heavy power tool" hidden="false" id="3c75-77e7-b841-6893">
                       <profiles>
-                        <profile name="Power tool" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="bbb8-d904-4173-be69">
+                        <profile name="Heavy power tool" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="bbb8-d904-4173-be69">
                           <characteristics>
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                             <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
