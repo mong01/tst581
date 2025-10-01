@@ -906,7 +906,7 @@ WANING STAGE
       <selectionEntryGroups>
         <selectionEntryGroup name="Apostles of Rot" id="87ba-7965-2171-27f5" hidden="false" defaultSelectionEntryId="fd21-1b47-8c43-6dfd">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Apostle of Rot w/ blessed weapons" hidden="false" id="fd21-1b47-8c43-6dfd" sortIndex="1">
+            <selectionEntry type="model" import="true" name="Apostle of Rot w/ poxblade" hidden="false" id="fd21-1b47-8c43-6dfd" sortIndex="1">
               <constraints>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="7c01-3098-089f-34d8" includeChildSelections="false"/>
               </constraints>
@@ -940,9 +940,9 @@ WANING STAGE
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b22-83a9-7c80-bf91-max" includeChildSelections="false"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Paired blessed weapons" hidden="false" id="e9e5-b6de-9aad-bd44">
+                    <selectionEntry type="upgrade" import="true" name="Paired poxblades" hidden="false" id="e9e5-b6de-9aad-bd44">
                       <profiles>
-                        <profile name="Paired blessed weapons" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8ea6-f64c-2b79-7f46">
+                        <profile name="Paired poxblades" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8ea6-f64c-2b79-7f46">
                           <characteristics>
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                             <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
@@ -962,7 +962,7 @@ WANING STAGE
                         <infoLink name="Lethal Hits" id="0983-ff31-b63a-6114" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
                       </infoLinks>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Power tool" hidden="false" id="3c75-77e7-b841-6893">
+                    <selectionEntry type="upgrade" import="true" name="Heavy power tool" hidden="false" id="3c75-77e7-b841-6893">
                       <profiles>
                         <profile name="Power tool" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="bbb8-d904-4173-be69">
                           <characteristics>
@@ -1005,9 +1005,9 @@ WANING STAGE
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Blessed weapon" hidden="false" id="4270-891d-036a-a0af" collective="true">
+    <selectionEntry type="upgrade" import="true" name="Poxblade" hidden="false" id="4270-891d-036a-a0af" collective="true">
       <profiles>
-        <profile name="Blessed weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3dc6-aa1f-d766-47bf">
+        <profile name="Poxblade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3dc6-aa1f-d766-47bf">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
