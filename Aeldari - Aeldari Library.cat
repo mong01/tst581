@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="dfcf-1214-b57-2205" name="Aeldari - Aeldari Library" revision="114" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="dfcf-1214-b57-2205" name="Aeldari - Aeldari Library" revision="115" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="442c-a37c-3908-d701" name="Codex: Aeldari" shortName="C:Aeldari" publisher="Codex: Aeldari" publicationDate="08/02/2025"/>
     <publication id="1427-7c5c-863f-ac94" name="Index: Drukhari" shortName="I:Drukhari" publisher="Index: Drukhari" publicationDate="6/15/2023"/>
@@ -35060,7 +35060,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
       </profiles>
       <infoLinks>
         <infoLink name="Disparate Paths" id="67fa-9775-a95f-b972" hidden="false" type="rule" targetId="10d8-3547-47ae-baab"/>
-        <infoLink name="Deep Strike" id="559a-e625-dd8d-7e79" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Battle Focus" id="e766-b320-7ff1-114e" hidden="false" type="rule" targetId="c324-e193-e23c-7d2e"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="811d-cb67-f345-4b9a" includeChildSelections="true"/>
@@ -38890,7 +38890,7 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
               <profiles>
                 <profile name="Stave of Kurnous" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b6db-35b5-dc12-881d">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Spiritseer model only. In your Command phase, select one friendly Wraith Construct unit within 12&quot; of the bearer (excluding Titanic units). Until the start of your next Command phase, each time a model in that unit makes an attack, on a Critical Would, that attack has the [Precision] ability.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Spiritseer model only. In your Command phase, select one friendly Wraith Construct unit within 12&quot; of the bearer (excluding Titanic units). Until the start of your next Command phase, each time a model in that unit makes an attack, on a Critical Wound, that attack has the [Precision] ability.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
