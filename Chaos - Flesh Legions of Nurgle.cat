@@ -32,7 +32,7 @@
   </categoryEntries>
   <sharedRules>
     <rule name="Endless Cycle" id="46d6-81a2-7652-bc0c" hidden="false">
-      <description>If your Army Faction is NURGLETH FOLLOWERS, the start of the first battle round, select one of the Stages below; until the end of the battle round, that Stage is active for your army. While that Stage is active, each NURGLETH FOLLOWERS unit from your army that has the Endless Cycle ability gains the relevant abilities shown below. At the end of the battle round, the currently active Stage is no longer active, and the other Stage is now active until the end of the following battle round (for example, if you chose the Waxing Stage in the first battle round, the next battle round would be the Waning Stage, then the Waxing Stage again, etc.).
+      <description>If your Army Faction is NURGLETH FOLLOWERS, at the start of the first battle round, select one of the Stages below; until the end of the battle round, that Stage is active for your army. While that Stage is active, each NURGLETH FOLLOWERS unit from your army that has the Endless Cycle ability gains the relevant abilities shown below. At the end of the battle round, the currently active Stage is no longer active, and the other Stage is now active until the end of the following battle round (for example, if you chose the Waxing Stage in the first battle round, the next battle round would be the Waning Stage, then the Waxing Stage again, etc.).
 
 WAXING STAGE
 ■ Add 1 to the Objective Control characteristic of models in this unit (models that are Battle-shocked or have an unmodified OC characteristic of 0 are not affected).
