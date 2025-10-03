@@ -495,11 +495,6 @@ Units from your army gain the following ability: &quot;Crimson Apotheosis: Model
                     <condition type="atLeast" value="20" field="selections" scope="ee70-18ae-6d11-95b1" childId="model" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="decrement" value="1" field="6fb3-d4be-a738-1243">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="ee70-18ae-6d11-95b1" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </repeats>
-                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6fb3-d4be-a738-1243" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -608,7 +603,7 @@ Units from your army gain the following ability: &quot;Crimson Apotheosis: Model
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Chainblades" hidden="false" id="4b74-fa01-fad6-66a1">
+    <selectionEntry type="upgrade" import="true" name="Chainblades" hidden="false" id="4b74-fa01-fad6-66a1" collective="true">
       <profiles>
         <profile name="Chainblades" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="51a4-d3f3-1a87-64d4">
           <characteristics>
