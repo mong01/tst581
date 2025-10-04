@@ -5761,8 +5761,8 @@ At the start of the battle round, select one of the following toxic agents to be
         </profile>
         <profile name="Synaptic Feedback (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2e73-082e-d6d6-095c">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">■ While an enemy unit is within 6&quot; of this model, subtract 1 from the Attacks characteristic of melee weapons equipped by models in that unit.
-■ While an enemy unit is within Engagement Range of this model, each time a model in that unit makes a melee attack, subtract 1 from the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">■ While an enemy unit is within 6&quot; of this model, each time a model in that unit makes a melee attack, subtract 1 from the Wound roll.
+■ While an enemy unit is within Engagement Range of this model, subtract 1 from the Attacks characteristic of melee weapons equipped by models in that unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
