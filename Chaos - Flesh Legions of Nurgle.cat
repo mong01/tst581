@@ -838,26 +838,14 @@ WANING STAGE
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="386a-330b-a1fe-5e60-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="386a-330b-a1fe-5e60-max" includeChildSelections="false"/>
           </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Weapons" id="99ee-8a02-9cce-b900" hidden="false" defaultSelectionEntryId="9f83-0d84-8c0f-6ff9">
+          <entryLinks>
+            <entryLink import="true" name="Poxblade" hidden="false" id="75f8-ffbf-a108-6990" type="selectionEntry" targetId="4270-891d-036a-a0af">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e973-8275-3c90-ed33" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5154-ae9e-aef7-25cb" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a01-f414-b5ee-b98f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a01-f414-b5ee-b98f-max" includeChildSelections="false"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Poxblade" hidden="false" id="9f83-0d84-8c0f-6ff9" type="selectionEntry" targetId="4270-891d-036a-a0af">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cbd-524c-736b-94d5" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Power pick" hidden="false" id="8182-2417-b6f7-035d" type="selectionEntry" targetId="eaaa-58f2-4a5b-562e">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb96-da14-f59b-f743" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <profiles>
@@ -878,7 +866,7 @@ WANING STAGE
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -886,7 +874,7 @@ WANING STAGE
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="70" field="51b2-306e-1021-d207">
+        <modifier type="increment" value="65" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="f43f-aaf0-3655-69ea" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -906,7 +894,7 @@ WANING STAGE
       <selectionEntryGroups>
         <selectionEntryGroup name="Apostles of Rot" id="87ba-7965-2171-27f5" hidden="false" defaultSelectionEntryId="fd21-1b47-8c43-6dfd">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Apostle of Rot w/ poxblade" hidden="false" id="fd21-1b47-8c43-6dfd" sortIndex="1">
+            <selectionEntry type="model" import="true" name="Apostle of Rot" hidden="false" id="fd21-1b47-8c43-6dfd" sortIndex="">
               <constraints>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="7c01-3098-089f-34d8" includeChildSelections="false"/>
               </constraints>
@@ -915,19 +903,6 @@ WANING STAGE
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="108c-07d5-c7f6-34a5" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3712-3d3d-da1e-6489" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Apostle of Rot w/ power pick" hidden="false" id="8a8c-0370-835e-5bf3" sortIndex="2">
-              <constraints>
-                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="77e0-fa25-8d88-cd34" includeChildSelections="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Power pick" hidden="false" id="4063-a2ad-0238-5d9a" type="selectionEntry" targetId="eaaa-58f2-4a5b-562e">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65c2-5e7d-1ad2-3c17-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65c2-5e7d-1ad2-3c17-max" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -1010,7 +985,7 @@ WANING STAGE
         <profile name="Poxblade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3dc6-aa1f-d766-47bf">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
