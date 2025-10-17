@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f915-c598-4995-0bad" name="Chaos - Slaughter Hosts of Khorne" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="75" revision="1" authorContact="mong94bdc@hotmail.com" authorName="Mong" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="f915-c598-4995-0bad" name="Chaos - Slaughter Hosts of Khorne" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="75" revision="1" authorContact="mong94bdc@hotmail.com" authorName="Mong" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
   <categoryEntries>
     <categoryEntry name="Faction: Kharneth Followers" id="8b16-6186-676f-2ff2" hidden="false"/>
     <categoryEntry name="Cultist Mob" id="ef2f-c77b-6731-304d" hidden="false"/>
@@ -9,6 +9,9 @@
     <categoryEntry name="Giant Chaos Spawn" id="6ac8-9793-491a-7dc2" hidden="false"/>
     <categoryEntry name="Chaos Spawn" id="763a-29e2-eac1-f8b6" hidden="false"/>
     <categoryEntry name="Slaughterbrute" id="d202-3473-e398-8853" hidden="false"/>
+    <categoryEntry name="Outrider Cultists" id="7404-513f-1517-98f5" hidden="false"/>
+    <categoryEntry name="Chaos Hounds" id="cee6-9010-e8ed-1de0" hidden="false"/>
+    <categoryEntry name="Crimson Zealots" id="0ac6-372d-7aa8-c435" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Damaged: 1-4 Wounds Remaining" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8c6f-09d1-444c-db32">
@@ -24,19 +27,10 @@
   </sharedProfiles>
   <rules>
     <rule name="Red Haze" id="9013-c5a1-f3fb-48d4" hidden="false">
-      <description>If your Army Faction is KHARNETH FOLLOWERS, units from your army gain different abilities depending on which Stage of Battle is currently active for your army. The Stage of Battle changes depending on which battle round it is (see below).
-
-
-**THIRSTING** (first battle round):
-Units from your army gain the following ability: &quot;Aching Hunger: Add 1&quot; to the Move characteristic of models in this unit and add 1 to Advance and Charge rolls made for this unit.&quot;
-
-
-**FEEDING** (second and third battle rounds):
-Units from your army gain the following ability: &quot;Wanton Butchery: Each time a model in this unit makes a melee attack, improve the Strength and Armour Penetration characteristic of that attack by 1.&quot;
-
-
-**EXALTING** (fourth and fifth battle rounds):
-Units from your army gain the following ability: &quot;Crimson Apotheosis: Models in this unit have a 5+ invulnerable save.&quot;</description>
+      <description>If your Army Faction is KHARNETH FOLLOWERS:
+■ Add 1 to Advance and Charge rolls made for this unit.
+■ Each time this unit declares a charge, it must select the closest eligible enemy unit as one of the targets of that charge.
+■ If this unit made a Charge move this turn, until the end of the Fight phase, each time a model in this unit makes a melee attack, improve the Armour Penetration characteristic of that attack by 1.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -450,7 +444,7 @@ Units from your army gain the following ability: &quot;Crimson Apotheosis: Model
         <infoLink name="Red Haze" id="58a2-7339-31b5-046d" hidden="false" targetId="9013-c5a1-f3fb-48d4" type="rule"/>
       </infoLinks>
       <profiles>
-        <profile name="Foul Anger" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f473-921a-d7dc-e3be">
+        <profile name="Retribution" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f473-921a-d7dc-e3be">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your opponent’s Shooting phase, each time an enemy unit has shot, if any models from this unit were destroyed as a result of those attacks, this unit can make a Surge move. To do so, roll one D6: this unit can be moved a distance in inches up to the result, but that unit must end that move as close as possible to the closest enemy unit (excluding AIRCRAFT). When doing so, this unit can be moved within Engagement Range of enemy units.</characteristic>
           </characteristics>
@@ -516,7 +510,7 @@ Units from your army gain the following ability: &quot;Crimson Apotheosis: Model
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                             <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
                             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
                             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
                             <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
                             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1</characteristic>
@@ -537,7 +531,7 @@ Units from your army gain the following ability: &quot;Crimson Apotheosis: Model
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                             <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
                             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
                             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
                             <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
@@ -741,77 +735,6 @@ Units from your army gain the following ability: &quot;Crimson Apotheosis: Model
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Giant Chaos Spawn" hidden="false" id="3a12-f80b-ac48-cbe0">
-      <categoryLinks>
-        <categoryLink name="Monster" hidden="false" id="2668-6cac-733b-6cd9" targetId="9693-cf84-fe69-37a9" primary="true"/>
-        <categoryLink name="Chaos" hidden="false" id="2d9b-8276-44d1-a86d" targetId="4c00-2578-faf5-6918" primary="false"/>
-        <categoryLink targetId="8b16-6186-676f-2ff2" id="cb76-47df-6fec-02a8" primary="false" name="Faction: Kharneth Followers"/>
-        <categoryLink targetId="4bd-5ee0-f179-2fc5" id="241c-91bd-f015-4476" primary="false" name="Khorne"/>
-        <categoryLink targetId="6ac8-9793-491a-7dc2" id="89c9-94ec-f94a-4b62" primary="false" name="Giant Chaos Spawn"/>
-      </categoryLinks>
-      <profiles>
-        <profile name="Giant Chaos Spawn" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="e696-2c91-4ddc-b810">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">10</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Seething Flesh" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="212f-85ad-b9fe-468c">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of each player’s Command phase, this model regains up to D3 lost wounds.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Deadly Demise" id="eee6-0c84-a8b9-436f" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
-          <modifiers>
-            <modifier type="append" value="1" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Feel No Pain" id="25f0-4efe-8dfc-e281" hidden="false" targetId="9bf4-280f-bbe2-6fbb" type="rule">
-          <modifiers>
-            <modifier type="append" value="5+" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Red Haze" id="23e8-370a-cbc1-35e3" hidden="false" targetId="9013-c5a1-f3fb-48d4" type="rule"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Grotesque mutations" hidden="false" id="d7a6-a9a3-f0f4-c56b">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1854-d11d-a12c-8fb3" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e11-1acc-47e8-717a" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Grotesque mutations" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="08ab-1d38-1cdf-3ccd">
-              <characteristics>
-                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                <characteristic name="A" typeId="2337-daa1-6682-b110">D6+10</characteristic>
-                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
-                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
-        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-      </costs>
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="61e2-56ec-5f6d-cf4c" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Chaos Spawn" hidden="false" id="add5-ce71-9a1b-98b9" collective="false">
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="06cb-a380-3c6e-b31b" includeChildSelections="true" includeChildForces="true"/>
@@ -854,7 +777,7 @@ Units from your army gain the following ability: &quot;Crimson Apotheosis: Model
         <categoryLink targetId="763a-29e2-eac1-f8b6" id="1c6d-2447-638c-3ac2" primary="false" name="Chaos Spawn"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Chaos Spawn" hidden="false" id="5aa1-5c0a-5f29-637c" collective="false" sortIndex="">
+        <selectionEntry type="model" import="true" name="Chaos Spawn" hidden="false" id="5aa1-5c0a-5f29-637c" collective="false">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7b6a-bc49-9fac-16e1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f6d6-4454-75e5-049e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -897,7 +820,7 @@ Units from your army gain the following ability: &quot;Crimson Apotheosis: Model
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Slaughterbrute" hidden="false" id="b0ca-a623-0838-efad">
+    <selectionEntry type="model" import="true" name="Slaughterbrute" hidden="false" id="b0ca-a623-0838-efad">
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f834-c33e-2986-224f" includeChildSelections="true"/>
       </constraints>
@@ -922,10 +845,15 @@ Units from your army gain the following ability: &quot;Crimson Apotheosis: Model
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">13</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Raging Beast" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="43a9-baf1-8d50-f5eb">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model is selected to fight, if it made a Charge move this turn, melee weapons equipped by this model (excluding Extra Attacks weapons) have the [DEVASTATING WOUNDS] ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -981,12 +909,275 @@ Units from your army gain the following ability: &quot;Crimson Apotheosis: Model
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Outrider Cultists" hidden="false" id="695a-4305-c8f6-cc13">
+      <categoryLinks>
+        <categoryLink name="Mounted" hidden="false" id="a293-8d6f-b273-ab5a" targetId="14a0-40c9-2748-ae6e" primary="true"/>
+        <categoryLink name="Chaos" hidden="false" id="e94d-6fad-74e3-d1c2" targetId="4c00-2578-faf5-6918" primary="false"/>
+        <categoryLink name="Grenades" hidden="false" id="fc5d-7ecc-d5ab-be97" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+        <categoryLink targetId="4bd-5ee0-f179-2fc5" id="7df5-8fb8-aa18-859c" primary="false" name="Khorne"/>
+        <categoryLink targetId="8b16-6186-676f-2ff2" id="21c4-9fc3-1e30-8cfc" primary="false" name="Faction: Kharneth Followers"/>
+        <categoryLink targetId="7404-513f-1517-98f5" id="6304-5dd5-68a0-dd49" primary="false" name="Outrider Cultists"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="25bb-7ad2-2ac6-1532" includeChildSelections="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Red Haze" id="05f6-3a24-0fc0-8ee9" hidden="false" targetId="9013-c5a1-f3fb-48d4" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Outrider champion" hidden="false" id="837e-0ffb-696b-37cb">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="4c5f-b2bf-5ee7-2538" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d9c2-3101-cc2b-e72e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb27-932c-eb48-2eeb" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Autopistol &amp; chainsword" hidden="false" id="a3d1-6fe1-c934-d9b6">
+                  <entryLinks>
+                    <entryLink import="true" name="Autopistol" hidden="false" id="970a-e23a-7a84-4b8a" type="selectionEntry" targetId="124e-5470-0baa-a91a">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="70bc-01d1-9fd9-3025" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ce4-dd2a-514c-3638" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="5bf2-5e11-5652-2d0a" type="selectionEntry" targetId="d3f4-7eab-e6a2-0c95">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c79-e911-a649-e914" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f33d-8b7d-1019-3d61" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a999-f735-b7c0-12ed" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Chainaxe" hidden="false" id="04f6-dba1-33f5-321b" type="selectionEntry" targetId="45a7-70a5-b301-93f1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6ca-bf7c-0c4e-3789" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="61e6-69cb-56e8-dc7c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95b1-fc8e-9957-902f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Outrider Cultists" id="e2eb-8f5d-b5ff-5145" hidden="false" defaultSelectionEntryId="e4aa-fbab-1371-df39">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="44fd-06ae-3503-d1ee" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="3aba-f2c4-cecf-ab21" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Outrider cultist w/ autopistol &amp; chainsword" hidden="false" id="8d2e-17a8-5d89-81e4">
+              <entryLinks>
+                <entryLink import="true" name="Autopistol" hidden="false" id="2386-5027-66d4-e698" type="selectionEntry" targetId="124e-5470-0baa-a91a">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5059-b1cd-0d47-cf83" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="607c-77d5-8027-22e6" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Chainsword" hidden="false" id="7e94-25e5-f757-499a" type="selectionEntry" targetId="d3f4-7eab-e6a2-0c95">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b71-f195-4b77-d55e" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="befe-ec82-d368-e265" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="c0e1-fd5e-46df-9cd6" includeChildSelections="false" automatic="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Outrider cultist w/ chainaxe" hidden="false" id="2dec-3ed0-c8e0-cb6c">
+              <constraints>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="3989-cb42-72ca-ae75" includeChildSelections="false" automatic="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Chainaxe" hidden="false" id="5c8f-d901-ca24-4464" type="selectionEntry" targetId="45a7-70a5-b301-93f1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb58-cd38-6ab4-2e65" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0727-eae5-b093-11f3" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Outrider Cultists" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="02d8-b2f9-c1b3-29d5">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Billowing Exhaust" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ae1c-07b3-c2dd-3931">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, you can target this unit with the Rapid Ingress Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="increment" value="70" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="atLeast" value="6" field="selections" scope="695a-4305-c8f6-cc13" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chainaxe" hidden="false" id="45a7-70a5-b301-93f1" collective="true">
+      <profiles>
+        <profile name="Chainaxe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="c25f-2c26-97d2-2b06">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="d3f4-7eab-e6a2-0c95" collective="true">
+      <profiles>
+        <profile name="Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d78e-0e1b-9265-a629">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Crimson Zealots" hidden="false" id="7ac8-4e5c-1cd5-f070">
+      <profiles>
+        <profile name="Crimson Zealots" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="fdaf-91b8-a770-9790">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Challenge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7601-b007-830e-6b56">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes a melee attack, re-roll a Wound roll of 1. If that enemy unit is not below its Starting Strength, you can re-roll the Wound roll instead.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Red Haze" id="24b2-64a8-9824-2ea2" hidden="false" type="rule" targetId="9013-c5a1-f3fb-48d4"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Crimson zealot" hidden="false" id="8a04-75d2-c84c-e1f7">
+          <entryLinks>
+            <entryLink import="true" name="Blacksword" hidden="false" id="4b9c-74ec-ba18-3993" type="selectionEntry" targetId="4cb6-a3ef-69b7-94f8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="482a-440d-b13b-ba5c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="482a-440d-b13b-ba5c-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="516a-ce24-7dfb-6081" includeChildSelections="false"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ffd1-ff26-a042-425f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Crimson champion" hidden="false" id="34dd-054e-b03c-b588">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="1d05-4339-d18c-7319" hidden="false" defaultSelectionEntryId="28df-2d55-7aa8-5a74">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0276-fbcc-f175-265f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0276-fbcc-f175-265f-max" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Blacksword" hidden="false" id="28df-2d55-7aa8-5a74" type="selectionEntry" targetId="4cb6-a3ef-69b7-94f8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8790-be13-163a-d59b" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Weeping blade" hidden="false" id="b5a0-f731-0bb7-8fe0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fd2-2f54-54ea-880e" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Weeping blade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="7c62-4bcb-fde0-f937">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Precision</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Precision" id="b225-0b92-3f73-5638" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="0ac6-372d-7aa8-c435" id="4091-af2f-99a7-cebe" primary="false" name="Crimson Zealots"/>
+        <categoryLink targetId="4bd-5ee0-f179-2fc5" id="a051-34a0-c23f-2861" primary="false" name="Khorne"/>
+        <categoryLink targetId="8b16-6186-676f-2ff2" id="473a-6fc0-db4e-9e47" primary="false" name="Faction: Kharneth Followers"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="ede0-52f9-3aaf-21c4" primary="true" name="Infantry"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="b612-1fca-8357-a082" primary="false" name="Chaos"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Blacksword" hidden="false" id="4cb6-a3ef-69b7-94f8" collective="true">
+      <profiles>
+        <profile name="Blacksword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d5c5-ec22-a2e2-3592">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Cultist Mob" hidden="false" id="3755-8150-93ec-2f26" targetId="52e7-7b39-a164-25c4" type="selectionEntry"/>
     <entryLink import="true" name="Blessed Cultists" hidden="false" id="4708-d150-006e-6af9" targetId="ee70-18ae-6d11-95b1" type="selectionEntry"/>
     <entryLink import="true" name="Ogryn Berserkers" hidden="false" id="a08b-a63c-eba2-e2ac" targetId="7018-47da-f074-1d04" type="selectionEntry"/>
-    <entryLink import="true" name="Giant Chaos Spawn" hidden="false" id="df6f-b74c-8b7f-fceb" targetId="3a12-f80b-ac48-cbe0" type="selectionEntry"/>
     <entryLink import="true" name="Chaos Spawn" hidden="false" id="f177-e038-0d93-8c3c" targetId="add5-ce71-9a1b-98b9" type="selectionEntry"/>
     <entryLink import="true" name="Slaughterbrute" hidden="false" id="9759-86ff-3231-ff5a" targetId="b0ca-a623-0838-efad" type="selectionEntry"/>
   </entryLinks>
