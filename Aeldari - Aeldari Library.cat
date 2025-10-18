@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="dfcf-1214-b57-2205" name="Aeldari - Aeldari Library" revision="117" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="dfcf-1214-b57-2205" name="Aeldari - Aeldari Library" revision="118" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="442c-a37c-3908-d701" name="Codex: Aeldari" shortName="C:Aeldari" publisher="Codex: Aeldari" publicationDate="08/02/2025"/>
     <publication id="1427-7c5c-863f-ac94" name="Index: Drukhari" shortName="I:Drukhari" publisher="Index: Drukhari" publicationDate="6/15/2023"/>
@@ -16531,7 +16531,7 @@ It can also move through sections of terrain features that are more than 4&quot;
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3596-ab50-2166-fd1f"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Melee Choice" id="10cd-799b-d881-334a" hidden="false">
+            <selectionEntryGroup name="Melee Choice" id="10cd-799b-d881-334a" hidden="false" defaultSelectionEntryId="b8fa-3118-2f84-8e36">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Huskblade" hidden="false" id="b8fa-3118-2f84-8e36">
                   <profiles>
@@ -16553,6 +16553,9 @@ It can also move through sections of terrain features that are more than 4&quot;
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="a15e-18ec-e34f-9879" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2e2-12f1-f1ee-6e98" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Agoniser" hidden="false" id="7420-f284-591b-ac10">
                   <profiles>
@@ -16574,6 +16577,9 @@ It can also move through sections of terrain features that are more than 4&quot;
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="c6c9-6973-8b0f-3c21" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88d0-b968-d1dd-0a47" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Master-crafted power weapon" hidden="false" id="b5f7-7914-604c-9fff">
                   <profiles>
@@ -16592,8 +16598,15 @@ It can also move through sections of terrain features that are more than 4&quot;
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="987b-9dcd-ce58-235d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c6d-698d-dc18-f420" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be0a-ca21-b57e-dc96" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abd5-1fcc-3370-143f" includeChildSelections="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -23647,7 +23660,7 @@ Before the battle, at the start of the Declare Battle Formations step, you can 
                     <profile name="Hekatarii Blade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="dc1a-26b8-9626-2f00">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
@@ -23672,7 +23685,7 @@ Before the battle, at the start of the Declare Battle Formations step, you can 
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="eeb7-d245-7257-27b6" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Gladiatorial weapons" hidden="false" id="f12e-b107-54b7-7425">
+                <selectionEntry type="upgrade" import="true" name="Gladiatorial weapons" hidden="false" id="f12e-b107-54b7-7425" collective="true">
                   <profiles>
                     <profile name="Gladiatorial weapons" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="76bc-b178-d069-0976">
                       <characteristics>
@@ -23686,6 +23699,10 @@ Before the battle, at the start of the Declare Battle Formations step, you can 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0b5-aef5-1139-b3b0" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48e7-7d88-14df-7099" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
@@ -36641,6 +36658,9 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="c54d-89aa-2478-3990" collective="false" targetId="3f04-19ab-bfb0-6c67" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hand of the Archon" hidden="false" id="76ab-197c-bd41-181b">
       <categoryLinks>
@@ -38188,7 +38208,31 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
         <selectionEntry type="upgrade" import="true" name="Spectacle of Spite" hidden="false" id="7008-2116-f479-a791">
           <rules>
             <rule name="Combat Drugs" id="5722-e69a-a553-9dcd" hidden="false">
-              <description>At the start of your Command phase, select which Combat Drugs will be active for your army until the start of your next Command phase. To do so, either select one from the list below (you cannot select the same Combat Drug more than once per battle), or randomly select two by rolling two D6. When doing so randomly, Combat Drugs you have previously selected can become active again, but if you randomly select one that is already active for your army, it has no additional effect.</description>
+              <description>At the start of your Command phase, select which Combat Drugs will be active for your army until the start of your next Command phase. To do so, either select one from the list below (you cannot select the same Combat Drug more than once per battle), or randomly select two by rolling two D6. When doing so randomly, Combat Drugs you have previously selected can become active again, but if you randomly select one that is already active for your army, it has no additional effect.
+
+
+**1. Adrenalight**
+Add 1 to the Attacks characteristic of melee weapons equipped by ^^**Wych Cult**^^ models from your army.
+
+
+**2. Hypex**
+Add 2&quot; to the Move characteristic of ^^**Wych Cult**^^ models from your army.
+
+
+**3. Serpentin**
+Improve the Weapon Skill characteristic of melee weapons equipped by ^^**Wych Cult**^^ models from your army by 1.
+
+
+**4. Painbringer**
+Add 1 to the Toughness characteristic of ^^**Wych CUlt**^^ models from your army.
+
+
+**5. Grave Lotus**
+Add 1 to the Strength characteristic of melee weapons equipped by ^^**Wych Cult**^^ models from your army.
+
+
+**6. Splintermind**
+Improve the Leadership characteristic of ^^**Wych Cult**^^ models from your army by 1, and improve the Ballistic Skill characteristic of ranged weapons equipped by ^^**Wych Cult**^^ models from your army by 1.</description>
             </rule>
           </rules>
           <modifiers>
@@ -38777,7 +38821,7 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
             </modifierGroup>
           </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Fell the Mighty" hidden="false" id="105c-8480-fc79-d634">
+        <selectionEntry type="upgrade" import="true" name="Fell the Mighty" hidden="true" id="105c-8480-fc79-d634">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e081-c2c1-05b4-0110" includeChildSelections="false"/>
           </constraints>
@@ -38790,12 +38834,12 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
             <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
           </costs>
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="a5a2-d0c0-0349-d226" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a5a2-d0c0-0349-d226" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -38814,7 +38858,7 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Graceful Advance" hidden="false" id="4159-6ee3-861e-e549">
+        <selectionEntry type="upgrade" import="true" name="Graceful Advance" hidden="true" id="4159-6ee3-861e-e549">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="069f-5d10-664b-015f" includeChildSelections="false"/>
           </constraints>
@@ -38827,12 +38871,12 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
             <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
           </costs>
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="a5a2-d0c0-0349-d226" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a5a2-d0c0-0349-d226" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -38858,7 +38902,7 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
             </infoLink>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Preternatural Acrobatics" hidden="false" id="b515-a0e5-dd9d-09d5">
+        <selectionEntry type="upgrade" import="true" name="Preternatural Acrobatics" hidden="true" id="b515-a0e5-dd9d-09d5">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d952-9674-50df-c5f8" includeChildSelections="false"/>
           </constraints>
@@ -38871,12 +38915,12 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
             <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
           </costs>
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="a5a2-d0c0-0349-d226" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a5a2-d0c0-0349-d226" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
