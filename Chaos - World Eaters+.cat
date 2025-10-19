@@ -169,17 +169,6 @@
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="➤ Fleshmetal weapons - melded claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="f529-65e2-1ccc-cb57">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">10</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked</characteristic>
-                  </characteristics>
-                </profile>
                 <profile name="➤ Fleshmetal weapons - corrupted fists" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1179-b533-7fdb-8e80">
                   <characteristics>
                     <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
@@ -189,6 +178,17 @@
                     <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="➤ Fleshmetal weapons - melded claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9c9c-410d-3b01-d9d2">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">10</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -212,6 +212,9 @@
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="9718-ffa1-9bad-0859" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
