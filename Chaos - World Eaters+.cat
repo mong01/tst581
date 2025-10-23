@@ -348,9 +348,6 @@
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="dfa3-5c9a-f355-99ac" includeChildSelections="true"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Greater Brass Scorpion" hidden="false" id="03bc-5a4b-5bae-2b77">
       <categoryLinks>
@@ -511,5 +508,6 @@
     <entryLink import="true" name="Slaughterbrute" hidden="false" id="b6a7-66dc-f79e-5262" type="selectionEntry" targetId="8a0e-cd1b-d4b5-4fb1"/>
     <entryLink import="true" name="Mutilators" hidden="false" id="1310-3545-b4b2-32d0" targetId="cd21-c698-170b-1e46" type="selectionEntry"/>
     <entryLink import="true" name="Blood Slaughterer" hidden="false" id="d41c-1bef-f693-3680" targetId="ce54-4438-f524-fd95" type="selectionEntry"/>
+    <entryLink import="true" name="Greater Brass Scorpion" hidden="false" id="0a8b-c65d-6939-7df0" targetId="03bc-5a4b-5bae-2b77" type="selectionEntry"/>
   </entryLinks>
 </catalogue>
