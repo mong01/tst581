@@ -232,7 +232,7 @@
         <categoryLink targetId="bd1d-c1a5-6ca2-c791" id="1e56-548c-9d9d-8d6d" primary="false" name="Faction: World Eaters"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="04fa-8a67-a488-fd72" primary="false" name="Chaos"/>
         <categoryLink targetId="4bd-5ee0-f179-2fc5" id="5d82-0f63-d05a-7603" primary="false" name="Khorne"/>
-        <categoryLink targetId="1470-3115-2bfe-95f4" id="9ebb-985e-89bc-c6e1" primary="false" name="Blood Slaughterer"/>
+        <categoryLink targetId="6f4e-bf43-dac1-0dec" id="4fb1-d853-ed86-b92e" primary="false" name="Blood Slaughterer"/>
       </categoryLinks>
       <profiles>
         <profile name="Blood Slaughterer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d30c-9763-bded-ee12">
@@ -282,7 +282,7 @@
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-MONSTER 2+, Anti-VEHICLE 2+, Impaled</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-MONSTER 2+, Anti-VEHICLE 2+, Harpooned</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -290,7 +290,7 @@
                     <infoLink name="Anti-" id="2082-2851-a598-6916" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
                   </infoLinks>
                   <rules>
-                    <rule name="Impaled" id="0f83-2f8e-2fad-e840" hidden="false">
+                    <rule name="Harpooned" id="0f83-2f8e-2fad-e840" hidden="false">
                       <description>After the bearer has shot with this weapon, select one enemy MONSTER or VEHICLE unit hit by one or more of those attacks. Until the end of the turn, each time the bearer selects that unit as a target of a charge, add 2 to the Charge roll.</description>
                     </rule>
                   </rules>
@@ -348,10 +348,12 @@
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e21b-c649-ce7a-dcb1" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Greater Brass Scorpion" hidden="false" id="03bc-5a4b-5bae-2b77">
       <categoryLinks>
-        <categoryLink targetId="691c-54b4-bfa5-be5c" id="91ec-a739-9cbf-6c20" primary="false" name="Greater Brass Scorpion"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="74c2-ad9c-baf6-e775" primary="false" name="Walker"/>
         <categoryLink targetId="d666-e2c9-b6cc-5716" id="29b1-a8f0-f347-a347" primary="false" name="Towering"/>
         <categoryLink targetId="dbd4-63-af05-998" id="5513-cd15-1ff2-331b" primary="true" name="Vehicle"/>
@@ -359,6 +361,7 @@
         <categoryLink targetId="bd1d-c1a5-6ca2-c791" id="82f1-39a7-488a-7f3c" primary="false" name="Faction: World Eaters"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="9b1a-3a30-ca4e-400c" primary="false" name="Titanic"/>
         <categoryLink targetId="9c0e-7e25-4580-e439" id="dbd5-28db-5d1a-f4a8" primary="false" name="Daemon"/>
+        <categoryLink targetId="6649-b72b-70b5-5721" id="6337-d338-9fe6-67f8" primary="false" name="Greater Brass Scorpion"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Blessings of Khorne" id="d287-21c0-8212-9b11" hidden="false" type="rule" targetId="e68b-b42f-6f7c-4670"/>
@@ -503,6 +506,8 @@
   <categoryEntries>
     <categoryEntry name="Slaughterbrute" id="e8bd-9464-d445-7625" hidden="false"/>
     <categoryEntry name="Mutilators" id="4a86-ca5e-3760-c366" hidden="false"/>
+    <categoryEntry name="Blood Slaughterer" id="6f4e-bf43-dac1-0dec" hidden="false"/>
+    <categoryEntry name="Greater Brass Scorpion" id="6649-b72b-70b5-5721" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="Slaughterbrute" hidden="false" id="b6a7-66dc-f79e-5262" type="selectionEntry" targetId="8a0e-cd1b-d4b5-4fb1"/>
