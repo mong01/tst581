@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b654-a18a-ea1-3bf2" name="Xenos - Necrons" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="84" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b654-a18a-ea1-3bf2" name="Xenos - Necrons" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="86" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Enhancements" hidden="false" id="9574-b5d1-8b0a-d95d" collapsible="true">
       <constraints>
@@ -12887,7 +12887,6 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Tomb Citadel Walls" hidden="false" id="32fd-f21-a91b-768a"/>
     <selectionEntry type="upgrade" import="true" name="Gloom prism" hidden="false" id="782d-ecfc-7aba-60d1">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d8f-d084-004c-0a55"/>
@@ -13012,6 +13011,9 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
                       </characteristics>
                     </profile>
                   </profiles>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="d5f4-e54b-38ed-60a6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Nanoscarab projector" hidden="false" id="a1fe-8e80-3663-6a3e">
                   <constraints>
@@ -13058,6 +13060,9 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
                     <infoLink name="Assault" id="7eb2-0cf7-1952-4103" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
                     <infoLink name="Sustained Hits" id="18ee-8527-1c5a-b5a4" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
                   </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="f371-6806-fb11-ac9f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
                 </selectionEntry>
               </selectionEntries>
               <modifiers>
@@ -13125,6 +13130,9 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
                   <infoLinks>
                     <infoLink name="Lethal Hits" id="4f8f-1d36-3f7e-f94c" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
                   </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="7ae1-d240-3c73-bf66" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
                 </selectionEntry>
               </selectionEntries>
               <modifiers>
@@ -13253,6 +13261,9 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="14cd-780d-e1ae-bc3f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Canoptek Tomb Crawlers" hidden="false" id="b7ee-a0fa-5736-b58f">
       <costs>
@@ -13352,7 +13363,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
       <selectionEntryGroups>
         <selectionEntryGroup name="2 Tomb Crawlers" id="d9a7-8561-d713-e351" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Tomb Crawler w/ twin gauss reaper" hidden="false" id="9a7a-8363-90a4-cca3">
+            <selectionEntry type="model" import="true" name="Tomb Crawler w/ twin gauss reaper" hidden="false" id="9a7a-8363-90a4-cca3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fea5-7a57-8e9b-09ee-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fea5-7a57-8e9b-09ee-max" includeChildSelections="false"/>
@@ -13380,6 +13391,9 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
                     <infoLink name="Twin-linked" id="dc6f-f67d-a2c5-ba41" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
                     <infoLink name="Lethal Hits" id="67d2-9034-9c15-8614" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
                   </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="d9dc-2a6e-73db-b91f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Claws" hidden="false" id="2a0f-2733-0620-e777">
                   <constraints>
@@ -13402,7 +13416,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Tomb Crawler w/ twin gauss reaper" hidden="false" id="263f-f618-5046-e1b7">
+            <selectionEntry type="model" import="true" name="Tomb Crawler w/ twin gauss reaper" hidden="false" id="263f-f618-5046-e1b7">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="10d2-905d-edfc-4239-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10d2-905d-edfc-4239-max" includeChildSelections="false"/>
@@ -13449,6 +13463,9 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
                         <infoLink name="Twin-linked" id="968c-bd7c-ddea-a842" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
                         <infoLink name="Lethal Hits" id="e862-7690-e6d9-8581" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
                       </infoLinks>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="1518-5be6-23b4-5529" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Dimensional isolator" hidden="false" id="f70b-7187-4cf7-b9de">
                       <profiles>
@@ -13464,6 +13481,9 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
                           </characteristics>
                         </profile>
                       </profiles>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="e251-96dd-15f3-1187" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>
@@ -13486,7 +13506,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
       <profiles>
         <profile name="Weapon Sentinels" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="48b5-f665-e088-07e4">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes a ranged attack that targets a unit within 12&quot;, you can ignore any or all modifiers to the following: that attack’s Ballistic Skill characteristic; the Hit roll; the Wound roll. </characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes a ranged attack that targets a unit within 12&quot;, you can ignore any or all modifiers to the following: that attack’s Ballistic Skill characteristic; the Hit roll; the Wound roll.</characteristic>
           </characteristics>
         </profile>
         <profile name="Canoptek Tomb Crawlers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="dfd0-f0c6-969c-d56f">
@@ -13530,6 +13550,8 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="8466-4aaa-059d-a9c0" type="selectionEntryGroup" targetId="34da-c1ba-b0f2-1ba6" sortIndex="1"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="d5e7-84f3-0f53-2f91" type="selectionEntry" targetId="2c98-86cf-889-2293" sortIndex="2"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="f3d7-ad0d-df29-7168" type="selectionEntryGroup" targetId="9574-b5d1-8b0a-d95d" sortIndex="3"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Detachment Rules" id="8204-7038-3c65-9ef4" hidden="false" type="infoGroup" targetId="4ee-d749-4ddc-323d"/>
@@ -13629,7 +13651,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="7cdc-4c25-f4e5-d0c9" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Wargear" id="7cdc-4c25-f4e5-d0c9" hidden="false" sortIndex="4">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Tremorglaive" hidden="false" id="00f4-1c90-1139-bcf2">
               <constraints>
