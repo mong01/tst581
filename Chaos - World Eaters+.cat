@@ -624,6 +624,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="ad30-5987-1c85-0d60" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin power axes" hidden="false" id="bcab-53db-88fc-c61d">
       <profiles>
