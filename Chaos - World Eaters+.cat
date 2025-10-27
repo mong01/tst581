@@ -564,8 +564,7 @@
                 </entryLink>
                 <entryLink import="true" name="Twin lightning claws" hidden="false" id="adc9-4992-cd6b-373b" type="selectionEntry" targetId="39bc-0845-076a-c9c4">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="51d1-f676-d79f-b5e6-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51d1-f676-d79f-b5e6-max" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51d1-f676-d79f-b5e6" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
