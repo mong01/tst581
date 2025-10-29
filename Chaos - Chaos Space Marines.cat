@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c8da-e875-58f7-f6d6" name="Chaos - Chaos Space Marines" revision="146" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c8da-e875-58f7-f6d6" name="Chaos - Chaos Space Marines" revision="150" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <profileTypes>
     <profileType id="3084-68b8-1d20-2f26" name="Marks of Chaos">
       <characteristicTypes>
@@ -3456,7 +3456,11 @@ While this unit is within 9&quot; of one or more friendly ^^**Heretic Astartes D
         <entryLink id="d2d1-8cc2-89f6-bc3e" name="Warlord" hidden="false" collective="false" import="true" targetId="1a34-f1cc-ec01-ca32" type="selectionEntry" sortIndex="2"/>
         <entryLink id="4d79-1563-357b-ae11" name="Enhancements" hidden="false" collective="false" import="true" targetId="f4dd-5662-f7ca-a614" type="selectionEntryGroup" sortIndex="3"/>
         <entryLink id="242f-eb21-ba0b-3b57" name="Mark of Chaos" hidden="false" collective="false" import="true" targetId="5581-5d38-90b8-f8cd" type="selectionEntryGroup" sortIndex="5"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="ae76-f582-fd21-719c" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="ae76-f582-fd21-719c" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Ascension to Daemonhood" hidden="false" id="df01-5bd7-19a4-2a8e" type="selectionEntry" targetId="0929-a3cf-83c0-63b9"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="165"/>
@@ -3697,7 +3701,12 @@ While this unit is within 9&quot; of one or more friendly ^^**Heretic Astartes D
         <entryLink id="ec96-c569-95e0-6816" name="Warlord" hidden="false" collective="false" import="true" targetId="1a34-f1cc-ec01-ca32" type="selectionEntry" sortIndex="2"/>
         <entryLink id="3aba-549d-8ee7-7be1" name="Enhancements" hidden="false" collective="false" import="true" targetId="f4dd-5662-f7ca-a614" type="selectionEntryGroup" sortIndex="3"/>
         <entryLink id="4d65-d4ed-1a4-3a73" name="Mark of Chaos" hidden="false" collective="false" import="true" targetId="5581-5d38-90b8-f8cd" type="selectionEntryGroup" sortIndex="5"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="9950-74f6-0b92-c8ad" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="9950-74f6-0b92-c8ad" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Ascension to Daemonhood" hidden="false" id="bccc-9dad-64a3-0f0b" type="selectionEntry" targetId="0929-a3cf-83c0-63b9"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Ascension to Daemonhood" hidden="false" id="3a37-878d-d964-bddf" type="selectionEntry" targetId="0929-a3cf-83c0-63b9"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
@@ -10965,9 +10974,21 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7b0-6a0d-b10f-29ef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Astartes chainsword" hidden="false" id="2bf9-7e2f-8c22-ff95" collective="false" targetId="44ae-a376-590b-6349" type="selectionEntry"/>
-                    <entryLink import="true" name="Accursed weapon" hidden="false" id="6f79-c80d-699b-870d" collective="false" targetId="4f12-4c0a-d156-4cf0" type="selectionEntry"/>
-                    <entryLink import="true" name="Power fist" hidden="false" id="b40b-c22f-4126-623e" collective="false" targetId="cb16-d239-4f7a-91be" type="selectionEntry"/>
+                    <entryLink import="true" name="Astartes chainsword" hidden="false" id="2bf9-7e2f-8c22-ff95" collective="false" targetId="44ae-a376-590b-6349" type="selectionEntry">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="7897-a56d-c7bb-a5c5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Accursed weapon" hidden="false" id="6f79-c80d-699b-870d" collective="false" targetId="4f12-4c0a-d156-4cf0" type="selectionEntry">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="9396-11d8-04f3-f6e8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Power fist" hidden="false" id="b40b-c22f-4126-623e" collective="false" targetId="cb16-d239-4f7a-91be" type="selectionEntry">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="e478-de09-0025-f546" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Pistol" id="ad7e-33c-5811-472c" hidden="false" collective="false" import="true" defaultSelectionEntryId="b7db-f051-952e-d094">
@@ -10976,8 +10997,16 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="400-90c7-5e68-5466" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="b7db-f051-952e-d094" collective="false" targetId="ce4a-6df3-3c24-621b" type="selectionEntry"/>
-                    <entryLink import="true" name="Plasma pistol" hidden="false" id="6e69-781-c780-1285" collective="false" targetId="14a5-4b2-415a-c1d" type="selectionEntry"/>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="b7db-f051-952e-d094" collective="false" targetId="ce4a-6df3-3c24-621b" type="selectionEntry">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="6ec4-0ee9-3ffd-d7c5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma pistol" hidden="false" id="6e69-781-c780-1285" collective="false" targetId="14a5-4b2-415a-c1d" type="selectionEntry">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="e267-2159-b996-e0b0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -27757,6 +27786,11 @@ You can attach this model to one of the above units even if one other CHARACTER 
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ascension to Daemonhood" hidden="false" id="0929-a3cf-83c0-63b9">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7f6-0b8f-1f63-c909" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f4dd-5662-f7ca-a614" name="Enhancements" hidden="false" collective="false" import="true" collapsible="true">
@@ -29397,17 +29431,29 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="53dd-68f7-7c1f-3e5d" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4f09-0141-6c70-6c5a" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="53dd-68f7-7c1f-3e5d" shared="true" includeChildSelections="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4f09-0141-6c70-6c5a" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="bb9d-299a-ed60-2d8a" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
         <modifier type="set" value="1" field="d4ae-1dc8-3dfe-e03a">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="parent" childId="5581-5d38-90b8-f8cd" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="5581-5d38-90b8-f8cd" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="bb9d-299a-ed60-2d8a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
@@ -30808,18 +30854,20 @@ You can attach this model to one of the above units even if one other CHARACTER 
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9c0e-7e25-4580-e439" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4f09-0141-6c70-6c5a" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4026-8a3e-9922-eec" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="0929-a3cf-83c0-63b9" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" value="You must select &quot;Ascension to Daemonhood&quot; on this model to take Chaos Boons" field="info">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="0929-a3cf-83c0-63b9" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
