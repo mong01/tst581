@@ -111,11 +111,11 @@
       <categoryLinks>
         <categoryLink targetId="4a86-ca5e-3760-c366" id="ebfb-c3c4-5e8c-6711" primary="false" name="Mutilators"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="ae4b-c9c3-2cec-5977" primary="false" name="Chaos"/>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="9dce-9cf0-c97e-f454" primary="false" name="Infantry"/>
-        <categoryLink targetId="4bd-5ee0-f179-2fc5" id="5ed5-cdc5-0c17-d83a" primary="true" name="Khorne"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="9dce-9cf0-c97e-f454" primary="true" name="Infantry"/>
         <categoryLink targetId="9c0e-7e25-4580-e439" id="bd03-11f6-efd6-72c4" primary="false" name="Daemon"/>
-        <categoryLink targetId="bd1d-c1a5-6ca2-c791" id="abf3-e109-9d35-4e42" primary="false" name="Faction: World Eaters"/>
         <categoryLink targetId="aed8-70aa-1422-fc99" id="4d6b-6987-f090-1393" primary="false" name="Possessed"/>
+        <categoryLink targetId="4bd-5ee0-f179-2fc5" id="d560-bf95-f6cd-ee47" primary="false" name="Khorne"/>
+        <categoryLink targetId="bd1d-c1a5-6ca2-c791" id="d92c-fd50-15e6-db21" primary="false" name="Faction: World Eaters"/>
       </categoryLinks>
       <profiles>
         <profile name="Mutilators" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a0d4-2c16-c87d-390b">
