@@ -508,7 +508,7 @@
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Red Butchers" hidden="false" id="8ca1-028b-9676-4abc">
+    <selectionEntry type="unit" import="true" name="Red Butchers" hidden="true" id="8ca1-028b-9676-4abc">
       <categoryLinks>
         <categoryLink targetId="582b-0d64-65f5-296b" id="c0ad-25b9-0add-9870" primary="false" name="Red Butchers"/>
         <categoryLink targetId="740a-892c-8958-defa" id="fc6a-ceab-7707-e970" primary="false" name="Terminator"/>
