@@ -426,7 +426,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cec-8817-5d1a-162c-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hellmaw flame cannon" hidden="false" id="b9b1-1e4e-a2ed-ba61" collective="true">
+        <selectionEntry type="upgrade" import="true" name="Hellmaw flame cannon" hidden="false" id="b9b1-1e4e-a2ed-ba61">
           <profiles>
             <profile name="Hellmaw flame cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="789a-0694-f205-8e9d">
               <characteristics>
@@ -486,7 +486,7 @@
         </profile>
         <profile name="Super-heavy Walker" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f851-a7b6-726b-a7eb">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a Normal, Advance or Fall Back move, it can move through models (excluding TITANLC models) and sections of terrain features that are 4&quot; or less in height. When doing so it can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them. It can also move through sections of terrain features that are more than 4&quot; in height, but if it does, after it has moved, roll one D6: on a roll of 1, this model is Battle-shocked.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a Normal, Advance or Fall Back move, it can move through models (excluding TITANIC models) and sections of terrain features that are 4&quot; or less in height. When doing so it can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them. It can also move through sections of terrain features that are more than 4&quot; in height, but if it does, after it has moved, roll one D6: on a roll of 1, this model is Battle-shocked.</characteristic>
           </characteristics>
         </profile>
         <profile name="Runes of the Blood God" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d4dc-3c75-b962-0fa8">
