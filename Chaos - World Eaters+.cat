@@ -421,8 +421,12 @@
             <infoLink name="Sustained Hits" id="3f59-f431-dc86-5dfd" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
             <infoLink name="Rapid Fire" id="c170-a2a8-76ef-5909" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
           </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2cec-8817-5d1a-162c-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cec-8817-5d1a-162c-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hellmaw flame cannon" hidden="false" id="b9b1-1e4e-a2ed-ba61">
+        <selectionEntry type="upgrade" import="true" name="Hellmaw flame cannon" hidden="false" id="b9b1-1e4e-a2ed-ba61" collective="true">
           <profiles>
             <profile name="Hellmaw flame cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="789a-0694-f205-8e9d">
               <characteristics>
