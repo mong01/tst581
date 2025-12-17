@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="173" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="179" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -7776,12 +7776,14 @@ Strategic Reserves.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vanguard Veteran Squad with Jump Packs" hidden="false" id="9e9c-bf4d-2d40-be82">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="82d2-1671-c882-68a7" primary="true" name="Infantry"/>
@@ -7807,7 +7809,7 @@ Strategic Reserves.</characteristic>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="ea1d-aa1b-39af-5932" includeChildSelections="true"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="190" field="51b2-306e-1021-d207">
+        <modifier type="set" value="200" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="9e9c-bf4d-2d40-be82" childId="8a7f-b578-d274-9769" shared="true" id="c465-ba04-3a7-cc0a"/>
           </conditions>
@@ -8550,6 +8552,7 @@ Strategic Reserves.</characteristic>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="b7a3-b9e5-9996-3c0c" primary="false" name="Imperium"/>
         <categoryLink targetId="5179-8ede-45e3-49a2" id="b70a-fbd1-2cb4-cf42" primary="false" name="Tacticus"/>
         <categoryLink targetId="e05e-b4e4-6db0-5d42" id="6789-48ec-7126-3fb3" primary="false" name="Sternguard Veteran Squad"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="e39f-b444-c5b0-9005" primary="false" name="Faction: Adeptus Astartes"/>
       </categoryLinks>
       <profiles>
         <profile name="Sternguard Focus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f7ef-79f2-60c-8568">
@@ -8966,12 +8969,14 @@ bearer can be moved during that move</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Aggressor Squad" hidden="false" id="129d-2da5-66f3-f4ec">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="6f5-7425-b205-cfa7" primary="true" name="Infantry"/>
@@ -9220,7 +9225,7 @@ by 1.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="200" field="51b2-306e-1021-d207">
+        <modifier type="set" value="190" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="129d-2da5-66f3-f4ec" childId="72d4-ff18-9328-2bce" shared="true" id="c997-19f1-338e-a1ad"/>
           </conditions>
@@ -9338,14 +9343,6 @@ by 1.</characteristic>
         <selectionEntryGroup name="Assault Terminators" hidden="false" id="f0a0-fda7-8b75-5ec1" defaultSelectionEntryId="f5e2-f383-5061-9393" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Assault Terminator w/ Thunder Hammer &amp; Storm Shield" hidden="false" id="f5e2-f383-5061-9393">
-              <entryLinks>
-                <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="6777-f60f-da01-309b" targetId="4913-96d4-2b1f-2c21">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afbc-31c5-a57a-dfef"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd40-a442-4c55-fa07"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Storm Shield" hidden="false" id="4691-7ec1-cfff-819e" collective="true">
                   <profiles>
@@ -9358,6 +9355,28 @@ by 1.</characteristic>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e06a-b514-b26e-16c8"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a999-9249-9872-3fe5"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Thunder Hammer" hidden="false" id="4321-1934-6bc1-71ae" collective="true">
+                  <profiles>
+                    <profile name="Thunder Hammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4347-55e7-f952-681a">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Devastating Wounds" id="f8f9-b953-9238-c1cf" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68f8-2221-a11e-8a77-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68f8-2221-a11e-8a77-max" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
@@ -9378,14 +9397,6 @@ by 1.</characteristic>
               </profiles>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Assault Terminator w/ Twin Lightning Claws" hidden="false" id="c435-bd14-2d69-1c38">
-              <entryLinks>
-                <entryLink import="true" name="Twin Lightning Claws" hidden="false" type="selectionEntry" id="5cad-94ba-6952-82b0" targetId="130e-9b77-584-a15b">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="616f-2c1d-29fb-dbdb"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f75a-7e18-118f-f03"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <constraints>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="3fa0-7493-ce34-8dd9"/>
               </constraints>
@@ -9401,6 +9412,30 @@ by 1.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Twin Lightning Claws" hidden="false" id="882f-7a8f-485d-de67" collective="true">
+                  <profiles>
+                    <profile name="Twin Lightning Claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2dfd-8da1-a01d-cc0a">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Twin-linked" id="df26-260c-bc70-ee05" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="846c-bc2e-a2d7-38d2-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="846c-bc2e-a2d7-38d2-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Assault Terminator Sergeant" hidden="false" id="c3d5-605c-2976-9ee1">
               <constraints>
@@ -9411,17 +9446,6 @@ by 1.</characteristic>
                 <selectionEntryGroup name="Weapon Option" hidden="false" id="2ebb-a04b-b1f5-cfb8" defaultSelectionEntryId="96bf-3cb4-69ff-a8ce">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Thunder Hammer &amp; Storm Shield" hidden="false" id="96bf-3cb4-69ff-a8ce">
-                      <entryLinks>
-                        <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="ce72-6aff-3b42-7701" targetId="4913-96d4-2b1f-2c21">
-                          <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afbc-31c5-a57a-dfef"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd40-a442-4c55-fa07"/>
-                          </constraints>
-                          <entryLinks>
-                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="524b-5a71-87f1-d4ea" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                          </entryLinks>
-                        </entryLink>
-                      </entryLinks>
                       <selectionEntries>
                         <selectionEntry type="upgrade" import="true" name="Storm Shield" hidden="false" id="7bde-c342-3ea5-13c9">
                           <profiles>
@@ -9436,20 +9460,53 @@ by 1.</characteristic>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a999-9249-9872-3fe5"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Thunder Hammer" hidden="false" id="902b-d9c3-cd69-e057">
+                          <profiles>
+                            <profile name="Thunder Hammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0b11-6f7c-d719-4140">
+                              <characteristics>
+                                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                                <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                                <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                                <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <infoLinks>
+                            <infoLink name="Devastating Wounds" id="c974-620e-ea0b-2871" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                          </infoLinks>
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fa0-f263-d69a-7ff5-min" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fa0-f263-d69a-7ff5-max" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Twin Lightning Claws" hidden="false" id="fede-6969-007b-65da">
+                      <profiles>
+                        <profile name="Twin Lightning Claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="badc-36ae-d56e-b440">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Twin-linked" id="5ca1-e30c-9d7d-2e4b" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+                      </infoLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d61-886a-bb2f-5621"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d2d-e616-774a-7f7a"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Twin Lightning Claws" hidden="false" type="selectionEntry" id="6892-b868-5f61-860d" targetId="130e-9b77-584-a15b">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="74ff-91bd-e7ba-5464" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <profiles>
@@ -10688,12 +10745,14 @@ by 1.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Centurion Devastator Squad" hidden="false" id="6ba0-cede-e278-f86b">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="165"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="175"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="3cf9-1b1c-e7ac-71e1"/>
@@ -10889,7 +10948,7 @@ by 1.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="330" field="51b2-306e-1021-d207">
+        <modifier type="set" value="350" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="6ba0-cede-e278-f86b" childId="cd88-5a62-bbb7-eb2a" shared="true" id="4e3a-158a-baa1-87c8"/>
           </conditions>
@@ -15760,11 +15819,14 @@ by 1.</characteristic>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Storm Speeder Thunderstrike" hidden="false" id="993a-9cbc-8052-e40">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="135"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="3aa0-ebdd-f874-cdd1" primary="true" name="Vehicle"/>
@@ -17273,11 +17335,14 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Eradicator Squad" hidden="false" id="c570-c6ba-c9dc-5a44">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="95b1-be35-d597-e9ad" primary="true" name="Infantry"/>
@@ -17433,7 +17498,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="200" field="51b2-306e-1021-d207">
+        <modifier type="set" value="180" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="c570-c6ba-c9dc-5a44" childId="f59c-c864-bd59-1759" shared="true" id="50cb-11a-d6a5-47d1" includeChildSelections="true"/>
           </conditions>
@@ -23702,7 +23767,14 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Lieutenant" hidden="false" id="ce15-e87e-7cff-b129">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="dc03-fe9d-aed5-1d78" primary="true" name="Character"/>
@@ -37257,6 +37329,57 @@ effects apply to all Adeptus Astartes units from your army. You cannot select 
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Saga of the Great Wolf" hidden="false" id="bc26-5cb8-f5fb-2760">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Master of Wolves" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0cde-ef62-0efd-2664">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, you can select one of the Hunting Packs listed below. Until the start of your next Command phase, that Hunting Pack is active and its effects apply to all Adeptus
+Astartes units from your army. You can only select each Hunting Pack once per battle.
+
+
+■ Encircling Jaws: This unit can re-roll Advance rolls and Charge rolls.
+
+
+■ Hunter’s Eye: Each time a model in this unit makes a ranged attack, add 1 to the Hit roll.
+
+
+■ Ferocious Strike: Each time this unit is selected to fight, select either the [LETHAL HITS] or [SUSTAINED HITS 1] ability. Until the end of the phase, weapons equipped by models in this unit have the selected ability</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Howling Onslaught" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0db6-ca30-bf90-3885">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, when selecting a Hunting Pack for the Master of Wolves Detachment rule (see above), if a Logan Grimnar model from your army is on the battlefield, you can select a Hunting Pack
+you have already selected this battle</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rage-Cursed Onslaught" hidden="false" id="d8e6-a4b2-c15f-49e2">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ef9-15ce-e3e6-36de" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Madden Ferocity" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4b67-90f5-ae76-f86a">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an Adeptus Astartes model from your army makes a melee attack, re-roll a Wound roll of 1.
+
+
+Each time an Adeptus Astartes unit from your army is selected to fight, if that unit made a Charge move this turn, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit. If your unit is Battle-shocked, add 2 to the Attacks characteristic of melee weapons equipped by models in that unit instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Enhancements" hidden="false" id="9e5d-de4c-c5d1-1d3e" collapsible="true">
@@ -40947,6 +41070,264 @@ can use this Enhancement. If it does, until the start of your next Command phas
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e80-5a4f-5fb7-491f"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Saga of the Great Wolf Enhancements" id="fb41-7501-6a61-d2a9" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Grimnar&apos;s Mark" hidden="false" id="b103-51cc-cef2-892b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="21ad-801c-b928-1ab7" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="740a-892c-8958-defa" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="2d7f-1892-2fd0-e29c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Grimnar&apos;s Mark" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9c77-b878-b1c4-a9ef">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes Terminator Captain model only. Once per battle round, from the second battle round
+onwards, you can target the bearer’s unit with the Rapid Ingress or Heroic Intervention Stratagem for
+0CP, and can do so even if you have already targeted a different unit with that Stratagem this turn.
+
+
+In the Declare Battle Formations step, the bearer can be attached to a Wolf Guard Terminators unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+                <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Howlmaw" hidden="false" id="df8c-0892-36bd-0f71">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1807-fac8-bfe3-b96a" includeChildSelections="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Howlmaw" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4087-7d92-498f-a0bb">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Wolf priest model only. At the start of the Fight phase, you can select one enemy unit within 6&quot; of the
+bearer. That unit must take a Battle-shock, subtracting 1 from the result.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e700-e90e-8379-035f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+                <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Chariots of the Storm" hidden="false" id="048e-cf4e-5057-76fe">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="29d3-5010-b33e-471b" includeChildSelections="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Chariots of the Storm" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="324b-5014-d2e9-86fc">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes model only. After both players have deployed their armies, select up to three Adeptus Astartes units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+                <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Skjald&apos;s Foretelling" hidden="false" id="2ac1-12c9-4e5a-a034">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="dfcc-3df6-c535-316d" includeChildSelections="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Skjald&apos;s Foretelling" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1134-a964-3935-8d16">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Wolf Guard Battle Leader model only. While the bearer is leading a unit, weapons equipped by models in that unit have the [LANCE] ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="1a25-641b-9ff9-de91" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+                <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2707-1330-86fe-81e5"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="bc26-5cb8-f5fb-2760" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Rage-Cursed Onslaught Enhancements" id="6031-fedb-ff24-a27e" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Carmine Reliquary" hidden="false" id="fdf6-387c-5461-8d4e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9bc3-f6d6-c0db-c6c7" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Carmine Reliquary" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a87c-5b40-9c1c-e412">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Chaplain model only. Models in the bearer’s unit have the Scouts 6&quot; ability. Each time you take a
+Battle-shock test for an Adeptus Astartes unit within 6&quot; of the bearer, you can re-roll the result</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="1fb1-3603-a4bd-485" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+                <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Master of the Red Thirst" hidden="false" id="f2bb-c8f6-dd7e-8d58">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ca2f-ed7c-9e55-6460" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Master of the Red Thirst" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="861d-47b3-a632-b6db">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes model only. Once per battle, at the start of the Fight phase, the bearer can use
+this Enhancement. If it does, until the end of the phase, models in the bearer’s unit have the Fights
+First ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+                <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sanguinary Tear (Aura)" hidden="false" id="35e2-45c9-2207-2705">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4b10-4b13-8598-fb3a" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Sanguinary Tear (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6086-dc9c-6057-5e11">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes model only. While a friendly Death Company unit is within 6&quot; of the bearer, add 1 to
+the Strength characteristic of weapons equipped by models in that unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+                <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Angel&apos;s Fang" hidden="false" id="6d65-76d1-e944-e404">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="72ab-e9e0-87e2-eb15" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Angel&apos;s Fang" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4185-d6fb-508a-e77f">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes model only. Each time the bearer makes a melee attack that targets a Character,
+Monster or Vehicle unit, that attack has the [SUSTAINED HITS 2] ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+                <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="058c-8950-892a-19de"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="d8e6-a4b2-c15f-49e2" shared="true" id="3fac-5551-227f-2aa7" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="self" shared="true" id="aa38-635d-91e5-c589" includeChildSelections="true"/>
@@ -41116,16 +41497,8 @@ can use this Enhancement. If it does, until the start of your next Command phas
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
-                <modifier type="decrement" value="1" field="95d1-95f-45b4-11d6" affects="self.entries.recursive.profiles.Melee Weapons" scope="model-or-unit">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="f4d9-a6a8-0906-a09e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" value="Marksman&apos;s Honours" field="annotation" join=", " affects="self.entries.recursive.profiles.Melee Weapons" scope="model-or-unit">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="f4d9-a6a8-0906-a09e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="decrement" value="1" field="95d1-95f-45b4-11d6" affects="self.entries.recursive.profiles.Melee Weapons" scope="root-entry"/>
+                <modifier type="append" value="Bladesman&apos;s Honour" field="annotation" join=", " affects="self.entries.recursive.profiles.Melee Weapons" scope="root-entry"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -44352,13 +44725,13 @@ Until the end of the phase, this model&apos;s melee weapons have that ability.</
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c6da-5578-9ad5-94ef" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="c6da-5578-9ad5-94ef" shared="true" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="19ab-c0ae-7b00-dc0c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="19ab-c0ae-7b00-dc0c" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -44504,9 +44877,9 @@ Until the end of the phase, this model&apos;s melee weapons have that ability.</
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="19ab-c0ae-7b00-dc0c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c6da-5578-9ad5-94ef" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="19ab-c0ae-7b00-dc0c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="c6da-5578-9ad5-94ef" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -44550,9 +44923,9 @@ Until the end of the phase, this model&apos;s melee weapons have that ability.</
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="19ab-c0ae-7b00-dc0c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c6da-5578-9ad5-94ef" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="19ab-c0ae-7b00-dc0c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="c6da-5578-9ad5-94ef" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -44588,9 +44961,9 @@ Until the end of the phase, this model&apos;s melee weapons have that ability.</
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="19ab-c0ae-7b00-dc0c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c6da-5578-9ad5-94ef" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="19ab-c0ae-7b00-dc0c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="c6da-5578-9ad5-94ef" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -44636,13 +45009,13 @@ Until the end of the phase, this model&apos;s melee weapons have that ability.</
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c6da-5578-9ad5-94ef" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="c6da-5578-9ad5-94ef" shared="true" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="19ab-c0ae-7b00-dc0c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="19ab-c0ae-7b00-dc0c" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -44680,13 +45053,13 @@ Until the end of the phase, this model&apos;s melee weapons have that ability.</
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c6da-5578-9ad5-94ef" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="c6da-5578-9ad5-94ef" shared="true" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="19ab-c0ae-7b00-dc0c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="19ab-c0ae-7b00-dc0c" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -47734,15 +48107,15 @@ Until the end of the phase, this model&apos;s melee weapons have that ability.</
                     <modifier type="append" value="The Journal of Artax" field="annotation" join=", " affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Ranged Weapons" scope="model"/>
                     <modifier type="increment" value="1" field="2229-f494-25db-c5d3" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Ranged Weapons" scope="model"/>
                     <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" scope="model" affects="self.entries.recursive.4986-bf86-beb4-13ac.profiles.Ranged Weapons" join="" arg="+0"/>
-                    <modifier type="replace" value="" field="a354-c1c8-a745-f9e3" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Ranged Weapons" join="" arg="+0"/>
+                    <modifier type="replace" field="a354-c1c8-a745-f9e3" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Ranged Weapons" join="" arg="+0"/>
                     <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Ranged Weapons" scope="model" position="-1"/>
-                    <modifier type="replace" value="" field="a354-c1c8-a745-f9e3" scope="model" affects="self.entries.recursive.profiles.Ranged Weapons" join="" arg="+0"/>
+                    <modifier type="replace" field="a354-c1c8-a745-f9e3" scope="model" affects="self.entries.recursive.profiles.Ranged Weapons" join="" arg="+0"/>
                     <modifier type="append" value="The Journal of Artax" field="annotation" join=", " affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Melee Weapons" scope="model"/>
                     <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Melee Weapons" scope="model"/>
                     <modifier type="append" value="+0" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.4986-bf86-beb4-13ac.profiles.Melee Weapons" join="" arg="+0"/>
-                    <modifier type="replace" value="" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Melee Weapons" join="" arg="+0"/>
+                    <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Melee Weapons" join="" arg="+0"/>
                     <modifier type="increment" value="1" field="3254-9fe6-d824-513e" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Melee Weapons" scope="model" position="-1"/>
-                    <modifier type="replace" value="" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join="" arg="+0"/>
+                    <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join="" arg="+0"/>
                     <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="model" join="" arg="+0" affects="self.entries.recursive.4546-4a0c-b3be-e84c"/>
                   </modifiers>
                 </modifierGroup>
