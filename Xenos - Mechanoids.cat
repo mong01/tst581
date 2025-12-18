@@ -84,35 +84,6 @@
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="aef8-6ae1-99c7-619b" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="[Reference] Adaptations" hidden="false" id="12af-2995-4955-0399">
-      <profiles>
-        <profile name="Adaptations" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e2bf-9e60-19e1-9361">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Armour Hardening Matrix**
-CONDITION: When an eligible unit from your army is selected as the target of an attack.
-EFFECT: Until the attacking unit has finished making its attacks, each time an attack targets your unit, worsen the Armour Penetration characteristic of that attack by 1.
-
-**Engagement Aperture**
-CONDITION: Just after an eligible unit from your army has declared a charge.
-EFFECT: Until the end of the phase, you can re-roll Charge rolls made for your unit.
-
-**Predictive Algorithm**
-CONDITION: When an eligible unit from your army is selected to shoot or fight.
-EFFECT: Until the end of the phase, improve the Ballistic Skill and Weapon Skill of weapons equipped by models in your unit by 1.
-
-**Target Suppression Logic**
-CONDITION: When an enemy unit has declared a charge and an eligible unit from your army that is a target of that charge.
-EFFECT: Until the end of the phase, your unit can use the Fire Overwatch Stratagem for 0CP, even if you have already used that Stratagem on a different unit this phase. In addition, this does not prevent another unit from using the Fire Overwatch Stratagem.
-RESTRICTIONS: This Adaptation cannot be used more than once per phase.
-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d1e-5d3b-b6b1-b49f" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5334-adb8-a786-79d9" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Charge lance" hidden="false" id="3918-7079-7ebc-7694" collective="true">
       <profiles>
         <profile name="Charge lance" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ab3b-f52e-0e2a-8468">
@@ -229,8 +200,41 @@ If you have one or more AP in your AP pool, you can spend one AP to activate an 
     <categoryEntry name="Scythers" id="c6ca-9586-00c7-428c" hidden="false"/>
   </categoryEntries>
   <entryLinks>
-    <entryLink import="true" name="[Reference] Adaptations" hidden="false" id="120f-4170-4607-93e7" type="selectionEntry" targetId="12af-2995-4955-0399"/>
     <entryLink import="true" name="Lancers" hidden="false" id="4eab-650d-d7c1-17f1" type="selectionEntry" targetId="e0f1-94ef-e5bf-6f19"/>
     <entryLink import="true" name="Scythers" hidden="false" id="b2f1-74ed-51f7-ccda" type="selectionEntry" targetId="cd11-a271-0ea0-ab8c"/>
   </entryLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="[Reference] Adaptations" hidden="false" id="d459-e949-5fa6-167b">
+      <profiles>
+        <profile name="Adaptations" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a89e-a5e4-3c92-7b4b">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Armour Hardening Matrix**
+CONDITION: When an eligible unit from your army is selected as the target of an attack.
+EFFECT: Until the attacking unit has finished making its attacks, each time an attack targets your unit, worsen the Armour Penetration characteristic of that attack by 1.
+
+**Engagement Aperture**
+CONDITION: Just after an eligible unit from your army has declared a charge.
+EFFECT: Until the end of the phase, you can re-roll Charge rolls made for your unit.
+
+**Predictive Algorithm**
+CONDITION: When an eligible unit from your army is selected to shoot or fight.
+EFFECT: Until the end of the phase, improve the Ballistic Skill and Weapon Skill of weapons equipped by models in your unit by 1.
+
+**Target Suppression Logic**
+CONDITION: When an enemy unit has declared a charge and an eligible unit from your army that is a target of that charge.
+EFFECT: Until the end of the phase, your unit can use the Fire Overwatch Stratagem for 0CP, even if you have already used that Stratagem on a different unit this phase. In addition, this does not prevent another unit from using the Fire Overwatch Stratagem.
+RESTRICTIONS: This Adaptation cannot be used more than once per phase.
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7c4-5447-ff31-12cb" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e85f-c36a-6eaf-313d" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="4ac9-fd30-1e3d-b249" id="f2cc-5146-d84c-f1c7" primary="true" name="Configuration"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
