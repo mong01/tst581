@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="b981-cdc0-25bd-50fa" name="Xenos - Mechanoids" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="83" revision="1" authorName="Mong" authorContact="mong94bdc@hotmail.com" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Lancers" hidden="false" id="e0f1-94ef-e5bf-6f19">
+      <infoLinks>
+        <infoLink name="Adaptive Threat Protocols" id="a4e7-0748-0706-ae70" hidden="false" type="rule" targetId="63a3-727d-984a-2438"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Lancer" hidden="false" id="786c-eca0-2e1c-7f44">
+          <constraints>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="c6cc-6703-3a26-3c6a" includeChildSelections="false"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="6a89-d0e8-0351-b615" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Charge lance" hidden="false" id="0fb3-b5c6-d46b-d156" type="selectionEntry" targetId="3918-7079-7ebc-7694">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a06b-66a9-56c7-95ce" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c1a-3dcb-9575-b6b8" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="71dd-143e-6866-99ed" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afbb-bcfd-08a5-83ed-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afbb-bcfd-08a5-83ed-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="c0a4-b327-b25f-f773">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Lancers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5ec6-d32c-baa4-54bd">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Priority Target" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bb03-0612-07a0-e425">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack, re-roll a Wound roll of 1. If the target of that attack is an enemy unit within range of an objective marker, you can re-roll the Wound roll instead.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="d282-eb56-870b-bb5f" id="3429-6e0d-cd73-8ecf" primary="false" name="Faction: Mechanoids"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="6ce6-48f1-ce9c-7e6d" primary="false" name="Infantry"/>
+        <categoryLink targetId="e338-111e-d0c6-b687" id="9439-6f0b-6286-1504" primary="true" name="Battleline"/>
+        <categoryLink targetId="9f3d-4bb5-cbdc-6974" id="7d9c-c58d-7b09-86dc" primary="false" name="Lancers"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="increment" value="50" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="atLeast" value="6" field="selections" scope="e0f1-94ef-e5bf-6f19" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="aef8-6ae1-99c7-619b" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="[Reference] Adaptations" hidden="false" id="12af-2995-4955-0399">
+      <profiles>
+        <profile name="Adaptations" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e2bf-9e60-19e1-9361">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**Armour Hardening Matrix**
+CONDITION: When an eligible unit from your army is selected as the target of an attack.
+EFFECT: Until the attacking unit has finished making its attacks, each time an attack targets your unit, worsen the Armour Penetration characteristic of that attack by 1.
+
+**Engagement Aperture**
+CONDITION: Just after an eligible unit from your army has declared a charge.
+EFFECT: Until the end of the phase, you can re-roll Charge rolls made for your unit.
+
+**Predictive Algorithm**
+CONDITION: When an eligible unit from your army is selected to shoot or fight.
+EFFECT: Until the end of the phase, improve the Ballistic Skill and Weapon Skill of weapons equipped by models in your unit by 1.
+
+**Target Suppression Logic**
+CONDITION: When an enemy unit has declared a charge and an eligible unit from your army that is a target of that charge.
+EFFECT: Until the end of the phase, your unit can use the Fire Overwatch Stratagem for 0CP, even if you have already used that Stratagem on a different unit this phase. In addition, this does not prevent another unit from using the Fire Overwatch Stratagem.
+RESTRICTIONS: This Adaptation cannot be used more than once per phase.
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d1e-5d3b-b6b1-b49f" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5334-adb8-a786-79d9" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Charge lance" hidden="false" id="3918-7079-7ebc-7694" collective="true">
+      <profiles>
+        <profile name="Charge lance" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ab3b-f52e-0e2a-8468">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy" id="0da5-8749-07e8-4711" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scythers" hidden="false" id="cd11-a271-0ea0-ab8c">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="69ae-2c4f-2ab5-9baa" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="45" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="atLeast" value="6" field="selections" scope="cd11-a271-0ea0-ab8c" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Scythers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="aa7a-ca2a-7fe4-a7dc">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="e338-111e-d0c6-b687" id="ff7c-74ee-c878-913a" primary="true" name="Battleline"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="dd9a-2522-1554-6428" primary="false" name="Infantry"/>
+        <categoryLink targetId="d282-eb56-870b-bb5f" id="dac1-3191-13a8-d91f" primary="false" name="Faction: Mechanoids"/>
+        <categoryLink targetId="c6ca-9586-00c7-428c" id="2262-ca37-b59d-98b4" primary="false" name="Scythers"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Scyther" hidden="false" id="4e73-5a16-8d91-9c05">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="1560-8f14-3c50-6413" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="561d-7454-7e5e-053d" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Scyther blades" hidden="false" id="c129-58cc-b30c-a66b" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d09c-19b8-decf-3ce3-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d09c-19b8-decf-3ce3-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Scyther blades" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0d75-88b0-ed63-8762">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Twin-linked" id="c2fc-cc6c-c527-4083" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="45"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Adaptive Threat Protocols" id="d334-10f7-5743-dd12" hidden="false" type="rule" targetId="63a3-727d-984a-2438"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Unaligned Forces" id="110d-4d86-af58-6db0" targetId="581a-46b9-5b86-44b7"/>
+  </catalogueLinks>
+  <rules>
+    <rule name="Adaptive Threat Protocols" id="63a3-727d-984a-2438" hidden="false">
+      <description>If your Army Faction is MECHANOIDS, each eligible unit from your army with this ability can activate Adaptations. This is done using Adaptation Points (AP). A unit is eligible to activate an Adaptation if it has this ability and has not already activated an Adaptation this phase. In addition, the condition of that Adaptation must be met in order for it to be activated (see [Reference] Adaptations for more information).
+
+**GAINING ACTIVATION POINTS**
+If your Army Faction is MECHANOIDS, you gain 1 AP:
+• Each time a MECHANOIDS unit from your army with this ability is destroyed.
+• Each time your opponent targets a unit from their army with a Stratagem.
+
+Keep a tally of your current AP - the total number is your AP pool.
+
+**ACTIVATING ADAPTATIONS**
+If you have one or more AP in your AP pool, you can spend one AP to activate an Adaptation for an eligible unit from your army.</description>
+    </rule>
+  </rules>
+  <categoryEntries>
+    <categoryEntry name="Faction: Mechanoids" id="d282-eb56-870b-bb5f" hidden="false"/>
+    <categoryEntry name="Lancers" id="9f3d-4bb5-cbdc-6974" hidden="false"/>
+    <categoryEntry name="Scythers" id="c6ca-9586-00c7-428c" hidden="false"/>
+  </categoryEntries>
+  <entryLinks>
+    <entryLink import="true" name="[Reference] Adaptations" hidden="false" id="120f-4170-4607-93e7" type="selectionEntry" targetId="12af-2995-4955-0399"/>
+    <entryLink import="true" name="Lancers" hidden="false" id="4eab-650d-d7c1-17f1" type="selectionEntry" targetId="e0f1-94ef-e5bf-6f19"/>
+    <entryLink import="true" name="Scythers" hidden="false" id="b2f1-74ed-51f7-ccda" type="selectionEntry" targetId="cd11-a271-0ea0-ab8c"/>
+  </entryLinks>
+</catalogue>
