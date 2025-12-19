@@ -490,7 +490,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="2e4d-94e2-820c-4d95" id="4dd2-c705-a244-4b12" primary="false" name="Pikemen"/>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="b3ec-ad81-d1e3-6834" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="b3ec-ad81-d1e3-6834" primary="true" name="Infantry"/>
         <categoryLink targetId="d282-eb56-870b-bb5f" id="c2a3-53d2-2bd7-fa7b" primary="false" name="Faction: Mechanoids"/>
       </categoryLinks>
       <infoLinks>
@@ -551,10 +551,10 @@
                     <profile name="Needle gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4e76-4bf9-5c82-05d1">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Indirect Fire</characteristic>
                       </characteristics>
@@ -589,9 +589,87 @@
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
+        <profile name="Gun Platform" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b11c-77d3-e48b-84f4">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit Remains Stationary, until the start of your next Movement phase, ranged weapons equipped by models in this unit have the [IGNORES COVER] ability.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="6141-0f20-cbbd-67bd" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Tunneler" hidden="false" id="c964-f770-e8d4-bb11">
+      <categoryLinks>
+        <categoryLink targetId="358e-62e3-f361-84cf" id="6bb5-93fc-104f-defb" primary="false" name="Tunneler"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="f1b4-125a-3e58-434e" primary="true" name="Vehicle"/>
+        <categoryLink targetId="d282-eb56-870b-bb5f" id="b3a5-8054-d53b-a1ee" primary="false" name="Faction: Mechanoids"/>
+        <categoryLink targetId="6dda-e157-334d-e93a" id="9b99-7243-90be-ca69" primary="false" name="Walker"/>
+        <categoryLink targetId="6df-937-16bc-8c1a" id="6659-9064-ceb9-14e8" primary="false" name="Smoke"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="4763-2932-7923-be2f" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Adaptive Threat Protocols" id="611a-a108-8861-f13b" hidden="false" type="rule" targetId="63a3-727d-984a-2438"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Tunneler" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a5ab-8156-ad6a-21f2">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">10</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9f8a-789a-9145-25cc">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Subsurface Egress" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6ba8-204c-79d6-d8ca">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After this unit is set up using the Deep Strike ability, you can use this ability. Upon doing so, select one MECHANOIDS unit from your army within Strategic Reserves; that unit can immediately be set up wholly within 3&quot; of this model and more than 9&quot; horizontally away from all enemy models. That unit then counts as having arrived from Strategic Reserves.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="326b-714e-faa1-bd0b" includeChildSelections="true"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Power claws" hidden="false" id="cc7b-5d1e-cc26-1e33">
+          <profiles>
+            <profile name="Power claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="599b-f5ec-d8c3-d010">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0e7-5d9f-1fca-77fb-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0e7-5d9f-1fca-77fb-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Twin-linked" id="c570-7517-e53e-2806" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -626,6 +704,7 @@ If you have one or more AP in your AP pool, you can spend one AP to activate an 
     <categoryEntry name="Tesserons" id="5e21-04d9-0e74-a43a" hidden="false"/>
     <categoryEntry name="Cyclopes" id="4829-1438-de74-073a" hidden="false"/>
     <categoryEntry name="Pikemen" id="2e4d-94e2-820c-4d95" hidden="false"/>
+    <categoryEntry name="Tunneler" id="358e-62e3-f361-84cf" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="Lancers" hidden="false" id="4eab-650d-d7c1-17f1" type="selectionEntry" targetId="e0f1-94ef-e5bf-6f19"/>
@@ -633,6 +712,7 @@ If you have one or more AP in your AP pool, you can spend one AP to activate an 
     <entryLink import="true" name="Militors" hidden="false" id="df11-85b5-953e-be32" targetId="3a7b-7b75-579d-fba3" type="selectionEntry"/>
     <entryLink import="true" name="Cyclopes" hidden="false" id="b2bc-7e61-609e-e969" targetId="62c1-e563-a886-382d" type="selectionEntry"/>
     <entryLink import="true" name="Pikemen" hidden="false" id="a6aa-ef0f-2ed0-8b04" targetId="882e-4a7f-3f68-40e3" type="selectionEntry"/>
+    <entryLink import="true" name="Tunneler" hidden="false" id="8c43-ca25-f06e-ec3f" targetId="c964-f770-e8d4-bb11" type="selectionEntry"/>
   </entryLinks>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="[Reference] Adaptations" hidden="false" id="d459-e949-5fa6-167b">
