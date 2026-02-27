@@ -4,9 +4,86 @@
     <catalogueLink type="catalogue" name="Chaos - Chaos Space Marines" id="da29-1082-fd79-8f98" targetId="c8da-e875-58f7-f6d6" importRootEntries="true"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Daemon Prince of Chaos" hidden="false" id="0fbc-56a4-60bf-268f" type="selectionEntry" targetId="44ec-b0f5-0995-3197"/>
+    <entryLink import="true" name="Daemon Prince" hidden="false" id="0fbc-56a4-60bf-268f" type="selectionEntry" targetId="44ec-b0f5-0995-3197"/>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry type="model" import="true" name="Daemon Prince" hidden="false" id="44ec-b0f5-0995-3197"/>
+    <selectionEntry type="model" import="true" name="Daemon Prince" hidden="false" id="44ec-b0f5-0995-3197">
+      <rules>
+        <rule name="Shifting Form" id="f401-24fd-0870-0c75" hidden="false">
+          <description>This model cannot take any Enhancements.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="ea1c-25a7-e9da-ef56" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="3efb-eeba-d97a-dfd7" primary="true" name="Character"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="e125-6452-1d1f-4a79" primary="false" name="Chaos"/>
+        <categoryLink targetId="1e42-dfae-cbdd-207d" id="bce3-1cce-2aa5-88d7" primary="false" name="Faction: Heretic Astartes"/>
+        <categoryLink targetId="4f09-0141-6c70-6c5a" id="1572-8c26-6489-c807" primary="false" name="Daemon Prince"/>
+        <categoryLink targetId="9c0e-7e25-4580-e439" id="fde9-179e-8f74-dde7" primary="false" name="Daemon"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="d2dc-b4b9-6aaa-3648" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Size" id="3da8-6cbb-ce22-3210" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36fe-a14d-853d-8245" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c79-d38c-ad2c-d09d" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Small" hidden="false" id="aad2-414c-b75d-555f">
+                  <profiles>
+                    <profile name="Daemon Prince" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1729-8522-317d-e9ec">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Lord of Chaos" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0d76-6741-25b8-968f">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll.</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="84d4-e94f-acbc-adb0">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+■ Chosen
+■ Legionaries
+■ Nemesis Claw
+■ Red Corsairs Raiders</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15e5-0e89-c5b9-7e96" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Weapons" id="21d7-5025-08e9-ae16" hidden="false"/>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="761f-91c5-88f4-1765">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warlord" hidden="false" id="a357-df35-7e6b-4433">
+      <categoryLinks>
+        <categoryLink targetId="5c0e-4c31-d51b-e470" id="2dc9-5757-8b13-d9c3" primary="false" name="Warlord"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe9f-4001-971f-1704"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
