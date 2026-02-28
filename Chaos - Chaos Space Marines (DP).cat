@@ -32,7 +32,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c79-d38c-ad2c-d09d" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Small" hidden="false" id="aad2-414c-b75d-555f" sortIndex="1">
+                <selectionEntry type="upgrade" import="true" name="Small" hidden="false" id="aad2-414c-b75d-555f" sortIndex="1" collective="true">
                   <profiles>
                     <profile name="Daemon Prince" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1729-8522-317d-e9ec">
                       <characteristics>
@@ -65,6 +65,9 @@
                       <characteristics>
                         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll.</characteristic>
                       </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden"/>
+                      </modifiers>
                     </profile>
                     <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="84d4-e94f-acbc-adb0">
                       <characteristics>
@@ -104,7 +107,7 @@
                     </rule>
                   </rules>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Unshakeable Conviction" hidden="false" id="19d2-70bd-947b-a8b4">
+                <selectionEntry type="upgrade" import="true" name="Unshakeable Essence" hidden="false" id="19d2-70bd-947b-a8b4">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bb0-f04a-e9cc-5605" includeChildSelections="false"/>
                   </constraints>
@@ -116,7 +119,7 @@
                     </modifier>
                   </modifiers>
                   <rules>
-                    <rule name="Unshakeable Conviction" id="a3d1-b76e-14d9-8826" hidden="false">
+                    <rule name="Unshakeable Essence" id="a3d1-b76e-14d9-8826" hidden="false">
                       <description>This model has a Leadership characteristic of 5+.</description>
                     </rule>
                   </rules>
@@ -169,6 +172,16 @@
                   <categoryLinks>
                     <categoryLink targetId="2c5c-6ca6-777-c633" id="11dd-a1e3-d499-f793" primary="false" name="Chaos Undivided"/>
                   </categoryLinks>
+                  <profiles>
+                    <profile name="Chaos United" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a486-6d35-a38a-473e">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model loses the Lord of Chaos ability and gains the following ability:
+
+
+*Chaos United:* While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Hit roll.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="99a6-df91-ba86-9984" collective="true">
                   <constraints>
