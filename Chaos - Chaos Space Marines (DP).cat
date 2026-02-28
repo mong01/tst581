@@ -162,7 +162,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59ff-c5d3-2f95-7022" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Undivided" hidden="false" id="6006-0379-414d-3ba7" sortIndex="1">
+                <selectionEntry type="upgrade" import="true" name="Undivided" hidden="false" id="6006-0379-414d-3ba7" sortIndex="1" collective="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a583-85d8-9a19-c56f" includeChildSelections="false"/>
                   </constraints>
@@ -170,7 +170,7 @@
                     <categoryLink targetId="2c5c-6ca6-777-c633" id="11dd-a1e3-d499-f793" primary="false" name="Chaos Undivided"/>
                   </categoryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="99a6-df91-ba86-9984">
+                <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="99a6-df91-ba86-9984" collective="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01df-3ff4-2c66-8910" includeChildSelections="false"/>
                   </constraints>
@@ -178,7 +178,7 @@
                     <categoryLink targetId="4bd-5ee0-f179-2fc5" id="8a66-b1fe-aaeb-840e" primary="false" name="Khorne"/>
                   </categoryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="578d-969b-7074-f0ac">
+                <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="578d-969b-7074-f0ac" collective="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc43-d37c-28e6-6be5" includeChildSelections="false"/>
                   </constraints>
@@ -186,7 +186,7 @@
                     <categoryLink targetId="b2a9-ede5-7a83-4da8" id="1a4d-5135-e362-90ac" primary="false" name="Slaanesh"/>
                   </categoryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="d531-4879-e366-a72e">
+                <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="d531-4879-e366-a72e" collective="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3b9-8dda-0d7d-a953" includeChildSelections="false"/>
                   </constraints>
@@ -194,7 +194,7 @@
                     <categoryLink targetId="ed0d-8e2a-225c-2340" id="d6dc-403f-5704-4485" primary="false" name="Nurgle"/>
                   </categoryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="04e6-108c-7706-5cdf">
+                <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="04e6-108c-7706-5cdf" collective="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed2b-d0e5-971d-baf7" includeChildSelections="false"/>
                   </constraints>
