@@ -184,12 +184,12 @@
                       <characteristics>
                         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model loses the Lord of Chaos ability and gains the following ability:
 
-**Chaos United:** While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Hit roll.</characteristic>
+**Chaos United:** While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll and add 1 to the Wound roll.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="99a6-df91-ba86-9984" collective="true">
+                <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="99a6-df91-ba86-9984" collective="true" sortIndex="2">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01df-3ff4-2c66-8910" includeChildSelections="false"/>
                   </constraints>
@@ -197,7 +197,7 @@
                     <categoryLink targetId="4bd-5ee0-f179-2fc5" id="8a66-b1fe-aaeb-840e" primary="false" name="Khorne"/>
                   </categoryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="578d-969b-7074-f0ac" collective="true">
+                <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="578d-969b-7074-f0ac" collective="true" sortIndex="4">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc43-d37c-28e6-6be5" includeChildSelections="false"/>
                   </constraints>
@@ -205,7 +205,7 @@
                     <categoryLink targetId="b2a9-ede5-7a83-4da8" id="1a4d-5135-e362-90ac" primary="false" name="Slaanesh"/>
                   </categoryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="d531-4879-e366-a72e" collective="true">
+                <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="d531-4879-e366-a72e" collective="true" sortIndex="3">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3b9-8dda-0d7d-a953" includeChildSelections="false"/>
                   </constraints>
@@ -213,7 +213,7 @@
                     <categoryLink targetId="ed0d-8e2a-225c-2340" id="d6dc-403f-5704-4485" primary="false" name="Nurgle"/>
                   </categoryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="04e6-108c-7706-5cdf" collective="true">
+                <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="04e6-108c-7706-5cdf" collective="true" sortIndex="5">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed2b-d0e5-971d-baf7" includeChildSelections="false"/>
                   </constraints>
@@ -234,6 +234,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Dark Pacts" id="8355-ca30-ebbc-0779" hidden="false" type="rule" targetId="fd69-68cc-5d63-c84d"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Warlord" hidden="false" id="a357-df35-7e6b-4433">
       <categoryLinks>
