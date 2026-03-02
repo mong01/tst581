@@ -120,37 +120,6 @@ WANING STAGE
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb6f-7cb5-160c-4829" includeChildSelections="false" automatic="true"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="a4ab-bdf4-7763-a29c" collective="true">
-                  <profiles>
-                    <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1e4e-6654-ce1b-cad7">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e12f-40f5-adef-114c" includeChildSelections="false" automatic="true"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3f0-a7fa-617e-5dc0" includeChildSelections="false" automatic="true"/>
-                  </constraints>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="set" value="0" field="e3f0-a7fa-617e-5dc0"/>
-                        <modifier type="set" value="true" field="hidden"/>
-                        <modifier type="set" value="0" field="e12f-40f5-adef-114c"/>
-                      </modifiers>
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a4ab-bdf4-7763-a29c" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifierGroup>
-                  </modifierGroups>
-                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
