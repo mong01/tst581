@@ -88,18 +88,11 @@ WANING STAGE
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26ee-8a5f-1790-bca9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Weapons" id="fe55-e5f9-a592-4535" hidden="false" collective="false" import="true" defaultSelectionEntryId="2e41-dfd1-a84c-c5c9">
+            <selectionEntryGroup name="Weapons" id="fe55-e5f9-a592-4535" hidden="false" collective="false" import="true" defaultSelectionEntryId="6274-c18d-a12f-70d9">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5d4-d042-f709-162d" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6ea-3605-d971-e6d7" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Autogun" hidden="false" id="2872-c7a1-a894-8281" type="selectionEntry" targetId="3d9a-8f79-1209-03a7">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d45c-c226-8b59-7ef5" includeChildSelections="false" automatic="true"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Autopistol &amp; brutal assault weapon" hidden="false" id="f679-09ed-9e8a-182e" flatten="false">
                   <entryLinks>
@@ -119,6 +112,40 @@ WANING STAGE
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb6f-7cb5-160c-4829" includeChildSelections="false" automatic="true"/>
                   </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Autogun &amp; close combat weapon" hidden="false" id="6274-c18d-a12f-70d9">
+                  <entryLinks>
+                    <entryLink import="true" name="Autogun" hidden="false" id="f606-e01c-ec5e-e755" type="selectionEntry" targetId="3d9a-8f79-1209-03a7">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="273b-8349-768f-53c9" includeChildSelections="false" automatic="true"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="741b-e0d1-9cdb-ee74" includeChildSelections="false" automatic="true"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5434-077b-3009-166b" includeChildSelections="false" automatic="true"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="74cc-60bc-0f9b-f2b8" collective="true" flatten="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe08-aba8-bcd9-76b3" includeChildSelections="false" automatic="true"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1dd-20a6-e70e-ff8b" includeChildSelections="false" automatic="true"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1d2c-eac3-a576-6dd6">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
