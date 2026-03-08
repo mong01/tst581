@@ -182,6 +182,9 @@
                       <description>This model has a Move characteristic of 12&quot; and the FLY keyword.</description>
                     </rule>
                   </rules>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a381-d5c3-2511-c570" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -241,6 +244,73 @@
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Patron Gifts" id="10ce-0665-aa28-4c6f" hidden="false" sortIndex="4"/>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Wargear" id="34f0-578b-d12a-9436" hidden="false" sortIndex="2">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Main Hand" id="b1d8-885e-2d50-5e6d" hidden="false" defaultSelectionEntryId="d544-3b0c-1a07-d1d0">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Malefic talons" hidden="false" id="d544-3b0c-1a07-d1d0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fef2-531d-cea5-3e8c" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Malefic talons" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5bcb-8231-edbf-d919">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="Twin-linked" field="893f-9000-ccf7-648e">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="44ec-b0f5-0995-3197" childId="a745-ad63-0c60-bd45" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Twin-linked" id="045b-180d-16ed-fe5f" hidden="true" type="rule" targetId="cf93-ad4d-2f08-a79d">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="44ec-b0f5-0995-3197" childId="a745-ad63-0c60-bd45" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="462b-e9d5-6c05-5f8b-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="462b-e9d5-6c05-5f8b-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Off Hand" id="d27a-1ef7-9a08-4f14" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5040-685f-d5d4-86c7" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Malefic talons" hidden="true" id="a745-ad63-0c60-bd45">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9b9-9e1f-3c82-ce1c" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="44ec-b0f5-0995-3197" childId="d544-3b0c-1a07-d1d0" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
