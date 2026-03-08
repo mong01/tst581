@@ -265,13 +265,17 @@
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
                         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="set" value="Twin-linked" field="893f-9000-ccf7-648e">
+                      <modifierGroups>
+                        <modifierGroup type="and">
+                          <modifiers>
+                            <modifier type="set" value="Twin-linked" field="893f-9000-ccf7-648e"/>
+                            <modifier type="set" value="8" field="2337-daa1-6682-b110"/>
+                          </modifiers>
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="44ec-b0f5-0995-3197" childId="a745-ad63-0c60-bd45" shared="true" includeChildSelections="true"/>
                           </conditions>
-                        </modifier>
-                      </modifiers>
+                        </modifierGroup>
+                      </modifierGroups>
                     </profile>
                   </profiles>
                   <infoLinks>
