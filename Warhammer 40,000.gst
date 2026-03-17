@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition" revision="94" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition" revision="100" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
@@ -210,6 +210,7 @@
               <conditions>
                 <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildForces="false"/>
                 <condition type="equalTo" value="0" field="selections" scope="force" childId="4c40-ab9-54af-d290" shared="true"/>
+                <condition type="notInstanceOf" value="0" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="or">
@@ -230,6 +231,7 @@
               <conditions>
                 <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="4c40-ab9-54af-d290" shared="true"/>
+                <condition type="notInstanceOf" value="0" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="or">
@@ -250,6 +252,7 @@
               <conditions>
                 <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="4c40-ab9-54af-d290" shared="true"/>
+                <condition type="notInstanceOf" value="0" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="or">
@@ -529,6 +532,13 @@
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Assault Weapon" id="e106-0758-7137-2432" hidden="true"/>
+    <categoryEntry name="Crucible" id="e2bc-fc0c-1099-3e75" hidden="true">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="632a-6167-3373-0a51" includeChildSelections="true"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry name="Reference" id="eef1-be80-500a-edfc" hidden="false"/>
+    <categoryEntry id="c97c-376-e2e0-1dd2" name="Dreadnought" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
@@ -564,11 +574,8 @@
         <categoryLink id="9198-c35d-71cd-eea3" name="Fortification" hidden="false" targetId="19d7-9c74-2140-5851" primary="false"/>
         <categoryLink id="a41a-6330-4718-d8d2" name="Unit" hidden="false" targetId="1160-70ae-a862-b1a8" primary="false"/>
         <categoryLink name="Allied Units" hidden="false" id="8d39-1cfc-6e44-2dae" targetId="887b-ab87-92a2-20f5"/>
+        <categoryLink name="Reference" hidden="false" id="3761-5a4e-79e0-3c18" targetId="eef1-be80-500a-edfc"/>
       </categoryLinks>
-      <readme>Please do not report any issues relating to the new Munitorum Field Manual or Dataslate.
-The data author team are working to get the Maelstrom content finished and will deliver that *and* the other changes soon.
-
-This means that the points changes (from the aforementioned Munitorum Field Manual) are not yet implemented nor are any changes from the Dataslate and you don&apos;t need to raise any issues to tell us that they&apos;re not updated.</readme>
     </forceEntry>
     <forceEntry name="Boarding Actions" hidden="true" id="1d6e-2579-8e7f-1ed4">
       <categoryLinks>
@@ -590,6 +597,7 @@ This means that the points changes (from the aforementioned Munitorum Field Manu
         <categoryLink id="fe2b-ae0-8572-b6ff" name="Dedicated Transport" hidden="false" targetId="ba07-411c-2832-1f79" primary="false"/>
         <categoryLink name="Retinue" hidden="false" id="d932-86b9-29ec-c799" targetId="cc77-a53-fca8-f48e"/>
         <categoryLink name="Allied Units" hidden="false" id="ea52-2956-b106-5ec2" targetId="887b-ab87-92a2-20f5"/>
+        <categoryLink name="Reference" hidden="false" id="27b1-2602-d1bc-fa43" targetId="eef1-be80-500a-edfc"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Crusade Force" id="cac3-71d1-ea4b-795d" hidden="false" exportable="false">
@@ -661,6 +669,7 @@ This means that the points changes (from the aforementioned Munitorum Field Manu
         <categoryLink name="Unit" hidden="false" id="4657-058c-657b-3d14" targetId="1160-70ae-a862-b1a8" primary="false"/>
         <categoryLink name="Pilot" hidden="false" id="3577-efe1-f844-d1e0" targetId="5b15-724e-2eeb-8cb7"/>
         <categoryLink name="Allied Units" hidden="false" id="8d77-c7df-e1a3-0680" targetId="887b-ab87-92a2-20f5"/>
+        <categoryLink name="Reference" hidden="false" id="9044-5fc4-41ab-11df" targetId="eef1-be80-500a-edfc"/>
       </categoryLinks>
       <modifiers>
         <modifier type="increment" value="1" field="215f-8816-ff04-d1ef">
@@ -668,23 +677,12 @@ This means that the points changes (from the aforementioned Munitorum Field Manu
             <repeat value="1" repeats="1" field="selections" scope="force" childId="4213-a51d-bffe-87dc" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="Please do not report any issues relating to the new Munitorum Field Manual or Dataslate.
-The data author team are working to get the Maelstrom content finished and will deliver that *and* the other changes soon.
-
-This means that the points changes (from the aforementioned Munitorum Field Manual) are not yet implemented nor are any changes from the Dataslate and you don&apos;t need to raise any issues to tell us that they&apos;re not updated.
-
-**Reminder: Your Crusade Force is every model available to your faction in Crusade Mode. Your Crusade Army is the list of units you intend to use in a game.**" field="readme">
+        <modifier type="set" value="**Reminder: Your Crusade Force is every model available to your faction in Crusade Mode. Your Crusade Army is the list of units you intend to use in a game.**" field="readme">
           <conditions>
             <condition type="atLeast" value="1" field="forces" scope="roster" childId="ff7b-8f73-1756-650a" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="Please do not report any issues relating to the new Munitorum Field Manual or Dataslate.
-The data author team are working to get the Maelstrom content finished and will deliver that *and* the other changes soon.
-
-
-This means that the points changes (from the aforementioned Munitorum Field Manual) are not yet implemented nor are any changes from the Dataslate and you don&apos;t need to raise any issues to tell us that they&apos;re not updated.
-
-**Reminder: Your Crusade Force is every model available to your faction in Crusade Mode. Your Crusade Army is the list of units you intend to use in a game. You can add the Crusade Army for your faction from the *Forces* unit section or the *Add Force* menu option.**" field="readme">
+        <modifier type="set" value="**Reminder: Your Crusade Force is every model available to your faction in Crusade Mode. Your Crusade Army is the list of units you intend to use in a game. You can add the Crusade Army for your faction from the *Forces* unit section or the *Add Force* menu option.**" field="readme">
           <conditions>
             <condition type="lessThan" value="1" field="forces" scope="roster" childId="ff7b-8f73-1756-650a" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
@@ -1060,10 +1058,10 @@ This means that the points changes (from the aforementioned Munitorum Field Manu
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Weapon Modifications" hidden="false" id="d1a5-4297-168b-11cd">
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4a83-fc07-f67a-f3ab" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4a83-fc07-f67a-f3ab" includeChildSelections="false" automatic="true"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="6" field="4a83-fc07-f67a-f3ab">
+        <modifier type="increment" value="3" field="4a83-fc07-f67a-f3ab">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -1289,6 +1287,9 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
       <description>The bearer can only shoot with this weapon once per battle.</description>
       <alias>ONE SHOT</alias>
     </rule>
+    <rule name="Crucible" id="5ce6-a3cf-e871-f081" hidden="false">
+      <description>A **^^Character^^** created using Crucible rules has the Crucible ability. Your army may include up to three units with the Crucible ability and these units cannot be given Enhancements.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="fa4e-5ac8-11a6-78d2" name="Fortification" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -1302,6 +1303,54 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12&quot; of this model, increase the cost of that use of that Stratagem by 1CP.</characteristic>
       </characteristics>
+    </profile>
+    <profile name="Invulnerable Save (4+)" hidden="false" id="5b77-29f8-7b77-75e3" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
+      </characteristics>
+      <comment>Single model</comment>
+    </profile>
+    <profile name="Invulnerable Save (5+)" hidden="false" id="27f4-7449-a636-ae8c" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save.</characteristic>
+      </characteristics>
+      <comment>Single model</comment>
+    </profile>
+    <profile name="Invulnerable Save (4+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b79a-617-8519-d24f">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 4+ invulnerable save.</characteristic>
+      </characteristics>
+      <comment>Unit</comment>
+    </profile>
+    <profile name="Invulnerable Save (6+)" hidden="false" id="42f1-ea3d-3ff9-e56a" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 6+ invulnerable save.</characteristic>
+      </characteristics>
+      <comment>Unit</comment>
+    </profile>
+    <profile name="Invulnerable Save (6+)" hidden="false" id="ae1-4b86-68f7-dd75" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 6+ invulnerable save.</characteristic>
+      </characteristics>
+      <comment>Single model</comment>
+    </profile>
+    <profile id="3b8a-73e4-1389-b399" name="Invulnerable Save (5+)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 5+ invulnerable save.</characteristic>
+      </characteristics>
+      <comment>Unit</comment>
+    </profile>
+    <profile name="Invulnerable Save (5+*)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="8552-862d-6a49-4879">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save against ranged attacks.</characteristic>
+      </characteristics>
+      <comment>Single model - ranged only</comment>
+    </profile>
+    <profile name="Invulnerable Save (4+*)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5a7a-57fa-9801-4e25">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save against ranged attacks.</characteristic>
+      </characteristics>
+      <comment>Single model - ranged only</comment>
     </profile>
   </sharedProfiles>
   <sharedSelectionEntryGroups>
@@ -1326,7 +1375,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="equalTo" value="6" field="75bb-ded1-c86d-bdf0" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="7" field="75bb-ded1-c86d-bdf0" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
                             <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true"/>
                             <condition type="lessThan" value="6" field="selections" scope="root-entry" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true"/>
@@ -1334,7 +1383,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                         </conditionGroup>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="equalTo" value="3" field="75bb-ded1-c86d-bdf0" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="4" field="75bb-ded1-c86d-bdf0" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                             <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
                             <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true"/>
                             <condition type="lessThan" value="3" field="selections" scope="root-entry" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true"/>
@@ -1343,7 +1392,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                         <conditionGroup type="and">
                           <conditions>
                             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true"/>
-                            <condition type="equalTo" value="6" field="75bb-ded1-c86d-bdf0" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="7" field="75bb-ded1-c86d-bdf0" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                             <condition type="lessThan" value="6" field="selections" scope="root-entry" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
@@ -6458,7 +6507,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Vortex Grenade" hidden="false" id="d0ad-c653-466e-a860">
                   <profiles>
-                    <profile name="Vertebrax of Vodun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="afcc-75f3-b4df-3302">
+                    <profile name="Vortex Grenade" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="afcc-75f3-b4df-3302">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">6&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
@@ -8100,8 +8149,8 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="7767-9b46-61a3-c62a" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="7767-9b46-61a3-c62a" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -8414,7 +8463,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="fe0b-a773-b244-d6a3" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="fe0b-a773-b244-d6a3" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9396,6 +9445,21 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="adda-bfc8-5629-da7a" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3180-1582-d15c-fb6f" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="3180-1582-d15c-fb6f" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Expert Breacher" hidden="false" id="4952-6a30-3d10-3de9">
           <profiles>
@@ -9405,6 +9469,21 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="31e5-2a60-71a5-768f" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4952-6a30-3d10-3de9" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="4952-6a30-3d10-3de9" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Peerless Leader" hidden="false" id="4de4-9fb2-35cb-f5ad">
           <profiles>
@@ -9414,6 +9493,21 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9063-2ef4-b26b-51d1" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4952-6a30-3d10-3de9" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="4952-6a30-3d10-3de9" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Personal Teleporter" hidden="false" id="f23e-54e8-e8e7-c789">
           <profiles>
@@ -9426,6 +9520,21 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
           <infoLinks>
             <infoLink name="Deep Strike" id="1845-7a49-adf7-a878" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3c30-3603-ad0e-f720" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f23e-54e8-e8e7-c789" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="f23e-54e8-e8e7-c789" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Superior Boarding Tactics" hidden="false" id="d63a-df06-dfed-ce99">
           <profiles>
@@ -9435,6 +9544,21 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3345-d240-3d8e-4c98" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="d63a-df06-dfed-ce99" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="d63a-df06-dfed-ce99" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Trademark Weapon" hidden="false" id="69c3-5579-d475-e5a5">
           <profiles>
@@ -9444,6 +9568,21 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9ce1-4261-a2a7-e74a" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="69c3-5579-d475-e5a5" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="69c3-5579-d475-e5a5" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <comment>Boarding Actions content</comment>
@@ -9465,6 +9604,21 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4e85-1b4d-8dce-92ec" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cfe1-3457-9fa3-aed9" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="cfe1-3457-9fa3-aed9" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Breaching Charges" hidden="false" id="268a-88b3-a5c1-fd98">
           <profiles>
@@ -9474,6 +9628,21 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8442-560a-cd49-6ad1" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="268a-88b3-a5c1-fd98" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="268a-88b3-a5c1-fd98" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Spoor Seeker" hidden="false" id="7270-0ae0-e331-d15f">
           <profiles>
@@ -9483,6 +9652,21 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2a02-c502-acf8-21d5" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7270-0ae0-e331-d15f" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="7270-0ae0-e331-d15f" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
