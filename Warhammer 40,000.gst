@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition" revision="100" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition" revision="104" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
@@ -539,6 +539,26 @@
     </categoryEntry>
     <categoryEntry name="Reference" id="eef1-be80-500a-edfc" hidden="false"/>
     <categoryEntry id="c97c-376-e2e0-1dd2" name="Dreadnought" hidden="false"/>
+    <categoryEntry name="Docked Vehicle" id="bdc8-7127-287c-a267" hidden="false">
+      <comment>Boarding Actions mission special unit tracker</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0f8b-aea2-227c-248f" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="f298-5931-6cbc-0115" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="f298-5931-6cbc-0115">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="227e-45aa-4d8b-4171" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Critical Threat" id="0cc6-ca49-ee2f-4294" hidden="false">
+      <comment>Boarding Actions mission special unit tracker</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f61e-2b47-32cb-14d3" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
@@ -576,16 +596,15 @@
         <categoryLink name="Allied Units" hidden="false" id="8d39-1cfc-6e44-2dae" targetId="887b-ab87-92a2-20f5"/>
         <categoryLink name="Reference" hidden="false" id="3761-5a4e-79e0-3c18" targetId="eef1-be80-500a-edfc"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="**If you are unable to see abilities/profiles on a unit, this is a known issue with NewRecruit and is currently being fixed by the app developers as quickly as possible. This is not a data issue and you do not need to report this as a bug.** " field="readme"/>
+      </modifiers>
     </forceEntry>
     <forceEntry name="Boarding Actions" hidden="true" id="1d6e-2579-8e7f-1ed4">
       <categoryLinks>
         <categoryLink id="4f79-1f3a-7f95-ae21" name="Configuration" hidden="false" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
         <categoryLink id="73b6-764d-b0ab-977c" name="Epic Hero" hidden="false" targetId="4f3a-f0f7-6647-348d" primary="false"/>
-        <categoryLink id="95ea-911f-b9a5-2d3e" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f08b-2179-601f-9af" type="min"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink id="95ea-911f-b9a5-2d3e" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
         <categoryLink id="57d9-fc38-a603-fdd2" name="Battleline" hidden="false" targetId="e338-111e-d0c6-b687" primary="false"/>
         <categoryLink id="ee07-d0f5-deb6-b64c" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
         <categoryLink id="6d07-c461-1f18-a3eb" name="Swarm" hidden="false" targetId="b00b-5bae-444f-964e" primary="false"/>
@@ -677,12 +696,16 @@
             <repeat value="1" repeats="1" field="selections" scope="force" childId="4213-a51d-bffe-87dc" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="**Reminder: Your Crusade Force is every model available to your faction in Crusade Mode. Your Crusade Army is the list of units you intend to use in a game.**" field="readme">
+        <modifier type="set" value="**If you are unable to see abilities/profiles on a unit, this is a known issue with NewRecruit and is currently being fixed by the app developers as quickly as possible. This is not a data issue and you do not need to report this as a bug.** 
+
+**Reminder: Your Crusade Force is every model available to your faction in Crusade Mode. Your Crusade Army is the list of units you intend to use in a game.**" field="readme">
           <conditions>
             <condition type="atLeast" value="1" field="forces" scope="roster" childId="ff7b-8f73-1756-650a" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="**Reminder: Your Crusade Force is every model available to your faction in Crusade Mode. Your Crusade Army is the list of units you intend to use in a game. You can add the Crusade Army for your faction from the *Forces* unit section or the *Add Force* menu option.**" field="readme">
+        <modifier type="set" value="**If you are unable to see abilities/profiles on a unit, this is a known issue with NewRecruit and is currently being fixed by the app developers as quickly as possible. This is not a data issue and you do not need to report this as a bug.** 
+
+**Reminder: Your Crusade Force is every model available to your faction in Crusade Mode. Your Crusade Army is the list of units you intend to use in a game. You can add the Crusade Army for your faction from the *Forces* unit section or the *Add Force* menu option.**" field="readme">
           <conditions>
             <condition type="lessThan" value="1" field="forces" scope="roster" childId="ff7b-8f73-1756-650a" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
@@ -9682,6 +9705,69 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
         </modifier>
       </modifiers>
       <comment>Boarding Actions content</comment>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Boarding Actiions Upgrades" id="3167-0f5b-caba-d96e" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Trademark Weapon upgrade" hidden="false" id="64e7-c46d-98fd-f6aa">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a0e5-8695-7dcc-83c3" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="root-entry" shared="true" id="410d-b816-d735-a66d" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="69c3-5579-d475-e5a5" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="upgrade" childId="eeda-8544-a2f3-3fab" shared="true" includeChildSelections="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="upgrade" childId="064a-0470-60eb-e3ef" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="64e7-c46d-98fd-f6aa" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="upgrade" childId="64e7-c46d-98fd-f6aa" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="upgrade" childId="c13c-1717-f8a8-a8df" shared="true" includeChildSelections="false"/>
+                        <condition type="lessThan" value="1" field="selections" scope="upgrade" childId="64e7-c46d-98fd-f6aa" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="410d-b816-d735-a66d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="69c3-5579-d475-e5a5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="c13c-1717-f8a8-a8df" field="category" join=", " scope="upgrade"/>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Artificer Weapon" field="annotation" join=", " scope="upgrade" affects="profiles.Ranged Weapons"/>
+                <modifier type="increment" value="1" field="2229-f494-25db-c5d3" join=", " scope="upgrade" affects="profiles.Ranged Weapons"/>
+                <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="4986-bf86-beb4-13ac.profiles.Ranged Weapons" join="" arg="+0"/>
+                <modifier type="replace" value="true" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="982b-de77-dd2d-d9bd.profiles.Ranged Weapons" join="" arg="+0"/>
+                <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="profiles.Ranged Weapons" position="-1"/>
+                <modifier type="replace" value="true" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="profiles.Ranged Weapons" join="" arg="+0"/>
+                <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="upgrade" join="" arg="+0" affects="4986-bf86-beb4-13ac"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </gameSystem>
