@@ -1233,7 +1233,7 @@
     <rule name="Adaptive Threat Protocols" id="63a3-727d-984a-2438" hidden="false">
       <description>If your Army Faction is MECHANOIDS, each eligible unit from your army with this ability can activate Adaptations. This is done using Adaptation Points (AP). A unit is eligible to activate an Adaptation if it has this ability and has not already activated an Adaptation this phase. In addition, the condition of that Adaptation must be met in order for it to be activated (see [Reference] Adaptations for more information).
 
-**GAINING ACTIVATION POINTS**
+**GAINING ADAPTATION POINTS**
 If your Army Faction is MECHANOIDS, you gain 1 AP:
 • Each time a MECHANOIDS unit from your army with this ability is destroyed.
 • Each time your opponent targets a unit from their army with a Stratagem.
@@ -1271,6 +1271,7 @@ If you have one or more AP in your AP pool, you can spend one AP to activate an 
     <entryLink import="true" name="Scorchers" hidden="false" id="463b-1cfa-f43f-d045" targetId="264a-4fbc-94f9-e44d" type="selectionEntry"/>
     <entryLink import="true" name="Centipede Gunner" hidden="false" id="3dc6-0d84-a843-bd3f" targetId="19fb-bc88-fa09-5dae" type="selectionEntry"/>
     <entryLink import="true" name="Centipede Blaster" hidden="false" id="3d41-273a-a224-0575" targetId="4278-f66f-7aaa-5d6f" type="selectionEntry"/>
+    <entryLink import="true" name="Tesserons" hidden="false" id="61b0-be69-4dd5-9248" targetId="bfdc-f894-f366-b436" type="selectionEntry"/>
   </entryLinks>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="[Reference] Adaptations" hidden="false" id="d459-e949-5fa6-167b">
