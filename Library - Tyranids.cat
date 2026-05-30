@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="374d-45f0-5832-001e" name="Library - Tyranids" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="77" revision="19" authorName="Dunamis55" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="374d-45f0-5832-001e" name="Library - Tyranids" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="77" revision="21" authorName="Dunamis55" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry id="fa68-fcb9-38c-cd0f" name="Winged Hive Tyrant" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -2151,9 +2151,14 @@
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="3523-602d-3c05-b77b">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" value="2" field="22dc-9a8c-cc17-3758">
               <repeats>
@@ -2269,16 +2274,6 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="731f-1524-da02-945b" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="unset-primary" value="9693-cf84-fe69-37a9" field="category">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="self" childId="499b-29ee-1402-ae25" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" value="9cfd-1c32-585f-7d5c" field="category">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="self" childId="499b-29ee-1402-ae25" shared="true"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Trygon Character upgrade" hidden="false" id="499b-29ee-1402-ae25" sortIndex="2">
@@ -2287,16 +2282,27 @@
             <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="d943-ec54-f75d-710f" includeChildSelections="true"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2741-eca6-34a7-6d92" includeChildSelections="false"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Character" hidden="false" id="cab6-8991-8b9d-4996" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
-          </categoryLinks>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="731f-1524-da02-945b" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="731f-1524-da02-945b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true" childName="Crusade Force"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category" scope="root-entry"/>
+                <modifier type="unset-primary" value="9693-cf84-fe69-37a9" field="category" scope="root-entry"/>
+                <modifier type="set-primary" value="9cfd-1c32-585f-7d5c" field="category" scope="root-entry"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -4357,7 +4363,6 @@ In the Deploy Armies step, your opponent must set up their entire army before yo
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b051-7c22-14eb-c85d" type="max"/>
                 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="71f6-7bf3-d39d-79bf" type="max"/>
               </constraints>
               <profiles>
@@ -4380,7 +4385,6 @@ In the Deploy Armies step, your opponent must set up their entire army before yo
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b051-7c22-14eb-c85d" type="max"/>
                 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aa15-16fb-2417-ba7" type="max"/>
               </constraints>
               <profiles>
@@ -4408,7 +4412,6 @@ In the Deploy Armies step, your opponent must set up their entire army before yo
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b051-7c22-14eb-c85d" type="max"/>
                 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2e4d-3dd4-3ec4-87e0" type="max"/>
               </constraints>
               <profiles>
@@ -4431,7 +4434,6 @@ In the Deploy Armies step, your opponent must set up their entire army before yo
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b051-7c22-14eb-c85d" type="max"/>
                 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7ff1-fc66-d2d5-50b4" type="max"/>
               </constraints>
               <profiles>
@@ -4486,7 +4488,6 @@ In the Deploy Armies step, your opponent must set up their entire army before yo
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b051-7c22-14eb-c85d" type="max"/>
                 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="71f6-7bf3-d39d-79bf" type="max"/>
               </constraints>
               <profiles>
@@ -4514,7 +4515,6 @@ In the Deploy Armies step, your opponent must set up their entire army before yo
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b051-7c22-14eb-c85d" type="max"/>
                 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aa15-16fb-2417-ba7" type="max"/>
               </constraints>
               <profiles>
@@ -4542,7 +4542,6 @@ In the Deploy Armies step, your opponent must set up their entire army before yo
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b051-7c22-14eb-c85d" type="max"/>
                 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2e4d-3dd4-3ec4-87e0" type="max"/>
               </constraints>
               <profiles>
@@ -4570,7 +4569,6 @@ In the Deploy Armies step, your opponent must set up their entire army before yo
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b051-7c22-14eb-c85d" type="max"/>
                 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7ff1-fc66-d2d5-50b4" type="max"/>
               </constraints>
               <profiles>
@@ -4625,7 +4623,6 @@ In the Deploy Armies step, your opponent must set up their entire army before yo
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b051-7c22-14eb-c85d" type="max"/>
                 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="71f6-7bf3-d39d-79bf" type="max"/>
               </constraints>
               <profiles>
@@ -4653,7 +4650,6 @@ In the Deploy Armies step, your opponent must set up their entire army before yo
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b051-7c22-14eb-c85d" type="max"/>
                 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aa15-16fb-2417-ba7" type="max"/>
               </constraints>
               <profiles>
@@ -4681,7 +4677,6 @@ In the Deploy Armies step, your opponent must set up their entire army before yo
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b051-7c22-14eb-c85d" type="max"/>
                 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2e4d-3dd4-3ec4-87e0" type="max"/>
               </constraints>
               <profiles>
@@ -4709,7 +4704,6 @@ In the Deploy Armies step, your opponent must set up their entire army before yo
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b051-7c22-14eb-c85d" type="max"/>
                 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7ff1-fc66-d2d5-50b4" type="max"/>
               </constraints>
               <profiles>
@@ -5483,6 +5477,9 @@ In the Deploy Armies step, your opponent must set up their entire army before yo
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="01d4-99f6-dfa9-b286" includeChildSelections="true"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Adaptive Reprisal" hidden="false" id="fe46-d8ec-37ec-104f">
               <modifiers>
@@ -5507,6 +5504,9 @@ In the Deploy Armies step, your opponent must set up their entire army before yo
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fa05-8b92-dbef-3934" includeChildSelections="true"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="The Hero Returned" hidden="false" id="42ae-8e75-ce9d-af5b">
               <modifiers>
@@ -5531,6 +5531,9 @@ In the Deploy Armies step, your opponent must set up their entire army before yo
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="745b-bec6-9357-2ba2" includeChildSelections="true"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Fire-point Commander" hidden="false" id="5ff4-2297-eba0-a0aa">
               <modifiers>
@@ -5555,6 +5558,9 @@ In the Deploy Armies step, your opponent must set up their entire army before yo
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1af8-4374-3e02-056e" includeChildSelections="true"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <constraints>
