@@ -321,7 +321,7 @@ A. Yes.</characteristic>
 **1CP**
 **When:** Your opponent&apos;s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
 **Target:** One K&apos;DAAI unit from your army that was selected as the target of one or more of the attacking unit’s attacks.
-**Effect:** Until the end of the phase, add 1 to invulnerable saving throws made for your unit.</characteristic>
+**Effect:** Until the attacking unit has finished making its attacks, add 1 to invulnerable saving throws made for your unit.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Unbreakable" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6118-a866-5fb7-8e0d">
